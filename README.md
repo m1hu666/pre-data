@@ -1,8 +1,8 @@
 # PrimeVul Êı¾İ¼¯¹¹½¨¹¤¾ß
 
-±¾²Ö¿âÊµÏÖÁËÂÛÎÄ *"Vulnerability Detection with Code Language Models: How Far Are We?"* ÖĞ PrimeVul Êı¾İ¼¯µÄÍêÕû¹¹½¨Á÷³Ì¡£
+±¾²Ö¿âÊµÏÖÁËÂÛÎÄ *"Vulnerability Detection with Code Language Models: How Far Are We"* ÖĞ PrimeVul Êı¾İ¼¯µÄÍêÕû¹¹½¨Á÷³Ì¡£
 
-## ? Ä¿Â¼
+##  Ä¿Â¼
 
 - [¸ÅÊö](#¸ÅÊö)
 - [Êı¾İ¼¯¹¹½¨Á÷³Ì](#Êı¾İ¼¯¹¹½¨Á÷³Ì)
@@ -12,7 +12,7 @@
 - [ÏîÄ¿½á¹¹](#ÏîÄ¿½á¹¹)
 - [ÅäÖÃËµÃ÷](#ÅäÖÃËµÃ÷)
 
-## ? ¸ÅÊö
+##  ¸ÅÊö
 
 PrimeVul ÊÇÒ»¸ö¸ßÖÊÁ¿µÄ´úÂëÂ©¶´¼ì²âÊı¾İ¼¯£¬Í¨¹ıÑÏ¸ñµÄÊı¾İÈ¥ÖØºÍ¾«È·µÄ±ê×¢·½·¨¹¹½¨¶ø³É¡£±¾²Ö¿âÌá¹©ÁË´ÓÔ­Ê¼Êı¾İµ½×îÖÕÊı¾İ¼¯µÄÍêÕû´¦ÀíÁ÷³Ì¡£
 
@@ -25,7 +25,7 @@ PrimeVul ÊÇÒ»¸ö¸ßÖÊÁ¿µÄ´úÂëÂ©¶´¼ì²âÊı¾İ¼¯£¬Í¨¹ıÑÏ¸ñµÄÊı¾İÈ¥ÖØºÍ¾«È·µÄ±ê×¢·½·¨¹¹½
 - **Ê±¼ä»®·Ö**: °´ commit Ê±¼ä½øĞĞ 80/10/10 »®·Ö£¬Ä£ÄâÕæÊµ³¡¾°
 - **³É¶ÔÊı¾İ**: ¹¹½¨ vulnerable-patch º¯Êı¶Ô£¬ÓÃÓÚÉî¶È·ÖÎö
 
-## ? Êı¾İ¼¯¹¹½¨Á÷³Ì
+##  Êı¾İ¼¯¹¹½¨Á÷³Ì
 
 ```
 Ô­Ê¼Êı¾İ (BigVul, CrossVul, CVE/fixes, DiverseVul)
@@ -45,7 +45,7 @@ PrimeVul ÊÇÒ»¸ö¸ßÖÊÁ¿µÄ´úÂëÂ©¶´¼ì²âÊı¾İ¼¯£¬Í¨¹ıÑÏ¸ñµÄÊı¾İÈ¥ÖØºÍ¾«È·µÄ±ê×¢·½·¨¹¹½
 ×îÖÕÊı¾İ¼¯ (All + Paired °æ±¾)
 ```
 
-## ?? °²×°
+##  °²×°
 
 ### ÒªÇó
 
@@ -66,7 +66,7 @@ cd PrimeVul
 pip install -r requirements.txt
 ```
 
-## ? Ê¹ÓÃ·½·¨
+##  Ê¹ÓÃ·½·¨
 
 ### 1. ×¼±¸Ô­Ê¼Êı¾İ
 
@@ -114,7 +114,7 @@ data/output/
 ©¸©¤©¤ dataset_statistics.json # Í³¼ÆĞÅÏ¢
 ```
 
-## ? Êı¾İ¸ñÊ½
+##  Êı¾İ¸ñÊ½
 
 ### All °æ±¾ (ËùÓĞÑù±¾)
 
@@ -143,7 +143,7 @@ data/output/
 | `cve_id` | CVE ±àºÅ |
 | `split` | Êı¾İ»®·Ö |
 
-## ? ÏîÄ¿½á¹¹
+##  ÏîÄ¿½á¹¹
 
 ```
 PrimeVul/
@@ -167,7 +167,7 @@ PrimeVul/
     ©¸©¤©¤ analyze_dataset.py    # Êı¾İ¼¯·ÖÎöÊ¾Àı
 ```
 
-## ?? ÅäÖÃËµÃ÷
+##  ÅäÖÃËµÃ÷
 
 ±à¼­ `config.py` ÒÔ×Ô¶¨ÒåÊı¾İ´¦ÀíÁ÷³Ì£º
 
@@ -195,7 +195,7 @@ SPLIT_CONFIG = {
 }
 ```
 
-## ? ²âÊÔµ¥¸öÄ£¿é
+##  ²âÊÔµ¥¸öÄ£¿é
 
 Ã¿¸öÄ£¿é¶¼¿ÉÒÔ¶ÀÁ¢²âÊÔ£º
 
@@ -216,7 +216,7 @@ python src/temporal_split.py
 python src/paired_functions.py
 ```
 
-## ? Êı¾İ¼¯Í³¼Æ
+##  Êı¾İ¼¯Í³¼Æ
 
 ÔËĞĞÍê³Éºó£¬²é¿´ `data/output/dataset_statistics.json` »ñÈ¡ÏêÏ¸Í³¼ÆĞÅÏ¢£º
 
@@ -235,7 +235,7 @@ python src/paired_functions.py
 }
 ```
 
-## ? ¸ß¼¶ÓÃ·¨
+##  ¸ß¼¶ÓÃ·¨
 
 ### ×Ô¶¨ÒåÊı¾İ¼ÓÔØÆ÷
 
@@ -270,28 +270,28 @@ labeler = OneFuncLabeler()
 labeled_data = labeler.label_dataset(your_data)
 ```
 
-## ? ÒıÓÃ
+##  ÒıÓÃ
 
 Èç¹ûÄúÊ¹ÓÃ±¾Êı¾İ¼¯»ò´úÂë£¬ÇëÒıÓÃÔ­ÂÛÎÄ£º
 
 ```bibtex
 @inproceedings{primevul2023,
-  title={Vulnerability Detection with Code Language Models: How Far Are We?},
+  title={Vulnerability Detection with Code Language Models: How Far Are We},
   author={...},
   booktitle={...},
   year={2023}
 }
 ```
 
-## ? Ğí¿ÉÖ¤
+##  Ğí¿ÉÖ¤
 
 ±¾ÏîÄ¿²ÉÓÃ MIT Ğí¿ÉÖ¤¡£
 
-## ? ¹±Ï×
+##  ¹±Ï×
 
 »¶Ó­Ìá½» Issue ºÍ Pull Request£¡
 
-## ? ÁªÏµ·½Ê½
+##  ÁªÏµ·½Ê½
 
 ÈçÓĞÎÊÌâ£¬ÇëÍ¨¹ı GitHub Issues ÁªÏµ¡£
 

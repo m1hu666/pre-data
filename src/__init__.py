@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 __init__.py for src package
 """

@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 PrimeVul 数据集构建主流程
 """

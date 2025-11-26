@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 时间划分模块：实现按 commit 时间进行 Train/Dev/Test 划分
 """

@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 成对函数构建模块：构建 vulnerable-patch 函数对
 """

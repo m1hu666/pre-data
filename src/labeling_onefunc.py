@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 OneFunc 标注方法：对只修改一个函数的 security-related commit 进行标注
 """

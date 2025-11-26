@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 Configuration file for PrimeVul dataset construction.
 """

@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 NVDCheck 标注方法：基于 NVD 描述文本进行精确标注
 """

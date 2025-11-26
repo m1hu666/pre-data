@@ -1,6 +1,9 @@
+# -*- coding: gbk -*-
+
 """
 快速开始示例：从头构建一个小型 PrimeVul 数据集
 """
+
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
