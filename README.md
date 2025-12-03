@@ -34,9 +34,7 @@ PrimeVul ÊÇÒ»¸ö¸ßÖÊÁ¿µÄ´úÂëÂ©¶´¼ì²âÊý¾Ý¼¯£¬Í¨¹ýÑÏ¸ñµÄÊý¾ÝÈ¥ÖØºÍ¾«È·µÄ±ê×¢·½·¨¹¹½
     ¡ý
 2. ³¹µ×È¥ÖØ (MD5 ¹þÏ£ + ÎÄ±¾¹æ·¶»¯)
     ¡ý
-3. OneFunc ±ê×¢ (µ¥º¯ÊýÐÞ¸Ä)
-    ¡ý
-4. NVDCheck ±ê×¢ (»ùÓÚ NVD ÃèÊö)
+3. OneFunc ±ê×¢ (µ¥º¯ÊýÐÞ¸Ä) 4. NVDCheck ±ê×¢ (»ùÓÚ NVD ÃèÊö)
     ¡ý
 5. Ê±¼ä»®·Ö (Train 80% / Dev 10% / Test 10%)
     ¡ý
