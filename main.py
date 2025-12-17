@@ -15,8 +15,9 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from config import *
 from src.data_loader import DataLoader, load_nvd_data
 from src.deduplication import deduplicate_dataset
-from src.labeling_onefunc import apply_onefunc_labeling
-from src.labeling_nvdcheck import apply_nvdcheck_labeling
+from src.primevul_onefunc import apply_onefunc_labeling
+from src.primevul_nvdcheck import apply_nvdcheck_labeling
+from src.primevul_label_utils import finalize_labels_by_commit
 from src.temporal_split import temporal_split
 from src.paired_functions import build_paired_dataset, split_paired_dataset
 
@@ -61,37 +62,40 @@ def main():
     all_stats.update(dedup_stats)
     
     # ========================================================================
-    # 步骤 3: 数据标注 - OneFunc
+    # 步骤 3: 数据标注 - OneFunc（Git diff 驱动）
     # ========================================================================
     print("\n" + "=" * 80)
-    print("步骤 3/6: 数据标注 - OneFunc")
+    print("步骤 3/6: 数据标注 - OneFunc (Git diff)")
     print("=" * 80)
-    
+
     if LABELING_CONFIG['onefunc_enabled']:
-        labeled_data, onefunc_stats = apply_onefunc_labeling(deduplicated_data)
-        all_stats.update(onefunc_stats)
+        # 基于 Git diff 的 ONEFUNC
+        labeled_data = apply_onefunc_labeling(deduplicated_data)
     else:
         print("OneFunc 标注已禁用，跳过")
         labeled_data = deduplicated_data.copy()
-        labeled_data['label'] = None
-        labeled_data['labeling_method'] = None
-    
+        if 'label' not in labeled_data.columns:
+            labeled_data['label'] = None
+        if 'labeling_method' not in labeled_data.columns:
+            labeled_data['labeling_method'] = None
+
     # ========================================================================
-    # 步骤 4: 数据标注 - NVDCheck
+    # 步骤 4: 数据标注 - NVDCheck + 按 commit 最终整理
     # ========================================================================
     print("\n" + "=" * 80)
-    print("步骤 4/6: 数据标注 - NVDCheck")
+    print("步骤 4/6: 数据标注 - NVDCheck + Finalize")
     print("=" * 80)
-    
+
     if LABELING_CONFIG['nvdcheck_enabled']:
         nvd_data_path = NVD_DATA_PATH if os.path.exists(NVD_DATA_PATH) else None
-        labeled_data, nvdcheck_stats = apply_nvdcheck_labeling(labeled_data, nvd_data_path)
-        all_stats.update(nvdcheck_stats)
+        data_after_nvd = apply_nvdcheck_labeling(labeled_data, nvd_path=nvd_data_path)
     else:
         print("NVDCheck 标注已禁用，跳过")
-    
-    # 过滤掉未被标注的数据（label 为 None 的）
-    labeled_data = labeled_data[labeled_data['label'].notna()].copy()
+        data_after_nvd = labeled_data
+
+    # 按 commit 级别合并：有 vuln 的 commit → 其余函数补为 benign；
+    # 没有任何 vuln 的 commit 整个丢弃。
+    labeled_data = finalize_labels_by_commit(data_after_nvd)
     
     print(f"\n标注完成后剩余: {len(labeled_data)} 条")
     print(f"  - Vulnerable: {(labeled_data['label'] == 'vulnerable').sum()}")

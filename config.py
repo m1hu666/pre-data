@@ -27,6 +27,19 @@ DATA_SOURCES = {
 # NVD 数据路径
 NVD_DATA_PATH = os.path.join(RAW_DATA_DIR, 'nvd_cve_descriptions.json')
 
+# Git 仓库路径配置（需要用户根据本地环境填写）
+# 格式：项目名（与数据集中 project 列的值对应）-> 本地仓库绝对路径
+# 例如：
+# GIT_REPOS = {
+#     'qemu': '/path/to/qemu',
+#     'ffmpeg': '/path/to/ffmpeg',
+# }
+# 这里先给一个空的默认值，流水线在找不到对应仓库时会自动退化为
+# 仅基于 DataFrame 的统计逻辑，不会报错。
+GIT_REPOS = {
+    'qemu': '/home/m1hu/qemu'
+}
+
 # 去重配置
 NORMALIZATION_CONFIG = {
     'remove_whitespace': True,

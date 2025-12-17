@@ -41,10 +41,11 @@ ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
-from config import NVD_DATA_PATH
+from config import NVD_DATA_PATH, GIT_REPOS
 from primevul_onefunc import apply_onefunc_labeling
 from primevul_nvdcheck import apply_nvdcheck_labeling, extract_function_name
 from primevul_label_utils import extract_cve_id, finalize_labels_by_commit
+from git_diff_utils import reconstruct_function_before, get_commit_time
 
 
 # ---------------------------------------------------------------------------
@@ -199,12 +200,7 @@ def prepare_for_labeling(df: pd.DataFrame) -> pd.DataFrame:
 
     # Post-commit code
     df["func_after"] = df["func"].astype(str)
-    # Pre-commit code is unknown for DiverseVul
-    df["func_before"] = ""
-
-    # Mark all commits as security-related for this dataset
-    df["is_security_related"] = True
-
+    
     # Ensure commit_id is non-empty; fall back to a synthetic id
     if "commit_id" not in df.columns:
         df["commit_id"] = ""
@@ -218,6 +214,41 @@ def prepare_for_labeling(df: pd.DataFrame) -> pd.DataFrame:
         return f"dv_{project}_{h}"
 
     df["commit_id"] = df.apply(_fallback_commit_id, axis=1)
+
+    # Try to reconstruct func_before from Git diff
+    print("  Attempting to reconstruct func_before from Git diff...")
+    func_before_list = []
+    
+    for idx, row in tqdm(df.iterrows(), total=len(df), desc="  Reconstructing func_before"):
+        project = str(row.get("project", ""))
+        commit_id = str(row.get("commit_id", ""))
+        func_after = str(row.get("func_after", ""))
+        
+        # Extract function name for better matching
+        func_name_val = extract_function_name(func_after)
+        
+        func_before = ""
+        if project and commit_id and GIT_REPOS:
+            repo_path = GIT_REPOS.get(project)
+            if repo_path:
+                try:
+                    func_before = reconstruct_function_before(
+                        repo_path, 
+                        commit_id, 
+                        func_after,
+                        func_name_val
+                    )
+                except Exception:
+                    pass
+        
+        func_before_list.append(func_before)
+    
+    df["func_before"] = func_before_list
+    reconstructed_count = sum(1 for fb in func_before_list if fb)
+    print(f"  Successfully reconstructed {reconstructed_count}/{len(df)} func_before entries")
+
+    # Mark all commits as security-related for this dataset
+    df["is_security_related"] = True
 
     # File path is not provided by DiverseVul; keep it empty for now
     if "file_path" not in df.columns:
@@ -266,39 +297,82 @@ class SplitResult:
     test: pd.DataFrame
 
 
-def assign_synthetic_commit_time(df: pd.DataFrame) -> pd.DataFrame:
-    """Assign a synthetic commit_time per commit.
+def assign_commit_time_from_git(df: pd.DataFrame) -> pd.DataFrame:
+    """Assign commit_time from actual Git commit timestamps.
 
-    We do not have real timestamps in DiverseVul, but we can still mimic
-    the temporal split by assigning a deterministic ordering over commits
-    (e.g., by sorted commit_id) and treating that as a pseudo-time.
+    Reads the real commit timestamp from Git repository for each commit.
+    Falls back to synthetic time (based on commit order) if:
+    - Git repository is not configured
+    - Commit doesn't exist in the repository
+    - Git command fails
 
     The resulting `commit_time` is an ISO-8601 string.
     """
     df = df.copy()
 
-    # If commit_id is missing or empty for many rows, fall back to grouping
-    # everything under a single synthetic commit.
+    # Ensure commit_id is valid
     commit_ids = df["commit_id"].fillna("").replace("", "__no_commit__")
     df["commit_id"] = commit_ids
 
-    unique_commits = sorted(commit_ids.unique())
+    # Determine project column
+    project_column = "project" if "project" in df.columns else None
 
-    base_time = datetime(2000, 1, 1, 0, 0, 0)
     commit_time_map: Dict[str, str] = {}
+    fallback_commits = []  # Commits that need synthetic time
 
-    for idx, cid in enumerate(unique_commits):
-        t = base_time + timedelta(seconds=idx)
-        commit_time_map[cid] = t.isoformat()
+    # Group by project and commit to get unique combinations
+    if project_column:
+        groups = df.groupby([project_column, "commit_id"])
+    else:
+        groups = df.groupby("commit_id")
+
+    print("  Fetching commit timestamps from Git...")
+    for key, _ in tqdm(groups.groups.items(), desc="  Reading commit times"):
+        if project_column:
+            project, commit_id = key
+            repo_path = GIT_REPOS.get(str(project))
+        else:
+            commit_id = key
+            # Use first available repo if no project column
+            repo_path = next(iter(GIT_REPOS.values())) if GIT_REPOS else None
+
+        commit_id = str(commit_id)
+        
+        # Try to get real commit time from Git
+        if repo_path and commit_id != "__no_commit__":
+            try:
+                commit_time = get_commit_time(repo_path, commit_id)
+                if commit_time:
+                    commit_time_map[commit_id] = commit_time
+                else:
+                    fallback_commits.append(commit_id)
+            except Exception:
+                fallback_commits.append(commit_id)
+        else:
+            fallback_commits.append(commit_id)
+
+    # Assign synthetic times to commits that couldn't be read from Git
+    if fallback_commits:
+        print(f"  Using synthetic time for {len(fallback_commits)} commits (Git unavailable)")
+        base_time = datetime(2000, 1, 1, 0, 0, 0)
+        for idx, cid in enumerate(sorted(set(fallback_commits))):
+            if cid not in commit_time_map:
+                t = base_time + timedelta(seconds=idx)
+                commit_time_map[cid] = t.isoformat()
 
     df["commit_time"] = df["commit_id"].map(commit_time_map)
+    
+    # Count how many used real vs synthetic time
+    real_time_count = sum(1 for c in df["commit_id"].unique() if c in commit_time_map and c not in fallback_commits)
+    print(f"  Successfully fetched {real_time_count}/{len(df['commit_id'].unique())} commit times from Git")
+    
     return df
 
 
 def temporal_split(df: pd.DataFrame, cfg: SplitConfig) -> SplitResult:
     """Perform commit-level split into train/dev/test according to ratios.
 
-    - Sort unique commits by `commit_time` (synthetic here).
+    - Sort unique commits by `commit_time` (from Git or synthetic fallback).
     - First 80% -> train, next 10% -> dev, last 10% -> test.
     - All functions from the same commit go into the same split.
     """
@@ -306,7 +380,7 @@ def temporal_split(df: pd.DataFrame, cfg: SplitConfig) -> SplitResult:
 
     df = df.copy()
     if "commit_time" not in df.columns:
-        df = assign_synthetic_commit_time(df)
+        df = assign_commit_time_from_git(df)
 
     # Get commit -> time
     commit_times = (
@@ -477,7 +551,7 @@ def run_diversevul_pipeline(
     print("[3/6] PrimeVul-style labeling (OneFunc + NVDCheck)...")
     df_for_label = prepare_for_labeling(df_dedup)
 
-    # 3.1 OneFunc: commits with exactly one function become vulnerable
+    # 3.1 OneFunc: 基于 Git diff 的 ONEFUNC
     df_after_onefunc = apply_onefunc_labeling(df_for_label)
 
     # 3.2 NVDCheck: function name mentioned in NVD description

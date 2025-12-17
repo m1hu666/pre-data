@@ -23,10 +23,18 @@ benign functions nor drop any rows. A later consolidation step should:
 from __future__ import annotations
 
 import json
+import os
 import re
 from typing import Dict, Optional, Tuple
 
 import pandas as pd
+
+try:
+    from config import GIT_REPOS  # type: ignore
+    from git_diff_utils import get_changed_function_counts
+except Exception:  # pragma: no cover - optional dependency
+    GIT_REPOS = {}
+    get_changed_function_counts = None  # type: ignore
 
 
 def load_nvd_descriptions(nvd_path: str) -> Dict[str, str]:
@@ -111,6 +119,30 @@ def _func_name_mentioned(desc: str, func_name: str) -> bool:
     return bool(pat.search(desc))
 
 
+def _filename_mentioned(desc: str, filename: str) -> bool:
+    """Return True if the NVD description seems to mention this filename.
+
+    The paper's second NVDCHECK rule is:
+
+        (2) NVD description mentions its file name, and it is the only
+            function changed by the security-related commit in that file.
+
+    Here we approximate this by checking whether the *base name* of the
+    file path (e.g., "foo.c") appears (case-insensitively) in the
+    description. If the project does not provide file paths, this rule
+    simply never fires.
+    """
+    if not desc or not filename:
+        return False
+    base = os.path.basename(str(filename)).strip()
+    if not base:
+        return False
+    # Use a simple case-insensitive substring search. We intentionally do
+    # not apply word boundaries because file names often contain dots.
+    pat = re.compile(re.escape(base), re.IGNORECASE)
+    return bool(pat.search(desc))
+
+
 def apply_nvdcheck_labeling(
     df: pd.DataFrame,
     nvd_path: Optional[str] = None,
@@ -126,10 +158,16 @@ def apply_nvdcheck_labeling(
 
     Behavior:
         - If NVD data cannot be loaded, the function is a no-op.
-        - For each commit with a known CVE and NVD description, functions
-          whose names are mentioned in the description are marked
-          vulnerable (label="vulnerable", labeling_method="nvdcheck"),
-          unless they are already labeled as vulnerable.
+        - For each commit with a known CVE and NVD description:
+            (1) Functions whose *function names* are mentioned in the
+                description are marked vulnerable
+                (label="vulnerable", labeling_method="nvdcheck").
+            (2) If a file name is mentioned in the description and the
+                commit changes exactly ONE function in that file, that
+                function is also marked vulnerable
+                (label="vulnerable", labeling_method="nvdcheck_file").
+          Existing vulnerable labels (e.g., from OneFunc) are always
+          preserved and not overwritten.
     """
     if "commit_id" not in df.columns or "cve_id" not in df.columns:
         raise ValueError(
@@ -160,8 +198,19 @@ def apply_nvdcheck_labeling(
             df.get("func_after", "").apply(extract_function_name),
         )
 
-    # Process per commit
-    for commit_id, group_idx in df.groupby("commit_id").groups.items():
+    # 选择按 (project, commit_id) 还是仅 commit_id 分组，以便确定仓库。
+    if "project" in df.columns:
+        group_keys = ["project", "commit_id"]
+    else:
+        group_keys = ["commit_id"]
+
+    # Process per commit (and optionally project)
+    for key, group_idx in df.groupby(group_keys).groups.items():
+        if isinstance(key, tuple) and len(key) == 2:
+            project, commit_id = key
+        else:
+            project, commit_id = None, key  # type: ignore[assignment]
+
         idxs = list(group_idx)
         cve_vals = df.loc[idxs, "cve_id"].astype(str)
         cve_candidates = [c for c in cve_vals if c]
@@ -173,6 +222,7 @@ def apply_nvdcheck_labeling(
         if not desc:
             continue
 
+        # --- Rule (1): function name mentioned in NVD description ---
         for idx in idxs:
             # Respect existing vulnerable labels (e.g., from OneFunc)
             if df.at[idx, "label"] == "vulnerable":
@@ -183,5 +233,45 @@ def apply_nvdcheck_labeling(
             if _func_name_mentioned(desc, func_name):
                 df.at[idx, "label"] = "vulnerable"
                 df.at[idx, "labeling_method"] = "nvdcheck"
+
+        # --- Rule (2): file name mentioned & only one function in file ---
+        if "file_path" in df.columns:
+            # 只使用 Git diff 的计数，不再使用 DataFrame 统计
+            file_counts_git: Dict[str, int] = {}
+            repo_path = None
+            if project is not None and GIT_REPOS:
+                repo_path = GIT_REPOS.get(str(project))
+            elif project is None and len(GIT_REPOS) == 1:
+                # 没有 project 列时，若只有一个仓库则使用它
+                repo_path = next(iter(GIT_REPOS.values()))
+
+            if repo_path and get_changed_function_counts is not None:
+                try:
+                    file_counts_git = get_changed_function_counts(
+                        repo_path, str(commit_id)
+                    )  # type: ignore[call-arg]
+                except Exception:
+                    file_counts_git = {}
+
+            # 使用 Git 计数，若 Git 不可用则跳过该规则
+            if not file_counts_git:
+                continue
+
+            for idx in idxs:
+                # Skip if already labeled vulnerable by previous rules
+                if df.at[idx, "label"] == "vulnerable":
+                    continue
+                fpath = df.at[idx, "file_path"]
+                if not isinstance(fpath, str) or not fpath:
+                    continue
+                if file_counts_git.get(fpath, 0) != 1:
+                    # Need exactly one function changed in this file (from Git)
+                    continue
+                if _filename_mentioned(desc, fpath):
+                    df.at[idx, "label"] = "vulnerable"
+                    # Do not overwrite an existing labeling_method if any
+                    lm = df.at[idx, "labeling_method"]
+                    if not isinstance(lm, str) or not lm:
+                        df.at[idx, "labeling_method"] = "nvdcheck_file"
 
     return df
