@@ -41,6 +41,7 @@ def load_nvd_descriptions(nvd_path: str) -> Dict[str, str]:
     """Load NVD CVE descriptions from a JSON file.
 
     The JSON file is expected to be either:
+      - NVD API 2.0 format: {"vulnerabilities": [{"cve": {"id": "...", "descriptions": [...]}}]}
       - A dict: {"CVE-XXXX-YYYY": {"description": "..."}, ...}
       - A list of objects, each containing fields like
         {"cve_id": "CVE-...", "description": "..."}
@@ -56,7 +57,34 @@ def load_nvd_descriptions(nvd_path: str) -> Dict[str, str]:
         return {}
 
     desc_map: Dict[str, str] = {}
+    
+    # Handle NVD API 2.0 format
+    if isinstance(data, dict) and "vulnerabilities" in data:
+        for vuln_item in data.get("vulnerabilities", []):
+            if not isinstance(vuln_item, dict):
+                continue
+            cve_data = vuln_item.get("cve", {})
+            if not isinstance(cve_data, dict):
+                continue
+            
+            cve_id = cve_data.get("id", "")
+            if not cve_id:
+                continue
+            
+            # Extract English description
+            descriptions = cve_data.get("descriptions", [])
+            desc = ""
+            for desc_item in descriptions:
+                if isinstance(desc_item, dict) and desc_item.get("lang") == "en":
+                    desc = desc_item.get("value", "")
+                    break
+            
+            if desc:
+                desc_map[cve_id.upper()] = desc
+        
+        return desc_map
 
+    # Legacy format handling
     if isinstance(data, dict):
         for cve, val in data.items():
             if isinstance(val, dict):

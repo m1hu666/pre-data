@@ -1,0 +1,1 @@
+{"cve_id": "CVE-2018-18855", "language": "SCALA", "date": "September 30, 2025", "resources": ["https://github.com/spray/spray-json", "https://github.com/spray/spray-json/pull/284"], "CWEs": ["CWE-400"], "cvss": "7.5", "q_id": 7, "missing_fields": []}

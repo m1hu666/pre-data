@@ -1,0 +1,1 @@
+{"cve_id": "CVE-2024-12224", "language": "RUST", "date": "May 29, 2025", "resources": ["https://github.com/servo/rust-url"], "CWEs": ["CWE-1289", "CWE-697"], "cvss": "4.8", "q_id": 33, "missing_fields": []}

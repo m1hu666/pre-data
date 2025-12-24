@@ -1,0 +1,8 @@
+{"cve_id": "CVE-2024-8296", "language": null, "date": "August 29, 2024", "resources": ["https://github.com/liufee/cms"], "CWEs": ["CWE-434"], "cvss": "6.3", "q_id": 34, "missing_fields": ["language"]}
+{"cve_id": "CVE-2024-8295", "language": null, "date": "August 29, 2024", "resources": ["https://github.com/liufee/cms"], "CWEs": ["CWE-434"], "cvss": "6.3", "q_id": 35, "missing_fields": ["language"]}
+{"cve_id": "CVE-2024-8294", "language": null, "date": "August 29, 2024", "resources": ["https://github.com/liufee/cms"], "CWEs": ["CWE-434"], "cvss": "6.3", "q_id": 36, "missing_fields": ["language"]}
+{"cve_id": "CVE-2024-8181", "language": null, "date": "August 27, 2024", "resources": ["https://github.com/FlowiseAI/Flowise"], "CWEs": ["CWE-287", "CWE-285"], "cvss": "9.8", "q_id": 85, "missing_fields": ["language"]}
+{"cve_id": "CVE-2024-8182", "language": null, "date": "August 27, 2024", "resources": ["https://github.com/FlowiseAI/Flowise"], "CWEs": ["CWE-400"], "cvss": "7.5", "q_id": 86, "missing_fields": ["language"]}
+{"cve_id": "CVE-2024-42040", "language": "C", "date": "August 22, 2024", "resources": ["https://github.com/u-boot/u-boot/tags"], "CWEs": [], "cvss": "5.5", "q_id": 137, "missing_fields": ["CWEs"]}
+{"cve_id": "CVE-2024-44070", "language": "C", "date": "August 18, 2024", "resources": ["https://github.com/FRRouting/frr/pull/16497"], "CWEs": [], "cvss": "9.8", "q_id": 258, "missing_fields": ["CWEs"]}
+{"cve_id": "CVE-2024-37015", "language": null, "date": "August 12, 2024", "resources": ["https://github.com/AdaCore/aws"], "CWEs": ["CWE-297"], "cvss": "7.4", "q_id": 336, "missing_fields": ["language"]}

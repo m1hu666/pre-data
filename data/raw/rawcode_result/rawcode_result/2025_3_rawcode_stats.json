@@ -1,0 +1,22 @@
+{
+  "total_files_to_download": 7,
+  "successful_downloads": 7,
+  "failed_downloads": 0,
+  "skipped_files": 0,
+  "retry_success": 0,
+  "error_types": {},
+  "total_patches_processed": 3,
+  "total_files_processed": 7,
+  "verified_files_count": 7,
+  "processed_files_count": 7,
+  "success_rate": 100.0,
+  "verified_files": [
+    "https://github.com/yiisoft/yii2/raw/628d406bfafb80fc32147837888c0057d89a021e/framework%2Fbase%2FComponent.php",
+    "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fweb%2FErrorHandler.php",
+    "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/tests%2Fframework%2Fweb%2FErrorHandlerTest.php",
+    "https://github.com/yiisoft/yii2/raw/628d406bfafb80fc32147837888c0057d89a021e/framework%2FCHANGELOG.md",
+    "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2FCHANGELOG.md",
+    "https://github.com/LibreOffice/core/raw/a5fe0bea138c5b32268a5cd0093908909d8bc013/xmlsecurity%2Fsource%2Fxmlsec%2Fmscrypt%2Fsecurityenvironment_mscryptimpl.cxx",
+    "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fbase%2FComponent.php"
+  ]
+}

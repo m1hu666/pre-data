@@ -1,0 +1,4 @@
+https://api.github.com/repos/ParisNeo/lollms/commits/0e52d59a06b7f05e3b2611ce7b053fafa44143a9
+https://api.github.com/repos/lunary-ai/lunary/commits/14078c1d2b8766075bf655f187ece24c7a787776
+https://api.github.com/repos/parisneo/lollms/commits/7ebe08da7e0026b155af4f7be1d6417bc64cf02f
+https://api.github.com/repos/mybb/mybb/commits/450259e501b94c9d483efb167cb2bf875605e111.patch

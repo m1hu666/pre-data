@@ -1,0 +1,8 @@
+https://api.github.com/repos/lunary-ai/lunary/commits/a39837d7c49936a0c435d241f37ca2ea7904d2cd
+https://api.github.com/repos/parisneo/lollms/commits/328b960a0de2097e13654ac752253e9541521ddd
+https://api.github.com/repos/lunary-ai/lunary/commits/88b55b01fcbab0fbbc5b8032a38d0345af98ecfa
+https://api.github.com/repos/lunary-ai/lunary/commits/8f563c77d8614a72980113f530c7a9ec15a5f8d5
+https://api.github.com/repos/parisneo/lollms/commits/28ee567a9a120967215ff19b96ab7515ce469620
+https://api.github.com/repos/ParisNeo/lollms/commits/aeace796d861e922133b769710019608a6363264
+https://api.github.com/repos/ltworf/weborf/pull/88/commits/7057d254b734dfc9cfb58983f901aa6ec3c94fd4
+https://api.github.com/repos/miraheze/DataDump/commits/601688ee8e8808a23b102fa305b178f27cbd226d.patch

@@ -1,0 +1,110 @@
+[
+    {
+        "query_url": "https://api.github.com/repos/LibreOffice/core/commits/a5fe0bea138c5b32268a5cd0093908909d8bc013",
+        "url": "https://api.github.com/repos/LibreOffice/core/commits/a5fe0bea138c5b32268a5cd0093908909d8bc013",
+        "html_url": "https://github.com/LibreOffice/core/commit/a5fe0bea138c5b32268a5cd0093908909d8bc013",
+        "message": "default to CertificateValidity::INVALID\n\nso if CertGetCertificateChain fails we don't want validity to be\ncss::security::CertificateValidity::VALID which is what the old default\nof 0 equates to\n\nnotably\n\ncommit 1e0bc66d16aee28ce8bd9582ea32178c63841902\nDate:   Thu Nov 5 16:55:26 2009 +0100\n\n    jl137:  #103420# better logging\n\nturned the nss equivalent of SecurityEnvironment_NssImpl::verifyCertificate\nfrom 0 to CertificateValidity::INVALID like this change does\n\nChange-Id: I5350dbc22d1b9b378da2976d3b0abd728f1f4c27\nReviewed-on: https://gerrit.libreoffice.org/c/core/+/110560\nTested-by: Jenkins\nReviewed-by: Miklos Vajna <vmiklos@collabora.com>",
+        "files": [
+            {
+                "sha": "4f16dc5707ca9bdf4f49346d649cd4f33e12751f",
+                "filename": "xmlsecurity/source/xmlsec/mscrypt/securityenvironment_mscryptimpl.cxx",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4,
+                "blob_url": "https://github.com/LibreOffice/core/blob/a5fe0bea138c5b32268a5cd0093908909d8bc013/xmlsecurity%2Fsource%2Fxmlsec%2Fmscrypt%2Fsecurityenvironment_mscryptimpl.cxx",
+                "raw_url": "https://github.com/LibreOffice/core/raw/a5fe0bea138c5b32268a5cd0093908909d8bc013/xmlsecurity%2Fsource%2Fxmlsec%2Fmscrypt%2Fsecurityenvironment_mscryptimpl.cxx",
+                "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/xmlsecurity%2Fsource%2Fxmlsec%2Fmscrypt%2Fsecurityenvironment_mscryptimpl.cxx?ref=a5fe0bea138c5b32268a5cd0093908909d8bc013",
+                "patch": "@@ -753,7 +753,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl::verifyCertificate(\n     const uno::Reference< css::security::XCertificate >& aCert,\n     const uno::Sequence< uno::Reference< css::security::XCertificate > >& seqCerts)\n {\n-    sal_Int32 validity = 0;\n+    sal_Int32 validity = css::security::CertificateValidity::INVALID;\n     PCCERT_CHAIN_CONTEXT pChainContext = nullptr;\n     PCCERT_CONTEXT pCertContext = nullptr;\n \n@@ -897,7 +897,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl::verifyCertificate(\n         }\n         else\n         {\n-            SAL_INFO(\"xmlsecurity.xmlsec\", \"CertGetCertificateChaine failed.\");\n+            SAL_INFO(\"xmlsecurity.xmlsec\", \"CertGetCertificateChain failed.\");\n         }\n     }\n "
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/yiisoft/yii2/commits/628d406bfafb80fc32147837888c0057d89a021e",
+        "url": "https://api.github.com/repos/yiisoft/yii2/commits/628d406bfafb80fc32147837888c0057d89a021e",
+        "html_url": "https://github.com/yiisoft/yii2/commit/628d406bfafb80fc32147837888c0057d89a021e",
+        "message": "Merge pull request from GHSA-cjcc-p67m-7qxm\n\n* Fix: Unsafe Reflection in base Component class\n\n* Fix style for consistency\n\n* add changelog entry\n\n* Fix wrong logic\n\n* Fix exception message\n\n* Update framework/CHANGELOG.md\n\n---------\n\nCo-authored-by: Stefano Mtangoo <stefano@hosannahighertech.co.tz>\nCo-authored-by: Alexander Makarov <sam@rmcreative.ru>",
+        "files": [
+            {
+                "sha": "80e5398d164ad52a23338e09271412df2737862b",
+                "filename": "framework/CHANGELOG.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/628d406bfafb80fc32147837888c0057d89a021e/framework%2FCHANGELOG.md",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/628d406bfafb80fc32147837888c0057d89a021e/framework%2FCHANGELOG.md",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/framework%2FCHANGELOG.md?ref=628d406bfafb80fc32147837888c0057d89a021e",
+                "patch": "@@ -27,11 +27,13 @@ Yii Framework 2 Change Log\n - New #20137: Added `yii\\caching\\CallbackDependency` to allow using a callback to determine if a cache dependency is still valid (laxity7)\n - Enh #20134: Raise minimum `PHP` version to `7.3` (@terabytesoftw)\n - Bug #20141: Update `ezyang/htmlpurifier` dependency to version `4.17` (@terabytesoftw)\n+- CVE-2024-4990: Fix Unsafe Reflection in base Component class (@mtangoo)\n - Bug #19817: Add MySQL Query `addCheck()` and `dropCheck()` (@bobonov)\n - Bug #20165: Adjust pretty name of closures for PHP 8.4 compatibility (@staabm)\n - Bug #19855: Fixed `yii\\validators\\FileValidator` to not limit some of its rules only to array attribute (bizley)\n - Enh: #20171: Support JSON columns for MariaDB 10.4 or higher (@terabytesoftw)\n \n+\n 2.0.49.2 October 12, 2023\n -------------------------\n "
+            },
+            {
+                "sha": "ad5eff141a7bce3b98098f328d1fc35c98c31685",
+                "filename": "framework/base/Component.php",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/628d406bfafb80fc32147837888c0057d89a021e/framework%2Fbase%2FComponent.php",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/628d406bfafb80fc32147837888c0057d89a021e/framework%2Fbase%2FComponent.php",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/framework%2Fbase%2FComponent.php?ref=628d406bfafb80fc32147837888c0057d89a021e",
+                "patch": "@@ -189,7 +189,15 @@ public function __set($name, $value)\n         } elseif (strncmp($name, 'as ', 3) === 0) {\n             // as behavior: attach behavior\n             $name = trim(substr($name, 3));\n-            $this->attachBehavior($name, $value instanceof Behavior ? $value : Yii::createObject($value));\n+            if ($value instanceof Behavior) {\n+                $this->attachBehavior($name, $value);\n+            } elseif (isset($value['class']) && is_subclass_of($value['class'], Behavior::class, true)) {\n+                $this->attachBehavior($name, Yii::createObject($value));\n+            } elseif (is_string($value) && is_subclass_of($value, Behavior::class, true)) {\n+                $this->attachBehavior($name, Yii::createObject($value));\n+            } else {\n+                throw new InvalidConfigException('Class is not of type ' . Behavior::class . ' or its subclasses');\n+            }\n \n             return;\n         }"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/yiisoft/yii2/commits/62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+        "url": "https://api.github.com/repos/yiisoft/yii2/commits/62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+        "html_url": "https://github.com/yiisoft/yii2/commit/62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+        "message": "CVE-2024-32877, Fix Reflected XSS in Debug mode, CVE-2024-4990, Fix Unsafe Reflection in base Component class",
+        "files": [
+            {
+                "sha": "7fbb8d92515f0227b5ad8f755514d2b99a58e5e5",
+                "filename": "framework/CHANGELOG.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2FCHANGELOG.md",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2FCHANGELOG.md",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/framework%2FCHANGELOG.md?ref=62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+                "patch": "@@ -1,6 +1,13 @@\n Yii Framework 2 Change Log\n ==========================\n \n+2.0.49.4 June 4, 2024\n+---------------------\n+\n+- Bug: CVE-2024-32877, Fix Reflected XSS in Debug mode (Antiphishing)\n+- Bug: CVE-2024-4990, Fix Unsafe Reflection in base Component class (@mtangoo)\n+\n+\n 2.0.49.3 October 31, 2023\n -------------------------\n "
+            },
+            {
+                "sha": "e1b94c8ce0fb6ee81d3ddff5f6da2b56950a4662",
+                "filename": "framework/base/Component.php",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fbase%2FComponent.php",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fbase%2FComponent.php",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/framework%2Fbase%2FComponent.php?ref=62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+                "patch": "@@ -188,7 +188,15 @@ public function __set($name, $value)\n         } elseif (strncmp($name, 'as ', 3) === 0) {\n             // as behavior: attach behavior\n             $name = trim(substr($name, 3));\n-            $this->attachBehavior($name, $value instanceof Behavior ? $value : Yii::createObject($value));\n+            if ($value instanceof Behavior) {\n+                $this->attachBehavior($name, $value);\n+            } elseif (isset($value['class']) && is_subclass_of($value['class'], 'yii\\base\\Behavior', true)) {\n+                $this->attachBehavior($name, Yii::createObject($value));\n+            } elseif (is_string($value) && is_subclass_of($value, 'yii\\base\\Behavior', true)) {\n+                $this->attachBehavior($name, Yii::createObject($value));\n+            } else {\n+                throw new InvalidConfigException('Class is not of type yii\\base\\Behavior or its subclasses');\n+            }\n \n             return;\n         }"
+            },
+            {
+                "sha": "94e03f975694c8aa99cd7ae39cf500a25e182b73",
+                "filename": "framework/web/ErrorHandler.php",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fweb%2FErrorHandler.php",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/framework%2Fweb%2FErrorHandler.php",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/framework%2Fweb%2FErrorHandler.php?ref=62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+                "patch": "@@ -180,7 +180,7 @@ protected function convertExceptionToArray($exception)\n      */\n     public function htmlEncode($text)\n     {\n-        return htmlspecialchars($text, ENT_NOQUOTES | ENT_SUBSTITUTE | ENT_HTML5, 'UTF-8');\n+        return htmlspecialchars($text, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5, 'UTF-8');\n     }\n \n     /**"
+            },
+            {
+                "sha": "07ab23ade22a2d4d4f00aee724ef88ccc526ff80",
+                "filename": "tests/framework/web/ErrorHandlerTest.php",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8,
+                "blob_url": "https://github.com/yiisoft/yii2/blob/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/tests%2Fframework%2Fweb%2FErrorHandlerTest.php",
+                "raw_url": "https://github.com/yiisoft/yii2/raw/62d081f18c3602d09e7d075bba3a0ca5c313f0b4/tests%2Fframework%2Fweb%2FErrorHandlerTest.php",
+                "contents_url": "https://api.github.com/repos/yiisoft/yii2/contents/tests%2Fframework%2Fweb%2FErrorHandlerTest.php?ref=62d081f18c3602d09e7d075bba3a0ca5c313f0b4",
+                "patch": "@@ -85,19 +85,19 @@ public function dataHtmlEncode()\n         return [\n             [\n                 \"a \\t=<>&\\\"'\\x80`\\n\",\n-                \"a \\t=&lt;&gt;&amp;\\\"'\ufffd`\\n\",\n+                \"a \\t=&lt;&gt;&amp;&quot;&apos;\ufffd`\\n\",\n             ],\n             [\n                 '<b>test</b>',\n                 '&lt;b&gt;test&lt;/b&gt;',\n             ],\n             [\n                 '\"hello\"',\n-                '\"hello\"',\n+                '&quot;hello&quot;',\n             ],\n             [\n                 \"'hello world'\",\n-                \"'hello world'\",\n+                \"&apos;hello world&apos;\",\n             ],\n             [\n                 'Chip&amp;Dale',\n@@ -130,7 +130,7 @@ public function testHtmlEncodeWithUnicodeSequence()\n         $handler = Yii::$app->getErrorHandler();\n \n         $text = \"a \\t=<>&\\\"'\\x80\\u{20bd}`\\u{000a}\\u{000c}\\u{0000}\";\n-        $expected = \"a \\t=&lt;&gt;&amp;\\\"'\ufffd\u20bd`\\n\\u{000c}\\u{0000}\";\n+        $expected = \"a \\t=&lt;&gt;&amp;&quot;&apos;\ufffd\u20bd`\\n\\u{000c}\\u{0000}\";\n \n         $this->assertSame($expected, $handler->htmlEncode($text));\n     }"
+            }
+        ]
+    }
+]

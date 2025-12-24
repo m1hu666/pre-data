@@ -1,0 +1,19 @@
+{
+  "total_files_to_download": 4,
+  "successful_downloads": 4,
+  "failed_downloads": 0,
+  "skipped_files": 0,
+  "retry_success": 0,
+  "error_types": {},
+  "total_patches_processed": 1,
+  "total_files_processed": 4,
+  "verified_files_count": 4,
+  "processed_files_count": 4,
+  "success_rate": 100.0,
+  "verified_files": [
+    "https://github.com/rancher/steve/raw/2175e090fe4b1e603a54e1cdc5148a2b1c11b4d9/pkg%2Fstores%2Fsqlpartition%2Fpartitioner.go",
+    "https://github.com/rancher/steve/raw/2175e090fe4b1e603a54e1cdc5148a2b1c11b4d9/pkg%2Fstores%2Fproxy%2Frbac_store.go",
+    "https://github.com/rancher/steve/raw/2175e090fe4b1e603a54e1cdc5148a2b1c11b4d9/pkg%2Fstores%2Fproxy%2Frbac_store_test.go",
+    "https://github.com/rancher/steve/raw/2175e090fe4b1e603a54e1cdc5148a2b1c11b4d9/pkg%2Fstores%2Fsqlpartition%2Fpartitioner_test.go"
+  ]
+}

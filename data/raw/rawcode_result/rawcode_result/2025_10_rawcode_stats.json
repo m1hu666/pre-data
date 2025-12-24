@@ -1,0 +1,16 @@
+{
+  "total_files_to_download": 1,
+  "successful_downloads": 1,
+  "failed_downloads": 0,
+  "skipped_files": 0,
+  "retry_success": 0,
+  "error_types": {},
+  "total_patches_processed": 1,
+  "total_files_processed": 1,
+  "verified_files_count": 1,
+  "processed_files_count": 1,
+  "success_rate": 100.0,
+  "verified_files": [
+    "https://github.com/xmlunit/xmlunit/raw/b81d48b71dfd2868bdfc30a3e17ff973f32bc15b/xmlunit-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fxmlunit%2Futil%2FTransformerFactoryConfigurer.java"
+  ]
+}

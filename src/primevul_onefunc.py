@@ -21,10 +21,11 @@ import pandas as pd
 
 try:
     from config import GIT_REPOS  # type: ignore
-    from git_diff_utils import get_total_changed_functions
+    from git_diff_utils import get_total_changed_functions, estimate_changed_functions_total
 except Exception:  # pragma: no cover - optional dependency
     GIT_REPOS = {}
     get_total_changed_functions = None  # type: ignore
+    estimate_changed_functions_total = None  # type: ignore
 
 
 def apply_onefunc_labeling(
@@ -121,5 +122,64 @@ def apply_onefunc_labeling(
             # 如果之前未设置 labeling_method,则标记为 onefunc_git
             if not df.at[idx, "labeling_method"]:
                 df.at[idx, "labeling_method"] = "onefunc_git"
+
+    return df
+
+
+def apply_onefunc_labeling_from_patch(
+    df: pd.DataFrame,
+    patch_column: str = "patch",
+) -> pd.DataFrame:
+    """Apply ONEFUNC labeling using provided unified diff text in the dataset.
+
+    This variant does NOT touch Git. It expects each row to carry a unified
+    diff text (patch) and determines whether exactly ONE function was changed
+    in that patch by parsing hunk headers.
+
+    Expected columns in `df`:
+        - patch: unified diff text (string)
+        - is_security_related: optional bool; defaults to True
+
+    Added/updated columns:
+        - label: "vulnerable" when total changed functions == 1
+        - labeling_method: "onefunc_patch" for functions labeled here
+        - changed_functions_total: integer count per row (for transparency)
+
+    Returns a new DataFrame with labels applied.
+    """
+    if patch_column not in df.columns:
+        raise ValueError(f"apply_onefunc_labeling_from_patch: DataFrame must have '{patch_column}' column")
+
+    df = df.copy()
+
+    if "is_security_related" not in df.columns:
+        df["is_security_related"] = True
+
+    if "label" not in df.columns:
+        df["label"] = None
+    if "labeling_method" not in df.columns:
+        df["labeling_method"] = None
+
+    # When helper missing, fall back to 0
+    if estimate_changed_functions_total is None:
+        print("Warning: estimate_changed_functions_total not available; skipping ONEFUNC-from-patch.")
+        df["changed_functions_total"] = 0
+        return df
+
+    totals = []
+    for _, row in df.iterrows():
+        patch_text = str(row.get(patch_column, "") or "")
+        try:
+            total = estimate_changed_functions_total(patch_text)
+        except Exception:
+            total = 0
+        totals.append(total)
+    df["changed_functions_total"] = totals
+
+    sec_mask = df["is_security_related"].astype(bool)
+    onefunc_mask = (df["changed_functions_total"] == 1) & sec_mask
+
+    df.loc[onefunc_mask, "label"] = "vulnerable"
+    df.loc[onefunc_mask & df["labeling_method"].isna(), "labeling_method"] = "onefunc_patch"
 
     return df

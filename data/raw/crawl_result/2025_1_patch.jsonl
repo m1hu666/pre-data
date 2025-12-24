@@ -1,0 +1,650 @@
+[
+    {
+        "query_url": "https://api.github.com/repos/juju/juju/commits/ef803e2a13692d355b784b7da8b4b1f01dab1556",
+        "url": "https://api.github.com/repos/juju/juju/commits/ef803e2a13692d355b784b7da8b4b1f01dab1556",
+        "html_url": "https://github.com/juju/juju/commit/ef803e2a13692d355b784b7da8b4b1f01dab1556",
+        "message": "Check backup filename when downloading",
+        "files": [
+            {
+                "sha": "421ff63817144f2dd1ef300d2f2172590327917c",
+                "filename": "apiserver/apiserver.go",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fapiserver.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fapiserver.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Fapiserver.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -864,8 +864,9 @@ func (srv *Server) endpoints() ([]apihttp.Endpoint, error) {\n \t\tpattern: modelRoutePrefix + \"/units/:unit/resources/:resource\",\n \t\thandler: unitResourcesHandler,\n \t}, {\n-\t\tpattern: modelRoutePrefix + \"/backups\",\n-\t\thandler: backupHandler,\n+\t\tpattern:    modelRoutePrefix + \"/backups\",\n+\t\thandler:    backupHandler,\n+\t\tauthorizer: controllerAdminAuthorizer,\n \t}, {\n \t\tpattern:    \"/migrate/charms\",\n \t\thandler:    migrateCharmsHTTPHandler,"
+            },
+            {
+                "sha": "5ea1b37ad5229c17f1fd7c38b2049884bc0cb672",
+                "filename": "apiserver/backup.go",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 1,
+                "changes": 21,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fbackup.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fbackup.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Fbackup.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -8,6 +8,7 @@ import (\n \t\"io\"\n \t\"io/ioutil\"\n \t\"net/http\"\n+\t\"os\"\n \n \t\"github.com/juju/errors\"\n \n@@ -41,7 +42,25 @@ func (h *backupHandler) ServeHTTP(resp http.ResponseWriter, req *http.Request) {\n \tswitch req.Method {\n \tcase \"GET\":\n \t\tlogger.Infof(\"handling backups download request\")\n-\t\tid, err := h.download(newBackups(), resp, req)\n+\t\tmodel, err := st.Model()\n+\t\tif err != nil {\n+\t\t\th.sendError(resp, err)\n+\t\t\treturn\n+\t\t}\n+\t\tmodelConfig, err := model.ModelConfig()\n+\t\tif err != nil {\n+\t\t\th.sendError(resp, err)\n+\t\t\treturn\n+\t\t}\n+\t\tbackupDir := modelConfig.BackupDir()\n+\t\tif backupDir == \"\" {\n+\t\t\tbackupDir = os.TempDir()\n+\t\t}\n+\n+\t\tpaths := &backups.Paths{\n+\t\t\tBackupDir: backupDir,\n+\t\t}\n+\t\tid, err := h.download(newBackups(paths), resp, req)\n \t\tif err != nil {\n \t\t\th.sendError(resp, err)\n \t\t\treturn"
+            },
+            {
+                "sha": "1cf7b078e199b9bc741ebfa431bae48b28daad2a",
+                "filename": "apiserver/backup_test.go",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fbackup_test.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Fbackup_test.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Fbackup_test.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -37,7 +37,7 @@ func (s *backupsSuite) SetUpTest(c *gc.C) {\n \ts.backupURL = s.server.URL + fmt.Sprintf(\"/model/%s/backups\", s.State.ModelUUID())\n \ts.fake = &backupstesting.FakeBackups{}\n \ts.PatchValue(apiserver.NewBackups,\n-\t\tfunc() backups.Backups {\n+\t\tfunc(path *backups.Paths) backups.Backups {\n \t\t\treturn s.fake\n \t\t},\n \t)\n@@ -98,7 +98,10 @@ func (s *backupsSuite) TestAuthRequiresClientNotMachine(c *gc.C) {\n \t\tURL:      s.backupURL,\n \t\tNonce:    \"fake_nonce\",\n \t})\n-\ts.assertErrorResponse(c, resp, http.StatusInternalServerError, \"tag kind machine not valid\")\n+\tc.Assert(resp.StatusCode, gc.Equals, http.StatusForbidden)\n+\tbody, err := ioutil.ReadAll(resp.Body)\n+\tc.Assert(err, jc.ErrorIsNil)\n+\tc.Assert(string(body), gc.Equals, \"authorization failed: machine 0 is not a user\\n\")\n \n \t// Now try a user login.\n \tresp = s.sendHTTPRequest(c, apitesting.HTTPRequestParams{Method: \"POST\", URL: s.backupURL})"
+            },
+            {
+                "sha": "1a14249eea3015f97c9ed12fdfc6694935575cd6",
+                "filename": "apiserver/facades/client/backups/backups.go",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -4,6 +4,8 @@\n package backups\n \n import (\n+\t\"os\"\n+\n \t\"github.com/juju/errors\"\n \t\"github.com/juju/mgo/v2\"\n \t\"github.com/juju/names/v4\"\n@@ -109,6 +111,9 @@ func NewAPI(backend Backend, resources facade.Resources, authorizer facade.Autho\n \t\treturn nil, errors.Trace(err)\n \t}\n \tbackupDir := modelConfig.BackupDir()\n+\tif backupDir == \"\" {\n+\t\tbackupDir = os.TempDir()\n+\t}\n \n \tpaths := backups.Paths{\n \t\tBackupDir: backupDir,"
+            },
+            {
+                "sha": "77f8c575ff5a9d17f3043221c8ae238c1e524eab",
+                "filename": "apiserver/facades/client/backups/backups_test.go",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups_test.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups_test.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Ffacades%2Fclient%2Fbackups%2Fbackups_test.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -78,7 +78,7 @@ func (s *backupsSuite) setBackups(c *gc.C, meta *backups.Metadata, err string) *\n \t\tfake.Error = errors.Errorf(err)\n \t}\n \ts.PatchValue(backupsAPI.NewBackups,\n-\t\tfunc() backups.Backups {\n+\t\tfunc(paths *backups.Paths) backups.Backups {\n \t\t\treturn &fake\n \t\t},\n \t)"
+            },
+            {
+                "sha": "71e2909b0a476809b950bb1b235fc593befa5e8f",
+                "filename": "apiserver/facades/client/backups/create.go",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fcreate.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/apiserver%2Ffacades%2Fclient%2Fbackups%2Fcreate.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/apiserver%2Ffacades%2Fclient%2Fbackups%2Fcreate.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -33,7 +33,7 @@ func (a *API) Create(args params.BackupsCreateArgs) (params.BackupsMetadataResul\n }\n \n func (a *APIv2) Create(args params.BackupsCreateArgs) (params.BackupsMetadataResult, error) {\n-\tbackupsMethods := newBackups()\n+\tbackupsMethods := newBackups(a.paths)\n \n \tsession := a.backend.MongoSession().Copy()\n \tdefer session.Close()\n@@ -88,7 +88,7 @@ func (a *APIv2) Create(args params.BackupsCreateArgs) (params.BackupsMetadataRes\n \t}\n \tmeta.Controller.HANodes = int64(len(nodes))\n \n-\tfileName, err := backupsMethods.Create(meta, a.paths, dbInfo)\n+\tfileName, err := backupsMethods.Create(meta, dbInfo)\n \tif err != nil {\n \t\treturn result, errors.Trace(err)\n \t}"
+            },
+            {
+                "sha": "c2ed6ca01c077c5b9653d37f13cae5ba333b0c6d",
+                "filename": "state/backups/backups.go",
+                "status": "modified",
+                "additions": 41,
+                "deletions": 11,
+                "changes": 52,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Fbackups.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Fbackups.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/state%2Fbackups%2Fbackups.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -6,8 +6,10 @@ package backups\n import (\n \t\"fmt\"\n \t\"io\"\n+\t\"io/fs\"\n \t\"os\"\n \t\"path/filepath\"\n+\t\"strings\"\n \t\"time\"\n \n \t\"github.com/dustin/go-humanize\"\n@@ -46,17 +48,21 @@ var (\n type Backups interface {\n \t// Create creates a new juju backup archive. It updates\n \t// the provided metadata.\n-\tCreate(meta *Metadata, paths *Paths, dbInfo *DBInfo) (string, error)\n+\tCreate(meta *Metadata, dbInfo *DBInfo) (string, error)\n \n \t// Get returns the metadata and specified archive file.\n \tGet(fileName string) (*Metadata, io.ReadCloser, error)\n }\n \n-type backups struct{}\n+type backups struct {\n+\tpaths *Paths\n+}\n \n // NewBackups creates a new Backups value using the FileStorage provided.\n-func NewBackups() Backups {\n-\treturn &backups{}\n+func NewBackups(paths *Paths) Backups {\n+\treturn &backups{\n+\t\tpaths: paths,\n+\t}\n }\n \n func totalDirSize(path string) (int64, error) {\n@@ -75,7 +81,7 @@ func totalDirSize(path string) (int64, error) {\n \n // Create creates and stores a new juju backup archive (based on arguments)\n // and updates the provided metadata.  A filename to download the backup is provided.\n-func (b *backups) Create(meta *Metadata, paths *Paths, dbInfo *DBInfo) (string, error) {\n+func (b *backups) Create(meta *Metadata, dbInfo *DBInfo) (string, error) {\n \t// TODO(fwereade): 2016-03-17 lp:1558657\n \tmeta.Started = time.Now().UTC()\n \n@@ -90,7 +96,7 @@ func (b *backups) Create(meta *Metadata, paths *Paths, dbInfo *DBInfo) (string,\n \t}\n \n \t// Create the archive.\n-\tfilesToBackUp, err := getFilesToBackUp(\"\", paths)\n+\tfilesToBackUp, err := getFilesToBackUp(\"\", b.paths)\n \tif err != nil {\n \t\treturn \"\", errors.Annotate(err, \"while listing files to back up\")\n \t}\n@@ -108,11 +114,7 @@ func (b *backups) Create(meta *Metadata, paths *Paths, dbInfo *DBInfo) (string,\n \tlogger.Infof(\"backing up %dMiB (files) and %dMiB (database) = %dMiB\",\n \t\ttotalFizeSizesMiB, dbInfo.ApproxSizeMB, int(totalFizeSizesMiB)+dbInfo.ApproxSizeMB)\n \n-\tdestinationDir := paths.BackupDir\n-\tif destinationDir == \"\" {\n-\t\tdestinationDir = os.TempDir()\n-\t}\n-\n+\tdestinationDir := b.paths.BackupDir\n \tif _, err := os.Stat(destinationDir); err != nil {\n \t\tif os.IsNotExist(err) {\n \t\t\treturn \"\", errors.Errorf(\"backup destination directory %q does not exist\", destinationDir)\n@@ -171,8 +173,36 @@ func (b *backups) Create(meta *Metadata, paths *Paths, dbInfo *DBInfo) (string,\n \treturn result.filename, nil\n }\n \n+func isValidFilepath(root string, filePath string) (bool, error) {\n+\tif !filepath.IsAbs(filePath) {\n+\t\treturn false, nil\n+\t}\n+\tif !strings.HasPrefix(filepath.Base(filePath), FilenamePrefix) {\n+\t\treturn false, nil\n+\t}\n+\tresult := false\n+\terr := filepath.WalkDir(root, func(path string, d fs.DirEntry, err error) error {\n+\t\tif d.IsDir() {\n+\t\t\treturn nil\n+\t\t}\n+\t\tif path == filePath {\n+\t\t\tresult = true\n+\t\t\treturn nil\n+\t\t}\n+\t\treturn nil\n+\t})\n+\treturn result, err\n+}\n+\n // Get retrieves the associated metadata and archive file a file on the machine.\n func (b *backups) Get(fileName string) (_ *Metadata, _ io.ReadCloser, err error) {\n+\tvalid, err := isValidFilepath(b.paths.BackupDir, fileName)\n+\tif err != nil {\n+\t\treturn nil, nil, errors.Trace(err)\n+\t}\n+\tif !valid {\n+\t\treturn nil, nil, errors.NotValidf(\"backup file %q\", fileName)\n+\t}\n \tdefer func() {\n \t\t// On success, remove the retrieved file.\n \t\tif err != nil {"
+            },
+            {
+                "sha": "ff847a8bfa1a9513e1ed7bb69607311ed8805ed5",
+                "filename": "state/backups/backups_test.go",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 14,
+                "changes": 33,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Fbackups_test.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Fbackups_test.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/state%2Fbackups%2Fbackups_test.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -9,6 +9,7 @@ import (\n \t\"io/ioutil\"\n \t\"os\"\n \t\"path\"\n+\t\"path/filepath\"\n \n \t\"github.com/dustin/go-humanize\"\n \t\"github.com/juju/collections/set\"\n@@ -24,7 +25,8 @@ import (\n type backupsSuite struct {\n \tbackupstesting.BaseSuite\n \n-\tapi backups.Backups\n+\tpaths *backups.Paths\n+\tapi   backups.Backups\n \n \ttotalDiskMiB     uint64\n \tavailableDiskMiB uint64\n@@ -37,7 +39,11 @@ var _ = gc.Suite(&backupsSuite{}) // Register the suite.\n func (s *backupsSuite) SetUpTest(c *gc.C) {\n \ts.BaseSuite.SetUpTest(c)\n \n-\ts.api = backups.NewBackups()\n+\ts.paths = &backups.Paths{\n+\t\tBackupDir: c.MkDir(),\n+\t\tDataDir:   c.MkDir(),\n+\t}\n+\ts.api = backups.NewBackups(s.paths)\n \ts.PatchValue(backups.AvailableDisk, func(string) uint64 {\n \t\treturn s.availableDiskMiB\n \t})\n@@ -60,7 +66,6 @@ func (s *backupsSuite) checkFailure(c *gc.C, expected string) {\n \t\treturn &fakeDumper{}, nil\n \t})\n \n-\tpaths := backups.Paths{DataDir: \"/var/lib/juju\"}\n \ttargets := set.NewStrings(\"juju\", \"admin\")\n \tdbInfo := backups.DBInfo{\n \t\tAddress: \"a\", Username: \"b\", Password: \"c\",\n@@ -69,20 +74,18 @@ func (s *backupsSuite) checkFailure(c *gc.C, expected string) {\n \tmeta := backupstesting.NewMetadataStarted()\n \tmeta.Notes = \"some notes\"\n \n-\t_, err := s.api.Create(meta, &paths, &dbInfo)\n+\t_, err := s.api.Create(meta, &dbInfo)\n \tc.Check(err, gc.ErrorMatches, expected)\n }\n \n func (s *backupsSuite) TestCreateOkay(c *gc.C) {\n-\tdataDir := c.MkDir()\n-\tbackupDir := c.MkDir()\n \t// Patch the internals.\n \tarchiveFile := ioutil.NopCloser(bytes.NewBufferString(\"<compressed tarball>\"))\n \tresult := backups.NewTestCreateResult(\n \t\tarchiveFile,\n \t\t10,\n \t\t\"<checksum>\",\n-\t\tpath.Join(backupDir, \"test-backup.tar.gz\"))\n+\t\tpath.Join(s.paths.BackupDir, \"test-backup.tar.gz\"))\n \treceived, testCreate := backups.NewTestCreate(result)\n \ts.PatchValue(backups.RunCreate, testCreate)\n \n@@ -99,7 +102,6 @@ func (s *backupsSuite) TestCreateOkay(c *gc.C) {\n \t})\n \n \t// Run the backup.\n-\tpaths := backups.Paths{BackupDir: backupDir, DataDir: dataDir}\n \ttargets := set.NewStrings(\"juju\", \"admin\")\n \tdbInfo := backups.DBInfo{\n \t\tAddress: \"a\", Username: \"b\", Password: \"c\",\n@@ -108,13 +110,13 @@ func (s *backupsSuite) TestCreateOkay(c *gc.C) {\n \tmeta := backupstesting.NewMetadataStarted()\n \tbackupstesting.SetOrigin(meta, \"<model ID>\", \"<machine ID>\", \"<hostname>\")\n \tmeta.Notes = \"some notes\"\n-\tresultFilename, err := s.api.Create(meta, &paths, &dbInfo)\n+\tresultFilename, err := s.api.Create(meta, &dbInfo)\n \tc.Assert(err, jc.ErrorIsNil)\n-\tc.Assert(resultFilename, gc.Equals, path.Join(backupDir, \"test-backup.tar.gz\"))\n+\tc.Assert(resultFilename, gc.Equals, path.Join(s.paths.BackupDir, \"test-backup.tar.gz\"))\n \n \t// Test the call values.\n \tresultBackupDir, filesToBackUp, _ := backups.ExposeCreateArgs(received)\n-\tc.Check(resultBackupDir, gc.Equals, backupDir)\n+\tc.Check(resultBackupDir, gc.Equals, s.paths.BackupDir)\n \tc.Check(filesToBackUp, jc.SameContents, []string{\"<some file>\"})\n \n \tc.Check(receivedDBInfo.Address, gc.Equals, \"a\")\n@@ -198,15 +200,18 @@ func (s *backupsSuite) TestNotEnoughDiskSpaceSmallDisk(c *gc.C) {\n }\n \n func (s *backupsSuite) TestGetFileName(c *gc.C) {\n-\tbackupDir := c.MkDir()\n-\terr := os.MkdirAll(backupDir, 0644)\n+\tbackupSubDir := filepath.Join(s.paths.BackupDir, \"a\", \"b\")\n+\terr := os.MkdirAll(backupSubDir, 0755)\n \tc.Assert(err, jc.ErrorIsNil)\n-\tbackupFilename := path.Join(backupDir, \"test-backup.tar.gz\")\n+\tbackupFilename := path.Join(backupSubDir, \"juju-backup-123.tar.gz\")\n \tbackupFile, err := os.Create(backupFilename)\n \tc.Assert(err, jc.ErrorIsNil)\n \t_, err = backupFile.Write([]byte(\"archive file testing\"))\n \tc.Assert(err, jc.ErrorIsNil)\n \n+\t_, _, err = s.api.Get(\"/etc/hostname\")\n+\tc.Assert(err, gc.ErrorMatches, `backup file \"/etc/hostname\" not valid`)\n+\n \tresultMeta, resultArchive, err := s.api.Get(backupFilename)\n \tc.Assert(err, jc.ErrorIsNil)\n \tdefer resultArchive.Close()"
+            },
+            {
+                "sha": "08db7471e12944cd0240170f149af66d7c507381",
+                "filename": "state/backups/testing/fakes.go",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4,
+                "blob_url": "https://github.com/juju/juju/blob/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Ftesting%2Ffakes.go",
+                "raw_url": "https://github.com/juju/juju/raw/ef803e2a13692d355b784b7da8b4b1f01dab1556/state%2Fbackups%2Ftesting%2Ffakes.go",
+                "contents_url": "https://api.github.com/repos/juju/juju/contents/state%2Fbackups%2Ftesting%2Ffakes.go?ref=ef803e2a13692d355b784b7da8b4b1f01dab1556",
+                "patch": "@@ -31,8 +31,6 @@ type FakeBackups struct {\n \n \t// IDArg holds the ID that was passed in.\n \tIDArg string\n-\t// PathsArg holds the Paths that was passed in.\n-\tPathsArg *backups.Paths\n \t// DBInfoArg holds the ConnInfo that was passed in.\n \tDBInfoArg *backups.DBInfo\n \t// MetaArg holds the backup metadata that was passed in.\n@@ -51,12 +49,10 @@ var _ backups.Backups = (*FakeBackups)(nil)\n // its associated metadata.\n func (b *FakeBackups) Create(\n \tmeta *backups.Metadata,\n-\tpaths *backups.Paths,\n \tdbInfo *backups.DBInfo,\n ) (string, error) {\n \tb.Calls = append(b.Calls, \"Create\")\n \n-\tb.PathsArg = paths\n \tb.DBInfoArg = dbInfo\n \tb.MetaArg = meta\n "
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/LibVNC/libvncserver/commits/54220248886b5001fbbb9fa73c4e1a2cb9413fed",
+        "url": "https://api.github.com/repos/LibVNC/libvncserver/commits/54220248886b5001fbbb9fa73c4e1a2cb9413fed",
+        "html_url": "https://github.com/LibVNC/libvncserver/commit/54220248886b5001fbbb9fa73c4e1a2cb9413fed",
+        "message": "libvncclient/cursor: limit width/height input values\n\nAvoids a possible heap overflow reported by Pavel Cheremushkin\n<Pavel.Cheremushkin@kaspersky.com>.\n\nre #275",
+        "files": [
+            {
+                "sha": "40ffb3b0eaaebb0a4c40fdb4e2de3ce2a7a1758d",
+                "filename": "libvncclient/cursor.c",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5,
+                "blob_url": "https://github.com/LibVNC/libvncserver/blob/54220248886b5001fbbb9fa73c4e1a2cb9413fed/libvncclient%2Fcursor.c",
+                "raw_url": "https://github.com/LibVNC/libvncserver/raw/54220248886b5001fbbb9fa73c4e1a2cb9413fed/libvncclient%2Fcursor.c",
+                "contents_url": "https://api.github.com/repos/LibVNC/libvncserver/contents/libvncclient%2Fcursor.c?ref=54220248886b5001fbbb9fa73c4e1a2cb9413fed",
+                "patch": "@@ -28,6 +28,8 @@\n #define OPER_SAVE     0\n #define OPER_RESTORE  1\n \n+#define MAX_CURSOR_SIZE 1024\n+\n #define RGB24_TO_PIXEL(bpp,r,g,b)                                       \\\n    ((((uint##bpp##_t)(r) & 0xFF) * client->format.redMax + 127) / 255             \\\n     << client->format.redShift |                                              \\\n@@ -54,6 +56,9 @@ rfbBool HandleCursorShape(rfbClient* client,int xhot, int yhot, int width, int h\n   if (width * height == 0)\n     return TRUE;\n \n+  if (width >= MAX_CURSOR_SIZE || height >= MAX_CURSOR_SIZE)\n+    return FALSE;\n+\n   /* Allocate memory for pixel data and temporary mask data. */\n   if(client->rcSource)\n     free(client->rcSource);"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/nodejs/node/commits/662722240928668e4b16822be2f660fc6d957340",
+        "url": "https://api.github.com/repos/nodejs/node/commits/662722240928668e4b16822be2f660fc6d957340",
+        "html_url": "https://github.com/nodejs/node/commit/662722240928668e4b16822be2f660fc6d957340",
+        "message": "src: disallow direct .bat and .cmd file spawning\n\nAn undocumented feature of the Win32 CreateProcess API allows spawning\nbatch files directly but is potentially insecure because arguments are\nnot escaped (and sometimes cannot be unambiguously escaped), hence why\nthey are refused starting today.\n\nPR-URL: https://github.com/nodejs-private/node-private/pull/564\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Rafael Gonzaga <rafael.nunu@hotmail.com>\nCVE-ID: CVE-2024-27980",
+        "files": [
+            {
+                "sha": "4eba83eccb58f032a1a66c3b7be498d8273a0245",
+                "filename": "benchmark/_http-benchmarkers.js",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 6,
+                "changes": 21,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/benchmark%2F_http-benchmarkers.js",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/benchmark%2F_http-benchmarkers.js",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/benchmark%2F_http-benchmarkers.js?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -12,11 +12,16 @@ exports.PORT = Number(process.env.PORT) || 12346;\n \n class AutocannonBenchmarker {\n   constructor() {\n+    const shell = (process.platform === 'win32');\n     this.name = 'autocannon';\n-    this.executable =\n-      process.platform === 'win32' ? 'autocannon.cmd' : 'autocannon';\n-    const result = child_process.spawnSync(this.executable, ['-h']);\n-    this.present = !(result.error && result.error.code === 'ENOENT');\n+    this.opts = { shell };\n+    this.executable = shell ? 'autocannon.cmd' : 'autocannon';\n+    const result = child_process.spawnSync(this.executable, ['-h'], this.opts);\n+    if (shell) {\n+      this.present = (result.status === 0);\n+    } else {\n+      this.present = !(result.error && result.error.code === 'ENOENT');\n+    }\n   }\n \n   create(options) {\n@@ -27,11 +32,15 @@ class AutocannonBenchmarker {\n       '-n',\n     ];\n     for (const field in options.headers) {\n-      args.push('-H', `${field}=${options.headers[field]}`);\n+      if (this.opts.shell) {\n+        args.push('-H', `'${field}=${options.headers[field]}'`);\n+      } else {\n+        args.push('-H', `${field}=${options.headers[field]}`);\n+      }\n     }\n     const scheme = options.scheme || 'http';\n     args.push(`${scheme}://127.0.0.1:${options.port}${options.path}`);\n-    const child = child_process.spawn(this.executable, args);\n+    const child = child_process.spawn(this.executable, args, this.opts);\n     return child;\n   }\n "
+            },
+            {
+                "sha": "e975982bcb5af619f554ac2ceee10b90a9b910c1",
+                "filename": "src/node_revert.h",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/src%2Fnode_revert.h",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/src%2Fnode_revert.h",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Fnode_revert.h?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -16,7 +16,8 @@\n namespace node {\n \n #define SECURITY_REVERSIONS(XX)                                                \\\n-  XX(CVE_2023_46809, \"CVE-2023-46809\", \"Marvin attack on PKCS#1 padding\")\n+  XX(CVE_2023_46809, \"CVE-2023-46809\", \"Marvin attack on PKCS#1 padding\")      \\\n+  XX(CVE_2024_27980, \"CVE-2024-27980\", \"Unsafe Windows batch file execution\")\n \n enum reversion {\n #define V(code, ...) SECURITY_REVERT_##code,"
+            },
+            {
+                "sha": "4446f7a01c583c2e4f7b5db5f7dfcebe9750d096",
+                "filename": "src/process_wrap.cc",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 2,
+                "changes": 14,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/src%2Fprocess_wrap.cc",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/src%2Fprocess_wrap.cc",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Fprocess_wrap.cc?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -147,6 +147,7 @@ class ProcessWrap : public HandleWrap {\n     Local<Context> context = env->context();\n     ProcessWrap* wrap;\n     ASSIGN_OR_RETURN_UNWRAP(&wrap, args.Holder());\n+    int err = 0;\n \n     Local<Object> js_options =\n         args[0]->ToObject(env->context()).ToLocalChecked();\n@@ -185,6 +186,13 @@ class ProcessWrap : public HandleWrap {\n     node::Utf8Value file(env->isolate(), file_v);\n     options.file = *file;\n \n+    // Undocumented feature of Win32 CreateProcess API allows spawning\n+    // batch files directly but is potentially insecure because arguments\n+    // are not escaped (and sometimes cannot be unambiguously escaped),\n+    // hence why they are rejected here.\n+    if (IsWindowsBatchFile(options.file))\n+      err = UV_EINVAL;\n+\n     // options.args\n     Local<Value> argv_v =\n         js_options->Get(context, env->args_string()).ToLocalChecked();\n@@ -262,8 +270,10 @@ class ProcessWrap : public HandleWrap {\n       options.flags |= UV_PROCESS_DETACHED;\n     }\n \n-    int err = uv_spawn(env->event_loop(), &wrap->process_, &options);\n-    wrap->MarkAsInitialized();\n+    if (err == 0) {\n+      err = uv_spawn(env->event_loop(), &wrap->process_, &options);\n+      wrap->MarkAsInitialized();\n+    }\n \n     if (err == 0) {\n       CHECK_EQ(wrap->process_.data, wrap);"
+            },
+            {
+                "sha": "6529d91b6f4bd11120fca6565f9826ad40e16e52",
+                "filename": "src/spawn_sync.cc",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/src%2Fspawn_sync.cc",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/src%2Fspawn_sync.cc",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Fspawn_sync.cc?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -758,6 +758,13 @@ Maybe<int> SyncProcessRunner::ParseOptions(Local<Value> js_value) {\n   if (r < 0) return Just(r);\n   uv_process_options_.file = file_buffer_;\n \n+  // Undocumented feature of Win32 CreateProcess API allows spawning\n+  // batch files directly but is potentially insecure because arguments\n+  // are not escaped (and sometimes cannot be unambiguously escaped),\n+  // hence why they are rejected here.\n+  if (IsWindowsBatchFile(uv_process_options_.file))\n+    return Just<int>(UV_EINVAL);\n+\n   Local<Value> js_args =\n       js_options->Get(context, env()->args_string()).ToLocalChecked();\n   if (!CopyJsStringArray(js_args, &args_buffer_).To(&r)) return Nothing<int>();"
+            },
+            {
+                "sha": "78eef6de08f6d954362629b8d26e635ee8f15ec5",
+                "filename": "src/util-inl.h",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/src%2Futil-inl.h",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/src%2Futil-inl.h",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Futil-inl.h?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -27,6 +27,7 @@\n #include <cmath>\n #include <cstring>\n #include <locale>\n+#include \"node_revert.h\"\n #include \"util.h\"\n \n // These are defined by <sys/byteorder.h> or <netinet/in.h> on some systems.\n@@ -616,6 +617,20 @@ constexpr std::string_view FastStringKey::as_string_view() const {\n   return name_;\n }\n \n+// Inline so the compiler can fully optimize it away on Unix platforms.\n+bool IsWindowsBatchFile(const char* filename) {\n+#ifdef _WIN32\n+  static constexpr bool kIsWindows = true;\n+#else\n+  static constexpr bool kIsWindows = false;\n+#endif  // _WIN32\n+  if (kIsWindows)\n+    if (!IsReverted(SECURITY_REVERT_CVE_2024_27980))\n+      if (const char* p = strrchr(filename, '.'))\n+        return StringEqualNoCase(p, \".bat\") || StringEqualNoCase(p, \".cmd\");\n+  return false;\n+}\n+\n }  // namespace node\n \n #endif  // defined(NODE_WANT_INTERNALS) && NODE_WANT_INTERNALS"
+            },
+            {
+                "sha": "6c59dc3f45ecd7e527d18c6475c07f60cc4f88b6",
+                "filename": "src/util.h",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/src%2Futil.h",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/src%2Futil.h",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Futil.h?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -919,6 +919,10 @@ void SetConstructorFunction(v8::Local<v8::Context> context,\n                             SetConstructorFunctionFlag flag =\n                                 SetConstructorFunctionFlag::SET_CLASS_NAME);\n \n+// Returns true if OS==Windows and filename ends in .bat or .cmd,\n+// case insensitive.\n+inline bool IsWindowsBatchFile(const char* filename);\n+\n }  // namespace node\n \n #endif  // defined(NODE_WANT_INTERNALS) && NODE_WANT_INTERNALS"
+            },
+            {
+                "sha": "81d0c64500d7ed760e8e08a27e9c151f62d1ae93",
+                "filename": "test/parallel/test-child-process-spawn-windows-batch-file.js",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108,
+                "blob_url": "https://github.com/nodejs/node/blob/662722240928668e4b16822be2f660fc6d957340/test%2Fparallel%2Ftest-child-process-spawn-windows-batch-file.js",
+                "raw_url": "https://github.com/nodejs/node/raw/662722240928668e4b16822be2f660fc6d957340/test%2Fparallel%2Ftest-child-process-spawn-windows-batch-file.js",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/test%2Fparallel%2Ftest-child-process-spawn-windows-batch-file.js?ref=662722240928668e4b16822be2f660fc6d957340",
+                "patch": "@@ -0,0 +1,108 @@\n+'use strict';\n+\n+// Node.js on Windows should not be able to spawn batch files directly,\n+// only when the 'shell' option is set. An undocumented feature of the\n+// Win32 CreateProcess API allows spawning .bat and .cmd files directly\n+// but it does not sanitize arguments. We cannot do that automatically\n+// because it's sometimes impossible to escape arguments unambiguously.\n+//\n+// Expectation: spawn() and spawnSync() raise EINVAL if and only if:\n+//\n+// 1. 'shell' option is unset\n+// 2. Platform is Windows\n+// 3. Filename ends in .bat or .cmd, case-insensitive\n+//\n+// exec() and execSync() are unchanged.\n+\n+const common = require('../common');\n+const cp = require('child_process');\n+const assert = require('assert');\n+const { isWindows } = common;\n+\n+const arg = '--security-revert=CVE-2024-27980';\n+const isRevert = process.execArgv.includes(arg);\n+\n+const expectedCode = isWindows && !isRevert ? 'EINVAL' : 'ENOENT';\n+const expectedStatus = isWindows ? 1 : 127;\n+\n+const suffixes =\n+    'BAT bAT BaT baT BAt bAt Bat bat CMD cMD CmD cmD CMd cMd Cmd cmd'\n+    .split(' ');\n+\n+if (process.argv[2] === undefined) {\n+  const a = cp.spawnSync(process.execPath, [__filename, 'child']);\n+  const b = cp.spawnSync(process.execPath, [arg, __filename, 'child']);\n+  assert.strictEqual(a.status, 0);\n+  assert.strictEqual(b.status, 0);\n+  return;\n+}\n+\n+function testExec(filename) {\n+  return new Promise((resolve) => {\n+    cp.exec(filename).once('exit', common.mustCall(function(status) {\n+      assert.strictEqual(status, expectedStatus);\n+      resolve();\n+    }));\n+  });\n+}\n+\n+function testExecSync(filename) {\n+  let e;\n+  try {\n+    cp.execSync(filename);\n+  } catch (_e) {\n+    e = _e;\n+  }\n+  if (!e) throw new Error(`Exception expected for ${filename}`);\n+  assert.strictEqual(e.status, expectedStatus);\n+}\n+\n+function testSpawn(filename, code) {\n+  // Batch file case is a synchronous error, file-not-found is asynchronous.\n+  if (code === 'EINVAL') {\n+    let e;\n+    try {\n+      cp.spawn(filename);\n+    } catch (_e) {\n+      e = _e;\n+    }\n+    if (!e) throw new Error(`Exception expected for ${filename}`);\n+    assert.strictEqual(e.code, code);\n+  } else {\n+    return new Promise((resolve) => {\n+      cp.spawn(filename).once('error', common.mustCall(function(e) {\n+        assert.strictEqual(e.code, code);\n+        resolve();\n+      }));\n+    });\n+  }\n+}\n+\n+function testSpawnSync(filename, code) {\n+  {\n+    const r = cp.spawnSync(filename);\n+    assert.strictEqual(r.error.code, code);\n+  }\n+  {\n+    const r = cp.spawnSync(filename, { shell: true });\n+    assert.strictEqual(r.status, expectedStatus);\n+  }\n+}\n+\n+testExecSync('./nosuchdir/nosuchfile');\n+testSpawnSync('./nosuchdir/nosuchfile', 'ENOENT');\n+for (const suffix of suffixes) {\n+  testExecSync(`./nosuchdir/nosuchfile.${suffix}`);\n+  testSpawnSync(`./nosuchdir/nosuchfile.${suffix}`, expectedCode);\n+}\n+\n+go().catch((ex) => { throw ex; });\n+\n+async function go() {\n+  await testExec('./nosuchdir/nosuchfile');\n+  await testSpawn('./nosuchdir/nosuchfile', 'ENOENT');\n+  for (const suffix of suffixes) {\n+    await testExec(`./nosuchdir/nosuchfile.${suffix}`);\n+    await testSpawn(`./nosuchdir/nosuchfile.${suffix}`, expectedCode);\n+  }\n+}"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+        "url": "https://api.github.com/repos/rails/rails/commits/a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+        "html_url": "https://github.com/rails/rails/commit/a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+        "message": "Use a temporary file for storing unencrypted files while editing\n\nWhen we're editing the contents of encrypted files, we should use the\n`Tempfile` class because it creates temporary files with restrictive\npermissions.  This prevents other users on the same system from reading\nthe contents of those files while the user is editing them.\n\n[CVE-2023-38037]",
+        "files": [
+            {
+                "sha": "aac3dea4d8baa735a13b485d0a208b3f1747b7ce",
+                "filename": "activesupport/lib/active_support/encrypted_file.rb",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 9,
+                "changes": 17,
+                "blob_url": "https://github.com/rails/rails/blob/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/activesupport%2Flib%2Factive_support%2Fencrypted_file.rb",
+                "raw_url": "https://github.com/rails/rails/raw/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/activesupport%2Flib%2Factive_support%2Fencrypted_file.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/activesupport%2Flib%2Factive_support%2Fencrypted_file.rb?ref=a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+                "patch": "@@ -1,7 +1,7 @@\n # frozen_string_literal: true\n \n require \"pathname\"\n-require \"tmpdir\"\n+require \"tempfile\"\n require \"active_support/message_encryptor\"\n \n module ActiveSupport\n@@ -81,17 +81,16 @@ def change(&block)\n \n     private\n       def writing(contents)\n-        tmp_file = \"#{Process.pid}.#{content_path.basename.to_s.chomp('.enc')}\"\n-        tmp_path = Pathname.new File.join(Dir.tmpdir, tmp_file)\n-        tmp_path.binwrite contents\n+        Tempfile.create([\"\", \"-\" + content_path.basename.to_s.chomp(\".enc\")]) do |tmp_file|\n+          tmp_path = Pathname.new(tmp_file)\n+          tmp_path.binwrite contents\n \n-        yield tmp_path\n+          yield tmp_path\n \n-        updated_contents = tmp_path.binread\n+          updated_contents = tmp_path.binread\n \n-        write(updated_contents) if updated_contents != contents\n-      ensure\n-        FileUtils.rm(tmp_path) if tmp_path&.exist?\n+          write(updated_contents) if updated_contents != contents\n+        end\n       end\n \n "
+            },
+            {
+                "sha": "92a3ecf972f1d83e829f2dbbe69e7b01dd9b2820",
+                "filename": "activesupport/test/encrypted_file_test.rb",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8,
+                "blob_url": "https://github.com/rails/rails/blob/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/activesupport%2Ftest%2Fencrypted_file_test.rb",
+                "raw_url": "https://github.com/rails/rails/raw/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/activesupport%2Ftest%2Fencrypted_file_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/activesupport%2Ftest%2Fencrypted_file_test.rb?ref=a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+                "patch": "@@ -49,6 +49,14 @@ class EncryptedFileTest < ActiveSupport::TestCase\n     assert_equal \"#{@content} and went by the lake\", @encrypted_file.read\n   end\n \n+  test \"change sets restricted permissions\" do\n+    @encrypted_file.write(@content)\n+    @encrypted_file.change do |file|\n+      assert_predicate file, :owned?\n+      assert_equal \"100600\", file.stat.mode.to_s(8), \"Incorrect mode for #{file}\"\n+    end\n+  end\n+\n   test \"raise MissingKeyError when key is missing\" do\n     assert_raise ActiveSupport::EncryptedFile::MissingKeyError do\n       encrypted_file(@content_path, key_path: \"\", env_key: \"\").read"
+            },
+            {
+                "sha": "913d5e57c1bfb96599714b8eab2f2531e3720eb0",
+                "filename": "railties/lib/rails/secrets.rb",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 8,
+                "changes": 18,
+                "blob_url": "https://github.com/rails/rails/blob/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/railties%2Flib%2Frails%2Fsecrets.rb",
+                "raw_url": "https://github.com/rails/rails/raw/a21d6edf35a60383dfa6c4da49e4b1aef5f00731/railties%2Flib%2Frails%2Fsecrets.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/railties%2Flib%2Frails%2Fsecrets.rb?ref=a21d6edf35a60383dfa6c4da49e4b1aef5f00731",
+                "patch": "@@ -1,6 +1,7 @@\n # frozen_string_literal: true\n \n require \"yaml\"\n+require \"tempfile\"\n require \"active_support/message_encryptor\"\n \n module Rails\n@@ -87,17 +88,18 @@ def preprocess(path)\n         end\n \n         def writing(contents)\n-          tmp_file = \"#{File.basename(path)}.#{Process.pid}\"\n-          tmp_path = File.join(Dir.tmpdir, tmp_file)\n-          IO.binwrite(tmp_path, contents)\n+          file_name = \"#{File.basename(path)}.#{Process.pid}\"\n \n-          yield tmp_path\n+          Tempfile.create([\"\", \"-\" + file_name]) do |tmp_file|\n+            tmp_path = Pathname.new(tmp_file)\n+            tmp_path.binwrite contents\n \n-          updated_contents = IO.binread(tmp_path)\n+            yield tmp_path\n \n-          write(updated_contents) if updated_contents != contents\n-        ensure\n-          FileUtils.rm(tmp_path) if File.exist?(tmp_path)\n+            updated_contents = tmp_path.binread\n+\n+            write(updated_contents) if updated_contents != contents\n+          end\n         end\n \n         def encryptor"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/5037a13614d71727af8a175063bcf6ba1a74bdbd",
+        "url": "https://api.github.com/repos/rails/rails/commits/5037a13614d71727af8a175063bcf6ba1a74bdbd",
+        "html_url": "https://github.com/rails/rails/commit/5037a13614d71727af8a175063bcf6ba1a74bdbd",
+        "message": "Ignore certain data-* attributes in rails-ujs when element is contenteditable\n\nThere is a potential DOM based cross-site scripting issue in rails-ujs\nwhich leverages the Clipboard API to target HTML elements that are\nassigned the contenteditable attribute. This has the potential to occur\nwhen pasting malicious HTML content from the clipboard that includes\na data-method, data-disable-with or data-remote attribute.\n\n[CVE-2023-23913]",
+        "files": [
+            {
+                "sha": "58e08ace4eb6f6612cd1c756fc058857eef78992",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/disable.coffee",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -1,6 +1,6 @@\n #= require_tree ../utils\n \n-{ matches, getData, setData, stopEverything, formElements } = Rails\n+{ matches, getData, setData, stopEverything, formElements, isContentEditable } = Rails\n \n Rails.handleDisabledElement = (e) ->\n   element = this\n@@ -14,6 +14,9 @@ Rails.enableElement = (e) ->\n   else\n     element = e\n \n+  if isContentEditable(element)\n+    return\n+\n   if matches(element, Rails.linkDisableSelector)\n     enableLinkElement(element)\n   else if matches(element, Rails.buttonDisableSelector) or matches(element, Rails.formEnableSelector)\n@@ -24,6 +27,10 @@ Rails.enableElement = (e) ->\n # Unified function to disable an element (link, button and form)\n Rails.disableElement = (e) ->\n   element = if e instanceof Event then e.target else e\n+\n+  if isContentEditable(element)\n+    return\n+\n   if matches(element, Rails.linkDisableSelector)\n     disableLinkElement(element)\n   else if matches(element, Rails.buttonDisableSelector) or matches(element, Rails.formDisableSelector)"
+            },
+            {
+                "sha": "9239fe8e59b1f24f3002eae1d7cb1c318214fd8e",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/method.coffee",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -1,6 +1,7 @@\n #= require_tree ../utils\n \n { stopEverything } = Rails\n+{ isContentEditable } = Rails\n \n # Handles \"data-method\" on links such as:\n # <a href=\"/users/5\" data-method=\"delete\" rel=\"nofollow\" data-confirm=\"Are you sure?\">Delete</a>\n@@ -9,6 +10,9 @@ Rails.handleMethod = (e) ->\n   method = link.getAttribute('data-method')\n   return unless method\n \n+  if isContentEditable(this)\n+    return\n+\n   href = Rails.href(link)\n   csrfToken = Rails.csrfToken()\n   csrfParam = Rails.csrfParam()"
+            },
+            {
+                "sha": "d392ddaf0f11b6d24e69d871d6ff0c39d018e6bc",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/remote.coffee",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -4,7 +4,8 @@\n   matches, getData, setData\n   fire, stopEverything\n   ajax, isCrossDomain\n-  serializeElement\n+  serializeElement,\n+  isContentEditable\n } = Rails\n \n # Checks \"data-remote\" if true to handle the request through a XHR request.\n@@ -21,6 +22,10 @@ Rails.handleRemote = (e) ->\n     fire(element, 'ajax:stopped')\n     return false\n \n+  if isContentEditable(element)\n+    fire(element, 'ajax:stopped')\n+    return false\n+\n   withCredentials = element.getAttribute('data-with-credentials')\n   dataType = element.getAttribute('data-type') or 'script'\n "
+            },
+            {
+                "sha": "0f5ed1cb746992fac4465e907b3cc350563eda87",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/utils/dom.coffee",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -29,6 +29,18 @@ Rails.setData = (element, key, value) ->\n   element[expando] ?= {}\n   element[expando][key] = value\n \n+Rails.isContentEditable = (element) ->\n+  isEditable = false\n+  loop\n+    if(element.isContentEditable)\n+      isEditable = true\n+      break\n+\n+    element = element.parentElement\n+    break unless(element)\n+\n+  return isEditable\n+\n # a wrapper for document.querySelectorAll\n # returns an Array\n Rails.$ = (selector) ->"
+            },
+            {
+                "sha": "a34ff7ad44e3450a73fe736230dbf1abf66d3f8b",
+                "filename": "actionview/test/ujs/public/test/data-disable-with.js",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -37,6 +37,10 @@ module('data-disable-with', {\n       'data-url': '/echo',\n       'data-disable-with': 'clicking...'\n     }))\n+\n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   },\n   teardown: function() {\n     $(document).unbind('iframe:loaded')\n@@ -432,3 +436,21 @@ asyncTest('button[data-remote][data-disable-with] re-enables when `ajax:error` e\n     start()\n   }, 30)\n })\n+\n+asyncTest('form button with \"data-disable-with\" attribute and contenteditable is not modified', 6, function() {\n+  var form = $('form[data-remote]'), button = $('<button data-disable-with=\"submitting ...\" name=\"submit2\">Submit</button>')\n+\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  form.append(button)\n+  contenteditable_div.append(form)\n+\n+  App.checkEnabledState(button, 'Submit')\n+\n+  setTimeout(function() {\n+    App.checkEnabledState(button, 'Submit')\n+    start()\n+  }, 13)\n+  form.triggerNative('submit')\n+\n+  App.checkEnabledState(button, 'Submit')\n+})"
+            },
+            {
+                "sha": "3e0150807c58687b44c16aed9819604beab5e425",
+                "filename": "actionview/test/ujs/public/test/data-method.js",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -5,6 +5,10 @@ module('data-method', {\n     $('#qunit-fixture').append($('<a />', {\n       href: '/echo', 'data-method': 'delete', text: 'destroy!'\n     }))\n+\n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   },\n   teardown: function() {\n     $(document).unbind('iframe:loaded')\n@@ -82,4 +86,19 @@ asyncTest('link with \"data-method\" and cross origin', 1, function() {\n   notEqual(data.authenticity_token, 'cf50faa3fe97702ca1ae')\n })\n \n+asyncTest('do not interact with contenteditable elements', 6, function() {\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  contenteditable_div.append('<a href=\"http://www.shouldnevershowindocument.com\" data-method=\"delete\">')\n+\n+  var link = $('#edit-div').find('a')\n+  link.triggerNative('click')\n+\n+  start()\n+\n+  collection = document.getElementsByTagName('form')\n+  for (const item of collection) {\n+    notEqual(item.action, \"http://www.shouldnevershowindocument.com/\")\n+  }\n+})\n+\n })()"
+            },
+            {
+                "sha": "022647ead58f124ab042623c50eb3b9a3d9ab315",
+                "filename": "actionview/test/ujs/public/test/data-remote.js",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20,
+                "blob_url": "https://github.com/rails/rails/blob/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js",
+                "raw_url": "https://github.com/rails/rails/raw/5037a13614d71727af8a175063bcf6ba1a74bdbd/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js?ref=5037a13614d71727af8a175063bcf6ba1a74bdbd",
+                "patch": "@@ -41,6 +41,9 @@ module('data-remote', {\n       }))\n       .find('form').append($('<input type=\"text\" name=\"user_name\" value=\"john\">'))\n \n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   }\n })\n \n@@ -508,4 +511,21 @@ asyncTest('inputs inside disabled fieldset are not submitted on remote forms', 3\n     .triggerNative('submit')\n })\n \n+asyncTest('clicking on a link with contenteditable attribute does not fire ajaxyness', 0, function() {\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  var link = $('a[data-remote]')\n+  contenteditable_div.append(link)\n+\n+  link\n+    .bindNative('ajax:beforeSend', function() {\n+      ok(false, 'ajax should not be triggered')\n+    })\n+    .bindNative('click', function(e) {\n+      e.preventDefault()\n+    })\n+    .triggerNative('click')\n+\n+  setTimeout(function() { start() }, 20)\n+})\n+\n })()"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/73009ea59a811b28e8ec2a9c9bc24635aa891214",
+        "url": "https://api.github.com/repos/rails/rails/commits/73009ea59a811b28e8ec2a9c9bc24635aa891214",
+        "html_url": "https://github.com/rails/rails/commit/73009ea59a811b28e8ec2a9c9bc24635aa891214",
+        "message": "Ignore certain data-* attributes in rails-ujs when element is contenteditable\n\nThere is a potential DOM based cross-site scripting issue in rails-ujs\nwhich leverages the Clipboard API to target HTML elements that are\nassigned the contenteditable attribute. This has the potential to occur\nwhen pasting malicious HTML content from the clipboard that includes\na data-method, data-disable-with or data-remote attribute.\n\n[CVE-2023-23913]",
+        "files": [
+            {
+                "sha": "58e08ace4eb6f6612cd1c756fc058857eef78992",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/disable.coffee",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fdisable.coffee?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -1,6 +1,6 @@\n #= require_tree ../utils\n \n-{ matches, getData, setData, stopEverything, formElements } = Rails\n+{ matches, getData, setData, stopEverything, formElements, isContentEditable } = Rails\n \n Rails.handleDisabledElement = (e) ->\n   element = this\n@@ -14,6 +14,9 @@ Rails.enableElement = (e) ->\n   else\n     element = e\n \n+  if isContentEditable(element)\n+    return\n+\n   if matches(element, Rails.linkDisableSelector)\n     enableLinkElement(element)\n   else if matches(element, Rails.buttonDisableSelector) or matches(element, Rails.formEnableSelector)\n@@ -24,6 +27,10 @@ Rails.enableElement = (e) ->\n # Unified function to disable an element (link, button and form)\n Rails.disableElement = (e) ->\n   element = if e instanceof Event then e.target else e\n+\n+  if isContentEditable(element)\n+    return\n+\n   if matches(element, Rails.linkDisableSelector)\n     disableLinkElement(element)\n   else if matches(element, Rails.buttonDisableSelector) or matches(element, Rails.formDisableSelector)"
+            },
+            {
+                "sha": "9239fe8e59b1f24f3002eae1d7cb1c318214fd8e",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/method.coffee",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fmethod.coffee?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -1,6 +1,7 @@\n #= require_tree ../utils\n \n { stopEverything } = Rails\n+{ isContentEditable } = Rails\n \n # Handles \"data-method\" on links such as:\n # <a href=\"/users/5\" data-method=\"delete\" rel=\"nofollow\" data-confirm=\"Are you sure?\">Delete</a>\n@@ -9,6 +10,9 @@ Rails.handleMethod = (e) ->\n   method = link.getAttribute('data-method')\n   return unless method\n \n+  if isContentEditable(this)\n+    return\n+\n   href = Rails.href(link)\n   csrfToken = Rails.csrfToken()\n   csrfParam = Rails.csrfParam()"
+            },
+            {
+                "sha": "d392ddaf0f11b6d24e69d871d6ff0c39d018e6bc",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/features/remote.coffee",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Ffeatures%2Fremote.coffee?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -4,7 +4,8 @@\n   matches, getData, setData\n   fire, stopEverything\n   ajax, isCrossDomain\n-  serializeElement\n+  serializeElement,\n+  isContentEditable\n } = Rails\n \n # Checks \"data-remote\" if true to handle the request through a XHR request.\n@@ -21,6 +22,10 @@ Rails.handleRemote = (e) ->\n     fire(element, 'ajax:stopped')\n     return false\n \n+  if isContentEditable(element)\n+    fire(element, 'ajax:stopped')\n+    return false\n+\n   withCredentials = element.getAttribute('data-with-credentials')\n   dataType = element.getAttribute('data-type') or 'script'\n "
+            },
+            {
+                "sha": "0311cd16c87043128b8c4164a112b677726edc7a",
+                "filename": "actionview/app/assets/javascripts/rails-ujs/utils/dom.coffee",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Fapp%2Fassets%2Fjavascripts%2Frails-ujs%2Futils%2Fdom.coffee?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -29,6 +29,18 @@ Rails.setData = (element, key, value) ->\n   element[expando] ?= {}\n   element[expando][key] = value\n \n+Rails.isContentEditable = (element) ->\n+  isEditable = false\n+  loop\n+    if(element.isContentEditable)\n+      isEditable = true\n+      break\n+\n+    element = element.parentElement\n+    break unless(element)\n+\n+  return isEditable\n+\n # a wrapper for document.querySelectorAll\n # returns an Array\n Rails.$ = (selector) ->"
+            },
+            {
+                "sha": "a34ff7ad44e3450a73fe736230dbf1abf66d3f8b",
+                "filename": "actionview/test/ujs/public/test/data-disable-with.js",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-disable-with.js?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -37,6 +37,10 @@ module('data-disable-with', {\n       'data-url': '/echo',\n       'data-disable-with': 'clicking...'\n     }))\n+\n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   },\n   teardown: function() {\n     $(document).unbind('iframe:loaded')\n@@ -432,3 +436,21 @@ asyncTest('button[data-remote][data-disable-with] re-enables when `ajax:error` e\n     start()\n   }, 30)\n })\n+\n+asyncTest('form button with \"data-disable-with\" attribute and contenteditable is not modified', 6, function() {\n+  var form = $('form[data-remote]'), button = $('<button data-disable-with=\"submitting ...\" name=\"submit2\">Submit</button>')\n+\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  form.append(button)\n+  contenteditable_div.append(form)\n+\n+  App.checkEnabledState(button, 'Submit')\n+\n+  setTimeout(function() {\n+    App.checkEnabledState(button, 'Submit')\n+    start()\n+  }, 13)\n+  form.triggerNative('submit')\n+\n+  App.checkEnabledState(button, 'Submit')\n+})"
+            },
+            {
+                "sha": "3e0150807c58687b44c16aed9819604beab5e425",
+                "filename": "actionview/test/ujs/public/test/data-method.js",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-method.js?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -5,6 +5,10 @@ module('data-method', {\n     $('#qunit-fixture').append($('<a />', {\n       href: '/echo', 'data-method': 'delete', text: 'destroy!'\n     }))\n+\n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   },\n   teardown: function() {\n     $(document).unbind('iframe:loaded')\n@@ -82,4 +86,19 @@ asyncTest('link with \"data-method\" and cross origin', 1, function() {\n   notEqual(data.authenticity_token, 'cf50faa3fe97702ca1ae')\n })\n \n+asyncTest('do not interact with contenteditable elements', 6, function() {\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  contenteditable_div.append('<a href=\"http://www.shouldnevershowindocument.com\" data-method=\"delete\">')\n+\n+  var link = $('#edit-div').find('a')\n+  link.triggerNative('click')\n+\n+  start()\n+\n+  collection = document.getElementsByTagName('form')\n+  for (const item of collection) {\n+    notEqual(item.action, \"http://www.shouldnevershowindocument.com/\")\n+  }\n+})\n+\n })()"
+            },
+            {
+                "sha": "9d7c4a6d151238d9611ea12c6d09cff92b9e529f",
+                "filename": "actionview/test/ujs/public/test/data-remote.js",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20,
+                "blob_url": "https://github.com/rails/rails/blob/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js",
+                "raw_url": "https://github.com/rails/rails/raw/73009ea59a811b28e8ec2a9c9bc24635aa891214/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionview%2Ftest%2Fujs%2Fpublic%2Ftest%2Fdata-remote.js?ref=73009ea59a811b28e8ec2a9c9bc24635aa891214",
+                "patch": "@@ -41,6 +41,9 @@ module('data-remote', {\n       }))\n       .find('form').append($('<input type=\"text\" name=\"user_name\" value=\"john\">'))\n \n+    $('#qunit-fixture').append($('<div />', {\n+      id: 'edit-div', 'contenteditable': 'true'\n+    }))\n   }\n })\n \n@@ -508,4 +511,21 @@ asyncTest('inputs inside disabled fieldset are not submitted on remote forms', 3\n     .triggerNative('submit')\n })\n \n+asyncTest('clicking on a link with contenteditable attribute does not fire ajaxyness', 0, function() {\n+  var contenteditable_div = $('#qunit-fixture').find('div')\n+  var link = $('a[data-remote]')\n+  contenteditable_div.append(link)\n+\n+  link\n+    .bindNative('ajax:beforeSend', function() {\n+      ok(false, 'ajax should not be triggered')\n+    })\n+    .bindNative('click', function(e) {\n+      e.preventDefault()\n+    })\n+    .triggerNative('click')\n+\n+  setTimeout(function() { start() }, 20)\n+})\n+\n })()"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/nodejs/node/commits/d39e993903e27bb5761dd98b0a93964dcaabac65",
+        "url": "https://api.github.com/repos/nodejs/node/commits/d39e993903e27bb5761dd98b0a93964dcaabac65",
+        "html_url": "https://github.com/nodejs/node/commit/d39e993903e27bb5761dd98b0a93964dcaabac65",
+        "message": "src,permission: fix UNC path resolution\n\nPR-URL: https://github.com/nodejs-private/node-private/pull/581\nFixes: https://hackerone.com/bugs?subject=nodejs&report_id=2079103\nCVE-ID: CVE-2024-37372",
+        "files": [
+            {
+                "sha": "8b79850d156feb15f35983c4c9bd3119416cf06a",
+                "filename": "src/permission/fs_permission.cc",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 9,
+                "changes": 21,
+                "blob_url": "https://github.com/nodejs/node/blob/d39e993903e27bb5761dd98b0a93964dcaabac65/src%2Fpermission%2Ffs_permission.cc",
+                "raw_url": "https://github.com/nodejs/node/raw/d39e993903e27bb5761dd98b0a93964dcaabac65/src%2Fpermission%2Ffs_permission.cc",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/src%2Fpermission%2Ffs_permission.cc?ref=d39e993903e27bb5761dd98b0a93964dcaabac65",
+                "patch": "@@ -49,15 +49,18 @@ bool is_tree_granted(\n     const std::string_view& param) {\n   std::string resolved_param = node::PathResolve(env, {param});\n #ifdef _WIN32\n-  // is UNC file path\n-  if (resolved_param.rfind(\"\\\\\\\\\", 0) == 0) {\n-    // return lookup with normalized param\n-    size_t starting_pos = 4;  // \"\\\\?\\\"\n-    if (resolved_param.rfind(\"\\\\\\\\?\\\\UNC\\\\\") == 0) {\n-      starting_pos += 4;  // \"UNC\\\"\n-    }\n-    auto normalized = param.substr(starting_pos);\n-    return granted_tree->Lookup(normalized, true);\n+  // Remove leading \"\\\\?\\\" from UNC path\n+  if (resolved_param.substr(0, 4) == \"\\\\\\\\?\\\\\") {\n+    resolved_param.erase(0, 4);\n+  }\n+\n+  // Remove leading \"UNC\\\" from UNC path\n+  if (resolved_param.substr(0, 4) == \"UNC\\\\\") {\n+    resolved_param.erase(0, 4);\n+  }\n+  // Remove leading \"//\" from UNC path\n+  if (resolved_param.substr(0, 2) == \"//\") {\n+    resolved_param.erase(0, 2);\n   }\n #endif\n   return granted_tree->Lookup(resolved_param, true);"
+            },
+            {
+                "sha": "552f8e1c21694b5e569749a6063fdf54f38c4192",
+                "filename": "test/parallel/test-permission-fs-windows-path.js",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9,
+                "blob_url": "https://github.com/nodejs/node/blob/d39e993903e27bb5761dd98b0a93964dcaabac65/test%2Fparallel%2Ftest-permission-fs-windows-path.js",
+                "raw_url": "https://github.com/nodejs/node/raw/d39e993903e27bb5761dd98b0a93964dcaabac65/test%2Fparallel%2Ftest-permission-fs-windows-path.js",
+                "contents_url": "https://api.github.com/repos/nodejs/node/contents/test%2Fparallel%2Ftest-permission-fs-windows-path.js?ref=d39e993903e27bb5761dd98b0a93964dcaabac65",
+                "patch": "@@ -38,3 +38,12 @@ if (!common.isWindows) {\n   assert.strictEqual(stdout.toString(), 'true\\n', stderr.toString());\n   assert.strictEqual(status, 0);\n }\n+\n+{\n+  const { stdout, status, stderr } = spawnSync(process.execPath, [\n+    '--experimental-permission', '--allow-fs-write', 'C:\\\\*', '-e',\n+    \"console.log(process.permission.has('fs.write', '\\\\\\\\\\\\\\\\A\\\\\\\\C:\\\\Users'))\",\n+  ]);\n+  assert.strictEqual(stdout.toString(), 'false\\n', stderr.toString());\n+  assert.strictEqual(status, 0);\n+}"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/kredis/commits/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa",
+        "url": "https://api.github.com/repos/rails/kredis/commits/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa",
+        "html_url": "https://github.com/rails/kredis/commit/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa",
+        "message": "Fix possible deserialization of untrusted data\n\nThere is a deserialization of untrusted data vulnerability in the Kredis\nJSON deserialization code. This vulnerability has been assigned the CVE\nidentifier CVE-2023-27531.\n\nCarefully crafted JSON data processed by Kredis may result in\ndeserialization of untrusted data, potentially leading to deserialization\nof unexpected objects in the system.\n\nAny applications using Kredis with JSON are affected.",
+        "files": [
+            {
+                "sha": "d78b604678b0764c0de58f97c5853b2a8e49a109",
+                "filename": "lib/kredis/type/json.rb",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2,
+                "blob_url": "https://github.com/rails/kredis/blob/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa/lib%2Fkredis%2Ftype%2Fjson.rb",
+                "raw_url": "https://github.com/rails/kredis/raw/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa/lib%2Fkredis%2Ftype%2Fjson.rb",
+                "contents_url": "https://api.github.com/repos/rails/kredis/contents/lib%2Fkredis%2Ftype%2Fjson.rb?ref=d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa",
+                "patch": "@@ -8,7 +8,7 @@ def type\n       end\n \n       def cast_value(value)\n-        JSON.load(value)\n+        JSON.parse(value)\n       end\n \n       def serialize(value)"
+            },
+            {
+                "sha": "53192e42f160404083e5db92208cc305cba6a880",
+                "filename": "test/types/scalar_test.rb",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3,
+                "blob_url": "https://github.com/rails/kredis/blob/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa/test%2Ftypes%2Fscalar_test.rb",
+                "raw_url": "https://github.com/rails/kredis/raw/d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa/test%2Ftypes%2Fscalar_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/kredis/contents/test%2Ftypes%2Fscalar_test.rb?ref=d576b7ae5c8d3d74eeb4bd84cad0aa64ffc299fa",
+                "patch": "@@ -60,6 +60,9 @@ class ScalarTest < ActiveSupport::TestCase\n     json = Kredis.json \"myscalar\"\n     json.value = { \"one\" => 1, \"string\" => \"hello\" }\n     assert_equal({ \"one\" => 1, \"string\" => \"hello\" }, json.value)\n+\n+    json.value = {\"json_class\"=>\"String\", \"raw\"=>[97, 98, 99]}\n+    assert_equal({\"json_class\"=>\"String\", \"raw\"=>[97, 98, 99]}, json.value)\n   end\n \n   test \"invalid type\" do"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70",
+        "url": "https://api.github.com/repos/rails/rails/commits/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70",
+        "html_url": "https://github.com/rails/rails/commit/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70",
+        "message": "Implement SafeBuffer#bytesplice",
+        "files": [
+            {
+                "sha": "a627540a353db6951b16cfb9bdd7f7c115a235e9",
+                "filename": "activesupport/lib/active_support/core_ext/string/output_safety.rb",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4,
+                "blob_url": "https://github.com/rails/rails/blob/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70/activesupport%2Flib%2Factive_support%2Fcore_ext%2Fstring%2Foutput_safety.rb",
+                "raw_url": "https://github.com/rails/rails/raw/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70/activesupport%2Flib%2Factive_support%2Fcore_ext%2Fstring%2Foutput_safety.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/activesupport%2Flib%2Factive_support%2Fcore_ext%2Fstring%2Foutput_safety.rb?ref=3cf23c3f891e2e81c977ea4ab83b62bc2a444b70",
+                "patch": "@@ -216,6 +216,10 @@ def concat(value)\n     end\n     alias << concat\n \n+    def bytesplice(*args, value)\n+      super(*args, implicit_html_escape_interpolated_argument(value))\n+    end\n+\n     def insert(index, value)\n       super(index, html_escape_interpolated_argument(value))\n     end"
+            },
+            {
+                "sha": "c436821c94a0be5b50f28a9d54c32d619ec74b80",
+                "filename": "activesupport/test/core_ext/string_ext_test.rb",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30,
+                "blob_url": "https://github.com/rails/rails/blob/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70/activesupport%2Ftest%2Fcore_ext%2Fstring_ext_test.rb",
+                "raw_url": "https://github.com/rails/rails/raw/3cf23c3f891e2e81c977ea4ab83b62bc2a444b70/activesupport%2Ftest%2Fcore_ext%2Fstring_ext_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/activesupport%2Ftest%2Fcore_ext%2Fstring_ext_test.rb?ref=3cf23c3f891e2e81c977ea4ab83b62bc2a444b70",
+                "patch": "@@ -987,6 +987,36 @@ def to_s\n     assert_predicate string, :html_safe?\n   end\n \n+  if \"\".respond_to?(:bytesplice)\n+    test \"Bytesplicing safe into safe yields safe\" do\n+      string = \"hello\".html_safe\n+      string.bytesplice(0, 0, \"<b>\".html_safe)\n+\n+      assert_equal \"<b>hello\", string\n+      assert_predicate string, :html_safe?\n+\n+      string = \"hello\".html_safe\n+      string.bytesplice(0..1, \"<b>\".html_safe)\n+\n+      assert_equal \"<b>llo\", string\n+      assert_predicate string, :html_safe?\n+    end\n+\n+    test \"Bytesplicing unsafe into safe yields escaped safe\" do\n+      string = \"hello\".html_safe\n+      string.bytesplice(1, 0, \"<b>\")\n+\n+      assert_equal \"h&lt;b&gt;ello\", string\n+      assert_predicate string, :html_safe?\n+\n+      string = \"hello\".html_safe\n+      string.bytesplice(1..2, \"<b>\")\n+\n+      assert_equal \"h&lt;b&gt;lo\", string\n+      assert_predicate string, :html_safe?\n+    end\n+  end\n+\n   test \"emits normal string yaml\" do\n     assert_equal \"foo\".to_yaml, \"foo\".html_safe.to_yaml(foo: 1)\n   end"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/69e37c84e3f77d75566424c7d0015172d6a6fac5",
+        "url": "https://api.github.com/repos/rails/rails/commits/69e37c84e3f77d75566424c7d0015172d6a6fac5",
+        "html_url": "https://github.com/rails/rails/commit/69e37c84e3f77d75566424c7d0015172d6a6fac5",
+        "message": "Added check for illegal HTTP header value in redirect_to\n\nThe set of legal characters for an HTTP header value is described\nin https://datatracker.ietf.org/doc/html/rfc7230\\#section-3.2.6.\n\nThis commit adds a check to redirect_to that ensures the\nprovided URL does not contain any of the illegal characters.\n\nDownstream consumers of the resulting Location response header\nmay accidentally remove the header if it does not comply with the RFC\nresulting in unexpected behavior.\n\nRelated to [CVE-2023-28362].",
+        "files": [
+            {
+                "sha": "922ca3b2e3b0e912912315860049c7fca1d2a434",
+                "filename": "actionpack/lib/action_controller/metal/redirecting.rb",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 1,
+                "changes": 19,
+                "blob_url": "https://github.com/rails/rails/blob/69e37c84e3f77d75566424c7d0015172d6a6fac5/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "raw_url": "https://github.com/rails/rails/raw/69e37c84e3f77d75566424c7d0015172d6a6fac5/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb?ref=69e37c84e3f77d75566424c7d0015172d6a6fac5",
+                "patch": "@@ -9,6 +9,8 @@ module Redirecting\n \n     class UnsafeRedirectError < StandardError; end\n \n+    ILLEGAL_HEADER_VALUE_REGEX = /[\\x00-\\x08\\x0A-\\x1F]/.freeze\n+\n     included do\n       mattr_accessor :raise_on_open_redirects, default: false\n     end\n@@ -86,7 +88,11 @@ def redirect_to(options = {}, response_options = {})\n       allow_other_host = response_options.delete(:allow_other_host) { _allow_other_host }\n \n       self.status        = _extract_redirect_to_status(options, response_options)\n-      self.location      = _enforce_open_redirect_protection(_compute_redirect_to_location(request, options), allow_other_host: allow_other_host)\n+\n+      redirect_to_location = _compute_redirect_to_location(request, options)\n+      _ensure_url_is_http_header_safe(redirect_to_location)\n+\n+      self.location      = _enforce_open_redirect_protection(redirect_to_location, allow_other_host: allow_other_host)\n       self.response_body = \"\"\n     end\n \n@@ -204,5 +210,16 @@ def _url_host_allowed?(url)\n       rescue ArgumentError, URI::Error\n         false\n       end\n+\n+      def _ensure_url_is_http_header_safe(url)\n+        # Attempt to comply with the set of valid token characters\n+        # defined for an HTTP header value in\n+        # https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\n+        if url.match(ILLEGAL_HEADER_VALUE_REGEX)\n+          msg = \"The redirect URL #{url} contains one or more illegal HTTP header field character. \" \\\n+            \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+          raise UnsafeRedirectError, msg\n+        end\n+      end\n   end\n end"
+            },
+            {
+                "sha": "57cac03533e3980f124fb5b5f2f8a4db7807e774",
+                "filename": "actionpack/test/controller/redirect_test.rb",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18,
+                "blob_url": "https://github.com/rails/rails/blob/69e37c84e3f77d75566424c7d0015172d6a6fac5/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "raw_url": "https://github.com/rails/rails/raw/69e37c84e3f77d75566424c7d0015172d6a6fac5/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb?ref=69e37c84e3f77d75566424c7d0015172d6a6fac5",
+                "patch": "@@ -104,6 +104,10 @@ def unsafe_redirect_protocol_relative_triple_slash\n     redirect_to \"///www.rubyonrails.org/\"\n   end\n \n+  def unsafe_redirect_with_illegal_http_header_value_character\n+    redirect_to \"javascript:alert(document.domain)\\b\", allow_other_host: true\n+  end\n+\n   def only_path_redirect\n     redirect_to action: \"other_host\", only_path: true\n   end\n@@ -556,6 +560,20 @@ def test_unsafe_redirect_with_protocol_relative_triple_slash_url\n     end\n   end\n \n+  def test_unsafe_redirect_with_illegal_http_header_value_character\n+    with_raise_on_open_redirects do\n+      error = assert_raise(ActionController::Redirecting::UnsafeRedirectError) do\n+        get :unsafe_redirect_with_illegal_http_header_value_character\n+      end\n+\n+      msg = \"The redirect URL javascript:alert(document.domain)\\b contains one or more illegal HTTP header field character. \" \\\n+        \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+\n+      assert_equal msg, error.message\n+    end\n+  end\n+\n+\n   def test_only_path_redirect\n     with_raise_on_open_redirects do\n       get :only_path_redirect"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/1c3f93d1e90a3475f9ae2377ead25ccf11f71441",
+        "url": "https://api.github.com/repos/rails/rails/commits/1c3f93d1e90a3475f9ae2377ead25ccf11f71441",
+        "html_url": "https://github.com/rails/rails/commit/1c3f93d1e90a3475f9ae2377ead25ccf11f71441",
+        "message": "Added check for illegal HTTP header value in redirect_to\n\nThe set of legal characters for an HTTP header value is described\nin https://datatracker.ietf.org/doc/html/rfc7230\\#section-3.2.6.\n\nThis commit adds a check to redirect_to that ensures the\nprovided URL does not contain any of the illegal characters.\n\nDownstream consumers of the resulting Location response header\nmay remove the header if it does not comply with the RFC.\nThis can result in a cross site scripting (XSS) vector by\nallowing for the redirection page to sit idle waiting\nfor user interaction with the provided malicious link.\n\n[CVE-2023-28362]",
+        "files": [
+            {
+                "sha": "fdd3f9dc4414937b783bcfe34c9754ab8f625c72",
+                "filename": "actionpack/lib/action_controller/metal/redirecting.rb",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 1,
+                "changes": 21,
+                "blob_url": "https://github.com/rails/rails/blob/1c3f93d1e90a3475f9ae2377ead25ccf11f71441/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "raw_url": "https://github.com/rails/rails/raw/1c3f93d1e90a3475f9ae2377ead25ccf11f71441/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb?ref=1c3f93d1e90a3475f9ae2377ead25ccf11f71441",
+                "patch": "@@ -7,6 +7,10 @@ module Redirecting\n     include AbstractController::Logger\n     include ActionController::UrlFor\n \n+    ILLEGAL_HEADER_VALUE_REGEX = /[\\x00-\\x08\\x0A-\\x1F]/.freeze\n+\n+    class UnsafeRedirectError < StandardError; end\n+\n     # Redirects the browser to the target specified in +options+. This parameter can be any one of:\n     #\n     # * <tt>Hash</tt> - The URL will be generated by calling url_for with the +options+.\n@@ -60,7 +64,11 @@ def redirect_to(options = {}, response_options = {})\n       raise AbstractController::DoubleRenderError if response_body\n \n       self.status        = _extract_redirect_to_status(options, response_options)\n-      self.location      = _compute_redirect_to_location(request, options)\n+\n+      redirect_to_location = _compute_redirect_to_location(request, options)\n+      _ensure_url_is_http_header_safe(redirect_to_location)\n+\n+      self.location      = redirect_to_location\n       self.response_body = \"<html><body>You are being <a href=\\\"#{ERB::Util.unwrapped_html_escape(response.location)}\\\">redirected</a>.</body></html>\"\n     end\n \n@@ -129,5 +137,16 @@ def _url_host_allowed?(url)\n       rescue ArgumentError, URI::Error\n         false\n       end\n+\n+      def _ensure_url_is_http_header_safe(url)\n+        # Attempt to comply with the set of valid token characters\n+        # defined for an HTTP header value in\n+        # https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\n+        if url.match(ILLEGAL_HEADER_VALUE_REGEX)\n+          msg = \"The redirect URL #{url} contains one or more illegal HTTP header field character. \" \\\n+            \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+          raise UnsafeRedirectError, msg\n+        end\n+      end\n   end\n end"
+            },
+            {
+                "sha": "c088d96413132e5e398779daa3f7f9559e52d3d2",
+                "filename": "actionpack/test/controller/redirect_test.rb",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17,
+                "blob_url": "https://github.com/rails/rails/blob/1c3f93d1e90a3475f9ae2377ead25ccf11f71441/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "raw_url": "https://github.com/rails/rails/raw/1c3f93d1e90a3475f9ae2377ead25ccf11f71441/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb?ref=1c3f93d1e90a3475f9ae2377ead25ccf11f71441",
+                "patch": "@@ -153,6 +153,11 @@ def redirect_with_null_bytes\n     redirect_to \"\\000/lol\\r\\nwat\"\n   end\n \n+  def unsafe_redirect_with_illegal_http_header_value_character\n+    redirect_to \"javascript:alert(document.domain)\\b\"\n+  end\n+\n+\n   def rescue_errors(e) raise e end\n \n   private\n@@ -437,6 +442,18 @@ def test_redirect_to_with_block_and_accepted_options\n       assert_redirected_to \"http://test.host/redirect/hello_world\"\n     end\n   end\n+\n+  def test_unsafe_redirect_with_illegal_http_header_value_character\n+    error = assert_raise(ActionController::Redirecting::UnsafeRedirectError) do\n+      get :unsafe_redirect_with_illegal_http_header_value_character\n+    end\n+\n+    msg = \"The redirect URL javascript:alert(document.domain)\\b contains one or more illegal HTTP header field character. \" \\\n+      \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+\n+    assert_equal msg, error.message\n+  end\n+\n end\n \n module ModuleTest"
+            }
+        ]
+    },
+    {
+        "query_url": "https://api.github.com/repos/rails/rails/commits/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23",
+        "url": "https://api.github.com/repos/rails/rails/commits/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23",
+        "html_url": "https://github.com/rails/rails/commit/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23",
+        "message": "Added check for illegal HTTP header value in redirect_to\n\nThe set of legal characters for an HTTP header value is described\nin https://datatracker.ietf.org/doc/html/rfc7230\\#section-3.2.6.\n\nThis commit adds a check to redirect_to that ensures the\nprovided URL does not contain any of the illegal characters.\n\nDownstream consumers of the resulting Location response header\nmay remove the header if it does not comply with the RFC.\nThis can result in a cross site scripting (XSS) vector by\nallowing for the redirection page to sit idle waiting\nfor user interaction with the provided malicious link.\n\n[CVE-2023-28362]",
+        "files": [
+            {
+                "sha": "830b94c0920ce1c869befb0356aef669b0f1dd06",
+                "filename": "actionpack/lib/action_controller/metal/redirecting.rb",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 1,
+                "changes": 19,
+                "blob_url": "https://github.com/rails/rails/blob/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "raw_url": "https://github.com/rails/rails/raw/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Flib%2Faction_controller%2Fmetal%2Fredirecting.rb?ref=c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23",
+                "patch": "@@ -4,6 +4,8 @@ module ActionController\n   module Redirecting\n     extend ActiveSupport::Concern\n \n+    ILLEGAL_HEADER_VALUE_REGEX = /[\\x00-\\x08\\x0A-\\x1F]/.freeze\n+\n     include AbstractController::Logger\n     include ActionController::UrlFor\n \n@@ -86,7 +88,11 @@ def redirect_to(options = {}, response_options = {})\n       allow_other_host = response_options.delete(:allow_other_host) { _allow_other_host }\n \n       self.status        = _extract_redirect_to_status(options, response_options)\n-      self.location      = _enforce_open_redirect_protection(_compute_redirect_to_location(request, options), allow_other_host: allow_other_host)\n+\n+      redirect_to_location = _compute_redirect_to_location(request, options)\n+      _ensure_url_is_http_header_safe(redirect_to_location)\n+\n+      self.location      = _enforce_open_redirect_protection(redirect_to_location, allow_other_host: allow_other_host)\n       self.response_body = \"<html><body>You are being <a href=\\\"#{ERB::Util.unwrapped_html_escape(response.location)}\\\">redirected</a>.</body></html>\"\n     end\n \n@@ -204,5 +210,16 @@ def _url_host_allowed?(url)\n       rescue ArgumentError, URI::Error\n         false\n       end\n+\n+      def _ensure_url_is_http_header_safe(url)\n+        # Attempt to comply with the set of valid token characters\n+        # defined for an HTTP header value in\n+        # https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\n+        if url.match(ILLEGAL_HEADER_VALUE_REGEX)\n+          msg = \"The redirect URL #{url} contains one or more illegal HTTP header field character. \" \\\n+            \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+          raise UnsafeRedirectError, msg\n+        end\n+      end\n   end\n end"
+            },
+            {
+                "sha": "40bd8d68da0da2702768f28e05a0143193e9b246",
+                "filename": "actionpack/test/controller/redirect_test.rb",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17,
+                "blob_url": "https://github.com/rails/rails/blob/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "raw_url": "https://github.com/rails/rails/raw/c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb",
+                "contents_url": "https://api.github.com/repos/rails/rails/contents/actionpack%2Ftest%2Fcontroller%2Fredirect_test.rb?ref=c9ab9b32bcdcfd8bcd55907f6c7b20b4e004cc23",
+                "patch": "@@ -104,6 +104,10 @@ def unsafe_redirect_protocol_relative_triple_slash\n     redirect_to \"///www.rubyonrails.org/\"\n   end\n \n+  def unsafe_redirect_with_illegal_http_header_value_character\n+    redirect_to \"javascript:alert(document.domain)\\b\", allow_other_host: true\n+  end\n+\n   def only_path_redirect\n     redirect_to action: \"other_host\", only_path: true\n   end\n@@ -556,6 +560,19 @@ def test_unsafe_redirect_with_protocol_relative_triple_slash_url\n     end\n   end\n \n+  def test_unsafe_redirect_with_illegal_http_header_value_character\n+    with_raise_on_open_redirects do\n+      error = assert_raise(ActionController::Redirecting::UnsafeRedirectError) do\n+        get :unsafe_redirect_with_illegal_http_header_value_character\n+      end\n+\n+      msg = \"The redirect URL javascript:alert(document.domain)\\b contains one or more illegal HTTP header field character. \" \\\n+        \"Set of legal characters defined in https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.6\"\n+\n+      assert_equal msg, error.message\n+    end\n+  end\n+\n   def test_only_path_redirect\n     with_raise_on_open_redirects do\n       get :only_path_redirect"
+            }
+        ]
+    }
+]

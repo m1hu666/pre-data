@@ -1,0 +1,7 @@
+https://api.github.com/repos/xibosignage/xibo-cms/commits/c60cfd8727da77b9db10297148eadd697ebec353.patch
+https://api.github.com/repos/xibosignage/xibo-cms/commits/39a2fd54b3f08831b0004aa2015bd8a753bc567f.patch
+https://api.github.com/repos/parisneo/lollms/commits/26a3ff35acf152b49e1087d5698ad4864c7b6092
+https://api.github.com/repos/assimp/assimp/pull/5651/commits/614911bb3b1bfc3a1799ae2b3cca306270f3fb97
+https://api.github.com/repos/Tencent/rapidjson/pull/1261/commits/8269bc2bc289e9d343bae51cdf6d23ef0950e001
+https://api.github.com/repos/oripa/oripa/pull/356/commits/1abf8eb9b6b173d86d277426db1a551d6490c94a
+https://api.github.com/repos/XjSv/Basil/commits/e2b1dbf1637d1ec2663f9aa1a563b02dc76a8146
