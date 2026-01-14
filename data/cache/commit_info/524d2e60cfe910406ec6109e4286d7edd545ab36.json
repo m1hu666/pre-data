@@ -1,0 +1,125 @@
+{
+  "sha": "524d2e60cfe910406ec6109e4286d7edd545ab36",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjUyNGQyZTYwY2ZlOTEwNDA2ZWM2MTA5ZTQyODZkN2VkZDU0NWFiMzY=",
+  "commit": {
+    "author": {
+      "name": "Dhaval Kapil",
+      "email": "dhavalkapil@fb.com",
+      "date": "2019-10-29T06:06:25Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-10-29T06:08:20Z"
+    },
+    "message": "ext_mbstring: Fix invalid free() in php_mb_parse_encoding\n\nSummary:\nA chunk of memory allocated by 'req::calloc_noptrs' was being freed by 'free'. The former internally calls 'calloc' and returns a pointer at an index sizeof(MallocNode) inside the allocated buffer. This led to freeing invalid memory.\n\nCVE-2019-11930\n\nReviewed By: jjergus\n\nDifferential Revision: D18179908\n\nfbshipit-source-id: 0e3fe77628e0b9dee8361e712b8abac59ae5ed22",
+    "tree": {
+      "sha": "5973c1b114479e696bf089e03f211b88c75767e1",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/5973c1b114479e696bf089e03f211b88c75767e1"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/524d2e60cfe910406ec6109e4286d7edd545ab36",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/524d2e60cfe910406ec6109e4286d7edd545ab36",
+  "html_url": "https://github.com/facebook/hhvm/commit/524d2e60cfe910406ec6109e4286d7edd545ab36",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/524d2e60cfe910406ec6109e4286d7edd545ab36/comments",
+  "author": {
+    "login": "DhavalKapil",
+    "id": 6170016,
+    "node_id": "MDQ6VXNlcjYxNzAwMTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6170016?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DhavalKapil",
+    "html_url": "https://github.com/DhavalKapil",
+    "followers_url": "https://api.github.com/users/DhavalKapil/followers",
+    "following_url": "https://api.github.com/users/DhavalKapil/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DhavalKapil/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DhavalKapil/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DhavalKapil/subscriptions",
+    "organizations_url": "https://api.github.com/users/DhavalKapil/orgs",
+    "repos_url": "https://api.github.com/users/DhavalKapil/repos",
+    "events_url": "https://api.github.com/users/DhavalKapil/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DhavalKapil/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a7f1fd5afba9c8f7ffe22722c842adb0d3377979",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/a7f1fd5afba9c8f7ffe22722c842adb0d3377979",
+      "html_url": "https://github.com/facebook/hhvm/commit/a7f1fd5afba9c8f7ffe22722c842adb0d3377979"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 9,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "7a8d15ed2f352a03f0e7f57eb14d629296d75a7d",
+      "filename": "hphp/runtime/ext/mbstring/ext_mbstring.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp?ref=524d2e60cfe910406ec6109e4286d7edd545ab36",
+      "patch": "@@ -908,7 +908,7 @@ static bool php_mb_parse_encoding(const Variant& encoding,\n   }\n   if (!ret) {\n     if (return_list && *return_list) {\n-      free(*return_list);\n+      req::free(*return_list);\n       *return_list = nullptr;\n     }\n     return_size = 0;"
+    },
+    {
+      "sha": "15bea3e341e06cbe577c98e69b5c3697136052b3",
+      "filename": "hphp/test/slow/ext_mb/mb_detect_order_t54638796.php",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/facebook/hhvm/blob/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php?ref=524d2e60cfe910406ec6109e4286d7edd545ab36",
+      "patch": "@@ -0,0 +1,7 @@\n+<?hh\n+// Copyright 2004-present Facebook. All Rights Reserved.\n+\n+<<__EntryPoint>>\n+function main() {\n+  var_dump(mb_detect_order(\"UTF-8,\\x2c\"));\n+}"
+    },
+    {
+      "sha": "5c0c0681d9c1e5069f941701c93c7e86ff88d50a",
+      "filename": "hphp/test/slow/ext_mb/mb_detect_order_t54638796.php.expect",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/hhvm/blob/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php.expect",
+      "raw_url": "https://github.com/facebook/hhvm/raw/524d2e60cfe910406ec6109e4286d7edd545ab36/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php.expect",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_mb%2Fmb_detect_order_t54638796.php.expect?ref=524d2e60cfe910406ec6109e4286d7edd545ab36",
+      "patch": "@@ -0,0 +1 @@\n+bool(false)"
+    }
+  ]
+}

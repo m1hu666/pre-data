@@ -1,0 +1,61 @@
+{
+  "sha": "8c35502217c1879cb8257c617007282eee3fe1cc",
+  "node_id": "MDY6Q29tbWl0MzU3ODA5Nzc6OGMzNTUwMjIxN2MxODc5Y2I4MjU3YzYxNzAwNzI4MmVlZTNmZTFjYw==",
+  "commit": {
+    "author": {
+      "name": "Dirk Lemstra",
+      "email": "dirk@git.imagemagick.org",
+      "date": "2017-11-18T09:23:27Z"
+    },
+    "committer": {
+      "name": "Dirk Lemstra",
+      "email": "dirk@git.imagemagick.org",
+      "date": "2017-11-18T09:23:27Z"
+    },
+    "message": "Added missing return to avoid use after free.",
+    "tree": {
+      "sha": "d13b914b19ee2b3fa74a5f4a8cc0352a34e6d342",
+      "url": "https://api.github.com/repos/ImageMagick/ImageMagick/git/trees/d13b914b19ee2b3fa74a5f4a8cc0352a34e6d342"
+    },
+    "url": "https://api.github.com/repos/ImageMagick/ImageMagick/git/commits/8c35502217c1879cb8257c617007282eee3fe1cc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ImageMagick/ImageMagick/commits/8c35502217c1879cb8257c617007282eee3fe1cc",
+  "html_url": "https://github.com/ImageMagick/ImageMagick/commit/8c35502217c1879cb8257c617007282eee3fe1cc",
+  "comments_url": "https://api.github.com/repos/ImageMagick/ImageMagick/commits/8c35502217c1879cb8257c617007282eee3fe1cc/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "91f238ccb5a65addcc72f3b9098ec1febb918cba",
+      "url": "https://api.github.com/repos/ImageMagick/ImageMagick/commits/91f238ccb5a65addcc72f3b9098ec1febb918cba",
+      "html_url": "https://github.com/ImageMagick/ImageMagick/commit/91f238ccb5a65addcc72f3b9098ec1febb918cba"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "15d98f2d95a9eaabd8fed8f283852854222a4ed7",
+      "filename": "Magick++/lib/Image.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ImageMagick/ImageMagick/blob/8c35502217c1879cb8257c617007282eee3fe1cc/Magick%2B%2B%2Flib%2FImage.cpp",
+      "raw_url": "https://github.com/ImageMagick/ImageMagick/raw/8c35502217c1879cb8257c617007282eee3fe1cc/Magick%2B%2B%2Flib%2FImage.cpp",
+      "contents_url": "https://api.github.com/repos/ImageMagick/ImageMagick/contents/Magick%2B%2B%2Flib%2FImage.cpp?ref=8c35502217c1879cb8257c617007282eee3fe1cc",
+      "patch": "@@ -5087,6 +5087,7 @@ void Magick::Image::read(MagickCore::Image *image,\n       if (!quiet())\n         throwExceptionExplicit(MagickCore::ImageWarning,\n           \"No image was loaded.\");\n+      return;\n     }\n   ThrowImageException;\n }"
+    }
+  ]
+}

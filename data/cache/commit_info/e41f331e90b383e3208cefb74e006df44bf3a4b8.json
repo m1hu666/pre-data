@@ -1,0 +1,113 @@
+{
+  "sha": "e41f331e90b383e3208cefb74e006df44bf3a4b8",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmU0MWYzMzFlOTBiMzgzZTMyMDhjZWZiNzRlMDA2ZGY0NGJmM2E0Yjg=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-04-26T15:00:55Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-04-26T15:49:36Z"
+    },
+    "message": "CR3 decoder: use mempool for memory",
+    "tree": {
+      "sha": "0afc8c33766304068d747534ffcb5c51e0dbb415",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/0afc8c33766304068d747534ffcb5c51e0dbb415"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/e41f331e90b383e3208cefb74e006df44bf3a4b8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/e41f331e90b383e3208cefb74e006df44bf3a4b8",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/e41f331e90b383e3208cefb74e006df44bf3a4b8",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/e41f331e90b383e3208cefb74e006df44bf3a4b8/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5ab32a0016cc6963a1297b90db7b887480c1a9b0",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/5ab32a0016cc6963a1297b90db7b887480c1a9b0",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/5ab32a0016cc6963a1297b90db7b887480c1a9b0"
+    }
+  ],
+  "stats": {
+    "total": 53,
+    "additions": 45,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "7923e51605c0c89eaf4991de363de7a98b31b39c",
+      "filename": "libraw/libraw_const.h",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/e41f331e90b383e3208cefb74e006df44bf3a4b8/libraw%2Flibraw_const.h",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/e41f331e90b383e3208cefb74e006df44bf3a4b8/libraw%2Flibraw_const.h",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/libraw%2Flibraw_const.h?ref=e41f331e90b383e3208cefb74e006df44bf3a4b8",
+      "patch": "@@ -26,6 +26,11 @@ it under the terms of the one of two licenses as you choose:\n #ifndef LIBRAW_NO_IOSPACE_CHECK\n #define LIBRAW_IOSPACE_CHECK\n #endif\n+#ifndef LIBRAW_NO_CR3_MEMPOOL\n+#define LIBRAW_CR3_MEMPOOL\n+#endif\n+\n+\n /* LibRaw uses own memory pool management, with LIBRAW_MSIZE (512)\n entries. It is enough for parsing/decoding non-damaged files, but\n may overflow on specially crafted files (eg. with many string values"
+    },
+    {
+      "sha": "4e49356ea16d22e6fc505ffd918ffbdb525132ff",
+      "filename": "src/decoders/crx.cpp",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 8,
+      "changes": 48,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/e41f331e90b383e3208cefb74e006df44bf3a4b8/src%2Fdecoders%2Fcrx.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/e41f331e90b383e3208cefb74e006df44bf3a4b8/src%2Fdecoders%2Fcrx.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/src%2Fdecoders%2Fcrx.cpp?ref=e41f331e90b383e3208cefb74e006df44bf3a4b8",
+      "patch": "@@ -153,6 +153,10 @@ struct CrxImage\n   int16_t *outBufs[4]; // one per plane\r\n   int16_t *planeBuf;\r\n   LibRaw_abstract_datastream *input;\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+  libraw_memmgr memmgr;\r\n+  CrxImage() : memmgr(0){}\r\n+#endif\r\n };\r\n \r\n enum TileFlags\r\n@@ -1737,14 +1741,22 @@ void crxConvertPlaneLine(CrxImage *img, int imageRow, int imageCol = 0,\n   }\r\n }\r\n \r\n-int crxParamInit(CrxBandParam **param, uint64_t subbandMdatOffset,\r\n+int crxParamInit(\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\tlibraw_memmgr&  mm,\r\n+#endif\t\r\n+\tCrxBandParam **param, uint64_t subbandMdatOffset,\r\n                  uint64_t subbandDataSize, uint32_t subbandWidth,\r\n                  uint32_t subbandHeight, int32_t supportsPartial,\r\n                  uint32_t roundedBitsMask, LibRaw_abstract_datastream *input)\r\n {\r\n   int32_t progrDataSize = supportsPartial ? 0 : sizeof(int32_t) * subbandWidth;\r\n   int32_t paramLength = 2 * subbandWidth + 4;\r\n-  uint8_t *paramBuf = (uint8_t *)calloc(\r\n+  uint8_t *paramBuf = (uint8_t *)\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\t  mm.\r\n+#endif\r\n+\t  calloc(\r\n       1, sizeof(CrxBandParam) + sizeof(int32_t) * paramLength + progrDataSize);\r\n \r\n   if (!paramBuf)\r\n@@ -1813,7 +1825,11 @@ int crxSetupSubbandData(CrxImage *img, CrxPlaneComp *planeComp,\n   }\r\n \r\n   // buffer allocation\r\n-  planeComp->compBuf = (uint8_t *)malloc(compDataSize);\r\n+  planeComp->compBuf = (uint8_t *)\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\t  img->memmgr.\r\n+#endif\r\n+\t  malloc(compDataSize);\r\n   if (!planeComp->compBuf)\r\n     return -1;\r\n \r\n@@ -1895,7 +1911,11 @@ int crxSetupSubbandData(CrxImage *img, CrxPlaneComp *planeComp,\n         roundedBitsMask = planeComp->roundedBitsMask;\r\n         supportsPartial = 1;\r\n       }\r\n-      if (crxParamInit(&subbands[subbandNum].bandParam,\r\n+      if (crxParamInit(\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\t\t  img->memmgr,\r\n+#endif\r\n+\t\t  &subbands[subbandNum].bandParam,\r\n                        subbands[subbandNum].mdatOffset,\r\n                        subbands[subbandNum].dataSize,\r\n                        subbands[subbandNum].width, subbands[subbandNum].height,\r\n@@ -2087,10 +2107,14 @@ int crxReadImageHeaders(crx_data_header_t *hdr, CrxImage *img, uint8_t *mdatPtr,\n \r\n   if (!img->tiles)\r\n   {\r\n-    img->tiles = (CrxTile *)malloc(\r\n+    img->tiles = (CrxTile *)\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\t\timg->memmgr.\r\n+#endif\r\n+\t\tcalloc(\r\n         sizeof(CrxTile) * nTiles +\r\n         sizeof(CrxPlaneComp) * nTiles * img->nPlanes +\r\n-        sizeof(CrxSubband) * nTiles * img->nPlanes * img->subbandCount);\r\n+        sizeof(CrxSubband) * nTiles * img->nPlanes * img->subbandCount,1);\r\n     if (!img->tiles)\r\n       return -1;\r\n \r\n@@ -2282,7 +2306,11 @@ int crxSetupImageData(crx_data_header_t *hdr, CrxImage *img, int16_t *outBuf,\n   if (img->encType == 3 && img->nPlanes == 4 && img->nBits > 8)\r\n   {\r\n     img->planeBuf =\r\n-        (int16_t *)malloc(img->planeHeight * img->planeWidth * img->nPlanes *\r\n+        (int16_t *)\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\t\timg->memmgr.\r\n+#endif\r\n+\t\tmalloc(img->planeHeight * img->planeWidth * img->nPlanes *\r\n                           ((img->samplePrecision + 7) >> 3));\r\n     if (!img->planeBuf)\r\n       return -1;\r\n@@ -2335,6 +2363,9 @@ int crxSetupImageData(crx_data_header_t *hdr, CrxImage *img, int16_t *outBuf,\n \r\n int crxFreeImageData(CrxImage *img)\r\n {\r\n+#ifdef LIBRAW_CR3_MEMPOOL\r\n+\timg->memmgr.cleanup();\r\n+#else\r\n   CrxTile *tile = img->tiles;\r\n   int nTiles = img->tileRows * img->tileCols;\r\n \r\n@@ -2353,9 +2384,10 @@ int crxFreeImageData(CrxImage *img)\n     free(img->planeBuf);\r\n     img->planeBuf = 0;\r\n   }\r\n-\r\n+#endif\r\n   return 0;\r\n }\r\n+\r\n void LibRaw::crxLoadDecodeLoop(void *img, int nPlanes)\r\n {\r\n #ifdef LIBRAW_USE_OPENMP\r"
+    }
+  ]
+}

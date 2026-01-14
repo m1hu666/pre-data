@@ -1,0 +1,101 @@
+{
+  "sha": "c3a3a0c424322009fec3ab735fb20ce8f6e19e70",
+  "node_id": "MDY6Q29tbWl0NTU4MDg3ODc6YzNhM2EwYzQyNDMyMjAwOWZlYzNhYjczNWZiMjBjZThmNmUxOWU3MA==",
+  "commit": {
+    "author": {
+      "name": "Jonathan Hui",
+      "email": "jonhui@google.com",
+      "date": "2019-12-13T22:01:30Z"
+    },
+    "committer": {
+      "name": "Jonathan Hui",
+      "email": "jonhui@google.com",
+      "date": "2019-12-16T17:04:09Z"
+    },
+    "message": "[commissioner] use strnlen instead of strlen (#4404)",
+    "tree": {
+      "sha": "62f03ec2685b7012900fcb601dd2b06ca067e9dc",
+      "url": "https://api.github.com/repos/openthread/openthread/git/trees/62f03ec2685b7012900fcb601dd2b06ca067e9dc"
+    },
+    "url": "https://api.github.com/repos/openthread/openthread/git/commits/c3a3a0c424322009fec3ab735fb20ce8f6e19e70",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/openthread/openthread/commits/c3a3a0c424322009fec3ab735fb20ce8f6e19e70",
+  "html_url": "https://github.com/openthread/openthread/commit/c3a3a0c424322009fec3ab735fb20ce8f6e19e70",
+  "comments_url": "https://api.github.com/repos/openthread/openthread/commits/c3a3a0c424322009fec3ab735fb20ce8f6e19e70/comments",
+  "author": {
+    "login": "jwhui",
+    "id": 16142208,
+    "node_id": "MDQ6VXNlcjE2MTQyMjA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16142208?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jwhui",
+    "html_url": "https://github.com/jwhui",
+    "followers_url": "https://api.github.com/users/jwhui/followers",
+    "following_url": "https://api.github.com/users/jwhui/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jwhui/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jwhui/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jwhui/subscriptions",
+    "organizations_url": "https://api.github.com/users/jwhui/orgs",
+    "repos_url": "https://api.github.com/users/jwhui/repos",
+    "events_url": "https://api.github.com/users/jwhui/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jwhui/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jwhui",
+    "id": 16142208,
+    "node_id": "MDQ6VXNlcjE2MTQyMjA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16142208?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jwhui",
+    "html_url": "https://github.com/jwhui",
+    "followers_url": "https://api.github.com/users/jwhui/followers",
+    "following_url": "https://api.github.com/users/jwhui/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jwhui/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jwhui/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jwhui/subscriptions",
+    "organizations_url": "https://api.github.com/users/jwhui/orgs",
+    "repos_url": "https://api.github.com/users/jwhui/repos",
+    "events_url": "https://api.github.com/users/jwhui/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jwhui/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b8c3161281f8e15873f8decabd8eac461717aefe",
+      "url": "https://api.github.com/repos/openthread/openthread/commits/b8c3161281f8e15873f8decabd8eac461717aefe",
+      "html_url": "https://github.com/openthread/openthread/commit/b8c3161281f8e15873f8decabd8eac461717aefe"
+    }
+  ],
+  "stats": {
+    "total": 36,
+    "additions": 21,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "de8811b50916547a836cbdd50b8c9e998a4b2270",
+      "filename": "src/core/meshcop/commissioner.cpp",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 15,
+      "changes": 36,
+      "blob_url": "https://github.com/openthread/openthread/blob/c3a3a0c424322009fec3ab735fb20ce8f6e19e70/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp",
+      "raw_url": "https://github.com/openthread/openthread/raw/c3a3a0c424322009fec3ab735fb20ce8f6e19e70/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp",
+      "contents_url": "https://api.github.com/repos/openthread/openthread/contents/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp?ref=c3a3a0c424322009fec3ab735fb20ce8f6e19e70",
+      "patch": "@@ -255,7 +255,8 @@ otError Commissioner::AddJoiner(const Mac::ExtAddress *aEui64, const char *aPskd\n \n     VerifyOrExit(mState == OT_COMMISSIONER_STATE_ACTIVE, error = OT_ERROR_INVALID_STATE);\n \n-    VerifyOrExit(strlen(aPskd) <= Dtls::kPskMaxLength, error = OT_ERROR_INVALID_ARGS);\n+    VerifyOrExit(strnlen(aPskd, Dtls::kPskMaxLength + 1) <= Dtls::kPskMaxLength, error = OT_ERROR_INVALID_ARGS);\n+\n     RemoveJoiner(aEui64, 0); // remove immediately\n \n     for (Joiner *joiner = &mJoiners[0]; joiner < OT_ARRAY_END(mJoiners); joiner++)\n@@ -1103,28 +1104,33 @@ otError Commissioner::GeneratePskc(const char *              aPassPhrase,\n                                    const Mac::ExtendedPanId &aExtPanId,\n                                    Pskc &                    aPskc)\n {\n-    otError     error      = OT_ERROR_NONE;\n-    const char *saltPrefix = \"Thread\";\n-    uint8_t     salt[OT_PBKDF2_SALT_MAX_LEN];\n-    uint16_t    saltLen = 0;\n-\n-    VerifyOrExit((strlen(aPassPhrase) >= OT_COMMISSIONING_PASSPHRASE_MIN_SIZE) &&\n-                     (strlen(aPassPhrase) <= OT_COMMISSIONING_PASSPHRASE_MAX_SIZE) &&\n-                     (strlen(aNetworkName) <= OT_NETWORK_NAME_MAX_SIZE),\n+    otError    error        = OT_ERROR_NONE;\n+    const char saltPrefix[] = \"Thread\";\n+    uint8_t    salt[OT_PBKDF2_SALT_MAX_LEN];\n+    uint16_t   saltLen = 0;\n+    uint16_t   passphraseLen;\n+    uint8_t    networkNameLen;\n+\n+    passphraseLen  = static_cast<uint16_t>(strnlen(aPassPhrase, OT_COMMISSIONING_PASSPHRASE_MAX_SIZE + 1));\n+    networkNameLen = static_cast<uint8_t>(strnlen(aNetworkName, OT_NETWORK_NAME_MAX_SIZE + 1));\n+\n+    VerifyOrExit((passphraseLen >= OT_COMMISSIONING_PASSPHRASE_MIN_SIZE) &&\n+                     (passphraseLen <= OT_COMMISSIONING_PASSPHRASE_MAX_SIZE) &&\n+                     (networkNameLen <= OT_NETWORK_NAME_MAX_SIZE),\n                  error = OT_ERROR_INVALID_ARGS);\n \n     memset(salt, 0, sizeof(salt));\n-    memcpy(salt, saltPrefix, strlen(saltPrefix));\n-    saltLen += static_cast<uint16_t>(strlen(saltPrefix));\n+    memcpy(salt, saltPrefix, sizeof(saltPrefix) - 1);\n+    saltLen += static_cast<uint16_t>(sizeof(saltPrefix) - 1);\n \n     memcpy(salt + saltLen, aExtPanId.m8, sizeof(aExtPanId));\n     saltLen += OT_EXT_PAN_ID_SIZE;\n \n-    memcpy(salt + saltLen, aNetworkName, strlen(aNetworkName));\n-    saltLen += static_cast<uint16_t>(strlen(aNetworkName));\n+    memcpy(salt + saltLen, aNetworkName, networkNameLen);\n+    saltLen += networkNameLen;\n \n-    otPbkdf2Cmac(reinterpret_cast<const uint8_t *>(aPassPhrase), static_cast<uint16_t>(strlen(aPassPhrase)),\n-                 reinterpret_cast<const uint8_t *>(salt), saltLen, 16384, OT_PSKC_MAX_SIZE, aPskc.m8);\n+    otPbkdf2Cmac(reinterpret_cast<const uint8_t *>(aPassPhrase), passphraseLen, reinterpret_cast<const uint8_t *>(salt),\n+                 saltLen, 16384, OT_PSKC_MAX_SIZE, aPskc.m8);\n \n exit:\n     return error;"
+    }
+  ]
+}

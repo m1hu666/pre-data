@@ -1,0 +1,113 @@
+{
+  "sha": "5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6NWY3OTc1ZDA5ZWFjMGYxMGVkOGExN2RiYjZmNTk2NDk3NzcyNWFkYw==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T00:45:43Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T00:54:29Z"
+    },
+    "message": "Prevent another div by 0 in optimized pooling implementations TFLite\n\nPiperOrigin-RevId: 370800091\nChange-Id: I2119352f57fb5ca4f2051e0e2d749403304a979b",
+    "tree": {
+      "sha": "9c376a68414c3125d48d809886d8f4bb6c6de2cf",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/9c376a68414c3125d48d809886d8f4bb6c6de2cf"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/5f7975d09eac0f10ed8a17dbb6f5964977725adc/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f24ccd932546416ec906a02ddd183b48a1d2c83",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3f24ccd932546416ec906a02ddd183b48a1d2c83",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/3f24ccd932546416ec906a02ddd183b48a1d2c83"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 17,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "474bd3825f4ff28a20f72a4a30774d2ba0d9cd43",
+      "filename": "tensorflow/lite/kernels/pooling.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/5f7975d09eac0f10ed8a17dbb6f5964977725adc/tensorflow%2Flite%2Fkernels%2Fpooling.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/5f7975d09eac0f10ed8a17dbb6f5964977725adc/tensorflow%2Flite%2Fkernels%2Fpooling.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fpooling.cc?ref=5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+      "patch": "@@ -87,6 +87,10 @@ TfLiteStatus GenericPrepare(TfLiteContext* context, TfLiteNode* node) {\n   auto padding = params->padding;\n   int out_width, out_height;\n \n+  // Prevent division by 0 in optimized pooling implementations\n+  TF_LITE_ENSURE(context, params->stride_height > 0);\n+  TF_LITE_ENSURE(context, params->stride_width > 0);\n+\n   data->padding = ComputePaddingHeightWidth(\n       params->stride_height, params->stride_width, 1, 1, height, width,\n       params->filter_height, params->filter_width, padding, &out_height,"
+    },
+    {
+      "sha": "108195388141dfd59ed58ca4154e47f2de753e34",
+      "filename": "tensorflow/lite/kernels/pooling_test.cc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/5f7975d09eac0f10ed8a17dbb6f5964977725adc/tensorflow%2Flite%2Fkernels%2Fpooling_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/5f7975d09eac0f10ed8a17dbb6f5964977725adc/tensorflow%2Flite%2Fkernels%2Fpooling_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fpooling_test.cc?ref=5f7975d09eac0f10ed8a17dbb6f5964977725adc",
+      "patch": "@@ -1151,5 +1151,18 @@ TEST(FloatPoolingOpTest, L2PoolPaddingValidSlide1) {\n   EXPECT_THAT(m.GetOutput(), ElementsAreArray({3.5, 6.0, 6.5}));\n }\n \n+#ifdef GTEST_HAS_DEATH_TEST\n+TEST(FloatPoolingOpTest, MaxPoolWithZeroStride) {\n+  EXPECT_DEATH(\n+      FloatPoolingOpModel m(BuiltinOperator_MAX_POOL_2D,\n+                            /*input=*/{TensorType_FLOAT32, {1, 2, 4, 1}},\n+                            /*filter_width=*/2, /*filter_height=*/2,\n+                            /*output=*/{TensorType_FLOAT32, {}},\n+                            /*padding=*/Padding_VALID,\n+                            /*stride_w=*/0, /*stride_h=*/0),\n+      \"Cannot allocate tensors\");\n+}\n+#endif\n+\n }  // namespace\n }  // namespace tflite"
+    }
+  ]
+}

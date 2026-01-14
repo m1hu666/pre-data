@@ -1,0 +1,101 @@
+{
+  "sha": "5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+  "node_id": "C_kwDOAXYlM9oAKDVlMmVhMmIxM2JkOThmNTNlMjk5NjRjYTI2YmIwZDYwMmE4YTEyYjk",
+  "commit": {
+    "author": {
+      "name": "Joshua Rogers",
+      "email": "MegaManSec@users.noreply.github.com",
+      "date": "2022-04-18T13:42:36Z"
+    },
+    "committer": {
+      "name": "Squid Anubis",
+      "email": "squid-anubis@squid-cache.org",
+      "date": "2022-04-19T19:17:42Z"
+    },
+    "message": "Improve handling of Gopher responses (#1022)",
+    "tree": {
+      "sha": "b251c92bf4a503e530a0d948b30c159677f869d4",
+      "url": "https://api.github.com/repos/squid-cache/squid/git/trees/b251c92bf4a503e530a0d948b30c159677f869d4"
+    },
+    "url": "https://api.github.com/repos/squid-cache/squid/git/commits/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/squid-cache/squid/commits/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+  "html_url": "https://github.com/squid-cache/squid/commit/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+  "comments_url": "https://api.github.com/repos/squid-cache/squid/commits/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9/comments",
+  "author": {
+    "login": "MegaManSec",
+    "id": 2505339,
+    "node_id": "MDQ6VXNlcjI1MDUzMzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2505339?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MegaManSec",
+    "html_url": "https://github.com/MegaManSec",
+    "followers_url": "https://api.github.com/users/MegaManSec/followers",
+    "following_url": "https://api.github.com/users/MegaManSec/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MegaManSec/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MegaManSec/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MegaManSec/subscriptions",
+    "organizations_url": "https://api.github.com/users/MegaManSec/orgs",
+    "repos_url": "https://api.github.com/users/MegaManSec/repos",
+    "events_url": "https://api.github.com/users/MegaManSec/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MegaManSec/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "squid-anubis",
+    "id": 35778098,
+    "node_id": "MDQ6VXNlcjM1Nzc4MDk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35778098?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/squid-anubis",
+    "html_url": "https://github.com/squid-anubis",
+    "followers_url": "https://api.github.com/users/squid-anubis/followers",
+    "following_url": "https://api.github.com/users/squid-anubis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/squid-anubis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/squid-anubis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/squid-anubis/subscriptions",
+    "organizations_url": "https://api.github.com/users/squid-anubis/orgs",
+    "repos_url": "https://api.github.com/users/squid-anubis/repos",
+    "events_url": "https://api.github.com/users/squid-anubis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/squid-anubis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b9a1bbfbc531359a87647271a282edff9ccdd206",
+      "url": "https://api.github.com/repos/squid-cache/squid/commits/b9a1bbfbc531359a87647271a282edff9ccdd206",
+      "html_url": "https://github.com/squid-cache/squid/commit/b9a1bbfbc531359a87647271a282edff9ccdd206"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 12,
+    "deletions": 20
+  },
+  "files": [
+    {
+      "sha": "409c1808c62f29998a6963086050bb1df416c68f",
+      "filename": "src/gopher.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 20,
+      "changes": 32,
+      "blob_url": "https://github.com/squid-cache/squid/blob/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9/src%2Fgopher.cc",
+      "raw_url": "https://github.com/squid-cache/squid/raw/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9/src%2Fgopher.cc",
+      "contents_url": "https://api.github.com/repos/squid-cache/squid/contents/src%2Fgopher.cc?ref=5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+      "patch": "@@ -365,7 +365,6 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n     char *lpos = NULL;\n     char *tline = NULL;\n     LOCAL_ARRAY(char, line, TEMP_BUF_SIZE);\n-    LOCAL_ARRAY(char, tmpbuf, TEMP_BUF_SIZE);\n     char *name = NULL;\n     char *selector = NULL;\n     char *host = NULL;\n@@ -375,7 +374,6 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n     char gtype;\n     StoreEntry *entry = NULL;\n \n-    memset(tmpbuf, '\\0', TEMP_BUF_SIZE);\n     memset(line, '\\0', TEMP_BUF_SIZE);\n \n     entry = gopherState->entry;\n@@ -410,7 +408,7 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n         return;\n     }\n \n-    String outbuf;\n+    SBuf outbuf;\n \n     if (!gopherState->HTML_header_added) {\n         if (gopherState->conversion == GopherStateData::HTML_CSO_RESULT)\n@@ -582,37 +580,34 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n                         break;\n                     }\n \n-                    memset(tmpbuf, '\\0', TEMP_BUF_SIZE);\n-\n                     if ((gtype == GOPHER_TELNET) || (gtype == GOPHER_3270)) {\n                         if (strlen(escaped_selector) != 0)\n-                            snprintf(tmpbuf, TEMP_BUF_SIZE, \"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"telnet://%s@%s%s%s/\\\">%s</A>\\n\",\n+                            outbuf.appendf(\"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"telnet://%s@%s%s%s/\\\">%s</A>\\n\",\n                                      icon_url, escaped_selector, rfc1738_escape_part(host),\n                                      *port ? \":\" : \"\", port, html_quote(name));\n                         else\n-                            snprintf(tmpbuf, TEMP_BUF_SIZE, \"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"telnet://%s%s%s/\\\">%s</A>\\n\",\n+                            outbuf.appendf(\"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"telnet://%s%s%s/\\\">%s</A>\\n\",\n                                      icon_url, rfc1738_escape_part(host), *port ? \":\" : \"\",\n                                      port, html_quote(name));\n \n                     } else if (gtype == GOPHER_INFO) {\n-                        snprintf(tmpbuf, TEMP_BUF_SIZE, \"\\t%s\\n\", html_quote(name));\n+                        outbuf.appendf(\"\\t%s\\n\", html_quote(name));\n                     } else {\n                         if (strncmp(selector, \"GET /\", 5) == 0) {\n                             /* WWW link */\n-                            snprintf(tmpbuf, TEMP_BUF_SIZE, \"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"http://%s/%s\\\">%s</A>\\n\",\n+                            outbuf.appendf(\"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"http://%s/%s\\\">%s</A>\\n\",\n                                      icon_url, host, rfc1738_escape_unescaped(selector + 5), html_quote(name));\n                         } else if (gtype == GOPHER_WWW) {\n-                            snprintf(tmpbuf, TEMP_BUF_SIZE, \"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"%s\\\">%s</A>\\n\",\n+                            outbuf.appendf(\"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"gopher://%s/%c%s\\\">%s</A>\\n\",\n                                      icon_url, rfc1738_escape_unescaped(selector), html_quote(name));\n                         } else {\n                             /* Standard link */\n-                            snprintf(tmpbuf, TEMP_BUF_SIZE, \"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"gopher://%s/%c%s\\\">%s</A>\\n\",\n+                            outbuf.appendf(\"<IMG border=\\\"0\\\" SRC=\\\"%s\\\"> <A HREF=\\\"gopher://%s/%c%s\\\">%s</A>\\n\",\n                                      icon_url, host, gtype, escaped_selector, html_quote(name));\n                         }\n                     }\n \n                     safe_free(escaped_selector);\n-                    outbuf.append(tmpbuf);\n                 } else {\n                     memset(line, '\\0', TEMP_BUF_SIZE);\n                     continue;\n@@ -645,13 +640,12 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n                     break;\n \n                 if (gopherState->cso_recno != recno) {\n-                    snprintf(tmpbuf, TEMP_BUF_SIZE, \"</PRE><HR noshade size=\\\"1px\\\"><H2>Record# %d<br><i>%s</i></H2>\\n<PRE>\", recno, html_quote(result));\n+                    outbuf.appendf(\"</PRE><HR noshade size=\\\"1px\\\"><H2>Record# %d<br><i>%s</i></H2>\\n<PRE>\", recno, html_quote(result));\n                     gopherState->cso_recno = recno;\n                 } else {\n-                    snprintf(tmpbuf, TEMP_BUF_SIZE, \"%s\\n\", html_quote(result));\n+                    outbuf.appendf(\"%s\\n\", html_quote(result));\n                 }\n \n-                outbuf.append(tmpbuf);\n                 break;\n             } else {\n                 int code;\n@@ -679,8 +673,7 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n \n                 case 502: { /* Too Many Matches */\n                     /* Print the message the server returns */\n-                    snprintf(tmpbuf, TEMP_BUF_SIZE, \"</PRE><HR noshade size=\\\"1px\\\"><H2>%s</H2>\\n<PRE>\", html_quote(result));\n-                    outbuf.append(tmpbuf);\n+                    outbuf.appendf(\"</PRE><HR noshade size=\\\"1px\\\"><H2>%s</H2>\\n<PRE>\", html_quote(result));\n                     break;\n                 }\n \n@@ -696,13 +689,12 @@ gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)\n \n     }               /* while loop */\n \n-    if (outbuf.size() > 0) {\n-        entry->append(outbuf.rawBuf(), outbuf.size());\n+    if (outbuf.length() > 0) {\n+        entry->append(outbuf.rawContent(), outbuf.length());\n         /* now let start sending stuff to client */\n         entry->flush();\n     }\n \n-    outbuf.clean();\n     return;\n }\n "
+    }
+  ]
+}

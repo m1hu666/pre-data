@@ -1,0 +1,101 @@
+{
+  "sha": "96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+  "node_id": "MDY6Q29tbWl0ODc1NzU1Mjo5NmRhYTQwMzZhNDI1ZmYzZjIzYTdkZmNiYTU3YmZiMGY5NDJiZWM2",
+  "commit": {
+    "author": {
+      "name": "Paul Davis",
+      "email": "paul@linuxaudiosystems.com",
+      "date": "2020-03-11T14:49:42Z"
+    },
+    "committer": {
+      "name": "Paul Davis",
+      "email": "paul@linuxaudiosystems.com",
+      "date": "2020-03-11T14:50:29Z"
+    },
+    "message": "fix apparent free-ordering issue reported in #7926",
+    "tree": {
+      "sha": "0ccedd8c94622ea60253094e96c29f67ebcd6b47",
+      "url": "https://api.github.com/repos/Ardour/ardour/git/trees/0ccedd8c94622ea60253094e96c29f67ebcd6b47"
+    },
+    "url": "https://api.github.com/repos/Ardour/ardour/git/commits/96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Ardour/ardour/commits/96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+  "html_url": "https://github.com/Ardour/ardour/commit/96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+  "comments_url": "https://api.github.com/repos/Ardour/ardour/commits/96daa4036a425ff3f23a7dfcba57bfb0f942bec6/comments",
+  "author": {
+    "login": "pauldavisthefirst",
+    "id": 3856259,
+    "node_id": "MDQ6VXNlcjM4NTYyNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3856259?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pauldavisthefirst",
+    "html_url": "https://github.com/pauldavisthefirst",
+    "followers_url": "https://api.github.com/users/pauldavisthefirst/followers",
+    "following_url": "https://api.github.com/users/pauldavisthefirst/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pauldavisthefirst/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pauldavisthefirst/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pauldavisthefirst/subscriptions",
+    "organizations_url": "https://api.github.com/users/pauldavisthefirst/orgs",
+    "repos_url": "https://api.github.com/users/pauldavisthefirst/repos",
+    "events_url": "https://api.github.com/users/pauldavisthefirst/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pauldavisthefirst/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pauldavisthefirst",
+    "id": 3856259,
+    "node_id": "MDQ6VXNlcjM4NTYyNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3856259?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pauldavisthefirst",
+    "html_url": "https://github.com/pauldavisthefirst",
+    "followers_url": "https://api.github.com/users/pauldavisthefirst/followers",
+    "following_url": "https://api.github.com/users/pauldavisthefirst/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pauldavisthefirst/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pauldavisthefirst/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pauldavisthefirst/subscriptions",
+    "organizations_url": "https://api.github.com/users/pauldavisthefirst/orgs",
+    "repos_url": "https://api.github.com/users/pauldavisthefirst/repos",
+    "events_url": "https://api.github.com/users/pauldavisthefirst/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pauldavisthefirst/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "12c4a88db690b0eed3a308a36c8e9cda3db5cca3",
+      "url": "https://api.github.com/repos/Ardour/ardour/commits/12c4a88db690b0eed3a308a36c8e9cda3db5cca3",
+      "html_url": "https://github.com/Ardour/ardour/commit/12c4a88db690b0eed3a308a36c8e9cda3db5cca3"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e09af7602be6fbbfbe4f0447ca2b7767531799ab",
+      "filename": "libs/pbd/xml++.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/Ardour/ardour/blob/96daa4036a425ff3f23a7dfcba57bfb0f942bec6/libs%2Fpbd%2Fxml%2B%2B.cc",
+      "raw_url": "https://github.com/Ardour/ardour/raw/96daa4036a425ff3f23a7dfcba57bfb0f942bec6/libs%2Fpbd%2Fxml%2B%2B.cc",
+      "contents_url": "https://api.github.com/repos/Ardour/ardour/contents/libs%2Fpbd%2Fxml%2B%2B.cc?ref=96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+      "patch": "@@ -770,16 +770,16 @@ static XMLSharedNodeList* find_impl(xmlXPathContext* ctxt, const string& xpath)\n \txmlXPathObject* result = xmlXPathEval((const xmlChar*)xpath.c_str(), ctxt);\n \n \tif (!result) {\n-\t\txmlXPathFreeContext(ctxt);\n \t\txmlFreeDoc(ctxt->doc);\n+\t\txmlXPathFreeContext(ctxt);\n \n \t\tthrow XMLException(\"Invalid XPath: \" + xpath);\n \t}\n \n \tif (result->type != XPATH_NODESET) {\n \t\txmlXPathFreeObject(result);\n-\t\txmlXPathFreeContext(ctxt);\n \t\txmlFreeDoc(ctxt->doc);\n+\t\txmlXPathFreeContext(ctxt);\n \n \t\tthrow XMLException(\"Only nodeset result types are supported.\");\n \t}"
+    }
+  ]
+}

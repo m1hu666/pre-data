@@ -1,0 +1,81 @@
+{
+  "sha": "98d246cabe677e1d8287e4d42ce02825417be9e2",
+  "node_id": "C_kwDOByyPPdoAKDk4ZDI0NmNhYmU2NzdlMWQ4Mjg3ZTRkNDJjZTAyODI1NDE3YmU5ZTI",
+  "commit": {
+    "author": {
+      "name": "Ken Rockot",
+      "email": "rockot@google.com",
+      "date": "2022-01-25T16:18:37Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-25T16:18:37Z"
+    },
+    "message": "Viz: Fix UAF on context loss\n\nFixed: 1250655\nChange-Id: I2898316635d370fa36b94e0ae2564ed357745b2c\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3413372\nAuto-Submit: Ken Rockot <rockot@google.com>\nReviewed-by: Kyle Charbonneau <kylechar@chromium.org>\nCommit-Queue: Kyle Charbonneau <kylechar@chromium.org>\nCr-Commit-Position: refs/heads/main@{#963012}",
+    "tree": {
+      "sha": "254df2281282d1896b3f6488f3590fde992b1809",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/254df2281282d1896b3f6488f3590fde992b1809"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/98d246cabe677e1d8287e4d42ce02825417be9e2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/98d246cabe677e1d8287e4d42ce02825417be9e2",
+  "html_url": "https://github.com/chromium/chromium/commit/98d246cabe677e1d8287e4d42ce02825417be9e2",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/98d246cabe677e1d8287e4d42ce02825417be9e2/comments",
+  "author": {
+    "login": "krockot",
+    "id": 667827,
+    "node_id": "MDQ6VXNlcjY2NzgyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/667827?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/krockot",
+    "html_url": "https://github.com/krockot",
+    "followers_url": "https://api.github.com/users/krockot/followers",
+    "following_url": "https://api.github.com/users/krockot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/krockot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/krockot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/krockot/subscriptions",
+    "organizations_url": "https://api.github.com/users/krockot/orgs",
+    "repos_url": "https://api.github.com/users/krockot/repos",
+    "events_url": "https://api.github.com/users/krockot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/krockot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "e1432e28b6c868f95d09eefdfe4d22d84dfb96e9",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/e1432e28b6c868f95d09eefdfe4d22d84dfb96e9",
+      "html_url": "https://github.com/chromium/chromium/commit/e1432e28b6c868f95d09eefdfe4d22d84dfb96e9"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 7,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "1b323f142d934afea0215dea190efaa197cec554",
+      "filename": "services/viz/public/cpp/gpu/context_provider_command_buffer.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 10,
+      "blob_url": "https://github.com/chromium/chromium/blob/98d246cabe677e1d8287e4d42ce02825417be9e2/services%2Fviz%2Fpublic%2Fcpp%2Fgpu%2Fcontext_provider_command_buffer.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/98d246cabe677e1d8287e4d42ce02825417be9e2/services%2Fviz%2Fpublic%2Fcpp%2Fgpu%2Fcontext_provider_command_buffer.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/services%2Fviz%2Fpublic%2Fcpp%2Fgpu%2Fcontext_provider_command_buffer.cc?ref=98d246cabe677e1d8287e4d42ce02825417be9e2",
+      "patch": "@@ -478,9 +478,13 @@ const gpu::GpuFeatureInfo& ContextProviderCommandBuffer::GetGpuFeatureInfo()\n void ContextProviderCommandBuffer::OnLostContext() {\n   CheckValidThreadOrLockAcquired();\n \n-  // Ensure |this| isn't destroyed in the middle of OnLostContext() if observers\n-  // drop all references to it.\n-  scoped_refptr<ContextProviderCommandBuffer> ref(this);\n+  // Observers may drop the last persistent references to `this`, but there may\n+  // be weak references in use further up the stack. This task is posted to\n+  // ensure that destruction is deferred until it's safe.\n+  base::SequencedTaskRunnerHandle::Get()->PostTask(\n+      FROM_HERE,\n+      base::BindOnce([](scoped_refptr<ContextProviderCommandBuffer>) {},\n+                     base::WrapRefCounted(this)));\n \n   for (auto& observer : observers_)\n     observer.OnContextLost();"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6N2M4Y2M0ZWM2OWNkMzQ4ZTQ0YWQ2YTI2OTkwNTdjYTg4ZmFhZDNlNQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-30T02:43:09Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-30T02:47:35Z"
+    },
+    "message": "Fix a dangerous integer overflow and a malloc of negative size.\n\nPiperOrigin-RevId: 371254154\nChange-Id: I250a98a3df26328770167025670235a963a72da0",
+    "tree": {
+      "sha": "39d1ff7e50d0a47d041bb50e7fc9cdc111e45d05",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/39d1ff7e50d0a47d041bb50e7fc9cdc111e45d05"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4ceffae632721e52bf3501b736e4fe9d1221cdfa",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/4ceffae632721e52bf3501b736e4fe9d1221cdfa",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/4ceffae632721e52bf3501b736e4fe9d1221cdfa"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 5,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "00dd0260cbcc902289c382340018207ff35e7bd7",
+      "filename": "tensorflow/lite/c/common.c",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5/tensorflow%2Flite%2Fc%2Fcommon.c",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5/tensorflow%2Flite%2Fc%2Fcommon.c",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fc%2Fcommon.c?ref=7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+      "patch": "@@ -45,8 +45,10 @@ int TfLiteIntArrayEqualsArray(const TfLiteIntArray* a, int b_size,\n #ifndef TF_LITE_STATIC_MEMORY\n \n TfLiteIntArray* TfLiteIntArrayCreate(int size) {\n-  TfLiteIntArray* ret =\n-      (TfLiteIntArray*)malloc(TfLiteIntArrayGetSizeInBytes(size));\n+  int alloc_size = TfLiteIntArrayGetSizeInBytes(size);\n+  if (alloc_size <= 0) return NULL;\n+  TfLiteIntArray* ret = (TfLiteIntArray*)malloc(alloc_size);\n+  if (!ret) return ret;\n   ret->size = size;\n   return ret;\n }"
+    },
+    {
+      "sha": "4ad1054340c9c315f616ba157a0d364aa3ab9bfc",
+      "filename": "tensorflow/lite/kernels/embedding_lookup_sparse.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5/tensorflow%2Flite%2Fkernels%2Fembedding_lookup_sparse.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/7c8cc4ec69cd348e44ad6a2699057ca88faad3e5/tensorflow%2Flite%2Fkernels%2Fembedding_lookup_sparse.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fembedding_lookup_sparse.cc?ref=7c8cc4ec69cd348e44ad6a2699057ca88faad3e5",
+      "patch": "@@ -173,6 +173,7 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {\n \n   // Resize output tensor.\n   TfLiteIntArray* output_shape = TfLiteIntArrayCreate(output_rank);\n+  TF_LITE_ENSURE(context, output_shape != nullptr);\n   int k = 0;\n   int embedding_size = 1;\n   int lookup_size = 1;"
+    }
+  ]
+}

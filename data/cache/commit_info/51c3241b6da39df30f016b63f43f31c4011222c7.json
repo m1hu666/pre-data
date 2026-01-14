@@ -1,0 +1,61 @@
+{
+  "sha": "51c3241b6da39df30f016b63f43f31c4011222c7",
+  "node_id": "C_kwDOAE9q7doAKDUxYzMyNDFiNmRhMzlkZjMwZjAxNmI2M2Y0M2YzMWM0MDExMjIyYzc",
+  "commit": {
+    "author": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-31T10:17:21Z"
+    },
+    "committer": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-31T10:17:21Z"
+    },
+    "message": "Fixed a NULL-pointer access in the line-based reconstruction process\nin case no valid scan was found and no data is present.",
+    "tree": {
+      "sha": "8dccaea874243b8c1a2ae87b8316bb3e8186522e",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/trees/8dccaea874243b8c1a2ae87b8316bb3e8186522e"
+    },
+    "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/commits/51c3241b6da39df30f016b63f43f31c4011222c7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/51c3241b6da39df30f016b63f43f31c4011222c7",
+  "html_url": "https://github.com/thorfdbg/libjpeg/commit/51c3241b6da39df30f016b63f43f31c4011222c7",
+  "comments_url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/51c3241b6da39df30f016b63f43f31c4011222c7/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "ea6315164b1649ff932a396b7600eac4bffcfaba",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/ea6315164b1649ff932a396b7600eac4bffcfaba",
+      "html_url": "https://github.com/thorfdbg/libjpeg/commit/ea6315164b1649ff932a396b7600eac4bffcfaba"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 6,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "ca0b968d0f894601dc6ec59062bcd8217aed5b35",
+      "filename": "control/linebitmaprequester.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/51c3241b6da39df30f016b63f43f31c4011222c7/control%2Flinebitmaprequester.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/51c3241b6da39df30f016b63f43f31c4011222c7/control%2Flinebitmaprequester.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/control%2Flinebitmaprequester.cpp?ref=51c3241b6da39df30f016b63f43f31c4011222c7",
+      "patch": "@@ -43,7 +43,7 @@\n ** This class pulls blocks from the frame and reconstructs from those\n ** quantized block lines or encodes from them.\n **\n-** $Id: linebitmaprequester.cpp,v 1.36 2021/07/22 13:18:36 thor Exp $\n+** $Id: linebitmaprequester.cpp,v 1.37 2022/05/31 10:16:52 thor Exp $\n **\n */\n \n@@ -562,7 +562,11 @@ void LineBitmapRequester::ReconstructRegion(const RectAngle<LONG> &orgregion,con\n           LONG *dst = m_ppCTemp[i];\n           if (i >= rr->rr_usFirstComponent && i <= rr->rr_usLastComponent) {\n             ExtractBitmap(m_ppTempIBM[i],r,i);\n-            FetchRegion(x,*m_pppImage[i],dst);\n+            if (*m_pppImage[i]) {\n+              FetchRegion(x,*m_pppImage[i],dst);\n+            } else {\n+              memset(dst,0,sizeof(LONG) * 64);\n+            }\n           } else {\n             memset(dst,0,sizeof(LONG) * 64);\n           }"
+    }
+  ]
+}

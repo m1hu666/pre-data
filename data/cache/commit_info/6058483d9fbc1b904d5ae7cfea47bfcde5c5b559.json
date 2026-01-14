@@ -1,0 +1,101 @@
+{
+  "sha": "6058483d9fbc1b904d5ae7cfea47bfcde5c5b559",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODo2MDU4NDgzZDlmYmMxYjkwNGQ1YWU3Y2ZlYTQ3YmZjZGU1YzViNTU5",
+  "commit": {
+    "author": {
+      "name": "Attila Molnar",
+      "email": "attilamolnar@hush.com",
+      "date": "2015-04-16T16:04:03Z"
+    },
+    "committer": {
+      "name": "Attila Molnar",
+      "email": "attilamolnar@hush.com",
+      "date": "2015-04-16T16:04:03Z"
+    },
+    "message": "Reject replies to DNS PTR requests that contain invalid characters\n\nFixes issue #1033 reported by @ping86",
+    "tree": {
+      "sha": "e0a77e56044b08b19872b36a7513a3d298eb9c64",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/e0a77e56044b08b19872b36a7513a3d298eb9c64"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559",
+  "html_url": "https://github.com/inspircd/inspircd/commit/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559/comments",
+  "author": {
+    "login": "attilamolnar",
+    "id": 1634220,
+    "node_id": "MDQ6VXNlcjE2MzQyMjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1634220?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/attilamolnar",
+    "html_url": "https://github.com/attilamolnar",
+    "followers_url": "https://api.github.com/users/attilamolnar/followers",
+    "following_url": "https://api.github.com/users/attilamolnar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/attilamolnar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/attilamolnar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/attilamolnar/subscriptions",
+    "organizations_url": "https://api.github.com/users/attilamolnar/orgs",
+    "repos_url": "https://api.github.com/users/attilamolnar/repos",
+    "events_url": "https://api.github.com/users/attilamolnar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/attilamolnar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "attilamolnar",
+    "id": 1634220,
+    "node_id": "MDQ6VXNlcjE2MzQyMjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1634220?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/attilamolnar",
+    "html_url": "https://github.com/attilamolnar",
+    "followers_url": "https://api.github.com/users/attilamolnar/followers",
+    "following_url": "https://api.github.com/users/attilamolnar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/attilamolnar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/attilamolnar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/attilamolnar/subscriptions",
+    "organizations_url": "https://api.github.com/users/attilamolnar/orgs",
+    "repos_url": "https://api.github.com/users/attilamolnar/repos",
+    "events_url": "https://api.github.com/users/attilamolnar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/attilamolnar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4dd7fb60a8e46856cb2df3fcda56b9b119072552",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/4dd7fb60a8e46856cb2df3fcda56b9b119072552",
+      "html_url": "https://github.com/inspircd/inspircd/commit/4dd7fb60a8e46856cb2df3fcda56b9b119072552"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 8,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "14305ccab2f49a2a4e94f94ee67dc543c34e92c2",
+      "filename": "src/dns.cpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559/src%2Fdns.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559/src%2Fdns.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fdns.cpp?ref=6058483d9fbc1b904d5ae7cfea47bfcde5c5b559",
+      "patch": "@@ -700,8 +700,16 @@ DNSResult DNS::GetResult()\n \t\t\t\t/* Identical handling to PTR */\n \n \t\t\tcase DNS_QUERY_PTR:\n+\t\t\t{\n \t\t\t\t/* Reverse lookups just come back as char* */\n \t\t\t\tresultstr = std::string((const char*)data.first);\n+\t\t\t\tif (resultstr.find_first_not_of(\"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-\") != std::string::npos)\n+\t\t\t\t{\n+\t\t\t\t\tstd::string ro = req->orig;\n+\t\t\t\t\tdelete req;\n+\t\t\t\t\treturn DNSResult(this_id | ERROR_MASK, \"Invalid char(s) in reply\", 0, ro);\n+\t\t\t\t}\n+\t\t\t}\n \t\t\tbreak;\n \n \t\t\tdefault:"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "367cc80d66b0310b460f587fea44274b442951f1",
+  "node_id": "C_kwDOACraJ9oAKDM2N2NjODBkNjZiMDMxMGI0NjBmNTg3ZmVhNDQyNzRiNDQyOTUxZjE",
+  "commit": {
+    "author": {
+      "name": "fritsch",
+      "email": "Peter.Fruehberger@gmail.com",
+      "date": "2023-01-03T08:15:54Z"
+    },
+    "committer": {
+      "name": "fritsch",
+      "email": "Peter.Fruehberger@gmail.com",
+      "date": "2023-01-03T08:19:55Z"
+    },
+    "message": "ExifParse: Don't run outside exif information\n\nWhen parsing exif information the number of entries could be tainted. Make\nsure to not run behind the exif data by properly checking out of bounds.\n\nUpstream? fix: https://android.googlesource.com/platform/external/jhead/+/34a2564d3268a5ca1472c5076675782fbaf724d6",
+    "tree": {
+      "sha": "42ea27546cb464d24b265977b3b7714fa51e88fe",
+      "url": "https://api.github.com/repos/fritsch/xbmc/git/trees/42ea27546cb464d24b265977b3b7714fa51e88fe"
+    },
+    "url": "https://api.github.com/repos/fritsch/xbmc/git/commits/367cc80d66b0310b460f587fea44274b442951f1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/fritsch/xbmc/commits/367cc80d66b0310b460f587fea44274b442951f1",
+  "html_url": "https://github.com/fritsch/xbmc/commit/367cc80d66b0310b460f587fea44274b442951f1",
+  "comments_url": "https://api.github.com/repos/fritsch/xbmc/commits/367cc80d66b0310b460f587fea44274b442951f1/comments",
+  "author": {
+    "login": "fritsch",
+    "id": 1089309,
+    "node_id": "MDQ6VXNlcjEwODkzMDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1089309?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fritsch",
+    "html_url": "https://github.com/fritsch",
+    "followers_url": "https://api.github.com/users/fritsch/followers",
+    "following_url": "https://api.github.com/users/fritsch/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fritsch/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fritsch/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fritsch/subscriptions",
+    "organizations_url": "https://api.github.com/users/fritsch/orgs",
+    "repos_url": "https://api.github.com/users/fritsch/repos",
+    "events_url": "https://api.github.com/users/fritsch/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fritsch/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "fritsch",
+    "id": 1089309,
+    "node_id": "MDQ6VXNlcjEwODkzMDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1089309?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fritsch",
+    "html_url": "https://github.com/fritsch",
+    "followers_url": "https://api.github.com/users/fritsch/followers",
+    "following_url": "https://api.github.com/users/fritsch/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fritsch/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fritsch/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fritsch/subscriptions",
+    "organizations_url": "https://api.github.com/users/fritsch/orgs",
+    "repos_url": "https://api.github.com/users/fritsch/repos",
+    "events_url": "https://api.github.com/users/fritsch/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fritsch/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "939c521a00f72457ce441f3a90910e61962dc213",
+      "url": "https://api.github.com/repos/fritsch/xbmc/commits/939c521a00f72457ce441f3a90910e61962dc213",
+      "html_url": "https://github.com/fritsch/xbmc/commit/939c521a00f72457ce441f3a90910e61962dc213"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "36ea3133131425977664a65d5dec43a9629f2070",
+      "filename": "xbmc/pictures/ExifParse.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/fritsch/xbmc/blob/367cc80d66b0310b460f587fea44274b442951f1/xbmc%2Fpictures%2FExifParse.cpp",
+      "raw_url": "https://github.com/fritsch/xbmc/raw/367cc80d66b0310b460f587fea44274b442951f1/xbmc%2Fpictures%2FExifParse.cpp",
+      "contents_url": "https://api.github.com/repos/fritsch/xbmc/contents/xbmc%2Fpictures%2FExifParse.cpp?ref=367cc80d66b0310b460f587fea44274b442951f1",
+      "patch": "@@ -878,6 +878,12 @@ void CExifParse::ProcessGpsInfo(\n   {\n     const unsigned char* DirEntry = DIR_ENTRY_ADDR(DirStart, de);\n \n+    // Fix from aosp 34a2564d3268a5ca1472c5076675782fbaf724d6\n+    if (DirEntry + 12 > OffsetBase + ExifLength){\n+      ErrNonfatal(\"GPS info directory goes past end of exif\", 0, 0);\n+      return;\n+    }\n+\n     unsigned Tag        = Get16(DirEntry, m_MotorolaOrder);\n     unsigned Format     = Get16(DirEntry+2, m_MotorolaOrder);\n     unsigned Components = (unsigned)Get32(DirEntry+4, m_MotorolaOrder);"
+    }
+  ]
+}

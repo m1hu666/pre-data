@@ -1,0 +1,81 @@
+{
+  "sha": "955059813cc325dc1db5e2daa6221271406d4439",
+  "node_id": "C_kwDOArmXAtoAKDk1NTA1OTgxM2NjMzI1ZGMxZGI1ZTJkYWE2MjIxMjcxNDA2ZDQ0Mzk",
+  "commit": {
+    "author": {
+      "name": "Dan Moldovan",
+      "email": "mdan@google.com",
+      "date": "2021-11-12T16:17:57Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-12T16:23:09Z"
+    },
+    "message": "Check for type inference error on node construction.\n\nPiperOrigin-RevId: 409415804\nChange-Id: Ieb6e020906b96f522bf8e2fa103715ddbbdc434a",
+    "tree": {
+      "sha": "88a2cad4df7169bd6d7aafb81f83063ee6e135d7",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/88a2cad4df7169bd6d7aafb81f83063ee6e135d7"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/955059813cc325dc1db5e2daa6221271406d4439",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/955059813cc325dc1db5e2daa6221271406d4439",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/955059813cc325dc1db5e2daa6221271406d4439",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/955059813cc325dc1db5e2daa6221271406d4439/comments",
+  "author": null,
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3d89911481ba6ebe8c88c1c0b595412121e6c645",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3d89911481ba6ebe8c88c1c0b595412121e6c645",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/3d89911481ba6ebe8c88c1c0b595412121e6c645"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2e3703b66030f47323c876a0012517c202ef37d2",
+      "filename": "tensorflow/core/graph/graph.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/955059813cc325dc1db5e2daa6221271406d4439/tensorflow%2Fcore%2Fgraph%2Fgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/955059813cc325dc1db5e2daa6221271406d4439/tensorflow%2Fcore%2Fgraph%2Fgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fgraph%2Fgraph.cc?ref=955059813cc325dc1db5e2daa6221271406d4439",
+      "patch": "@@ -561,6 +561,11 @@ Node* Graph::AddNode(NodeDef node_def, Status* status) {\n     VLOG(3) << \"AddNode: found type constructor for \" << node_def.name();\n     const auto ctor_type =\n         full_type::SpecializeType(AttrSlice(node_def), op_reg_data->op_def);\n+    if (!ctor_type.ok()) {\n+      *status = errors::InvalidArgument(\"type error: \",\n+                                        ctor_type.status().ToString());\n+      return nullptr;\n+    }\n     const FullTypeDef ctor_typedef = ctor_type.ValueOrDie();\n     if (ctor_typedef.type_id() != TFT_UNSET) {\n       *(node_def.mutable_experimental_type()) = ctor_typedef;"
+    }
+  ]
+}

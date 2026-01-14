@@ -1,0 +1,113 @@
+{
+  "sha": "217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+  "node_id": "C_kwDOAM4h9NoAKDIxN2VhYTllOTk3MzQ4YmU0YzljNWFhY2M2YmE4YzRmM2MxZjQwNTQ",
+  "commit": {
+    "author": {
+      "name": "Csoregi Natalia",
+      "email": "ncsoregi@mozilla.com",
+      "date": "2022-01-28T18:35:39Z"
+    },
+    "committer": {
+      "name": "Csoregi Natalia",
+      "email": "ncsoregi@mozilla.com",
+      "date": "2022-01-28T18:35:39Z"
+    },
+    "message": "Backed out changeset b56be60b0629 (bug 1741888) for reftest failures on autofill. CLOSED TREE",
+    "tree": {
+      "sha": "4203f18fae5bbb2c75bdb76057483c8994fc21b8",
+      "url": "https://api.github.com/repos/mozilla/gecko-dev/git/trees/4203f18fae5bbb2c75bdb76057483c8994fc21b8"
+    },
+    "url": "https://api.github.com/repos/mozilla/gecko-dev/git/commits/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mozilla/gecko-dev/commits/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+  "html_url": "https://github.com/mozilla/gecko-dev/commit/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+  "comments_url": "https://api.github.com/repos/mozilla/gecko-dev/commits/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054/comments",
+  "author": {
+    "login": "ncsoregi",
+    "id": 31131766,
+    "node_id": "MDQ6VXNlcjMxMTMxNzY2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31131766?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ncsoregi",
+    "html_url": "https://github.com/ncsoregi",
+    "followers_url": "https://api.github.com/users/ncsoregi/followers",
+    "following_url": "https://api.github.com/users/ncsoregi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ncsoregi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ncsoregi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ncsoregi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ncsoregi/orgs",
+    "repos_url": "https://api.github.com/users/ncsoregi/repos",
+    "events_url": "https://api.github.com/users/ncsoregi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ncsoregi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ncsoregi",
+    "id": 31131766,
+    "node_id": "MDQ6VXNlcjMxMTMxNzY2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31131766?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ncsoregi",
+    "html_url": "https://github.com/ncsoregi",
+    "followers_url": "https://api.github.com/users/ncsoregi/followers",
+    "following_url": "https://api.github.com/users/ncsoregi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ncsoregi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ncsoregi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ncsoregi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ncsoregi/orgs",
+    "repos_url": "https://api.github.com/users/ncsoregi/repos",
+    "events_url": "https://api.github.com/users/ncsoregi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ncsoregi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "399df8bf8bdcf8d5cbe54f36cd102fbedb7e1223",
+      "url": "https://api.github.com/repos/mozilla/gecko-dev/commits/399df8bf8bdcf8d5cbe54f36cd102fbedb7e1223",
+      "html_url": "https://github.com/mozilla/gecko-dev/commit/399df8bf8bdcf8d5cbe54f36cd102fbedb7e1223"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 0,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "07375c4908af104b5b9a3a2c2db7c368d7f19c66",
+      "filename": "layout/style/res/forms.css",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 5,
+      "changes": 5,
+      "blob_url": "https://github.com/mozilla/gecko-dev/blob/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054/layout%2Fstyle%2Fres%2Fforms.css",
+      "raw_url": "https://github.com/mozilla/gecko-dev/raw/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054/layout%2Fstyle%2Fres%2Fforms.css",
+      "contents_url": "https://api.github.com/repos/mozilla/gecko-dev/contents/layout%2Fstyle%2Fres%2Fforms.css?ref=217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+      "patch": "@@ -161,10 +161,6 @@ textarea > scrollbar {\n   visibility: hidden;\n }\n \n-::-moz-text-control-preview {\n-  overflow: hidden;\n-}\n-\n :not(:-moz-autofill-preview)::-moz-text-control-editing-root,\n :placeholder-shown:not(:autofill)::placeholder,\n :autofill::-moz-text-control-preview {\n@@ -1012,5 +1008,4 @@ input:autofill, select:autofill {\n \n input:-moz-autofill-preview, select:-moz-autofill-preview {\n   color: GrayText;\n-  font-family: system-ui !important;\n }"
+    },
+    {
+      "sha": "ce8d1531254766e1aacfb407dba9b55b61bab454",
+      "filename": "toolkit/components/formautofill/FormAutofillUtils.jsm",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 5,
+      "changes": 5,
+      "blob_url": "https://github.com/mozilla/gecko-dev/blob/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054/toolkit%2Fcomponents%2Fformautofill%2FFormAutofillUtils.jsm",
+      "raw_url": "https://github.com/mozilla/gecko-dev/raw/217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054/toolkit%2Fcomponents%2Fformautofill%2FFormAutofillUtils.jsm",
+      "contents_url": "https://api.github.com/repos/mozilla/gecko-dev/contents/toolkit%2Fcomponents%2Fformautofill%2FFormAutofillUtils.jsm?ref=217eaa9e997348be4c9c5aacc6ba8c4f3c1f4054",
+      "patch": "@@ -812,11 +812,6 @@ this.FormAutofillUtils = {\n    * @returns {DOMElement}\n    */\n   findAddressSelectOption(selectEl, address, fieldName) {\n-    if (selectEl.options.length > 512) {\n-      // Allow enough space for all countries (roughly 300 distinct values) and all\n-      // timezones (roughly 400 distinct values), plus some extra wiggle room.\n-      return null;\n-    }\n     let value = address[fieldName];\n     if (!value) {\n       return null;"
+    }
+  ]
+}

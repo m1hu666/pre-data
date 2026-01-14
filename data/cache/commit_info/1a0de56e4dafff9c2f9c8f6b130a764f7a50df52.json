@@ -1,0 +1,125 @@
+{
+  "sha": "1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+  "node_id": "MDY6Q29tbWl0NDMxODQ1ODoxYTBkZTU2ZTRkYWZmZjljMmY5YzhmNmIxMzBhNzY0ZjdhNTBkZjUy",
+  "commit": {
+    "author": {
+      "name": "RamseyK",
+      "email": "ramsey.kant@gmail.com",
+      "date": "2019-09-08T16:23:20Z"
+    },
+    "committer": {
+      "name": "RamseyK",
+      "email": "ramsey.kant@gmail.com",
+      "date": "2019-09-08T16:23:20Z"
+    },
+    "message": "Deny any directory traversal paths.  README update",
+    "tree": {
+      "sha": "d8fb74ee6005db0436964759caf6a29c8c510e77",
+      "url": "https://api.github.com/repos/RamseyK/httpserver/git/trees/d8fb74ee6005db0436964759caf6a29c8c510e77"
+    },
+    "url": "https://api.github.com/repos/RamseyK/httpserver/git/commits/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/RamseyK/httpserver/commits/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+  "html_url": "https://github.com/RamseyK/httpserver/commit/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+  "comments_url": "https://api.github.com/repos/RamseyK/httpserver/commits/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/comments",
+  "author": {
+    "login": "RamseyK",
+    "id": 278776,
+    "node_id": "MDQ6VXNlcjI3ODc3Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/278776?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RamseyK",
+    "html_url": "https://github.com/RamseyK",
+    "followers_url": "https://api.github.com/users/RamseyK/followers",
+    "following_url": "https://api.github.com/users/RamseyK/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RamseyK/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RamseyK/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RamseyK/subscriptions",
+    "organizations_url": "https://api.github.com/users/RamseyK/orgs",
+    "repos_url": "https://api.github.com/users/RamseyK/repos",
+    "events_url": "https://api.github.com/users/RamseyK/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RamseyK/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "RamseyK",
+    "id": 278776,
+    "node_id": "MDQ6VXNlcjI3ODc3Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/278776?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RamseyK",
+    "html_url": "https://github.com/RamseyK",
+    "followers_url": "https://api.github.com/users/RamseyK/followers",
+    "following_url": "https://api.github.com/users/RamseyK/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RamseyK/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RamseyK/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RamseyK/subscriptions",
+    "organizations_url": "https://api.github.com/users/RamseyK/orgs",
+    "repos_url": "https://api.github.com/users/RamseyK/repos",
+    "events_url": "https://api.github.com/users/RamseyK/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RamseyK/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6eeb84a28f09bf4c132d345b5b966d2a09e51a68",
+      "url": "https://api.github.com/repos/RamseyK/httpserver/commits/6eeb84a28f09bf4c132d345b5b966d2a09e51a68",
+      "html_url": "https://github.com/RamseyK/httpserver/commit/6eeb84a28f09bf4c132d345b5b966d2a09e51a68"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 8,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "db89830ab4cc9f60de6f0c179451bd0a7543de88",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/RamseyK/httpserver/blob/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/README.md",
+      "raw_url": "https://github.com/RamseyK/httpserver/raw/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/README.md",
+      "contents_url": "https://api.github.com/repos/RamseyK/httpserver/contents/README.md?ref=1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+      "patch": "@@ -3,13 +3,16 @@\n Ramsey Kant\n https://github.com/RamseyK/httpserver\n \n-A high performance, single threaded, HTTP server written in C++ to serve as a kqueue socket management and HTTP protocol learning tool\n+A high performance, single threaded, HTTP server written in C++ to serve as a kqueue socket management and HTTP protocol learning tool on BSD systems\n \n ## Features\n * Clean, documented code\n * Efficient socket management with kqueue\n * Easy to understand HTTP protocol parser (from my ByteBuffer project)\n * Tested on FreeBSD and MacOS\n \n+## Compiling Notes\n+* On FreeBSD, compile with gmake\n+\n ## License\n See LICENSE.TXT"
+    },
+    {
+      "sha": "41fa33da2045b8e7db29933fef277daf6d1e50fd",
+      "filename": "src/HTTPServer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/RamseyK/httpserver/blob/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/src%2FHTTPServer.cpp",
+      "raw_url": "https://github.com/RamseyK/httpserver/raw/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/src%2FHTTPServer.cpp",
+      "contents_url": "https://api.github.com/repos/RamseyK/httpserver/contents/src%2FHTTPServer.cpp?ref=1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+      "patch": "@@ -440,7 +440,7 @@ void HTTPServer::handleRequest(Client *cl, HTTPRequest* req) {\n \tstd::cout << \"[\" << cl->getClientIP() << \"] \" << req->methodIntToStr(req->getMethod()) << \" \" << req->getRequestUri() << std::endl;\n \t/*std::cout << \"Headers:\" << std::endl;\n \tfor(int i = 0; i < req->getNumHeaders(); i++) {\n-\t\tstd::cout << req->getHeaderStr(i) << std::endl;\n+\t\tstd::cout << \"\\t\" << req->getHeaderStr(i) << std::endl;\n \t}\n \tstd::cout << std::endl;*/\n "
+    },
+    {
+      "sha": "013221c657f9da46ebaeebb042d6632d04a4a605",
+      "filename": "src/ResourceHost.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/RamseyK/httpserver/blob/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/src%2FResourceHost.cpp",
+      "raw_url": "https://github.com/RamseyK/httpserver/raw/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52/src%2FResourceHost.cpp",
+      "contents_url": "https://api.github.com/repos/RamseyK/httpserver/contents/src%2FResourceHost.cpp?ref=1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
+      "patch": "@@ -183,6 +183,9 @@ Resource* ResourceHost::getResource(std::string uri) {\n \tif (uri.length() > 255 || uri.empty())\n \t\treturn NULL;\n \n+\tif (uri.find(\"../\") != std::string::npos)\n+\t\treturn NULL;\n+\n \tstd::string path = baseDiskPath + uri;\n \tResource* res = NULL;\n "
+    }
+  ]
+}

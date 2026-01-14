@@ -1,0 +1,101 @@
+{
+  "sha": "fcd18ce3101f245b083b30655c27b239dc72221e",
+  "node_id": "C_kwDOArmXAtoAKGZjZDE4Y2UzMTAxZjI0NWIwODNiMzA2NTVjMjdiMjM5ZGM3MjIyMWU",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-09T22:54:52Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-09T23:00:15Z"
+    },
+    "message": "Prevent integer overflow in `OpLevelCostEstimator::CalculateTensorSize`.\n\nIn order to not change the API, we return a negative value in case of overflow. A better fix is to change the API to return a status instead.\n\nPiperOrigin-RevId: 408713061\nChange-Id: I3771475b0c72a2844a3854086966562fd33f2da5",
+    "tree": {
+      "sha": "8dbedba4b98440dc1ce3c1bd7b05f66b0b78b705",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/8dbedba4b98440dc1ce3c1bd7b05f66b0b78b705"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/fcd18ce3101f245b083b30655c27b239dc72221e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/fcd18ce3101f245b083b30655c27b239dc72221e",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/fcd18ce3101f245b083b30655c27b239dc72221e",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/fcd18ce3101f245b083b30655c27b239dc72221e/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "29e899868d77d8f575907515acefa012c5574246",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/29e899868d77d8f575907515acefa012c5574246",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/29e899868d77d8f575907515acefa012c5574246"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 7,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2bb62edf64532c6c896d9c2f0681616dc30d616a",
+      "filename": "tensorflow/core/grappler/costs/op_level_cost_estimator.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/fcd18ce3101f245b083b30655c27b239dc72221e/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fop_level_cost_estimator.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/fcd18ce3101f245b083b30655c27b239dc72221e/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fop_level_cost_estimator.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fop_level_cost_estimator.cc?ref=fcd18ce3101f245b083b30655c27b239dc72221e",
+      "patch": "@@ -1555,7 +1555,13 @@ int64_t OpLevelCostEstimator::CalculateTensorSize(\n   int64_t count = CalculateTensorElementCount(tensor, found_unknown_shapes);\n   int size = DataTypeSize(BaseType(tensor.dtype()));\n   VLOG(2) << \"Count: \" << count << \" DataTypeSize: \" << size;\n-  return count * size;\n+  int64_t tensor_size = MultiplyWithoutOverflow(count, size);\n+  if (tensor_size < 0) {\n+    VLOG(1) << \"Overflow encountered when computing tensor size, multiplying \"\n+            << count << \" with \" << size;\n+    return -1;\n+  }\n+  return tensor_size;\n }\n \n int64_t OpLevelCostEstimator::CalculateInputSize(const OpInfo& op_info,"
+    }
+  ]
+}

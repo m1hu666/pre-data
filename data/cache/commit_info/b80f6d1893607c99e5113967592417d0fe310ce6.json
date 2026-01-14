@@ -1,0 +1,101 @@
+{
+  "sha": "b80f6d1893607c99e5113967592417d0fe310ce6",
+  "node_id": "MDY6Q29tbWl0MjcxNTExMTU6YjgwZjZkMTg5MzYwN2M5OWU1MTEzOTY3NTkyNDE3ZDBmZTMxMGNlNg==",
+  "commit": {
+    "author": {
+      "name": "Alex Sanchez-Stern",
+      "email": "alex.sanchezstern@hotmail.com",
+      "date": "2014-12-09T05:34:17Z"
+    },
+    "committer": {
+      "name": "Alex Sanchez-Stern",
+      "email": "alex.sanchezstern@hotmail.com",
+      "date": "2014-12-09T05:34:17Z"
+    },
+    "message": "Fixed Login Exploit",
+    "tree": {
+      "sha": "eaca91e23e1feb4fab4b215af5c37b06fe4aea99",
+      "url": "https://api.github.com/repos/holdennb/CollabCal/git/trees/eaca91e23e1feb4fab4b215af5c37b06fe4aea99"
+    },
+    "url": "https://api.github.com/repos/holdennb/CollabCal/git/commits/b80f6d1893607c99e5113967592417d0fe310ce6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/holdennb/CollabCal/commits/b80f6d1893607c99e5113967592417d0fe310ce6",
+  "html_url": "https://github.com/holdennb/CollabCal/commit/b80f6d1893607c99e5113967592417d0fe310ce6",
+  "comments_url": "https://api.github.com/repos/holdennb/CollabCal/commits/b80f6d1893607c99e5113967592417d0fe310ce6/comments",
+  "author": {
+    "login": "HazardousPeach",
+    "id": 1854619,
+    "node_id": "MDQ6VXNlcjE4NTQ2MTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1854619?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/HazardousPeach",
+    "html_url": "https://github.com/HazardousPeach",
+    "followers_url": "https://api.github.com/users/HazardousPeach/followers",
+    "following_url": "https://api.github.com/users/HazardousPeach/following{/other_user}",
+    "gists_url": "https://api.github.com/users/HazardousPeach/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/HazardousPeach/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/HazardousPeach/subscriptions",
+    "organizations_url": "https://api.github.com/users/HazardousPeach/orgs",
+    "repos_url": "https://api.github.com/users/HazardousPeach/repos",
+    "events_url": "https://api.github.com/users/HazardousPeach/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/HazardousPeach/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "HazardousPeach",
+    "id": 1854619,
+    "node_id": "MDQ6VXNlcjE4NTQ2MTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1854619?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/HazardousPeach",
+    "html_url": "https://github.com/HazardousPeach",
+    "followers_url": "https://api.github.com/users/HazardousPeach/followers",
+    "following_url": "https://api.github.com/users/HazardousPeach/following{/other_user}",
+    "gists_url": "https://api.github.com/users/HazardousPeach/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/HazardousPeach/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/HazardousPeach/subscriptions",
+    "organizations_url": "https://api.github.com/users/HazardousPeach/orgs",
+    "repos_url": "https://api.github.com/users/HazardousPeach/repos",
+    "events_url": "https://api.github.com/users/HazardousPeach/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/HazardousPeach/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "62755ed2885ec065b6f238e68a63f07930b7f789",
+      "url": "https://api.github.com/repos/holdennb/CollabCal/commits/62755ed2885ec065b6f238e68a63f07930b7f789",
+      "html_url": "https://github.com/holdennb/CollabCal/commit/62755ed2885ec065b6f238e68a63f07930b7f789"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 4,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "9a7d21767fe9fe7728f36dd0905158a49f126b11",
+      "filename": "calenderServer.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/holdennb/CollabCal/blob/b80f6d1893607c99e5113967592417d0fe310ce6/calenderServer.cpp",
+      "raw_url": "https://github.com/holdennb/CollabCal/raw/b80f6d1893607c99e5113967592417d0fe310ce6/calenderServer.cpp",
+      "contents_url": "https://api.github.com/repos/holdennb/CollabCal/contents/calenderServer.cpp?ref=b80f6d1893607c99e5113967592417d0fe310ce6",
+      "patch": "@@ -245,7 +245,7 @@ string handleGet(map<string, string>* reqHeaders) {\n       cout << \"Bad session ID, redirecting to login.\" << endl;\n       body = getLogin();\n     } else\n-      uid = sessionMap[sessionId];\n+      uid = usersessionIt->second;\n   }\n   map<string, string> resHeaders;\n   resHeaders[\"Server\"] = \"CSE461\";\n@@ -289,7 +289,9 @@ string handlePost(map<string, string>* reqHeaders) {\n     string cookies = (*reqHeaders)[\"Cookie\"];\n     string sessionIdString = cookies.substr(cookies.find(\"=\") + 1);\n     sessionId = stoll(sessionIdString, nullptr);\n-    uid = sessionMap[sessionId];\n+    auto sessionIt = sessionMap.find(sessionId);\n+    if(sessionIt != sessionMap.end())\n+      uid = sessionIt->second;\n   }\n   map<string, string> resHeaders;\n   resHeaders[\"Server\"] = \"CSE461\";"
+    }
+  ]
+}

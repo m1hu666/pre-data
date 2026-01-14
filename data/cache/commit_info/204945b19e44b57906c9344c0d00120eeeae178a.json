@@ -1,0 +1,113 @@
+{
+  "sha": "204945b19e44b57906c9344c0d00120eeeae178a",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MjA0OTQ1YjE5ZTQ0YjU3OTA2YzkzNDRjMGQwMDEyMGVlZWFlMTc4YQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T20:04:23Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T20:17:42Z"
+    },
+    "message": "[tflite] Validate segment ids for segment_sum.\n\nSegment identifiers in segment_sum should be in a 1-D tensor of same size as the first dimension of the input. The values of the tensor should be integers from {0, 1, 2, ... k-1}, where k is the first dimension of the input. The segment identifiers must not contain jumps and must be increasing.\n\nSee https://www.tensorflow.org/api_docs/python/tf/math#Segmentation as the source for these constraints.\n\nPiperOrigin-RevId: 332510942\nChange-Id: I898beaba00642c918bcd4b4d4ce893ebb190d869",
+    "tree": {
+      "sha": "8ea001986d9c78b4d5b244a1f3b264e28221a301",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/8ea001986d9c78b4d5b244a1f3b264e28221a301"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/204945b19e44b57906c9344c0d00120eeeae178a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/204945b19e44b57906c9344c0d00120eeeae178a",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/204945b19e44b57906c9344c0d00120eeeae178a",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/204945b19e44b57906c9344c0d00120eeeae178a/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0e68f4d3295eb0281a517c3662f6698992b7b2cf",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0e68f4d3295eb0281a517c3662f6698992b7b2cf",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/0e68f4d3295eb0281a517c3662f6698992b7b2cf"
+    }
+  ],
+  "stats": {
+    "total": 51,
+    "additions": 48,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "4b762184a506473df97e7b744549807a53714adc",
+      "filename": "tensorflow/lite/kernels/segment_sum.cc",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 3,
+      "changes": 19,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/204945b19e44b57906c9344c0d00120eeeae178a/tensorflow%2Flite%2Fkernels%2Fsegment_sum.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/204945b19e44b57906c9344c0d00120eeeae178a/tensorflow%2Flite%2Fkernels%2Fsegment_sum.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fsegment_sum.cc?ref=204945b19e44b57906c9344c0d00120eeeae178a",
+      "patch": "@@ -34,11 +34,24 @@ TfLiteStatus ResizeOutputTensor(TfLiteContext* context,\n                                 const TfLiteTensor* data,\n                                 const TfLiteTensor* segment_ids,\n                                 TfLiteTensor* output) {\n-  int max_index = -1;\n+  // Segment ids should be of same cardinality as first input dimension and they\n+  // should be increasing by at most 1, from 0 (e.g., [0, 0, 1, 2, 3] is valid)\n   const int segment_id_size = segment_ids->dims->data[0];\n-  if (segment_id_size > 0) {\n-    max_index = segment_ids->data.i32[segment_id_size - 1];\n+  TF_LITE_ENSURE_EQ(context, segment_id_size, data->dims->data[0]);\n+  int previous_segment_id = -1;\n+  for (int i = 0; i < segment_id_size; i++) {\n+    const int current_segment_id = GetTensorData<int32_t>(segment_ids)[i];\n+    if (i == 0) {\n+      TF_LITE_ENSURE_EQ(context, current_segment_id, 0);\n+    } else {\n+      int delta = current_segment_id - previous_segment_id;\n+      TF_LITE_ENSURE(context, delta == 0 || delta == 1);\n+    }\n+    previous_segment_id = current_segment_id;\n   }\n+\n+  const int max_index = previous_segment_id;\n+\n   const int data_rank = NumDimensions(data);\n   TfLiteIntArray* output_shape = TfLiteIntArrayCreate(NumDimensions(data));\n   output_shape->data[0] = max_index + 1;"
+    },
+    {
+      "sha": "286742c09330c4c7163fc9e60c5ac21a21900c79",
+      "filename": "tensorflow/lite/kernels/segment_sum_test.cc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 0,
+      "changes": 32,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/204945b19e44b57906c9344c0d00120eeeae178a/tensorflow%2Flite%2Fkernels%2Fsegment_sum_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/204945b19e44b57906c9344c0d00120eeeae178a/tensorflow%2Flite%2Fkernels%2Fsegment_sum_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fsegment_sum_test.cc?ref=204945b19e44b57906c9344c0d00120eeeae178a",
+      "patch": "@@ -110,5 +110,37 @@ TEST(SegmentSumOpModelTest, Float32Test_ThreeDimensions) {\n   EXPECT_THAT(model.GetOutputShape(), ElementsAreArray({2, 2, 1}));\n }\n \n+TEST(SegmentSumOpModelTest, TestFailIfSegmentsAreNotSorted) {\n+  SegmentSumOpModel<int32_t> model({TensorType_INT32, {3, 2}},\n+                                   {TensorType_INT32, {3}});\n+  model.PopulateTensor<int32_t>(model.data(), {1, 2, 3, 4, 5, 6});\n+  model.PopulateTensor<int32_t>(model.segment_ids(), {0, 3, 1});\n+  ASSERT_EQ(model.InvokeUnchecked(), kTfLiteError);\n+}\n+\n+TEST(SegmentSumOpModelTest, TestFailIfSegmentsAreNotConsecutive) {\n+  SegmentSumOpModel<int32_t> model({TensorType_INT32, {3, 2}},\n+                                   {TensorType_INT32, {3}});\n+  model.PopulateTensor<int32_t>(model.data(), {1, 2, 3, 4, 5, 6});\n+  model.PopulateTensor<int32_t>(model.segment_ids(), {0, 3, 5});\n+  ASSERT_EQ(model.InvokeUnchecked(), kTfLiteError);\n+}\n+\n+TEST(SegmentSumOpModelTest, TestFailIfSegmentsAreNegative) {\n+  SegmentSumOpModel<int32_t> model({TensorType_INT32, {3, 2}},\n+                                   {TensorType_INT32, {3}});\n+  model.PopulateTensor<int32_t>(model.data(), {1, 2, 3, 4, 5, 6});\n+  model.PopulateTensor<int32_t>(model.segment_ids(), {-1, 0, 1});\n+  ASSERT_EQ(model.InvokeUnchecked(), kTfLiteError);\n+}\n+\n+TEST(SegmentSumOpModelTest, TestFailIfSegmentsAreNotTheRightCardinality) {\n+  SegmentSumOpModel<int32_t> model({TensorType_INT32, {3, 2}},\n+                                   {TensorType_INT32, {2}});\n+  model.PopulateTensor<int32_t>(model.data(), {1, 2, 3, 4, 5, 6});\n+  model.PopulateTensor<int32_t>(model.segment_ids(), {0, 1});\n+  ASSERT_EQ(model.InvokeUnchecked(), kTfLiteError);\n+}\n+\n }  // namespace\n }  // namespace tflite"
+    }
+  ]
+}

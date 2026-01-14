@@ -1,0 +1,113 @@
+{
+  "sha": "5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOjU1NjNlNmRkYzNmN2NiOTNkOThiNDkxMTk0Y2VlYmRlZTcyODhkMzY=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2017-12-02T09:28:37Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2017-12-02T09:28:37Z"
+    },
+    "message": "Secunia 76000 #2: xtrans allhex not initialized",
+    "tree": {
+      "sha": "d86452a27c8855c5454f293d8c406f4dbd40ec46",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/d86452a27c8855c5454f293d8c406f4dbd40ec46"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/5563e6ddc3f7cb93d98b491194ceebdee7288d36/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f1394822a0152ceed77815eafa5cac4e8baab10a",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/f1394822a0152ceed77815eafa5cac4e8baab10a",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/f1394822a0152ceed77815eafa5cac4e8baab10a"
+    }
+  ],
+  "stats": {
+    "total": 64,
+    "additions": 62,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "54c954a1317d7060e97342098bc2beca29f4761d",
+      "filename": "dcraw/dcraw.c",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 1,
+      "changes": 32,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/5563e6ddc3f7cb93d98b491194ceebdee7288d36/dcraw%2Fdcraw.c",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/5563e6ddc3f7cb93d98b491194ceebdee7288d36/dcraw%2Fdcraw.c",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/dcraw%2Fdcraw.c?ref=5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+      "patch": "@@ -7045,6 +7045,8 @@ void CLASS xtrans_interpolate(int passes)\n #endif\n \n #ifdef LIBRAW_LIBRARY_BUILD\n+  if(width < TS || height < TS)\n+\t  throw LIBRAW_EXCEPTION_IO_CORRUPT; // too small image\n /* Check against right pattern */\n   for (row = 0; row < 6; row++)\n \t  for (col = 0; col < 6; col++)\n@@ -7053,6 +7055,13 @@ void CLASS xtrans_interpolate(int passes)\n   if(cstat[0] < 6 || cstat[0]>10 || cstat[1]< 16\n     || cstat[1]>24 || cstat[2]< 6 || cstat[2]>10 || cstat[3])\n \t  throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+\n+ // Init allhex table to unreasonable values\n+ for(int i = 0; i < 3; i++)\n+  for(int j = 0; j < 3; j++)\n+   for(int k = 0; k < 2; k++)\n+    for(int l = 0; l < 8; l++)\n+     allhex[i][j][k][l]=32700;\n #endif\n   cielab(0, 0);\n   ndir = 4 << (passes > 1);\n@@ -7063,6 +7072,7 @@ void CLASS xtrans_interpolate(int passes)\n   drv = (float(*)[TS][TS])(buffer + TS * TS * (ndir * 6 + 6));\n   homo = (char(*)[TS][TS])(buffer + TS * TS * (ndir * 10 + 6));\n \n+  int minv=0,maxv=0,minh=0,maxh=0;\n   /* Map a green hexagon around each non-green pixel and vice versa:\t*/\n   for (row = 0; row < 3; row++)\n     for (col = 0; col < 3; col++)\n@@ -7083,11 +7093,25 @@ void CLASS xtrans_interpolate(int passes)\n           {\n             v = orth[d] * patt[g][c * 2] + orth[d + 1] * patt[g][c * 2 + 1];\n             h = orth[d + 2] * patt[g][c * 2] + orth[d + 3] * patt[g][c * 2 + 1];\n+\t    minv=MIN(v,minv);\n+\t    maxv=MAX(v,maxv);\n+\t    minh=MIN(v,minh);\n+   \t    maxh=MAX(v,maxh);\n             allhex[row][col][0][c ^ (g * 2 & d)] = h + v * width;\n             allhex[row][col][1][c ^ (g * 2 & d)] = h + v * TS;\n           }\n       }\n \n+#ifdef LIBRAW_LIBRARY_BUILD\n+   // Check allhex table initialization\n+  for(int i = 0; i < 3; i++)\n+    for(int j = 0; j < 3; j++)\n+      for(int k = 0; k < 2; k++)\n+        for(int l = 0; l < 8; l++)\n+\t  if(allhex[i][j][k][l]>maxh+maxv*width+1 || allhex[i][j][k][l]<minh+minv*width-1)\n+\t  throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+  int retrycount = 0;\n+#endif\n   /* Set green1 and green3 to the minimum and maximum allowed values:\t*/\n   for (row = 2; row < height - 2; row++)\n     for (min = ~(max = 0), col = 2; col < width - 2; col++)\n@@ -7118,7 +7142,13 @@ void CLASS xtrans_interpolate(int passes)\n         break;\n       case 2:\n         if ((min = ~(max = 0)) && (col += 2) < width - 3 && row > 2)\n-          row--;\n+\t{\n+           row--;\n+#ifdef LIBRAW_LIBRARY_BUILD\n+\t  if(retrycount++ > width*height)\n+\t  \tthrow LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n+\t}\n       }\n     }\n "
+    },
+    {
+      "sha": "e0fe6f4026a06ba576510a1180066913e081bba1",
+      "filename": "internal/dcraw_common.cpp",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 1,
+      "changes": 32,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/5563e6ddc3f7cb93d98b491194ceebdee7288d36/internal%2Fdcraw_common.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/5563e6ddc3f7cb93d98b491194ceebdee7288d36/internal%2Fdcraw_common.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/internal%2Fdcraw_common.cpp?ref=5563e6ddc3f7cb93d98b491194ceebdee7288d36",
+      "patch": "@@ -5727,6 +5727,8 @@ void CLASS xtrans_interpolate(int passes)\n #endif\n \n #ifdef LIBRAW_LIBRARY_BUILD\n+  if(width < TS || height < TS)\n+\t  throw LIBRAW_EXCEPTION_IO_CORRUPT; // too small image\n /* Check against right pattern */\n   for (row = 0; row < 6; row++)\n \t  for (col = 0; col < 6; col++)\n@@ -5735,6 +5737,13 @@ void CLASS xtrans_interpolate(int passes)\n   if(cstat[0] < 6 || cstat[0]>10 || cstat[1]< 16\n     || cstat[1]>24 || cstat[2]< 6 || cstat[2]>10 || cstat[3])\n \t  throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+\n+ // Init allhex table to unreasonable values\n+ for(int i = 0; i < 3; i++)\n+  for(int j = 0; j < 3; j++)\n+   for(int k = 0; k < 2; k++)\n+    for(int l = 0; l < 8; l++)\n+     allhex[i][j][k][l]=32700;\n #endif\n   cielab(0, 0);\n   ndir = 4 << (passes > 1);\n@@ -5745,6 +5754,7 @@ void CLASS xtrans_interpolate(int passes)\n   drv = (float(*)[TS][TS])(buffer + TS * TS * (ndir * 6 + 6));\n   homo = (char(*)[TS][TS])(buffer + TS * TS * (ndir * 10 + 6));\n \n+  int minv=0,maxv=0,minh=0,maxh=0;\n   /* Map a green hexagon around each non-green pixel and vice versa:\t*/\n   for (row = 0; row < 3; row++)\n     for (col = 0; col < 3; col++)\n@@ -5765,11 +5775,25 @@ void CLASS xtrans_interpolate(int passes)\n           {\n             v = orth[d] * patt[g][c * 2] + orth[d + 1] * patt[g][c * 2 + 1];\n             h = orth[d + 2] * patt[g][c * 2] + orth[d + 3] * patt[g][c * 2 + 1];\n+\t    minv=MIN(v,minv);\n+\t    maxv=MAX(v,maxv);\n+\t    minh=MIN(v,minh);\n+   \t    maxh=MAX(v,maxh);\n             allhex[row][col][0][c ^ (g * 2 & d)] = h + v * width;\n             allhex[row][col][1][c ^ (g * 2 & d)] = h + v * TS;\n           }\n       }\n \n+#ifdef LIBRAW_LIBRARY_BUILD\n+   // Check allhex table initialization\n+  for(int i = 0; i < 3; i++)\n+    for(int j = 0; j < 3; j++)\n+      for(int k = 0; k < 2; k++)\n+        for(int l = 0; l < 8; l++)\n+\t  if(allhex[i][j][k][l]>maxh+maxv*width+1 || allhex[i][j][k][l]<minh+minv*width-1)\n+\t  throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+  int retrycount = 0;\n+#endif\n   /* Set green1 and green3 to the minimum and maximum allowed values:\t*/\n   for (row = 2; row < height - 2; row++)\n     for (min = ~(max = 0), col = 2; col < width - 2; col++)\n@@ -5800,7 +5824,13 @@ void CLASS xtrans_interpolate(int passes)\n         break;\n       case 2:\n         if ((min = ~(max = 0)) && (col += 2) < width - 3 && row > 2)\n-          row--;\n+\t{\n+           row--;\n+#ifdef LIBRAW_LIBRARY_BUILD\n+\t  if(retrycount++ > width*height)\n+\t  \tthrow LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n+\t}\n       }\n     }\n "
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZWJjNzBiN2E1OTI0MjBkM2QyZjM1OWU0YjE2OTRjMjM2YjgyYzdhZQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-12-07T19:15:21Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-12-07T19:25:52Z"
+    },
+    "message": "Validate that `DataFormat*` attributes form a permutation.\n\nThe `src_format` and `dst_format` attributes for the `DataFormatDimMap` and `DataFormatVecPermute` raw ops are supposed to determine a permutation. However, this was not validated and could result in unitialized memory accesses as well as writes outside of bounds and potential crashes.\n\nWhile here, we also test that the format attributes have the needed length, add tests for all validation failure cases, remove unnecessary calls to `strings::StrCat`, and fix a few grammar errors.\n\nThis will be cherry-picked on the supported release branches.\n\nPiperOrigin-RevId: 346135579\nChange-Id: I1c76392382c89ad8f072d5bc93d70669851eb404",
+    "tree": {
+      "sha": "d0c5fcbf3228c45511d1668eb71751b8564c0012",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/d0c5fcbf3228c45511d1668eb71751b8564c0012"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ebc70b7a592420d3d2f359e4b1694c236b82c7ae/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "083d01651a771693f2f7f2f4aa3249b27fc09d74",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/083d01651a771693f2f7f2f4aa3249b27fc09d74",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/083d01651a771693f2f7f2f4aa3249b27fc09d74"
+    }
+  ],
+  "stats": {
+    "total": 168,
+    "additions": 161,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "00724b630ee9db94200c2aee424f75d60cf40bd6",
+      "filename": "tensorflow/core/kernels/data_format_ops.cc",
+      "status": "modified",
+      "additions": 65,
+      "deletions": 7,
+      "changes": 72,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ebc70b7a592420d3d2f359e4b1694c236b82c7ae/tensorflow%2Fcore%2Fkernels%2Fdata_format_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ebc70b7a592420d3d2f359e4b1694c236b82c7ae/tensorflow%2Fcore%2Fkernels%2Fdata_format_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fdata_format_ops.cc?ref=ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+      "patch": "@@ -18,16 +18,52 @@ limitations under the License.\n #define EIGEN_USE_THREADS\n \n #include \"tensorflow/core/kernels/data_format_ops.h\"\n+\n+#include <map>\n+\n #include \"third_party/eigen3/unsupported/Eigen/CXX11/Tensor\"\n #include \"tensorflow/core/framework/op_kernel.h\"\n #include \"tensorflow/core/framework/register_types.h\"\n #include \"tensorflow/core/framework/tensor.h\"\n+#include \"tensorflow/core/platform/errors.h\"\n \n namespace tensorflow {\n \n typedef Eigen::ThreadPoolDevice CPUDevice;\n typedef Eigen::GpuDevice GPUDevice;\n \n+// Ensure that `src` and `dst` define a valid permutation.\n+// Ops defined in this file assume that user specifies a permutation via two\n+// string attributes. This check validates that these attributes properly define\n+// it to prevent security vulnerabilities.\n+static bool IsValidPermutation(const std::string& src, const std::string& dst) {\n+  if (src.size() != dst.size()) {\n+    return false;\n+  }\n+\n+  std::map<char, bool> characters;\n+\n+  // Every character in `src` must be present only once\n+  for (const auto c : src) {\n+    if (characters[c]) {\n+      return false;\n+    }\n+    characters[c] = true;\n+  }\n+\n+  // Every character in `dst` must show up in `src` exactly once\n+  for (const auto c : dst) {\n+    if (!characters[c]) {\n+      return false;\n+    }\n+    characters[c] = false;\n+  }\n+\n+  // At this point, characters[] has been switched to true and false exactly\n+  // once for all character in `src` (and `dst`) so we have a valid permutation\n+  return true;\n+}\n+\n template <typename Device, typename T>\n class DataFormatDimMapOp : public OpKernel {\n  public:\n@@ -38,15 +74,19 @@ class DataFormatDimMapOp : public OpKernel {\n     string dst_format;\n     OP_REQUIRES_OK(context, context->GetAttr(\"dst_format\", &dst_format));\n     OP_REQUIRES(context, src_format.size() == 4 || src_format.size() == 5,\n-                errors::InvalidArgument(strings::StrCat(\n-                    \"Source format must of length 4 or 5, received \"\n+                errors::InvalidArgument(\n+                    \"Source format must be of length 4 or 5, received \"\n                     \"src_format = \",\n-                    src_format)));\n+                    src_format));\n+    OP_REQUIRES(context, dst_format.size() == 4 || dst_format.size() == 5,\n+                errors::InvalidArgument(\"Destination format must be of length \"\n+                                        \"4 or 5, received dst_format = \",\n+                                        dst_format));\n     OP_REQUIRES(\n-        context, dst_format.size() == 4 || dst_format.size() == 5,\n-        errors::InvalidArgument(strings::StrCat(\n-            \"Destination format must of length 4 or 5, received dst_format = \",\n-            dst_format)));\n+        context, IsValidPermutation(src_format, dst_format),\n+        errors::InvalidArgument(\n+            \"Destination and source format must determine a permutation, got \",\n+            src_format, \" and \", dst_format));\n     dst_idx_ = Tensor(DT_INT32, {static_cast<int64>(src_format.size())});\n     for (int i = 0; i < src_format.size(); ++i) {\n       for (int j = 0; j < dst_format.size(); ++j) {\n@@ -78,8 +118,22 @@ class DataFormatVecPermuteOp : public OpKernel {\n       : OpKernel(context) {\n     string src_format;\n     OP_REQUIRES_OK(context, context->GetAttr(\"src_format\", &src_format));\n+    OP_REQUIRES(context, src_format.size() == 4 || src_format.size() == 5,\n+                errors::InvalidArgument(\n+                    \"Source format must be of length 4 or 5, received \"\n+                    \"src_format = \",\n+                    src_format));\n     string dst_format;\n     OP_REQUIRES_OK(context, context->GetAttr(\"dst_format\", &dst_format));\n+    OP_REQUIRES(context, dst_format.size() == 4 || dst_format.size() == 5,\n+                errors::InvalidArgument(\"Destination format must be of length \"\n+                                        \"4 or 5, received dst_format = \",\n+                                        dst_format));\n+    OP_REQUIRES(\n+        context, IsValidPermutation(src_format, dst_format),\n+        errors::InvalidArgument(\n+            \"Destination and source format must determine a permutation, got \",\n+            src_format, \" and \", dst_format));\n     src_format_ = src_format;\n     dst_format_ = dst_format;\n   }\n@@ -127,6 +181,10 @@ class DataFormatVecPermuteOp : public OpKernel {\n       };\n       keep_only_spatial_dimensions(&src_format_str);\n       keep_only_spatial_dimensions(&dst_format_str);\n+      OP_REQUIRES(context,\n+                  src_format_str.size() == 2 && dst_format_str.size() == 2,\n+                  errors::InvalidArgument(\n+                      \"Format specifier must contain H and W for 2D case\"));\n     }\n     ComputeDstIndex(src_format_str, dst_format_str, input.dims(), &dst_idx);\n "
+    },
+    {
+      "sha": "aaf2f77fb2975ac84c2b2102ae28ab93dfdbc2cd",
+      "filename": "tensorflow/python/ops/nn_test.py",
+      "status": "modified",
+      "additions": 96,
+      "deletions": 0,
+      "changes": 96,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ebc70b7a592420d3d2f359e4b1694c236b82c7ae/tensorflow%2Fpython%2Fops%2Fnn_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ebc70b7a592420d3d2f359e4b1694c236b82c7ae/tensorflow%2Fpython%2Fops%2Fnn_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fops%2Fnn_test.py?ref=ebc70b7a592420d3d2f359e4b1694c236b82c7ae",
+      "patch": "@@ -27,6 +27,7 @@\n from tensorflow.python.eager import def_function\n from tensorflow.python.framework import constant_op\n from tensorflow.python.framework import dtypes\n+from tensorflow.python.framework import errors\n from tensorflow.python.framework import ops\n from tensorflow.python.framework import tensor_spec\n from tensorflow.python.framework import test_util\n@@ -1260,6 +1261,7 @@ def testDNHWCtoWHDCN(self):\n       y_val = self.evaluate(y)\n       self.assertAllEqual(y_val, y_val_expected)\n \n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n   def testArbitraryASCII(self):\n     x_val = [-4, -3, -2, -1, 0, 1, 2, 3]\n     y_val_expected = [3, 2, 1, 0, 3, 2, 1, 0]\n@@ -1269,6 +1271,46 @@ def testArbitraryASCII(self):\n       y_val = self.evaluate(y)\n       self.assertAllEqual(y_val, y_val_expected)\n \n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testInvalidLength(self):\n+    x = [-4, -3, -2, -1, 0, 1, 2, 3]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Source format must be of length 4 or 5\"):\n+      op = nn_ops.data_format_dim_map(\n+          x, src_format=\"12345678\", dst_format=\"87654321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testDuplicateSrc(self):\n+    x = [-4, -3, -2, -1, 0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_dim_map(x, src_format=\"1233\", dst_format=\"4321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testDuplicateDst(self):\n+    x = [-4, -3, -2, -1, 0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_dim_map(x, src_format=\"1234\", dst_format=\"3321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testExtraSpecifiers(self):\n+    x = [-4, -3, -2, -1, 0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_dim_map(x, src_format=\"1234\", dst_format=\"5321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n \n class DataFormatVectorPermuteTest(test_lib.TestCase):\n \n@@ -1370,6 +1412,60 @@ def testNCHWToNHWC2D(self):\n       y_val = self.evaluate(y)\n       self.assertAllEqual(y_val, [[7, 4], [4, 5], [5, 1], [9, 3]])\n \n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testInvalidLength(self):\n+    x = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Source format must be of length 4 or 5\"):\n+      op = nn_ops.data_format_vec_permute(\n+          x, src_format=\"12345678\", dst_format=\"87654321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testDuplicateSrc(self):\n+    x = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_vec_permute(\n+          x, src_format=\"1233\", dst_format=\"4321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testDuplicateDst(self):\n+    x = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_vec_permute(\n+          x, src_format=\"1234\", dst_format=\"3321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def testExtraSpecifiers(self):\n+    x = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Destination and source format must determine a permutation\"):\n+      op = nn_ops.data_format_vec_permute(\n+          x, src_format=\"1234\", dst_format=\"5321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n+  @test_util.disable_xla(\"XLA catches the error and rethrows as different one\")\n+  def test2DNoWH(self):\n+    x = [[0, 1], [2, 3]]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Format specifier must contain H and W for 2D case\"):\n+      op = nn_ops.data_format_vec_permute(\n+          x, src_format=\"1234\", dst_format=\"4321\")\n+      with test_util.use_gpu():\n+        self.evaluate(op)\n+\n \n @test_util.run_all_in_graph_and_eager_modes\n class AvgPoolTest(test_lib.TestCase):"
+    }
+  ]
+}

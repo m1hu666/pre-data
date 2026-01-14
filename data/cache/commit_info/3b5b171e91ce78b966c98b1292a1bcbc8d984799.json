@@ -1,0 +1,81 @@
+{
+  "sha": "3b5b171e91ce78b966c98b1292a1bcbc8d984799",
+  "node_id": "MDY6Q29tbWl0NDc3MTIxOTc6M2I1YjE3MWU5MWNlNzhiOTY2Yzk4YjEyOTJhMWJjYmM4ZDk4NDc5OQ==",
+  "commit": {
+    "author": {
+      "name": "Ingo Kl\u00f6cker",
+      "email": "kloecker@kde.org",
+      "date": "2021-04-29T20:13:38Z"
+    },
+    "committer": {
+      "name": "Albert Astals Cid",
+      "email": "aacid@kde.org",
+      "date": "2021-04-29T20:14:52Z"
+    },
+    "message": "Fix CVE-2021-31855\n\nDeleting an attachment of a decrypted encrypted message stored on a remote server\n(e.g. an IMAP server) causes KMail to upload the decrypted content of the message\nto the remote server. This is not easily noticeable by the user because KMail does\nnot display the decrypted content.",
+    "tree": {
+      "sha": "e528809c275c8f82e0da9053a0a668f56b17a149",
+      "url": "https://api.github.com/repos/KDE/messagelib/git/trees/e528809c275c8f82e0da9053a0a668f56b17a149"
+    },
+    "url": "https://api.github.com/repos/KDE/messagelib/git/commits/3b5b171e91ce78b966c98b1292a1bcbc8d984799",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/KDE/messagelib/commits/3b5b171e91ce78b966c98b1292a1bcbc8d984799",
+  "html_url": "https://github.com/KDE/messagelib/commit/3b5b171e91ce78b966c98b1292a1bcbc8d984799",
+  "comments_url": "https://api.github.com/repos/KDE/messagelib/commits/3b5b171e91ce78b966c98b1292a1bcbc8d984799/comments",
+  "author": null,
+  "committer": {
+    "login": "tsdgeos",
+    "id": 9051674,
+    "node_id": "MDQ6VXNlcjkwNTE2NzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9051674?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tsdgeos",
+    "html_url": "https://github.com/tsdgeos",
+    "followers_url": "https://api.github.com/users/tsdgeos/followers",
+    "following_url": "https://api.github.com/users/tsdgeos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tsdgeos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tsdgeos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tsdgeos/subscriptions",
+    "organizations_url": "https://api.github.com/users/tsdgeos/orgs",
+    "repos_url": "https://api.github.com/users/tsdgeos/repos",
+    "events_url": "https://api.github.com/users/tsdgeos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tsdgeos/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "99b50c22b0e6ab37c100ba1e2e18218c11fa7e3c",
+      "url": "https://api.github.com/repos/KDE/messagelib/commits/99b50c22b0e6ab37c100ba1e2e18218c11fa7e3c",
+      "html_url": "https://github.com/KDE/messagelib/commit/99b50c22b0e6ab37c100ba1e2e18218c11fa7e3c"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c06e14890241d93d540eadeddde4cf35926e38f5",
+      "filename": "messageviewer/src/viewer/viewer_p.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/KDE/messagelib/blob/3b5b171e91ce78b966c98b1292a1bcbc8d984799/messageviewer%2Fsrc%2Fviewer%2Fviewer_p.cpp",
+      "raw_url": "https://github.com/KDE/messagelib/raw/3b5b171e91ce78b966c98b1292a1bcbc8d984799/messageviewer%2Fsrc%2Fviewer%2Fviewer_p.cpp",
+      "contents_url": "https://api.github.com/repos/KDE/messagelib/contents/messageviewer%2Fsrc%2Fviewer%2Fviewer_p.cpp?ref=3b5b171e91ce78b966c98b1292a1bcbc8d984799",
+      "patch": "@@ -396,7 +396,7 @@ bool ViewerPrivate::deleteAttachment(KMime::Content *node, bool showWarning)\n \n     KMime::Message *modifiedMessage = mNodeHelper->messageWithExtraContent(mMessage.data());\n     mMimePartTree->mimePartModel()->setRoot(modifiedMessage);\n-    mMessageItem.setPayloadFromData(modifiedMessage->encodedContent());\n+    mMessageItem.setPayloadFromData(mMessage->encodedContent());\n     auto job = new Akonadi::ItemModifyJob(mMessageItem, mSession);\n     job->disableRevisionCheck();\n     connect(job, &KJob::result, this, &ViewerPrivate::itemModifiedResult);"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "sha": "b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+  "node_id": "C_kwDOByyPPdoAKGIxM2RkZDIzZjI2OTZhMWE4MjNlZTEzNzk0Y2ZkYjMxMDJkOGU5Zjc",
+  "commit": {
+    "author": {
+      "name": "Reilly Grant",
+      "email": "reillyg@chromium.org",
+      "date": "2022-01-25T20:43:44Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-25T20:43:44Z"
+    },
+    "message": "Use the origin/name of the main frame in chooser dialogs\n\nPermissions dialogs (for WebUSB, WebHID, and Web Serial) should request\npermission for the main origin (the origin embedding the iframe) and not\nthe site hosting the iframe as per crbug.com/802945. Update the UI code\nto accurately display the main origin (or extension name) and add tests.\n\nBug: 1280233\nChange-Id: Ia3bf9274eb49c1d842e204a518635cc1187f3d3d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3353956\nReviewed-by: Scott Violet <sky@chromium.org>\nReviewed-by: Andy Paicu <andypaicu@chromium.org>\nCommit-Queue: Reilly Grant <reillyg@chromium.org>\nCr-Commit-Position: refs/heads/main@{#963184}",
+    "tree": {
+      "sha": "99e184c2d6383187ec9a6040f4aee1fc5280c11b",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/99e184c2d6383187ec9a6040f4aee1fc5280c11b"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+  "html_url": "https://github.com/chromium/chromium/commit/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/comments",
+  "author": {
+    "login": "reillyeon",
+    "id": 152137,
+    "node_id": "MDQ6VXNlcjE1MjEzNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/152137?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/reillyeon",
+    "html_url": "https://github.com/reillyeon",
+    "followers_url": "https://api.github.com/users/reillyeon/followers",
+    "following_url": "https://api.github.com/users/reillyeon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/reillyeon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/reillyeon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/reillyeon/subscriptions",
+    "organizations_url": "https://api.github.com/users/reillyeon/orgs",
+    "repos_url": "https://api.github.com/users/reillyeon/repos",
+    "events_url": "https://api.github.com/users/reillyeon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/reillyeon/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "734f4e05fa0e19a6e54177aeea8efadb9d9575bd",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/734f4e05fa0e19a6e54177aeea8efadb9d9575bd",
+      "html_url": "https://github.com/chromium/chromium/commit/734f4e05fa0e19a6e54177aeea8efadb9d9575bd"
+    }
+  ],
+  "stats": {
+    "total": 135,
+    "additions": 130,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "7c45abe655329696b8f489b815d06cb76c6db698",
+      "filename": "chrome/browser/chooser_controller/title_util.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.cc?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -22,6 +22,8 @@ std::u16string CreateExtensionAwareChooserTitle(\n     int title_string_id_extension) {\n   if (!render_frame_host)\n     return u\"\";\n+  // Ensure the permission request is attributed to the main frame.\n+  render_frame_host = render_frame_host->GetMainFrame();\n \n #if BUILDFLAG(ENABLE_EXTENSIONS)\n   url::Origin origin = render_frame_host->GetLastCommittedOrigin();"
+    },
+    {
+      "sha": "0f1e2579aae97e776e1f806c93d3b5ea4ee1f08e",
+      "filename": "chrome/browser/chooser_controller/title_util.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util.h?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -12,7 +12,8 @@ class RenderFrameHost;\n }\n \n // Creates a title for a chooser. For extensions the extension name is used if\n-// possible. In all other cases the origin is used.\n+// possible. In all other cases the origin of the main frame for\n+// `render_frame_host` is used.\n std::u16string CreateExtensionAwareChooserTitle(\n     content::RenderFrameHost* render_frame_host,\n     int title_string_id_origin,"
+    },
+    {
+      "sha": "64d32e4139171164b1413a84b35608eba38b0641",
+      "filename": "chrome/browser/chooser_controller/title_util_unittest.cc",
+      "status": "added",
+      "additions": 78,
+      "deletions": 0,
+      "changes": 78,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fchooser_controller%2Ftitle_util_unittest.cc?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -0,0 +1,78 @@\n+// Copyright 2022 The Chromium Authors. All rights reserved.\n+// Use of this source code is governed by a BSD-style license that can be\n+// found in the LICENSE file.\n+\n+#include \"chrome/browser/chooser_controller/title_util.h\"\n+\n+#include \"chrome/grit/generated_resources.h\"\n+#include \"chrome/test/base/chrome_render_view_host_test_harness.h\"\n+#include \"components/strings/grit/components_strings.h\"\n+\n+#if BUILDFLAG(ENABLE_EXTENSIONS)\n+#include \"chrome/browser/extensions/extension_service.h\"\n+#include \"chrome/browser/extensions/test_extension_system.h\"\n+#include \"content/public/test/navigation_simulator.h\"\n+#include \"extensions/browser/extension_registry.h\"\n+#include \"extensions/common/extension.h\"\n+#include \"extensions/common/extension_builder.h\"\n+#include \"extensions/common/value_builder.h\"\n+#include \"url/gurl.h\"\n+#include \"url/origin.h\"\n+#endif  // BUILDFLAG(ENABLE_EXTENSIONS)\n+\n+namespace {\n+\n+constexpr int kNonExtensionTitleResourceId =\n+    IDS_USB_DEVICE_CHOOSER_PROMPT_ORIGIN;\n+constexpr int kExtensionTitleResourceId =\n+    IDS_USB_DEVICE_CHOOSER_PROMPT_EXTENSION_NAME;\n+\n+using ExtensionsAwareChooserTitleTest = ChromeRenderViewHostTestHarness;\n+\n+TEST_F(ExtensionsAwareChooserTitleTest, NoFrame) {\n+  EXPECT_EQ(u\"\", CreateExtensionAwareChooserTitle(nullptr,\n+                                                  kNonExtensionTitleResourceId,\n+                                                  kExtensionTitleResourceId));\n+}\n+\n+#if BUILDFLAG(ENABLE_EXTENSIONS)\n+TEST_F(ExtensionsAwareChooserTitleTest, FrameTree) {\n+  extensions::DictionaryBuilder manifest;\n+  manifest.Set(\"name\", \"Chooser Title Subframe Test\")\n+      .Set(\"version\", \"0.1\")\n+      .Set(\"manifest_version\", 2)\n+      .Set(\"web_accessible_resources\",\n+           extensions::ListBuilder().Append(\"index.html\").Build());\n+  scoped_refptr<const extensions::Extension> extension =\n+      extensions::ExtensionBuilder().SetManifest(manifest.Build()).Build();\n+  ASSERT_TRUE(extension);\n+\n+  extensions::TestExtensionSystem* extension_system =\n+      static_cast<extensions::TestExtensionSystem*>(\n+          extensions::ExtensionSystem::Get(profile()));\n+  extensions::ExtensionService* extension_service =\n+      extension_system->CreateExtensionService(\n+          base::CommandLine::ForCurrentProcess(), base::FilePath(), false);\n+  extension_service->AddExtension(extension.get());\n+\n+  NavigateAndCommit(extension->GetResourceURL(\"index.html\"));\n+  content::RenderFrameHost* subframe =\n+      content::NavigationSimulator::NavigateAndCommitFromDocument(\n+          GURL(\"data:text/html,\"),\n+          content::RenderFrameHostTester::For(main_rfh())\n+              ->AppendChild(\"subframe\"));\n+\n+  EXPECT_EQ(extension->id(), main_rfh()->GetLastCommittedOrigin().host());\n+  EXPECT_EQ(\n+      u\"\\\"Chooser Title Subframe Test\\\" wants to connect\",\n+      CreateExtensionAwareChooserTitle(main_rfh(), kNonExtensionTitleResourceId,\n+                                       kExtensionTitleResourceId));\n+  EXPECT_NE(extension->id(), subframe->GetLastCommittedOrigin().host());\n+  EXPECT_EQ(\n+      u\"\\\"Chooser Title Subframe Test\\\" wants to connect\",\n+      CreateExtensionAwareChooserTitle(subframe, kNonExtensionTitleResourceId,\n+                                       kExtensionTitleResourceId));\n+}\n+#endif  // BUILDFLAG(ENABLE_EXTENSIONS)\n+\n+}  // namespace"
+    },
+    {
+      "sha": "ef16b93efbba47b12fcd022c0308c37809cdec73",
+      "filename": "chrome/test/BUILD.gn",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Ftest%2FBUILD.gn",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/chrome%2Ftest%2FBUILD.gn",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Ftest%2FBUILD.gn?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -4526,6 +4526,7 @@ test(\"unit_tests\") {\n     \"../browser/browsing_data/counters/site_data_counting_helper_unittest.cc\",\n     \"../browser/browsing_data/counters/site_settings_counter_unittest.cc\",\n     \"../browser/browsing_data/site_data_size_collector_unittest.cc\",\n+    \"../browser/chooser_controller/title_util_unittest.cc\",\n     \"../browser/chrome_content_browser_client_unittest.cc\",\n     \"../browser/command_updater_impl_unittest.cc\",\n     \"../browser/complex_tasks/task_tab_helper_unittest.cc\","
+    },
+    {
+      "sha": "8cbc3d9fbf84eca788acb3337abc0d3283a3be62",
+      "filename": "components/permissions/BUILD.gn",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2FBUILD.gn",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2FBUILD.gn",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fpermissions%2FBUILD.gn?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -234,6 +234,7 @@ source_set(\"test_support\") {\n source_set(\"unit_tests\") {\n   testonly = true\n   sources = [\n+    \"chooser_title_util_unittest.cc\",\n     \"contexts/camera_pan_tilt_zoom_permission_context_unittest.cc\",\n     \"contexts/geolocation_permission_context_unittest.cc\",\n     \"contexts/midi_permission_context_unittest.cc\",\n@@ -270,6 +271,7 @@ source_set(\"unit_tests\") {\n     \"//components/content_settings/core/browser\",\n     \"//components/keyed_service/content\",\n     \"//components/prefs:test_support\",\n+    \"//components/strings:components_strings_grit\",\n     \"//components/ukm:test_support\",\n     \"//components/ukm/content\",\n     \"//components/variations\","
+    },
+    {
+      "sha": "4c2fb4e13993554c1f4de8a63ee6b7155180f476",
+      "filename": "components/permissions/chooser_title_util.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fpermissions%2Fchooser_title_util.cc?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -15,11 +15,10 @@ std::u16string CreateChooserTitle(content::RenderFrameHost* render_frame_host,\n                                   int title_string_id_origin) {\n   if (!render_frame_host)\n     return u\"\";\n-\n   return l10n_util::GetStringFUTF16(\n       title_string_id_origin,\n       url_formatter::FormatOriginForSecurityDisplay(\n-          render_frame_host->GetLastCommittedOrigin(),\n+          render_frame_host->GetMainFrame()->GetLastCommittedOrigin(),\n           url_formatter::SchemeDisplay::OMIT_CRYPTOGRAPHIC));\n }\n "
+    },
+    {
+      "sha": "a0b694f2e66a02977335ca25a3818fdd6384d217",
+      "filename": "components/permissions/chooser_title_util.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fpermissions%2Fchooser_title_util.h?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -13,8 +13,9 @@ class RenderFrameHost;\n \n namespace permissions {\n \n-// Creates a title for a chooser using the origin of the frame. Returns the\n-// empty string if |render_frame_host| is null.\n+// Creates a title for a chooser using the origin of the main frame\n+// containing `render_frame_host`. Returns the empty string if\n+// `render_frame_host` is null.\n std::u16string CreateChooserTitle(content::RenderFrameHost* render_frame_host,\n                                   int title_string_id_origin);\n "
+    },
+    {
+      "sha": "ae66385b2ad028b5ff9046f524f46a7d732edae5",
+      "filename": "components/permissions/chooser_title_util_unittest.cc",
+      "status": "added",
+      "additions": 41,
+      "deletions": 0,
+      "changes": 41,
+      "blob_url": "https://github.com/chromium/chromium/blob/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/b13ddd23f2696a1a823ee13794cfdb3102d8e9f7/components%2Fpermissions%2Fchooser_title_util_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fpermissions%2Fchooser_title_util_unittest.cc?ref=b13ddd23f2696a1a823ee13794cfdb3102d8e9f7",
+      "patch": "@@ -0,0 +1,41 @@\n+// Copyright 2022 The Chromium Authors. All rights reserved.\n+// Use of this source code is governed by a BSD-style license that can be\n+// found in the LICENSE file.\n+\n+#include \"components/permissions/chooser_title_util.h\"\n+\n+#include \"components/strings/grit/components_strings.h\"\n+#include \"content/public/test/navigation_simulator.h\"\n+#include \"content/public/test/test_renderer_host.h\"\n+#include \"url/gurl.h\"\n+#include \"url/origin.h\"\n+\n+namespace permissions {\n+namespace {\n+\n+constexpr int kTitleResourceId = IDS_USB_DEVICE_CHOOSER_PROMPT_ORIGIN;\n+\n+using ChooserTitleTest = content::RenderViewHostTestHarness;\n+\n+TEST_F(ChooserTitleTest, NoFrame) {\n+  EXPECT_EQ(u\"\", CreateChooserTitle(nullptr, kTitleResourceId));\n+}\n+\n+TEST_F(ChooserTitleTest, FrameTree) {\n+  NavigateAndCommit(GURL(\"https://main-frame.com\"));\n+  content::RenderFrameHost* subframe =\n+      content::NavigationSimulator::NavigateAndCommitFromDocument(\n+          GURL(\"https://sub-frame.com\"),\n+          content::RenderFrameHostTester::For(main_rfh())\n+              ->AppendChild(\"subframe\"));\n+\n+  EXPECT_EQ(\"main-frame.com\", main_rfh()->GetLastCommittedOrigin().host());\n+  EXPECT_EQ(u\"main-frame.com wants to connect\",\n+            CreateChooserTitle(main_rfh(), kTitleResourceId));\n+  EXPECT_EQ(\"sub-frame.com\", subframe->GetLastCommittedOrigin().host());\n+  EXPECT_EQ(u\"main-frame.com wants to connect\",\n+            CreateChooserTitle(subframe, kTitleResourceId));\n+}\n+\n+}  // namespace\n+}  // namespace permissions"
+    }
+  ]
+}

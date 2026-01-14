@@ -1,0 +1,233 @@
+{
+  "sha": "e310c4f91d229a072507f80c73811489b4cdff27",
+  "node_id": "MDY6Q29tbWl0NjAxMjg1OTI6ZTMxMGM0ZjkxZDIyOWEwNzI1MDdmODBjNzM4MTE0ODliNGNkZmYyNw==",
+  "commit": {
+    "author": {
+      "name": "Shuo Yang",
+      "email": "yangshuo@google.com",
+      "date": "2021-08-31T05:05:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-08-31T05:05:31Z"
+    },
+    "message": "Remove X-Endpoint-API-UserInfo for all header occurrences. (#845)",
+    "tree": {
+      "sha": "da334751ab2251a322fc59860cb05341be501eae",
+      "url": "https://api.github.com/repos/cloudendpoints/esp/git/trees/da334751ab2251a322fc59860cb05341be501eae"
+    },
+    "url": "https://api.github.com/repos/cloudendpoints/esp/git/commits/e310c4f91d229a072507f80c73811489b4cdff27",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhLbibCRBK7hj4Ov3rIwAA2RMIAE9R53xPhnOr5GUmeACBoDix\ng5IgnIkshHOCkrA9o/1mq6KdI+vZemub0OQ/o5PQHWw1Z4xiMXQKY+tLWp1Coe05\nlhrFhPmKMLrn+JJUpjdE70M9iMY9gW984cxxsl7LYP1Tk9bSRMfGivO3+6maxqEn\nji+QMtegqADaAO9ip6Z1AnjtYleNYftG/Kw+N+qBRsRj028jdZw76+oU/bUbdaXM\ndfF45wVi0uydeSz8i1NH5t8umGfvC8cB50ZsvOed151mPC49pJX/qcbCuBcUUdkq\ntXa8PYCTBOmwGnQiw126V0d0eK0GlMiGU2lPeIszWaNuZaayP0kW6HIAx0AtxbE=\n=bVWE\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree da334751ab2251a322fc59860cb05341be501eae\nparent 4692ea439118d1283262c9ebb6bfddbca3c5ce52\nauthor Shuo Yang <yangshuo@google.com> 1630386331 -0700\ncommitter GitHub <noreply@github.com> 1630386331 -0700\n\nRemove X-Endpoint-API-UserInfo for all header occurrences. (#845)\n\n",
+      "verified_at": "2024-11-07T18:15:54Z"
+    }
+  },
+  "url": "https://api.github.com/repos/cloudendpoints/esp/commits/e310c4f91d229a072507f80c73811489b4cdff27",
+  "html_url": "https://github.com/cloudendpoints/esp/commit/e310c4f91d229a072507f80c73811489b4cdff27",
+  "comments_url": "https://api.github.com/repos/cloudendpoints/esp/commits/e310c4f91d229a072507f80c73811489b4cdff27/comments",
+  "author": {
+    "login": "shuoyang2016",
+    "id": 6464547,
+    "node_id": "MDQ6VXNlcjY0NjQ1NDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6464547?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shuoyang2016",
+    "html_url": "https://github.com/shuoyang2016",
+    "followers_url": "https://api.github.com/users/shuoyang2016/followers",
+    "following_url": "https://api.github.com/users/shuoyang2016/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shuoyang2016/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shuoyang2016/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shuoyang2016/subscriptions",
+    "organizations_url": "https://api.github.com/users/shuoyang2016/orgs",
+    "repos_url": "https://api.github.com/users/shuoyang2016/repos",
+    "events_url": "https://api.github.com/users/shuoyang2016/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shuoyang2016/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4692ea439118d1283262c9ebb6bfddbca3c5ce52",
+      "url": "https://api.github.com/repos/cloudendpoints/esp/commits/4692ea439118d1283262c9ebb6bfddbca3c5ce52",
+      "html_url": "https://github.com/cloudendpoints/esp/commit/4692ea439118d1283262c9ebb6bfddbca3c5ce52"
+    }
+  ],
+  "stats": {
+    "total": 99,
+    "additions": 62,
+    "deletions": 37
+  },
+  "files": [
+    {
+      "sha": "7dc71a331a48cf654b19292d84b7950048fa44eb",
+      "filename": "include/api_manager/request.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/include%2Fapi_manager%2Frequest.h",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/include%2Fapi_manager%2Frequest.h",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/include%2Fapi_manager%2Frequest.h?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -74,7 +74,8 @@ class Request {\n \n   // Adds a header to backend. If the header exists, overwrite its value\n   virtual utils::Status AddHeaderToBackend(const std::string &key,\n-                                           const std::string &value) = 0;\n+                                           const std::string &value,\n+                                           bool changeAllOccurrence) = 0;\n };\n \n }  // namespace api_manager"
+    },
+    {
+      "sha": "ea0dbd255a470ea6750b50958afd28a01e4d9150",
+      "filename": "src/api_manager/check_auth.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_auth.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_auth.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fcheck_auth.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -393,7 +393,7 @@ void AuthChecker::PassUserInfoOnSuccess() {\n   char *base64_json_buf = auth::esp_base64_encode(\n       json_buf, strlen(json_buf), true, false, true /*padding*/);\n   context_->request()->AddHeaderToBackend(auth::kEndpointApiUserInfo,\n-                                          base64_json_buf);\n+                                          base64_json_buf, false);\n   auth::esp_grpc_free(json_buf);\n   auth::esp_grpc_free(base64_json_buf);\n "
+    },
+    {
+      "sha": "f9d8833e7b35a39adedb86ec4fb4a09e01d1cc32",
+      "filename": "src/api_manager/check_auth_test.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_auth_test.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_auth_test.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fcheck_auth_test.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -458,7 +458,7 @@ void CheckAuthTest::TestValidToken(const std::string &auth_token,\n       }));\n   std::cout << \"need be replaced: \" << user_info << std::endl;\n   EXPECT_CALL(*raw_request_,\n-              AddHeaderToBackend(kEndpointApiUserInfo, user_info))\n+              AddHeaderToBackend(kEndpointApiUserInfo, user_info, false))\n       .WillOnce(Return(utils::Status::OK));\n \n   CheckAuth(context_, [](Status status) { ASSERT_TRUE(status.ok()); });\n@@ -490,8 +490,8 @@ TEST_F(CheckAuthTest, TestOKAuth) {\n       }));\n   EXPECT_CALL(*raw_request_, SetAuthToken(kToken)).Times(1);\n   EXPECT_CALL(*raw_env_, DoRunHTTPRequest(_)).Times(0);\n-  EXPECT_CALL(*raw_request_,\n-              AddHeaderToBackend(kEndpointApiUserInfo, kUserInfo_kSub_kIss))\n+  EXPECT_CALL(*raw_request_, AddHeaderToBackend(kEndpointApiUserInfo,\n+                                                kUserInfo_kSub_kIss, false))\n       .WillOnce(Return(utils::Status::OK));\n \n   CheckAuth(context_, [](Status status) { ASSERT_TRUE(status.ok()); });\n@@ -513,8 +513,8 @@ TEST_F(CheckAuthTest, TestOKAuth) {\n       }));\n   EXPECT_CALL(*raw_request_, SetAuthToken(kToken2)).Times(1);\n   EXPECT_CALL(*raw_env_, DoRunHTTPRequest(_)).Times(0);\n-  EXPECT_CALL(*raw_request_,\n-              AddHeaderToBackend(kEndpointApiUserInfo, kUserInfo_kSub2_kIss2))\n+  EXPECT_CALL(*raw_request_, AddHeaderToBackend(kEndpointApiUserInfo,\n+                                                kUserInfo_kSub2_kIss2, false))\n       .WillOnce(Return(utils::Status::OK));\n \n   CheckAuth(context_, [](Status status) { ASSERT_TRUE(status.ok()); });\n@@ -605,8 +605,8 @@ TEST_F(CheckAuthTest, TestNoOpenId) {\n         std::map<std::string, std::string> empty;\n         req->OnComplete(Status::OK, std::move(empty), std::move(body));\n       }));\n-  EXPECT_CALL(*raw_request_,\n-              AddHeaderToBackend(kEndpointApiUserInfo, kUserInfo_kSub_kIss2))\n+  EXPECT_CALL(*raw_request_, AddHeaderToBackend(kEndpointApiUserInfo,\n+                                                kUserInfo_kSub_kIss2, false))\n       .WillOnce(Return(utils::Status::OK));\n \n   CheckAuth(context_, [](Status status) { ASSERT_TRUE(status.ok()); });"
+    },
+    {
+      "sha": "3e2e68d34ab1937bbd0c9bd2842226547d65938f",
+      "filename": "src/api_manager/check_service_control.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_service_control.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcheck_service_control.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fcheck_service_control.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -15,6 +15,7 @@\n ////////////////////////////////////////////////////////////////////////////////\n // includes should be ordered. This seems like a bug in clang-format?\n #include \"src/api_manager/check_service_control.h\"\n+\n #include \"google/protobuf/stubs/status.h\"\n #include \"src/api_manager/cloud_trace/cloud_trace.h\"\n \n@@ -85,8 +86,8 @@ void CheckServiceControl(std::shared_ptr<context::RequestContext> context,\n \n         // update consumer_project_id to service context\n         if (!info.consumer_project_id.empty()) {\n-          context->request()->AddHeaderToBackend(kConsumerProjecId,\n-                                                 info.consumer_project_id);\n+          context->request()->AddHeaderToBackend(\n+              kConsumerProjecId, info.consumer_project_id, false);\n         }\n \n         continuation(status);"
+    },
+    {
+      "sha": "9d94e2aec6ad9d77869cb341a11c045fca25509d",
+      "filename": "src/api_manager/context/client_ip_extraction_test.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcontext%2Fclient_ip_extraction_test.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcontext%2Fclient_ip_extraction_test.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fcontext%2Fclient_ip_extraction_test.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -117,8 +117,8 @@ class MockRequest : public Request {\n     return false;\n   }\n \n-  MOCK_METHOD2(AddHeaderToBackend,\n-               utils::Status(const std::string &, const std::string &));\n+  MOCK_METHOD3(AddHeaderToBackend,\n+               utils::Status(const std::string &, const std::string &, bool));\n   MOCK_METHOD1(SetAuthToken, void(const std::string &));\n   MOCK_METHOD0(GetFrontendProtocol,\n                ::google::api_manager::protocol::Protocol());"
+    },
+    {
+      "sha": "ab91e2b5ed06cac9a116e4463173b543e5397167",
+      "filename": "src/api_manager/context/request_context.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 18,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcontext%2Frequest_context.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fcontext%2Frequest_context.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fcontext%2Frequest_context.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -16,15 +16,17 @@\n //\n \n #include \"src/api_manager/context/request_context.h\"\n-#include \"google/api/backend.pb.h\"\n-#include \"src/api_manager/auth/lib/json_util.h\"\n-#include \"src/api_manager/utils/str_util.h\"\n \n #include <uuid/uuid.h>\n+\n #include <numeric>\n #include <sstream>\n #include <vector>\n \n+#include \"google/api/backend.pb.h\"\n+#include \"src/api_manager/auth/lib/json_util.h\"\n+#include \"src/api_manager/utils/str_util.h\"\n+\n using ::google::api_manager::auth::GetPrimitiveFieldValue;\n using ::google::api_manager::cloud_trace::HeaderType;\n using ::google::api_manager::utils::Status;\n@@ -208,7 +210,7 @@ void RequestContext::ExtractApiKey() {\n }\n \n void RequestContext::SetApiKeyHeader() {\n-  request_->AddHeaderToBackend(kDefaultApiKeyHeaderName, api_key_);\n+  request_->AddHeaderToBackend(kDefaultApiKeyHeaderName, api_key_, false);\n }\n \n void RequestContext::CompleteCheck(Status status) {\n@@ -434,7 +436,7 @@ void RequestContext::StartBackendSpanAndSetTraceContext() {\n       cloud_trace()->header_type() == HeaderType::CLOUD_TRACE_CONTEXT\n           ? kCloudTraceContextHeader\n           : kGRpcTraceContextHeader,\n-      trace_context_header);\n+      trace_context_header, false);\n   if (!status.ok()) {\n     service_context()->env()->LogError(\n         \"Failed to set trace context header to backend.\");\n@@ -535,14 +537,14 @@ void RequestContext::AddInstanceIdentityToken() {\n       std::string origin_auth_header;\n       if (request()->FindHeader(kAuthorizationHeader, &origin_auth_header)) {\n         Status status = request()->AddHeaderToBackend(\n-            kXForwardedAuthorizationHeader, origin_auth_header);\n+            kXForwardedAuthorizationHeader, origin_auth_header, false);\n         if (!status.ok()) {\n           service_context()->env()->LogError(\n               \"Failed to set X-Forwarded-Authorization header to backend.\");\n         }\n       }\n-      Status status = request()->AddHeaderToBackend(kAuthorizationHeader,\n-                                                    kBearerPrefix + token);\n+      Status status = request()->AddHeaderToBackend(\n+          kAuthorizationHeader, kBearerPrefix + token, false);\n       if (!status.ok()) {\n         service_context()->env()->LogError(\n             \"Failed to set authorization header to backend.\");"
+    },
+    {
+      "sha": "49aadb9738ff4bf09638cd9e3198af186c64cb82",
+      "filename": "src/api_manager/mock_request.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fmock_request.h",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Fmock_request.h",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Fmock_request.h?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -25,8 +25,8 @@ class MockRequest : public Request {\n  public:\n   MOCK_METHOD2(FindQuery, bool(const std::string &, std::string *));\n   MOCK_METHOD2(FindHeader, bool(const std::string &, std::string *));\n-  MOCK_METHOD2(AddHeaderToBackend,\n-               utils::Status(const std::string &, const std::string &));\n+  MOCK_METHOD3(AddHeaderToBackend,\n+               utils::Status(const std::string &, const std::string &, bool));\n   MOCK_METHOD1(SetAuthToken, void(const std::string &));\n   MOCK_METHOD0(GetRequestHTTPMethod, std::string());\n   MOCK_METHOD0(GetQueryParameters, std::string());"
+    },
+    {
+      "sha": "eedcff8c5afa3a5cb14b165f19d48bb445829a9a",
+      "filename": "src/api_manager/request_handler.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Frequest_handler.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fapi_manager%2Frequest_handler.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fapi_manager%2Frequest_handler.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -43,7 +43,7 @@ RequestHandler::RequestHandler(\n   if (context_->request()->FindHeader(\n           google::api_manager::auth::kEndpointApiUserInfo, &buffer)) {\n     context_->request()->AddHeaderToBackend(\n-        google::api_manager::auth::kEndpointApiUserInfo, \"\");\n+        google::api_manager::auth::kEndpointApiUserInfo, \"\", true);\n   }\n }\n "
+    },
+    {
+      "sha": "09da19df6283e33649e307de7df81cd0b2f84835",
+      "filename": "src/nginx/request.cc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 11,
+      "changes": 32,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Frequest.cc",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Frequest.cc",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fnginx%2Frequest.cc?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -146,18 +146,21 @@ void NgxEspRequest::SetAuthToken(const std::string &auth_token) {\n }\n \n utils::Status NgxEspRequest::AddHeaderToBackend(const std::string &key,\n-                                                const std::string &value) {\n-  ngx_table_elt_t *h = nullptr;\n+                                                const std::string &value,\n+                                                bool changeAllOccurrence) {\n+  std::vector<ngx_table_elt_t *> headers;\n   for (auto &h_in : r_->headers_in) {\n     if (key.size() == h_in.key.len &&\n         strncasecmp(key.c_str(), reinterpret_cast<const char *>(h_in.key.data),\n                     h_in.key.len) == 0) {\n-      h = &h_in;\n-      break;\n+      headers.push_back(&h_in);\n+      if (!changeAllOccurrence) {\n+        break;\n+      }\n     }\n   }\n-  if (h == nullptr) {\n-    h = reinterpret_cast<ngx_table_elt_t *>(\n+  if (headers.empty()) {\n+    ngx_table_elt_t *h = reinterpret_cast<ngx_table_elt_t *>(\n         ngx_list_push(&r_->headers_in.headers));\n     if (h == nullptr) {\n       return utils::Status(Code::INTERNAL, \"Out of memory\");\n@@ -172,14 +175,21 @@ utils::Status NgxEspRequest::AddHeaderToBackend(const std::string &key,\n         h->lowcase_key,\n         reinterpret_cast<u_char *>(const_cast<char *>(key.c_str())),\n         key.size());\n+    headers.push_back(h);\n   }\n \n-  if (ngx_str_copy_from_std(r_->pool, key, &h->key) != NGX_OK ||\n-      ngx_str_copy_from_std(r_->pool, value, &h->value) != NGX_OK) {\n-    return utils::Status(Code::INTERNAL, \"Out of memory\");\n+  for (size_t i = 0; i < headers.size(); ++i) {\n+    ngx_table_elt_t *it = headers[i];\n+    if (ngx_str_copy_from_std(r_->pool, key, &it->key) != NGX_OK ||\n+        ngx_str_copy_from_std(r_->pool, value, &it->value) != NGX_OK) {\n+      return utils::Status(Code::INTERNAL, \"Out of memory\");\n+    }\n   }\n-  ngx_log_debug2(NGX_LOG_DEBUG_HTTP, r_->connection->log, 0,\n-                 \"updates header to backend: \\\"%V: %V\\\"\", &h->key, &h->value);\n+\n+  ngx_log_debug3(\n+      NGX_LOG_DEBUG_HTTP, r_->connection->log, 0,\n+      \"updates header to backend, changeAllOccurrence: '%t', \\\"%V: %V\\\"\",\n+      changeAllOccurrence, &h->key, &h->value);\n   return utils::Status::OK;\n }\n "
+    },
+    {
+      "sha": "f1e6d6fa4141d6598c0e0ec8f174908718f9d36a",
+      "filename": "src/nginx/request.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Frequest.h",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Frequest.h",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fnginx%2Frequest.h?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -57,7 +57,8 @@ class NgxEspRequest : public Request {\n \n   virtual void SetAuthToken(const std::string &auth_token);\n   virtual utils::Status AddHeaderToBackend(const std::string &key,\n-                                           const std::string &value);\n+                                           const std::string &value,\n+                                           bool changeAllOccurrence);\n   virtual bool FindQuery(const std::string &name, std::string *query);\n   virtual bool FindHeader(const std::string &name, std::string *header);\n "
+    },
+    {
+      "sha": "24ce55a88c23345d1e4a31c1bb1cad7b352171f1",
+      "filename": "src/nginx/t/ApiManager.pm",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Ft%2FApiManager.pm",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Ft%2FApiManager.pm",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fnginx%2Ft%2FApiManager.pm?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -456,6 +456,7 @@ sub read_http_stream {\n       'path' => $path,\n       'uri' => $uri,\n       'headers' => \\%headers,\n+      'header_lines' => \\@header_lines,\n       'body' => $body\n     };\n "
+    },
+    {
+      "sha": "2f2920a6831587fcd90a7eb6d7d61ac377678261",
+      "filename": "src/nginx/t/auth_remove_user_info.t",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/cloudendpoints/esp/blob/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Ft%2Fauth_remove_user_info.t",
+      "raw_url": "https://github.com/cloudendpoints/esp/raw/e310c4f91d229a072507f80c73811489b4cdff27/src%2Fnginx%2Ft%2Fauth_remove_user_info.t",
+      "contents_url": "https://api.github.com/repos/cloudendpoints/esp/contents/src%2Fnginx%2Ft%2Fauth_remove_user_info.t?ref=e310c4f91d229a072507f80c73811489b4cdff27",
+      "patch": "@@ -42,7 +42,7 @@ my $NginxPort = ApiManager::pick_port();\n my $BackendPort = ApiManager::pick_port();\n my $ServiceControlPort = ApiManager::pick_port();\n \n-my $t = Test::Nginx->new()->has(qw/http proxy/)->plan(14);\n+my $t = Test::Nginx->new()->has(qw/http proxy/)->plan(15);\n \n # Save service name in the service configuration protocol buffer file.\n \n@@ -88,6 +88,7 @@ my $response = ApiManager::http($NginxPort,<<'EOF');\n GET /shelves?key=this-is-an-api-key HTTP/1.0\n Host: localhost\n x-endpoint-api-userinfo: Should be removed\n+x-endpoint-api-userinfo: Multiple userinfo should all be removed\n \n EOF\n \n@@ -114,6 +115,14 @@ is($r->{uri}, '/shelves?key=this-is-an-api-key', 'Backend uri was /shelves');\n is($r->{headers}->{host}, \"127.0.0.1:${BackendPort}\", 'Host header was set');\n is($r->{headers}->{'x-endpoint-api-userinfo'}, '',\n     'X-Endpoint-API-UserInfo should be removed from the request headers');\n+my $arr = $r->{header_lines};\n+my @userinfo_list = ();\n+\n+foreach (@$arr) {\n+  push(@userinfo_list, $_) if index($_, 'X-Endpoint-API-UserInfo') != -1;\n+}\n+is(join(\",\", @userinfo_list), 'X-Endpoint-API-UserInfo: ,X-Endpoint-API-UserInfo: ',\n+   \"Multiple userinfo should all be removed\");\n \n @requests = ApiManager::read_http_stream($t, 'servicecontrol.log');\n is(scalar @requests, 1, 'Service control received one request');"
+    }
+  ]
+}

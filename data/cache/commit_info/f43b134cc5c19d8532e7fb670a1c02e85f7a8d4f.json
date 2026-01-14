@@ -1,0 +1,93 @@
+{
+  "sha": "f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+  "node_id": "MDY6Q29tbWl0MjQ3NzY3Mjg6ZjQzYjEzNGNjNWMxOWQ4NTMyZTdmYjY3MGExYzAyZTg1ZjdhOGQ0Zg==",
+  "commit": {
+    "author": {
+      "name": "Darrin D'Mello",
+      "email": "ddmello@fb.com",
+      "date": "2017-03-30T22:10:47Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2017-03-30T22:25:12Z"
+    },
+    "message": "Fixing HPACK header table resize issue\n\nSummary: On resizing the header table down and then up again, a resize can be called against the underlying vector that actually sizes it down.  This causes a lot of things to break as the code that does the resizing assumes the underlying vector is only ever resized up.\n\nReviewed By: afrind\n\nDifferential Revision: D4613681\n\nfbshipit-source-id: 35b61cab53d5bc097424d6c779f90b7fdea42002",
+    "tree": {
+      "sha": "a49ad7fd8eb97edab2ee46298cf7f83e3ca0ea27",
+      "url": "https://api.github.com/repos/facebook/proxygen/git/trees/a49ad7fd8eb97edab2ee46298cf7f83e3ca0ea27"
+    },
+    "url": "https://api.github.com/repos/facebook/proxygen/git/commits/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/proxygen/commits/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+  "html_url": "https://github.com/facebook/proxygen/commit/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+  "comments_url": "https://api.github.com/repos/facebook/proxygen/commits/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7a148eb8fca42d17e350781493369da0725144fc",
+      "url": "https://api.github.com/repos/facebook/proxygen/commits/7a148eb8fca42d17e350781493369da0725144fc",
+      "html_url": "https://github.com/facebook/proxygen/commit/7a148eb8fca42d17e350781493369da0725144fc"
+    }
+  ],
+  "stats": {
+    "total": 149,
+    "additions": 129,
+    "deletions": 20
+  },
+  "files": [
+    {
+      "sha": "db6032f75772765fde985c5c6a4ab0a023b0184c",
+      "filename": "proxygen/lib/http/codec/compress/HeaderTable.cpp",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 19,
+      "changes": 50,
+      "blob_url": "https://github.com/facebook/proxygen/blob/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2FHeaderTable.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2FHeaderTable.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2FHeaderTable.cpp?ref=f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+      "patch": "@@ -134,30 +134,42 @@ void HeaderTable::removeLast() {\n }\n \n void HeaderTable::setCapacity(uint32_t capacity) {\n+  // TODO: ddmello - the below is a little dangerous as we update the\n+  // capacity right away.  Some properties of the class utilize that variable\n+  // and so might be better to refactor and update capacity at the end of the\n+  // method (and update other methods)\n   auto oldCapacity = capacity_;\n   capacity_ = capacity;\n-  if (capacity_ <= oldCapacity) {\n+  if (capacity_ == oldCapacity) {\n+    return;\n+  } else if (capacity_ < oldCapacity) {\n+    // NOTE: currently no actual resizing is performed...\n     evict(0);\n   } else {\n-    auto oldTail = tail();\n-    auto oldLength = table_.size();\n+    // NOTE: due to the above lack of resizing, we must determine whether a\n+    // resize is actually appropriate (to handle cases where the underlying\n+    // vector is still >= to the size related to the new capacity requested)\n     uint32_t newLength = (capacity_ >> 5) + 1;\n-    table_.resize(newLength);\n-    if (size_ > 0 && oldTail > head_) {\n-      // the list wrapped around, need to move oldTail..oldLength to the end of\n-      // the now-larger table_\n-      std::copy(table_.begin() + oldTail, table_.begin() + oldLength,\n-                table_.begin() + newLength - (oldLength - oldTail));\n-      // Update the names indecies that pointed to the old range\n-      for (auto& names_it: names_) {\n-        for (auto& idx: names_it.second) {\n-          if (idx >= oldTail) {\n-            DCHECK_LT(idx + (table_.size() - oldLength), table_.size());\n-            idx += (table_.size() - oldLength);\n-          } else {\n-            // remaining indecies in the list were smaller than oldTail, so\n-            // should be indexed from 0\n-            break;\n+    if (newLength > table_.size()) {\n+      auto oldTail = tail();\n+      auto oldLength = table_.size();\n+      table_.resize(newLength);\n+      if (size_ > 0 && oldTail > head_) {\n+        // the list wrapped around, need to move oldTail..oldLength to the end\n+        // of the now-larger table_\n+        std::copy(table_.begin() + oldTail, table_.begin() + oldLength,\n+                  table_.begin() + newLength - (oldLength - oldTail));\n+        // Update the names indecies that pointed to the old range\n+        for (auto& names_it: names_) {\n+          for (auto& idx: names_it.second) {\n+            if (idx >= oldTail) {\n+              DCHECK_LT(idx + (table_.size() - oldLength), table_.size());\n+              idx += (table_.size() - oldLength);\n+            } else {\n+              // remaining indecies in the list were smaller than oldTail, so\n+              // should be indexed from 0\n+              break;\n+            }\n           }\n         }\n       }"
+    },
+    {
+      "sha": "1f2a535eb6b769eeefc3bdde2793aca056fdecad",
+      "filename": "proxygen/lib/http/codec/compress/test/HeaderTableTests.cpp",
+      "status": "modified",
+      "additions": 98,
+      "deletions": 1,
+      "changes": 99,
+      "blob_url": "https://github.com/facebook/proxygen/blob/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2Ftest%2FHeaderTableTests.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2Ftest%2FHeaderTableTests.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2Fcompress%2Ftest%2FHeaderTableTests.cpp?ref=f43b134cc5c19d8532e7fb670a1c02e85f7a8d4f",
+      "patch": "@@ -25,6 +25,27 @@ class HeaderTableTests : public testing::Test {\n     EXPECT_EQ(HeaderTable::toInternal(head_, length_, external), internal);\n   }\n \n+  void resizeTable(HeaderTable& table, uint32_t newCapacity, uint32_t newMax) {\n+    table.setCapacity(newCapacity);\n+    // On resizing the table size (count of headers) remains the same or sizes\n+    // down; can not size up\n+    EXPECT_LE(table.size(), newMax);\n+  }\n+\n+  void resizeAndFillTable(\n+      HeaderTable& table, HPACKHeader& header, uint32_t newMax,\n+      uint32_t fillCount) {\n+    uint32_t newCapacity = header.bytes() * newMax;\n+    resizeTable(table, newCapacity, newMax);\n+    // Fill the table (with one extra) and make sure we haven't violated our\n+    // size (bytes) limits (expected one entry to be evicted)\n+    for (size_t i = 0; i <= fillCount; ++i) {\n+      EXPECT_EQ(table.add(header), true);\n+    }\n+    EXPECT_EQ(table.size(), newMax);\n+    EXPECT_EQ(table.bytes(), newCapacity);\n+  }\n+\n   uint32_t head_{0};\n   uint32_t length_{0};\n };\n@@ -94,11 +115,12 @@ TEST_F(HeaderTableTests, evict) {\n   EXPECT_EQ(table.names().size(), 0);\n }\n \n-TEST_F(HeaderTableTests, set_capacity) {\n+TEST_F(HeaderTableTests, reduce_capacity) {\n   HPACKHeader accept(\"accept-encoding\", \"gzip\");\n   uint32_t max = 10;\n   uint32_t capacity = accept.bytes() * max;\n   HeaderTable table(capacity);\n+  EXPECT_GT(table.length(), max);\n \n   // fill the table\n   for (size_t i = 0; i < max; i++) {\n@@ -167,4 +189,79 @@ TEST_F(HeaderTableTests, increaseCapacity) {\n \n }\n \n+TEST_F(HeaderTableTests, varyCapacity) {\n+  HPACKHeader accept(\"accept-encoding\", \"gzip\");\n+  uint32_t max = 6;\n+  uint32_t capacity = accept.bytes() * max;\n+  HeaderTable table(capacity);\n+\n+  // Fill the table (extra) and make sure we haven't violated our\n+  // size (bytes) limits (expected one entry to be evicted)\n+  for (size_t i = 0; i <= table.length(); ++i) {\n+    EXPECT_EQ(table.add(accept), true);\n+  }\n+  EXPECT_EQ(table.size(), max);\n+\n+  // Size down the table and verify we are still honoring our size (bytes)\n+  // limits\n+  resizeAndFillTable(table, accept, 4, 5);\n+\n+  // Size up the table (in between previous max and min within test) and verify\n+  // we are still horing our size (bytes) limits\n+  resizeAndFillTable(table, accept, 5, 6);\n+\n+  // Finally reize up one last timestamps\n+  resizeAndFillTable(table, accept, 8, 9);\n+}\n+\n+TEST_F(HeaderTableTests, varyCapacityMalignHeadIndex) {\n+  // Test checks for a previous bug/crash condition where due to resizing\n+  // the underlying table to a size lower than a previous max but up from the\n+  // current size and the position of the head_ index an out of bounds index\n+  // would occur\n+\n+  // Initialize header table\n+  HPACKHeader accept(\"accept-encoding\", \"gzip\");\n+  uint32_t max = 6;\n+  uint32_t capacity = accept.bytes() * max;\n+  HeaderTable table(capacity);\n+\n+  // Push head_ to last index in underlying table before potential wrap\n+  // This is our max table size for the duration of the test\n+  for (size_t i = 0; i < table.length(); ++i) {\n+    EXPECT_EQ(table.add(accept), true);\n+  }\n+  EXPECT_EQ(table.size(), max);\n+  EXPECT_EQ(table.bytes(), capacity);\n+\n+  // Flush underlying table (head_ remains the same at the previous max index)\n+  // Header guranteed to cause a flush as header itself requires 32 bytes plus\n+  // the sizes of the name and value anyways (which themselves would cause a\n+  // flush)\n+  string strLargerThanTableCapacity = string(capacity + 1, 'a');\n+  HPACKHeader flush(\"flush\", strLargerThanTableCapacity);\n+  EXPECT_EQ(table.add(flush), false);\n+  EXPECT_EQ(table.size(), 0);\n+\n+  // Now reduce capacity of table (in functional terms table.size() is lowered\n+  // but currently table.length() remains the same)\n+  max = 3;\n+  resizeTable(table, accept.bytes() * max, max);\n+\n+  // Increase capacity of table (but smaller than all time max; head_ still at\n+  // previous max index).  Previously (now fixed) this size up resulted in\n+  // incorrect resizing semantics\n+  max = 4;\n+  resizeTable(table, accept.bytes() * max, max);\n+\n+  // Now try and add headers; there should be no crash with current position of\n+  // head_ in the underlying table.  Note this is merely one possible way we\n+  // could force the test to crash as a result of the resize bug this test was\n+  // added for\n+  for (size_t i = 0; i <= table.length(); ++i) {\n+    EXPECT_EQ(table.add(accept), true);\n+  }\n+  EXPECT_EQ(table.size(), max);\n+}\n+\n }"
+    }
+  ]
+}

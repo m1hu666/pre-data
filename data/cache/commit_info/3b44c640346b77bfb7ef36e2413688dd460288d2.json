@@ -1,0 +1,101 @@
+{
+  "sha": "3b44c640346b77bfb7ef36e2413688dd460288d2",
+  "node_id": "C_kwDOA0IeQtoAKDNiNDRjNjQwMzQ2Yjc3YmZiN2VmMzZlMjQxMzY4OGRkNDYwMjg4ZDI",
+  "commit": {
+    "author": {
+      "name": "Wei Zhang (Devinfra)",
+      "email": "zwei@meta.com",
+      "date": "2022-11-04T23:52:15Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2022-11-04T23:52:15Z"
+    },
+    "message": "Add more ids table size bound checks\n\nSummary: When loading Dex files, for the size of each section tables, we did not do enough checks on whether the encoded size of the table is actually out of bound. Having the additional checks makes Dex file loading a bit safer. :)\n\nReviewed By: agampe\n\nDifferential Revision: D41043723\n\nfbshipit-source-id: 874de6a1081e27130ea7b175cfe5b455a49466a7",
+    "tree": {
+      "sha": "eb9ca0bfc03a75bf6246770d2714873ca311aa2e",
+      "url": "https://api.github.com/repos/facebook/redex/git/trees/eb9ca0bfc03a75bf6246770d2714873ca311aa2e"
+    },
+    "url": "https://api.github.com/repos/facebook/redex/git/commits/3b44c640346b77bfb7ef36e2413688dd460288d2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/redex/commits/3b44c640346b77bfb7ef36e2413688dd460288d2",
+  "html_url": "https://github.com/facebook/redex/commit/3b44c640346b77bfb7ef36e2413688dd460288d2",
+  "comments_url": "https://api.github.com/repos/facebook/redex/commits/3b44c640346b77bfb7ef36e2413688dd460288d2/comments",
+  "author": {
+    "login": "thezhangwei",
+    "id": 157053,
+    "node_id": "MDQ6VXNlcjE1NzA1Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157053?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thezhangwei",
+    "html_url": "https://github.com/thezhangwei",
+    "followers_url": "https://api.github.com/users/thezhangwei/followers",
+    "following_url": "https://api.github.com/users/thezhangwei/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thezhangwei/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thezhangwei/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thezhangwei/subscriptions",
+    "organizations_url": "https://api.github.com/users/thezhangwei/orgs",
+    "repos_url": "https://api.github.com/users/thezhangwei/repos",
+    "events_url": "https://api.github.com/users/thezhangwei/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thezhangwei/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ff32a26abadd9bd09a11b10024bf61263f994dad",
+      "url": "https://api.github.com/repos/facebook/redex/commits/ff32a26abadd9bd09a11b10024bf61263f994dad",
+      "html_url": "https://github.com/facebook/redex/commit/ff32a26abadd9bd09a11b10024bf61263f994dad"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 39,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "a29776a2882307ea3ca42c96fa78a76d415ba368",
+      "filename": "libredex/DexLoader.cpp",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 4,
+      "changes": 43,
+      "blob_url": "https://github.com/facebook/redex/blob/3b44c640346b77bfb7ef36e2413688dd460288d2/libredex%2FDexLoader.cpp",
+      "raw_url": "https://github.com/facebook/redex/raw/3b44c640346b77bfb7ef36e2413688dd460288d2/libredex%2FDexLoader.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/redex/contents/libredex%2FDexLoader.cpp?ref=3b44c640346b77bfb7ef36e2413688dd460288d2",
+      "patch": "@@ -31,6 +31,10 @@ DexLoader::DexLoader(const DexLocation* location)\n static void validate_dex_header(const dex_header* dh,\n                                 size_t dexsize,\n                                 int support_dex_version) {\n+  always_assert_log(sizeof(dex_header) <= dexsize,\n+                    \"Header size (%lu) is larger than file size (%zu)\\n\",\n+                    dexsize,\n+                    sizeof(dex_header));\n   bool supported = false;\n   switch (support_dex_version) {\n   case 38:\n@@ -56,10 +60,41 @@ static void validate_dex_header(const dex_header* dh,\n       \"Reported size in header (%zu) does not match file size (%u)\\n\",\n       dexsize,\n       dh->file_size);\n-  auto off = (uint64_t)dh->class_defs_off;\n-  auto limit = off + dh->class_defs_size * sizeof(dex_class_def);\n-  always_assert_log(off < dexsize, \"class_defs_off out of range\");\n-  always_assert_log(limit <= dexsize, \"invalid class_defs_size\");\n+\n+  auto str_ids_off = (uint64_t)dh->string_ids_off;\n+  auto str_ids_limit =\n+      str_ids_off + dh->string_ids_size * sizeof(dex_string_id);\n+  always_assert_log(str_ids_off < dexsize, \"string_ids_off out of range\");\n+  always_assert_log(str_ids_limit <= dexsize, \"invalid string_ids_size\");\n+\n+  auto type_ids_off = (uint64_t)dh->type_ids_off;\n+  auto type_ids_limit = type_ids_off + dh->type_ids_size * sizeof(dex_type_id);\n+  always_assert_log(type_ids_off < dexsize, \"type_ids_off out of range\");\n+  always_assert_log(type_ids_limit <= dexsize, \"invalid type_ids_size\");\n+\n+  auto proto_ids_off = (uint64_t)dh->proto_ids_off;\n+  auto proto_ids_limit =\n+      proto_ids_off + dh->proto_ids_size * sizeof(dex_proto_id);\n+  always_assert_log(proto_ids_off < dexsize, \"proto_ids_off out of range\");\n+  always_assert_log(proto_ids_limit <= dexsize, \"invalid proto_ids_size\");\n+\n+  auto field_ids_off = (uint64_t)dh->field_ids_off;\n+  auto field_ids_limit =\n+      field_ids_off + dh->field_ids_size * sizeof(dex_field_id);\n+  always_assert_log(field_ids_off < dexsize, \"field_ids_off out of range\");\n+  always_assert_log(field_ids_limit <= dexsize, \"invalid field_ids_size\");\n+\n+  auto meth_ids_off = (uint64_t)dh->method_ids_off;\n+  auto meth_ids_limit =\n+      meth_ids_off + dh->method_ids_size * sizeof(dex_method_id);\n+  always_assert_log(meth_ids_off < dexsize, \"method_ids_off out of range\");\n+  always_assert_log(meth_ids_limit <= dexsize, \"invalid method_ids_size\");\n+\n+  auto cls_defs_off = (uint64_t)dh->class_defs_off;\n+  auto cls_defs_limit =\n+      cls_defs_off + dh->class_defs_size * sizeof(dex_class_def);\n+  always_assert_log(cls_defs_off < dexsize, \"class_defs_off out of range\");\n+  always_assert_log(cls_defs_limit <= dexsize, \"invalid class_defs_size\");\n }\n \n void DexLoader::gather_input_stats(dex_stats_t* stats, const dex_header* dh) {"
+    }
+  ]
+}

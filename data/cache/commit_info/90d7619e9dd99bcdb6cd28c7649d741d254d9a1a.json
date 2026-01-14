@@ -1,0 +1,101 @@
+{
+  "sha": "90d7619e9dd99bcdb6cd28c7649d741d254d9a1a",
+  "node_id": "MDY6Q29tbWl0MTMxMDM2NDM2OjkwZDc2MTllOWRkOTliY2RiNmNkMjhjNzY0OWQ3NDFkMjU0ZDlhMWE=",
+  "commit": {
+    "author": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-06-03T18:02:29Z"
+    },
+    "committer": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-06-03T18:02:29Z"
+    },
+    "message": "Add sysno check in MessageReader\n\nThe sysno in MessageReader is interpreted from the Message header passed\nfrom the host. A malicious Message header may provide a modified sysno\nto bypass the validation, and overwrites enclave memory. This change\nadds a check for sysno to make sure it matches the expected value.\n\nThis issue was reported by Qinkun Bao, Zhaofeng Chen, Mingshen Sun, and\nKang Li from Baidu Security.\n\nPiperOrigin-RevId: 377328054\nChange-Id: I3ff6f60694d3390f66da89d139cf7cc7b49abaea",
+    "tree": {
+      "sha": "426b54f1a6a10f5a168df2a3951a8a96325a5fa3",
+      "url": "https://api.github.com/repos/google/asylo/git/trees/426b54f1a6a10f5a168df2a3951a8a96325a5fa3"
+    },
+    "url": "https://api.github.com/repos/google/asylo/git/commits/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/google/asylo/commits/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a",
+  "html_url": "https://github.com/google/asylo/commit/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a",
+  "comments_url": "https://api.github.com/repos/google/asylo/commits/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a/comments",
+  "author": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b0413b7e1babb149a0467b924437b7cdc5313e57",
+      "url": "https://api.github.com/repos/google/asylo/commits/b0413b7e1babb149a0467b924437b7cdc5313e57",
+      "html_url": "https://github.com/google/asylo/commit/b0413b7e1babb149a0467b924437b7cdc5313e57"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2b6ab69ed657a31936318f5c7c2313df5b713b72",
+      "filename": "asylo/platform/system_call/system_call.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/google/asylo/blob/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a/asylo%2Fplatform%2Fsystem_call%2Fsystem_call.cc",
+      "raw_url": "https://github.com/google/asylo/raw/90d7619e9dd99bcdb6cd28c7649d741d254d9a1a/asylo%2Fplatform%2Fsystem_call%2Fsystem_call.cc",
+      "contents_url": "https://api.github.com/repos/google/asylo/contents/asylo%2Fplatform%2Fsystem_call%2Fsystem_call.cc?ref=90d7619e9dd99bcdb6cd28c7649d741d254d9a1a",
+      "patch": "@@ -115,6 +115,9 @@ extern \"C\" int64_t enc_untrusted_syscall(int sysno, ...) {\n   // Copy outputs back into pointer parameters.\n   auto response_reader =\n       asylo::system_call::MessageReader({response_buffer, response_size});\n+  if (response_reader.sysno() != sysno) {\n+    error_handler(\"system_call.cc: Unexpected sysno in response\");\n+  }\n   const asylo::primitives::PrimitiveStatus response_status =\n       response_reader.Validate();\n   if (!response_status.ok()) {"
+    }
+  ]
+}

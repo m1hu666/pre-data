@@ -1,0 +1,101 @@
+{
+  "sha": "4cb57dd753a339654ca464c139db9871fe961d56",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjRjYjU3ZGQ3NTNhMzM5NjU0Y2E0NjRjMTM5ZGI5ODcxZmU5NjFkNTY=",
+  "commit": {
+    "author": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-05-03T18:30:36Z"
+    },
+    "committer": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-05-03T19:31:15Z"
+    },
+    "message": "[security][CVE-2018-6335] Fix potential crash in HTTP2 padding handling\n\nCVE-2018-6335",
+    "tree": {
+      "sha": "886132498729713e7ff8b04092b19b0f8a3ba9c8",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/886132498729713e7ff8b04092b19b0f8a3ba9c8"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/4cb57dd753a339654ca464c139db9871fe961d56",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unverified_email",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEETmdyBbheUDPYpvn3BsIqnXifyigFAlrrY4MACgkQBsIqnXif\nyih7TA//bfp28S+8c9zo1hPtHUO7Uv0vzoMgvLPI1URH7pgVK+aadQ/pgXrkfgwo\n1Rgp4ROqOcE2LZ16YFYVBpXlZNSEccmpZdCZaPW0eAN1Jc4Tp1qIIs1fROEHxkGV\n4uFjyZ1viZQEcukPTjpF6oQQMUaKSPsOGtYIHaLjNqgvdyHKKJ74OvsJ0lu7AW+W\ni8p1a5wy6o7zTZupW70qQtl9ulfbZH/aHymCraxAoZM4pYJ7bU6NV4tfFbokvyvj\nZ5RAU18E1Wv2i2WOKY3Xhfq/yzQhdbwkZpVdw4Vz+cTpF1hA5/EHwXmn1Y0HdKQM\n5vwYOvFJ/mGLWEbDD5fiGgtV6X1SI3CkHG5s/JSDpUBltL8fED1K8sz2O3o5Wk0F\nKtbIZwJmQsHug540fteIN00Gzpg1YEWudPuBSx8lHxMgtOgGh+5Ok2nDw0lXeqv6\nUn07JHcvbcARH63JncMKIOx6/hx9X8hbfArta8MXiu6BFMZb9ddV9RnxQ6IrL6HP\nAdX+agxLdAvsXAE6/zQfDXnILZ4esU7F54XkNoUx0z2Gs+XUqLQ4/toy5FyB3vWM\nkQnLu4HJU/WaoweUzpWrkily/bZV1HXfymghHlLFTf0QcgS8s88lH1Liy/cYUIuc\nRyCRkXA2tBDSF2Y3ZbhEXgcMfndqP0grbDyUUl/q7qV8Cj7R1Vg=\n=jo6P\n-----END PGP SIGNATURE-----",
+      "payload": "tree 886132498729713e7ff8b04092b19b0f8a3ba9c8\nparent 2e4b6edb6a4eada13ccc5d5f024df300017982ca\nauthor Fred Emmott <fe@fb.com> 1525372236 -0700\ncommitter Fred Emmott <fe@fb.com> 1525375875 -0700\n\n[security][CVE-2018-6335] Fix potential crash in HTTP2 padding handling\n\nCVE-2018-6335\n",
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/4cb57dd753a339654ca464c139db9871fe961d56",
+  "html_url": "https://github.com/facebook/hhvm/commit/4cb57dd753a339654ca464c139db9871fe961d56",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/4cb57dd753a339654ca464c139db9871fe961d56/comments",
+  "author": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2e4b6edb6a4eada13ccc5d5f024df300017982ca",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/2e4b6edb6a4eada13ccc5d5f024df300017982ca",
+      "html_url": "https://github.com/facebook/hhvm/commit/2e4b6edb6a4eada13ccc5d5f024df300017982ca"
+    }
+  ],
+  "stats": {
+    "total": 100,
+    "additions": 100,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "6d1d9e934f21d504c1b99cee4c8ec34b57dc5e52",
+      "filename": "patches/proxygen-CVE-2018-6335.patch",
+      "status": "added",
+      "additions": 100,
+      "deletions": 0,
+      "changes": 100,
+      "blob_url": "https://github.com/facebook/hhvm/blob/4cb57dd753a339654ca464c139db9871fe961d56/patches%2Fproxygen-CVE-2018-6335.patch",
+      "raw_url": "https://github.com/facebook/hhvm/raw/4cb57dd753a339654ca464c139db9871fe961d56/patches%2Fproxygen-CVE-2018-6335.patch",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/patches%2Fproxygen-CVE-2018-6335.patch?ref=4cb57dd753a339654ca464c139db9871fe961d56",
+      "patch": "@@ -0,0 +1,100 @@\n+diff --git a/third-party/proxygen/src/proxygen/lib/http/codec/HTTP2Framer.cpp b/third-party/proxygen/src/proxygen/lib/http/codec/HTTP2Framer.cpp\n+index 068fea4b..9dc0c994 100644\n+--- a/third-party/proxygen/src/proxygen/lib/http/codec/HTTP2Framer.cpp\n++++ b/third-party/proxygen/src/proxygen/lib/http/codec/HTTP2Framer.cpp\n+@@ -187,6 +187,11 @@ parsePadding(Cursor& cursor,\n+   } else {\n+     padding = 0;\n+   }\n++\n++  if (header.length < padding) {\n++    return ErrorCode::PROTOCOL_ERROR;\n++  }\n++  header.length -= padding;\n+   return ErrorCode::NO_ERROR;\n+ }\n+ \n+@@ -259,7 +264,7 @@ parseData(Cursor& cursor,\n+   // outPadding is the total number of flow-controlled pad bytes, which\n+   // includes the length byte, if present.\n+   outPadding = padding + ((frameHasPadding(header)) ? 1 : 0);\n+-  cursor.clone(outBuf, header.length - padding);\n++  cursor.clone(outBuf, header.length);\n+   return skipPadding(cursor, padding, kStrictPadding);\n+ }\n+ \n+@@ -313,7 +318,7 @@ parseHeaders(Cursor& cursor,\n+   if (header.length < padding) {\n+     return ErrorCode::PROTOCOL_ERROR;\n+   }\n+-  cursor.clone(outBuf, header.length - padding);\n++  cursor.clone(outBuf, header.length);\n+   return skipPadding(cursor, padding, kStrictPadding);\n+ }\n+ \n+@@ -398,7 +403,7 @@ parsePushPromise(Cursor& cursor,\n+   if (header.length < padding) {\n+     return ErrorCode::PROTOCOL_ERROR;\n+   }\n+-  cursor.clone(outBuf, header.length - padding);\n++  cursor.clone(outBuf, header.length);\n+   return skipPadding(cursor, padding, kStrictPadding);\n+ }\n+ \n+@@ -470,7 +475,7 @@ parseContinuation(Cursor& cursor,\n+   if (header.length < padding) {\n+     return ErrorCode::PROTOCOL_ERROR;\n+   }\n+-  cursor.clone(outBuf, header.length - padding);\n++  cursor.clone(outBuf, header.length);\n+   return skipPadding(cursor, padding, kStrictPadding);\n+ }\n+ \n+diff --git a/third-party/proxygen/src/proxygen/lib/http/codec/test/HTTP2CodecTest.cpp b/third-party/proxygen/src/proxygen/lib/http/codec/test/HTTP2CodecTest.cpp\n+index 97008421..a859861c 100644\n+--- a/third-party/proxygen/src/proxygen/lib/http/codec/test/HTTP2CodecTest.cpp\n++++ b/third-party/proxygen/src/proxygen/lib/http/codec/test/HTTP2CodecTest.cpp\n+@@ -638,15 +638,17 @@ TEST_F(HTTP2CodecTest, MalformedPaddingLength) {\n+   output_.append(badInput, sizeof(badInput));\n+   EXPECT_EQ(output_.chainLength(), sizeof(badInput));\n+ \n+-  bool caughtException = false;\n+-  bool parseResult = true;\n+-  try {\n+-    parseResult = parse();\n+-  } catch (const std::exception &e) {\n+-    caughtException = true;\n+-  }\n+-  EXPECT_FALSE(caughtException);\n+-  EXPECT_FALSE(parseResult);\n++  EXPECT_FALSE(parse());\n++}\n++\n++TEST_F(HTTP2CodecTest, MalformedPadding) {\n++  const uint8_t badInput[] = {\n++    0x00, 0x00, 0x0d, 0x01, 0xbe, 0x63, 0x0d, 0x0a, 0x0d, 0x0a, 0x00, 0x73,\n++    0x00, 0x00, 0x06, 0x08, 0x72, 0x00, 0x24, 0x00, 0xfa, 0x4d, 0x0d\n++  };\n++  output_.append(badInput, sizeof(badInput));\n++\n++  EXPECT_FALSE(parse());\n+ }\n+ \n+ TEST_F(HTTP2CodecTest, NoAppByte) {\n+@@ -659,15 +661,7 @@ TEST_F(HTTP2CodecTest, NoAppByte) {\n+   output_.append(noAppByte, sizeof(noAppByte));\n+   EXPECT_EQ(output_.chainLength(), sizeof(noAppByte));\n+ \n+-  bool caughtException = false;\n+-  bool parseResult = false;\n+-  try {\n+-    parseResult = parse();\n+-  } catch (const std::exception &e) {\n+-    caughtException = true;\n+-  }\n+-  EXPECT_FALSE(caughtException);\n+-  EXPECT_TRUE(parseResult);\n++  EXPECT_TRUE(parse());\n+   EXPECT_EQ(callbacks_.messageBegin, 0);\n+   EXPECT_EQ(callbacks_.headersComplete, 0);\n+   EXPECT_EQ(callbacks_.messageComplete, 0);"
+    }
+  ]
+}

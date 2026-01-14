@@ -1,0 +1,101 @@
+{
+  "sha": "4bff3bfbe90d10451e4638c2118d1ad1117bb3e3",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjRiZmYzYmZiZTkwZDEwNDUxZTQ2MzhjMjExOGQxYWQxMTE3YmIzZTM=",
+  "commit": {
+    "author": {
+      "name": "Jan Oravec",
+      "email": "jan@fb.com",
+      "date": "2018-12-18T22:05:37Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot@users.noreply.github.com",
+      "date": "2018-12-18T22:27:43Z"
+    },
+    "message": "CVE-2018-6340 Fix buffer overread\n\nSummary:\nsnprintf() returns the number of would be written bytes if the buffer had\nenough size, letting the original code to construct output string from\narbitrary data on the stack.\n\nFix this by properly assembling the String without trying to arbitrarily\nlimiting the length to 30 bytes.\n\nReviewed By: ottoni\n\nDifferential Revision: D13509547\n\nfbshipit-source-id: aa401b83d356f5b261433c4b16d777948ba7f9b4",
+    "tree": {
+      "sha": "c9940178e155ee1038720fee730bdaa69db9855c",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/c9940178e155ee1038720fee730bdaa69db9855c"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3",
+  "html_url": "https://github.com/facebook/hhvm/commit/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3/comments",
+  "author": {
+    "login": "jano",
+    "id": 160642,
+    "node_id": "MDQ6VXNlcjE2MDY0Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/160642?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jano",
+    "html_url": "https://github.com/jano",
+    "followers_url": "https://api.github.com/users/jano/followers",
+    "following_url": "https://api.github.com/users/jano/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jano/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jano/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jano/subscriptions",
+    "organizations_url": "https://api.github.com/users/jano/orgs",
+    "repos_url": "https://api.github.com/users/jano/repos",
+    "events_url": "https://api.github.com/users/jano/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jano/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hhvm-bot",
+    "id": 8306375,
+    "node_id": "MDQ6VXNlcjgzMDYzNzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8306375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hhvm-bot",
+    "html_url": "https://github.com/hhvm-bot",
+    "followers_url": "https://api.github.com/users/hhvm-bot/followers",
+    "following_url": "https://api.github.com/users/hhvm-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hhvm-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hhvm-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hhvm-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/hhvm-bot/orgs",
+    "repos_url": "https://api.github.com/users/hhvm-bot/repos",
+    "events_url": "https://api.github.com/users/hhvm-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hhvm-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3c5338be7e23d98e39fc9be57d183ef9f26963b9",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/3c5338be7e23d98e39fc9be57d183ef9f26963b9",
+      "html_url": "https://github.com/facebook/hhvm/commit/3c5338be7e23d98e39fc9be57d183ef9f26963b9"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 7,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "776f5f30a444fcfd620ebbf485408d8a2cd011f3",
+      "filename": "hphp/runtime/ext/memcache/ext_memcache.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 6,
+      "changes": 13,
+      "blob_url": "https://github.com/facebook/hhvm/blob/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3/hphp%2Fruntime%2Fext%2Fmemcache%2Fext_memcache.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/4bff3bfbe90d10451e4638c2118d1ad1117bb3e3/hphp%2Fruntime%2Fext%2Fmemcache%2Fext_memcache.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmemcache%2Fext_memcache.cpp?ref=4bff3bfbe90d10451e4638c2118d1ad1117bb3e3",
+      "patch": "@@ -700,9 +700,6 @@ static Array HHVM_METHOD(Memcache, getextendedstats,\n \n   for (int server_id = 0; server_id < server_count; server_id++) {\n     memcached_stat_st *stat;\n-    char stats_key[30] = {0};\n-    size_t key_len;\n-\n     LMCD_SERVER_POSITION_INSTANCE_TYPE instance =\n       memcached_server_instance_by_position(&data->m_memcache, server_id);\n     const char *hostname = LMCD_SERVER_HOSTNAME(instance);\n@@ -715,9 +712,13 @@ static Array HHVM_METHOD(Memcache, getextendedstats,\n       continue;\n     }\n \n-    key_len = snprintf(stats_key, sizeof(stats_key), \"%s:%d\", hostname, port);\n-\n-    return_val.set(String(stats_key, key_len, CopyString), server_stats);\n+    auto const port_str = folly::to<std::string>(port);\n+    auto const key_len = strlen(hostname) + 1 + port_str.length();\n+    auto key = String(key_len, ReserveString);\n+    key += hostname;\n+    key += \":\";\n+    key += port_str;\n+    return_val.set(key, server_stats);\n   }\n \n   free(stats);"
+    }
+  ]
+}

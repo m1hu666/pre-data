@@ -1,0 +1,105 @@
+{
+  "sha": "5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+  "node_id": "C_kwDOCTDsq9oAKDVjYWU5ZjcyOTc1Y2YwZTVhNjJiMjdmZGQ4YjAxZjEwM2UxOTg3MDg",
+  "commit": {
+    "author": {
+      "name": "John Porto",
+      "email": "jpporto@meta.com",
+      "date": "2023-01-31T18:23:52Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-01-31T18:23:52Z"
+    },
+    "message": "Avoid accessing the DebugInfo for BCProviderLazy\n\nSummary: Fixes CVE-2023-24832 by avoiding accessing the DebugInfo for lazy CodeBlocks.\n\nReviewed By: mattbfb\n\nDifferential Revision: D42688370\n\nfbshipit-source-id: fc7eb4168b1f21549cbfd080a9e010c6d8609256",
+    "tree": {
+      "sha": "e056cf71e3dd680a7a1946e6b6644310f84803c1",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/e056cf71e3dd680a7a1946e6b6644310f84803c1"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+  "html_url": "https://github.com/facebook/hermes/commit/5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/5cae9f72975cf0e5a62b27fdd8b01f103e198708/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9a804d7667be91ac8e2d098da18019f3548f8251",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/9a804d7667be91ac8e2d098da18019f3548f8251",
+      "html_url": "https://github.com/facebook/hermes/commit/9a804d7667be91ac8e2d098da18019f3548f8251"
+    }
+  ],
+  "stats": {
+    "total": 84,
+    "additions": 71,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "5a5020ff690fd8351a97a1cea2e66f3b5abd9448",
+      "filename": "include/hermes/BCGen/HBC/BytecodeProviderFromSrc.h",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/facebook/hermes/blob/5cae9f72975cf0e5a62b27fdd8b01f103e198708/include%2Fhermes%2FBCGen%2FHBC%2FBytecodeProviderFromSrc.h",
+      "raw_url": "https://github.com/facebook/hermes/raw/5cae9f72975cf0e5a62b27fdd8b01f103e198708/include%2Fhermes%2FBCGen%2FHBC%2FBytecodeProviderFromSrc.h",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/include%2Fhermes%2FBCGen%2FHBC%2FBytecodeProviderFromSrc.h?ref=5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+      "patch": "@@ -219,7 +219,7 @@ class BCProviderLazy final : public BCProviderBase {\n \n   /// No debug information will be available without compiling it.\n   void createDebugInfo() override {\n-    llvm_unreachable(\"Accessing debug info from a lazy module\");\n+    hermes_fatal(\"Accessing debug info from a lazy module\");\n   }\n \n  public:\n@@ -234,20 +234,20 @@ class BCProviderLazy final : public BCProviderBase {\n   }\n \n   StringTableEntry getStringTableEntry(uint32_t index) const override {\n-    llvm_unreachable(\"Accessing string table from a lazy module\");\n+    hermes_fatal(\"Accessing string table from a lazy module\");\n   }\n \n   const uint8_t *getBytecode(uint32_t) const override {\n-    llvm_unreachable(\"Accessing bytecode from a lazy module\");\n+    hermes_fatal(\"Accessing bytecode from a lazy module\");\n   }\n \n   llvh::ArrayRef<hbc::HBCExceptionHandlerInfo> getExceptionTable(\n       uint32_t) const override {\n-    llvm_unreachable(\"Accessing exception info from a lazy module\");\n+    hermes_fatal(\"Accessing exception info from a lazy module\");\n   }\n \n   const hbc::DebugOffsets *getDebugOffsets(uint32_t) const override {\n-    llvm_unreachable(\"Accessing debug offsets from a lazy module\");\n+    hermes_fatal(\"Accessing debug offsets from a lazy module\");\n   }\n \n   bool isFunctionLazy(uint32_t) const override {"
+    },
+    {
+      "sha": "3d8c308a624e3b62aa7c5a2ccd6a52174e49c84d",
+      "filename": "lib/VM/JSLib/HermesInternal.cpp",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 8,
+      "changes": 39,
+      "blob_url": "https://github.com/facebook/hermes/blob/5cae9f72975cf0e5a62b27fdd8b01f103e198708/lib%2FVM%2FJSLib%2FHermesInternal.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/5cae9f72975cf0e5a62b27fdd8b01f103e198708/lib%2FVM%2FJSLib%2FHermesInternal.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSLib%2FHermesInternal.cpp?ref=5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+      "patch": "@@ -574,14 +574,18 @@ static CallResult<HermesValue> getCodeBlockFileName(\n     const CodeBlock *codeBlock,\n     OptValue<hbc::DebugSourceLocation> location) {\n   RuntimeModule *runtimeModule = codeBlock->getRuntimeModule();\n-  if (location) {\n-    auto debugInfo = runtimeModule->getBytecode()->getDebugInfo();\n-    return StringPrimitive::createEfficient(\n-        runtime, debugInfo->getFilenameByID(location->filenameId));\n-  } else {\n-    llvh::StringRef sourceURL = runtimeModule->getSourceURL();\n-    if (!sourceURL.empty()) {\n-      return StringPrimitive::createEfficient(runtime, sourceURL);\n+  if (!runtimeModule->getBytecode()->isLazy()) {\n+    // Lazy code blocks do not have debug information (and will hermes_fatal if\n+    // you try to access it), so only touch it for non-lazy blocks.\n+    if (location) {\n+      auto debugInfo = runtimeModule->getBytecode()->getDebugInfo();\n+      return StringPrimitive::createEfficient(\n+          runtime, debugInfo->getFilenameByID(location->filenameId));\n+    } else {\n+      llvh::StringRef sourceURL = runtimeModule->getSourceURL();\n+      if (!sourceURL.empty()) {\n+        return StringPrimitive::createEfficient(runtime, sourceURL);\n+      }\n     }\n   }\n   return HermesValue::encodeUndefinedValue();\n@@ -803,6 +807,24 @@ hermesInternalFuzzilli(void *, Runtime &runtime, NativeArgs args) {\n }\n #endif // HERMES_ENABLE_FUZZILLI\n \n+static CallResult<HermesValue>\n+hermesInternalIsLazy(void *, Runtime &runtime, NativeArgs args) {\n+  auto callable = args.dyncastArg<Callable>(0);\n+  if (!callable) {\n+    return HermesValue::encodeBoolValue(false);\n+  }\n+\n+  auto codeBlock = getLeafCodeBlock(callable, runtime);\n+  if (!codeBlock) {\n+    // Native function is never lazy.\n+    return HermesValue::encodeBoolValue(false);\n+  }\n+\n+  RuntimeModule *runtimeModule = codeBlock->getRuntimeModule();\n+  return HermesValue::encodeBoolValue(\n+      runtimeModule && runtimeModule->getBytecode()->isLazy());\n+}\n+\n Handle<JSObject> createHermesInternalObject(\n     Runtime &runtime,\n     const JSLibFlags &flags) {\n@@ -912,6 +934,7 @@ Handle<JSObject> createHermesInternalObject(\n     defineInternMethod(\n         P::copyDataProperties, hermesBuiltinCopyDataProperties, 3);\n     defineInternMethodAndSymbol(\"isProxy\", hermesInternalIsProxy);\n+    defineInternMethodAndSymbol(\"isLazy\", hermesInternalIsLazy);\n     defineInternMethod(P::drainJobs, hermesInternalDrainJobs);\n   }\n "
+    },
+    {
+      "sha": "3507d51c3dd4a49123d2310c4f8f692d8bdd7c22",
+      "filename": "test/hermes/regress-hermes-internal-get-lazy-function-location.js",
+      "status": "added",
+      "additions": 35,
+      "deletions": 0,
+      "changes": 35,
+      "blob_url": "https://github.com/facebook/hermes/blob/5cae9f72975cf0e5a62b27fdd8b01f103e198708/test%2Fhermes%2Fregress-hermes-internal-get-lazy-function-location.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/5cae9f72975cf0e5a62b27fdd8b01f103e198708/test%2Fhermes%2Fregress-hermes-internal-get-lazy-function-location.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-hermes-internal-get-lazy-function-location.js?ref=5cae9f72975cf0e5a62b27fdd8b01f103e198708",
+      "patch": "@@ -0,0 +1,35 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -g --lazy --Xhermes-internal-test-methods -O %s | %FileCheck %s\n+// RUN: %hermes -g --lazy --Xhermes-internal-test-methods -O0 %s | %FileCheck %s\n+\n+\"use strict\";\n+\n+// isLazy should be able to handle native functions.\n+print(HermesInternal.isLazy(print));\n+// CHECK: false\n+\n+// isLazy should be able to handle non-callables.\n+print(HermesInternal.isLazy(10));\n+// CHECK: false\n+\n+function lazyFunc() {}\n+\n+print(HermesInternal.isLazy(lazyFunc));\n+// CHECK: true\n+\n+print(JSON.stringify(HermesInternal.getFunctionLocation(lazyFunc)));\n+// CHECK: {\"isNative\":false,\"lineNumber\":21,\"columnNumber\":1}\n+\n+lazyFunc();\n+\n+print(HermesInternal.isLazy(lazyFunc));\n+// CHECK: false\n+\n+print(JSON.stringify(HermesInternal.getFunctionLocation(lazyFunc)));\n+// CHECK: {\"isNative\":false,\"lineNumber\":21,\"columnNumber\":1,\"fileName\":\"{{.*}}regress-hermes-internal-get-lazy-function-location.js\"}"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "sha": "ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+  "node_id": "C_kwDODQjlK9oAKGNlOGQyYmQwZjEzZjA1ZmNiZDJlZDkwNzU1ZDA5N2Y0MDIzOTNkZDM",
+  "commit": {
+    "author": {
+      "name": "Tindy X",
+      "email": "49061470+tindy2013@users.noreply.github.com",
+      "date": "2022-04-03T16:38:44Z"
+    },
+    "committer": {
+      "name": "Tindy X",
+      "email": "49061470+tindy2013@users.noreply.github.com",
+      "date": "2022-04-03T16:38:44Z"
+    },
+    "message": "Enhancements\n\nAdd authorization check before loading scripts.\nAdd detailed logs when loading preference settings.",
+    "tree": {
+      "sha": "0031f834ecc693e96d8c18ec81ca290c22973f56",
+      "url": "https://api.github.com/repos/tindy2013/subconverter/git/trees/0031f834ecc693e96d8c18ec81ca290c22973f56"
+    },
+    "url": "https://api.github.com/repos/tindy2013/subconverter/git/commits/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEEOE33qH+5VSMoLYGzxq1BMWmWjVgFAmJJzZQACgkQxq1BMWmW\njVh3pwf5AaQyPnIccmHYEiiRGr+Co3xa7C43X4WJwK36bkOZGKpUfdjMUGtQdZf3\nR9gFOrrtgT1vzcSbyiKXkD34kCObEkYfBqbNsge5H10P9JMLPmCwY0o9zEv9KkqS\nDdimkK6YjtmzrepK3SGT6tM7Ibc6eSrF4PHHb3/3J5hNLM5MAMzb9LoZPHoyxrUt\ngVy6zDrPdB7j+9cZDGS7eo58nIre7U/2RfUN3tCuhnWTOYCsUHKC1LDk6eqVv+n/\niqkK1vW75m/bpKTYiyCneiymCxWZA/YMiVXlcWl0b17ElO7NMMJd9P83gTmvCxQM\neBbt7TgBcd2dzvRMCNbTXcvUEqJLEQ==\n=EuQ3\n-----END PGP SIGNATURE-----",
+      "payload": "tree 0031f834ecc693e96d8c18ec81ca290c22973f56\nparent 7703d551bd873cbc0e15fd2d7fb175528dbe012e\nauthor Tindy X <49061470+tindy2013@users.noreply.github.com> 1649003924 +0800\ncommitter Tindy X <49061470+tindy2013@users.noreply.github.com> 1649003924 +0800\n\nEnhancements\n\nAdd authorization check before loading scripts.\nAdd detailed logs when loading preference settings.\n",
+      "verified_at": "2024-11-06T15:29:14Z"
+    }
+  },
+  "url": "https://api.github.com/repos/tindy2013/subconverter/commits/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+  "html_url": "https://github.com/tindy2013/subconverter/commit/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+  "comments_url": "https://api.github.com/repos/tindy2013/subconverter/commits/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/comments",
+  "author": {
+    "login": "tindy2013",
+    "id": 49061470,
+    "node_id": "MDQ6VXNlcjQ5MDYxNDcw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49061470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tindy2013",
+    "html_url": "https://github.com/tindy2013",
+    "followers_url": "https://api.github.com/users/tindy2013/followers",
+    "following_url": "https://api.github.com/users/tindy2013/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tindy2013/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tindy2013/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tindy2013/subscriptions",
+    "organizations_url": "https://api.github.com/users/tindy2013/orgs",
+    "repos_url": "https://api.github.com/users/tindy2013/repos",
+    "events_url": "https://api.github.com/users/tindy2013/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tindy2013/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tindy2013",
+    "id": 49061470,
+    "node_id": "MDQ6VXNlcjQ5MDYxNDcw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49061470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tindy2013",
+    "html_url": "https://github.com/tindy2013",
+    "followers_url": "https://api.github.com/users/tindy2013/followers",
+    "following_url": "https://api.github.com/users/tindy2013/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tindy2013/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tindy2013/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tindy2013/subscriptions",
+    "organizations_url": "https://api.github.com/users/tindy2013/orgs",
+    "repos_url": "https://api.github.com/users/tindy2013/repos",
+    "events_url": "https://api.github.com/users/tindy2013/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tindy2013/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7703d551bd873cbc0e15fd2d7fb175528dbe012e",
+      "url": "https://api.github.com/repos/tindy2013/subconverter/commits/7703d551bd873cbc0e15fd2d7fb175528dbe012e",
+      "html_url": "https://github.com/tindy2013/subconverter/commit/7703d551bd873cbc0e15fd2d7fb175528dbe012e"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 17,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "6d6d4259d825fd4ad4ebcc2ffdb886dc4c173806",
+      "filename": "src/generator/config/nodemanip.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fnodemanip.cpp",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fnodemanip.cpp",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fgenerator%2Fconfig%2Fnodemanip.cpp?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -51,7 +51,7 @@ int addNodes(std::string link, std::vector<Proxy> &allNodes, int groupID, parse_\n     link = replaceAllDistinct(link, \"\\\"\", \"\");\n \n     /// script:filepath,arg1,arg2,...\n-    script_safe_runner(parse_set.js_runtime, parse_set.js_context, [&](qjs::Context &ctx)\n+    if(authorized) script_safe_runner(parse_set.js_runtime, parse_set.js_context, [&](qjs::Context &ctx)\n     {\n         if(startsWith(link, \"script:\")) /// process subscription with script\n         {\n@@ -380,7 +380,7 @@ void nodeRename(Proxy &node, const RegexMatchConfigs &rename_array, extra_settin\n \n     for(const RegexMatchConfig &x : rename_array)\n     {\n-        if(!x.Script.empty())\n+        if(!x.Script.empty() && ext.authorized)\n         {\n             script_safe_runner(ext.js_runtime, ext.js_context, [&](qjs::Context &ctx)\n             {\n@@ -432,7 +432,7 @@ std::string addEmoji(const Proxy &node, const RegexMatchConfigs &emoji_array, ex\n \n     for(const RegexMatchConfig &x : emoji_array)\n     {\n-        if(!x.Script.empty())\n+        if(!x.Script.empty() && ext.authorized)\n         {\n             std::string result;\n             script_safe_runner(ext.js_runtime, ext.js_context, [&](qjs::Context &ctx)\n@@ -481,7 +481,7 @@ void preprocessNodes(std::vector<Proxy> &nodes, extra_settings &ext)\n     if(ext.sort_flag)\n     {\n         bool failed = true;\n-        if(ext.sort_script.size())\n+        if(ext.sort_script.size() && ext.authorized)\n         {\n             std::string script = ext.sort_script;\n             if(startsWith(script, \"path:\"))"
+    },
+    {
+      "sha": "27576f16fe0711564399458b2b2e0484be11b3cd",
+      "filename": "src/generator/config/subexport.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fsubexport.cpp",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fsubexport.cpp",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fgenerator%2Fconfig%2Fsubexport.cpp?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -183,7 +183,7 @@ void groupGenerate(const std::string &rule, std::vector<Proxy> &nodelist, string\n         filtered_nodelist.emplace_back(rule.substr(2));\n     }\n #ifndef NO_JS_RUNTIME\n-    else if(startsWith(rule, \"script:\"))\n+    else if(startsWith(rule, \"script:\") && ext.authorized)\n     {\n         script_safe_runner(ext.js_runtime, ext.js_context, [&](qjs::Context &ctx){\n             std::string script = fileGet(rule.substr(7), true);"
+    },
+    {
+      "sha": "dce5bc5ec082d9647b27c232f02446ac16c31b96",
+      "filename": "src/generator/config/subexport.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fsubexport.h",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fgenerator%2Fconfig%2Fsubexport.h",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fgenerator%2Fconfig%2Fsubexport.h?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -39,6 +39,7 @@ struct extra_settings\n     bool clash_classical_ruleset = false;\n     std::string sort_script = \"\";\n     std::string clash_proxies_style = \"flow\";\n+    bool authorized = false;\n \n     extra_settings() {};\n     extra_settings(const extra_settings&) = delete;"
+    },
+    {
+      "sha": "c299421f0d96cf83941ababb9a398a51591da942",
+      "filename": "src/handler/interfaces.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Finterfaces.cpp",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Finterfaces.cpp",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fhandler%2Finterfaces.cpp?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -407,6 +407,7 @@ std::string subconverter(RESPONSE_CALLBACK_ARGS)\n     std::string proxy = parseProxy(global.proxySubscription);\n \n     /// check other flags\n+    ext.authorized = authorized;\n     ext.append_proxy_type = argAppendType.get(global.appendType);\n     if((argTarget == \"clash\" || argTarget == \"clashr\") && argGenClashScript.is_undef())\n         argExpandRulesets.define(true);"
+    },
+    {
+      "sha": "65192e2681081cc349616ee589964f4c594f0869",
+      "filename": "src/handler/settings.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 15,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Fsettings.cpp",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Fsettings.cpp",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fhandler%2Fsettings.cpp?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -577,6 +577,7 @@ void readYAMLConf(YAML::Node &node)\n         node[\"advanced\"][\"async_fetch_ruleset\"] >> global.asyncFetchRuleset;\n         node[\"advanced\"][\"skip_failed_links\"] >> global.skipFailedLinks;\n     }\n+    writeLog(0, \"Load preference settings in YAML format completed.\", LOG_LEVEL_INFO);\n }\n \n template <class T, class... U>\n@@ -786,13 +787,14 @@ void readTOMLConf(toml::value &root)\n     {\n         global.cacheSubscription = global.cacheConfig = global.cacheRuleset = 0;\n     }\n+\n+    writeLog(0, \"Load preference settings in TOML format completed.\", LOG_LEVEL_INFO);\n }\n \n void readConf()\n {\n     guarded_mutex guard(gMutexConfigure);\n-    //std::cerr<<\"Reading preference settings...\"<<std::endl;\n-    writeLog(0, \"Reading preference settings...\", LOG_LEVEL_INFO);\n+    writeLog(0, \"Loading preference settings...\", LOG_LEVEL_INFO);\n \n     eraseElements(global.excludeRemarks);\n     eraseElements(global.includeRemarks);\n@@ -815,11 +817,14 @@ void readConf()\n     catch (YAML::Exception &e)\n     {\n         //ignore yaml parse error\n+        writeLog(0, e.what(), LOG_LEVEL_DEBUG);\n+        writeLog(0, \"Unable to load preference settings as YAML.\", LOG_LEVEL_DEBUG);\n     }\n     catch (toml::exception &e)\n     {\n         //ignore toml parse error\n         writeLog(0, e.what(), LOG_LEVEL_DEBUG);\n+        writeLog(0, \"Unable to load preference settings as TOML.\", LOG_LEVEL_DEBUG);\n     }\n \n     INIReader ini;\n@@ -828,8 +833,7 @@ void readConf()\n     int retVal = ini.ParseFile(global.prefPath);\n     if(retVal != INIREADER_EXCEPTION_NONE)\n     {\n-        //std::cerr<<\"Unable to load preference settings. Reason: \"<<ini.GetLastError()<<\"\\n\";\n-        writeLog(0, \"Unable to load preference settings. Reason: \" + ini.GetLastError(), LOG_LEVEL_FATAL);\n+        writeLog(0, \"Unable to load preference settings as INI. Reason: \" + ini.GetLastError(), LOG_LEVEL_FATAL);\n         return;\n     }\n \n@@ -1070,8 +1074,7 @@ void readConf()\n     ini.GetBoolIfExist(\"async_fetch_ruleset\", global.asyncFetchRuleset);\n     ini.GetBoolIfExist(\"skip_failed_links\", global.skipFailedLinks);\n \n-    //std::cerr<<\"Read preference settings completed.\"<<std::endl;\n-    writeLog(0, \"Read preference settings completed.\", LOG_LEVEL_INFO);\n+    writeLog(0, \"Load preference settings in INI format completed.\", LOG_LEVEL_INFO);\n }\n \n int loadExternalYAML(YAML::Node &node, ExternalConfig &ext)"
+    },
+    {
+      "sha": "837ff17ef49e17eccb75647f04d2e87225cc46c8",
+      "filename": "src/handler/settings.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tindy2013/subconverter/blob/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Fsettings.h",
+      "raw_url": "https://github.com/tindy2013/subconverter/raw/ce8d2bd0f13f05fcbd2ed90755d097f402393dd3/src%2Fhandler%2Fsettings.h",
+      "contents_url": "https://api.github.com/repos/tindy2013/subconverter/contents/src%2Fhandler%2Fsettings.h?ref=ce8d2bd0f13f05fcbd2ed90755d097f402393dd3",
+      "patch": "@@ -29,7 +29,7 @@ struct Settings\n     bool printDbgInfo = false, CFWChildProcess = false, appendUserinfo = true, asyncFetchRuleset = false, surgeResolveHostname = true;\n     std::string accessToken, basePath = \"base\";\n     std::string custom_group;\n-    int logLevel = LOG_LEVEL_INFO;\n+    int logLevel = LOG_LEVEL_VERBOSE;\n     long maxAllowedDownloadSize = 1048576L;\n     string_map aliases;\n "
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "5566cdfedddef1f219aee33477d9c9690bf2f78b",
+  "node_id": "MDY6Q29tbWl0Mjg5NDQwMjI3OjU1NjZjZGZlZGRkZWYxZjIxOWFlZTMzNDc3ZDljOTY5MGJmMmY3OGI=",
+  "commit": {
+    "author": {
+      "name": "oldmud0",
+      "email": "oldmud0@users.noreply.github.com",
+      "date": "2021-07-28T03:57:29Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-07-28T03:57:29Z"
+    },
+    "message": "Fix out of bounds crash on evidence",
+    "tree": {
+      "sha": "47401e47c6f038139416e738f12b253379023122",
+      "url": "https://api.github.com/repos/AttorneyOnline/akashi/git/trees/47401e47c6f038139416e738f12b253379023122"
+    },
+    "url": "https://api.github.com/repos/AttorneyOnline/akashi/git/commits/5566cdfedddef1f219aee33477d9c9690bf2f78b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhANWpCRBK7hj4Ov3rIwAAMsEIADh8YGCiZ+B8nC/OxoHbQFpU\nYvKkBAs/uQvX2gcNkgRyJtQ8WAr0XC729ZEFEAZe9tnAaT4KqJwHoJq8z9GW5EaH\nna7PKoPu3N4Zn/fyyZ9xzza+sG+NaJJ3dNvb4oxxXYUOwSixeIgM8fIwYqB0+H/k\nhTBfpzYj4k9KReBGLx6gH7mSJl6e+MM3YmRqinTyhu6il+e6jdaOQADjXC5NJd5f\nYKIGRggcoT6b+b1e8Kj043SoPGJ+J3HNbHxycvp0Pn9cCFpIEAEXO9kCqeaNu6Tg\nuQigAC6XZ+6KneNycnacCngH4CyjzpehVQ8/47+bptnf0VFgeKmmD7FzNjgXKdA=\n=MqVi\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 47401e47c6f038139416e738f12b253379023122\nparent 78f3e1d3d175c94c14734b3b2d0a3f1167eec2f7\nauthor oldmud0 <oldmud0@users.noreply.github.com> 1627444649 -0500\ncommitter GitHub <noreply@github.com> 1627444649 -0500\n\nFix out of bounds crash on evidence",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/AttorneyOnline/akashi/commits/5566cdfedddef1f219aee33477d9c9690bf2f78b",
+  "html_url": "https://github.com/AttorneyOnline/akashi/commit/5566cdfedddef1f219aee33477d9c9690bf2f78b",
+  "comments_url": "https://api.github.com/repos/AttorneyOnline/akashi/commits/5566cdfedddef1f219aee33477d9c9690bf2f78b/comments",
+  "author": {
+    "login": "oldmud0",
+    "id": 5247009,
+    "node_id": "MDQ6VXNlcjUyNDcwMDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5247009?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oldmud0",
+    "html_url": "https://github.com/oldmud0",
+    "followers_url": "https://api.github.com/users/oldmud0/followers",
+    "following_url": "https://api.github.com/users/oldmud0/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oldmud0/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oldmud0/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oldmud0/subscriptions",
+    "organizations_url": "https://api.github.com/users/oldmud0/orgs",
+    "repos_url": "https://api.github.com/users/oldmud0/repos",
+    "events_url": "https://api.github.com/users/oldmud0/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oldmud0/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "78f3e1d3d175c94c14734b3b2d0a3f1167eec2f7",
+      "url": "https://api.github.com/repos/AttorneyOnline/akashi/commits/78f3e1d3d175c94c14734b3b2d0a3f1167eec2f7",
+      "html_url": "https://github.com/AttorneyOnline/akashi/commit/78f3e1d3d175c94c14734b3b2d0a3f1167eec2f7"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "5e16d4f84139f55bc877688d10f9bed08e97e027",
+      "filename": "core/src/packets.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/AttorneyOnline/akashi/blob/5566cdfedddef1f219aee33477d9c9690bf2f78b/core%2Fsrc%2Fpackets.cpp",
+      "raw_url": "https://github.com/AttorneyOnline/akashi/raw/5566cdfedddef1f219aee33477d9c9690bf2f78b/core%2Fsrc%2Fpackets.cpp",
+      "contents_url": "https://api.github.com/repos/AttorneyOnline/akashi/contents/core%2Fsrc%2Fpackets.cpp?ref=5566cdfedddef1f219aee33477d9c9690bf2f78b",
+      "patch": "@@ -378,7 +378,7 @@ void AOClient::pktRemoveEvidence(AreaData* area, int argc, QStringList argv, AOP\n         return;\n     bool is_int = false;\n     int idx = argv[0].toInt(&is_int);\n-    if (is_int && idx <= area->evidence().size() && idx >= 0) {\n+    if (is_int && idx < area->evidence().size() && idx >= 0) {\n         area->deleteEvidence(idx);\n     }\n     sendEvidenceList(area);\n@@ -391,7 +391,7 @@ void AOClient::pktEditEvidence(AreaData* area, int argc, QStringList argv, AOPac\n     bool is_int = false;\n     int idx = argv[0].toInt(&is_int);\n     AreaData::Evidence evi = {argv[1], argv[2], argv[3]};\n-    if (is_int && idx <= area->evidence().size() && idx >= 0) {\n+    if (is_int && idx < area->evidence().size() && idx >= 0) {\n         area->replaceEvidence(idx, evi);\n     }\n     sendEvidenceList(area);"
+    }
+  ]
+}

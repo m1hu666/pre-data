@@ -1,0 +1,113 @@
+{
+  "sha": "86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+  "node_id": "MDY6Q29tbWl0MTU0MjAxMjU5Ojg2NTQzYWM0N2U1OWM1MjI5NzZiNTYzMmI4YmY5YTJhNDU4M2M3ZDI=",
+  "commit": {
+    "author": {
+      "name": "Daniel Andersson",
+      "email": "koda@fb.com",
+      "date": "2020-02-27T02:57:41Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2020-02-27T03:00:37Z"
+    },
+    "message": "Added stack overflow check for hermes::vm:: hermesBuiltinApply\n\nSummary: This adds a missing check for stack overflow.\n\nReviewed By: tmikov\n\nDifferential Revision: D20104955\n\nfbshipit-source-id: 1f37e23d2e28ebcd3aa4176d134b8418e7059ebd",
+    "tree": {
+      "sha": "ca9f6728d0c05251761c9b1da1ba45c44c1ec53d",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/ca9f6728d0c05251761c9b1da1ba45c44c1ec53d"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+  "html_url": "https://github.com/facebook/hermes/commit/86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/86543ac47e59c522976b5632b8bf9a2a4583c7d2/comments",
+  "author": {
+    "login": "kodafb",
+    "id": 19997982,
+    "node_id": "MDQ6VXNlcjE5OTk3OTgy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19997982?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kodafb",
+    "html_url": "https://github.com/kodafb",
+    "followers_url": "https://api.github.com/users/kodafb/followers",
+    "following_url": "https://api.github.com/users/kodafb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kodafb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kodafb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kodafb/subscriptions",
+    "organizations_url": "https://api.github.com/users/kodafb/orgs",
+    "repos_url": "https://api.github.com/users/kodafb/repos",
+    "events_url": "https://api.github.com/users/kodafb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kodafb/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "82f0f971efe5f0d6ef6cdf1b533d579f748005f9",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/82f0f971efe5f0d6ef6cdf1b533d579f748005f9",
+      "html_url": "https://github.com/facebook/hermes/commit/82f0f971efe5f0d6ef6cdf1b533d579f748005f9"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 14,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "dfe931b15c59acc0b161d275dc3a3dfa7589d26c",
+      "filename": "lib/VM/JSLib/HermesBuiltin.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/hermes/blob/86543ac47e59c522976b5632b8bf9a2a4583c7d2/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/86543ac47e59c522976b5632b8bf9a2a4583c7d2/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp?ref=86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+      "patch": "@@ -653,6 +653,9 @@ hermesBuiltinApply(void *, Runtime *runtime, NativeArgs args) {\n \n   ScopedNativeCallFrame newFrame{\n       runtime, len, *fn, isConstructor, thisVal.getHermesValue()};\n+  if (LLVM_UNLIKELY(newFrame.overflowed()))\n+    return runtime->raiseStackOverflow(Runtime::StackOverflowKind::NativeStack);\n+\n   for (uint32_t i = 0; i < len; ++i) {\n     newFrame->getArgRef(i) = argArray->at(runtime, i);\n   }"
+    },
+    {
+      "sha": "caf2dd40a548761a36f67ce3133571c6a43ecec6",
+      "filename": "test/hermes/stack-overflow-apply.js",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/hermes/blob/86543ac47e59c522976b5632b8bf9a2a4583c7d2/test%2Fhermes%2Fstack-overflow-apply.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/86543ac47e59c522976b5632b8bf9a2a4583c7d2/test%2Fhermes%2Fstack-overflow-apply.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fstack-overflow-apply.js?ref=86543ac47e59c522976b5632b8bf9a2a4583c7d2",
+      "patch": "@@ -32,3 +32,14 @@ try {\n     print(\"caught:\", e.name, e.message);\n }\n //CHECK: caught: RangeError {{.*}}\n+\n+try {\n+  v0 = [1.1];\n+  function v1() {\n+    v1(...v0);\n+  }\n+  v1();\n+} catch (e) {\n+    print(\"caught:\", e.name, e.message);\n+}\n+//CHECK: caught: RangeError {{.*}}"
+    }
+  ]
+}

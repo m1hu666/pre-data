@@ -1,0 +1,101 @@
+{
+  "sha": "2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1",
+  "node_id": "MDY6Q29tbWl0NDExNTE5MjE6MmRlNmNmNzBjNWVmMzFlMjJlZDExOWEyNWFjMmRhZWVmZDNkMThhMQ==",
+  "commit": {
+    "author": {
+      "name": "Andrew Scheidecker",
+      "email": "andrew@scheidecker.net",
+      "date": "2018-09-16T12:20:54Z"
+    },
+    "committer": {
+      "name": "Andrew Scheidecker",
+      "email": "andrew@scheidecker.net",
+      "date": "2018-09-16T12:20:54Z"
+    },
+    "message": "Fix out-of-bounds array access when passing a <4 byte input file to wavm or wavm-compile",
+    "tree": {
+      "sha": "7581f694bfd6b5fb569a85c09d255e9a577601a8",
+      "url": "https://api.github.com/repos/WAVM/WAVM/git/trees/7581f694bfd6b5fb569a85c09d255e9a577601a8"
+    },
+    "url": "https://api.github.com/repos/WAVM/WAVM/git/commits/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WAVM/WAVM/commits/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1",
+  "html_url": "https://github.com/WAVM/WAVM/commit/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1",
+  "comments_url": "https://api.github.com/repos/WAVM/WAVM/commits/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1/comments",
+  "author": {
+    "login": "AndrewScheidecker",
+    "id": 2691804,
+    "node_id": "MDQ6VXNlcjI2OTE4MDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2691804?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewScheidecker",
+    "html_url": "https://github.com/AndrewScheidecker",
+    "followers_url": "https://api.github.com/users/AndrewScheidecker/followers",
+    "following_url": "https://api.github.com/users/AndrewScheidecker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewScheidecker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewScheidecker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewScheidecker/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewScheidecker/orgs",
+    "repos_url": "https://api.github.com/users/AndrewScheidecker/repos",
+    "events_url": "https://api.github.com/users/AndrewScheidecker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewScheidecker/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "AndrewScheidecker",
+    "id": 2691804,
+    "node_id": "MDQ6VXNlcjI2OTE4MDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2691804?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewScheidecker",
+    "html_url": "https://github.com/AndrewScheidecker",
+    "followers_url": "https://api.github.com/users/AndrewScheidecker/followers",
+    "following_url": "https://api.github.com/users/AndrewScheidecker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewScheidecker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewScheidecker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewScheidecker/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewScheidecker/orgs",
+    "repos_url": "https://api.github.com/users/AndrewScheidecker/repos",
+    "events_url": "https://api.github.com/users/AndrewScheidecker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewScheidecker/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "234e8b93790a949143a9a5c79df7f655bea17af9",
+      "url": "https://api.github.com/repos/WAVM/WAVM/commits/234e8b93790a949143a9a5c79df7f655bea17af9",
+      "html_url": "https://github.com/WAVM/WAVM/commit/234e8b93790a949143a9a5c79df7f655bea17af9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "05d0c614985b427084c35056feedc763515e1f67",
+      "filename": "Include/Inline/CLI.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/WAVM/WAVM/blob/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1/Include%2FInline%2FCLI.h",
+      "raw_url": "https://github.com/WAVM/WAVM/raw/2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1/Include%2FInline%2FCLI.h",
+      "contents_url": "https://api.github.com/repos/WAVM/WAVM/contents/Include%2FInline%2FCLI.h?ref=2de6cf70c5ef31e22ed119a25ac2daeefd3d18a1",
+      "patch": "@@ -144,7 +144,7 @@ inline bool loadModule(const char* filename, IR::Module& outModule)\n \tif(!loadFile(filename, fileBytes)) { return false; }\n \n \t// If the file starts with the WASM binary magic number, load it as a binary irModule.\n-\tif(*(U32*)fileBytes.data() == 0x6d736100)\n+\tif(fileBytes.size() >= 4 && *(U32*)fileBytes.data() == 0x6d736100)\n \t{ return loadBinaryModule(fileBytes.data(), fileBytes.size(), outModule); }\n \telse\n \t{"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "6364463d6f5b6254cac3d6aedf999b6a96225038",
+  "node_id": "C_kwDOArmXAtoAKDYzNjQ0NjNkNmY1YjYyNTRjYWMzZDZhZWRmOTk5YjZhOTYyMjUwMzg",
+  "commit": {
+    "author": {
+      "name": "Karim Nosir",
+      "email": "karimnosseir@google.com",
+      "date": "2021-12-16T23:37:14Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-12-16T23:46:23Z"
+    },
+    "message": "[lite] Add some safety checks to avoid out of bound access for sparsity format\n\nPiperOrigin-RevId: 416910386\nChange-Id: Ic0b4dc048dc4b5a6309c572b8c4c9f776e4db60a",
+    "tree": {
+      "sha": "e9b3833cbaa240006cc22f57599f1804cec97057",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/e9b3833cbaa240006cc22f57599f1804cec97057"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/6364463d6f5b6254cac3d6aedf999b6a96225038",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6364463d6f5b6254cac3d6aedf999b6a96225038",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/6364463d6f5b6254cac3d6aedf999b6a96225038",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6364463d6f5b6254cac3d6aedf999b6a96225038/comments",
+  "author": {
+    "login": "karimnosseir",
+    "id": 44206880,
+    "node_id": "MDQ6VXNlcjQ0MjA2ODgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/44206880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karimnosseir",
+    "html_url": "https://github.com/karimnosseir",
+    "followers_url": "https://api.github.com/users/karimnosseir/followers",
+    "following_url": "https://api.github.com/users/karimnosseir/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karimnosseir/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karimnosseir/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karimnosseir/subscriptions",
+    "organizations_url": "https://api.github.com/users/karimnosseir/orgs",
+    "repos_url": "https://api.github.com/users/karimnosseir/repos",
+    "events_url": "https://api.github.com/users/karimnosseir/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karimnosseir/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3e49ff637ad4f05c133d235a568943d19216fa9a",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3e49ff637ad4f05c133d235a568943d19216fa9a",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/3e49ff637ad4f05c133d235a568943d19216fa9a"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 11,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "0595d49365c387acfb4f6ce0b47cba92d6149f0a",
+      "filename": "tensorflow/lite/kernels/internal/utils/sparsity_format_converter.cc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 7,
+      "changes": 18,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/6364463d6f5b6254cac3d6aedf999b6a96225038/tensorflow%2Flite%2Fkernels%2Finternal%2Futils%2Fsparsity_format_converter.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/6364463d6f5b6254cac3d6aedf999b6a96225038/tensorflow%2Flite%2Fkernels%2Finternal%2Futils%2Fsparsity_format_converter.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Finternal%2Futils%2Fsparsity_format_converter.cc?ref=6364463d6f5b6254cac3d6aedf999b6a96225038",
+      "patch": "@@ -282,10 +282,12 @@ void FormatConverter<T>::InitSparseToDenseConverter(\n   block_size_.resize(block_map_.size());\n   for (int i = 0; i < original_rank; i++) {\n     if (block_dim < block_map_.size() && block_map_[block_dim] == i) {\n-      int orig_dim = traversal_order_[original_rank + block_dim];\n-      block_size_[block_dim] = dense_size[orig_dim];\n-      blocked_shape_[i] = dense_shape_[i] / dense_size[orig_dim];\n-      block_dim++;\n+      if (original_rank + block_dim < traversal_order_.size()) {\n+        int orig_dim = traversal_order_[original_rank + block_dim];\n+        block_size_[block_dim] = dense_size[orig_dim];\n+        blocked_shape_[i] = dense_shape_[i] / dense_size[orig_dim];\n+        block_dim++;\n+      }\n     } else {\n       blocked_shape_[i] = dense_shape_[i];\n     }\n@@ -328,13 +330,15 @@ void FormatConverter<T>::Populate(const T* src_data, std::vector<int> indices,\n       Populate(src_data, indices, level + 1, prev_idx * shape_of_level + i,\n                src_data_ptr, dest_data);\n     }\n-  } else {\n+  } else if (prev_idx + 1 < dim_metadata_[metadata_idx].size()) {\n     const auto& array_segments = dim_metadata_[metadata_idx];\n     const auto& array_indices = dim_metadata_[metadata_idx + 1];\n     for (int i = array_segments[prev_idx]; i < array_segments[prev_idx + 1];\n          i++) {\n-      indices[level] = array_indices[i];\n-      Populate(src_data, indices, level + 1, i, src_data_ptr, dest_data);\n+      if (i < array_indices.size() && level < indices.size()) {\n+        indices[level] = array_indices[i];\n+        Populate(src_data, indices, level + 1, i, src_data_ptr, dest_data);\n+      }\n     }\n   }\n }"
+    }
+  ]
+}

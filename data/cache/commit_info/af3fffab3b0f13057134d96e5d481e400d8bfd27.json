@@ -1,0 +1,101 @@
+{
+  "sha": "af3fffab3b0f13057134d96e5d481e400d8bfd27",
+  "node_id": "MDY6Q29tbWl0MjMxMDQ5NTphZjNmZmZhYjNiMGYxMzA1NzEzNGQ5NmU1ZDQ4MWU0MDBkOGJmZDI3",
+  "commit": {
+    "author": {
+      "name": "Ernesto Puerta",
+      "email": "epuertat@redhat.com",
+      "date": "2021-05-13T15:43:56Z"
+    },
+    "committer": {
+      "name": "Sage Weil",
+      "email": "sage@newdream.net",
+      "date": "2021-05-13T16:53:16Z"
+    },
+    "message": "mgr/dashboard: fix cookie injection issue\n\nFixes: CVE-2021-3509\nSigned-off-by: Ernesto Puerta <epuertat@redhat.com>\n(cherry picked from commit b39922818bc57cde1b016e9ad41908b18063b93b)",
+    "tree": {
+      "sha": "c9c6c61d1de56c37a7a130f718ee8b1754bcc68a",
+      "url": "https://api.github.com/repos/ceph/ceph/git/trees/c9c6c61d1de56c37a7a130f718ee8b1754bcc68a"
+    },
+    "url": "https://api.github.com/repos/ceph/ceph/git/commits/af3fffab3b0f13057134d96e5d481e400d8bfd27",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ceph/ceph/commits/af3fffab3b0f13057134d96e5d481e400d8bfd27",
+  "html_url": "https://github.com/ceph/ceph/commit/af3fffab3b0f13057134d96e5d481e400d8bfd27",
+  "comments_url": "https://api.github.com/repos/ceph/ceph/commits/af3fffab3b0f13057134d96e5d481e400d8bfd27/comments",
+  "author": {
+    "login": "epuertat",
+    "id": 37327689,
+    "node_id": "MDQ6VXNlcjM3MzI3Njg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37327689?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/epuertat",
+    "html_url": "https://github.com/epuertat",
+    "followers_url": "https://api.github.com/users/epuertat/followers",
+    "following_url": "https://api.github.com/users/epuertat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/epuertat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/epuertat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/epuertat/subscriptions",
+    "organizations_url": "https://api.github.com/users/epuertat/orgs",
+    "repos_url": "https://api.github.com/users/epuertat/repos",
+    "events_url": "https://api.github.com/users/epuertat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/epuertat/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "liewegas",
+    "id": 433031,
+    "node_id": "MDQ6VXNlcjQzMzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/433031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/liewegas",
+    "html_url": "https://github.com/liewegas",
+    "followers_url": "https://api.github.com/users/liewegas/followers",
+    "following_url": "https://api.github.com/users/liewegas/following{/other_user}",
+    "gists_url": "https://api.github.com/users/liewegas/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/liewegas/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/liewegas/subscriptions",
+    "organizations_url": "https://api.github.com/users/liewegas/orgs",
+    "repos_url": "https://api.github.com/users/liewegas/repos",
+    "events_url": "https://api.github.com/users/liewegas/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/liewegas/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "775a15be38c268c08cfeb0e413a29bb044a8e285",
+      "url": "https://api.github.com/repos/ceph/ceph/commits/775a15be38c268c08cfeb0e413a29bb044a8e285",
+      "html_url": "https://github.com/ceph/ceph/commit/775a15be38c268c08cfeb0e413a29bb044a8e285"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 3,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "e7ed9742ab9d25e91915283c588dd9b4cdedd2fc",
+      "filename": "src/pybind/mgr/dashboard/controllers/docs.py",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 28,
+      "changes": 31,
+      "blob_url": "https://github.com/ceph/ceph/blob/af3fffab3b0f13057134d96e5d481e400d8bfd27/src%2Fpybind%2Fmgr%2Fdashboard%2Fcontrollers%2Fdocs.py",
+      "raw_url": "https://github.com/ceph/ceph/raw/af3fffab3b0f13057134d96e5d481e400d8bfd27/src%2Fpybind%2Fmgr%2Fdashboard%2Fcontrollers%2Fdocs.py",
+      "contents_url": "https://api.github.com/repos/ceph/ceph/contents/src%2Fpybind%2Fmgr%2Fdashboard%2Fcontrollers%2Fdocs.py?ref=af3fffab3b0f13057134d96e5d481e400d8bfd27",
+      "patch": "@@ -8,7 +8,7 @@\n \n from .. import DEFAULT_VERSION, mgr\n from ..api.doc import Schema, SchemaInput, SchemaType\n-from . import ENDPOINT_MAP, BaseController, Controller, Endpoint, allow_empty_body\n+from . import ENDPOINT_MAP, BaseController, Controller, Endpoint\n \n NO_DESCRIPTION_AVAILABLE = \"*No description available*\"\n \n@@ -383,31 +383,13 @@ def api_json(self):\n     def api_all_json(self):\n         return self._gen_spec(True, \"/\")\n \n-    def _swagger_ui_page(self, all_endpoints=False, token=None):\n+    def _swagger_ui_page(self, all_endpoints=False):\n         base = cherrypy.request.base\n         if all_endpoints:\n             spec_url = \"{}/docs/api-all.json\".format(base)\n         else:\n             spec_url = \"{}/docs/api.json\".format(base)\n \n-        auth_header = cherrypy.request.headers.get('authorization')\n-        auth_cookie = cherrypy.request.cookie['token']\n-        jwt_token = \"\"\n-        if auth_cookie is not None:\n-            jwt_token = auth_cookie.value\n-        elif auth_header is not None:\n-            scheme, params = auth_header.split(' ', 1)\n-            if scheme.lower() == 'bearer':\n-                jwt_token = params\n-        else:\n-            if token is not None:\n-                jwt_token = token\n-\n-        api_key_callback = \"\"\", onComplete: () => {{\n-                        ui.preauthorizeApiKey('jwt', '{}');\n-                    }}\n-        \"\"\".format(jwt_token)\n-\n         page = \"\"\"\n         <!DOCTYPE html>\n         <html>\n@@ -448,27 +430,20 @@ def _swagger_ui_page(self, all_endpoints=False, token=None):\n                         SwaggerUIBundle.presets.apis\n                     ],\n                     layout: \"BaseLayout\"\n-                    {}\n                 }})\n                 window.ui = ui\n             }}\n         </script>\n         </body>\n         </html>\n-        \"\"\".format(spec_url, api_key_callback)\n+        \"\"\".format(spec_url)\n \n         return page\n \n     @Endpoint(json_response=False, version=None)\n     def __call__(self, all_endpoints=False):\n         return self._swagger_ui_page(all_endpoints)\n \n-    @Endpoint('POST', path=\"/\", json_response=False,\n-              query_params=\"{all_endpoints}\", version=None)\n-    @allow_empty_body\n-    def _with_token(self, token, all_endpoints=False):\n-        return self._swagger_ui_page(all_endpoints, token)\n-\n \n if __name__ == \"__main__\":\n     import sys"
+    }
+  ]
+}

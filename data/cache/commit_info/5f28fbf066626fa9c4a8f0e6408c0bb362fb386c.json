@@ -1,0 +1,101 @@
+{
+  "sha": "5f28fbf066626fa9c4a8f0e6408c0bb362fb386c",
+  "node_id": "C_kwDOAB4IaNoAKDVmMjhmYmYwNjY2MjZmYTljNGE4ZjBlNjQwOGMwYmIzNjJmYjM4NmM",
+  "commit": {
+    "author": {
+      "name": "Hans Schoenemann",
+      "email": "hannes@mathematik.uni-kl.de",
+      "date": "2022-05-24T09:02:32Z"
+    },
+    "committer": {
+      "name": "Hans Schoenemann",
+      "email": "hannes@mathematik.uni-kl.de",
+      "date": "2022-05-24T09:02:32Z"
+    },
+    "message": "use mkstemp for sdb",
+    "tree": {
+      "sha": "136fb02e2c81f8e78e59bf747a0d58e8fc1fccba",
+      "url": "https://api.github.com/repos/Singular/Singular/git/trees/136fb02e2c81f8e78e59bf747a0d58e8fc1fccba"
+    },
+    "url": "https://api.github.com/repos/Singular/Singular/git/commits/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Singular/Singular/commits/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c",
+  "html_url": "https://github.com/Singular/Singular/commit/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c",
+  "comments_url": "https://api.github.com/repos/Singular/Singular/commits/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c/comments",
+  "author": {
+    "login": "hannes14",
+    "id": 1135340,
+    "node_id": "MDQ6VXNlcjExMzUzNDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1135340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hannes14",
+    "html_url": "https://github.com/hannes14",
+    "followers_url": "https://api.github.com/users/hannes14/followers",
+    "following_url": "https://api.github.com/users/hannes14/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hannes14/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hannes14/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hannes14/subscriptions",
+    "organizations_url": "https://api.github.com/users/hannes14/orgs",
+    "repos_url": "https://api.github.com/users/hannes14/repos",
+    "events_url": "https://api.github.com/users/hannes14/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hannes14/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hannes14",
+    "id": 1135340,
+    "node_id": "MDQ6VXNlcjExMzUzNDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1135340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hannes14",
+    "html_url": "https://github.com/hannes14",
+    "followers_url": "https://api.github.com/users/hannes14/followers",
+    "following_url": "https://api.github.com/users/hannes14/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hannes14/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hannes14/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hannes14/subscriptions",
+    "organizations_url": "https://api.github.com/users/hannes14/orgs",
+    "repos_url": "https://api.github.com/users/hannes14/repos",
+    "events_url": "https://api.github.com/users/hannes14/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hannes14/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "20e666d815a6e4e060a4e12260b223c4680fd012",
+      "url": "https://api.github.com/repos/Singular/Singular/commits/20e666d815a6e4e060a4e12260b223c4680fd012",
+      "html_url": "https://github.com/Singular/Singular/commit/20e666d815a6e4e060a4e12260b223c4680fd012"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 9,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "cb2f611028f18ca0715e78a063af4a5632f2e839",
+      "filename": "Singular/sdb.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 10,
+      "changes": 19,
+      "blob_url": "https://github.com/Singular/Singular/blob/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c/Singular%2Fsdb.cc",
+      "raw_url": "https://github.com/Singular/Singular/raw/5f28fbf066626fa9c4a8f0e6408c0bb362fb386c/Singular%2Fsdb.cc",
+      "contents_url": "https://api.github.com/repos/Singular/Singular/contents/Singular%2Fsdb.cc?ref=5f28fbf066626fa9c4a8f0e6408c0bb362fb386c",
+      "patch": "@@ -108,10 +108,9 @@ BOOLEAN sdb_set_breakpoint(const char *pp, int given_lineno)\n \n void sdb_edit(procinfo *pi)\n {\n-  char * filename = omStrDup(\"/tmp/sd000000\");\n-  sprintf(filename+7,\"%d\",getpid());\n-  FILE *fp=fopen(filename,\"w\");\n-  if (fp==NULL)\n+  char * filename = omStrDup(\"/tmp/sdXXXXXX\");\n+  int f=mkstemp(filename);\n+  if (f==-1)\n   {\n     Print(\"cannot open %s\\n\",filename);\n     omFree(filename);\n@@ -120,8 +119,8 @@ void sdb_edit(procinfo *pi)\n   if (pi->language!= LANG_SINGULAR)\n   {\n     Print(\"cannot edit type %d\\n\",pi->language);\n-    fclose(fp);\n-    fp=NULL;\n+    close(f);\n+    f=NULL;\n   }\n   else\n   {\n@@ -138,15 +137,15 @@ void sdb_edit(procinfo *pi)\n       if (pi->data.s.body==NULL)\n       {\n         PrintS(\"cannot get the procedure body\\n\");\n-        fclose(fp);\n+        close(f);\n         si_unlink(filename);\n         omFree(filename);\n         return;\n       }\n     }\n \n-    fwrite(pi->data.s.body,1,strlen(pi->data.s.body),fp);\n-    fclose(fp);\n+    write(f,pi->data.s.body,strlen(pi->data.s.body));\n+    close(f);\n \n     int pid=fork();\n     if (pid!=0)\n@@ -173,7 +172,7 @@ void sdb_edit(procinfo *pi)\n       PrintS(\"cannot fork\\n\");\n     }\n \n-    fp=fopen(filename,\"r\");\n+    FILE* fp=fopen(filename,\"r\");\n     if (fp==NULL)\n     {\n       Print(\"cannot read from %s\\n\",filename);"
+    }
+  ]
+}

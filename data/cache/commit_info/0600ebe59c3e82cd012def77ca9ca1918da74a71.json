@@ -1,0 +1,101 @@
+{
+  "sha": "0600ebe59c3e82cd012def77ca9ca1918da74a71",
+  "node_id": "MDY6Q29tbWl0MjQ3NzY3Mjg6MDYwMGViZTU5YzNlODJjZDAxMmRlZjc3Y2E5Y2ExOTE4ZGE3NGE3MQ==",
+  "commit": {
+    "author": {
+      "name": "Kyle Nekritz",
+      "email": "knekritz@fb.com",
+      "date": "2018-11-12T23:36:38Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2018-11-12T23:38:39Z"
+    },
+    "message": "Check that a secondary auth manager is set before dereferencing.\n\nSummary: CVE-2018-6343\n\nReviewed By: mingtaoy\n\nDifferential Revision: D12994423\n\nfbshipit-source-id: 9229ec11da8085f1fa153595e8e5353e19d06fb7",
+    "tree": {
+      "sha": "622e46a5ee0efb1cba72a662425e7d85c79aca29",
+      "url": "https://api.github.com/repos/facebook/proxygen/git/trees/622e46a5ee0efb1cba72a662425e7d85c79aca29"
+    },
+    "url": "https://api.github.com/repos/facebook/proxygen/git/commits/0600ebe59c3e82cd012def77ca9ca1918da74a71",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/proxygen/commits/0600ebe59c3e82cd012def77ca9ca1918da74a71",
+  "html_url": "https://github.com/facebook/proxygen/commit/0600ebe59c3e82cd012def77ca9ca1918da74a71",
+  "comments_url": "https://api.github.com/repos/facebook/proxygen/commits/0600ebe59c3e82cd012def77ca9ca1918da74a71/comments",
+  "author": {
+    "login": "knekritz",
+    "id": 5401630,
+    "node_id": "MDQ6VXNlcjU0MDE2MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5401630?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/knekritz",
+    "html_url": "https://github.com/knekritz",
+    "followers_url": "https://api.github.com/users/knekritz/followers",
+    "following_url": "https://api.github.com/users/knekritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/knekritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/knekritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/knekritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/knekritz/orgs",
+    "repos_url": "https://api.github.com/users/knekritz/repos",
+    "events_url": "https://api.github.com/users/knekritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/knekritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "abdbc69ba6d583defeb3af2dfd5840f215e38ae2",
+      "url": "https://api.github.com/repos/facebook/proxygen/commits/abdbc69ba6d583defeb3af2dfd5840f215e38ae2",
+      "html_url": "https://github.com/facebook/proxygen/commit/abdbc69ba6d583defeb3af2dfd5840f215e38ae2"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 8,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "95b34c6e4d699a28013030c90b3ff30d1db1627c",
+      "filename": "proxygen/lib/http/session/HTTPSession.cpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/facebook/proxygen/blob/0600ebe59c3e82cd012def77ca9ca1918da74a71/proxygen%2Flib%2Fhttp%2Fsession%2FHTTPSession.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/0600ebe59c3e82cd012def77ca9ca1918da74a71/proxygen%2Flib%2Fhttp%2Fsession%2FHTTPSession.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fsession%2FHTTPSession.cpp?ref=0600ebe59c3e82cd012def77ca9ca1918da74a71",
+      "patch": "@@ -1349,6 +1349,10 @@ void HTTPSession::onCertificateRequest(uint16_t requestId,\n   DestructorGuard dg(this);\n   VLOG(4) << \"CERTIFICATE_REQUEST on\" << *this << \", requestId=\" << requestId;\n \n+  if (!secondAuthManager_) {\n+    return;\n+  }\n+\n   std::pair<uint16_t, std::unique_ptr<folly::IOBuf>> authenticator;\n   auto fizzBase = getTransport()->getUnderlyingTransport<AsyncFizzBase>();\n   if (fizzBase) {\n@@ -1382,6 +1386,10 @@ void HTTPSession::onCertificate(uint16_t certId,\n   DestructorGuard dg(this);\n   VLOG(4) << \"CERTIFICATE on\" << *this << \", certId=\" << certId;\n \n+  if (!secondAuthManager_) {\n+    return;\n+  }\n+\n   bool isValid = false;\n   auto fizzBase = getTransport()->getUnderlyingTransport<AsyncFizzBase>();\n   if (fizzBase) {"
+    }
+  ]
+}

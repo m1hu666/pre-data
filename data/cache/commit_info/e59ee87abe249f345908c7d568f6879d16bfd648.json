@@ -1,0 +1,101 @@
+{
+  "sha": "e59ee87abe249f345908c7d568f6879d16bfd648",
+  "node_id": "MDY6Q29tbWl0MTQxMzMxOTplNTllZTg3YWJlMjQ5ZjM0NTkwOGM3ZDU2OGY2ODc5ZDE2YmZkNjQ4",
+  "commit": {
+    "author": {
+      "name": "Davide Beatrici",
+      "email": "git@davidebeatrici.dev",
+      "date": "2021-02-05T19:01:04Z"
+    },
+    "committer": {
+      "name": "Robert Adam",
+      "email": "krzmbrzl@gmail.com",
+      "date": "2021-02-06T15:00:07Z"
+    },
+    "message": "FIX(client): Only allow \"http\"/\"https\" for URLs in ConnectDialog\n\nOur public server list registration script doesn't have an URL scheme\nwhitelist for the website field.\n\nTurns out a malicious server can register itself with a dangerous URL in\nan attempt to attack a user's machine.\n\nUser interaction is required, as the URL has to be opened by\nright-clicking on the server entry and clicking on \"Open Webpage\".\n\nThis commit introduces a client-side whitelist, which only allows \"http\"\nand \"https\" schemes. We will also implement it in our public list.\n\nIn future we should probably add a warning QMessageBox informing the\nuser that there's no guarantee the URL is safe (regardless of the\nscheme).\n\nThanks a lot to https://positive.security for reporting the RCE\nvulnerability to us privately.",
+    "tree": {
+      "sha": "c922116ed48f98b097e21a5fb78d375eddc7e731",
+      "url": "https://api.github.com/repos/mumble-voip/mumble/git/trees/c922116ed48f98b097e21a5fb78d375eddc7e731"
+    },
+    "url": "https://api.github.com/repos/mumble-voip/mumble/git/commits/e59ee87abe249f345908c7d568f6879d16bfd648",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mumble-voip/mumble/commits/e59ee87abe249f345908c7d568f6879d16bfd648",
+  "html_url": "https://github.com/mumble-voip/mumble/commit/e59ee87abe249f345908c7d568f6879d16bfd648",
+  "comments_url": "https://api.github.com/repos/mumble-voip/mumble/commits/e59ee87abe249f345908c7d568f6879d16bfd648/comments",
+  "author": {
+    "login": "davidebeatrici",
+    "id": 5897523,
+    "node_id": "MDQ6VXNlcjU4OTc1MjM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5897523?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidebeatrici",
+    "html_url": "https://github.com/davidebeatrici",
+    "followers_url": "https://api.github.com/users/davidebeatrici/followers",
+    "following_url": "https://api.github.com/users/davidebeatrici/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidebeatrici/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidebeatrici/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidebeatrici/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidebeatrici/orgs",
+    "repos_url": "https://api.github.com/users/davidebeatrici/repos",
+    "events_url": "https://api.github.com/users/davidebeatrici/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidebeatrici/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Krzmbrzl",
+    "id": 12751591,
+    "node_id": "MDQ6VXNlcjEyNzUxNTkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12751591?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Krzmbrzl",
+    "html_url": "https://github.com/Krzmbrzl",
+    "followers_url": "https://api.github.com/users/Krzmbrzl/followers",
+    "following_url": "https://api.github.com/users/Krzmbrzl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Krzmbrzl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Krzmbrzl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Krzmbrzl/subscriptions",
+    "organizations_url": "https://api.github.com/users/Krzmbrzl/orgs",
+    "repos_url": "https://api.github.com/users/Krzmbrzl/repos",
+    "events_url": "https://api.github.com/users/Krzmbrzl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Krzmbrzl/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6efbd836ea579ceabe007e3ce1f2ebfbd835cf48",
+      "url": "https://api.github.com/repos/mumble-voip/mumble/commits/6efbd836ea579ceabe007e3ce1f2ebfbd835cf48",
+      "html_url": "https://github.com/mumble-voip/mumble/commit/6efbd836ea579ceabe007e3ce1f2ebfbd835cf48"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 17,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "7ab6034b73cf0bedab6bd7e59d2e2e02168046b9",
+      "filename": "src/mumble/ConnectDialog.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 3,
+      "changes": 20,
+      "blob_url": "https://github.com/mumble-voip/mumble/blob/e59ee87abe249f345908c7d568f6879d16bfd648/src%2Fmumble%2FConnectDialog.cpp",
+      "raw_url": "https://github.com/mumble-voip/mumble/raw/e59ee87abe249f345908c7d568f6879d16bfd648/src%2Fmumble%2FConnectDialog.cpp",
+      "contents_url": "https://api.github.com/repos/mumble-voip/mumble/contents/src%2Fmumble%2FConnectDialog.cpp?ref=e59ee87abe249f345908c7d568f6879d16bfd648",
+      "patch": "@@ -1265,11 +1265,25 @@ void ConnectDialog::on_qaFavoritePaste_triggered() {\n }\n \n void ConnectDialog::on_qaUrl_triggered() {\n-\tServerItem *si = static_cast<ServerItem *>(qtwServers->currentItem());\n-\tif (! si || si->qsUrl.isEmpty())\n+\tauto *si = static_cast< const ServerItem * >(qtwServers->currentItem());\n+\tif (!si || si->qsUrl.isEmpty()) {\n \t\treturn;\n+\t}\n+\n+\tconst QStringList allowedSchemes = { QLatin1String(\"http\"), QLatin1String(\"https\") };\n \n-\tQDesktopServices::openUrl(QUrl(si->qsUrl));\n+\tconst auto url = QUrl(si->qsUrl);\n+\tif (allowedSchemes.contains(url.scheme())) {\n+\t\tQDesktopServices::openUrl(url);\n+\t} else {\n+\t\t// Inform user that the requested URL has been blocked\n+\t\tQMessageBox msgBox;\n+\t\tmsgBox.setText(QObject::tr(\"<b>Blocked URL scheme \\\"%1\\\"</b>\").arg(url.scheme()));\n+\t\tmsgBox.setInformativeText(QObject::tr(\"The URL uses a scheme that has been blocked for security reasons.\"));\n+\t\tmsgBox.setDetailedText(QObject::tr(\"Blocked URL: \\\"%1\\\"\").arg(url.toString()));\n+\t\tmsgBox.setIcon(QMessageBox::Warning);\n+\t\tmsgBox.exec();\n+\t}\n }\n \n void ConnectDialog::onFiltersTriggered(QAction *act) {"
+    }
+  ]
+}

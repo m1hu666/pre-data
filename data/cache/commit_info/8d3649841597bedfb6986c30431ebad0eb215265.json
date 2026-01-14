@@ -1,0 +1,101 @@
+{
+  "sha": "8d3649841597bedfb6986c30431ebad0eb215265",
+  "node_id": "C_kwDOBVxsetoAKDhkMzY0OTg0MTU5N2JlZGZiNjk4NmMzMDQzMWViYWQwZWIyMTUyNjU",
+  "commit": {
+    "author": {
+      "name": "Facebook Community Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-01-20T18:47:56Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-01-20T18:47:56Z"
+    },
+    "message": "Check HelloRetryRequest cipher consistency earlier.\n\nCVE-2023-23759\r\n\r\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>\r\n\r\nDifferential Revision: D42508182",
+    "tree": {
+      "sha": "d0af780dccb1dc4e4838b58946ebd934bc8564af",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/git/trees/d0af780dccb1dc4e4838b58946ebd934bc8564af"
+    },
+    "url": "https://api.github.com/repos/facebookincubator/fizz/git/commits/8d3649841597bedfb6986c30431ebad0eb215265",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjyuHcCRBK7hj4Ov3rIwAALDwIAAZx1LWNTS8GXppadyl3vzQ3\nfnx6PpkImRjrG0wofEKjkVO4cApaUkUe5e57aftaHRgxB0Ms4p5PZFz3ItfqsMKT\nMnMbK1Rzoc1v3ef9HgnryIG4Mt9/RF0u8zHDLkuYehjtNX+6VhgvT+H9NPOX9l8A\ns3mVZ9Q6iwOkVfnNY/I5YTITavMh9z+ZWoUF0G1spnvqa+4Pa3/lTw4pf3ex2Z+h\nvuVuZi3sQIb0vIVOdQkERE3zYxNdRvaDKH8CXTT6fRRP9W1wDwP8bg3mHc0uRJi/\nV+cjrgYF2+mJtrR6WN60cvnq93PNnq5WkPJDR7Pxm4g09c+aUIrAi2VHENY3EuY=\n=66ro\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree d0af780dccb1dc4e4838b58946ebd934bc8564af\nparent 0d3da696ae75df5d3997a14379749bb2e03cb3b8\nauthor Facebook Community Bot <facebook-github-bot@users.noreply.github.com> 1674240476 -0500\ncommitter GitHub <noreply@github.com> 1674240476 -0500\n\nCheck HelloRetryRequest cipher consistency earlier.\n\nCVE-2023-23759\r\n\r\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>\r\n\r\nDifferential Revision: D42508182",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebookincubator/fizz/commits/8d3649841597bedfb6986c30431ebad0eb215265",
+  "html_url": "https://github.com/facebookincubator/fizz/commit/8d3649841597bedfb6986c30431ebad0eb215265",
+  "comments_url": "https://api.github.com/repos/facebookincubator/fizz/commits/8d3649841597bedfb6986c30431ebad0eb215265/comments",
+  "author": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0d3da696ae75df5d3997a14379749bb2e03cb3b8",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/commits/0d3da696ae75df5d3997a14379749bb2e03cb3b8",
+      "html_url": "https://github.com/facebookincubator/fizz/commit/0d3da696ae75df5d3997a14379749bb2e03cb3b8"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "52f12aafc5b739881012ce7f847e7b25eba25311",
+      "filename": "fizz/server/ServerProtocol.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/8d3649841597bedfb6986c30431ebad0eb215265/fizz%2Fserver%2FServerProtocol.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/8d3649841597bedfb6986c30431ebad0eb215265/fizz%2Fserver%2FServerProtocol.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Fserver%2FServerProtocol.cpp?ref=8d3649841597bedfb6986c30431ebad0eb215265",
+      "patch": "@@ -1214,6 +1214,12 @@ EventHandler<ServerTypes, StateEnum::ExpectingClientHello, Event::ClientHello>::\n \n   auto cipher = negotiateCipher(chlo, state.context()->getSupportedCiphers());\n \n+  if (state.cipher().has_value() && cipher != *state.cipher()) {\n+    throw FizzException(\n+        \"cipher mismatch with previous negotiation\",\n+        AlertDescription::illegal_parameter);\n+  }\n+\n   verifyCookieState(cookieState, *version, cipher);\n \n   auto resStateResult = getResumptionState(\n@@ -1284,12 +1290,6 @@ EventHandler<ServerTypes, StateEnum::ExpectingClientHello, Event::ClientHello>::\n             std::move(state.handshakeContext()),\n             version);\n \n-        if (state.cipher().has_value() && cipher != *state.cipher()) {\n-          throw FizzException(\n-              \"cipher mismatch with previous negotiation\",\n-              AlertDescription::illegal_parameter);\n-        }\n-\n         auto alpn = negotiateAlpn(chlo, folly::none, *state.context());\n \n         auto clockSkew = getClockSkew("
+    }
+  ]
+}

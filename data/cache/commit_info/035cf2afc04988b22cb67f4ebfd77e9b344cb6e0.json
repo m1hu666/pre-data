@@ -1,0 +1,113 @@
+{
+  "sha": "035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+  "node_id": "MDY6Q29tbWl0MTA4MTEwOjAzNWNmMmFmYzA0OTg4YjIyY2I2N2Y0ZWJmZDc3ZTliMzQ0Y2I2ZTA=",
+  "commit": {
+    "author": {
+      "name": "Kevin Pulo",
+      "email": "kevin.pulo@mongodb.com",
+      "date": "2016-09-06T01:44:20Z"
+    },
+    "committer": {
+      "name": "Kevin Pulo",
+      "email": "kevin.pulo@mongodb.com",
+      "date": "2016-09-06T01:45:16Z"
+    },
+    "message": "SERVER-25335 avoid group and other permissions when creating .dbshell history file",
+    "tree": {
+      "sha": "155ea552e82633b4d65b935da2dc9f3f1c89d933",
+      "url": "https://api.github.com/repos/mongodb/mongo/git/trees/155ea552e82633b4d65b935da2dc9f3f1c89d933"
+    },
+    "url": "https://api.github.com/repos/mongodb/mongo/git/commits/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mongodb/mongo/commits/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+  "html_url": "https://github.com/mongodb/mongo/commit/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+  "comments_url": "https://api.github.com/repos/mongodb/mongo/commits/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0/comments",
+  "author": {
+    "login": "devkev",
+    "id": 1083020,
+    "node_id": "MDQ6VXNlcjEwODMwMjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1083020?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/devkev",
+    "html_url": "https://github.com/devkev",
+    "followers_url": "https://api.github.com/users/devkev/followers",
+    "following_url": "https://api.github.com/users/devkev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/devkev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/devkev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/devkev/subscriptions",
+    "organizations_url": "https://api.github.com/users/devkev/orgs",
+    "repos_url": "https://api.github.com/users/devkev/repos",
+    "events_url": "https://api.github.com/users/devkev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/devkev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "devkev",
+    "id": 1083020,
+    "node_id": "MDQ6VXNlcjEwODMwMjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1083020?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/devkev",
+    "html_url": "https://github.com/devkev",
+    "followers_url": "https://api.github.com/users/devkev/followers",
+    "following_url": "https://api.github.com/users/devkev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/devkev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/devkev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/devkev/subscriptions",
+    "organizations_url": "https://api.github.com/users/devkev/orgs",
+    "repos_url": "https://api.github.com/users/devkev/repos",
+    "events_url": "https://api.github.com/users/devkev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/devkev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "078f29b7ed3361c6d19ce55a7fa32643c9987cbd",
+      "url": "https://api.github.com/repos/mongodb/mongo/commits/078f29b7ed3361c6d19ce55a7fa32643c9987cbd",
+      "html_url": "https://github.com/mongodb/mongo/commit/078f29b7ed3361c6d19ce55a7fa32643c9987cbd"
+    }
+  ],
+  "stats": {
+    "total": 117,
+    "additions": 115,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "72300a7d8a0a1aad906b9b26f2cc03e8228cfc10",
+      "filename": "jstests/noPassthrough/shell_history.js",
+      "status": "added",
+      "additions": 103,
+      "deletions": 0,
+      "changes": 103,
+      "blob_url": "https://github.com/mongodb/mongo/blob/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0/jstests%2FnoPassthrough%2Fshell_history.js",
+      "raw_url": "https://github.com/mongodb/mongo/raw/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0/jstests%2FnoPassthrough%2Fshell_history.js",
+      "contents_url": "https://api.github.com/repos/mongodb/mongo/contents/jstests%2FnoPassthrough%2Fshell_history.js?ref=035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+      "patch": "@@ -0,0 +1,103 @@\n+// Test that when running the shell for the first time creates the ~/.dbshell file, and it has\n+// appropriate permissions (where relevant).\n+\n+(function() {\n+    \"use strict\";\n+\n+    // Use dataPath because it includes the trailing \"/\" or \"\\\".\n+    var tmpHome = MongoRunner.dataPath;\n+    // Ensure it exists and is a dir (eg. if running without resmoke.py and /data/db doesn't exist).\n+    mkdir(tmpHome);\n+    removeFile(tmpHome + \".dbshell\");\n+\n+    var args = [];\n+    var cmdline = \"mongo --nodb\";\n+    var redirection = \"\";\n+    var env = {};\n+    if (_isWindows()) {\n+        args.push(\"cmd.exe\");\n+        args.push(\"/c\");\n+\n+        // Input is set to NUL.  The output must also be redirected to NUL, otherwise running the\n+        // jstest manually has strange terminal IO behaviour.\n+        redirection = \"< NUL > NUL\";\n+\n+        // USERPROFILE set to the tmp homedir.\n+        // Since NUL is a character device, isatty() will return true, which means that .mongorc.js\n+        // will be created in the HOMEDRIVE + HOMEPATH location, so we must set them also.\n+        if (tmpHome.match(\"^[a-zA-Z]:\")) {\n+            var tmpHomeDrive = tmpHome.substr(0, 2);\n+            var tmpHomePath = tmpHome.substr(2);\n+        } else {\n+            var _pwd = pwd();\n+            assert(_pwd.match(\"^[a-zA-Z]:\"), \"pwd must include drive\");\n+            var tmpHomeDrive = _pwd.substr(0, 2);\n+            var tmpHomePath = tmpHome;\n+        }\n+        env = {USERPROFILE: tmpHome, HOMEDRIVE: tmpHomeDrive, HOMEPATH: tmpHomePath};\n+\n+    } else {\n+        args.push(\"sh\");\n+        args.push(\"-c\");\n+\n+        // Use the mongo shell from the current dir, same as resmoke.py does.\n+        // Doesn't handle resmoke's --mongo= option.\n+        cmdline = \"./\" + cmdline;\n+\n+        // Set umask to 0 prior to running the shell.\n+        cmdline = \"umask 0 ; \" + cmdline;\n+\n+        // stdin is /dev/null.\n+        redirection = \"< /dev/null\";\n+\n+        // HOME set to the tmp homedir.\n+        if (!tmpHome.startsWith(\"/\")) {\n+            tmpHome = pwd() + \"/\" + tmpHome;\n+        }\n+        env = {HOME: tmpHome};\n+    }\n+\n+    // Add redirection to cmdline, and add cmdline to args.\n+    cmdline += \" \" + redirection;\n+    args.push(cmdline);\n+    jsTestLog(\"Running args:\\n    \" + tojson(args) + \"\\nwith env:\\n    \" + tojson(env));\n+    var pid = _startMongoProgram({args, env});\n+    var rc = waitProgram(pid);\n+\n+    assert.eq(rc, 0);\n+\n+    var files = listFiles(tmpHome);\n+    jsTestLog(tojson(files));\n+\n+    var findFile = function(baseName) {\n+        for (var i = 0; i < files.length; i++) {\n+            if (files[i].baseName === baseName) {\n+                return files[i];\n+            }\n+        }\n+        return undefined;\n+    };\n+\n+    var targetFile = \".dbshell\";\n+    var file = findFile(targetFile);\n+\n+    assert.neq(typeof(file), \"undefined\", targetFile + \" should exist, but it doesn't\");\n+    assert.eq(file.isDirectory, false, targetFile + \" should not be a directory, but it is\");\n+    assert.eq(file.size, 0, targetFile + \" should be empty, but it isn't\");\n+\n+    if (!_isWindows()) {\n+        // On Unix, check that the file has the correct mode (permissions).\n+        // The shell has no way to stat a file.\n+        // There is no stat utility in POSIX.\n+        // `ls -l` is POSIX, so this is the best that we have.\n+        // Check for exactly \"-rw-------\".\n+        clearRawMongoProgramOutput();\n+        var rc = runProgram(\"ls\", \"-l\", file.name);\n+        assert.eq(rc, 0);\n+        var output = rawMongoProgramOutput();\n+        var fields = output.split(\" \");\n+        // First field is the prefix, second field is the `ls -l` permissions.\n+        assert.eq(fields[1], \"-rw-------\", targetFile + \" has bad permissions\");\n+    }\n+\n+})();"
+    },
+    {
+      "sha": "8b70214ac5b44a271d37b9cff65285e4a4b37433",
+      "filename": "src/mongo/shell/linenoise.cpp",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 14,
+      "blob_url": "https://github.com/mongodb/mongo/blob/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0/src%2Fmongo%2Fshell%2Flinenoise.cpp",
+      "raw_url": "https://github.com/mongodb/mongo/raw/035cf2afc04988b22cb67f4ebfd77e9b344cb6e0/src%2Fmongo%2Fshell%2Flinenoise.cpp",
+      "contents_url": "https://api.github.com/repos/mongodb/mongo/contents/src%2Fmongo%2Fshell%2Flinenoise.cpp?ref=035cf2afc04988b22cb67f4ebfd77e9b344cb6e0",
+      "patch": "@@ -2762,7 +2762,17 @@ int linenoiseHistorySetMaxLen(int len) {\n /* Save the history in the specified file. On success 0 is returned\n  * otherwise -1 is returned. */\n int linenoiseHistorySave(const char* filename) {\n-    FILE* fp = fopen(filename, \"wt\");\n+    FILE* fp;\n+#if _POSIX_C_SOURCE >= 1 || _XOPEN_SOURCE || _POSIX_SOURCE\n+    int fd = open(filename, O_CREAT, S_IRUSR | S_IWUSR);\n+    if (fd == -1) {\n+        // report errno somehow?\n+        return -1;\n+    }\n+    fp = fdopen(fd, \"wt\");\n+#else\n+    fp = fopen(filename, \"wt\");\n+#endif  // _POSIX_C_SOURCE >= 1 || _XOPEN_SOURCE || _POSIX_SOURCE\n     if (fp == NULL) {\n         return -1;\n     }\n@@ -2772,7 +2782,7 @@ int linenoiseHistorySave(const char* filename) {\n             fprintf(fp, \"%s\\n\", history[j]);\n         }\n     }\n-    fclose(fp);\n+    fclose(fp);  // Also causes fd to be closed.\n     return 0;\n }\n "
+    }
+  ]
+}

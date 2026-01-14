@@ -1,0 +1,101 @@
+{
+  "sha": "4be817e8b03e7e92517e91f2dfcc50865e91c6ea",
+  "node_id": "MDY6Q29tbWl0MzQ2Mjc1ODk6NGJlODE3ZThiMDNlN2U5MjUxN2U5MWYyZGZjYzUwODY1ZTkxYzZlYQ==",
+  "commit": {
+    "author": {
+      "name": "Madan Jampani",
+      "email": "madan.jampani@gmail.com",
+      "date": "2017-11-21T20:07:36Z"
+    },
+    "committer": {
+      "name": "Madan Jampani",
+      "email": "madan.jampani@gmail.com",
+      "date": "2017-11-21T20:07:50Z"
+    },
+    "message": "Avoid listening on all interfaces by default",
+    "tree": {
+      "sha": "facec58c86b3708f3a563639dfd1aa94073b04a7",
+      "url": "https://api.github.com/repos/dmlc/ps-lite/git/trees/facec58c86b3708f3a563639dfd1aa94073b04a7"
+    },
+    "url": "https://api.github.com/repos/dmlc/ps-lite/git/commits/4be817e8b03e7e92517e91f2dfcc50865e91c6ea",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/dmlc/ps-lite/commits/4be817e8b03e7e92517e91f2dfcc50865e91c6ea",
+  "html_url": "https://github.com/dmlc/ps-lite/commit/4be817e8b03e7e92517e91f2dfcc50865e91c6ea",
+  "comments_url": "https://api.github.com/repos/dmlc/ps-lite/commits/4be817e8b03e7e92517e91f2dfcc50865e91c6ea/comments",
+  "author": {
+    "login": "madjam",
+    "id": 8388825,
+    "node_id": "MDQ6VXNlcjgzODg4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8388825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/madjam",
+    "html_url": "https://github.com/madjam",
+    "followers_url": "https://api.github.com/users/madjam/followers",
+    "following_url": "https://api.github.com/users/madjam/following{/other_user}",
+    "gists_url": "https://api.github.com/users/madjam/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/madjam/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/madjam/subscriptions",
+    "organizations_url": "https://api.github.com/users/madjam/orgs",
+    "repos_url": "https://api.github.com/users/madjam/repos",
+    "events_url": "https://api.github.com/users/madjam/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/madjam/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "madjam",
+    "id": 8388825,
+    "node_id": "MDQ6VXNlcjgzODg4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8388825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/madjam",
+    "html_url": "https://github.com/madjam",
+    "followers_url": "https://api.github.com/users/madjam/followers",
+    "following_url": "https://api.github.com/users/madjam/following{/other_user}",
+    "gists_url": "https://api.github.com/users/madjam/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/madjam/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/madjam/subscriptions",
+    "organizations_url": "https://api.github.com/users/madjam/orgs",
+    "repos_url": "https://api.github.com/users/madjam/repos",
+    "events_url": "https://api.github.com/users/madjam/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/madjam/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bdd4c67e9e34dc0b8350ce306b0caa737eb31c83",
+      "url": "https://api.github.com/repos/dmlc/ps-lite/commits/bdd4c67e9e34dc0b8350ce306b0caa737eb31c83",
+      "html_url": "https://github.com/dmlc/ps-lite/commit/bdd4c67e9e34dc0b8350ce306b0caa737eb31c83"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f6a14cc4e54c6c85eeda32b55fbe2ce4e0f749ac",
+      "filename": "src/zmq_van.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/dmlc/ps-lite/blob/4be817e8b03e7e92517e91f2dfcc50865e91c6ea/src%2Fzmq_van.h",
+      "raw_url": "https://github.com/dmlc/ps-lite/raw/4be817e8b03e7e92517e91f2dfcc50865e91c6ea/src%2Fzmq_van.h",
+      "contents_url": "https://api.github.com/repos/dmlc/ps-lite/contents/src%2Fzmq_van.h?ref=4be817e8b03e7e92517e91f2dfcc50865e91c6ea",
+      "patch": "@@ -63,7 +63,8 @@ class ZMQVan : public Van {\n     CHECK(receiver_ != NULL)\n         << \"create receiver socket failed: \" << zmq_strerror(errno);\n     int local = GetEnv(\"DMLC_LOCAL\", 0);\n-    std::string addr = local ? \"ipc:///tmp/\" : \"tcp://*:\";\n+    std::string hostname = node.hostname.empty() ? \"*\" : node.hostname;\n+    std::string addr = local ? \"ipc:///tmp/\" : \"tcp://\" + hostname + \":\";\n     int port = node.port;\n     unsigned seed = static_cast<unsigned>(time(NULL)+port);\n     for (int i = 0; i < max_retry+1; ++i) {"
+    }
+  ]
+}

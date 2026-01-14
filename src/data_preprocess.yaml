@@ -1,0 +1,120 @@
+data_preprocess:
+  selected_dataset: 'REEF' #
+#  selected_dataset: 'VRepair'
+  VRepair:
+  #  dataset_name: 'big_vul'
+    dataset_name: 'cve_fixes'
+  REEF:
+#    dataset_name: 'C'
+#    dataset_name: 'C++'
+#    dataset_name: 'Java'
+#    dataset_name: 'C#'
+#   dataset_name: 'JS'
+#   dataset_name: 'GO'
+    dataset_name: 'Python'
+  C:
+    language: 'C'
+    comment_types:
+      - 'comment'
+    function_types:
+      - 'function_definition'
+    string_types:
+      - 'string_literal'
+      - 'char_literal'
+    post_fix: 'c'
+    target_file_types:
+      - 'c'
+  C++:
+    language: 'CPP'
+    comment_types:
+      - 'comment'
+    function_types:
+      - 'function_definition'
+    string_types:
+      - 'string_literal'
+      - 'raw_string_literal'
+      - 'char_literal'
+    post_fix: 'cpp'
+    target_file_types:
+      - 'cpp'
+      - 'cc'
+      - 'cxx'
+  Java:
+      language: 'Java'
+      comment_types:
+        - 'line_comment'
+        - 'block_comment'
+      function_types:
+        - 'method_declaration'
+        - 'constructor_declaration'
+#        - 'record_declaration' # Java 中record类型，暂时不考虑
+#        - 'compact_constructor_declaration'
+      string_types:
+        - 'string_literal'
+        - 'character_literal'
+      post_fix: 'java'
+      target_file_types:
+        - 'java'
+  C#:
+      language: 'C_sharp'
+      comment_types:
+        - 'comment'
+      function_types:
+        - 'constructor_declaration'
+        - 'destructor_declaration'
+        - 'method_declaration'
+      string_types:
+        - 'string_literal'
+        - 'verbatim_string_literal'
+        - 'interpolated_string_expression'
+        - 'character_literal'
+        - 'raw_string_literal'
+      post_fix: 'cs'
+      target_file_types:
+        - 'cs'
+  JS:
+      language: 'javascript'
+      comment_types:
+        - 'comment'
+      function_types:
+        - 'function_declaration'
+        - 'generator_function_declaration'
+        - 'function_expression'
+        - 'method_definition'
+      string_types:
+        - 'string'
+        - 'template_string'
+      post_fix: 'js'
+      target_file_types:
+        - 'js'
+  Python:
+      language: 'Python'
+      comment_types:
+        - 'comment'
+      function_types:
+        - 'function_definition'
+      string_types:
+        - 'concatenated_string'
+        - 'string'
+      indent_token: '<S2SV_Indent>'
+      post_fix: 'py'
+      target_file_types:
+        - 'py'
+  GO:
+      language: 'go'
+      comment_types:
+        - 'comment'
+      function_types:
+        - 'function_declaration'
+        - 'func_literal'
+        - 'method_declaration'
+      string_types:
+        - 'interpreted_string_literal'
+        - 'raw_string_literal'
+        - 'rune_literal'
+      post_fix: 'go'
+      target_file_types:
+        - 'go'
+
+
+  num_tokens: 3

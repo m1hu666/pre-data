@@ -1,0 +1,113 @@
+{
+  "sha": "52cf331743ebd74194d6343a6c2ec52bb917c982",
+  "node_id": "MDY6Q29tbWl0MjQ3NzY3Mjg6NTJjZjMzMTc0M2ViZDc0MTk0ZDYzNDNhNmMyZWM1MmJiOTE3Yzk4Mg==",
+  "commit": {
+    "author": {
+      "name": "Jorge Lopez Silva",
+      "email": "jls@fb.com",
+      "date": "2018-12-27T20:44:29Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2018-12-27T20:49:37Z"
+    },
+    "message": "Fix h2 codec state after bad priority header.\n\nSummary:\nIt's possible for the http2 codec to enter an invalid state after processing a http2 header with invalid priorities.\nCVE-2018-6346\n\nReviewed By: maxgeorg\n\nDifferential Revision: D13510025\n\nfbshipit-source-id: 7c4e42daf1cd2b912454d13a66ab8488d1863263",
+    "tree": {
+      "sha": "ac340da1897901d56058f17b60b3e95ac7795a5a",
+      "url": "https://api.github.com/repos/facebook/proxygen/git/trees/ac340da1897901d56058f17b60b3e95ac7795a5a"
+    },
+    "url": "https://api.github.com/repos/facebook/proxygen/git/commits/52cf331743ebd74194d6343a6c2ec52bb917c982",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/proxygen/commits/52cf331743ebd74194d6343a6c2ec52bb917c982",
+  "html_url": "https://github.com/facebook/proxygen/commit/52cf331743ebd74194d6343a6c2ec52bb917c982",
+  "comments_url": "https://api.github.com/repos/facebook/proxygen/commits/52cf331743ebd74194d6343a6c2ec52bb917c982/comments",
+  "author": {
+    "login": "jalopezsilva",
+    "id": 1276443,
+    "node_id": "MDQ6VXNlcjEyNzY0NDM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1276443?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jalopezsilva",
+    "html_url": "https://github.com/jalopezsilva",
+    "followers_url": "https://api.github.com/users/jalopezsilva/followers",
+    "following_url": "https://api.github.com/users/jalopezsilva/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jalopezsilva/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jalopezsilva/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jalopezsilva/subscriptions",
+    "organizations_url": "https://api.github.com/users/jalopezsilva/orgs",
+    "repos_url": "https://api.github.com/users/jalopezsilva/repos",
+    "events_url": "https://api.github.com/users/jalopezsilva/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jalopezsilva/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f81f9003077ee1a84ee185b59baf321bde95b790",
+      "url": "https://api.github.com/repos/facebook/proxygen/commits/f81f9003077ee1a84ee185b59baf321bde95b790",
+      "html_url": "https://github.com/facebook/proxygen/commit/f81f9003077ee1a84ee185b59baf321bde95b790"
+    }
+  ],
+  "stats": {
+    "total": 42,
+    "additions": 34,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "db9a82731afb9101948c39afdd451e5bf643ff86",
+      "filename": "proxygen/lib/http/codec/HTTP2Codec.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 18,
+      "blob_url": "https://github.com/facebook/proxygen/blob/52cf331743ebd74194d6343a6c2ec52bb917c982/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/52cf331743ebd74194d6343a6c2ec52bb917c982/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp?ref=52cf331743ebd74194d6343a6c2ec52bb917c982",
+      "patch": "@@ -514,21 +514,23 @@ folly::Optional<ErrorCode> HTTP2Codec::parseHeadersDecodeFrames(\n     isReq = transportDirection_ == TransportDirection::DOWNSTREAM;\n   }\n \n+  // Validate circular dependencies.\n+  if (priority && (curHeader_.stream == priority->streamDependency)) {\n+    streamError(\n+        folly::to<string>(\"Circular dependency for txn=\", curHeader_.stream),\n+        ErrorCode::PROTOCOL_ERROR,\n+        curHeader_.type == http2::FrameType::HEADERS);\n+    return ErrorCode::NO_ERROR;\n+  }\n+\n   decodeInfo_.init(isReq, parsingDownstreamTrailers_);\n   if (priority) {\n-    if (curHeader_.stream == priority->streamDependency) {\n-      streamError(folly::to<string>(\"Circular dependency for txn=\",\n-                                    curHeader_.stream),\n-                  ErrorCode::PROTOCOL_ERROR,\n-                  curHeader_.type == http2::FrameType::HEADERS);\n-      return ErrorCode::NO_ERROR;\n-    }\n-\n     decodeInfo_.msg->setHTTP2Priority(\n         std::make_tuple(priority->streamDependency,\n                         priority->exclusive,\n                         priority->weight));\n   }\n+\n   headerCodec_.decodeStreaming(\n       headerCursor, curHeaderBlock_.chainLength(), this);\n   msg = std::move(decodeInfo_.msg);"
+    },
+    {
+      "sha": "22471b13e90c971a9c38d9e2692a9c8c6a50d5be",
+      "filename": "proxygen/lib/http/codec/test/HTTP2CodecTest.cpp",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/facebook/proxygen/blob/52cf331743ebd74194d6343a6c2ec52bb917c982/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/52cf331743ebd74194d6343a6c2ec52bb917c982/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp?ref=52cf331743ebd74194d6343a6c2ec52bb917c982",
+      "patch": "@@ -1377,6 +1377,30 @@ TEST_F(HTTP2CodecTest, BadHeaderPriority) {\n   EXPECT_EQ(callbacks_.sessionErrors, 0);\n }\n \n+TEST_F(HTTP2CodecTest, DuplicateBadHeaderPriority) {\n+  // Sent an initial header with a circular dependency\n+  HTTPMessage req = getGetRequest();\n+  req.setHTTP2Priority(HTTPMessage::HTTPPriority(0, false, 7));\n+  upstreamCodec_.generateHeader(output_, 1, req, true /* eom */);\n+\n+  // Hack ingress with circular dependency.\n+  EXPECT_TRUE(parse([&](IOBuf* ingress) {\n+    folly::io::RWPrivateCursor c(ingress);\n+    c.skip(http2::kFrameHeaderSize + http2::kConnectionPreface.length());\n+    c.writeBE<uint32_t>(1);\n+  }));\n+\n+  EXPECT_EQ(callbacks_.streamErrors, 1);\n+  EXPECT_EQ(callbacks_.sessionErrors, 0);\n+\n+  // On the same stream, send another request.\n+  HTTPMessage nextRequest = getGetRequest();\n+  upstreamCodec_.generateHeader(output_, 1, nextRequest, true /* eom */);\n+  parse();\n+  EXPECT_EQ(callbacks_.streamErrors, 2);\n+  EXPECT_EQ(callbacks_.sessionErrors, 0);\n+}\n+\n TEST_F(HTTP2CodecTest, BadPriority) {\n   auto pri = HTTPMessage::HTTPPriority(0, true, 1);\n   upstreamCodec_.generatePriority(output_, 1, pri);"
+    }
+  ]
+}

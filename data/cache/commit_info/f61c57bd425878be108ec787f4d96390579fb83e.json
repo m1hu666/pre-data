@@ -1,0 +1,101 @@
+{
+  "sha": "f61c57bd425878be108ec787f4d96390579fb83e",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZjYxYzU3YmQ0MjU4NzhiZTEwOGVjNzg3ZjRkOTYzOTA1NzlmYjgzZQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T19:57:00Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T20:05:06Z"
+    },
+    "message": "Prevent division by 0\n\nPiperOrigin-RevId: 370966645\nChange-Id: I831bfd96c7eb77b02d7ebb744335f59f6e5728cb",
+    "tree": {
+      "sha": "a0d614124d13a59a78da0857a6c89e99fbdd9a4c",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/a0d614124d13a59a78da0857a6c89e99fbdd9a4c"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/f61c57bd425878be108ec787f4d96390579fb83e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f61c57bd425878be108ec787f4d96390579fb83e",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/f61c57bd425878be108ec787f4d96390579fb83e",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f61c57bd425878be108ec787f4d96390579fb83e/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e4b29809543b250bc9b19678ec4776299dd569ba",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e4b29809543b250bc9b19678ec4776299dd569ba",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/e4b29809543b250bc9b19678ec4776299dd569ba"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "092868d5a6a745baa712e08cc2328e6d39a655ab",
+      "filename": "tensorflow/lite/kernels/embedding_lookup.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/f61c57bd425878be108ec787f4d96390579fb83e/tensorflow%2Flite%2Fkernels%2Fembedding_lookup.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/f61c57bd425878be108ec787f4d96390579fb83e/tensorflow%2Flite%2Fkernels%2Fembedding_lookup.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fembedding_lookup.cc?ref=f61c57bd425878be108ec787f4d96390579fb83e",
+      "patch": "@@ -71,6 +71,10 @@ TfLiteStatus EvalSimple(TfLiteContext* context, TfLiteNode* node,\n                         const TfLiteTensor* lookup, const TfLiteTensor* value,\n                         TfLiteTensor* output) {\n   const int row_size = SizeOfDimension(value, 0);\n+  if (row_size == 0) {\n+    // Propagate empty tensor if input is empty\n+    return kTfLiteOk;\n+  }\n   const int row_bytes = value->bytes / row_size;\n \n   char* output_raw = GetTensorData<char>(output);"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "d396a35cc9094ee8066311bd3b1d5df83c40ccc8",
+  "node_id": "MDY6Q29tbWl0NjI3NzgwNzpkMzk2YTM1Y2M5MDk0ZWU4MDY2MzExYmQzYjFkNWRmODNjNDBjY2M4",
+  "commit": {
+    "author": {
+      "name": "Tobias Br\u00e4utigam",
+      "email": "braeutigam@gonicus.de",
+      "date": "2019-08-01T09:23:19Z"
+    },
+    "committer": {
+      "name": "Tobias Br\u00e4utigam",
+      "email": "braeutigam@gonicus.de",
+      "date": "2019-08-01T09:23:19Z"
+    },
+    "message": "lock version",
+    "tree": {
+      "sha": "6b6ce6689236d21f010ab1df08220c60c9e6130f",
+      "url": "https://api.github.com/repos/gonicus/gosa/git/trees/6b6ce6689236d21f010ab1df08220c60c9e6130f"
+    },
+    "url": "https://api.github.com/repos/gonicus/gosa/git/commits/d396a35cc9094ee8066311bd3b1d5df83c40ccc8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/gonicus/gosa/commits/d396a35cc9094ee8066311bd3b1d5df83c40ccc8",
+  "html_url": "https://github.com/gonicus/gosa/commit/d396a35cc9094ee8066311bd3b1d5df83c40ccc8",
+  "comments_url": "https://api.github.com/repos/gonicus/gosa/commits/d396a35cc9094ee8066311bd3b1d5df83c40ccc8/comments",
+  "author": {
+    "login": "peuter",
+    "id": 5507035,
+    "node_id": "MDQ6VXNlcjU1MDcwMzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5507035?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/peuter",
+    "html_url": "https://github.com/peuter",
+    "followers_url": "https://api.github.com/users/peuter/followers",
+    "following_url": "https://api.github.com/users/peuter/following{/other_user}",
+    "gists_url": "https://api.github.com/users/peuter/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/peuter/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/peuter/subscriptions",
+    "organizations_url": "https://api.github.com/users/peuter/orgs",
+    "repos_url": "https://api.github.com/users/peuter/repos",
+    "events_url": "https://api.github.com/users/peuter/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/peuter/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "peuter",
+    "id": 5507035,
+    "node_id": "MDQ6VXNlcjU1MDcwMzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5507035?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/peuter",
+    "html_url": "https://github.com/peuter",
+    "followers_url": "https://api.github.com/users/peuter/followers",
+    "following_url": "https://api.github.com/users/peuter/following{/other_user}",
+    "gists_url": "https://api.github.com/users/peuter/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/peuter/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/peuter/subscriptions",
+    "organizations_url": "https://api.github.com/users/peuter/orgs",
+    "repos_url": "https://api.github.com/users/peuter/repos",
+    "events_url": "https://api.github.com/users/peuter/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/peuter/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4cd328449127deb0fdb0e6c6f0cd9f56042a6f2e",
+      "url": "https://api.github.com/repos/gonicus/gosa/commits/4cd328449127deb0fdb0e6c6f0cd9f56042a6f2e",
+      "html_url": "https://github.com/gonicus/gosa/commit/4cd328449127deb0fdb0e6c6f0cd9f56042a6f2e"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "09dfea09392df22d6ee4cb0563c84d09ad3894cf",
+      "filename": "backend/setup.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/gonicus/gosa/blob/d396a35cc9094ee8066311bd3b1d5df83c40ccc8/backend%2Fsetup.py",
+      "raw_url": "https://github.com/gonicus/gosa/raw/d396a35cc9094ee8066311bd3b1d5df83c40ccc8/backend%2Fsetup.py",
+      "contents_url": "https://api.github.com/repos/gonicus/gosa/contents/backend%2Fsetup.py?ref=d396a35cc9094ee8066311bd3b1d5df83c40ccc8",
+      "patch": "@@ -237,7 +237,7 @@ def run(self):\n         'pycups',\n         'sh',\n         'pylint',\n-        'sqlalchemy_searchable>=1.0.3',\n+        'sqlalchemy_searchable==1.0.3',\n         'bcrypt',\n         'polib'\n         ],"
+    }
+  ]
+}

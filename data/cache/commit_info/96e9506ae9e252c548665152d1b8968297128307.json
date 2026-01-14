@@ -1,0 +1,101 @@
+{
+  "sha": "96e9506ae9e252c548665152d1b8968297128307",
+  "node_id": "MDY6Q29tbWl0OTQzMjk6OTZlOTUwNmFlOWUyNTJjNTQ4NjY1MTUyZDFiODk2ODI5NzEyODMwNw==",
+  "commit": {
+    "author": {
+      "name": "Alexander Batischev",
+      "email": "eual.jp@gmail.com",
+      "date": "2017-08-13T18:48:35Z"
+    },
+    "committer": {
+      "name": "Alexander Batischev",
+      "email": "eual.jp@gmail.com",
+      "date": "2017-08-17T18:06:48Z"
+    },
+    "message": "Sanitize inputs to bookmark-cmd (#591)\n\nNewsbeuter didn't properly shell-escape the arguments passed to\nbookmarking command, which allows a remote attacker to perform remote\ncode execution by crafting an RSS item whose title and/or URL contain\nsomething interpretable by the shell (most notably subshell\ninvocations.)\n\nThis has been reported by Jeriko One <jeriko.one@gmx.us>, complete with\nPoC and a patch.\n\nThis vulnerability was assigned CVE-2017-12904.",
+    "tree": {
+      "sha": "e06bc1e3660dce324beba177978c55a8d880909d",
+      "url": "https://api.github.com/repos/akrennmair/newsbeuter/git/trees/e06bc1e3660dce324beba177978c55a8d880909d"
+    },
+    "url": "https://api.github.com/repos/akrennmair/newsbeuter/git/commits/96e9506ae9e252c548665152d1b8968297128307",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJGBAABCAAwFiEEzmxDB5NIWOP9lKAPNWlhogyL/QMFAlmV3BISHGV1YWwuanBA\nZ21haWwuY29tAAoJEDVpYaIMi/0DaWMQAK/YKp/ki2gW4Kza80fX5WETNMbPdUGp\nKBMnfj4A9JEDFwV68mIQKq+qWH10v13s3c2oK/IQQvTO1CHTg/JIrf+HllJcqGVq\nMhpEH1R4G3JWpTYA+9s88zUw/mWOt/45o43EnwKjmCFIMiTbStRRTz3ig8hrta/y\nve3DWyOmrXlREQyVKQPBmMHJbdOeKmlAnQ7Z8xWnmfe1DIZ094Ht7x0VTbISspUy\naQ6ZWVFJUzrcxCHBeYAuUSOlU+38Q3xEBmhO1JHgnM1Q2t5FidnCBljbc1p6NNbC\noZsuHN5KU4A4scJmOWz6VxbUzKE+8JH+diCLL3IDaA5l050/y2XYPTPWNcj6jgJ5\ng3nYyOA+QdUkSwn7i0IuG8y4SczpdCRN32L0JSrlNIa223yb8NA69Hck6GKc5jmu\nwoq+PhETfd6JgyS8oaQ85bstLzCYyrDHxq/Lj3134Xhw/cZgA56p95Xr9LDKIx4M\n20Xwdx4yZNseMOhH10JglQFxodM1nlSL2CeC2tNonOTjdlzfBNNz3/Mis5ODFGI2\nPNfh0yC4y5EjmFDxD+qVke4IDHb8JT6DUBojnWX5NA5/7+C5WuuDQIhBNwHEfD42\noxWwxTV3dJG09am5MwXII/i4L2R9vlCYyphueo0BbCNflz6QcAwVM62S0d9gjURR\nZSYllnvsPi5O\n=L1mr\n-----END PGP SIGNATURE-----",
+      "payload": "tree e06bc1e3660dce324beba177978c55a8d880909d\nparent 2619d1f41303700deff15d9781005176aec8ddce\nauthor Alexander Batischev <eual.jp@gmail.com> 1502650115 +0300\ncommitter Alexander Batischev <eual.jp@gmail.com> 1502993208 +0300\n\nSanitize inputs to bookmark-cmd (#591)\n\nNewsbeuter didn't properly shell-escape the arguments passed to\nbookmarking command, which allows a remote attacker to perform remote\ncode execution by crafting an RSS item whose title and/or URL contain\nsomething interpretable by the shell (most notably subshell\ninvocations.)\n\nThis has been reported by Jeriko One <jeriko.one@gmx.us>, complete with\nPoC and a patch.\n\nThis vulnerability was assigned CVE-2017-12904.\n",
+      "verified_at": "2024-11-07T00:51:56Z"
+    }
+  },
+  "url": "https://api.github.com/repos/akrennmair/newsbeuter/commits/96e9506ae9e252c548665152d1b8968297128307",
+  "html_url": "https://github.com/akrennmair/newsbeuter/commit/96e9506ae9e252c548665152d1b8968297128307",
+  "comments_url": "https://api.github.com/repos/akrennmair/newsbeuter/commits/96e9506ae9e252c548665152d1b8968297128307/comments",
+  "author": {
+    "login": "Minoru",
+    "id": 118875,
+    "node_id": "MDQ6VXNlcjExODg3NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/118875?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Minoru",
+    "html_url": "https://github.com/Minoru",
+    "followers_url": "https://api.github.com/users/Minoru/followers",
+    "following_url": "https://api.github.com/users/Minoru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Minoru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Minoru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Minoru/subscriptions",
+    "organizations_url": "https://api.github.com/users/Minoru/orgs",
+    "repos_url": "https://api.github.com/users/Minoru/repos",
+    "events_url": "https://api.github.com/users/Minoru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Minoru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Minoru",
+    "id": 118875,
+    "node_id": "MDQ6VXNlcjExODg3NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/118875?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Minoru",
+    "html_url": "https://github.com/Minoru",
+    "followers_url": "https://api.github.com/users/Minoru/followers",
+    "following_url": "https://api.github.com/users/Minoru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Minoru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Minoru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Minoru/subscriptions",
+    "organizations_url": "https://api.github.com/users/Minoru/orgs",
+    "repos_url": "https://api.github.com/users/Minoru/repos",
+    "events_url": "https://api.github.com/users/Minoru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Minoru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2619d1f41303700deff15d9781005176aec8ddce",
+      "url": "https://api.github.com/repos/akrennmair/newsbeuter/commits/2619d1f41303700deff15d9781005176aec8ddce",
+      "html_url": "https://github.com/akrennmair/newsbeuter/commit/2619d1f41303700deff15d9781005176aec8ddce"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "40db06c59dcfa90f59a3306f515593b579b3db1d",
+      "filename": "src/controller.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/akrennmair/newsbeuter/blob/96e9506ae9e252c548665152d1b8968297128307/src%2Fcontroller.cpp",
+      "raw_url": "https://github.com/akrennmair/newsbeuter/raw/96e9506ae9e252c548665152d1b8968297128307/src%2Fcontroller.cpp",
+      "contents_url": "https://api.github.com/repos/akrennmair/newsbeuter/contents/src%2Fcontroller.cpp?ref=96e9506ae9e252c548665152d1b8968297128307",
+      "patch": "@@ -1344,12 +1344,12 @@ std::string controller::bookmark(\n \tstd::string bookmark_cmd = cfg.get_configvalue(\"bookmark-cmd\");\n \tbool is_interactive = cfg.get_configvalue_as_bool(\"bookmark-interactive\");\n \tif (bookmark_cmd.length() > 0) {\n-\t\tstd::string cmdline = strprintf::fmt(\"%s '%s' %s %s %s\",\n+\t\tstd::string cmdline = strprintf::fmt(\"%s '%s' '%s' '%s' '%s'\",\n \t\t                                       bookmark_cmd,\n \t\t                                       utils::replace_all(url,\"'\", \"%27\"),\n-\t\t                                       quote_empty(stfl::quote(title)),\n-\t\t                                       quote_empty(stfl::quote(description)),\n-\t\t                                       quote_empty(stfl::quote(feed_title)));\n+\t\t                                       utils::replace_all(title,\"'\", \"%27\"),\n+\t\t                                       utils::replace_all(description,\"'\", \"%27\"),\n+\t\t                                       utils::replace_all(feed_title,\"'\", \"%27\"));\n \n \t\tLOG(level::DEBUG, \"controller::bookmark: cmd = %s\", cmdline);\n "
+    }
+  ]
+}

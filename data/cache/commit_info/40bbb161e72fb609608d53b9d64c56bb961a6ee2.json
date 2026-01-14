@@ -1,0 +1,113 @@
+{
+  "sha": "40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+  "node_id": "MDY6Q29tbWl0ODk5NDMxNjI6NDBiYmIxNjFlNzJmYjYwOTYwOGQ1M2I5ZDY0YzU2YmI5NjFhNmVlMg==",
+  "commit": {
+    "author": {
+      "name": "Kyle Nekritz",
+      "email": "knekritz@fb.com",
+      "date": "2019-02-26T01:07:20Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-02-26T01:12:24Z"
+    },
+    "message": "Avoid arithmetic operation on uint16 read from the wire.\n\nSummary:\nThis could overflow previously.\n\nCVE-2019-3560\n\nReviewed By: yfeldblum\n\nDifferential Revision: D14152362\n\nfbshipit-source-id: c0ebb3fc59b49c7c23e6bcb90458c19cd891be65",
+    "tree": {
+      "sha": "3e36e5a6bc19897dbfc9746b8b096df38ba3a8a6",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/git/trees/3e36e5a6bc19897dbfc9746b8b096df38ba3a8a6"
+    },
+    "url": "https://api.github.com/repos/facebookincubator/fizz/git/commits/40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebookincubator/fizz/commits/40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+  "html_url": "https://github.com/facebookincubator/fizz/commit/40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+  "comments_url": "https://api.github.com/repos/facebookincubator/fizz/commits/40bbb161e72fb609608d53b9d64c56bb961a6ee2/comments",
+  "author": {
+    "login": "knekritz",
+    "id": 5401630,
+    "node_id": "MDQ6VXNlcjU0MDE2MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5401630?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/knekritz",
+    "html_url": "https://github.com/knekritz",
+    "followers_url": "https://api.github.com/users/knekritz/followers",
+    "following_url": "https://api.github.com/users/knekritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/knekritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/knekritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/knekritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/knekritz/orgs",
+    "repos_url": "https://api.github.com/users/knekritz/repos",
+    "events_url": "https://api.github.com/users/knekritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/knekritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "261b8f645129e2e42faa2f518aa14b9064678f69",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/commits/261b8f645129e2e42faa2f518aa14b9064678f69",
+      "html_url": "https://github.com/facebookincubator/fizz/commit/261b8f645129e2e42faa2f518aa14b9064678f69"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 11,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "958c412a29354d67d7d55a592ca571c43975dede",
+      "filename": "fizz/record/PlaintextRecordLayer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/40bbb161e72fb609608d53b9d64c56bb961a6ee2/fizz%2Frecord%2FPlaintextRecordLayer.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/40bbb161e72fb609608d53b9d64c56bb961a6ee2/fizz%2Frecord%2FPlaintextRecordLayer.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2FPlaintextRecordLayer.cpp?ref=40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+      "patch": "@@ -39,9 +39,7 @@ folly::Optional<TLSMessage> PlaintextReadRecordLayer::read(\n         if (buf.chainLength() < (cursor - buf.front()) + length) {\n           return folly::none;\n         }\n-        length +=\n-            sizeof(ContentType) + sizeof(ProtocolVersion) + sizeof(uint16_t);\n-        buf.trimStart(length);\n+        buf.trimStart(static_cast<size_t>(kPlaintextHeaderSize) + length);\n         continue;\n       } else if (msg.type != ContentType::change_cipher_spec) {\n         skipEncryptedRecords_ = false;"
+    },
+    {
+      "sha": "1f65e7187aaf2c6a841b9e4c8fb153bccecf96c3",
+      "filename": "fizz/record/test/PlaintextRecordTest.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/40bbb161e72fb609608d53b9d64c56bb961a6ee2/fizz%2Frecord%2Ftest%2FPlaintextRecordTest.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/40bbb161e72fb609608d53b9d64c56bb961a6ee2/fizz%2Frecord%2Ftest%2FPlaintextRecordTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2Ftest%2FPlaintextRecordTest.cpp?ref=40bbb161e72fb609608d53b9d64c56bb961a6ee2",
+      "patch": "@@ -115,6 +115,16 @@ TEST_F(PlaintextRecordTest, TestSkipAndWait) {\n   EXPECT_TRUE(queue_.empty());\n }\n \n+TEST_F(PlaintextRecordTest, TestSkipOversizedRecord) {\n+  read_.setSkipEncryptedRecords(true);\n+  addToQueue(\"170301fffb\");\n+  auto longBuf = IOBuf::create(0xfffb);\n+  longBuf->append(0xfffb);\n+  queue_.append(std::move(longBuf));\n+  EXPECT_FALSE(read_.read(queue_).hasValue());\n+  EXPECT_TRUE(queue_.empty());\n+}\n+\n TEST_F(PlaintextRecordTest, TestWaitBeforeSkip) {\n   read_.setSkipEncryptedRecords(true);\n   addToQueue(\"170301000501234567\");"
+    }
+  ]
+}

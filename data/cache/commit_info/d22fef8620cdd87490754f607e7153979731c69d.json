@@ -1,0 +1,113 @@
+{
+  "sha": "d22fef8620cdd87490754f607e7153979731c69d",
+  "node_id": "MDY6Q29tbWl0NDY1NjgxOmQyMmZlZjg2MjBjZGQ4NzQ5MDc1NGY2MDdlNzE1Mzk3OTczMWM2OWQ=",
+  "commit": {
+    "author": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2018-07-13T21:50:47Z"
+    },
+    "committer": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2018-07-14T06:08:50Z"
+    },
+    "message": "Better cleanup lines coming from network.\n\nThanks for Jeriko One <jeriko.one@gmx.us> for finding and reporting this.",
+    "tree": {
+      "sha": "a53036d5fc98c81cc4b5d469f41b798c9e6d942f",
+      "url": "https://api.github.com/repos/znc/znc/git/trees/a53036d5fc98c81cc4b5d469f41b798c9e6d942f"
+    },
+    "url": "https://api.github.com/repos/znc/znc/git/commits/d22fef8620cdd87490754f607e7153979731c69d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/znc/znc/commits/d22fef8620cdd87490754f607e7153979731c69d",
+  "html_url": "https://github.com/znc/znc/commit/d22fef8620cdd87490754f607e7153979731c69d",
+  "comments_url": "https://api.github.com/repos/znc/znc/commits/d22fef8620cdd87490754f607e7153979731c69d/comments",
+  "author": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a7bfbd93812950b7444841431e8e297e62cb524e",
+      "url": "https://api.github.com/repos/znc/znc/commits/a7bfbd93812950b7444841431e8e297e62cb524e",
+      "html_url": "https://github.com/znc/znc/commit/a7bfbd93812950b7444841431e8e297e62cb524e"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 4,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "c0efd628340b12af377439758f92569142f4bf33",
+      "filename": "src/Client.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/znc/znc/blob/d22fef8620cdd87490754f607e7153979731c69d/src%2FClient.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/d22fef8620cdd87490754f607e7153979731c69d/src%2FClient.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2FClient.cpp?ref=d22fef8620cdd87490754f607e7153979731c69d",
+      "patch": "@@ -103,7 +103,8 @@ void CClient::ReadLine(const CString& sData) {\n     CLanguageScope user_lang(GetUser() ? GetUser()->GetLanguage() : \"\");\n     CString sLine = sData;\n \n-    sLine.TrimRight(\"\\n\\r\");\n+    sLine.Replace(\"\\n\", \"\");\n+    sLine.Replace(\"\\r\", \"\");\n \n     DEBUG(\"(\" << GetFullName() << \") CLI -> ZNC [\"\n         << CDebug::Filter(sLine) << \"]\");"
+    },
+    {
+      "sha": "259881dc847bd5a5fea3dbc027870d8541819733",
+      "filename": "src/IRCSock.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/znc/znc/blob/d22fef8620cdd87490754f607e7153979731c69d/src%2FIRCSock.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/d22fef8620cdd87490754f607e7153979731c69d/src%2FIRCSock.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2FIRCSock.cpp?ref=d22fef8620cdd87490754f607e7153979731c69d",
+      "patch": "@@ -156,7 +156,8 @@ void CIRCSock::Quit(const CString& sQuitMsg) {\n void CIRCSock::ReadLine(const CString& sData) {\n     CString sLine = sData;\n \n-    sLine.TrimRight(\"\\n\\r\");\n+    sLine.Replace(\"\\n\", \"\");\n+    sLine.Replace(\"\\r\", \"\");\n \n     DEBUG(\"(\" << m_pNetwork->GetUser()->GetUserName() << \"/\"\n               << m_pNetwork->GetName() << \") IRC -> ZNC [\" << sLine << \"]\");"
+    }
+  ]
+}

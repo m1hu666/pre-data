@@ -1,0 +1,101 @@
+{
+  "sha": "c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0",
+  "node_id": "MDY6Q29tbWl0ODQwNjY5MzU6YzQ4ZTRjNjUwM2Y3ZGFiZDQxZjExZDRjOWM3YjdmODk2MGU3ZjJjMA==",
+  "commit": {
+    "author": {
+      "name": "Antonio Larrosa",
+      "email": "larrosa@kde.org",
+      "date": "2017-03-06T11:51:22Z"
+    },
+    "committer": {
+      "name": "Antonio Larrosa",
+      "email": "larrosa@kde.org",
+      "date": "2017-03-06T12:57:32Z"
+    },
+    "message": "Always check the number of coefficients\n\nWhen building the library with NDEBUG, asserts are eliminated\nso it's better to always check that the number of coefficients\nis inside the array range.\n\nThis fixes the 00191-audiofile-indexoob issue in #41",
+    "tree": {
+      "sha": "9880ec3d1c914e4934393bfe21053683c2b6915f",
+      "url": "https://api.github.com/repos/antlarr/audiofile/git/trees/9880ec3d1c914e4934393bfe21053683c2b6915f"
+    },
+    "url": "https://api.github.com/repos/antlarr/audiofile/git/commits/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/antlarr/audiofile/commits/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0",
+  "html_url": "https://github.com/antlarr/audiofile/commit/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0",
+  "comments_url": "https://api.github.com/repos/antlarr/audiofile/commits/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0/comments",
+  "author": {
+    "login": "antlarr",
+    "id": 4385446,
+    "node_id": "MDQ6VXNlcjQzODU0NDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4385446?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antlarr",
+    "html_url": "https://github.com/antlarr",
+    "followers_url": "https://api.github.com/users/antlarr/followers",
+    "following_url": "https://api.github.com/users/antlarr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antlarr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antlarr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antlarr/subscriptions",
+    "organizations_url": "https://api.github.com/users/antlarr/orgs",
+    "repos_url": "https://api.github.com/users/antlarr/repos",
+    "events_url": "https://api.github.com/users/antlarr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antlarr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "antlarr",
+    "id": 4385446,
+    "node_id": "MDQ6VXNlcjQzODU0NDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4385446?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antlarr",
+    "html_url": "https://github.com/antlarr",
+    "followers_url": "https://api.github.com/users/antlarr/followers",
+    "following_url": "https://api.github.com/users/antlarr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antlarr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antlarr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antlarr/subscriptions",
+    "organizations_url": "https://api.github.com/users/antlarr/orgs",
+    "repos_url": "https://api.github.com/users/antlarr/repos",
+    "events_url": "https://api.github.com/users/antlarr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antlarr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b62c902dd258125cac86cd2df21fc898035a43d3",
+      "url": "https://api.github.com/repos/antlarr/audiofile/commits/b62c902dd258125cac86cd2df21fc898035a43d3",
+      "html_url": "https://github.com/antlarr/audiofile/commit/b62c902dd258125cac86cd2df21fc898035a43d3"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "61f9541d34a4a2dd44e007ab89f004e310b9c960",
+      "filename": "libaudiofile/WAVE.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/antlarr/audiofile/blob/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0/libaudiofile%2FWAVE.cpp",
+      "raw_url": "https://github.com/antlarr/audiofile/raw/c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0/libaudiofile%2FWAVE.cpp",
+      "contents_url": "https://api.github.com/repos/antlarr/audiofile/contents/libaudiofile%2FWAVE.cpp?ref=c48e4c6503f7dabd41f11d4c9c7b7f8960e7f2c0",
+      "patch": "@@ -281,6 +281,12 @@ status WAVEFile::parseFormat(const Tag &id, uint32_t size)\n \n \t\t\t/* numCoefficients should be at least 7. */\n \t\t\tassert(numCoefficients >= 7 && numCoefficients <= 255);\n+\t\t\tif (numCoefficients < 7 || numCoefficients > 255)\n+\t\t\t{\n+\t\t\t\t_af_error(AF_BAD_HEADER,\n+\t\t\t\t\t\t\"Bad number of coefficients\");\n+\t\t\t\treturn AF_FAIL;\n+\t\t\t}\n \n \t\t\tm_msadpcmNumCoefficients = numCoefficients;\n "
+    }
+  ]
+}

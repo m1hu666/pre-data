@@ -1,0 +1,101 @@
+{
+  "sha": "ab51e5b813573dc9f51efa335aebcf2994125ee9",
+  "node_id": "C_kwDOArmXAtoAKGFiNTFlNWI4MTM1NzNkYzlmNTFlZmEzMzVhZWJjZjI5OTQxMjVlZTk",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-12T03:24:32Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-12T03:36:01Z"
+    },
+    "message": "Prevent memory leak in decoding PNG images.\n\nPiperOrigin-RevId: 409300653\nChange-Id: I6182124c545989cef80cefd439b659095920763b",
+    "tree": {
+      "sha": "a3a2d3cd26c417a6614031ce51377b7a4deb4209",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/a3a2d3cd26c417a6614031ce51377b7a4deb4209"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/ab51e5b813573dc9f51efa335aebcf2994125ee9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ab51e5b813573dc9f51efa335aebcf2994125ee9",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/ab51e5b813573dc9f51efa335aebcf2994125ee9",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ab51e5b813573dc9f51efa335aebcf2994125ee9/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fb5ce99505358985ace9e811fd25a57047471d6f",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/fb5ce99505358985ace9e811fd25a57047471d6f",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/fb5ce99505358985ace9e811fd25a57047471d6f"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 12,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "ee0ae957203b37b4a66523e4404a41e329862eb9",
+      "filename": "tensorflow/core/kernels/image/decode_image_op.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ab51e5b813573dc9f51efa335aebcf2994125ee9/tensorflow%2Fcore%2Fkernels%2Fimage%2Fdecode_image_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ab51e5b813573dc9f51efa335aebcf2994125ee9/tensorflow%2Fcore%2Fkernels%2Fimage%2Fdecode_image_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fimage%2Fdecode_image_op.cc?ref=ab51e5b813573dc9f51efa335aebcf2994125ee9",
+      "patch": "@@ -18,6 +18,8 @@ limitations under the License.\n #include <cstdint>\n #include <memory>\n \n+#include \"tensorflow/core/lib/gtl/cleanup.h\"\n+\n #define EIGEN_USE_THREADS\n \n #include \"absl/strings/escaping.h\"\n@@ -326,6 +328,16 @@ class DecodeImageV2Op : public OpKernel {\n         context, png::CommonInitDecode(input, channels_, channel_bits, &decode),\n         errors::InvalidArgument(\"Invalid PNG. Failed to initialize decoder.\"));\n \n+    // If we reach this point, then there is data in `decode` which must be\n+    // freed by the time we end execution in this function. We cannot call\n+    // `png::CommonFreeDecode()` before an `OP_REQUIRES` because if\n+    // `OP_REQUIRES` constraint is satisfied then the data would be freed\n+    // prematurely. Instead, let's use a `Cleanup` object.\n+    auto cleanup = gtl::MakeCleanup([&decode]() {\n+      std::cerr << \"Cleanup called...\\n\";\n+      png::CommonFreeDecode(&decode);\n+    });\n+\n     // Verify that width and height are not too large:\n     // - verify width and height don't overflow int.\n     // - width can later be multiplied by channels_ and sizeof(uint16), so"
+    }
+  ]
+}

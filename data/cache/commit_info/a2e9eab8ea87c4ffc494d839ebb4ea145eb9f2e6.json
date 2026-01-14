@@ -1,0 +1,101 @@
+{
+  "sha": "a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6",
+  "node_id": "MDY6Q29tbWl0ODQwNjY5MzU6YTJlOWVhYjhlYTg3YzRmZmM0OTRkODM5ZWJiNGVhMTQ1ZWI5ZjJlNg==",
+  "commit": {
+    "author": {
+      "name": "Antonio Larrosa",
+      "email": "larrosa@kde.org",
+      "date": "2017-03-06T17:59:26Z"
+    },
+    "committer": {
+      "name": "Antonio Larrosa",
+      "email": "larrosa@kde.org",
+      "date": "2017-03-06T17:59:26Z"
+    },
+    "message": "Actually fail when error occurs in parseFormat\n\nWhen there's an unsupported number of bits per sample or an invalid\nnumber of samples per block, don't only print an error message using\nthe error handler, but actually stop parsing the file.\n\nThis fixes #35 (also reported at\nhttps://bugzilla.opensuse.org/show_bug.cgi?id=1026983 and\nhttps://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-imadecodeblockwave-ima-cpp/\n)",
+    "tree": {
+      "sha": "9ce9833887e96577a6531ae879493a6d3a78cfa2",
+      "url": "https://api.github.com/repos/antlarr/audiofile/git/trees/9ce9833887e96577a6531ae879493a6d3a78cfa2"
+    },
+    "url": "https://api.github.com/repos/antlarr/audiofile/git/commits/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/antlarr/audiofile/commits/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6",
+  "html_url": "https://github.com/antlarr/audiofile/commit/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6",
+  "comments_url": "https://api.github.com/repos/antlarr/audiofile/commits/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6/comments",
+  "author": {
+    "login": "antlarr",
+    "id": 4385446,
+    "node_id": "MDQ6VXNlcjQzODU0NDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4385446?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antlarr",
+    "html_url": "https://github.com/antlarr",
+    "followers_url": "https://api.github.com/users/antlarr/followers",
+    "following_url": "https://api.github.com/users/antlarr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antlarr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antlarr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antlarr/subscriptions",
+    "organizations_url": "https://api.github.com/users/antlarr/orgs",
+    "repos_url": "https://api.github.com/users/antlarr/repos",
+    "events_url": "https://api.github.com/users/antlarr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antlarr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "antlarr",
+    "id": 4385446,
+    "node_id": "MDQ6VXNlcjQzODU0NDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4385446?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antlarr",
+    "html_url": "https://github.com/antlarr",
+    "followers_url": "https://api.github.com/users/antlarr/followers",
+    "following_url": "https://api.github.com/users/antlarr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antlarr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antlarr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antlarr/subscriptions",
+    "organizations_url": "https://api.github.com/users/antlarr/orgs",
+    "repos_url": "https://api.github.com/users/antlarr/repos",
+    "events_url": "https://api.github.com/users/antlarr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antlarr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b62c902dd258125cac86cd2df21fc898035a43d3",
+      "url": "https://api.github.com/repos/antlarr/audiofile/commits/b62c902dd258125cac86cd2df21fc898035a43d3",
+      "html_url": "https://github.com/antlarr/audiofile/commit/b62c902dd258125cac86cd2df21fc898035a43d3"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d762249f00d4fd00bc9039618f8096d439cd14fe",
+      "filename": "libaudiofile/WAVE.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/antlarr/audiofile/blob/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6/libaudiofile%2FWAVE.cpp",
+      "raw_url": "https://github.com/antlarr/audiofile/raw/a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6/libaudiofile%2FWAVE.cpp",
+      "contents_url": "https://api.github.com/repos/antlarr/audiofile/contents/libaudiofile%2FWAVE.cpp?ref=a2e9eab8ea87c4ffc494d839ebb4ea145eb9f2e6",
+      "patch": "@@ -326,13 +326,15 @@ status WAVEFile::parseFormat(const Tag &id, uint32_t size)\n \t\t\t{\n \t\t\t\t_af_error(AF_BAD_NOT_IMPLEMENTED,\n \t\t\t\t\t\"IMA ADPCM compression supports only 4 bits per sample\");\n+\t\t\t\treturn AF_FAIL;\n \t\t\t}\n \n \t\t\tint bytesPerBlock = (samplesPerBlock + 14) / 8 * 4 * channelCount;\n \t\t\tif (bytesPerBlock > blockAlign || (samplesPerBlock % 8) != 1)\n \t\t\t{\n \t\t\t\t_af_error(AF_BAD_CODEC_CONFIG,\n \t\t\t\t\t\"Invalid samples per block for IMA ADPCM compression\");\n+\t\t\t\treturn AF_FAIL;\n \t\t\t}\n \n \t\t\ttrack->f.sampleWidth = 16;"
+    }
+  ]
+}

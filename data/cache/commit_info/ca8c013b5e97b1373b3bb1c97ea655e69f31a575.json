@@ -1,0 +1,197 @@
+{
+  "sha": "ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6Y2E4YzAxM2I1ZTk3YjEzNzNiM2JiMWM5N2VhNjU1ZTY5ZjMxYTU3NQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-19T00:49:02Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-19T00:56:30Z"
+    },
+    "message": "Prevent integer truncation from 64 to 32 bits.\n\nThe `tensorflow::Shard` functions last argument must be a 2 argument function where both arguments are `int64` (`long long`, 64 bits). However, there are usages where code passes in a function where arguments are `int` or `int32` (32 bits). In these cases, it is possible that the integer truncation would later cause a segfault or other unexpected behavior.\n\nPiperOrigin-RevId: 332560414\nChange-Id: Ief649406babc8d4f60b3e7a9d573cbcc5ce5b767",
+    "tree": {
+      "sha": "f2d37dc5f337dd3b2909765d12437e07650167f7",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/f2d37dc5f337dd3b2909765d12437e07650167f7"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b9465214656c42204d86945eca80d211f50043a1",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/b9465214656c42204d86945eca80d211f50043a1",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/b9465214656c42204d86945eca80d211f50043a1"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 17,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "e3a908d1b6b20d8fabbc40b6a24fcc8c24a2ca34",
+      "filename": "tensorflow/core/kernels/boosted_trees/prediction_ops.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fboosted_trees%2Fprediction_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fboosted_trees%2Fprediction_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fboosted_trees%2Fprediction_ops.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -121,7 +121,7 @@ class BoostedTreesTrainingPredictOp : public OpKernel {\n       auto do_work = [&resource, &bucketized_features, &cached_tree_ids,\n                       &cached_node_ids, &output_partial_logits,\n                       &output_node_ids, latest_tree,\n-                      this](int32 start, int32 end) {\n+                      this](int64 start, int64 end) {\n         for (int32 i = start; i < end; ++i) {\n           int32 tree_id = cached_tree_ids(i);\n           int32 node_id = cached_node_ids(i);\n@@ -237,7 +237,7 @@ class BoostedTreesPredictOp : public OpKernel {\n \n     const int32 last_tree = resource->num_trees() - 1;\n     auto do_work = [&resource, &bucketized_features, &output_logits, last_tree,\n-                    this](int32 start, int32 end) {\n+                    this](int64 start, int64 end) {\n       for (int32 i = start; i < end; ++i) {\n         std::vector<float> tree_logits(logits_dimension_, 0.0);\n         int32 tree_id = 0;\n@@ -340,7 +340,7 @@ class BoostedTreesExampleDebugOutputsOp : public OpKernel {\n     // path. Note: feature_ids has one less value than logits_path because the\n     // first value of each logit path will be the bias.\n     auto do_work = [&resource, &bucketized_features, &output_debug_info,\n-                    last_tree](int32 start, int32 end) {\n+                    last_tree](int64 start, int64 end) {\n       for (int32 i = start; i < end; ++i) {\n         // Proto to store debug outputs, per example.\n         boosted_trees::DebugOutput example_debug_info;"
+    },
+    {
+      "sha": "5c196df9cfe6c2b643a0ca2c38f81d4a4a454c50",
+      "filename": "tensorflow/core/kernels/image/crop_and_resize_op.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fimage%2Fcrop_and_resize_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fimage%2Fcrop_and_resize_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fimage%2Fcrop_and_resize_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -223,7 +223,7 @@ struct CropAndResize<CPUDevice, T> {\n     const int depth = crops.dimension(3);\n \n     // Sharding across boxes.\n-    auto CropAndResizePerBox = [&](int start_box, int limit_box) {\n+    auto CropAndResizePerBox = [&](int64 start_box, int64 limit_box) {\n       for (int b = start_box; b < limit_box; ++b) {\n         const float y1 = boxes(b, 0);\n         const float x1 = boxes(b, 1);\n@@ -449,7 +449,7 @@ struct CropAndResizeBackpropImage<CPUDevice, T> {\n \n     grads_image.setZero();\n \n-    auto CropAndResizeBackImgPerBox = [&](int start_box, int limit_box) {\n+    auto CropAndResizeBackImgPerBox = [&](int64 start_box, int64 limit_box) {\n       for (int b = start_box; b < limit_box; ++b) {\n         const float y1 = boxes(b, 0);\n         const float x1 = boxes(b, 1);"
+    },
+    {
+      "sha": "bec28088ad1a6e64a18a3b2132284e8261d551c0",
+      "filename": "tensorflow/core/kernels/linalg/banded_triangular_solve_op.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Flinalg%2Fbanded_triangular_solve_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Flinalg%2Fbanded_triangular_solve_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Flinalg%2Fbanded_triangular_solve_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -193,7 +193,8 @@ struct LaunchBatchBandedTriangularSolve {\n \n     Shard(worker_threads.num_threads, worker_threads.workers, batch_size,\n           cost_per_unit,\n-          [&in_x, &in_y, adjoint, lower, &bcast, out](int start, int limit) {\n+          [&in_x, &in_y, adjoint, lower, &bcast, out](int64 start,\n+                                                      int64 limit) {\n             SequentialBandedTriangularSolveKernel<Scalar>::Run(\n                 in_x, in_y, lower, adjoint, bcast, out, start, limit);\n           });"
+    },
+    {
+      "sha": "95328b3e46929c34e33c88547d07ca10a7e06567",
+      "filename": "tensorflow/core/kernels/nth_element_op.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fnth_element_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fnth_element_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fnth_element_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -95,7 +95,8 @@ struct NthElementFunctor<CPUDevice, T> {\n     const int last_dim = input_tensor.dim_size(input_tensor.dims() - 1);\n \n     // Allocate each row to different shard.\n-    auto SubNthElement = [&, input, output, last_dim, n](int start, int limit) {\n+    auto SubNthElement = [&, input, output, last_dim, n](int64 start,\n+                                                         int64 limit) {\n       // std::nth_element would rearrange the array, so we need a new buffer.\n       std::vector<T> buf(last_dim);\n "
+    },
+    {
+      "sha": "a63457551ac29b0ba27a54070cb8d90ffc1b35c5",
+      "filename": "tensorflow/core/kernels/parameterized_truncated_normal_op.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fparameterized_truncated_normal_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fparameterized_truncated_normal_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fparameterized_truncated_normal_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -70,8 +70,8 @@ struct TruncatedNormalFunctor<CPUDevice, T> {\n \n     auto do_work = [samples_per_batch, num_elements, &ctx, &means, &stddevs,\n                     &minvals, &maxvals, &gen, &output,\n-                    kStdDevsInsideBoundsToUseRandnSampler](int start_batch,\n-                                                           int limit_batch) {\n+                    kStdDevsInsideBoundsToUseRandnSampler](int64 start_batch,\n+                                                           int64 limit_batch) {\n       // Capturing \"gen\" by-value would only make a copy for the _shared_\n       // lambda.  Since we want to let each worker have its own copy, we pass\n       // \"gen\" by reference and explicitly do a copy assignment here.\n@@ -333,8 +333,8 @@ struct TruncatedNormalFunctorV2<CPUDevice, T> {\n \n     auto do_work = [num_batches, samples_per_batch, &ctx, &bcast, &means,\n                     &stddevs, &minvals, &maxvals, &gen, &output,\n-                    kStdDevsInsideBoundsToUseRandnSampler](int start_output,\n-                                                           int limit_output) {\n+                    kStdDevsInsideBoundsToUseRandnSampler](int64 start_output,\n+                                                           int64 limit_output) {\n       // Capturing \"gen\" by-value would only make a copy for the _shared_\n       // lambda.  Since we want to let each worker have its own copy, we pass\n       // \"gen\" by reference and explicitly do a copy assignment here."
+    },
+    {
+      "sha": "e2487d68be867d7d51718c85b238ed01b7a3e2e9",
+      "filename": "tensorflow/core/kernels/random_binomial_op.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Frandom_binomial_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Frandom_binomial_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Frandom_binomial_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -184,7 +184,7 @@ struct RandomBinomialFunctor<CPUDevice, T, U> {\n     // the sample shape and [H1, ... Hm] for the batch shape of the samples.\n     // We have B1 * ... * Bk samples per batch member we need.\n     auto DoWork = [num_batches, samples_per_batch, &bcast, &counts, &probs,\n-                   &gen, &output](int start_output, int limit_output) {\n+                   &gen, &output](int64 start_output, int64 limit_output) {\n       // Vectorized intermediate calculations for uniform rejection sampling.\n       // We always generate at most 4 samples.\n       Eigen::array<T, 4> z;"
+    },
+    {
+      "sha": "dcb7d6b0f0edfa6bb7cdba4b1094e60166ff3f69",
+      "filename": "tensorflow/core/kernels/random_poisson_op.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Frandom_poisson_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Frandom_poisson_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Frandom_poisson_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -97,7 +97,7 @@ struct PoissonFunctor<CPUDevice, T, U> {\n     typedef random::UniformDistribution<random::PhiloxRandom, CT> Uniform;\n \n     auto DoWork = [num_samples, num_rate, &rng, samples_flat, rate_flat](\n-                      int start_output, int limit_output) {\n+                      int64 start_output, int64 limit_output) {\n       // Capturing \"rng\" by value would only make a copy for the _shared_\n       // lambda.  Since we want to let each worker have its own copy, we pass\n       // \"rng\" by reference and explicitly do a copy assignment."
+    },
+    {
+      "sha": "0d4488b538f6306936907cbd32b1b69c91141207",
+      "filename": "tensorflow/core/kernels/stateless_random_ops.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fstateless_random_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Fstateless_random_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fstateless_random_ops.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -252,7 +252,7 @@ class StatelessRandomGammaOp : public StatelessRandomOpBase {\n     // avoid a couple flops which can be done on a per-alpha basis.\n \n     auto DoWork = [samples_per_alpha, num_alphas, &random, samples_flat,\n-                   alpha_flat](int start_output, int limit_output) {\n+                   alpha_flat](int64 start_output, int64 limit_output) {\n       // Capturing \"random\" by-value would only make a copy for the _shared_\n       // lambda.  Since we want to let each worker have its own copy, we pass\n       // \"random\" by reference and explicitly do a copy assignment."
+    },
+    {
+      "sha": "3390bd073080a585ae0aceaea28694a5879efc4b",
+      "filename": "tensorflow/core/kernels/topk_op.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Ftopk_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ca8c013b5e97b1373b3bb1c97ea655e69f31a575/tensorflow%2Fcore%2Fkernels%2Ftopk_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Ftopk_op.cc?ref=ca8c013b5e97b1373b3bb1c97ea655e69f31a575",
+      "patch": "@@ -136,7 +136,7 @@ struct TopKFunctor<CPUDevice, T> {\n       return Status::OK();\n     }\n \n-    auto SortIndices = [&](int start_batch, int limit_batch) {\n+    auto SortIndices = [&](int64 start_batch, int64 limit_batch) {\n       for (int32 b = start_batch; b < limit_batch; ++b) {\n         const T* input_data = &input(b, 0);\n         const auto stable_comp = [input_data](const int32 a, const int32 b) {"
+    }
+  ]
+}

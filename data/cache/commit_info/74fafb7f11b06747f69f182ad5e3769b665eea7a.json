@@ -1,0 +1,101 @@
+{
+  "sha": "74fafb7f11b06747f69f182ad5e3769b665eea7a",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODo3NGZhZmI3ZjExYjA2NzQ3ZjY5ZjE4MmFkNWUzNzY5YjY2NWVlYTdh",
+  "commit": {
+    "author": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2016-09-03T02:57:03Z"
+    },
+    "committer": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2016-09-03T14:51:21Z"
+    },
+    "message": "m_sasl: don't allow AUTHENTICATE with mechanisms with a space",
+    "tree": {
+      "sha": "ab689f9bccf5c1e3f9aedecb934eca055f8ea8a5",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/ab689f9bccf5c1e3f9aedecb934eca055f8ea8a5"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/74fafb7f11b06747f69f182ad5e3769b665eea7a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/74fafb7f11b06747f69f182ad5e3769b665eea7a",
+  "html_url": "https://github.com/inspircd/inspircd/commit/74fafb7f11b06747f69f182ad5e3769b665eea7a",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/74fafb7f11b06747f69f182ad5e3769b665eea7a/comments",
+  "author": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5288575567d453ebd9dfbec44e4948599527dde9",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/5288575567d453ebd9dfbec44e4948599527dde9",
+      "html_url": "https://github.com/inspircd/inspircd/commit/5288575567d453ebd9dfbec44e4948599527dde9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "16a15357f57e9eef8720a34d1a3caf01a723324a",
+      "filename": "src/modules/m_sasl.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/74fafb7f11b06747f69f182ad5e3769b665eea7a/src%2Fmodules%2Fm_sasl.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/74fafb7f11b06747f69f182ad5e3769b665eea7a/src%2Fmodules%2Fm_sasl.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fmodules%2Fm_sasl.cpp?ref=74fafb7f11b06747f69f182ad5e3769b665eea7a",
+      "patch": "@@ -189,6 +189,7 @@ class CommandAuthenticate : public Command\n \t\t: Command(Creator, \"AUTHENTICATE\", 1), authExt(ext), cap(Cap)\n \t{\n \t\tworks_before_reg = true;\n+\t\tallow_empty_last_param = false;\n \t}\n \n \tCmdResult Handle (const std::vector<std::string>& parameters, User *user)\n@@ -199,6 +200,9 @@ class CommandAuthenticate : public Command\n \t\t\tif (!cap.ext.get(user))\n \t\t\t\treturn CMD_FAILURE;\n \n+\t\t\tif (parameters[0].find(' ') != std::string::npos || parameters[0][0] == ':')\n+\t\t\t\treturn CMD_FAILURE;\n+\n \t\t\tSaslAuthenticator *sasl = authExt.get(user);\n \t\t\tif (!sasl)\n \t\t\t\tauthExt.set(user, new SaslAuthenticator(user, parameters[0]));"
+    }
+  ]
+}

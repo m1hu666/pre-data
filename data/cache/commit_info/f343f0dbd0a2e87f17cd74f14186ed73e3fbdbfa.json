@@ -1,0 +1,101 @@
+{
+  "sha": "f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa",
+  "node_id": "MDY6Q29tbWl0OTA5MDkzMzpmMzQzZjBkYmQwYTJlODdmMTdjZDc0ZjE0MTg2ZWQ3M2UzZmJkYmZh",
+  "commit": {
+    "author": {
+      "name": "Kenton Varda",
+      "email": "kenton@sandstorm.io",
+      "date": "2015-02-25T21:50:43Z"
+    },
+    "committer": {
+      "name": "Kenton Varda",
+      "email": "kenton@sandstorm.io",
+      "date": "2015-03-02T18:32:39Z"
+    },
+    "message": "SECURITY: Integer overflow in pointer validation.\n\nDetails: https://github.com/sandstorm-io/capnproto/tree/master/security-advisories/2014-03-02-0-c++-integer-overflow.md",
+    "tree": {
+      "sha": "ef9dc62d8c5aeee98628e521e16c7512253f1a51",
+      "url": "https://api.github.com/repos/capnproto/capnproto/git/trees/ef9dc62d8c5aeee98628e521e16c7512253f1a51"
+    },
+    "url": "https://api.github.com/repos/capnproto/capnproto/git/commits/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/capnproto/capnproto/commits/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa",
+  "html_url": "https://github.com/capnproto/capnproto/commit/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa",
+  "comments_url": "https://api.github.com/repos/capnproto/capnproto/commits/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa/comments",
+  "author": {
+    "login": "kentonv",
+    "id": 4001805,
+    "node_id": "MDQ6VXNlcjQwMDE4MDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4001805?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kentonv",
+    "html_url": "https://github.com/kentonv",
+    "followers_url": "https://api.github.com/users/kentonv/followers",
+    "following_url": "https://api.github.com/users/kentonv/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kentonv/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kentonv/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kentonv/subscriptions",
+    "organizations_url": "https://api.github.com/users/kentonv/orgs",
+    "repos_url": "https://api.github.com/users/kentonv/repos",
+    "events_url": "https://api.github.com/users/kentonv/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kentonv/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kentonv",
+    "id": 4001805,
+    "node_id": "MDQ6VXNlcjQwMDE4MDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4001805?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kentonv",
+    "html_url": "https://github.com/kentonv",
+    "followers_url": "https://api.github.com/users/kentonv/followers",
+    "following_url": "https://api.github.com/users/kentonv/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kentonv/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kentonv/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kentonv/subscriptions",
+    "organizations_url": "https://api.github.com/users/kentonv/orgs",
+    "repos_url": "https://api.github.com/users/kentonv/repos",
+    "events_url": "https://api.github.com/users/kentonv/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kentonv/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3a717467b31fe50f87718a49818fad6506d43fcc",
+      "url": "https://api.github.com/repos/capnproto/capnproto/commits/3a717467b31fe50f87718a49818fad6506d43fcc",
+      "html_url": "https://github.com/capnproto/capnproto/commit/3a717467b31fe50f87718a49818fad6506d43fcc"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "a43dbcd6b2aa8bc3d3bebf65223046e18541afcb",
+      "filename": "c++/src/capnp/layout.c++",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/capnproto/capnproto/blob/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa/c%2B%2B%2Fsrc%2Fcapnp%2Flayout.c%2B%2B",
+      "raw_url": "https://github.com/capnproto/capnproto/raw/f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa/c%2B%2B%2Fsrc%2Fcapnp%2Flayout.c%2B%2B",
+      "contents_url": "https://api.github.com/repos/capnproto/capnproto/contents/c%2B%2B%2Fsrc%2Fcapnp%2Flayout.c%2B%2B?ref=f343f0dbd0a2e87f17cd74f14186ed73e3fbdbfa",
+      "patch": "@@ -685,7 +685,8 @@ struct WireHelpers {\n               return result;\n             }\n \n-            KJ_REQUIRE(elementTag->structRef.wordSize() / ELEMENTS * count <= wordCount,\n+            KJ_REQUIRE(elementTag->structRef.wordSize() / ELEMENTS *\n+                       ElementCount64(count) <= wordCount,\n                        \"Struct list pointer's elements overran size.\") {\n               return result;\n             }\n@@ -1663,7 +1664,7 @@ struct WireHelpers {\n           ElementCount elementCount = tag->inlineCompositeListElementCount();\n           auto wordsPerElement = tag->structRef.wordSize() / ELEMENTS;\n \n-          KJ_REQUIRE(wordsPerElement * elementCount <= wordCount,\n+          KJ_REQUIRE(wordsPerElement * ElementCount64(elementCount) <= wordCount,\n                      \"INLINE_COMPOSITE list's elements overrun its word count.\") {\n             goto useDefault;\n           }\n@@ -1919,7 +1920,7 @@ struct WireHelpers {\n       size = tag->inlineCompositeListElementCount();\n       wordsPerElement = tag->structRef.wordSize() / ELEMENTS;\n \n-      KJ_REQUIRE(size * wordsPerElement <= wordCount,\n+      KJ_REQUIRE(ElementCount64(size) * wordsPerElement <= wordCount,\n                  \"INLINE_COMPOSITE list's elements overrun its word count.\") {\n         goto useDefault;\n       }"
+    }
+  ]
+}

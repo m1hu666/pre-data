@@ -1,0 +1,125 @@
+{
+  "sha": "06eaec767e376bfdb883d912cb15e987ddf2bda1",
+  "node_id": "C_kwDOCTDsq9oAKDA2ZWFlYzc2N2UzNzZiZmRiODgzZDkxMmNiMTVlOTg3ZGRmMmJkYTE",
+  "commit": {
+    "author": {
+      "name": "Facebook Community Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2022-07-06T23:51:56Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-07-06T23:51:56Z"
+    },
+    "message": "Re-sync with internal repository (#772)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+    "tree": {
+      "sha": "89e71004a3153ee8b2401f73e99b9789763064a3",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/89e71004a3153ee8b2401f73e99b9789763064a3"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/06eaec767e376bfdb883d912cb15e987ddf2bda1",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJixiAcCRBK7hj4Ov3rIwAAGFYIAKc/UN4yMs3KQcWBoOAujS0Z\nqaTA8pJJYN58l8wbw8x9gmhgG4rnS4QDVCiqWv+AEBUzMDHg9KST35Lchoq2V+qN\nVye6gLtpNN85C0bvxPpnbRNQiNBFNbTh7LNqVys2gECxHjL2Shkf14Mcs4O1kAYn\nXXjSMD8GFFcR31hEHORtUE9YkcwvzpjbXJNqFKDDYUIP/Js0dqLnTRaldqkWMgZ6\nFvcU+0x0dx/VkZihsviGhAYANoc5KuaFlv4KGRRpjyDzDRbeZ9XVVdcQeamoHZod\nFUiU8s7qTRns0iCEK84am25s++Ag+n/xV0O+4xasaE7Jz0JPvEhIs/S5T6wnDoE=\n=H+zz\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 89e71004a3153ee8b2401f73e99b9789763064a3\nparent f844202e7ad7a6c14c136a381f7296b6ba55d5d6\nauthor Facebook Community Bot <facebook-github-bot@users.noreply.github.com> 1657151516 -0700\ncommitter GitHub <noreply@github.com> 1657151516 -0700\n\nRe-sync with internal repository (#772)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/06eaec767e376bfdb883d912cb15e987ddf2bda1",
+  "html_url": "https://github.com/facebook/hermes/commit/06eaec767e376bfdb883d912cb15e987ddf2bda1",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/06eaec767e376bfdb883d912cb15e987ddf2bda1/comments",
+  "author": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f844202e7ad7a6c14c136a381f7296b6ba55d5d6",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/f844202e7ad7a6c14c136a381f7296b6ba55d5d6",
+      "html_url": "https://github.com/facebook/hermes/commit/f844202e7ad7a6c14c136a381f7296b6ba55d5d6"
+    }
+  ],
+  "stats": {
+    "total": 80,
+    "additions": 69,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "596ddf2d600c08cdeb3387a3854165aa9353b79e",
+      "filename": "external/llvh/include/llvh/ADT/SmallVector.h",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/facebook/hermes/blob/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Finclude%2Fllvh%2FADT%2FSmallVector.h",
+      "raw_url": "https://github.com/facebook/hermes/raw/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Finclude%2Fllvh%2FADT%2FSmallVector.h",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/external%2Fllvh%2Finclude%2Fllvh%2FADT%2FSmallVector.h?ref=06eaec767e376bfdb883d912cb15e987ddf2bda1",
+      "patch": "@@ -238,12 +238,16 @@ class SmallVectorTemplateBase : public SmallVectorTemplateCommon<T> {\n // Define this out-of-line to dissuade the C++ compiler from inlining it.\n template <typename T, bool isPodLike>\n void SmallVectorTemplateBase<T, isPodLike>::grow(size_t MinSize) {\n-  if (MinSize > UINT32_MAX)\n-    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n-\n   // Always grow, even from zero.\n-  size_t NewCapacity = size_t(NextPowerOf2(this->capacity() + 2));\n-  NewCapacity = std::min(std::max(NewCapacity, MinSize), size_t(UINT32_MAX));\n+  constexpr size_t MinGrowth = 2;\n+  size_t NewCapacity = size_t(NextPowerOf2(this->capacity() + MinGrowth));\n+  NewCapacity = static_cast<unsigned>(std::max(NewCapacity, MinSize));\n+  // Ensure that NewCapacity did not overflow an unsigned int,\n+  // and that the capacity in bytes will not overflow a size_t.\n+  if (NewCapacity <= this->capacity() ||\n+      NewCapacity < MinSize ||\n+      NewCapacity > size_t(-1) / sizeof(T))\n+    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n   T *NewElts = static_cast<T*>(llvh::safe_malloc(NewCapacity*sizeof(T)));\n \n   // Move the elements over."
+    },
+    {
+      "sha": "6b1f993c050c20fa57ff2b6747a3e94bbdcbe8cd",
+      "filename": "external/llvh/lib/Support/SmallVector.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 15,
+      "blob_url": "https://github.com/facebook/hermes/blob/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Flib%2FSupport%2FSmallVector.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Flib%2FSupport%2FSmallVector.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/external%2Fllvh%2Flib%2FSupport%2FSmallVector.cpp?ref=06eaec767e376bfdb883d912cb15e987ddf2bda1",
+      "patch": "@@ -42,13 +42,16 @@ static_assert(sizeof(SmallVector<void *, 1>) ==\n /// on POD-like datatypes and is out of line to reduce code duplication.\n void SmallVectorBase::grow_pod(void *FirstEl, size_t MinCapacity,\n                                size_t TSize) {\n-  // Ensure we can fit the new capacity in 32 bits.\n-  if (MinCapacity > UINT32_MAX)\n-    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n+  constexpr size_t MinGrowth = 1;\n+  size_t NewCapacity = 2 * capacity() + MinGrowth; // Always grow.\n+  NewCapacity = static_cast<unsigned>(std::max(NewCapacity, MinCapacity));\n \n-  size_t NewCapacity = 2 * capacity() + 1; // Always grow.\n-  NewCapacity =\n-      std::min(std::max(NewCapacity, MinCapacity), size_t(UINT32_MAX));\n+  // Ensure that NewCapacity did not overflow an unsigned int,\n+  // and that the capacity in bytes will not overflow a size_t.\n+  if (NewCapacity <= this->capacity() ||\n+      NewCapacity < MinCapacity ||\n+      NewCapacity > size_t(-1) / TSize)\n+    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n \n   void *NewElts;\n   if (BeginX == FirstEl) {"
+    },
+    {
+      "sha": "a3bfa9794ce3a1ba1098f7af7a0730cf3f697d31",
+      "filename": "external/llvh/patches/SmallVector.patch",
+      "status": "added",
+      "additions": 51,
+      "deletions": 0,
+      "changes": 51,
+      "blob_url": "https://github.com/facebook/hermes/blob/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Fpatches%2FSmallVector.patch",
+      "raw_url": "https://github.com/facebook/hermes/raw/06eaec767e376bfdb883d912cb15e987ddf2bda1/external%2Fllvh%2Fpatches%2FSmallVector.patch",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/external%2Fllvh%2Fpatches%2FSmallVector.patch?ref=06eaec767e376bfdb883d912cb15e987ddf2bda1",
+      "patch": "@@ -0,0 +1,51 @@\n+diff --git a/xplat/hermes/external/llvh/include/llvh/ADT/SmallVector.h b/xplat/hermes/external/llvh/include/llvh/ADT/SmallVector.h\n+--- a/xplat/hermes/external/llvh/include/llvh/ADT/SmallVector.h\n++++ b/xplat/hermes/external/llvh/include/llvh/ADT/SmallVector.h\n+@@ -238,12 +238,16 @@\n+ // Define this out-of-line to dissuade the C++ compiler from inlining it.\n+ template <typename T, bool isPodLike>\n+ void SmallVectorTemplateBase<T, isPodLike>::grow(size_t MinSize) {\n+-  if (MinSize > UINT32_MAX)\n+-    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n+-\n+   // Always grow, even from zero.\n+-  size_t NewCapacity = size_t(NextPowerOf2(this->capacity() + 2));\n+-  NewCapacity = std::min(std::max(NewCapacity, MinSize), size_t(UINT32_MAX));\n++  constexpr size_t MinGrowth = 2;\n++  size_t NewCapacity = size_t(NextPowerOf2(this->capacity() + MinGrowth));\n++  NewCapacity = static_cast<unsigned>(std::max(NewCapacity, MinSize));\n++  // Ensure that NewCapacity did not overflow an unsigned int,\n++  // and that the capacity in bytes will not overflow a size_t.\n++  if (NewCapacity <= this->capacity() ||\n++      NewCapacity < MinSize ||\n++      NewCapacity > size_t(-1) / sizeof(T))\n++    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n+   T *NewElts = static_cast<T*>(llvh::safe_malloc(NewCapacity*sizeof(T)));\n+ \n+   // Move the elements over.\n+diff --git a/xplat/hermes/external/llvh/lib/Support/SmallVector.cpp b/xplat/hermes/external/llvh/lib/Support/SmallVector.cpp\n+--- a/xplat/hermes/external/llvh/lib/Support/SmallVector.cpp\n++++ b/xplat/hermes/external/llvh/lib/Support/SmallVector.cpp\n+@@ -42,13 +42,16 @@\n+ /// on POD-like datatypes and is out of line to reduce code duplication.\n+ void SmallVectorBase::grow_pod(void *FirstEl, size_t MinCapacity,\n+                                size_t TSize) {\n+-  // Ensure we can fit the new capacity in 32 bits.\n+-  if (MinCapacity > UINT32_MAX)\n+-    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n++  constexpr size_t MinGrowth = 1;\n++  size_t NewCapacity = 2 * capacity() + MinGrowth; // Always grow.\n++  NewCapacity = static_cast<unsigned>(std::max(NewCapacity, MinCapacity));\n+ \n+-  size_t NewCapacity = 2 * capacity() + 1; // Always grow.\n+-  NewCapacity =\n+-      std::min(std::max(NewCapacity, MinCapacity), size_t(UINT32_MAX));\n++  // Ensure that NewCapacity did not overflow an unsigned int,\n++  // and that the capacity in bytes will not overflow a size_t.\n++  if (NewCapacity <= this->capacity() ||\n++      NewCapacity < MinCapacity ||\n++      NewCapacity > size_t(-1) / TSize)\n++    report_bad_alloc_error(\"SmallVector capacity overflow during allocation\");\n+ \n+   void *NewElts;\n+   if (BeginX == FirstEl) {"
+    }
+  ]
+}

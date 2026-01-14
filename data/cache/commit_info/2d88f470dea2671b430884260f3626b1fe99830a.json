@@ -1,0 +1,101 @@
+{
+  "sha": "2d88f470dea2671b430884260f3626b1fe99830a",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MmQ4OGY0NzBkZWEyNjcxYjQzMDg4NDI2MGYzNjI2YjFmZTk5ODMwYQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T21:43:00Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T21:57:58Z"
+    },
+    "message": "[tflite] Ensure `ResolveAxis` properly handles negative inputs.\n\nIn Python, a list `l` of length `n` allows indexing with negative indices, `l[i]`. The only constraint is that `n + i` becomes positive. Code in `ResolveAxis` assumes the constraints and only checks it using a `DCHECK`. But the macro is a no-op in non-debug builds and that can result in reading from negative offsets (buffer underflows).\n\nPiperOrigin-RevId: 332530683\nChange-Id: I464e073fee618054ae3719a3679739007bb3f3bc",
+    "tree": {
+      "sha": "49e56763786027180668a1cc68c982eeeb982260",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/49e56763786027180668a1cc68c982eeeb982260"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/2d88f470dea2671b430884260f3626b1fe99830a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/2d88f470dea2671b430884260f3626b1fe99830a",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/2d88f470dea2671b430884260f3626b1fe99830a",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/2d88f470dea2671b430884260f3626b1fe99830a/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d487b8c4ca7d77d650fb8dca94b073aad8ff4b5e",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/d487b8c4ca7d77d650fb8dca94b073aad8ff4b5e",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/d487b8c4ca7d77d650fb8dca94b073aad8ff4b5e"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "994baa0b254b3b18fb4b79cbedbae4dcfc762313",
+      "filename": "tensorflow/lite/kernels/internal/reference/reduce.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/2d88f470dea2671b430884260f3626b1fe99830a/tensorflow%2Flite%2Fkernels%2Finternal%2Freference%2Freduce.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/2d88f470dea2671b430884260f3626b1fe99830a/tensorflow%2Flite%2Fkernels%2Finternal%2Freference%2Freduce.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Finternal%2Freference%2Freduce.h?ref=2d88f470dea2671b430884260f3626b1fe99830a",
+      "patch": "@@ -70,6 +70,9 @@ inline bool ResolveAxis(const int num_dims, const int* axis,\n     // eg: For num_dims=3, [0, 1, 2] is the same as [-3, -2, -1]  */\n     int current = axis[idx] < 0 ? (axis[idx] + num_dims) : axis[idx];\n     TFLITE_DCHECK(current >= 0 && current < num_dims);\n+    if (current < 0 || current >= num_dims) {\n+      return false;\n+    }\n     bool is_dup = false;\n     for (int j = 0; j < *out_num_axis; ++j) {\n       if (out_axis[j] == current) {"
+    }
+  ]
+}

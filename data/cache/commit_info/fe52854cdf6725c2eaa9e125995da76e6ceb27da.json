@@ -1,0 +1,113 @@
+{
+  "sha": "fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+  "node_id": "MDY6Q29tbWl0MTU0MjAxMjU5OmZlNTI4NTRjZGY2NzI1YzJlYWE5ZTEyNTk5NWRhNzZlNmNlYjI3ZGE=",
+  "commit": {
+    "author": {
+      "name": "Marc Horowitz",
+      "email": "mhorowitz@fb.com",
+      "date": "2020-08-26T03:36:45Z"
+    },
+    "committer": {
+      "name": "Jon Janzen",
+      "email": "jonjanzen@fb.com",
+      "date": "2020-08-26T18:43:37Z"
+    },
+    "message": "[CVE-2020-1911] Look up HostObject computed properties on the right object in the prototype chain.\n\nSummary:\nThe change in the hermes repository fixes the security vulnerability\nCVE-2020-1911.  This vulnerability only affects applications which\nallow evaluation of uncontrolled, untrusted JavaScript code not\nshipped with the app, so React Native apps will generally not be affected.\n\nThis revision includes a test for the bug.  The test is generic JSI\ncode, so it is included in the hermes and react-native repositories.\n\nChangelog: [Internal]\n\nReviewed By: tmikov\n\nDifferential Revision: D23322992\n\nfbshipit-source-id: 4e88c974afe1ad33a263f9cac03e9dc98d33649a",
+    "tree": {
+      "sha": "5fe0acd23866abf73d828137df7f9b3ae38520bf",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/5fe0acd23866abf73d828137df7f9b3ae38520bf"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+  "html_url": "https://github.com/facebook/hermes/commit/fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/fe52854cdf6725c2eaa9e125995da76e6ceb27da/comments",
+  "author": {
+    "login": "mhorowitz",
+    "id": 290225,
+    "node_id": "MDQ6VXNlcjI5MDIyNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/290225?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mhorowitz",
+    "html_url": "https://github.com/mhorowitz",
+    "followers_url": "https://api.github.com/users/mhorowitz/followers",
+    "following_url": "https://api.github.com/users/mhorowitz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mhorowitz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mhorowitz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mhorowitz/subscriptions",
+    "organizations_url": "https://api.github.com/users/mhorowitz/orgs",
+    "repos_url": "https://api.github.com/users/mhorowitz/repos",
+    "events_url": "https://api.github.com/users/mhorowitz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mhorowitz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "bigfootjon",
+    "id": 6403568,
+    "node_id": "MDQ6VXNlcjY0MDM1Njg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6403568?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bigfootjon",
+    "html_url": "https://github.com/bigfootjon",
+    "followers_url": "https://api.github.com/users/bigfootjon/followers",
+    "following_url": "https://api.github.com/users/bigfootjon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bigfootjon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bigfootjon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bigfootjon/subscriptions",
+    "organizations_url": "https://api.github.com/users/bigfootjon/orgs",
+    "repos_url": "https://api.github.com/users/bigfootjon/repos",
+    "events_url": "https://api.github.com/users/bigfootjon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bigfootjon/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "de05c8c12fa5ed9ec4679a28682e1df691780b74",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/de05c8c12fa5ed9ec4679a28682e1df691780b74",
+      "html_url": "https://github.com/facebook/hermes/commit/de05c8c12fa5ed9ec4679a28682e1df691780b74"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 18,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "8cf831d34f7b84c3a57ef64f7e08accefdd7ea4b",
+      "filename": "API/jsi/jsi/test/testlib.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/facebook/hermes/blob/fe52854cdf6725c2eaa9e125995da76e6ceb27da/API%2Fjsi%2Fjsi%2Ftest%2Ftestlib.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/fe52854cdf6725c2eaa9e125995da76e6ceb27da/API%2Fjsi%2Fjsi%2Ftest%2Ftestlib.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/API%2Fjsi%2Fjsi%2Ftest%2Ftestlib.cpp?ref=fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+      "patch": "@@ -394,6 +394,23 @@ TEST_P(JSITest, HostObjectTest) {\n                    .getBool());\n }\n \n+TEST_P(JSITest, HostObjectProtoTest) {\n+  class ProtoHostObject : public HostObject {\n+    Value get(Runtime& rt, const PropNameID&) override {\n+      return String::createFromAscii(rt, \"phoprop\");\n+    }\n+  };\n+\n+  rt.global().setProperty(\n+      rt,\n+      \"pho\",\n+      Object::createFromHostObject(rt, std::make_shared<ProtoHostObject>()));\n+\n+  EXPECT_EQ(\n+      eval(\"({__proto__: pho})[Symbol.toPrimitive]\").getString(rt).utf8(rt),\n+      \"phoprop\");\n+}\n+\n TEST_P(JSITest, ArrayTest) {\n   eval(\"x = {1:2, '3':4, 5:'six', 'seven':['eight', 'nine']}\");\n "
+    },
+    {
+      "sha": "83d60aa74ef203fea460f198131cb4a7296d0483",
+      "filename": "lib/VM/JSObject.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hermes/blob/fe52854cdf6725c2eaa9e125995da76e6ceb27da/lib%2FVM%2FJSObject.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/fe52854cdf6725c2eaa9e125995da76e6ceb27da/lib%2FVM%2FJSObject.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSObject.cpp?ref=fe52854cdf6725c2eaa9e125995da76e6ceb27da",
+      "patch": "@@ -1173,7 +1173,7 @@ CallResult<PseudoHandle<>> JSObject::getComputedWithReceiver_RJS(\n   } else if (desc.flags.hostObject) {\n     SymbolID id{};\n     LAZY_TO_IDENTIFIER(runtime, nameValPrimitiveHandle, id);\n-    auto propRes = vmcast<HostObject>(selfHandle.get())->get(id);\n+    auto propRes = vmcast<HostObject>(propObj.get())->get(id);\n     if (propRes == ExecutionStatus::EXCEPTION)\n       return ExecutionStatus::EXCEPTION;\n     return createPseudoHandle(*propRes);"
+    }
+  ]
+}

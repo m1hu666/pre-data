@@ -1,0 +1,101 @@
+{
+  "sha": "2d6253c7a692a3d92785dd990fce7256ea05e794",
+  "node_id": "MDY6Q29tbWl0NDAwNzUyNDM6MmQ2MjUzYzdhNjkyYTNkOTI3ODVkZDk5MGZjZTcyNTZlYTA1ZTc5NA==",
+  "commit": {
+    "author": {
+      "name": "David Tardon",
+      "email": "dtardon@redhat.com",
+      "date": "2017-04-07T17:28:55Z"
+    },
+    "committer": {
+      "name": "David Tardon",
+      "email": "dtardon@redhat.com",
+      "date": "2017-04-07T17:28:55Z"
+    },
+    "message": "ofz#1029 use correct loop index\n\nTo be honest, I think this would be clearer as two separate reads to two\nseparate vars...",
+    "tree": {
+      "sha": "32793a21a5e843c4bd78476c6ffe397918e591d4",
+      "url": "https://api.github.com/repos/fosnola/libstaroffice/git/trees/32793a21a5e843c4bd78476c6ffe397918e591d4"
+    },
+    "url": "https://api.github.com/repos/fosnola/libstaroffice/git/commits/2d6253c7a692a3d92785dd990fce7256ea05e794",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/fosnola/libstaroffice/commits/2d6253c7a692a3d92785dd990fce7256ea05e794",
+  "html_url": "https://github.com/fosnola/libstaroffice/commit/2d6253c7a692a3d92785dd990fce7256ea05e794",
+  "comments_url": "https://api.github.com/repos/fosnola/libstaroffice/commits/2d6253c7a692a3d92785dd990fce7256ea05e794/comments",
+  "author": {
+    "login": "dtardon",
+    "id": 2630242,
+    "node_id": "MDQ6VXNlcjI2MzAyNDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2630242?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dtardon",
+    "html_url": "https://github.com/dtardon",
+    "followers_url": "https://api.github.com/users/dtardon/followers",
+    "following_url": "https://api.github.com/users/dtardon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dtardon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dtardon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dtardon/subscriptions",
+    "organizations_url": "https://api.github.com/users/dtardon/orgs",
+    "repos_url": "https://api.github.com/users/dtardon/repos",
+    "events_url": "https://api.github.com/users/dtardon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dtardon/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "dtardon",
+    "id": 2630242,
+    "node_id": "MDQ6VXNlcjI2MzAyNDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2630242?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dtardon",
+    "html_url": "https://github.com/dtardon",
+    "followers_url": "https://api.github.com/users/dtardon/followers",
+    "following_url": "https://api.github.com/users/dtardon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dtardon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dtardon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dtardon/subscriptions",
+    "organizations_url": "https://api.github.com/users/dtardon/orgs",
+    "repos_url": "https://api.github.com/users/dtardon/repos",
+    "events_url": "https://api.github.com/users/dtardon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dtardon/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b04b9880ee8ffabcb515362ed5027070c4e4ca2",
+      "url": "https://api.github.com/repos/fosnola/libstaroffice/commits/7b04b9880ee8ffabcb515362ed5027070c4e4ca2",
+      "html_url": "https://github.com/fosnola/libstaroffice/commit/7b04b9880ee8ffabcb515362ed5027070c4e4ca2"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d1ad366f86cc16c641d4e78fb14de2779cf51b74",
+      "filename": "src/lib/StarWriterStruct.cxx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/fosnola/libstaroffice/blob/2d6253c7a692a3d92785dd990fce7256ea05e794/src%2Flib%2FStarWriterStruct.cxx",
+      "raw_url": "https://github.com/fosnola/libstaroffice/raw/2d6253c7a692a3d92785dd990fce7256ea05e794/src%2Flib%2FStarWriterStruct.cxx",
+      "contents_url": "https://api.github.com/repos/fosnola/libstaroffice/contents/src%2Flib%2FStarWriterStruct.cxx?ref=2d6253c7a692a3d92785dd990fce7256ea05e794",
+      "patch": "@@ -327,7 +327,7 @@ bool DatabaseName::read(StarZone &zone)\n         }\n         data.m_name=libstoff::getString(text);\n         int positions[2];\n-        for (int j=0; j<2; ++j) positions[i]=int(input->readULong(4));\n+        for (int j=0; j<2; ++j) positions[j]=int(input->readULong(4));\n         data.m_selection=STOFFVec2i(positions[0],positions[1]);\n         m_dataList.push_back(data);\n       }"
+    }
+  ]
+}

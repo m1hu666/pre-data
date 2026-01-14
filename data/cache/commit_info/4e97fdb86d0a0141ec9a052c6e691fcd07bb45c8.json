@@ -1,0 +1,101 @@
+{
+  "sha": "4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8",
+  "node_id": "MDY6Q29tbWl0NTYyNTo0ZTk3ZmRiODZkMGEwMTQxZWM5YTA1MmM2ZTY5MWZjZDA3YmI0NWM4",
+  "commit": {
+    "author": {
+      "name": "Hongli Lai (Phusion)",
+      "email": "hongli@phusion.nl",
+      "date": "2018-05-29T13:33:50Z"
+    },
+    "committer": {
+      "name": "Hongli Lai (Phusion)",
+      "email": "hongli@phusion.nl",
+      "date": "2018-05-29T13:33:50Z"
+    },
+    "message": "ExecHelperMain: fix privilege lowering code",
+    "tree": {
+      "sha": "33f30601ba8d20ecbdcf2f6e3d0b9b2c4dcc3bdb",
+      "url": "https://api.github.com/repos/phusion/passenger/git/trees/33f30601ba8d20ecbdcf2f6e3d0b9b2c4dcc3bdb"
+    },
+    "url": "https://api.github.com/repos/phusion/passenger/git/commits/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8",
+    "comment_count": 4,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - http://gpgtools.org\n\niQIzBAABCgAdFiEEIYpyVYPQLs7zqcKnzXAIXoxZFY8FAlsNVsYACgkQzXAIXoxZ\nFY/UnA//dmWl8LEj+yvwU3XhUHR6wlvZBi6SA7zISFIEuDwGQhJ2K+x1TuXWwU87\n0Kvv8Go7gOJX0QhB79hjkGu1RcNSotCRQpwnEGRgZUHfv1Dzo15IWOZKcF0sgI96\ntqAmPXYWnBNxr94YUDX455vYQUidGKNF8wDhlK/zBL2mNlb0YoPwgBUqBSsfu/uB\n+04JFC8Idt9UQQwtl2U0rlBIjvzonFEDckn358tI5AThaljTkd4nGsunPVU+k09Y\nAIhY7teQRQucCGUyi7Y45whLIp15XL3pKEVwAkh1jpnNCSj/fF05l3j2JCnUWJjp\ndGcyMPqtfp8C4/EbPkm4sUm8ejvdCQ2T4+GB3OWayisWjuB4L5f6YP2Jc4it3mTs\nEzJjg+QG1yCSF5DDi9TfvQzCup+f8GHAO3DMx1fZ7UGjUojkDgkf7kNatYx2Bh+m\nA3RtsjDAc1qw3cTxbhXIwUEczexvx4Id8d5TPHWZlXJmKyamZa8wf+TBSMsHFU4I\nvE+ga7PfWhpV1Ey27CZAWEP2TGtwiy5eQJejiCICm/n9Ve5MLy33pVokSZNhCMC7\nKp9PvujR2XqiPpwbt3kA56BdkejfyiE6roprUNjvNQQw+cjVOOCpnhn7Uqgtsxr0\nvZl4lDIo5f6HSNnK+oOeH3djlIOLUVSdtYG5SdZ8cAPLjHXSM34=\n=WYem\n-----END PGP SIGNATURE-----",
+      "payload": "tree 33f30601ba8d20ecbdcf2f6e3d0b9b2c4dcc3bdb\nparent 6120509d3dca78b959135529262047febe884498\nauthor Hongli Lai (Phusion) <hongli@phusion.nl> 1527600830 +0200\ncommitter Hongli Lai (Phusion) <hongli@phusion.nl> 1527600830 +0200\n\nExecHelperMain: fix privilege lowering code\n",
+      "verified_at": "2024-11-07T16:35:29Z"
+    }
+  },
+  "url": "https://api.github.com/repos/phusion/passenger/commits/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8",
+  "html_url": "https://github.com/phusion/passenger/commit/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8",
+  "comments_url": "https://api.github.com/repos/phusion/passenger/commits/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8/comments",
+  "author": {
+    "login": "FooBarWidget",
+    "id": 819,
+    "node_id": "MDQ6VXNlcjgxOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/819?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/FooBarWidget",
+    "html_url": "https://github.com/FooBarWidget",
+    "followers_url": "https://api.github.com/users/FooBarWidget/followers",
+    "following_url": "https://api.github.com/users/FooBarWidget/following{/other_user}",
+    "gists_url": "https://api.github.com/users/FooBarWidget/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/FooBarWidget/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/FooBarWidget/subscriptions",
+    "organizations_url": "https://api.github.com/users/FooBarWidget/orgs",
+    "repos_url": "https://api.github.com/users/FooBarWidget/repos",
+    "events_url": "https://api.github.com/users/FooBarWidget/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/FooBarWidget/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "FooBarWidget",
+    "id": 819,
+    "node_id": "MDQ6VXNlcjgxOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/819?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/FooBarWidget",
+    "html_url": "https://github.com/FooBarWidget",
+    "followers_url": "https://api.github.com/users/FooBarWidget/followers",
+    "following_url": "https://api.github.com/users/FooBarWidget/following{/other_user}",
+    "gists_url": "https://api.github.com/users/FooBarWidget/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/FooBarWidget/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/FooBarWidget/subscriptions",
+    "organizations_url": "https://api.github.com/users/FooBarWidget/orgs",
+    "repos_url": "https://api.github.com/users/FooBarWidget/repos",
+    "events_url": "https://api.github.com/users/FooBarWidget/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/FooBarWidget/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6120509d3dca78b959135529262047febe884498",
+      "url": "https://api.github.com/repos/phusion/passenger/commits/6120509d3dca78b959135529262047febe884498",
+      "html_url": "https://github.com/phusion/passenger/commit/6120509d3dca78b959135529262047febe884498"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "1700a520324fdc5a67c2dc75f436635adf020b53",
+      "filename": "src/agent/ExecHelper/ExecHelperMain.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/phusion/passenger/blob/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8/src%2Fagent%2FExecHelper%2FExecHelperMain.cpp",
+      "raw_url": "https://github.com/phusion/passenger/raw/4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8/src%2Fagent%2FExecHelper%2FExecHelperMain.cpp",
+      "contents_url": "https://api.github.com/repos/phusion/passenger/contents/src%2Fagent%2FExecHelper%2FExecHelperMain.cpp?ref=4e97fdb86d0a0141ec9a052c6e691fcd07bb45c8",
+      "patch": "@@ -201,6 +201,9 @@ switchGroup(uid_t uid, const struct passwd *userInfo, gid_t gid) {\n \t\t\tif (ngroups <= NGROUPS_MAX) {\n \t\t\t\tsetgroupsCalled = true;\n \t\t\t\tgidset.reset(new gid_t[ngroups]);\n+\t\t\t\tfor (int i = 0; i < ngroups; i++) {\n+\t\t\t\t\tgidset[i] = groups[i];\n+\t\t\t\t}\n \t\t\t\tif (setgroups(ngroups, gidset.get()) == -1) {\n \t\t\t\t\tint e = errno;\n \t\t\t\t\tfprintf(stderr, \"ERROR: setgroups(%d, ...) failed: %s (errno=%d)\\n\","
+    }
+  ]
+}

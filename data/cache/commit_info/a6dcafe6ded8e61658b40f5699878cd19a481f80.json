@@ -1,0 +1,161 @@
+{
+  "sha": "a6dcafe6ded8e61658b40f5699878cd19a481f80",
+  "node_id": "C_kwDOCTDsq9oAKGE2ZGNhZmU2ZGVkOGU2MTY1OGI0MGY1Njk5ODc4Y2QxOWE0ODFmODA",
+  "commit": {
+    "author": {
+      "name": "Facebook Community Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-02-02T20:07:13Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-02-02T20:07:13Z"
+    },
+    "message": "Re-sync with internal repository (#908)\n\nFixes for CVE-2023-23556, and CVE-2023-24833.\r\n\r\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+    "tree": {
+      "sha": "3f2a27502e739546125408fe2ebe95b3b31d71f8",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/3f2a27502e739546125408fe2ebe95b3b31d71f8"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/a6dcafe6ded8e61658b40f5699878cd19a481f80",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj3BfxCRBK7hj4Ov3rIwAAWPEIAFhATx2eIa+k/TvmVrIIaRAR\nrl9caRKjxwBDEo5FECjMVSyp2I6YXw36TVnbGx04VXgskc2tQP8nbBORkWvR0kZo\n+n1lT/KqDeCz+dDuCk/A5mpBgx947oxuMkd1XPSq+l31tnr6uvHBSfAF8vV/yBnm\ntZCCQ1qJlS1JGr0wM8hiTHu+7TvFfZtJ1Kog+f73Z6SBuOoqtvduZGjAgOrfVcS/\nK14fOXRIwEuM9hC8KUfwYqriLo6jB+EqdgEczus5qZbYFGcVmkRSQuPyLGb97V6v\nSmDxWT0s4fUedVMpVfLO3NjehTzfotXbJ8GBgGJ48J/I4IzppjKsZckW76Hm41Y=\n=Aawy\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 3f2a27502e739546125408fe2ebe95b3b31d71f8\nparent 2b2ac318b6b02faa0251ec40c0f52b16b1937ecc\nauthor Facebook Community Bot <facebook-github-bot@users.noreply.github.com> 1675368433 -0500\ncommitter GitHub <noreply@github.com> 1675368433 -0800\n\nRe-sync with internal repository (#908)\n\nFixes for CVE-2023-23556, and CVE-2023-24833.\r\n\r\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/a6dcafe6ded8e61658b40f5699878cd19a481f80",
+  "html_url": "https://github.com/facebook/hermes/commit/a6dcafe6ded8e61658b40f5699878cd19a481f80",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/a6dcafe6ded8e61658b40f5699878cd19a481f80/comments",
+  "author": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2b2ac318b6b02faa0251ec40c0f52b16b1937ecc",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/2b2ac318b6b02faa0251ec40c0f52b16b1937ecc",
+      "html_url": "https://github.com/facebook/hermes/commit/2b2ac318b6b02faa0251ec40c0f52b16b1937ecc"
+    }
+  ],
+  "stats": {
+    "total": 73,
+    "additions": 66,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "2741a145998a3a5e32d334ae85caf0424dc98790",
+      "filename": "lib/Support/BigIntSupport.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FSupport%2FBigIntSupport.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FSupport%2FBigIntSupport.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FSupport%2FBigIntSupport.cpp?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -192,7 +192,11 @@ double toDouble(ImmutableBigIntRef src) {\n   const uint32_t numBits = src.numDigits * BigIntDigitSizeInBits;\n   llvh::APInt tmp(numBits, llvh::makeArrayRef(src.digits, src.numDigits));\n   constexpr bool kSigned = true;\n-  return tmp.roundToDouble(kSigned);\n+  double val = tmp.roundToDouble(kSigned);\n+  // TODO(T142034196): APInt::roundToDouble doesn't implement proper conversion\n+  // when the number has more than 2 digits; we need to implement this\n+  // conversion.\n+  return std::isnan(val) ? std::numeric_limits<double>::quiet_NaN() : val;\n }\n \n namespace {"
+    },
+    {
+      "sha": "c34331602068a1a47991a2384469845b21f4d329",
+      "filename": "lib/VM/JSLib/Array.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FVM%2FJSLib%2FArray.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FVM%2FJSLib%2FArray.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSLib%2FArray.cpp?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -1093,10 +1093,6 @@ class StandardSortModel : public SortModel {\n     JSObject::getComputedPrimitiveDescriptor(\n         obj_, runtime_, aHandle_, aDescObjHandle_, aTmpNameStorage_, aDesc);\n \n-    ComputedPropertyDescriptor bDesc;\n-    JSObject::getComputedPrimitiveDescriptor(\n-        obj_, runtime_, bHandle_, bDescObjHandle_, bTmpNameStorage_, bDesc);\n-\n     if (aDescObjHandle_) {\n       if (LLVM_LIKELY(!aDesc.flags.proxyObject)) {\n         auto res = JSObject::getComputedPropertyValue_RJS(\n@@ -1135,6 +1131,11 @@ class StandardSortModel : public SortModel {\n         }\n       }\n     }\n+\n+    ComputedPropertyDescriptor bDesc;\n+    JSObject::getComputedPrimitiveDescriptor(\n+        obj_, runtime_, bHandle_, bDescObjHandle_, bTmpNameStorage_, bDesc);\n+\n     if (bDescObjHandle_) {\n       if (LLVM_LIKELY(!bDesc.flags.proxyObject)) {\n         auto res = JSObject::getComputedPropertyValue_RJS("
+    },
+    {
+      "sha": "a9e5f780062d46e8322b33795e95430318c8d90c",
+      "filename": "lib/VM/Operations.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FVM%2FOperations.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/lib%2FVM%2FOperations.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FOperations.cpp?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -1272,8 +1272,8 @@ addOp_RJS(Runtime &runtime, Handle<> xHandle, Handle<> yHandle) {\n \n   return BigIntPrimitive::add(\n       runtime,\n-      runtime.makeHandle(resX->getBigInt()),\n-      runtime.makeHandle(resY->getBigInt()));\n+      runtime.makeHandle(xPrim->getBigInt()),\n+      runtime.makeHandle(yPrim->getBigInt()));\n }\n \n static const size_t MIN_RADIX = 2;"
+    },
+    {
+      "sha": "5e9588b3a3fe17d6d1287cddc1758840357463e8",
+      "filename": "test/hermes/regress-bigint-add-gc.js",
+      "status": "added",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-bigint-add-gc.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-bigint-add-gc.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-bigint-add-gc.js?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -0,0 +1,21 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -non-strict -O %s | %FileCheck %s\n+// RUN: %hermes -non-strict -O0 %s | %FileCheck %s\n+\n+const obj = {\n+    toString: () => {\n+        gc();\n+        return 0n;\n+    }\n+};\n+// trigger after obj.toString called and before addOp complete\n+let trigger_point = 1n + obj;\n+print(trigger_point);\n+\n+// CHECK: 1"
+    },
+    {
+      "sha": "d306b8d8e91f428ef108bc49aba06a2393edb9c0",
+      "filename": "test/hermes/regress-bigint-to-double-nan.js",
+      "status": "added",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-bigint-to-double-nan.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-bigint-to-double-nan.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-bigint-to-double-nan.js?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -0,0 +1,13 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -non-strict -O %s | %FileCheck %s\n+// RUN: %hermes -non-strict -O0 %s | %FileCheck %s\n+\n+// TODO: fix BigInt to number conversion (it should never result in NaN).\n+print(Number(0xffffffffffffffffffffffffffffffffn));\n+// CHECK: NaN"
+    },
+    {
+      "sha": "1f6dfee9d38449520f14e85eff767a58931cdfe8",
+      "filename": "test/hermes/regress-invalidated-descriptor-std-sort-model-swap.js",
+      "status": "added",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/facebook/hermes/blob/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-invalidated-descriptor-std-sort-model-swap.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/a6dcafe6ded8e61658b40f5699878cd19a481f80/test%2Fhermes%2Fregress-invalidated-descriptor-std-sort-model-swap.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-invalidated-descriptor-std-sort-model-swap.js?ref=a6dcafe6ded8e61658b40f5699878cd19a481f80",
+      "patch": "@@ -0,0 +1,20 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -O %s\n+\n+var a = [0,1]\n+a.sort(function(x,y){\n+  a.__defineGetter__(1, function(){\n+    delete a[0];\n+    return 1;\n+  });\n+  a.__defineGetter__(0, function(){\n+    return 1;\n+  });\n+  return -1;\n+})"
+    }
+  ]
+}

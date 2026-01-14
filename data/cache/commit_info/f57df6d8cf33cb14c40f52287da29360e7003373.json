@@ -1,0 +1,125 @@
+{
+  "sha": "f57df6d8cf33cb14c40f52287da29360e7003373",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmY1N2RmNmQ4Y2YzM2NiMTRjNDBmNTIyODdkYTI5MzYwZTcwMDMzNzM=",
+  "commit": {
+    "author": {
+      "name": "William Lee",
+      "email": "wkl@fb.com",
+      "date": "2019-10-28T19:52:00Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-10-28T19:53:54Z"
+    },
+    "message": "Prevent APC keys with nulls\n\nSummary:\nThis diff prevents storing APC keys that contain the null byte.\nAPC uses a backing data structure ConcurrentTableSharedStore that uses const char* as its key type. This leads to situations where inserting APC keys with null bytes will cause key truncation, like so...\nlocalhost> p apc_clear_cache();\ntrue\nlocalhost> p apc_fetch(\"test\")\nfalse\nlocalhost> p apc_fetch(\"test\\x00suffix\")\nfalse\nlocalhost> p apc_add(\"test\\x00suffix\", 5)\ntrue\nlocalhost> p apc_fetch(\"test\")\n5\nlocalhost> p apc_fetch(\"test\\x00suffix\")\nfalse\nThis change will make APC throw an error if a key containing a null byte is passed to the store/add methods.\n\nReviewed By: markw65\n\nDifferential Revision: D17608626\n\nfbshipit-source-id: 915e179f41e66c99c718364ec4a8639d204c4ea2",
+    "tree": {
+      "sha": "96f93ad747eb297679b0d8b62939983a3fa06955",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/96f93ad747eb297679b0d8b62939983a3fa06955"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/f57df6d8cf33cb14c40f52287da29360e7003373",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/f57df6d8cf33cb14c40f52287da29360e7003373",
+  "html_url": "https://github.com/facebook/hhvm/commit/f57df6d8cf33cb14c40f52287da29360e7003373",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/f57df6d8cf33cb14c40f52287da29360e7003373/comments",
+  "author": {
+    "login": "leikahing",
+    "id": 809026,
+    "node_id": "MDQ6VXNlcjgwOTAyNg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/809026?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leikahing",
+    "html_url": "https://github.com/leikahing",
+    "followers_url": "https://api.github.com/users/leikahing/followers",
+    "following_url": "https://api.github.com/users/leikahing/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leikahing/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leikahing/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leikahing/subscriptions",
+    "organizations_url": "https://api.github.com/users/leikahing/orgs",
+    "repos_url": "https://api.github.com/users/leikahing/repos",
+    "events_url": "https://api.github.com/users/leikahing/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leikahing/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6a6eb350889fbfc38bd7226c88fb77d5394e9c47",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/6a6eb350889fbfc38bd7226c88fb77d5394e9c47",
+      "html_url": "https://github.com/facebook/hhvm/commit/6a6eb350889fbfc38bd7226c88fb77d5394e9c47"
+    }
+  ],
+  "stats": {
+    "total": 59,
+    "additions": 55,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "97b9678b9b8b7b4a431bfcbe22ed4666cc98fb14",
+      "filename": "hphp/runtime/ext/apc/ext_apc.cpp",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 4,
+      "changes": 38,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Fruntime%2Fext%2Fapc%2Fext_apc.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Fruntime%2Fext%2Fapc%2Fext_apc.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fapc%2Fext_apc.cpp?ref=f57df6d8cf33cb14c40f52287da29360e7003373",
+      "patch": "@@ -95,6 +95,11 @@ ConcurrentTableSharedStore& apc_store() {\n   return *static_cast<ConcurrentTableSharedStore*>(vpStore);\n }\n \n+bool isKeyInvalid(const String &key) {\n+  // T39154441 - check if invalid chars exist\n+  return key.find('\\0') != -1;\n+}\n+\n }\n \n //////////////////////////////////////////////////////////////////////\n@@ -307,9 +312,14 @@ Variant HHVM_FUNCTION(apc_store,\n         return Variant(false);\n       }\n       Variant v = iter.second();\n-      apc_store().set(key.toString(), v, ttl);\n-    }\n \n+      auto const& strKey = key.toCStrRef();\n+      if (isKeyInvalid(strKey)) {\n+        throw_invalid_argument(\"apc key: (contains invalid characters)\");\n+        return Variant(false);\n+      }\n+      apc_store().set(strKey, v, ttl);\n+    }\n     return Variant(ArrayData::Create());\n   }\n \n@@ -318,6 +328,11 @@ Variant HHVM_FUNCTION(apc_store,\n     return Variant(false);\n   }\n   String strKey = key_or_array.toString();\n+\n+  if (isKeyInvalid(strKey)) {\n+    throw_invalid_argument(\"apc key: (contains invalid characters)\");\n+    return Variant(false);\n+  }\n   apc_store().set(strKey, var, ttl);\n   return Variant(true);\n }\n@@ -330,6 +345,10 @@ bool HHVM_FUNCTION(apc_store_as_primed_do_not_use,\n                    const String& key,\n                    const Variant& var) {\n   if (!apcExtension::Enable) return false;\n+  if (isKeyInvalid(key)) {\n+    throw_invalid_argument(\"apc key: (contains invalid characters)\");\n+    return false;\n+  }\n   apc_store().setWithoutTTL(key, var);\n   return true;\n }\n@@ -353,8 +372,15 @@ Variant HHVM_FUNCTION(apc_add,\n         return false;\n       }\n       Variant v = iter.second();\n-      if (!apc_store().add(key.toString(), v, ttl)) {\n-        errors.add(key, -1);\n+\n+      auto const& strKey = key.toCStrRef();\n+      if (isKeyInvalid(strKey)) {\n+        throw_invalid_argument(\"apc key: (contains invalid characters)\");\n+        return false;\n+      }\n+\n+      if (!apc_store().add(strKey, v, ttl)) {\n+        errors.add(strKey, -1);\n       }\n     }\n     return errors.toVariant();\n@@ -365,6 +391,10 @@ Variant HHVM_FUNCTION(apc_add,\n     return false;\n   }\n   String strKey = key_or_array.toString();\n+  if (isKeyInvalid(strKey)) {\n+    throw_invalid_argument(\"apc key: (contains invalid characters)\");\n+    return false;\n+  }\n   return apc_store().add(strKey, var, ttl);\n }\n "
+    },
+    {
+      "sha": "0fa55bc07c4a344b303aee2b5c52e1fafabee4ea",
+      "filename": "hphp/test/quick/apc.php",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Ftest%2Fquick%2Fapc.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Ftest%2Fquick%2Fapc.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fquick%2Fapc.php?ref=f57df6d8cf33cb14c40f52287da29360e7003373",
+      "patch": "@@ -61,6 +61,16 @@ function testKeyTypes() {\n   }\n }\n \n+function testInvalidKeys() {\n+    // Reject keys with null bytes\n+    apc_add(\"bar\\x00baz\", 10);\n+    apc_store(\"test\\x00xyz\", \"hello\");\n+    apc_store(array(\"validkey\" => \"validvalue\", \"invalid\\x00key\" => \"value\"));\n+    foreach (array('bar', 'test', 'validkey', 'invalid') as $k) {\n+        var_dump(__hhvm_intrinsics\\apc_fetch_no_check($k));\n+    }\n+}\n+\n <<__EntryPoint>> function main(): void {\n   testApc(array(7, 4, 1776));\n   testApc(array(\"sv0\", \"sv1\"));\n@@ -73,4 +83,5 @@ function testKeyTypes() {\n   var_dump($b);\n \n   testKeyTypes();\n+  testInvalidKeys();\n }"
+    },
+    {
+      "sha": "5e7e322bcb6f6d64c8c2183588f8328b9896144d",
+      "filename": "hphp/test/quick/apc.php.expectf",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Ftest%2Fquick%2Fapc.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f57df6d8cf33cb14c40f52287da29360e7003373/hphp%2Ftest%2Fquick%2Fapc.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fquick%2Fapc.php.expectf?ref=f57df6d8cf33cb14c40f52287da29360e7003373",
+      "patch": "@@ -72,3 +72,13 @@ string(3) \"two\"\n Undefined index: 3\n Undefined index: 2\n string(5) \"three\"\n+\n+Warning: Invalid argument: apc key: (contains invalid characters)%S\n+\n+Warning: Invalid argument: apc key: (contains invalid characters)%S\n+\n+Warning: Invalid argument: apc key: (contains invalid characters)%S\n+bool(false)\n+bool(false)\n+string(10) \"validvalue\"\n+bool(false)"
+    }
+  ]
+}

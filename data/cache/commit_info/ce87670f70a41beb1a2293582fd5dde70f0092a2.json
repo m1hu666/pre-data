@@ -1,0 +1,61 @@
+{
+  "sha": "ce87670f70a41beb1a2293582fd5dde70f0092a2",
+  "node_id": "C_kwDOByyPPdoAKGNlODc2NzBmNzBhNDFiZWIxYTIyOTM1ODJmZDVkZGU3MGYwMDkyYTI",
+  "commit": {
+    "author": {
+      "name": "Nicolas Ouellet-Payeur",
+      "email": "nicolaso@chromium.org",
+      "date": "2022-02-10T12:18:43Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-02-10T12:18:43Z"
+    },
+    "message": "[BrowserSwitcher] Use a WeakPtr when closing chrome://browser-switch\n\nAfter opening a site in the alternative browser, we close the\nchrome://browser-switch. This was done by posting a task on a\nWebContents's raw pointer. This can theoretically cause a use-after-free\nbug; post the task using a WeakPtr so it's safer.\n\nBug: 1290700\nChange-Id: I6bfbaa95b22adb54148616a7971cff1a8ebbcbcc\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3450459\nAuto-Submit: Nicolas Ouellet-Payeur <nicolaso@chromium.org>\nReviewed-by: Julian Pastarmov <pastarmovj@chromium.org>\nCommit-Queue: Julian Pastarmov <pastarmovj@chromium.org>\nCr-Commit-Position: refs/heads/main@{#969390}",
+    "tree": {
+      "sha": "65000b7925901049ed92c3d3e5bc12d5f4dfb96b",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/65000b7925901049ed92c3d3e5bc12d5f4dfb96b"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/ce87670f70a41beb1a2293582fd5dde70f0092a2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/ce87670f70a41beb1a2293582fd5dde70f0092a2",
+  "html_url": "https://github.com/chromium/chromium/commit/ce87670f70a41beb1a2293582fd5dde70f0092a2",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/ce87670f70a41beb1a2293582fd5dde70f0092a2/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "a5feefae4cd7686886ac8d3f4afed4173a34730f",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/a5feefae4cd7686886ac8d3f4afed4173a34730f",
+      "html_url": "https://github.com/chromium/chromium/commit/a5feefae4cd7686886ac8d3f4afed4173a34730f"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 2,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "66a7734ffc74082b25d387ee3dcfd8d6b7c8b701",
+      "filename": "chrome/browser/ui/webui/browser_switch/browser_switch_ui.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/chromium/chromium/blob/ce87670f70a41beb1a2293582fd5dde70f0092a2/chrome%2Fbrowser%2Fui%2Fwebui%2Fbrowser_switch%2Fbrowser_switch_ui.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/ce87670f70a41beb1a2293582fd5dde70f0092a2/chrome%2Fbrowser%2Fui%2Fwebui%2Fbrowser_switch%2Fbrowser_switch_ui.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fwebui%2Fbrowser_switch%2Fbrowser_switch_ui.cc?ref=ce87670f70a41beb1a2293582fd5dde70f0092a2",
+      "patch": "@@ -364,9 +364,8 @@ void BrowserSwitchHandler::OnLaunchFinished(base::TimeTicks start,\n     GotoNewTabPage(web_ui()->GetWebContents());\n   } else {\n     base::ThreadTaskRunnerHandle::Get()->PostTask(\n-        FROM_HERE,\n-        base::BindOnce(&content::WebContents::ClosePage,\n-                       base::Unretained(web_ui()->GetWebContents())));\n+        FROM_HERE, base::BindOnce(&content::WebContents::ClosePage,\n+                                  web_ui()->GetWebContents()->GetWeakPtr()));\n   }\n }\n "
+    }
+  ]
+}

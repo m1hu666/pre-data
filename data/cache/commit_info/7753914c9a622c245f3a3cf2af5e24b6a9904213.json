@@ -1,0 +1,101 @@
+{
+  "sha": "7753914c9a622c245f3a3cf2af5e24b6a9904213",
+  "node_id": "MDY6Q29tbWl0MjUwNDM4ODo3NzUzOTE0YzlhNjIyYzI0NWYzYTNjZjJhZjVlMjRiNmE5OTA0MjEz",
+  "commit": {
+    "author": {
+      "name": "Eugen Hristev",
+      "email": "eugen.hristev@microchip.com",
+      "date": "2020-03-10T07:40:02Z"
+    },
+    "committer": {
+      "name": "Eugen Hristev",
+      "email": "eugen.hristev@microchip.com",
+      "date": "2020-03-30T10:57:15Z"
+    },
+    "message": "driver: secure: use consttime_memequal for memory comparison\n\nDo  not  use memcmp() to compare security critical data, such as\ncryptographic secrets, because the required CPU time depends on the\nnumber of equal bytes.\nInstead, a function that performs comparisons in constant time is required.\nWarning: consttime_memequal returns 0 if data are NOT equal, and 1 if they are\nequal.\n\nSigned-off-by: Eugen Hristev <eugen.hristev@microchip.com>\nReviewed-by: Nicolas Ferre <nicolas.ferre@microchip.com>",
+    "tree": {
+      "sha": "6949a76234965d584b7a9ee741a430c9b3125b0f",
+      "url": "https://api.github.com/repos/linux4sam/at91bootstrap/git/trees/6949a76234965d584b7a9ee741a430c9b3125b0f"
+    },
+    "url": "https://api.github.com/repos/linux4sam/at91bootstrap/git/commits/7753914c9a622c245f3a3cf2af5e24b6a9904213",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/7753914c9a622c245f3a3cf2af5e24b6a9904213",
+  "html_url": "https://github.com/linux4sam/at91bootstrap/commit/7753914c9a622c245f3a3cf2af5e24b6a9904213",
+  "comments_url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/7753914c9a622c245f3a3cf2af5e24b6a9904213/comments",
+  "author": {
+    "login": "ehristev",
+    "id": 26141984,
+    "node_id": "MDQ6VXNlcjI2MTQxOTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26141984?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ehristev",
+    "html_url": "https://github.com/ehristev",
+    "followers_url": "https://api.github.com/users/ehristev/followers",
+    "following_url": "https://api.github.com/users/ehristev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ehristev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ehristev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ehristev/subscriptions",
+    "organizations_url": "https://api.github.com/users/ehristev/orgs",
+    "repos_url": "https://api.github.com/users/ehristev/repos",
+    "events_url": "https://api.github.com/users/ehristev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ehristev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ehristev",
+    "id": 26141984,
+    "node_id": "MDQ6VXNlcjI2MTQxOTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26141984?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ehristev",
+    "html_url": "https://github.com/ehristev",
+    "followers_url": "https://api.github.com/users/ehristev/followers",
+    "following_url": "https://api.github.com/users/ehristev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ehristev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ehristev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ehristev/subscriptions",
+    "organizations_url": "https://api.github.com/users/ehristev/orgs",
+    "repos_url": "https://api.github.com/users/ehristev/repos",
+    "events_url": "https://api.github.com/users/ehristev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ehristev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bdb469359364a1f89c2950098b8a65cbcf4d5324",
+      "url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/bdb469359364a1f89c2950098b8a65cbcf4d5324",
+      "html_url": "https://github.com/linux4sam/at91bootstrap/commit/bdb469359364a1f89c2950098b8a65cbcf4d5324"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ffb38e0e48527da4c2dd03fbdaa9aab06ad44e60",
+      "filename": "driver/secure.c",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/linux4sam/at91bootstrap/blob/7753914c9a622c245f3a3cf2af5e24b6a9904213/driver%2Fsecure.c",
+      "raw_url": "https://github.com/linux4sam/at91bootstrap/raw/7753914c9a622c245f3a3cf2af5e24b6a9904213/driver%2Fsecure.c",
+      "contents_url": "https://api.github.com/repos/linux4sam/at91bootstrap/contents/driver%2Fsecure.c?ref=7753914c9a622c245f3a3cf2af5e24b6a9904213",
+      "patch": "@@ -103,7 +103,7 @@ int secure_decrypt(void *data, unsigned int data_length, int is_signed)\n \t\t/* Check the CMAC */\n \t\tfixed_length = at91_aes_roundup(data_length);\n \t\tcmac = (const unsigned int *)((char *)data + fixed_length);\n-\t\tif (memcmp(cmac, computed_cmac, AT91_AES_BLOCK_SIZE_BYTE))\n+\t\tif (!consttime_memequal(cmac, computed_cmac, AT91_AES_BLOCK_SIZE_BYTE))\n \t\t\tgoto exit;\n \t}\n "
+    }
+  ]
+}

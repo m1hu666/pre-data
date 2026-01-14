@@ -1,0 +1,61 @@
+{
+  "sha": "79a25e043c6e21da3b606d198df0d42af862d658",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1Ojc5YTI1ZTA0M2M2ZTIxZGEzYjYwNmQxOThkZjBkNDJhZjg2MmQ2NTg=",
+  "commit": {
+    "author": {
+      "name": "James Cook",
+      "email": "jamescook@chromium.org",
+      "date": "2018-02-13T21:10:17Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2018-02-13T21:10:17Z"
+    },
+    "message": "cros: Don't start quick launch under --mash\n\nWe don't use it for anything. We also have a shelf indicator to show\nthat you are running mash mode, so it's not needed to signify the\nmode either.\n\nBug: none\nTest: run chrome --mash, no quick launch dialog\nChange-Id: Id774484fc1b405921ae16a4f634993470fdde3fa\nReviewed-on: https://chromium-review.googlesource.com/915197\nReviewed-by: Michael Wasserman <msw@chromium.org>\nCommit-Queue: James Cook <jamescook@chromium.org>\nCr-Commit-Position: refs/heads/master@{#536475}",
+    "tree": {
+      "sha": "c7676d95b325cc18a2efb9dec1edda18295d0f82",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/c7676d95b325cc18a2efb9dec1edda18295d0f82"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/79a25e043c6e21da3b606d198df0d42af862d658",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/79a25e043c6e21da3b606d198df0d42af862d658",
+  "html_url": "https://github.com/chromium/chromium/commit/79a25e043c6e21da3b606d198df0d42af862d658",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/79a25e043c6e21da3b606d198df0d42af862d658/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "6068a4ae5d137f7efa285e468cae6665b453b0c3",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/6068a4ae5d137f7efa285e468cae6665b453b0c3",
+      "html_url": "https://github.com/chromium/chromium/commit/6068a4ae5d137f7efa285e468cae6665b453b0c3"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 3,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "39de8a6cd78416d3147f8220965841e8ffbd0377",
+      "filename": "chrome/browser/ui/views/chrome_browser_main_extra_parts_views.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 10,
+      "changes": 13,
+      "blob_url": "https://github.com/chromium/chromium/blob/79a25e043c6e21da3b606d198df0d42af862d658/chrome%2Fbrowser%2Fui%2Fviews%2Fchrome_browser_main_extra_parts_views.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/79a25e043c6e21da3b606d198df0d42af862d658/chrome%2Fbrowser%2Fui%2Fviews%2Fchrome_browser_main_extra_parts_views.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fchrome_browser_main_extra_parts_views.cc?ref=79a25e043c6e21da3b606d198df0d42af862d658",
+      "patch": "@@ -47,10 +47,9 @@\n #endif  // defined(OS_LINUX) && !defined(OS_CHROMEOS)\n \n #if defined(OS_CHROMEOS)\n+#include \"ash/public/interfaces/constants.mojom.h\"\n #include \"chrome/browser/chromeos/ash_config.h\"\n #include \"content/public/common/content_switches.h\"\n-#include \"mash/common/config.h\"                                   // nogncheck\n-#include \"mash/quick_launch/public/mojom/constants.mojom.h\"       // nogncheck\n #else  // defined(OS_CHROMEOS)\n #include \"chrome/browser/ui/views/relaunch_notification/relaunch_notification_controller.h\"\n #endif  // defined(OS_CHROMEOS)\n@@ -171,18 +170,12 @@ void ChromeBrowserMainExtraPartsViews::ServiceManagerConnectionStarted(\n     return;\n \n #if defined(OS_CHROMEOS)\n+  // Start up the window service and the ash system UI service.\n   if (chromeos::GetAshConfig() == ash::Config::MASH) {\n     connection->GetConnector()->StartService(\n         service_manager::Identity(ui::mojom::kServiceName));\n     connection->GetConnector()->StartService(\n-        service_manager::Identity(mash::common::GetWindowManagerServiceName()));\n-    // Don't start QuickLaunch in tests because it changes the startup shelf\n-    // state vs. classic ash.\n-    if (!base::CommandLine::ForCurrentProcess()->HasSwitch(\n-            switches::kTestType)) {\n-      connection->GetConnector()->StartService(\n-          service_manager::Identity(mash::quick_launch::mojom::kServiceName));\n-    }\n+        service_manager::Identity(ash::mojom::kServiceName));\n   }\n #endif\n "
+    }
+  ]
+}

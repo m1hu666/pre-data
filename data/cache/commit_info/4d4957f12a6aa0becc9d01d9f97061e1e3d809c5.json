@@ -1,0 +1,101 @@
+{
+  "sha": "4d4957f12a6aa0becc9d01d9f97061e1e3d809c5",
+  "node_id": "MDY6Q29tbWl0MjIzOTQzNTc6NGQ0OTU3ZjEyYTZhYTBiZWNjOWQwMWQ5Zjk3MDYxZTFlM2Q4MDljNQ==",
+  "commit": {
+    "author": {
+      "name": "Stefano Bonicatti",
+      "email": "stefano.bonicatti@gmail.com",
+      "date": "2020-05-09T02:14:12Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-05-09T02:14:12Z"
+    },
+    "message": "Disable openssl compression support (#6433)\n\nOpenssl was depending on zlib for SSL/TLS compression,\r\nthough it was trying to load it as a dynamic library.\r\nOn Windows especially this is an issue because the dll\r\ncould possibly be loaded from a insecure place,\r\nso this can be exploited.\r\n\r\nMoreover it's proven that compression can lead\r\nto leaks of information; so we completely disable it\r\nto resolve both issues.",
+    "tree": {
+      "sha": "f7e2a81dd0d8bf5e7a369f2843c5cd0826e73a2d",
+      "url": "https://api.github.com/repos/osquery/osquery/git/trees/f7e2a81dd0d8bf5e7a369f2843c5cd0826e73a2d"
+    },
+    "url": "https://api.github.com/repos/osquery/osquery/git/commits/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJethH0CRBK7hj4Ov3rIwAAdHIIAFB4abaYxGsOUMB0G79o4UaA\nVBfdsGZyguQzGZCIrU/+L4x6D/e4lJ3Kpx2XPqgPPdr0mL1pjPoLSrtPZDdigIGy\nMWu8hmog18nOmEsXxd59pP3XBGR8TgjyDIGYl8qWOtpWNWMGdbQkT2dW+yrJnuce\nfbs1nZEBcSUJA8EMhFp8UmM2OvRkfKE1G4EzJq9u2jLKHgHNZ0MrWw8Dp9mctRxn\n4rquVsz+YqaCIfqMBs2DDOAWL1W4U8tdDrBg+ORtZ72uSk37A5RaviV1RZhYUWLP\n+xVxNZHaPrKDL7XUhOOpFedI+rsAamM/hNPLtB+BSJPE3VGnQsKoAKgIXWMZ0cA=\n=U4lG\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree f7e2a81dd0d8bf5e7a369f2843c5cd0826e73a2d\nparent 26d94ce03700663e61fa5ad992f7b2c4389a00fe\nauthor Stefano Bonicatti <stefano.bonicatti@gmail.com> 1588990452 +0200\ncommitter GitHub <noreply@github.com> 1588990452 -0400\n\nDisable openssl compression support (#6433)\n\nOpenssl was depending on zlib for SSL/TLS compression,\r\nthough it was trying to load it as a dynamic library.\r\nOn Windows especially this is an issue because the dll\r\ncould possibly be loaded from a insecure place,\r\nso this can be exploited.\r\n\r\nMoreover it's proven that compression can lead\r\nto leaks of information; so we completely disable it\r\nto resolve both issues.",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/osquery/osquery/commits/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5",
+  "html_url": "https://github.com/osquery/osquery/commit/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5",
+  "comments_url": "https://api.github.com/repos/osquery/osquery/commits/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5/comments",
+  "author": {
+    "login": "Smjert",
+    "id": 148902,
+    "node_id": "MDQ6VXNlcjE0ODkwMg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/148902?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Smjert",
+    "html_url": "https://github.com/Smjert",
+    "followers_url": "https://api.github.com/users/Smjert/followers",
+    "following_url": "https://api.github.com/users/Smjert/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Smjert/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Smjert/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Smjert/subscriptions",
+    "organizations_url": "https://api.github.com/users/Smjert/orgs",
+    "repos_url": "https://api.github.com/users/Smjert/repos",
+    "events_url": "https://api.github.com/users/Smjert/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Smjert/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "26d94ce03700663e61fa5ad992f7b2c4389a00fe",
+      "url": "https://api.github.com/repos/osquery/osquery/commits/26d94ce03700663e61fa5ad992f7b2c4389a00fe",
+      "html_url": "https://github.com/osquery/osquery/commit/26d94ce03700663e61fa5ad992f7b2c4389a00fe"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 1,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "9b2803df23d98dcecf3c93f6fa4cb7212b1b6e3b",
+      "filename": "libraries/cmake/formula/openssl/CMakeLists.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 7,
+      "changes": 8,
+      "blob_url": "https://github.com/osquery/osquery/blob/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5/libraries%2Fcmake%2Fformula%2Fopenssl%2FCMakeLists.txt",
+      "raw_url": "https://github.com/osquery/osquery/raw/4d4957f12a6aa0becc9d01d9f97061e1e3d809c5/libraries%2Fcmake%2Fformula%2Fopenssl%2FCMakeLists.txt",
+      "contents_url": "https://api.github.com/repos/osquery/osquery/contents/libraries%2Fcmake%2Fformula%2Fopenssl%2FCMakeLists.txt?ref=4d4957f12a6aa0becc9d01d9f97061e1e3d809c5",
+      "patch": "@@ -7,20 +7,14 @@ include(ExternalProject)\n \n function(opensslMain)\n \n-  get_target_property(zlib_library_dir_path thirdparty_zlib BINARY_DIR)\n-  get_target_property(zlib_library_lib_name thirdparty_zlib OUTPUT_NAME)\n-  get_target_property(zlib_library_source_dir thirdparty_zlib SOURCE_DIR)\n-\n   set(common_options\n     no-ssl2\n     no-ssl3\n     no-asm\n     no-shared\n     no-weak-ssl-ciphers\n-    zlib-dynamic\n+    no-comp\n     enable-cms\n-    \"--with-zlib-include=${zlib_library_source_dir}/src\"\n-    \"--with-zlib-lib=${zlib_library_dir_path}/${zlib_library_lib_name}\"\n   )\n \n   add_library(thirdparty_openssl_ssl STATIC IMPORTED GLOBAL)"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "f008adc039642307f6ee3378d378cdb842e52c1d",
+  "node_id": "MDY6Q29tbWl0NDExODc3NjpmMDA4YWRjMDM5NjQyMzA3ZjZlZTMzNzhkMzc4Y2RiODQyZTUyYzFk",
+  "commit": {
+    "author": {
+      "name": "Dan Dennedy",
+      "email": "dan@dennedy.org",
+      "date": "2020-08-22T21:03:33Z"
+    },
+    "committer": {
+      "name": "Dan Dennedy",
+      "email": "dan@dennedy.org",
+      "date": "2020-08-22T21:03:33Z"
+    },
+    "message": "fix upgrade check is not using TLS correctly",
+    "tree": {
+      "sha": "f5beccc0acaf9c298927a6621ee7be331022aba5",
+      "url": "https://api.github.com/repos/mltframework/shotcut/git/trees/f5beccc0acaf9c298927a6621ee7be331022aba5"
+    },
+    "url": "https://api.github.com/repos/mltframework/shotcut/git/commits/f008adc039642307f6ee3378d378cdb842e52c1d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mltframework/shotcut/commits/f008adc039642307f6ee3378d378cdb842e52c1d",
+  "html_url": "https://github.com/mltframework/shotcut/commit/f008adc039642307f6ee3378d378cdb842e52c1d",
+  "comments_url": "https://api.github.com/repos/mltframework/shotcut/commits/f008adc039642307f6ee3378d378cdb842e52c1d/comments",
+  "author": {
+    "login": "ddennedy",
+    "id": 1146683,
+    "node_id": "MDQ6VXNlcjExNDY2ODM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1146683?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ddennedy",
+    "html_url": "https://github.com/ddennedy",
+    "followers_url": "https://api.github.com/users/ddennedy/followers",
+    "following_url": "https://api.github.com/users/ddennedy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ddennedy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ddennedy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ddennedy/subscriptions",
+    "organizations_url": "https://api.github.com/users/ddennedy/orgs",
+    "repos_url": "https://api.github.com/users/ddennedy/repos",
+    "events_url": "https://api.github.com/users/ddennedy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ddennedy/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ddennedy",
+    "id": 1146683,
+    "node_id": "MDQ6VXNlcjExNDY2ODM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1146683?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ddennedy",
+    "html_url": "https://github.com/ddennedy",
+    "followers_url": "https://api.github.com/users/ddennedy/followers",
+    "following_url": "https://api.github.com/users/ddennedy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ddennedy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ddennedy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ddennedy/subscriptions",
+    "organizations_url": "https://api.github.com/users/ddennedy/orgs",
+    "repos_url": "https://api.github.com/users/ddennedy/repos",
+    "events_url": "https://api.github.com/users/ddennedy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ddennedy/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eaa99269390dc327e3905825f5a25f0b6361eb82",
+      "url": "https://api.github.com/repos/mltframework/shotcut/commits/eaa99269390dc327e3905825f5a25f0b6361eb82",
+      "html_url": "https://github.com/mltframework/shotcut/commit/eaa99269390dc327e3905825f5a25f0b6361eb82"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 2,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "d4efd5cdcac3990f2182c773ecba527e5c3c7020",
+      "filename": "src/mainwindow.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 7,
+      "changes": 9,
+      "blob_url": "https://github.com/mltframework/shotcut/blob/f008adc039642307f6ee3378d378cdb842e52c1d/src%2Fmainwindow.cpp",
+      "raw_url": "https://github.com/mltframework/shotcut/raw/f008adc039642307f6ee3378d378cdb842e52c1d/src%2Fmainwindow.cpp",
+      "contents_url": "https://api.github.com/repos/mltframework/shotcut/contents/src%2Fmainwindow.cpp?ref=f008adc039642307f6ee3378d378cdb842e52c1d",
+      "patch": "@@ -3240,13 +3240,8 @@ void MainWindow::showUpgradePrompt()\n {\n     if (Settings.checkUpgradeAutomatic()) {\n         showStatusMessage(\"Checking for upgrade...\");\n-        QNetworkRequest request(QUrl(\"https://check.shotcut.org/version.json\"));\n-        QSslConfiguration sslConfig = request.sslConfiguration();\n-        sslConfig.setPeerVerifyMode(QSslSocket::VerifyNone);\n-        request.setSslConfiguration(sslConfig);\n-        m_network.get(request);\n+        m_network.get(QNetworkRequest(QUrl(\"https://check.shotcut.org/version.json\")));\n     } else {\n-        m_network.setStrictTransportSecurityEnabled(false);\n         QAction* action = new QAction(tr(\"Click here to check for a new version of Shotcut.\"), 0);\n         connect(action, SIGNAL(triggered(bool)), SLOT(on_actionUpgrade_triggered()));\n         showStatusMessage(action, 15 /* seconds */);\n@@ -3702,7 +3697,7 @@ void MainWindow::on_actionUpgrade_triggered()\n             Settings.setAskUpgradeAutomatic(false);\n     }\n     showStatusMessage(\"Checking for upgrade...\");\n-    m_network.get(QNetworkRequest(QUrl(\"http://check.shotcut.org/version.json\")));\n+    m_network.get(QNetworkRequest(QUrl(\"https://check.shotcut.org/version.json\")));\n }\n \n void MainWindow::on_actionOpenXML_triggered()"
+    }
+  ]
+}

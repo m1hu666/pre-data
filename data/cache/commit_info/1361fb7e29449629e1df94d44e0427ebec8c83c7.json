@@ -1,0 +1,101 @@
+{
+  "sha": "1361fb7e29449629e1df94d44e0427ebec8c83c7",
+  "node_id": "C_kwDOArmXAtoAKDEzNjFmYjdlMjk0NDk2MjllMWRmOTRkNDRlMDQyN2ViZWM4YzgzYzc",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-10T23:52:57Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-10T23:59:39Z"
+    },
+    "message": "Fix abort caused by allocating a too large vector.\n\nWe need to make sure that the number of dimensions in a shape is within limits.\n\nPiperOrigin-RevId: 408997911\nChange-Id: If59e1c23f2ec9c2d4ff4d8632fd62b2a7773a4eb",
+    "tree": {
+      "sha": "236fa4e64ac28f71a4c15bf2958426d41bd3672e",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/236fa4e64ac28f71a4c15bf2958426d41bd3672e"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/1361fb7e29449629e1df94d44e0427ebec8c83c7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/1361fb7e29449629e1df94d44e0427ebec8c83c7",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/1361fb7e29449629e1df94d44e0427ebec8c83c7",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/1361fb7e29449629e1df94d44e0427ebec8c83c7/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f6e7c84316c9fe416ea32086fa3c64fee21fafab",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f6e7c84316c9fe416ea32086fa3c64fee21fafab",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/f6e7c84316c9fe416ea32086fa3c64fee21fafab"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 15,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "3316759aed5a7dedc40ebdf564ecdddb1ccf0355",
+      "filename": "tensorflow/core/framework/shape_inference.cc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/1361fb7e29449629e1df94d44e0427ebec8c83c7/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/1361fb7e29449629e1df94d44e0427ebec8c83c7/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc?ref=1361fb7e29449629e1df94d44e0427ebec8c83c7",
+      "patch": "@@ -14,6 +14,8 @@ limitations under the License.\n ==============================================================================*/\n #include \"tensorflow/core/framework/shape_inference.h\"\n \n+#include <cstdint>\n+\n #include \"tensorflow/core/framework/bounds_check.h\"\n #include \"tensorflow/core/framework/full_type_util.h\"\n #include \"tensorflow/core/framework/node_def.pb.h\"\n@@ -789,6 +791,19 @@ Status InferenceContext::InternalMakeShapeFromTensor(\n       return ReturnUnknownShape(out);\n     }\n     const auto num_dims = Value(shape_dim);\n+    // TODO(mihaimaruseac): Should be `TensorShape::MaxDimensions()` as we are\n+    // not able to materialize shapes with more than this number of dimensions\n+    // but then shape inference would fail for operations such as\n+    // `tf.range`/`tf.ones`, etc. where the shape is not really materialized,\n+    // only used during the inference. Hence, just prevent doing a `reserve`\n+    // with a very large argument.\n+    const int64_t max_dimensions = 1 << 20;\n+    if (num_dims >= max_dimensions) {\n+      return errors::Internal(\n+          \"Cannot create a tensor with \", num_dims,\n+          \" dimensions, as these would be more than maximum of \",\n+          max_dimensions);\n+    }\n     std::vector<DimensionHandle> dims;\n     dims.reserve(num_dims);\n     for (int i = 0; i < num_dims; i++) dims.push_back(UnknownDim());"
+    }
+  ]
+}

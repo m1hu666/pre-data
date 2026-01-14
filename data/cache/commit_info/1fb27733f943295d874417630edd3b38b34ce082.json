@@ -1,0 +1,101 @@
+{
+  "sha": "1fb27733f943295d874417630edd3b38b34ce082",
+  "node_id": "C_kwDOArmXAtoAKDFmYjI3NzMzZjk0MzI5NWQ4NzQ0MTc2MzBlZGQzYjM4YjM0Y2UwODI",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-11T17:16:14Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-11T17:21:05Z"
+    },
+    "message": "Remove `CHECK`-fails from `IsSimplifiableReshape`\n\nPiperOrigin-RevId: 409164987\nChange-Id: I58c7dd459ff348c3dbae95e00c4c5e63b30a4e65",
+    "tree": {
+      "sha": "7d63de0fdede6ad637bf747b1243a74c2c9077b8",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/7d63de0fdede6ad637bf747b1243a74c2c9077b8"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/1fb27733f943295d874417630edd3b38b34ce082",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/1fb27733f943295d874417630edd3b38b34ce082",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/1fb27733f943295d874417630edd3b38b34ce082",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/1fb27733f943295d874417630edd3b38b34ce082/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ebc1a2ffe5a7573d905e99bd0ee3568ee07c12c1",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ebc1a2ffe5a7573d905e99bd0ee3568ee07c12c1",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/ebc1a2ffe5a7573d905e99bd0ee3568ee07c12c1"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 10,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "a2050899f607261890429c05fcecc27750bb657e",
+      "filename": "tensorflow/core/grappler/optimizers/constant_folding.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/1fb27733f943295d874417630edd3b38b34ce082/tensorflow%2Fcore%2Fgrappler%2Foptimizers%2Fconstant_folding.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/1fb27733f943295d874417630edd3b38b34ce082/tensorflow%2Fcore%2Fgrappler%2Foptimizers%2Fconstant_folding.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fgrappler%2Foptimizers%2Fconstant_folding.cc?ref=1fb27733f943295d874417630edd3b38b34ce082",
+      "patch": "@@ -1689,7 +1689,11 @@ Status ConstantFolding::IsSimplifiableReshape(\n   if (!IsReshape(node)) {\n     return errors::Internal(\"Node \", node.name(), \" is not a Reshape node\");\n   }\n-  CHECK_LE(2, node.input_size());\n+  if (2 > node.input_size()) {\n+    return errors::Internal(\"Node \", node.name(),\n+                            \" must have at most 2 inputs but has \",\n+                            node.input_size());\n+  }\n   const NodeDef* new_shape = node_map_->GetNode(node.input(1));\n   if (!IsReallyConstant(*new_shape)) {\n     return errors::Internal(\"Node \", node.name(), \" has shape \",\n@@ -1707,7 +1711,11 @@ Status ConstantFolding::IsSimplifiableReshape(\n   if (!s.ok()) {\n     return errors::Internal(\"Could not evaluate node \", node.name());\n   }\n-  CHECK_EQ(1, outputs.size());\n+  if (outputs.size() != 1) {\n+    return errors::Internal(\"Node \", node.name(),\n+                            \" must have exactly 1 output but has \",\n+                            outputs.size());\n+  }\n \n   const std::vector<OpInfo::TensorProperties>& props =\n       properties.GetInputProperties(node.name());"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "sha": "f0147751fd5d2ff23251149ebad9af9f03010732",
+  "node_id": "C_kwDOArmXAtoAKGYwMTQ3NzUxZmQ1ZDJmZjIzMjUxMTQ5ZWJhZDlhZjlmMDMwMTA3MzI",
+  "commit": {
+    "author": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-12-17T03:26:39Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-12-17T03:26:39Z"
+    },
+    "message": "Merge pull request #52707 from elfringham:init_ops_test_fix\n\nPiperOrigin-RevId: 416941851\nChange-Id: Iefa5a9b841b053b36f6b105cd82c9d32d5e47850",
+    "tree": {
+      "sha": "b459229d5dedaa459356ba94ac5b6d2b99d5856f",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/b459229d5dedaa459356ba94ac5b6d2b99d5856f"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/f0147751fd5d2ff23251149ebad9af9f03010732",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f0147751fd5d2ff23251149ebad9af9f03010732",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/f0147751fd5d2ff23251149ebad9af9f03010732",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f0147751fd5d2ff23251149ebad9af9f03010732/comments",
+  "author": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f91846899972ad8867a750db4baa1b301a2cb5d",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3f91846899972ad8867a750db4baa1b301a2cb5d",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/3f91846899972ad8867a750db4baa1b301a2cb5d"
+    },
+    {
+      "sha": "55deb9b27620d8c5ef2f61a32520cb035079d0da",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/55deb9b27620d8c5ef2f61a32520cb035079d0da",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/55deb9b27620d8c5ef2f61a32520cb035079d0da"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 21,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "4ea36e9837ae0c494d028f1cc0d2ebaa6b8eb166",
+      "filename": "tensorflow/core/kernels/sequence_ops.cc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 7,
+      "changes": 20,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fcore%2Fkernels%2Fsequence_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fcore%2Fkernels%2Fsequence_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fsequence_ops.cc?ref=f0147751fd5d2ff23251149ebad9af9f03010732",
+      "patch": "@@ -91,13 +91,19 @@ class RangeOp : public OpKernel {\n           errors::InvalidArgument(\n               \"Requires start >= limit when delta < 0: \", start, \"/\", limit));\n     }\n-    int64_t size = 0;\n-    if (std::is_integral<T>::value) {\n-      size = static_cast<int64_t>(\n-          (std::abs(limit - start) + std::abs(delta) - 1) / std::abs(delta));\n-    } else {\n-      size = static_cast<int64_t>(std::ceil(std::abs((limit - start) / delta)));\n-    }\n+    auto size_auto = (std::is_integral<T>::value\n+                          ? (Eigen::numext::abs(limit - start) +\n+                             Eigen::numext::abs(delta) - T(1)) /\n+                                Eigen::numext::abs(delta)\n+                          : Eigen::numext::ceil(\n+                                Eigen::numext::abs((limit - start) / delta)));\n+    OP_REQUIRES(\n+        context, size_auto <= std::numeric_limits<int64_t>::max(),\n+        errors::InvalidArgument(\"Requires ((limit - start) / delta) <= \",\n+                                std::numeric_limits<int64_t>::max()));\n+\n+    int64_t size = static_cast<int64_t>(size_auto);\n+\n     TensorShape shape;\n     OP_REQUIRES_OK(context, shape.AddDimWithStatus(size));\n     Tensor* out = nullptr;"
+    },
+    {
+      "sha": "7bc9f8c9ffd2945011923c454c08a608fe652b18",
+      "filename": "tensorflow/core/ops/math_ops.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fcore%2Fops%2Fmath_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fcore%2Fops%2Fmath_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fops%2Fmath_ops.cc?ref=f0147751fd5d2ff23251149ebad9af9f03010732",
+      "patch": "@@ -1489,6 +1489,13 @@ Status RangeSize(const Tensor* start_t, const Tensor* limit_t,\n                       Eigen::numext::abs(delta))\n                    : (Eigen::numext::ceil(\n                          Eigen::numext::abs((limit - start) / delta))));\n+\n+  // Undefined behaviour if size will not fit into int64_t\n+  if (size > std::numeric_limits<int64_t>::max()) {\n+    return errors::InvalidArgument(\"Requires ((limit - start) / delta) <= \",\n+                                   std::numeric_limits<int64_t>::max());\n+  }\n+\n   c->set_output(0, c->Vector(static_cast<int64_t>(size)));\n   return Status::OK();\n }"
+    },
+    {
+      "sha": "dbdd44ba9380f70bd7fc3c1f0fee270bdc632d78",
+      "filename": "tensorflow/python/kernel_tests/array_ops/init_ops_test.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fpython%2Fkernel_tests%2Farray_ops%2Finit_ops_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/f0147751fd5d2ff23251149ebad9af9f03010732/tensorflow%2Fpython%2Fkernel_tests%2Farray_ops%2Finit_ops_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fkernel_tests%2Farray_ops%2Finit_ops_test.py?ref=f0147751fd5d2ff23251149ebad9af9f03010732",
+      "patch": "@@ -548,7 +548,7 @@ def testLargeLimits(self):\n   def testLargeStarts(self):\n     # Test case for GitHub issue 46899.\n     with self.session():\n-      with self.assertRaises(errors_impl.InvalidArgumentError):\n+      with self.assertRaises((ValueError, errors_impl.InvalidArgumentError)):\n         v = math_ops.range(start=-1e+38, limit=1)\n         self.evaluate(v)\n "
+    }
+  ]
+}

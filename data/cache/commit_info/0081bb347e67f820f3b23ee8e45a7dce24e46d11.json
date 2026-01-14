@@ -1,0 +1,81 @@
+{
+  "sha": "0081bb347e67f820f3b23ee8e45a7dce24e46d11",
+  "node_id": "C_kwDOByyPPdoAKDAwODFiYjM0N2U2N2Y4MjBmM2IyM2VlOGU0NWE3ZGNlMjRlNDZkMTE",
+  "commit": {
+    "author": {
+      "name": "Matt Reynolds",
+      "email": "mattreynolds@google.com",
+      "date": "2022-01-19T21:03:08Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-19T21:03:08Z"
+    },
+    "message": "gamepad: Return an invalid handle after ReportBadMessage\n\nBug: 1285449\nChange-Id: I746c539577f7bdf69cbe4212ac380e0c92a5c771\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3373944\nAuto-Submit: Matt Reynolds <mattreynolds@chromium.org>\nReviewed-by: Reilly Grant <reillyg@chromium.org>\nCommit-Queue: Reilly Grant <reillyg@chromium.org>\nCr-Commit-Position: refs/heads/main@{#961125}",
+    "tree": {
+      "sha": "d1e4338c3dd8c8e3beea350cac3f4be676fd4e22",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/d1e4338c3dd8c8e3beea350cac3f4be676fd4e22"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/0081bb347e67f820f3b23ee8e45a7dce24e46d11",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/0081bb347e67f820f3b23ee8e45a7dce24e46d11",
+  "html_url": "https://github.com/chromium/chromium/commit/0081bb347e67f820f3b23ee8e45a7dce24e46d11",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/0081bb347e67f820f3b23ee8e45a7dce24e46d11/comments",
+  "author": {
+    "login": "nondebug",
+    "id": 14099571,
+    "node_id": "MDQ6VXNlcjE0MDk5NTcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14099571?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nondebug",
+    "html_url": "https://github.com/nondebug",
+    "followers_url": "https://api.github.com/users/nondebug/followers",
+    "following_url": "https://api.github.com/users/nondebug/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nondebug/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nondebug/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nondebug/subscriptions",
+    "organizations_url": "https://api.github.com/users/nondebug/orgs",
+    "repos_url": "https://api.github.com/users/nondebug/repos",
+    "events_url": "https://api.github.com/users/nondebug/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nondebug/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "5f0982651b135fbd84d046ae7793e4047dcbcd36",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/5f0982651b135fbd84d046ae7793e4047dcbcd36",
+      "html_url": "https://github.com/chromium/chromium/commit/5f0982651b135fbd84d046ae7793e4047dcbcd36"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "28082924e632a895fc5bc4725bc6de3d6ca120ac",
+      "filename": "device/gamepad/gamepad_monitor.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/0081bb347e67f820f3b23ee8e45a7dce24e46d11/device%2Fgamepad%2Fgamepad_monitor.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/0081bb347e67f820f3b23ee8e45a7dce24e46d11/device%2Fgamepad%2Fgamepad_monitor.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/device%2Fgamepad%2Fgamepad_monitor.cc?ref=0081bb347e67f820f3b23ee8e45a7dce24e46d11",
+      "patch": "@@ -53,6 +53,8 @@ void GamepadMonitor::GamepadStartPolling(GamepadStartPollingCallback callback) {\n   GamepadService* service = GamepadService::GetInstance();\n   if (!service->ConsumerBecameActive(this)) {\n     mojo::ReportBadMessage(\"GamepadMonitor::GamepadStartPolling failed\");\n+    std::move(callback).Run(base::ReadOnlySharedMemoryRegion());\n+    return;\n   }\n   std::move(callback).Run(service->DuplicateSharedMemoryRegion());\n }"
+    }
+  ]
+}

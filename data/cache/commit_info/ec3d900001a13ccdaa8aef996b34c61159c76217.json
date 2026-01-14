@@ -1,0 +1,106 @@
+{
+  "sha": "ec3d900001a13ccdaa8aef996b34c61159c76217",
+  "node_id": "C_kwDOANxXE9oAKGVjM2Q5MDAwMDFhMTNjY2RhYThhZWY5OTZiMzRjNjExNTljNzYyMTc",
+  "commit": {
+    "author": {
+      "name": "Robert Edmonds",
+      "email": "edmonds@users.noreply.github.com",
+      "date": "2022-07-11T00:37:15Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-07-11T00:37:15Z"
+    },
+    "message": "Merge pull request #513 from protobuf-c/edmonds/issue499\n\nFix issue #499: unsigned integer overflow",
+    "tree": {
+      "sha": "5d29d62672943cadc5ecf3df43c15b6857101fae",
+      "url": "https://api.github.com/repos/protobuf-c/protobuf-c/git/trees/5d29d62672943cadc5ecf3df43c15b6857101fae"
+    },
+    "url": "https://api.github.com/repos/protobuf-c/protobuf-c/git/commits/ec3d900001a13ccdaa8aef996b34c61159c76217",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiy3C7CRBK7hj4Ov3rIwAAhTAIAIYA80h2h4SgVRLgdu8qx6Ma\nyf+FqOiXXpKINZdWi6j9+LlyuMeQw6BcLeNK4fccC9CDnsol7MhcmslmO/ZMA0Fd\nxnjfL94MSYtgAVa3i4uc1vU3KBhPsIROJvdZmC5EAeT39+FeRlbMT5REar7/0OnD\ntxR4wbIE6AqXvWNPClpp858KsOAvJ8mtfEnQgSd9s8ppgKVT7E6DXCTiLK/jo2Na\nGkkel0Awi2bltUocUfid4j7W0e6Kkfgwr01iAUoD/vI3EV6eKhWDvX6mX8N3MFfr\nbf9/OsZ+hKw20d1WOS6yeCbenrALxIm5mK7kctwG2WKD4ku2zJXw2eb1PDqFMH8=\n=Ub55\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5d29d62672943cadc5ecf3df43c15b6857101fae\nparent fc9b2b2ea99839ecdd52a0b3a6386a3ae266588c\nparent 0d1fd124a4e0a07b524989f6e64410ff648fba61\nauthor Robert Edmonds <edmonds@users.noreply.github.com> 1657499835 -0400\ncommitter GitHub <noreply@github.com> 1657499835 -0400\n\nMerge pull request #513 from protobuf-c/edmonds/issue499\n\nFix issue #499: unsigned integer overflow",
+      "verified_at": "2024-11-06T23:38:36Z"
+    }
+  },
+  "url": "https://api.github.com/repos/protobuf-c/protobuf-c/commits/ec3d900001a13ccdaa8aef996b34c61159c76217",
+  "html_url": "https://github.com/protobuf-c/protobuf-c/commit/ec3d900001a13ccdaa8aef996b34c61159c76217",
+  "comments_url": "https://api.github.com/repos/protobuf-c/protobuf-c/commits/ec3d900001a13ccdaa8aef996b34c61159c76217/comments",
+  "author": {
+    "login": "edmonds",
+    "id": 202839,
+    "node_id": "MDQ6VXNlcjIwMjgzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/202839?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/edmonds",
+    "html_url": "https://github.com/edmonds",
+    "followers_url": "https://api.github.com/users/edmonds/followers",
+    "following_url": "https://api.github.com/users/edmonds/following{/other_user}",
+    "gists_url": "https://api.github.com/users/edmonds/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/edmonds/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/edmonds/subscriptions",
+    "organizations_url": "https://api.github.com/users/edmonds/orgs",
+    "repos_url": "https://api.github.com/users/edmonds/repos",
+    "events_url": "https://api.github.com/users/edmonds/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/edmonds/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fc9b2b2ea99839ecdd52a0b3a6386a3ae266588c",
+      "url": "https://api.github.com/repos/protobuf-c/protobuf-c/commits/fc9b2b2ea99839ecdd52a0b3a6386a3ae266588c",
+      "html_url": "https://github.com/protobuf-c/protobuf-c/commit/fc9b2b2ea99839ecdd52a0b3a6386a3ae266588c"
+    },
+    {
+      "sha": "0d1fd124a4e0a07b524989f6e64410ff648fba61",
+      "url": "https://api.github.com/repos/protobuf-c/protobuf-c/commits/0d1fd124a4e0a07b524989f6e64410ff648fba61",
+      "html_url": "https://github.com/protobuf-c/protobuf-c/commit/0d1fd124a4e0a07b524989f6e64410ff648fba61"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 7,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "448f3e81a1a5316e667a2349a3c417b8cf83da52",
+      "filename": "protobuf-c/protobuf-c.c",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 4,
+      "changes": 11,
+      "blob_url": "https://github.com/protobuf-c/protobuf-c/blob/ec3d900001a13ccdaa8aef996b34c61159c76217/protobuf-c%2Fprotobuf-c.c",
+      "raw_url": "https://github.com/protobuf-c/protobuf-c/raw/ec3d900001a13ccdaa8aef996b34c61159c76217/protobuf-c%2Fprotobuf-c.c",
+      "contents_url": "https://api.github.com/repos/protobuf-c/protobuf-c/contents/protobuf-c%2Fprotobuf-c.c?ref=ec3d900001a13ccdaa8aef996b34c61159c76217",
+      "patch": "@@ -2603,10 +2603,13 @@ parse_required_member(ScannedMember *scanned_member,\n \t\t\treturn FALSE;\n \n \t\tdef_mess = scanned_member->field->default_value;\n-\t\tsubm = protobuf_c_message_unpack(scanned_member->field->descriptor,\n-\t\t\t\t\t\t allocator,\n-\t\t\t\t\t\t len - pref_len,\n-\t\t\t\t\t\t data + pref_len);\n+\t\tif (len >= pref_len)\n+\t\t\tsubm = protobuf_c_message_unpack(scanned_member->field->descriptor,\n+\t\t\t\t\t\t\t allocator,\n+\t\t\t\t\t\t\t len - pref_len,\n+\t\t\t\t\t\t\t data + pref_len);\n+\t\telse\n+\t\t\tsubm = NULL;\n \n \t\tif (maybe_clear &&\n \t\t    *pmessage != NULL &&"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "517298bafaaff0a8e3dd60dd055a67c41b545807",
+  "node_id": "MDY6Q29tbWl0MTEzOTY3NjQ2OjUxNzI5OGJhZmFhZmYwYThlM2RkNjBkZDA1NWE2N2M0MWI1NDU4MDc=",
+  "commit": {
+    "author": {
+      "name": "azhou",
+      "email": "seviezhou@163.com",
+      "date": "2019-09-09T18:02:50Z"
+    },
+    "committer": {
+      "name": "Peter Matula",
+      "email": "p3t3r.matula@gmail.com",
+      "date": "2019-09-10T13:21:16Z"
+    },
+    "message": "Try to fix issue #637\n\nReference: https://github.com/avast/retdec/issues/637",
+    "tree": {
+      "sha": "0496851ccade5e5b74680da36cfdb3ad099af540",
+      "url": "https://api.github.com/repos/avast/retdec/git/trees/0496851ccade5e5b74680da36cfdb3ad099af540"
+    },
+    "url": "https://api.github.com/repos/avast/retdec/git/commits/517298bafaaff0a8e3dd60dd055a67c41b545807",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/avast/retdec/commits/517298bafaaff0a8e3dd60dd055a67c41b545807",
+  "html_url": "https://github.com/avast/retdec/commit/517298bafaaff0a8e3dd60dd055a67c41b545807",
+  "comments_url": "https://api.github.com/repos/avast/retdec/commits/517298bafaaff0a8e3dd60dd055a67c41b545807/comments",
+  "author": {
+    "login": "seviezhou",
+    "id": 15180789,
+    "node_id": "MDQ6VXNlcjE1MTgwNzg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15180789?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/seviezhou",
+    "html_url": "https://github.com/seviezhou",
+    "followers_url": "https://api.github.com/users/seviezhou/followers",
+    "following_url": "https://api.github.com/users/seviezhou/following{/other_user}",
+    "gists_url": "https://api.github.com/users/seviezhou/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/seviezhou/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/seviezhou/subscriptions",
+    "organizations_url": "https://api.github.com/users/seviezhou/orgs",
+    "repos_url": "https://api.github.com/users/seviezhou/repos",
+    "events_url": "https://api.github.com/users/seviezhou/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/seviezhou/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "PeterMatula",
+    "id": 20342097,
+    "node_id": "MDQ6VXNlcjIwMzQyMDk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20342097?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/PeterMatula",
+    "html_url": "https://github.com/PeterMatula",
+    "followers_url": "https://api.github.com/users/PeterMatula/followers",
+    "following_url": "https://api.github.com/users/PeterMatula/following{/other_user}",
+    "gists_url": "https://api.github.com/users/PeterMatula/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/PeterMatula/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/PeterMatula/subscriptions",
+    "organizations_url": "https://api.github.com/users/PeterMatula/orgs",
+    "repos_url": "https://api.github.com/users/PeterMatula/repos",
+    "events_url": "https://api.github.com/users/PeterMatula/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/PeterMatula/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "63f03e7994763abcbfa941d0def1a14caa48e058",
+      "url": "https://api.github.com/repos/avast/retdec/commits/63f03e7994763abcbfa941d0def1a14caa48e058",
+      "html_url": "https://github.com/avast/retdec/commit/63f03e7994763abcbfa941d0def1a14caa48e058"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "320c0aea6b00196001bce668a6e97ce90f85ab06",
+      "filename": "src/bin2llvmir/optimizations/decoder/ir_modifications.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/avast/retdec/blob/517298bafaaff0a8e3dd60dd055a67c41b545807/src%2Fbin2llvmir%2Foptimizations%2Fdecoder%2Fir_modifications.cpp",
+      "raw_url": "https://github.com/avast/retdec/raw/517298bafaaff0a8e3dd60dd055a67c41b545807/src%2Fbin2llvmir%2Foptimizations%2Fdecoder%2Fir_modifications.cpp",
+      "contents_url": "https://api.github.com/repos/avast/retdec/contents/src%2Fbin2llvmir%2Foptimizations%2Fdecoder%2Fir_modifications.cpp?ref=517298bafaaff0a8e3dd60dd055a67c41b545807",
+      "patch": "@@ -423,6 +423,9 @@ bool Decoder::canSplitFunctionOn(\n \t\t\t\tcontinue;\n \t\t\t}\n \t\t\tauto up = fncStarts.upper_bound(bAddr);\n+\t\t\tif (up == fncStarts.begin()) {\n+\t\t\t\treturn false;\n+\t\t\t}\t\n \t\t\t--up;\n \t\t\tAddress bFnc = *up;\n \n@@ -442,6 +445,9 @@ bool Decoder::canSplitFunctionOn(\n \t\t\t\t\tcontinue;\n \t\t\t\t}\n \t\t\t\tauto up = fncStarts.upper_bound(pAddr);\n+\t\t\t\tif (up == fncStarts.begin()) {\n+\t\t\t\t\treturn false;\n+\t\t\t\t}\n \t\t\t\t--up;\n \t\t\t\tAddress pFnc = *up;\n "
+    }
+  ]
+}

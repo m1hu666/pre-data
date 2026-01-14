@@ -1,0 +1,93 @@
+{
+  "sha": "98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+  "node_id": "MDY6Q29tbWl0MTYyMTE4MTg6OThjZTY2MjRjZDI1NjNjZmRiNWRhM2IyOTQ5ZDVlMWUwMzg2NzAzNA==",
+  "commit": {
+    "author": {
+      "name": "Krishna Kondaka",
+      "email": "kkondaka@fb.com",
+      "date": "2019-07-30T18:32:42Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-07-30T18:36:37Z"
+    },
+    "message": "Enforce a limit on value bytes size\n\nSummary:\nEnforce a limit on value bytes size\n\nThis is a fix for CVE-2019-11923\n\nReviewed By: stuclar\n\nDifferential Revision: D16471999\n\nfbshipit-source-id: 9d614da8534e20935b1561c613bb81defd7d470a",
+    "tree": {
+      "sha": "61ae75cb53d5628974e4732a9fcd7a25c098d282",
+      "url": "https://api.github.com/repos/facebook/mcrouter/git/trees/61ae75cb53d5628974e4732a9fcd7a25c098d282"
+    },
+    "url": "https://api.github.com/repos/facebook/mcrouter/git/commits/98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/mcrouter/commits/98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+  "html_url": "https://github.com/facebook/mcrouter/commit/98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+  "comments_url": "https://api.github.com/repos/facebook/mcrouter/commits/98ce6624cd2563cfdb5da3b2949d5e1e03867034/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0b92632b6e45608e98e8c01cfd42301fdf8f3f81",
+      "url": "https://api.github.com/repos/facebook/mcrouter/commits/0b92632b6e45608e98e8c01cfd42301fdf8f3f81",
+      "html_url": "https://github.com/facebook/mcrouter/commit/0b92632b6e45608e98e8c01cfd42301fdf8f3f81"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 7,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9d2f010d5e81259bb1e09df3756e04b127dff0b2",
+      "filename": "mcrouter/lib/network/McAsciiParser.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/mcrouter/blob/98ce6624cd2563cfdb5da3b2949d5e1e03867034/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.h",
+      "raw_url": "https://github.com/facebook/mcrouter/raw/98ce6624cd2563cfdb5da3b2949d5e1e03867034/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.h",
+      "contents_url": "https://api.github.com/repos/facebook/mcrouter/contents/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.h?ref=98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+      "patch": "@@ -81,6 +81,9 @@ class McAsciiParserBase {\n       const char* posStart,\n       const char* posEnd);\n \n+  // limit the value size.\n+  static constexpr uint32_t maxValueBytes = 1 * 1024 * 1024 * 1024; // 1GB\n+\n   std::string currentErrorDescription_;\n \n   uint64_t currentUInt_{0};"
+    },
+    {
+      "sha": "3ff0781418c4207af17258c1650ed6f4a9275882",
+      "filename": "mcrouter/lib/network/McAsciiParser.rl",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/mcrouter/blob/98ce6624cd2563cfdb5da3b2949d5e1e03867034/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.rl",
+      "raw_url": "https://github.com/facebook/mcrouter/raw/98ce6624cd2563cfdb5da3b2949d5e1e03867034/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.rl",
+      "contents_url": "https://api.github.com/repos/facebook/mcrouter/contents/mcrouter%2Flib%2Fnetwork%2FMcAsciiParser.rl?ref=98ce6624cd2563cfdb5da3b2949d5e1e03867034",
+      "patch": "@@ -137,6 +137,10 @@ exptime_req = negative? uint %{\n \n value_bytes = uint %{\n   remainingIOBufLength_ = static_cast<size_t>(currentUInt_);\n+  // Enforce maximum on value size obtained from parser                       \n+  if (remainingIOBufLength_ > maxValueBytes) {\n+    remainingIOBufLength_ = maxValueBytes;                                    \n+  }\n };\n \n cas_id = uint %{"
+    }
+  ]
+}

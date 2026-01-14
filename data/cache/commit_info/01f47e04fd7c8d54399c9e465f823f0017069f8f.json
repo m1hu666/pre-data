@@ -1,0 +1,113 @@
+{
+  "sha": "01f47e04fd7c8d54399c9e465f823f0017069f8f",
+  "node_id": "MDY6Q29tbWl0MzQ4NDc5MDc6MDFmNDdlMDRmZDdjOGQ1NDM5OWM5ZTQ2NWY4MjNmMDAxNzA2OWY4Zg==",
+  "commit": {
+    "author": {
+      "name": "Simone Mainardi",
+      "email": "mainardi@ntop.org",
+      "date": "2017-02-13T22:47:02Z"
+    },
+    "committer": {
+      "name": "Simone Mainardi",
+      "email": "mainardi@ntop.org",
+      "date": "2017-02-13T22:47:02Z"
+    },
+    "message": "Security fix: prevents empty host from being used",
+    "tree": {
+      "sha": "d2ec657700105b81251ba8766645d5482ccd04b1",
+      "url": "https://api.github.com/repos/ntop/ntopng/git/trees/d2ec657700105b81251ba8766645d5482ccd04b1"
+    },
+    "url": "https://api.github.com/repos/ntop/ntopng/git/commits/01f47e04fd7c8d54399c9e465f823f0017069f8f",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ntop/ntopng/commits/01f47e04fd7c8d54399c9e465f823f0017069f8f",
+  "html_url": "https://github.com/ntop/ntopng/commit/01f47e04fd7c8d54399c9e465f823f0017069f8f",
+  "comments_url": "https://api.github.com/repos/ntop/ntopng/commits/01f47e04fd7c8d54399c9e465f823f0017069f8f/comments",
+  "author": {
+    "login": "simonemainardi",
+    "id": 3397663,
+    "node_id": "MDQ6VXNlcjMzOTc2NjM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3397663?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/simonemainardi",
+    "html_url": "https://github.com/simonemainardi",
+    "followers_url": "https://api.github.com/users/simonemainardi/followers",
+    "following_url": "https://api.github.com/users/simonemainardi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/simonemainardi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/simonemainardi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/simonemainardi/subscriptions",
+    "organizations_url": "https://api.github.com/users/simonemainardi/orgs",
+    "repos_url": "https://api.github.com/users/simonemainardi/repos",
+    "events_url": "https://api.github.com/users/simonemainardi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/simonemainardi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "simonemainardi",
+    "id": 3397663,
+    "node_id": "MDQ6VXNlcjMzOTc2NjM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3397663?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/simonemainardi",
+    "html_url": "https://github.com/simonemainardi",
+    "followers_url": "https://api.github.com/users/simonemainardi/followers",
+    "following_url": "https://api.github.com/users/simonemainardi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/simonemainardi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/simonemainardi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/simonemainardi/subscriptions",
+    "organizations_url": "https://api.github.com/users/simonemainardi/orgs",
+    "repos_url": "https://api.github.com/users/simonemainardi/repos",
+    "events_url": "https://api.github.com/users/simonemainardi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/simonemainardi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "97515fd76b4e4ccb78dece5e2476af0213876577",
+      "url": "https://api.github.com/repos/ntop/ntopng/commits/97515fd76b4e4ccb78dece5e2476af0213876577",
+      "html_url": "https://github.com/ntop/ntopng/commit/97515fd76b4e4ccb78dece5e2476af0213876577"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b12d79df2ff4e2a79c7d429f549d3f022ddbe3ca",
+      "filename": "src/Lua.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/ntop/ntopng/blob/01f47e04fd7c8d54399c9e465f823f0017069f8f/src%2FLua.cpp",
+      "raw_url": "https://github.com/ntop/ntopng/raw/01f47e04fd7c8d54399c9e465f823f0017069f8f/src%2FLua.cpp",
+      "contents_url": "https://api.github.com/repos/ntop/ntopng/contents/src%2FLua.cpp?ref=01f47e04fd7c8d54399c9e465f823f0017069f8f",
+      "patch": "@@ -6018,7 +6018,8 @@ void Lua::setParamsTable(lua_State* vm, const char* table_name,\n       char *_equal;\n \n       if(strncmp(tok, \"csrf\", strlen(\"csrf\")) /* Do not put csrf into the params table */\n-\t && (_equal = strchr(tok, '='))) {\n+\t && (_equal = strchr(tok, '='))\n+\t && (strlen(_equal) > 1)) {\n \tchar *decoded_buf;\n         int len;\n "
+    },
+    {
+      "sha": "7b92cd4dcf9cdcb56bd052932e475dfe9fc81975",
+      "filename": "src/NetworkInterface.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ntop/ntopng/blob/01f47e04fd7c8d54399c9e465f823f0017069f8f/src%2FNetworkInterface.cpp",
+      "raw_url": "https://github.com/ntop/ntopng/raw/01f47e04fd7c8d54399c9e465f823f0017069f8f/src%2FNetworkInterface.cpp",
+      "contents_url": "https://api.github.com/repos/ntop/ntopng/contents/src%2FNetworkInterface.cpp?ref=01f47e04fd7c8d54399c9e465f823f0017069f8f",
+      "patch": "@@ -2200,6 +2200,8 @@ Host* NetworkInterface::getHost(char *host_ip, u_int16_t vlan_id) {\n   struct in6_addr a6;\n   Host *h = NULL;\n \n+  if(!host_ip) return(NULL);\n+\n   /* Check if address is invalid */\n   if((inet_pton(AF_INET, (const char*)host_ip, &a4) == 0)\n      && (inet_pton(AF_INET6, (const char*)host_ip, &a6) == 0)) {"
+    }
+  ]
+}

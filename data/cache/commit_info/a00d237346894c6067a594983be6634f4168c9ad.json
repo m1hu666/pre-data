@@ -1,0 +1,125 @@
+{
+  "sha": "a00d237346894c6067a594983be6634f4168c9ad",
+  "node_id": "C_kwDOCTDsq9oAKGEwMGQyMzczNDY4OTRjNjA2N2E1OTQ5ODNiZTY2MzRmNDE2OGM5YWQ",
+  "commit": {
+    "author": {
+      "name": "Michael Anthony Leon",
+      "email": "fbmal7@meta.com",
+      "date": "2023-01-10T19:43:42Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-01-10T19:43:42Z"
+    },
+    "message": "Use copyDataProperties slow path for objects with accessors\n\nSummary:\nFix a bug present in `hermesBuiltinCopyDataProperties`.\n`hermesBuiltinCopyDataProperties` is meant to copy an object. It does\nthis by iterating over all the properties in the source object, and\nthen writing the key-value pair into a new object which is returned.The\niteration is done using `JSObject::forEachOwnPropertyWhile`, providing\na callback to process each property. It will take the property id, look\nit up in the source object using `getNamedPropertyValue_RJS`, then take\nthat resulting value and write it into the target. However, that API\nexplicitly states the following:\n\n> Obviously the callbacks shouldn't be  doing naughty things like modifying\nthe property map or creating new hidden classes (even implicitly)\n\nBut, `getNamedPropertyValue_RJS` can\nperform arbitrary JS execution if it is a getter, including\nadding/deleting new properties, which would modify the object's\nHiddenClass, thus violating `JSObject::forEachOwnPropertyWhile`'s\nprecondition.Therefore, the fix is to use the correct, but slower path,\nwhenever there is an accessor on the object. This code path is more 1:1\nto the spec. At the beginning, it will simply find all the properties\nof the source object using `JSObject::getOwnPropertyKeys` and then\niterate on those, rather than use `JSObject::forEachOwnPropertyWhile`.\nThis way, we are allowed to manipulate the source object however we\nwish, which is necessary in order to call `getNamedPropertyValue_RJS`.\n\nReviewed By: neildhar\n\nDifferential Revision: D41701871\n\nfbshipit-source-id: c4be179f57d52827f12ca26b1ab8d17cdccd7447",
+    "tree": {
+      "sha": "fb729037dce410b770e87d4e4d64d0082ea3b3d4",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/fb729037dce410b770e87d4e4d64d0082ea3b3d4"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/a00d237346894c6067a594983be6634f4168c9ad",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/a00d237346894c6067a594983be6634f4168c9ad",
+  "html_url": "https://github.com/facebook/hermes/commit/a00d237346894c6067a594983be6634f4168c9ad",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/a00d237346894c6067a594983be6634f4168c9ad/comments",
+  "author": {
+    "login": "fbmal7",
+    "id": 105675860,
+    "node_id": "U_kgDOBkx8VA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/105675860?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fbmal7",
+    "html_url": "https://github.com/fbmal7",
+    "followers_url": "https://api.github.com/users/fbmal7/followers",
+    "following_url": "https://api.github.com/users/fbmal7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fbmal7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fbmal7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fbmal7/subscriptions",
+    "organizations_url": "https://api.github.com/users/fbmal7/orgs",
+    "repos_url": "https://api.github.com/users/fbmal7/repos",
+    "events_url": "https://api.github.com/users/fbmal7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fbmal7/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "79c94de63cd417e5c3d95332dd9aae95ffc6174d",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/79c94de63cd417e5c3d95332dd9aae95ffc6174d",
+      "html_url": "https://github.com/facebook/hermes/commit/79c94de63cd417e5c3d95332dd9aae95ffc6174d"
+    }
+  ],
+  "stats": {
+    "total": 89,
+    "additions": 73,
+    "deletions": 16
+  },
+  "files": [
+    {
+      "sha": "c2cbf23c13571dce710031ac3db61f07dc587ecf",
+      "filename": "lib/VM/JSLib/HermesBuiltin.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 16,
+      "changes": 33,
+      "blob_url": "https://github.com/facebook/hermes/blob/a00d237346894c6067a594983be6634f4168c9ad/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/a00d237346894c6067a594983be6634f4168c9ad/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSLib%2FHermesBuiltin.cpp?ref=a00d237346894c6067a594983be6634f4168c9ad",
+      "patch": "@@ -251,12 +251,8 @@ CallResult<HermesValue> copyDataPropertiesSlowPath_RJS(\n     Handle<JSObject> target,\n     Handle<JSObject> from,\n     Handle<JSObject> excludedItems) {\n-  assert(\n-      from->isProxyObject() &&\n-      \"copyDataPropertiesSlowPath_RJS is only for Proxy\");\n-\n   // 5. Let keys be ? from.[[OwnPropertyKeys]]().\n-  auto cr = JSProxy::getOwnPropertyKeys(\n+  auto cr = JSObject::getOwnPropertyKeys(\n       from,\n       runtime,\n       OwnKeysFlags()\n@@ -310,15 +306,17 @@ CallResult<HermesValue> copyDataPropertiesSlowPath_RJS(\n \n     //   i. Let desc be ? from.[[GetOwnProperty]](nextKey).\n     ComputedPropertyDescriptor desc;\n-    CallResult<bool> crb =\n-        JSProxy::getOwnProperty(from, runtime, nextKeyHandle, desc, nullptr);\n+    CallResult<bool> crb = JSObject::getOwnComputedDescriptor(\n+        from, runtime, nextKeyHandle, tmpSymbolStorage, desc);\n     if (LLVM_UNLIKELY(crb == ExecutionStatus::EXCEPTION))\n       return ExecutionStatus::EXCEPTION;\n     //   ii. If desc is not undefined and desc.[[Enumerable]] is true, then\n-    if (*crb && desc.flags.enumerable) {\n+    // TODO(T141997867), move this special case behavior for host objects to\n+    // getOwnComputedDescriptor.\n+    if ((*crb && desc.flags.enumerable) || from->isHostObject()) {\n       //     1. Let propValue be ? Get(from, nextKey).\n       CallResult<PseudoHandle<>> crv =\n-          JSProxy::getComputed(from, runtime, nextKeyHandle, from);\n+          JSObject::getComputed_RJS(from, runtime, nextKeyHandle);\n       if (LLVM_UNLIKELY(crv == ExecutionStatus::EXCEPTION))\n         return ExecutionStatus::EXCEPTION;\n       propValueHandle = std::move(*crv);\n@@ -380,7 +378,13 @@ hermesBuiltinCopyDataProperties(void *, Runtime &runtime, NativeArgs args) {\n       (!excludedItems || !excludedItems->isProxyObject()) &&\n       \"excludedItems internal List is a Proxy\");\n \n-  if (source->isProxyObject()) {\n+  // We cannot use the fast path if the object is a proxy, host object, or when\n+  // there could potentially be an accessor defined on the object. This is\n+  // because in order to use JSObject::forEachOwnPropertyWhile, we must not\n+  // modify the underlying property map or hidden class. However, if we have an\n+  // accessor, we cannot guarantee that condition, so we use the slow path.\n+  if (source->isProxyObject() || source->isHostObject() ||\n+      source->getClass(runtime)->getMayHaveAccessor()) {\n     return copyDataPropertiesSlowPath_RJS(\n         runtime, target, source, excludedItems);\n   }\n@@ -458,12 +462,9 @@ hermesBuiltinCopyDataProperties(void *, Runtime &runtime, NativeArgs args) {\n             return true;\n         }\n \n-        auto cr =\n-            JSObject::getNamedPropertyValue_RJS(source, runtime, source, desc);\n-        if (LLVM_UNLIKELY(cr == ExecutionStatus::EXCEPTION))\n-          return false;\n-\n-        valueHandle = std::move(*cr);\n+        SmallHermesValue shv =\n+            JSObject::getNamedSlotValueUnsafe(*source, runtime, desc);\n+        valueHandle = runtime.makeHandle(shv.unboxToHV(runtime));\n \n         // sym can be an index-like property, so we have to bypass the assert in\n         // defineOwnPropertyInternal."
+    },
+    {
+      "sha": "aa06a1a04a92580e35f8a1521a67009f30a8e9d2",
+      "filename": "test/hermes/regress-spread-operator.js",
+      "status": "added",
+      "additions": 32,
+      "deletions": 0,
+      "changes": 32,
+      "blob_url": "https://github.com/facebook/hermes/blob/a00d237346894c6067a594983be6634f4168c9ad/test%2Fhermes%2Fregress-spread-operator.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/a00d237346894c6067a594983be6634f4168c9ad/test%2Fhermes%2Fregress-spread-operator.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-spread-operator.js?ref=a00d237346894c6067a594983be6634f4168c9ad",
+      "patch": "@@ -0,0 +1,32 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -O %s | %FileCheck %s\n+\n+// Check that the spread operator behaves correctly when modifying the\n+// underlying hidden class while iterating over an object's properties in order\n+// to copy it.\n+\n+var obj = {\n+  get foo() {\n+    this.tutu = 'hi';\n+    delete obj.bar;\n+    obj.tutu = 'lol';\n+  },\n+   bar: 'bar'\n+};\n+print({ ...obj }.tutu)\n+// CHECK: undefined\n+\n+var obj2 = {\n+  get foo() {\n+    obj2.bar = 'foo'\n+  },\n+  bar: 'bar'\n+};\n+print({ ...obj2 }.bar)\n+// CHECK: foo"
+    },
+    {
+      "sha": "fe758e1e23a8195f8cf0bd214bd34cb0dd54c8b0",
+      "filename": "unittests/API/APITest.cpp",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/facebook/hermes/blob/a00d237346894c6067a594983be6634f4168c9ad/unittests%2FAPI%2FAPITest.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/a00d237346894c6067a594983be6634f4168c9ad/unittests%2FAPI%2FAPITest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/unittests%2FAPI%2FAPITest.cpp?ref=a00d237346894c6067a594983be6634f4168c9ad",
+      "patch": "@@ -493,6 +493,30 @@ JSON.stringify(JSON.parse(out).callstack.map(x => x.SourceLocation));\n   EXPECT_EQ(callstack, expected);\n }\n \n+TEST_F(HermesRuntimeTest, SpreadHostObjectWithOwnProperties) {\n+  class HostObjectWithPropertyNames : public HostObject {\n+    std::vector<PropNameID> getPropertyNames(Runtime &rt) override {\n+      return PropNameID::names(rt, \"prop1\", \"1\", \"2\", \"prop2\", \"3\");\n+    }\n+    Value get(Runtime &runtime, const PropNameID &name) override {\n+      return Value();\n+    }\n+  };\n+\n+  Object ho = Object::createFromHostObject(\n+      *rt, std::make_shared<HostObjectWithPropertyNames>());\n+  rt->global().setProperty(*rt, \"ho\", ho);\n+\n+  auto res = eval(R\"###(\n+var spreaded = {...ho};\n+var props = Object.getOwnPropertyNames(spreaded);\n+props.toString();\n+)###\")\n+                 .getString(*rt)\n+                 .utf8(*rt);\n+  EXPECT_EQ(res, \"1,2,3,prop1,prop2\");\n+}\n+\n TEST_F(HermesRuntimeTest, HostObjectWithOwnProperties) {\n   class HostObjectWithPropertyNames : public HostObject {\n     std::vector<PropNameID> getPropertyNames(Runtime &rt) override {"
+    }
+  ]
+}

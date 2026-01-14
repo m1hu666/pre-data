@@ -1,0 +1,61 @@
+{
+  "sha": "80c8138c09598e88b4ddb6dbb279fa193bbb3237",
+  "node_id": "C_kwDOBfdhw9oAKDgwYzgxMzhjMDk1OThlODhiNGRkYjZkYmIyNzlmYTE5M2JiYjMyMzc",
+  "commit": {
+    "author": {
+      "name": "fuzzard",
+      "email": "fuzzard@kodi.tv",
+      "date": "2021-10-12T07:38:30Z"
+    },
+    "committer": {
+      "name": "fuzzard",
+      "email": "fuzzard@kodi.tv",
+      "date": "2021-10-12T07:42:52Z"
+    },
+    "message": "[Playlist] dont use istream directly to a tinyxml structure\n\nTurn istream into a std::string to handle large buffers (#20305)",
+    "tree": {
+      "sha": "fe58a9d09432c185f7d6137944d2f31b2a8057d3",
+      "url": "https://api.github.com/repos/fuzzard/xbmc/git/trees/fe58a9d09432c185f7d6137944d2f31b2a8057d3"
+    },
+    "url": "https://api.github.com/repos/fuzzard/xbmc/git/commits/80c8138c09598e88b4ddb6dbb279fa193bbb3237",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/fuzzard/xbmc/commits/80c8138c09598e88b4ddb6dbb279fa193bbb3237",
+  "html_url": "https://github.com/fuzzard/xbmc/commit/80c8138c09598e88b4ddb6dbb279fa193bbb3237",
+  "comments_url": "https://api.github.com/repos/fuzzard/xbmc/commits/80c8138c09598e88b4ddb6dbb279fa193bbb3237/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "c7ee2d82a1601eb2f44b741423936a4facd97fa5",
+      "url": "https://api.github.com/repos/fuzzard/xbmc/commits/c7ee2d82a1601eb2f44b741423936a4facd97fa5",
+      "html_url": "https://github.com/fuzzard/xbmc/commit/c7ee2d82a1601eb2f44b741423936a4facd97fa5"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "17d6e491d25b685ca1d55205e448972f52afc728",
+      "filename": "xbmc/playlists/PlayListPLS.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/fuzzard/xbmc/blob/80c8138c09598e88b4ddb6dbb279fa193bbb3237/xbmc%2Fplaylists%2FPlayListPLS.cpp",
+      "raw_url": "https://github.com/fuzzard/xbmc/raw/80c8138c09598e88b4ddb6dbb279fa193bbb3237/xbmc%2Fplaylists%2FPlayListPLS.cpp",
+      "contents_url": "https://api.github.com/repos/fuzzard/xbmc/contents/xbmc%2Fplaylists%2FPlayListPLS.cpp?ref=80c8138c09598e88b4ddb6dbb279fa193bbb3237",
+      "patch": "@@ -289,8 +289,9 @@ bool CPlayListASX::LoadData(std::istream& stream)\n   }\n   else\n   {\n+    std::string asxstream(std::istreambuf_iterator<char>(stream), {});\n     CXBMCTinyXML xmlDoc;\n-    stream >> xmlDoc;\n+    xmlDoc.Parse(asxstream, TIXML_DEFAULT_ENCODING);\n \n     if (xmlDoc.Error())\n     {\n@@ -300,6 +301,9 @@ bool CPlayListASX::LoadData(std::istream& stream)\n \n     TiXmlElement *pRootElement = xmlDoc.RootElement();\n \n+    if (!pRootElement)\n+      return false;\n+\n     // lowercase every element\n     TiXmlNode *pNode = pRootElement;\n     TiXmlNode *pChild = NULL;"
+    }
+  ]
+}

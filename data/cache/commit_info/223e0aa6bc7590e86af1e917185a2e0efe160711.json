@@ -1,0 +1,137 @@
+{
+  "sha": "223e0aa6bc7590e86af1e917185a2e0efe160711",
+  "node_id": "MDY6Q29tbWl0MjQ3NzY3Mjg6MjIzZTBhYTZiYzc1OTBlODZhZjFlOTE3MTg1YTJlMGVmZTE2MDcxMQ==",
+  "commit": {
+    "author": {
+      "name": "Alan Frindell",
+      "email": "afrind@fb.com",
+      "date": "2018-12-28T00:11:46Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2018-12-28T00:14:42Z"
+    },
+    "message": "Don't lower lastStreamID_\n\nSummary:\nThis could throw off the logic about what is headers/trailers\nCVE-2018-6347\n\nReviewed By: avasylev, bolekk\n\nDifferential Revision: D13521704\n\nfbshipit-source-id: ed436ff13f191bf04764494973fcb73b35ed1256",
+    "tree": {
+      "sha": "164d9b74e9b350fbe637c2a4025ce68e08e1d76e",
+      "url": "https://api.github.com/repos/facebook/proxygen/git/trees/164d9b74e9b350fbe637c2a4025ce68e08e1d76e"
+    },
+    "url": "https://api.github.com/repos/facebook/proxygen/git/commits/223e0aa6bc7590e86af1e917185a2e0efe160711",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/proxygen/commits/223e0aa6bc7590e86af1e917185a2e0efe160711",
+  "html_url": "https://github.com/facebook/proxygen/commit/223e0aa6bc7590e86af1e917185a2e0efe160711",
+  "comments_url": "https://api.github.com/repos/facebook/proxygen/commits/223e0aa6bc7590e86af1e917185a2e0efe160711/comments",
+  "author": {
+    "login": "afrind",
+    "id": 8259689,
+    "node_id": "MDQ6VXNlcjgyNTk2ODk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8259689?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/afrind",
+    "html_url": "https://github.com/afrind",
+    "followers_url": "https://api.github.com/users/afrind/followers",
+    "following_url": "https://api.github.com/users/afrind/following{/other_user}",
+    "gists_url": "https://api.github.com/users/afrind/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/afrind/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/afrind/subscriptions",
+    "organizations_url": "https://api.github.com/users/afrind/orgs",
+    "repos_url": "https://api.github.com/users/afrind/repos",
+    "events_url": "https://api.github.com/users/afrind/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/afrind/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "52cf331743ebd74194d6343a6c2ec52bb917c982",
+      "url": "https://api.github.com/repos/facebook/proxygen/commits/52cf331743ebd74194d6343a6c2ec52bb917c982",
+      "html_url": "https://github.com/facebook/proxygen/commit/52cf331743ebd74194d6343a6c2ec52bb917c982"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "additions": 70,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d3095d626aaea7e11e6ce457f49101ec558cf0fd",
+      "filename": "proxygen/lib/http/codec/HTTP2Codec.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/proxygen/blob/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2FHTTP2Codec.cpp?ref=223e0aa6bc7590e86af1e917185a2e0efe160711",
+      "patch": "@@ -987,7 +987,7 @@ ErrorCode HTTP2Codec::checkNewStream(uint32_t streamId, bool trailersAllowed) {\n     VLOG(4) << \"Parsing downstream trailers streamId=\" << streamId;\n   }\n \n-  if (sessionClosing_ != ClosingState::CLOSED) {\n+  if (sessionClosing_ != ClosingState::CLOSED && streamId > lastStreamID_) {\n     lastStreamID_ = streamId;\n   }\n \n@@ -1313,6 +1313,7 @@ size_t HTTP2Codec::generateChunkTerminator(folly::IOBufQueue& /*writeBuf*/,\n size_t HTTP2Codec::generateTrailers(folly::IOBufQueue& writeBuf,\n                                     StreamID stream,\n                                     const HTTPHeaders& trailers) {\n+  VLOG(4) << \"generating TRAILERS for stream=\" << stream;\n   std::vector<compress::Header> allHeaders;\n   CodecUtil::appendHeaders(trailers, allHeaders, HTTP_HEADER_NONE);\n "
+    },
+    {
+      "sha": "c123e0d3a093b78c6445932bb3af8c148e2f54ad",
+      "filename": "proxygen/lib/http/codec/test/HTTP2CodecTest.cpp",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/facebook/proxygen/blob/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fcodec%2Ftest%2FHTTP2CodecTest.cpp?ref=223e0aa6bc7590e86af1e917185a2e0efe160711",
+      "patch": "@@ -2145,3 +2145,28 @@ TEST_F(HTTP2CodecTest, TrailersReplyMissingContinuation) {\n   EXPECT_EQ(upstreamCodec_.getReceivedFrameCount(), 4);\n #endif\n }\n+\n+TEST_F(HTTP2CodecTest, TrailersNotLatest) {\n+  HTTPMessage req = getGetRequest(\"/guacamole\");\n+  req.getHeaders().add(HTTP_HEADER_USER_AGENT, \"coolio\");\n+  upstreamCodec_.generateHeader(output_, 1, req);\n+  upstreamCodec_.generateHeader(output_, 3, req);\n+\n+  HTTPHeaders trailers;\n+  trailers.add(\"x-trailer-1\", \"pico-de-gallo\");\n+  upstreamCodec_.generateTrailers(output_, 1, trailers);\n+  upstreamCodec_.generateHeader(output_, 3, req);\n+\n+  parse();\n+\n+  EXPECT_EQ(callbacks_.messageBegin, 2);\n+  EXPECT_EQ(callbacks_.headersComplete, 2);\n+  EXPECT_EQ(callbacks_.bodyCalls, 0);\n+  EXPECT_EQ(callbacks_.trailers, 1);\n+  EXPECT_NE(nullptr, callbacks_.msg->getTrailers());\n+  EXPECT_EQ(\"pico-de-gallo\",\n+            callbacks_.msg->getTrailers()->getSingleOrEmpty(\"x-trailer-1\"));\n+  EXPECT_EQ(callbacks_.messageComplete, 1);\n+  EXPECT_EQ(callbacks_.streamErrors, 1);\n+  EXPECT_EQ(callbacks_.sessionErrors, 0);\n+}"
+    },
+    {
+      "sha": "f3478c52c14123ff56c11b0c3241e2215f876ef3",
+      "filename": "proxygen/lib/http/session/test/HTTPDownstreamSessionTest.cpp",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 0,
+      "changes": 32,
+      "blob_url": "https://github.com/facebook/proxygen/blob/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPDownstreamSessionTest.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPDownstreamSessionTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPDownstreamSessionTest.cpp?ref=223e0aa6bc7590e86af1e917185a2e0efe160711",
+      "patch": "@@ -3568,3 +3568,35 @@ TEST_F(HTTP2DownstreamSessionTest, TestSetEgressSettings) {\n   flushRequestsAndLoop();\n   gracefulShutdown();\n }\n+\n+TEST_F(HTTP2DownstreamSessionTest, TestDuplicateRequestStream) {\n+  // Send the following:\n+  // HEADERS id=1\n+  // HEADERS id=2\n+  // HEADERS id=1 (trailers)\n+  // HEADERS id=2 -> contains pseudo-headers after EOM so ignored\n+  auto handler2 = addSimpleStrictHandler();\n+  auto handler1 = addSimpleStrictHandler();\n+  auto streamID1 = sendRequest(\"/withtrailers\", 0, false);\n+  auto streamID2 = sendRequest();\n+  HTTPHeaders trailers;\n+  trailers.add(\"Foo\", \"Bar\");\n+  clientCodec_->generateTrailers(requests_, streamID1, trailers);\n+  clientCodec_->generateEOM(requests_, streamID1);\n+\n+  clientCodec_->generateHeader(requests_, streamID2, getGetRequest(), false);\n+  handler1->expectHeaders();\n+  handler2->expectHeaders();\n+  handler2->expectEOM();\n+  handler1->expectTrailers();\n+  handler1->expectEOM([&] {\n+      handler1->sendReplyWithBody(200, 100);\n+      // 2 got an error after EOM, which gets ignored - need a response to\n+      // cleanly terminate it\n+      handler2->sendReplyWithBody(200, 100);\n+    });\n+  handler1->expectDetachTransaction();\n+  handler2->expectDetachTransaction();\n+  flushRequestsAndLoop();\n+  gracefulShutdown();\n+}"
+    },
+    {
+      "sha": "9b3f81ae012c158cbe7cb549e68ec64bd32e71df",
+      "filename": "proxygen/lib/http/session/test/HTTPSessionMocks.h",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/proxygen/blob/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPSessionMocks.h",
+      "raw_url": "https://github.com/facebook/proxygen/raw/223e0aa6bc7590e86af1e917185a2e0efe160711/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPSessionMocks.h",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fsession%2Ftest%2FHTTPSessionMocks.h?ref=223e0aa6bc7590e86af1e917185a2e0efe160711",
+      "patch": "@@ -221,6 +221,17 @@ class MockHTTPHandler\n         .RetiresOnSaturation();\n   }\n \n+  void expectTrailers(\n+      std::function<void()> callback = std::function<void()>()) {\n+    if (callback) {\n+      EXPECT_CALL(*this, onTrailers(testing::_))\n+          .WillOnce(testing::InvokeWithoutArgs(callback))\n+          .RetiresOnSaturation();\n+    } else {\n+      EXPECT_CALL(*this, onTrailers(testing::_));\n+    }\n+  }\n+\n   void expectTrailers(\n       std::function<void(std::shared_ptr<HTTPHeaders> trailers)> cb) {\n     EXPECT_CALL(*this, onTrailers(testing::_))"
+    }
+  ]
+}

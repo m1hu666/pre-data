@@ -1,0 +1,113 @@
+{
+  "sha": "4fe8672a5aec3467da72b5852ca6d283c15adb53",
+  "node_id": "MDY6Q29tbWl0MzE1NTUzMjg6NGZlODY3MmE1YWVjMzQ2N2RhNzJiNTg1MmNhNmQyODNjMTVhZGI1Mw==",
+  "commit": {
+    "author": {
+      "name": "Lars Michelsen",
+      "email": "lm@larsmichelsen.com",
+      "date": "2016-06-25T11:21:48Z"
+    },
+    "committer": {
+      "name": "Lars Michelsen",
+      "email": "lm@larsmichelsen.com",
+      "date": "2016-06-25T11:21:48Z"
+    },
+    "message": "Clarified change log on php-gettext 1.0.12 update",
+    "tree": {
+      "sha": "8aafafcfec72c0a2457d490f47702a009f1c06a9",
+      "url": "https://api.github.com/repos/NagVis/nagvis/git/trees/8aafafcfec72c0a2457d490f47702a009f1c06a9"
+    },
+    "url": "https://api.github.com/repos/NagVis/nagvis/git/commits/4fe8672a5aec3467da72b5852ca6d283c15adb53",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/NagVis/nagvis/commits/4fe8672a5aec3467da72b5852ca6d283c15adb53",
+  "html_url": "https://github.com/NagVis/nagvis/commit/4fe8672a5aec3467da72b5852ca6d283c15adb53",
+  "comments_url": "https://api.github.com/repos/NagVis/nagvis/commits/4fe8672a5aec3467da72b5852ca6d283c15adb53/comments",
+  "author": {
+    "login": "LarsMichelsen",
+    "id": 2719629,
+    "node_id": "MDQ6VXNlcjI3MTk2Mjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2719629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LarsMichelsen",
+    "html_url": "https://github.com/LarsMichelsen",
+    "followers_url": "https://api.github.com/users/LarsMichelsen/followers",
+    "following_url": "https://api.github.com/users/LarsMichelsen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LarsMichelsen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LarsMichelsen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LarsMichelsen/subscriptions",
+    "organizations_url": "https://api.github.com/users/LarsMichelsen/orgs",
+    "repos_url": "https://api.github.com/users/LarsMichelsen/repos",
+    "events_url": "https://api.github.com/users/LarsMichelsen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LarsMichelsen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "LarsMichelsen",
+    "id": 2719629,
+    "node_id": "MDQ6VXNlcjI3MTk2Mjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2719629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LarsMichelsen",
+    "html_url": "https://github.com/LarsMichelsen",
+    "followers_url": "https://api.github.com/users/LarsMichelsen/followers",
+    "following_url": "https://api.github.com/users/LarsMichelsen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LarsMichelsen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LarsMichelsen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LarsMichelsen/subscriptions",
+    "organizations_url": "https://api.github.com/users/LarsMichelsen/orgs",
+    "repos_url": "https://api.github.com/users/LarsMichelsen/repos",
+    "events_url": "https://api.github.com/users/LarsMichelsen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LarsMichelsen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b7250c78180baa8663cad56e5ead04ef9d877c7d",
+      "url": "https://api.github.com/repos/NagVis/nagvis/commits/b7250c78180baa8663cad56e5ead04ef9d877c7d",
+      "html_url": "https://github.com/NagVis/nagvis/commit/b7250c78180baa8663cad56e5ead04ef9d877c7d"
+    }
+  ],
+  "stats": {
+    "total": 244,
+    "additions": 116,
+    "deletions": 128
+  },
+  "files": [
+    {
+      "sha": "9b9b194c8d58895367d8d02be15bbcbb75c2b95c",
+      "filename": "ChangeLog",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 16,
+      "changes": 19,
+      "blob_url": "https://github.com/NagVis/nagvis/blob/4fe8672a5aec3467da72b5852ca6d283c15adb53/ChangeLog",
+      "raw_url": "https://github.com/NagVis/nagvis/raw/4fe8672a5aec3467da72b5852ca6d283c15adb53/ChangeLog",
+      "contents_url": "https://api.github.com/repos/NagVis/nagvis/contents/ChangeLog?ref=4fe8672a5aec3467da72b5852ca6d283c15adb53",
+      "patch": "@@ -3,22 +3,9 @@ Core:\n   * MK BI backend: Now prints an error message when trying to use it with\n     objects that are not aggregations.\n   * NDO MySQL backend: Filtering out legacy objects from DB (setting is_active filter)\n-  * FIX: A local exploitable security issue has been discovered in the php-gettext\n-    library which is used to make NagVis localizable on platforms which has no gettext\n-    support built into PHP.\n-\n-    A local user with privileges to create/modify the .mo files used by NagVis\n-    could modify a file in a way that it executes custom code with the privileges of\n-    the web server which is executing the NagVis code.\n-\n-    To more than 99% of NagVis installations (installed with the install.sh\n-    installer or OMD) this is no special threat because a user which is able to .mo\n-    files is able to modify the .php program files of NagVis. An attacker\n-    would rather modify the .php files directly instead of injecting it's code through\n-    the .mo files.\n-\n-    However, to fix this for most installations minor issue, we included php-gettext\n-    in version 1.0.12 with this release which fixes the issue.\n+  * FIX: Updated php-gettext to 1.0.12 and commented out unused code because it contains\n+    some exploitable PHP code which could be used to inject code using modified .mo files.\n+    However, NagVis has never used these functions, so was never affected by this issue.\n \n Frontend:\n   * FIX: Fixed error in ad-hoc automaps (Network Topology in Check_MK) during state updates"
+    },
+    {
+      "sha": "e7ca4ab5b2f6038dd75ead619061b1c6ed59b2e8",
+      "filename": "share/server/core/ext/php-gettext-1.0.12/gettext.php",
+      "status": "modified",
+      "additions": 113,
+      "deletions": 112,
+      "changes": 225,
+      "blob_url": "https://github.com/NagVis/nagvis/blob/4fe8672a5aec3467da72b5852ca6d283c15adb53/share%2Fserver%2Fcore%2Fext%2Fphp-gettext-1.0.12%2Fgettext.php",
+      "raw_url": "https://github.com/NagVis/nagvis/raw/4fe8672a5aec3467da72b5852ca6d283c15adb53/share%2Fserver%2Fcore%2Fext%2Fphp-gettext-1.0.12%2Fgettext.php",
+      "contents_url": "https://api.github.com/repos/NagVis/nagvis/contents/share%2Fserver%2Fcore%2Fext%2Fphp-gettext-1.0.12%2Fgettext.php?ref=4fe8672a5aec3467da72b5852ca6d283c15adb53",
+      "patch": "@@ -275,72 +275,73 @@ function translate($string) {\n    * @access private\n    * @return string sanitized plural form expression\n    */\n-  function sanitize_plural_expression($expr) {\n-    // Get rid of disallowed characters.\n-    $expr = preg_replace('@[^a-zA-Z0-9_:;\\(\\)\\?\\|\\&=!<>+*/\\%-]@', '', $expr);\n-\n-    // Add parenthesis for tertiary '?' operator.\n-    $expr .= ';';\n-    $res = '';\n-    $p = 0;\n-    for ($i = 0; $i < strlen($expr); $i++) {\n-      $ch = $expr[$i];\n-      switch ($ch) {\n-      case '?':\n-        $res .= ' ? (';\n-        $p++;\n-        break;\n-      case ':':\n-        $res .= ') : (';\n-        break;\n-      case ';':\n-        $res .= str_repeat( ')', $p) . ';';\n-        $p = 0;\n-        break;\n-      default:\n-        $res .= $ch;\n-      }\n-    }\n-    return $res;\n-  }\n+  //function sanitize_plural_expression($expr) {\n+  //  // Get rid of disallowed characters.\n+  //  $expr = preg_replace('@[^a-zA-Z0-9_:;\\(\\)\\?\\|\\&=!<>+*/\\%-]@', '', $expr);\n+\n+  //  // Add parenthesis for tertiary '?' operator.\n+  //  $expr .= ';';\n+  //  $res = '';\n+  //  $p = 0;\n+  //  for ($i = 0; $i < strlen($expr); $i++) {\n+  //    $ch = $expr[$i];\n+  //    switch ($ch) {\n+  //    case '?':\n+  //      $res .= ' ? (';\n+  //      $p++;\n+  //      break;\n+  //    case ':':\n+  //      $res .= ') : (';\n+  //      break;\n+  //    case ';':\n+  //      $res .= str_repeat( ')', $p) . ';';\n+  //      $p = 0;\n+  //      break;\n+  //    default:\n+  //      $res .= $ch;\n+  //    }\n+  //  }\n+  //  return $res;\n+  //}\n \n   /**\n    * Parse full PO header and extract only plural forms line.\n    *\n    * @access private\n    * @return string verbatim plural form header field\n    */\n-  function extract_plural_forms_header_from_po_header($header) {\n-    if (preg_match(\"/(^|\\n)plural-forms: ([^\\n]*)\\n/i\", $header, $regs))\n-      $expr = $regs[2];\n-    else\n-      $expr = \"nplurals=2; plural=n == 1 ? 0 : 1;\";\n-    return $expr;\n-  }\n+  //function extract_plural_forms_header_from_po_header($header) {\n+  //  if (preg_match(\"/(^|\\n)plural-forms: ([^\\n]*)\\n/i\", $header, $regs))\n+  //    $expr = $regs[2];\n+  //  else\n+  //    $expr = \"nplurals=2; plural=n == 1 ? 0 : 1;\";\n+  //  return $expr;\n+  //}\n \n   /**\n    * Get possible plural forms from MO header\n    *\n    * @access private\n    * @return string plural form header\n    */\n-  function get_plural_forms() {\n-    // lets assume message number 0 is header\n-    // this is true, right?\n-    $this->load_tables();\n-\n-    // cache header field for plural forms\n-    if (! is_string($this->pluralheader)) {\n-      if ($this->enable_cache) {\n-        $header = $this->cache_translations[\"\"];\n-      } else {\n-        $header = $this->get_translation_string(0);\n-      }\n-      $expr = $this->extract_plural_forms_header_from_po_header($header);\n-      $this->pluralheader = $this->sanitize_plural_expression($expr);\n-    }\n-    return $this->pluralheader;\n-  }\n+  //function get_plural_forms() {\n+  //  // lets assume message number 0 is header\n+  //  // this is true, right?\n+  //  $this->load_tables();\n+\n+  //  // cache header field for plural forms\n+  //  if (! is_string($this->pluralheader)) {\n+  //    if ($this->enable_cache) {\n+  //      $header = $this->cache_translations[\"\"];\n+  //    } else {\n+  //      $header = $this->get_translation_string(0);\n+  //    }\n+  //    print($header);\n+  //    $expr = $this->extract_plural_forms_header_from_po_header($header);\n+  //    $this->pluralheader = $this->sanitize_plural_expression($expr);\n+  //  }\n+  //  return $this->pluralheader;\n+  //}\n \n   /**\n    * Detects which plural form to take\n@@ -349,23 +350,23 @@ function get_plural_forms() {\n    * @param n count\n    * @return int array index of the right plural form\n    */\n-  function select_string($n) {\n-    if (!is_int($n)) {\n-      throw new InvalidArgumentException(\n-        \"Select_string only accepts integers: \" . $n);\n-    }\n-    $string = $this->get_plural_forms();\n-    $string = str_replace('nplurals',\"\\$total\",$string);\n-    $string = str_replace(\"n\",$n,$string);\n-    $string = str_replace('plural',\"\\$plural\",$string);\n-\n-    $total = 0;\n-    $plural = 0;\n-\n-    eval(\"$string\");\n-    if ($plural >= $total) $plural = $total - 1;\n-    return $plural;\n-  }\n+  //function select_string($n) {\n+  //  if (!is_int($n)) {\n+  //    throw new InvalidArgumentException(\n+  //      \"Select_string only accepts integers: \" . $n);\n+  //  }\n+  //  $string = $this->get_plural_forms();\n+  //  $string = str_replace('nplurals',\"\\$total\",$string);\n+  //  $string = str_replace(\"n\",$n,$string);\n+  //  $string = str_replace('plural',\"\\$plural\",$string);\n+\n+  //  $total = 0;\n+  //  $plural = 0;\n+\n+  //  eval(\"$string\");\n+  //  if ($plural >= $total) $plural = $total - 1;\n+  //  return $plural;\n+  //}\n \n   /**\n    * Plural version of gettext\n@@ -376,40 +377,40 @@ function select_string($n) {\n    * @param string number\n    * @return translated plural form\n    */\n-  function ngettext($single, $plural, $number) {\n-    if ($this->short_circuit) {\n-      if ($number != 1)\n-        return $plural;\n-      else\n-        return $single;\n-    }\n-\n-    // find out the appropriate form\n-    $select = $this->select_string($number);\n-\n-    // this should contains all strings separated by NULLs\n-    $key = $single . chr(0) . $plural;\n-\n-\n-    if ($this->enable_cache) {\n-      if (! array_key_exists($key, $this->cache_translations)) {\n-        return ($number != 1) ? $plural : $single;\n-      } else {\n-        $result = $this->cache_translations[$key];\n-        $list = explode(chr(0), $result);\n-        return $list[$select];\n-      }\n-    } else {\n-      $num = $this->find_string($key);\n-      if ($num == -1) {\n-        return ($number != 1) ? $plural : $single;\n-      } else {\n-        $result = $this->get_translation_string($num);\n-        $list = explode(chr(0), $result);\n-        return $list[$select];\n-      }\n-    }\n-  }\n+  //function ngettext($single, $plural, $number) {\n+  //  if ($this->short_circuit) {\n+  //    if ($number != 1)\n+  //      return $plural;\n+  //    else\n+  //      return $single;\n+  //  }\n+\n+  //  // find out the appropriate form\n+  //  $select = $this->select_string($number);\n+\n+  //  // this should contains all strings separated by NULLs\n+  //  $key = $single . chr(0) . $plural;\n+\n+\n+  //  if ($this->enable_cache) {\n+  //    if (! array_key_exists($key, $this->cache_translations)) {\n+  //      return ($number != 1) ? $plural : $single;\n+  //    } else {\n+  //      $result = $this->cache_translations[$key];\n+  //      $list = explode(chr(0), $result);\n+  //      return $list[$select];\n+  //    }\n+  //  } else {\n+  //    $num = $this->find_string($key);\n+  //    if ($num == -1) {\n+  //      return ($number != 1) ? $plural : $single;\n+  //    } else {\n+  //      $result = $this->get_translation_string($num);\n+  //      $list = explode(chr(0), $result);\n+  //      return $list[$select];\n+  //    }\n+  //  }\n+  //}\n \n   function pgettext($context, $msgid) {\n     $key = $context . chr(4) . $msgid;\n@@ -421,16 +422,16 @@ function pgettext($context, $msgid) {\n     }\n   }\n \n-  function npgettext($context, $singular, $plural, $number) {\n-    $key = $context . chr(4) . $singular;\n-    $ret = $this->ngettext($key, $plural, $number);\n-    if (strpos($ret, \"\\004\") !== FALSE) {\n-      return $singular;\n-    } else {\n-      return $ret;\n-    }\n+  //function npgettext($context, $singular, $plural, $number) {\n+  //  $key = $context . chr(4) . $singular;\n+  //  $ret = $this->ngettext($key, $plural, $number);\n+  //  if (strpos($ret, \"\\004\") !== FALSE) {\n+  //    return $singular;\n+  //  } else {\n+  //    return $ret;\n+  //  }\n \n-  }\n+  //}\n }\n \n ?>"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "74504503cff86e986bac441213c403b0ba28d58f",
+  "node_id": "MDY6Q29tbWl0MzUzMzM0ODo3NDUwNDUwM2NmZjg2ZTk4NmJhYzQ0MTIxM2M0MDNiMGJhMjhkNThm",
+  "commit": {
+    "author": {
+      "name": "Peter Hillman",
+      "email": "peterh@wetafx.co.nz",
+      "date": "2019-07-25T07:50:11Z"
+    },
+    "committer": {
+      "name": "Kimball Thurston",
+      "email": "kdt3rd@gmail.com",
+      "date": "2019-07-25T09:06:57Z"
+    },
+    "message": "Fix logic for 1 pixel high/wide preview images (Fixes #493)",
+    "tree": {
+      "sha": "86c599f3bc608977fe8b82a9cf02dd83a59d3de3",
+      "url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/git/trees/86c599f3bc608977fe8b82a9cf02dd83a59d3de3"
+    },
+    "url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/git/commits/74504503cff86e986bac441213c403b0ba28d58f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/commits/74504503cff86e986bac441213c403b0ba28d58f",
+  "html_url": "https://github.com/AcademySoftwareFoundation/openexr/commit/74504503cff86e986bac441213c403b0ba28d58f",
+  "comments_url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/commits/74504503cff86e986bac441213c403b0ba28d58f/comments",
+  "author": {
+    "login": "peterhillman",
+    "id": 1069876,
+    "node_id": "MDQ6VXNlcjEwNjk4NzY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1069876?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/peterhillman",
+    "html_url": "https://github.com/peterhillman",
+    "followers_url": "https://api.github.com/users/peterhillman/followers",
+    "following_url": "https://api.github.com/users/peterhillman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/peterhillman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/peterhillman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/peterhillman/subscriptions",
+    "organizations_url": "https://api.github.com/users/peterhillman/orgs",
+    "repos_url": "https://api.github.com/users/peterhillman/repos",
+    "events_url": "https://api.github.com/users/peterhillman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/peterhillman/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kdt3rd",
+    "id": 970144,
+    "node_id": "MDQ6VXNlcjk3MDE0NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/970144?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kdt3rd",
+    "html_url": "https://github.com/kdt3rd",
+    "followers_url": "https://api.github.com/users/kdt3rd/followers",
+    "following_url": "https://api.github.com/users/kdt3rd/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kdt3rd/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kdt3rd/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kdt3rd/subscriptions",
+    "organizations_url": "https://api.github.com/users/kdt3rd/orgs",
+    "repos_url": "https://api.github.com/users/kdt3rd/repos",
+    "events_url": "https://api.github.com/users/kdt3rd/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kdt3rd/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6bb36714528a9563dd3b92720c5063a1284b86f8",
+      "url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/commits/6bb36714528a9563dd3b92720c5063a1284b86f8",
+      "html_url": "https://github.com/AcademySoftwareFoundation/openexr/commit/6bb36714528a9563dd3b92720c5063a1284b86f8"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e2d0879847f45a6c52dd4899c3e8cba9cf794832",
+      "filename": "OpenEXR/exrmakepreview/makePreview.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/openexr/blob/74504503cff86e986bac441213c403b0ba28d58f/OpenEXR%2Fexrmakepreview%2FmakePreview.cpp",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/openexr/raw/74504503cff86e986bac441213c403b0ba28d58f/OpenEXR%2Fexrmakepreview%2FmakePreview.cpp",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/contents/OpenEXR%2Fexrmakepreview%2FmakePreview.cpp?ref=74504503cff86e986bac441213c403b0ba28d58f",
+      "patch": "@@ -120,8 +120,8 @@ generatePreview (const char inFileName[],\n     previewHeight = max (int (h / (w * a) * previewWidth + .5f), 1);\n     previewPixels.resizeErase (previewHeight, previewWidth);\n \n-    float fx = (previewWidth  > 0)? (float (w - 1) / (previewWidth  - 1)): 1;\n-    float fy = (previewHeight > 0)? (float (h - 1) / (previewHeight - 1)): 1;\n+    float fx = (previewWidth  > 1)? (float (w - 1) / (previewWidth  - 1)): 1;\n+    float fy = (previewHeight > 1)? (float (h - 1) / (previewHeight - 1)): 1;\n     float m  = Math<float>::pow (2.f, IMATH_NAMESPACE::clamp (exposure + 2.47393f, -20.f, 20.f));\n \n     for (int y = 0; y < previewHeight; ++y)"
+    }
+  ]
+}

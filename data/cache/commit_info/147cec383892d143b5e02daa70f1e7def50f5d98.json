@@ -1,0 +1,113 @@
+{
+  "sha": "147cec383892d143b5e02daa70f1e7def50f5d98",
+  "node_id": "MDY6Q29tbWl0NzY3NTkyOToxNDdjZWMzODM4OTJkMTQzYjVlMDJkYWE3MGYxZTdkZWY1MGY1ZDk4",
+  "commit": {
+    "author": {
+      "name": "Fabian Vogt",
+      "email": "fabian@ritter-vogt.de",
+      "date": "2018-07-11T17:45:40Z"
+    },
+    "committer": {
+      "name": "Fabian Vogt",
+      "email": "fabian@ritter-vogt.de",
+      "date": "2018-07-17T11:09:58Z"
+    },
+    "message": "Fix authentication when reusing an existing session\n\n- Check the success value before unlocking the session\n- Don't attempt to use the nonexistant \"sddm-check\" PAM service",
+    "tree": {
+      "sha": "e2ad9c4a0d7ba783199fac1d768b9ff7e77ba1ad",
+      "url": "https://api.github.com/repos/sddm/sddm/git/trees/e2ad9c4a0d7ba783199fac1d768b9ff7e77ba1ad"
+    },
+    "url": "https://api.github.com/repos/sddm/sddm/git/commits/147cec383892d143b5e02daa70f1e7def50f5d98",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/sddm/sddm/commits/147cec383892d143b5e02daa70f1e7def50f5d98",
+  "html_url": "https://github.com/sddm/sddm/commit/147cec383892d143b5e02daa70f1e7def50f5d98",
+  "comments_url": "https://api.github.com/repos/sddm/sddm/commits/147cec383892d143b5e02daa70f1e7def50f5d98/comments",
+  "author": {
+    "login": "Vogtinator",
+    "id": 1622084,
+    "node_id": "MDQ6VXNlcjE2MjIwODQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1622084?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Vogtinator",
+    "html_url": "https://github.com/Vogtinator",
+    "followers_url": "https://api.github.com/users/Vogtinator/followers",
+    "following_url": "https://api.github.com/users/Vogtinator/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Vogtinator/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Vogtinator/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Vogtinator/subscriptions",
+    "organizations_url": "https://api.github.com/users/Vogtinator/orgs",
+    "repos_url": "https://api.github.com/users/Vogtinator/repos",
+    "events_url": "https://api.github.com/users/Vogtinator/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Vogtinator/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Vogtinator",
+    "id": 1622084,
+    "node_id": "MDQ6VXNlcjE2MjIwODQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1622084?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Vogtinator",
+    "html_url": "https://github.com/Vogtinator",
+    "followers_url": "https://api.github.com/users/Vogtinator/followers",
+    "following_url": "https://api.github.com/users/Vogtinator/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Vogtinator/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Vogtinator/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Vogtinator/subscriptions",
+    "organizations_url": "https://api.github.com/users/Vogtinator/orgs",
+    "repos_url": "https://api.github.com/users/Vogtinator/repos",
+    "events_url": "https://api.github.com/users/Vogtinator/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Vogtinator/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0c531e4ac8a1dc7c4f9fddfc647fe63b80532599",
+      "url": "https://api.github.com/repos/sddm/sddm/commits/0c531e4ac8a1dc7c4f9fddfc647fe63b80532599",
+      "html_url": "https://github.com/sddm/sddm/commit/0c531e4ac8a1dc7c4f9fddfc647fe63b80532599"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "57d7ecbf0fde25401f58bc12968780af025bd88f",
+      "filename": "src/daemon/Display.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/sddm/sddm/blob/147cec383892d143b5e02daa70f1e7def50f5d98/src%2Fdaemon%2FDisplay.cpp",
+      "raw_url": "https://github.com/sddm/sddm/raw/147cec383892d143b5e02daa70f1e7def50f5d98/src%2Fdaemon%2FDisplay.cpp",
+      "contents_url": "https://api.github.com/repos/sddm/sddm/contents/src%2Fdaemon%2FDisplay.cpp?ref=147cec383892d143b5e02daa70f1e7def50f5d98",
+      "patch": "@@ -339,7 +339,9 @@ namespace SDDM {\n         } else {\n             //we only want to unlock the session if we can lock in, so we want to go via PAM auth, but not start a new session\n             //by not setting the session and the helper will emit authentication and then quit\n-            connect(m_auth, &Auth::authentication, this, [=](){\n+            connect(m_auth, &Auth::authentication, this, [=](const QString &, bool success){\n+                if(!success)\n+                    return;\n                 qDebug() << \"activating existing seat\";\n                 OrgFreedesktopLogin1ManagerInterface manager(Logind::serviceName(), Logind::managerPath(), QDBusConnection::systemBus());\n                 manager.UnlockSession(existingSessionId);"
+    },
+    {
+      "sha": "546728291ebce01e49fc4db9c8289dc1983acbc8",
+      "filename": "src/helper/backend/PamBackend.cpp",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/sddm/sddm/blob/147cec383892d143b5e02daa70f1e7def50f5d98/src%2Fhelper%2Fbackend%2FPamBackend.cpp",
+      "raw_url": "https://github.com/sddm/sddm/raw/147cec383892d143b5e02daa70f1e7def50f5d98/src%2Fhelper%2Fbackend%2FPamBackend.cpp",
+      "contents_url": "https://api.github.com/repos/sddm/sddm/contents/src%2Fhelper%2Fbackend%2FPamBackend.cpp?ref=147cec383892d143b5e02daa70f1e7def50f5d98",
+      "patch": "@@ -219,8 +219,6 @@ namespace SDDM {\n \n         if (user == QStringLiteral(\"sddm\") && m_greeter)\n             service = QStringLiteral(\"sddm-greeter\");\n-        else if (m_app->session()->path().isEmpty())\n-            service = QStringLiteral(\"sddm-check\");\n         else if (m_autologin)\n             service = QStringLiteral(\"sddm-autologin\");\n         result = m_pam->start(service, user);"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+  "node_id": "MDY6Q29tbWl0MjkyNjg2MTE6NWViOGNmODlkNzI0Y2NiMGI0Y2U1ZjI0MTcxZWM3YzExZjBhNzY0Nw==",
+  "commit": {
+    "author": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T22:43:50Z"
+    },
+    "committer": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T22:43:50Z"
+    },
+    "message": "fix for #187",
+    "tree": {
+      "sha": "c742a9474016fbdb717c6439ab8071a776fc46f9",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/trees/c742a9474016fbdb717c6439ab8071a776fc46f9"
+    },
+    "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/commits/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+  "html_url": "https://github.com/axiomatic-systems/Bento4/commit/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+  "comments_url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647/comments",
+  "author": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "22192de5367fa0cee985917f092be4060b7c00b0",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/22192de5367fa0cee985917f092be4060b7c00b0",
+      "html_url": "https://github.com/axiomatic-systems/Bento4/commit/22192de5367fa0cee985917f092be4060b7c00b0"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 8,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e784ce6685a980bde6731bd0fd776bd16cb8eb8f",
+      "filename": "Source/C++/Core/Ap4HdlrAtom.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/axiomatic-systems/Bento4/blob/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp",
+      "raw_url": "https://github.com/axiomatic-systems/Bento4/raw/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp",
+      "contents_url": "https://api.github.com/repos/axiomatic-systems/Bento4/contents/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp?ref=5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+      "patch": "@@ -89,7 +89,7 @@ AP4_HdlrAtom::AP4_HdlrAtom(AP4_UI32        size,\n     // handle a special case: the Quicktime files have a pascal\n     // string here, but ISO MP4 files have a C string.\n     // we try to detect a pascal encoding and correct it.\n-    if (name[0] == name_size-1) {\n+    if ((AP4_UI08)name[0] == (AP4_UI08)(name_size-1)) {\n         m_HandlerName = name+1;\n     } else {\n         m_HandlerName = name;"
+    },
+    {
+      "sha": "cc4577a143fa3eced7e6fb20f8528b7fa2c12870",
+      "filename": "Source/C++/Core/Ap4StszAtom.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/axiomatic-systems/Bento4/blob/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647/Source%2FC%2B%2B%2FCore%2FAp4StszAtom.cpp",
+      "raw_url": "https://github.com/axiomatic-systems/Bento4/raw/5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647/Source%2FC%2B%2B%2FCore%2FAp4StszAtom.cpp",
+      "contents_url": "https://api.github.com/repos/axiomatic-systems/Bento4/contents/Source%2FC%2B%2B%2FCore%2FAp4StszAtom.cpp?ref=5eb8cf89d724ccb0b4ce5f24171ec7c11f0a7647",
+      "patch": "@@ -73,6 +73,13 @@ AP4_StszAtom::AP4_StszAtom(AP4_UI32        size,\n     stream.ReadUI32(m_SampleSize);\n     stream.ReadUI32(m_SampleCount);\n     if (m_SampleSize == 0) { // means that the samples have different sizes\n+        // check for overflow\n+        if (m_SampleCount > (size-8)/4) {\n+            m_SampleCount = 0;\n+            return;\n+        }\n+        \n+        // read the entries\n         AP4_Cardinal sample_count = m_SampleCount;\n         m_Entries.SetItemCount(sample_count);\n         unsigned char* buffer = new unsigned char[sample_count*4];"
+    }
+  ]
+}

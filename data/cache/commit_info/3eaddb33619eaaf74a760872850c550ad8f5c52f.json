@@ -1,0 +1,93 @@
+{
+  "sha": "3eaddb33619eaaf74a760872850c550ad8f5c52f",
+  "node_id": "MDY6Q29tbWl0ODk5NDMxNjI6M2VhZGRiMzM2MTllYWFmNzRhNzYwODcyODUwYzU1MGFkOGY1YzUyZg==",
+  "commit": {
+    "author": {
+      "name": "Subodh Iyengar",
+      "email": "subodh@fb.com",
+      "date": "2019-08-08T18:38:29Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-08-08T18:43:20Z"
+    },
+    "message": "Coalesce handshake buffers\n\nSummary:\nIt is possible that a peer might send us records in a manner such\nthat there is a 16KB record and only 1 byte of handshake message in\neach record. Since we normally just trim the IOBuf, we would end up\nholding 16K of data per actual byte of data. To prevent this we allocate a contiguous\nbuffer to copy over these bytes for handshake messages for now.\n\nThis is a partial fix for CVE-2019-11924\n\nReviewed By: ngoyal\n\nDifferential Revision: D16478044\n\nfbshipit-source-id: 464bc68eaefda065d9a327818100427377293fbd",
+    "tree": {
+      "sha": "6d09aaf4b01cafa868d515d18570e56a27414067",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/git/trees/6d09aaf4b01cafa868d515d18570e56a27414067"
+    },
+    "url": "https://api.github.com/repos/facebookincubator/fizz/git/commits/3eaddb33619eaaf74a760872850c550ad8f5c52f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebookincubator/fizz/commits/3eaddb33619eaaf74a760872850c550ad8f5c52f",
+  "html_url": "https://github.com/facebookincubator/fizz/commit/3eaddb33619eaaf74a760872850c550ad8f5c52f",
+  "comments_url": "https://api.github.com/repos/facebookincubator/fizz/commits/3eaddb33619eaaf74a760872850c550ad8f5c52f/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/commits/6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+      "html_url": "https://github.com/facebookincubator/fizz/commit/6bf67137ef1ee5cd70c842b014c322b7deaf994b"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 26,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "377ae5b33fe0cbb9f11921d174b3fc444dcbab7c",
+      "filename": "fizz/record/EncryptedRecordLayer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/3eaddb33619eaaf74a760872850c550ad8f5c52f/fizz%2Frecord%2FEncryptedRecordLayer.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/3eaddb33619eaaf74a760872850c550ad8f5c52f/fizz%2Frecord%2FEncryptedRecordLayer.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2FEncryptedRecordLayer.cpp?ref=3eaddb33619eaaf74a760872850c550ad8f5c52f",
+      "patch": "@@ -113,7 +113,7 @@ folly::Optional<TLSMessage> EncryptedReadRecordLayer::read(\n     return folly::none;\n   }\n \n-  TLSMessage msg;\n+  TLSMessage msg{};\n   // Iterate over the buffers while trying to find\n   // the first non-zero octet. This is much faster than\n   // first iterating and then trimming."
+    },
+    {
+      "sha": "f608d907e33c7980ebb56f5a02450b0e20326eac",
+      "filename": "fizz/record/RecordLayer.cpp",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 1,
+      "changes": 26,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/3eaddb33619eaaf74a760872850c550ad8f5c52f/fizz%2Frecord%2FRecordLayer.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/3eaddb33619eaaf74a760872850c550ad8f5c52f/fizz%2Frecord%2FRecordLayer.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2FRecordLayer.cpp?ref=3eaddb33619eaaf74a760872850c550ad8f5c52f",
+      "patch": "@@ -49,7 +49,31 @@ folly::Optional<Param> ReadRecordLayer::readEvent(\n         }\n       }\n       case ContentType::handshake: {\n-        unparsedHandshakeData_.append(std::move(message->fragment));\n+        std::unique_ptr<folly::IOBuf> handshakeMessage =\n+            unparsedHandshakeData_.move();\n+        // It is possible that a peer might send us records in a manner such\n+        // that there is a 16KB record and only 1 byte of handshake message in\n+        // each record. Since we normally just trim the IOBuf, we would end up\n+        // holding 16K of data. To prevent this we allocate a contiguous\n+        // buffer to copy over these bytes. We supply kExtraAlloc bytes in\n+        // order to avoid needing to re-allocate a lot of times if we receive\n+        // a lot of small messages. There might be more optimal reallocation\n+        // policies, but this should be fine.\n+        message->fragment->coalesce();\n+        constexpr size_t kExtraAlloc = 1024;\n+        if (!handshakeMessage) {\n+          handshakeMessage =\n+              folly::IOBuf::create(message->fragment->length() + kExtraAlloc);\n+        } else if (handshakeMessage->tailroom() < message->fragment->length()) {\n+          handshakeMessage->reserve(\n+              0, message->fragment->length() + kExtraAlloc);\n+        }\n+        memcpy(\n+            handshakeMessage->writableTail(),\n+            message->fragment->data(),\n+            message->fragment->length());\n+        handshakeMessage->append(message->fragment->length());\n+        unparsedHandshakeData_.append(std::move(handshakeMessage));\n         auto param = decodeHandshakeMessage(unparsedHandshakeData_);\n         if (param) {\n           VLOG(8) << \"Received handshake message \""
+    }
+  ]
+}

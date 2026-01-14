@@ -1,0 +1,101 @@
+{
+  "sha": "e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmUyZDEwYTFlMzJkMDFmNzFhYWFkZDgxMTY5YmNiOWFlODZjNWQ2Yjg=",
+  "commit": {
+    "author": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-05-24T17:39:15Z"
+    },
+    "committer": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-05-24T17:39:15Z"
+    },
+    "message": "[security][CVE-2018-6337] Flush folly::secureRandom buffer on fork\n\nD8109884 D8110240\n\nCVE-2018-6337",
+    "tree": {
+      "sha": "481e39687355febce4901920cd02d0faacc2df1b",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/481e39687355febce4901920cd02d0faacc2df1b"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unverified_email",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEETmdyBbheUDPYpvn3BsIqnXifyigFAlsG+aMACgkQBsIqnXif\nyijDhRAAoai4Gbyz4ayPwOZRFYASvgjLr6BgrUXeXbICrIVPmAv9geKYilhWBuxu\nNoSL/2Cw8RV05Zo2e4PGiWlJWB+FHORV0Btw9NpHTN7URSuLRch8LANQr/kifLoy\nl2YbxtAtHsgHL0MohQdbQuHKnmbDJZDD3LPMtOQ8kOCusJDtSS1QxYAMSsu68yyG\n9TruemDYRjbt6aloAlNHKCOnD6DZmWheKLxhZ0hO61HKKY/FOHOiqDAXm/vD3xay\nv0Uxft7iIq+zdyrmjwld3SIf819d65PatkER58VN62GNHuZWskcsG0/rEMg2Ig2U\nKe54+/W8Ftj/qdD+GjEvHpHDc50626ZTigY9omMafu/bW0VO8CxCwkbyooCGP9Ir\nncYtHZl4teF0RVFyPhbr01hEVH95DcnC4fabkmyhzIiHPirZ1WdFzuFDcNYXLK6S\nVEQSF5OuMD/bCW245EVH+oxEBUCQobWv1RFjmk4MAUgdQuFNeLfTejQL+DGPwE0o\nxNnL07I3y1COpijPXrS97t5RMd7PuaVnQEadF7+qCFK7qWEeuJFHv4zs4QMpGnJ8\n0mvy0B3d3LR/5N3hxArBBCdt292uuI8ObirMq5WB0QYh0QeYa9uAQbmkEY7+el6R\nRL5hU3FYWC3SRGUGn0z2e7NWOfw6Xu3Vb2bePi3+N7ww/VT6oRE=\n=nxso\n-----END PGP SIGNATURE-----",
+      "payload": "tree 481e39687355febce4901920cd02d0faacc2df1b\nparent 1ef6d97af2cb12c83dedb9aa0aaf21bd53770f9d\nauthor Fred Emmott <fe@fb.com> 1527183555 -0700\ncommitter Fred Emmott <fe@fb.com> 1527183555 -0700\n\n[security][CVE-2018-6337] Flush folly::secureRandom buffer on fork\n\nD8109884 D8110240\n\nCVE-2018-6337\n",
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8",
+  "html_url": "https://github.com/facebook/hhvm/commit/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8/comments",
+  "author": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1ef6d97af2cb12c83dedb9aa0aaf21bd53770f9d",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/1ef6d97af2cb12c83dedb9aa0aaf21bd53770f9d",
+      "html_url": "https://github.com/facebook/hhvm/commit/1ef6d97af2cb12c83dedb9aa0aaf21bd53770f9d"
+    }
+  ],
+  "stats": {
+    "total": 111,
+    "additions": 111,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "87ac61575c282e557cdfb4d652a67e17e0a544d1",
+      "filename": "patches/folly-CVE-2018-6337.patch",
+      "status": "added",
+      "additions": 111,
+      "deletions": 0,
+      "changes": 111,
+      "blob_url": "https://github.com/facebook/hhvm/blob/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8/patches%2Ffolly-CVE-2018-6337.patch",
+      "raw_url": "https://github.com/facebook/hhvm/raw/e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8/patches%2Ffolly-CVE-2018-6337.patch",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/patches%2Ffolly-CVE-2018-6337.patch?ref=e2d10a1e32d01f71aaadd81169bcb9ae86c5d6b8",
+      "patch": "@@ -0,0 +1,111 @@\n+diff --git a/third-party/folly/src/folly/Random.cpp b/third-party/folly/src/folly/Random.cpp\n+index afb62f5d..40a6b17f 100644\n+--- a/third-party/folly/src/folly/Random.cpp\n++++ b/third-party/folly/src/folly/Random.cpp\n+@@ -72,6 +72,7 @@ void readRandomDevice(void* data, size_t size) {\n+ \n+ class BufferedRandomDevice {\n+  public:\n++  static once_flag flag;\n+   static constexpr size_t kDefaultBufferSize = 128;\n+ \n+   explicit BufferedRandomDevice(size_t bufferSize = kDefaultBufferSize);\n+@@ -97,10 +98,28 @@ class BufferedRandomDevice {\n+   unsigned char* ptr_;\n+ };\n+ \n++once_flag BufferedRandomDevice::flag;\n++struct RandomTag {};\n++\n+ BufferedRandomDevice::BufferedRandomDevice(size_t bufferSize)\n+   : bufferSize_(bufferSize),\n+     buffer_(new unsigned char[bufferSize]),\n+     ptr_(buffer_.get() + bufferSize) {  // refill on first use\n++  call_once(flag, [this]() {\n++    detail::AtFork::registerHandler(\n++        this,\n++        /*prepare*/ []() { return true; },\n++        /*parent*/ []() {},\n++        /*child*/\n++        []() {\n++          using Single = SingletonThreadLocal<BufferedRandomDevice, RandomTag>;\n++          auto& t = Single::get();\n++          // Clear out buffered data on fork.\n++          //\n++          // Ensure child and parent do not share same entropy pool.\n++          t.ptr_ = t.buffer_.get() + t.bufferSize_;\n++        });\n++  });\n+ }\n+ \n+ void BufferedRandomDevice::getSlow(unsigned char* data, size_t size) {\n+@@ -124,8 +143,6 @@ void BufferedRandomDevice::getSlow(unsigned char* data, size_t size) {\n+   ptr_ += size;\n+ }\n+ \n+-struct RandomTag {};\n+-\n+ } // namespace\n+ \n+ void Random::secureRandom(void* data, size_t size) {\n+diff --git a/third-party/folly/src/folly/detail/AtFork.cpp b/third-party/folly/src/folly/detail/AtFork.cpp\n+index 48c42fd3..12a6f934 100644\n+--- a/third-party/folly/src/folly/detail/AtFork.cpp\n++++ b/third-party/folly/src/folly/detail/AtFork.cpp\n+@@ -13,12 +13,14 @@\n+  * See the License for the specific language governing permissions and\n+  * limitations under the License.\n+  */\n++\n+ #include <folly/detail/AtFork.h>\n+ \n+ #include <list>\n+ #include <mutex>\n+ \n+-#include <folly/Exception.h>\n++#include <folly/lang/Exception.h>\n++#include <folly/portability/PThread.h>\n+ \n+ namespace folly {\n+ \n+@@ -72,7 +74,10 @@ class AtForkList {\n+ #if FOLLY_HAVE_PTHREAD_ATFORK\n+     int ret = pthread_atfork(\n+         &AtForkList::prepare, &AtForkList::parent, &AtForkList::child);\n+-    checkPosixError(ret, \"pthread_atfork failed\");\n++    if (ret != 0) {\n++      throw_exception<std::system_error>(\n++          ret, std::generic_category(), \"pthread_atfork failed\");\n++    }\n+ #elif !__ANDROID__ && !defined(_MSC_VER)\n+ // pthread_atfork is not part of the Android NDK at least as of n9d. If\n+ // something is trying to call native fork() directly at all with Android's\n+diff --git a/third-party/folly/src/folly/test/RandomTest.cpp b/third-party/folly/src/folly/test/RandomTest.cpp\n+index 9c33159b..2ee74c6d 100644\n+--- a/third-party/folly/src/folly/test/RandomTest.cpp\n++++ b/third-party/folly/src/folly/test/RandomTest.cpp\n+@@ -138,3 +138,24 @@ TEST(Random, sanity) {\n+         std::unordered_set<uint64_t>(vals.begin(), vals.end()).size());\n+   }\n+ }\n++\n++TEST(Random, SecureFork) {\n++  unsigned char buffer = 0;\n++  // Init random buffer\n++  folly::Random::secureRandom(&buffer, 1);\n++\n++  auto pid = fork();\n++  EXPECT_NE(pid, -1);\n++  if (pid) {\n++    // parent\n++    int status = 0;\n++    folly::Random::secureRandom(&buffer, 1);\n++    auto pid2 = wait(&status);\n++    EXPECT_NE(WEXITSTATUS(status), buffer);\n++    EXPECT_EQ(pid, pid2);\n++  } else {\n++    // child\n++    folly::Random::secureRandom(&buffer, 1);\n++    exit(buffer); // Do not print gtest results\n++  }\n++}"
+    }
+  ]
+}

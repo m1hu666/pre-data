@@ -1,0 +1,101 @@
+{
+  "sha": "dbe7591e54bad5e6430d38be6bed051582da76b9",
+  "node_id": "MDY6Q29tbWl0NzcyMjcwODU6ZGJlNzU5MWU1NGJhZDVlNjQzMGQzOGJlNmJlZDA1MTU4MmRhNzZiOQ==",
+  "commit": {
+    "author": {
+      "name": "Roman Lebedev",
+      "email": "lebedev.ri@gmail.com",
+      "date": "2018-01-11T19:03:09Z"
+    },
+    "committer": {
+      "name": "Roman Lebedev",
+      "email": "lebedev.ri@gmail.com",
+      "date": "2018-01-11T19:03:09Z"
+    },
+    "message": "TableLookUp::setTable(): do actually check that the LUT is <2^16",
+    "tree": {
+      "sha": "c1fadafa860e3cc4ce8d3ecba266e1afeddfb835",
+      "url": "https://api.github.com/repos/darktable-org/rawspeed/git/trees/c1fadafa860e3cc4ce8d3ecba266e1afeddfb835"
+    },
+    "url": "https://api.github.com/repos/darktable-org/rawspeed/git/commits/dbe7591e54bad5e6430d38be6bed051582da76b9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEjkF6151RK40WXe2HCDw+u0oWieAFAlpXtO0ACgkQCDw+u0oW\nieBVLRAApttjLLoXWhHxvMo6L4DtnvrlYiBRgxBqsGtnLKiJGSAgOJVkIiEIR0tv\nt07aqV6qsj9Zuk1Px52KfGqSNu8Oh+eAZKNbQX8QXhWm5l1h0eyLofJNwtNTQ2Rk\nYHKIw88/NVZxN3fOxkYDfswH/KhbM4q+qRfIWUM7JX6YQ9+B/VYoRvyhnxEBv6rk\nNGZ5h/9vFI8z1eDnaJ5aHzMnB8dw6lO1Chqeh2wxgRmfhgj7DWoh070rL2PgQOjM\nmRzcH8N16JXopi/navM/e47irF6syDLVDm0BNP8UtT0WzG5EMImuWgAq4wLDnfzU\niraicIL9N2FZ4fpkcnYLHYgVzZ4BqQJv9StjrlJTG5y2y+4rw6D9qNRZmyHj8Sz+\nJj96JeXAklL+KKWHb7MJi/K7fAN/mWziU3BbgX7M9C+4hFXiVyBPgHkYQTnq8udx\nv8fs5qhs4QZcdAe5ALteUwajV1lRHXgFADrtvZtu3Oumy7qAS99fwLq9VgBW0UqN\ncKwKc8NoDuB47DUiYqYdkuT0yP+VVcoMTnUYVsIUthtoqzw/IRN6eNlOPih0F5xm\nPfb0Aimo66rvz21v0YSHP46s34zkZCl80PkOFWe7m41SRATbwe/8Pj/OrtDK9YEt\nn2+YI1gBn5dg+fjeIPHqZvwgm8/jTfUMiOIQzfefhsiQ79UP5Ak=\n=TlSK\n-----END PGP SIGNATURE-----",
+      "payload": "tree c1fadafa860e3cc4ce8d3ecba266e1afeddfb835\nparent 6af0e8550b6bb50580aeef8f14ccdff86999ca68\nauthor Roman Lebedev <lebedev.ri@gmail.com> 1515697389 +0300\ncommitter Roman Lebedev <lebedev.ri@gmail.com> 1515697389 +0300\n\nTableLookUp::setTable(): do actually check that the LUT is <2^16\n",
+      "verified_at": "2024-11-07T16:58:12Z"
+    }
+  },
+  "url": "https://api.github.com/repos/darktable-org/rawspeed/commits/dbe7591e54bad5e6430d38be6bed051582da76b9",
+  "html_url": "https://github.com/darktable-org/rawspeed/commit/dbe7591e54bad5e6430d38be6bed051582da76b9",
+  "comments_url": "https://api.github.com/repos/darktable-org/rawspeed/commits/dbe7591e54bad5e6430d38be6bed051582da76b9/comments",
+  "author": {
+    "login": "LebedevRI",
+    "id": 88600,
+    "node_id": "MDQ6VXNlcjg4NjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LebedevRI",
+    "html_url": "https://github.com/LebedevRI",
+    "followers_url": "https://api.github.com/users/LebedevRI/followers",
+    "following_url": "https://api.github.com/users/LebedevRI/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LebedevRI/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LebedevRI/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LebedevRI/subscriptions",
+    "organizations_url": "https://api.github.com/users/LebedevRI/orgs",
+    "repos_url": "https://api.github.com/users/LebedevRI/repos",
+    "events_url": "https://api.github.com/users/LebedevRI/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LebedevRI/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "LebedevRI",
+    "id": 88600,
+    "node_id": "MDQ6VXNlcjg4NjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LebedevRI",
+    "html_url": "https://github.com/LebedevRI",
+    "followers_url": "https://api.github.com/users/LebedevRI/followers",
+    "following_url": "https://api.github.com/users/LebedevRI/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LebedevRI/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LebedevRI/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LebedevRI/subscriptions",
+    "organizations_url": "https://api.github.com/users/LebedevRI/orgs",
+    "repos_url": "https://api.github.com/users/LebedevRI/repos",
+    "events_url": "https://api.github.com/users/LebedevRI/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LebedevRI/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6af0e8550b6bb50580aeef8f14ccdff86999ca68",
+      "url": "https://api.github.com/repos/darktable-org/rawspeed/commits/6af0e8550b6bb50580aeef8f14ccdff86999ca68",
+      "html_url": "https://github.com/darktable-org/rawspeed/commit/6af0e8550b6bb50580aeef8f14ccdff86999ca68"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "abaeec3a40db66023f54d038297da01a18e5b43a",
+      "filename": "src/librawspeed/common/TableLookUp.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/darktable-org/rawspeed/blob/dbe7591e54bad5e6430d38be6bed051582da76b9/src%2Flibrawspeed%2Fcommon%2FTableLookUp.cpp",
+      "raw_url": "https://github.com/darktable-org/rawspeed/raw/dbe7591e54bad5e6430d38be6bed051582da76b9/src%2Flibrawspeed%2Fcommon%2FTableLookUp.cpp",
+      "contents_url": "https://api.github.com/repos/darktable-org/rawspeed/contents/src%2Flibrawspeed%2Fcommon%2FTableLookUp.cpp?ref=dbe7591e54bad5e6430d38be6bed051582da76b9",
+      "patch": "@@ -40,6 +40,8 @@ void TableLookUp::setTable(int ntable, const std::vector<ushort16>& table) {\n   assert(!table.empty());\n \n   const int nfilled = table.size();\n+  if (nfilled >= 65536)\n+    ThrowRDE(\"Table lookup with %i entries is unsupported\", nfilled);\n \n   if (ntable > ntables) {\n     ThrowRDE(\"Table lookup with number greater than number of tables.\");"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "84addf3c1efbd51d8ff424b7da276400bbfa1a4b",
+  "node_id": "C_kwDOABACANoAKDg0YWRkZjNjMWVmYmQ1MWQ4ZmY0MjRiN2RhMjc2NDAwYmJmYTFhNGI",
+  "commit": {
+    "author": {
+      "name": "Torsten Paul",
+      "email": "Torsten.Paul@gmx.de",
+      "date": "2022-02-05T17:45:29Z"
+    },
+    "committer": {
+      "name": "Torsten Paul",
+      "email": "Torsten.Paul@gmx.de",
+      "date": "2022-02-05T17:45:29Z"
+    },
+    "message": "CVE-2022-0497 Out-of-bounds memory access in comment parser.\n\nPublic issue:\nhttps://github.com/openscad/openscad/issues/4043\n\nFix in master branch:\nhttps://github.com/openscad/openscad/pull/4044",
+    "tree": {
+      "sha": "27f3177b4353698d6041c30d7f2026d00529d7ac",
+      "url": "https://api.github.com/repos/openscad/openscad/git/trees/27f3177b4353698d6041c30d7f2026d00529d7ac"
+    },
+    "url": "https://api.github.com/repos/openscad/openscad/git/commits/84addf3c1efbd51d8ff424b7da276400bbfa1a4b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/openscad/openscad/commits/84addf3c1efbd51d8ff424b7da276400bbfa1a4b",
+  "html_url": "https://github.com/openscad/openscad/commit/84addf3c1efbd51d8ff424b7da276400bbfa1a4b",
+  "comments_url": "https://api.github.com/repos/openscad/openscad/commits/84addf3c1efbd51d8ff424b7da276400bbfa1a4b/comments",
+  "author": {
+    "login": "t-paul",
+    "id": 1330241,
+    "node_id": "MDQ6VXNlcjEzMzAyNDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1330241?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/t-paul",
+    "html_url": "https://github.com/t-paul",
+    "followers_url": "https://api.github.com/users/t-paul/followers",
+    "following_url": "https://api.github.com/users/t-paul/following{/other_user}",
+    "gists_url": "https://api.github.com/users/t-paul/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/t-paul/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/t-paul/subscriptions",
+    "organizations_url": "https://api.github.com/users/t-paul/orgs",
+    "repos_url": "https://api.github.com/users/t-paul/repos",
+    "events_url": "https://api.github.com/users/t-paul/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/t-paul/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "t-paul",
+    "id": 1330241,
+    "node_id": "MDQ6VXNlcjEzMzAyNDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1330241?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/t-paul",
+    "html_url": "https://github.com/t-paul",
+    "followers_url": "https://api.github.com/users/t-paul/followers",
+    "following_url": "https://api.github.com/users/t-paul/following{/other_user}",
+    "gists_url": "https://api.github.com/users/t-paul/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/t-paul/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/t-paul/subscriptions",
+    "organizations_url": "https://api.github.com/users/t-paul/orgs",
+    "repos_url": "https://api.github.com/users/t-paul/repos",
+    "events_url": "https://api.github.com/users/t-paul/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/t-paul/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "00a4692989c4e2f191525f73f24ad8727bacdf41",
+      "url": "https://api.github.com/repos/openscad/openscad/commits/00a4692989c4e2f191525f73f24ad8727bacdf41",
+      "html_url": "https://github.com/openscad/openscad/commit/00a4692989c4e2f191525f73f24ad8727bacdf41"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1ce3ab547b412939d17335d0ebc5ccdd78fe2dc8",
+      "filename": "src/comment.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/openscad/openscad/blob/84addf3c1efbd51d8ff424b7da276400bbfa1a4b/src%2Fcomment.cpp",
+      "raw_url": "https://github.com/openscad/openscad/raw/84addf3c1efbd51d8ff424b7da276400bbfa1a4b/src%2Fcomment.cpp",
+      "contents_url": "https://api.github.com/repos/openscad/openscad/contents/src%2Fcomment.cpp?ref=84addf3c1efbd51d8ff424b7da276400bbfa1a4b",
+      "patch": "@@ -92,7 +92,7 @@ static std::string getComment(const std::string &fulltext, int line)\n \t}\n \n \tint end = start + 1;\n-\twhile (fulltext[end] != '\\n') end++;\n+\twhile (end < fulltext.size() && fulltext[end] != '\\n') end++;\n \n \tstd::string comment = fulltext.substr(start, end - start);\n "
+    }
+  ]
+}

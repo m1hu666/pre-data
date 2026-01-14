@@ -1,0 +1,137 @@
+{
+  "sha": "9371333230b1a6e1be2eccf4868771e11af6253a",
+  "node_id": "C_kwDOA-MW79oAKDkzNzEzMzMyMzBiMWE2ZTFiZTJlY2NmNDg2ODc3MWUxMWFmNjI1M2E",
+  "commit": {
+    "author": {
+      "name": "Yan Avlasov",
+      "email": "yavlasov@google.com",
+      "date": "2022-02-01T19:55:20Z"
+    },
+    "committer": {
+      "name": "Ryan Hamilton",
+      "email": "rch@google.com",
+      "date": "2022-02-22T17:58:22Z"
+    },
+    "message": "CVE-2021-43824\n\njwt_atuhn: fixed the crash when a CONNECT request is sent to JWT filter\nconfigured with regex match.\n\nSigned-off-by: Yan Avlasov <yavlasov@google.com>",
+    "tree": {
+      "sha": "5a25c537af274b0b4cc6e909012cd9a4358fc962",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/5a25c537af274b0b4cc6e909012cd9a4358fc962"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/9371333230b1a6e1be2eccf4868771e11af6253a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/9371333230b1a6e1be2eccf4868771e11af6253a",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/9371333230b1a6e1be2eccf4868771e11af6253a",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/9371333230b1a6e1be2eccf4868771e11af6253a/comments",
+  "author": {
+    "login": "yanavlasov",
+    "id": 6360027,
+    "node_id": "MDQ6VXNlcjYzNjAwMjc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6360027?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yanavlasov",
+    "html_url": "https://github.com/yanavlasov",
+    "followers_url": "https://api.github.com/users/yanavlasov/followers",
+    "following_url": "https://api.github.com/users/yanavlasov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yanavlasov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yanavlasov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yanavlasov/subscriptions",
+    "organizations_url": "https://api.github.com/users/yanavlasov/orgs",
+    "repos_url": "https://api.github.com/users/yanavlasov/repos",
+    "events_url": "https://api.github.com/users/yanavlasov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yanavlasov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "RyanTheOptimist",
+    "id": 19561162,
+    "node_id": "MDQ6VXNlcjE5NTYxMTYy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19561162?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RyanTheOptimist",
+    "html_url": "https://github.com/RyanTheOptimist",
+    "followers_url": "https://api.github.com/users/RyanTheOptimist/followers",
+    "following_url": "https://api.github.com/users/RyanTheOptimist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RyanTheOptimist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RyanTheOptimist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RyanTheOptimist/subscriptions",
+    "organizations_url": "https://api.github.com/users/RyanTheOptimist/orgs",
+    "repos_url": "https://api.github.com/users/RyanTheOptimist/repos",
+    "events_url": "https://api.github.com/users/RyanTheOptimist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RyanTheOptimist/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ce0ae309057a216aba031aff81c445c90c6ef145",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/ce0ae309057a216aba031aff81c445c90c6ef145",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/ce0ae309057a216aba031aff81c445c90c6ef145"
+    }
+  ],
+  "stats": {
+    "total": 62,
+    "additions": 62,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "a5b98afcf26c14585f8310cf7fd95160ddc69c16",
+      "filename": "docs/root/version_history/current.rst",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9371333230b1a6e1be2eccf4868771e11af6253a/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9371333230b1a6e1be2eccf4868771e11af6253a/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/docs%2Froot%2Fversion_history%2Fcurrent.rst?ref=9371333230b1a6e1be2eccf4868771e11af6253a",
+      "patch": "@@ -27,6 +27,7 @@ Bug Fixes\n * access_log: fix memory leak when reopening an access log fails. Access logs will now try to be reopened on each subsequent flush attempt after a failure.\n * data plane: fixing error handling where writing to a socket failed while under the stack of processing. This should genreally affect HTTP/3. This behavioral change can be reverted by setting ``envoy.reloadable_features.allow_upstream_inline_write`` to false.\n * eds: fix the eds cluster update by allowing update on the locality of the cluster endpoints. This behavioral change can be temporarily reverted by setting runtime guard ``envoy.reloadable_features.support_locality_update_on_eds_cluster_endpoints`` to false.\n+* jwt_authn: fixed the crash when a CONNECT request is sent to JWT filter configured with regex match on the Host header.\n * tcp_proxy: fix a crash that occurs when configured for :ref:`upstream tunneling <envoy_v3_api_field_extensions.filters.network.tcp_proxy.v3.TcpProxy.tunneling_config>` and the downstream connection disconnects while the the upstream connection or http/2 stream is still being established.\n * tls: fix a bug while matching a certificate SAN with an exact value in ``match_typed_subject_alt_names`` of a listener where wildcard ``*`` character is not the only character of the dns label. Example, ``baz*.example.net`` and ``*baz.example.net`` and ``b*z.example.net`` will match ``baz1.example.net`` and ``foobaz.example.net`` and ``buzz.example.net``, respectively.\n * upstream: fix stack overflow when a cluster with large number of idle connections is removed."
+    },
+    {
+      "sha": "964caf9f526bca6ddedbd2237a5f500d3ae77179",
+      "filename": "source/extensions/filters/http/jwt_authn/matcher.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9371333230b1a6e1be2eccf4868771e11af6253a/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fmatcher.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9371333230b1a6e1be2eccf4868771e11af6253a/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fmatcher.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fmatcher.cc?ref=9371333230b1a6e1be2eccf4868771e11af6253a",
+      "patch": "@@ -117,6 +117,9 @@ class RegexMatcherImpl : public BaseMatcherImpl {\n \n   bool matches(const Http::RequestHeaderMap& headers) const override {\n     if (BaseMatcherImpl::matchRoute(headers)) {\n+      if (headers.Path() == nullptr) {\n+        return false;\n+      }\n       const Http::HeaderString& path = headers.Path()->value();\n       const absl::string_view query_string = Http::Utility::findQueryStringStart(path);\n       absl::string_view path_view = path.getStringView();"
+    },
+    {
+      "sha": "46f5bbe589cfdd6fccb9416c0dd120e6c997c033",
+      "filename": "test/extensions/filters/http/jwt_authn/filter_integration_test.cc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9371333230b1a6e1be2eccf4868771e11af6253a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ffilter_integration_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9371333230b1a6e1be2eccf4868771e11af6253a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ffilter_integration_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ffilter_integration_test.cc?ref=9371333230b1a6e1be2eccf4868771e11af6253a",
+      "patch": "@@ -326,6 +326,33 @@ TEST_P(LocalJwksIntegrationTest, FilterStateRequirement) {\n   }\n }\n \n+// Verify that JWT config with RegEx matcher can handle CONNECT requests.\n+TEST_P(LocalJwksIntegrationTest, ConnectRequestWithRegExMatch) {\n+  config_helper_.prependFilter(getAuthFilterConfig(ExampleConfigWithRegEx, true));\n+  initialize();\n+\n+  codec_client_ = makeHttpConnection(lookupPort(\"http\"));\n+\n+  auto encoder_decoder = codec_client_->startRequest(Http::TestRequestHeaderMapImpl{\n+      {\":method\", \"CONNECT\"},\n+      {\":authority\", \"host.com:80\"},\n+      {\"authorization\", \"Bearer \" + std::string(GoodToken)},\n+  });\n+  request_encoder_ = &encoder_decoder.first;\n+  auto response = std::move(encoder_decoder.second);\n+\n+  if (downstreamProtocol() == Http::CodecType::HTTP1) {\n+    // Because CONNECT requests for HTTP/1 do not include a path, they will fail\n+    // to find a route match and return a 404.\n+    ASSERT_TRUE(response->waitForEndStream());\n+    ASSERT_TRUE(response->complete());\n+    EXPECT_EQ(\"404\", response->headers().getStatusValue());\n+  } else {\n+    ASSERT_TRUE(response->waitForReset());\n+    ASSERT_TRUE(codec_client_->waitForDisconnect());\n+  }\n+}\n+\n // The test case with a fake upstream for remote Jwks server.\n class RemoteJwksIntegrationTest : public HttpProtocolIntegrationTest {\n public:"
+    },
+    {
+      "sha": "44a57320dc430d1af2dd34cb6aa87229a4498a5c",
+      "filename": "test/extensions/filters/http/jwt_authn/test_common.h",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 0,
+      "changes": 31,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9371333230b1a6e1be2eccf4868771e11af6253a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ftest_common.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9371333230b1a6e1be2eccf4868771e11af6253a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ftest_common.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Ftest_common.h?ref=9371333230b1a6e1be2eccf4868771e11af6253a",
+      "patch": "@@ -85,6 +85,37 @@ const char ExampleConfig[] = R\"(\n bypass_cors_preflight: true\n )\";\n \n+const char ExampleConfigWithRegEx[] = R\"(\n+providers:\n+  example_provider:\n+    issuer: https://example.com\n+    audiences:\n+    - example_service\n+    - http://example_service1\n+    - https://example_service2/\n+    remote_jwks:\n+      http_uri:\n+        uri: https://pubkey_server/pubkey_path\n+        cluster: pubkey_cluster\n+        timeout:\n+          seconds: 5\n+      cache_duration:\n+        seconds: 600\n+    forward_payload_header: sec-istio-auth-userinfo\n+rules:\n+- match:\n+    safe_regex:\n+      google_re2: {}\n+      regex: \"/somethig/.*\"\n+  requires:\n+    provider_name: \"example_provider\"\n+- match:\n+    path: \"/\"\n+  requires:\n+    provider_name: \"example_provider\"\n+bypass_cors_preflight: true\n+)\";\n+\n // The name of provider for above config.\n const char ProviderName[] = \"example_provider\";\n "
+    }
+  ]
+}

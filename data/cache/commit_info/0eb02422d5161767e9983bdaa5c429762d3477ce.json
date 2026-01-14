@@ -1,0 +1,101 @@
+{
+  "sha": "0eb02422d5161767e9983bdaa5c429762d3477ce",
+  "node_id": "C_kwDOFd_DytoAKDBlYjAyNDIyZDUxNjE3NjdlOTk4M2JkYWE1YzQyOTc2MmQzNDc3Y2U",
+  "commit": {
+    "author": {
+      "name": "tildearrow",
+      "email": "tildearrow@protonmail.com",
+      "date": "2022-04-09T23:25:38Z"
+    },
+    "committer": {
+      "name": "tildearrow",
+      "email": "tildearrow@protonmail.com",
+      "date": "2022-04-09T23:25:38Z"
+    },
+    "message": "fix possible pattern crash\n\nissue #325",
+    "tree": {
+      "sha": "55133332a7e49571aaa947ac407f46f70261b574",
+      "url": "https://api.github.com/repos/tildearrow/furnace/git/trees/55133332a7e49571aaa947ac407f46f70261b574"
+    },
+    "url": "https://api.github.com/repos/tildearrow/furnace/git/commits/0eb02422d5161767e9983bdaa5c429762d3477ce",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tildearrow/furnace/commits/0eb02422d5161767e9983bdaa5c429762d3477ce",
+  "html_url": "https://github.com/tildearrow/furnace/commit/0eb02422d5161767e9983bdaa5c429762d3477ce",
+  "comments_url": "https://api.github.com/repos/tildearrow/furnace/commits/0eb02422d5161767e9983bdaa5c429762d3477ce/comments",
+  "author": {
+    "login": "tildearrow",
+    "id": 13842506,
+    "node_id": "MDQ6VXNlcjEzODQyNTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13842506?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tildearrow",
+    "html_url": "https://github.com/tildearrow",
+    "followers_url": "https://api.github.com/users/tildearrow/followers",
+    "following_url": "https://api.github.com/users/tildearrow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tildearrow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tildearrow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tildearrow/subscriptions",
+    "organizations_url": "https://api.github.com/users/tildearrow/orgs",
+    "repos_url": "https://api.github.com/users/tildearrow/repos",
+    "events_url": "https://api.github.com/users/tildearrow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tildearrow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tildearrow",
+    "id": 13842506,
+    "node_id": "MDQ6VXNlcjEzODQyNTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13842506?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tildearrow",
+    "html_url": "https://github.com/tildearrow",
+    "followers_url": "https://api.github.com/users/tildearrow/followers",
+    "following_url": "https://api.github.com/users/tildearrow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tildearrow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tildearrow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tildearrow/subscriptions",
+    "organizations_url": "https://api.github.com/users/tildearrow/orgs",
+    "repos_url": "https://api.github.com/users/tildearrow/repos",
+    "events_url": "https://api.github.com/users/tildearrow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tildearrow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "38ca43719015f610488ed55a433ce200ddcf6d8d",
+      "url": "https://api.github.com/repos/tildearrow/furnace/commits/38ca43719015f610488ed55a433ce200ddcf6d8d",
+      "html_url": "https://github.com/tildearrow/furnace/commit/38ca43719015f610488ed55a433ce200ddcf6d8d"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 25,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "d56196d6c8720f01a41f4445eeb2d30d8b1b7b6a",
+      "filename": "src/gui/pattern.cpp",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 19,
+      "changes": 44,
+      "blob_url": "https://github.com/tildearrow/furnace/blob/0eb02422d5161767e9983bdaa5c429762d3477ce/src%2Fgui%2Fpattern.cpp",
+      "raw_url": "https://github.com/tildearrow/furnace/raw/0eb02422d5161767e9983bdaa5c429762d3477ce/src%2Fgui%2Fpattern.cpp",
+      "contents_url": "https://api.github.com/repos/tildearrow/furnace/contents/src%2Fgui%2Fpattern.cpp?ref=0eb02422d5161767e9983bdaa5c429762d3477ce",
+      "patch": "@@ -282,27 +282,33 @@ inline void FurnaceGUI::patternRow(int i, bool isPlaying, float lineHeight, int\n           sprintf(id,\"..##PE%d_%d_%d\",k,i,j);\n           ImGui::PushStyleColor(ImGuiCol_Text,inactiveColor);\n         } else {\n-          sprintf(id,\"%.2X##PE%d_%d_%d\",pat->data[i][index],k,i,j);\n-          if (pat->data[i][index]<0x10) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[fxColors[pat->data[i][index]]]);\n-          } else if (pat->data[i][index]<0x20) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_PRIMARY]);\n-          } else if (pat->data[i][index]<0x30) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_SECONDARY]);\n-          } else if (pat->data[i][index]<0x48) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_PRIMARY]);\n-          } else if (pat->data[i][index]<0x90) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n-          } else if (pat->data[i][index]<0xa0) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_MISC]);\n-          } else if (pat->data[i][index]<0xc0) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n-          } else if (pat->data[i][index]<0xd0) {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SPEED]);\n-          } else if (pat->data[i][index]<0xe0) {\n+          if (pat->data[i][index]>0xff) {\n+            sprintf(id,\"??##PE%d_%d_%d\",k,i,j);\n             ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n           } else {\n-            ImGui::PushStyleColor(ImGuiCol_Text,uiColors[extFxColors[pat->data[i][index]-0xe0]]);\n+            const unsigned char data=pat->data[i][index];\n+            sprintf(id,\"%.2X##PE%d_%d_%d\",data,k,i,j);\n+            if (data<0x10) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[fxColors[data]]);\n+            } else if (data<0x20) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_PRIMARY]);\n+            } else if (data<0x30) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_SECONDARY]);\n+            } else if (data<0x48) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SYS_PRIMARY]);\n+            } else if (data<0x90) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n+            } else if (data<0xa0) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_MISC]);\n+            } else if (data<0xc0) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n+            } else if (data<0xd0) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_SPEED]);\n+            } else if (data<0xe0) {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[GUI_COLOR_PATTERN_EFFECT_INVALID]);\n+            } else {\n+              ImGui::PushStyleColor(ImGuiCol_Text,uiColors[extFxColors[data-0xe0]]);\n+            }\n           }\n         }\n         ImGui::SameLine(0.0f,0.0f);"
+    }
+  ]
+}

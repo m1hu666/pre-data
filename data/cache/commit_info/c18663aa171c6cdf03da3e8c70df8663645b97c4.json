@@ -1,0 +1,61 @@
+{
+  "sha": "c18663aa171c6cdf03da3e8c70df8663645b97c4",
+  "node_id": "MDY6Q29tbWl0NDcwNzY3MTk6YzE4NjYzYWExNzFjNmNkZjAzZGEzZThjNzBkZjg2NjM2NDViOTdjNA==",
+  "commit": {
+    "author": {
+      "name": "Pranjal",
+      "email": "pranjal@brave.com",
+      "date": "2018-10-02T01:56:46Z"
+    },
+    "committer": {
+      "name": "Pranjal",
+      "email": "pranjal@brave.com",
+      "date": "2018-10-03T18:26:43Z"
+    },
+    "message": "Issue: 15232 AllowScript should use atom::ContentSettingsManager like other Allow* methods in the observer",
+    "tree": {
+      "sha": "9553131c74b2a206f5527f02c4346d89af881d34",
+      "url": "https://api.github.com/repos/brave/muon/git/trees/9553131c74b2a206f5527f02c4346d89af881d34"
+    },
+    "url": "https://api.github.com/repos/brave/muon/git/commits/c18663aa171c6cdf03da3e8c70df8663645b97c4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/brave/muon/commits/c18663aa171c6cdf03da3e8c70df8663645b97c4",
+  "html_url": "https://github.com/brave/muon/commit/c18663aa171c6cdf03da3e8c70df8663645b97c4",
+  "comments_url": "https://api.github.com/repos/brave/muon/commits/c18663aa171c6cdf03da3e8c70df8663645b97c4/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "6ad02d015a68dfdf0976525ce119954e00533cb2",
+      "url": "https://api.github.com/repos/brave/muon/commits/6ad02d015a68dfdf0976525ce119954e00533cb2",
+      "html_url": "https://github.com/brave/muon/commit/6ad02d015a68dfdf0976525ce119954e00533cb2"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 7,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "7c5b289e4dd5efc1bdfc90b145049831cd5e511b",
+      "filename": "chromium_src/chrome/renderer/content_settings_observer.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 12,
+      "blob_url": "https://github.com/brave/muon/blob/c18663aa171c6cdf03da3e8c70df8663645b97c4/chromium_src%2Fchrome%2Frenderer%2Fcontent_settings_observer.cc",
+      "raw_url": "https://github.com/brave/muon/raw/c18663aa171c6cdf03da3e8c70df8663645b97c4/chromium_src%2Fchrome%2Frenderer%2Fcontent_settings_observer.cc",
+      "contents_url": "https://api.github.com/repos/brave/muon/contents/chromium_src%2Fchrome%2Frenderer%2Fcontent_settings_observer.cc?ref=c18663aa171c6cdf03da3e8c70df8663645b97c4",
+      "patch": "@@ -432,11 +432,13 @@ bool ContentSettingsObserver::AllowScript(bool enabled_per_settings) {\n   // IsWhitelistedForContentSettings(); if there is only the default rule\n   // allowing all scripts, it's quicker this way.\n   bool allow = true;\n-  if (content_setting_rules_) {\n-    ContentSetting setting = GetContentSettingFromRules(\n-        content_setting_rules_->script_rules, frame,\n-        url::Origin(frame->GetDocument().GetSecurityOrigin()).GetURL());\n-    allow = setting != CONTENT_SETTING_BLOCK;\n+  if (content_settings_manager_->content_settings()) {\n+    allow =\n+        content_settings_manager_->GetSetting(\n+          ContentSettingsManager::GetOriginOrURL(render_frame()->GetWebFrame()),\n+          url::Origin(frame->GetDocument().GetSecurityOrigin()).GetURL(),\n+          \"javascript\",\n+          allow) != CONTENT_SETTING_BLOCK;\n   }\n   allow = allow || IsWhitelistedForContentSettings();\n "
+    }
+  ]
+}

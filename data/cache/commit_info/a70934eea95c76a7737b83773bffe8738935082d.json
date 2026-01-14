@@ -1,0 +1,101 @@
+{
+  "sha": "a70934eea95c76a7737b83773bffe8738935082d",
+  "node_id": "MDY6Q29tbWl0Njc3MzgxMzM6YTcwOTM0ZWVhOTVjNzZhNzczN2I4Mzc3M2JmZmU4NzM4OTM1MDgyZA==",
+  "commit": {
+    "author": {
+      "name": "Christian Stimming",
+      "email": "christian@cstimming.de",
+      "date": "2017-09-17T19:02:10Z"
+    },
+    "committer": {
+      "name": "Christian Stimming",
+      "email": "christian@cstimming.de",
+      "date": "2017-09-17T19:02:10Z"
+    },
+    "message": "Fix a buffer overflow.\n\nThis is only the minimum workaround to prevent buffer overflow:\nStop iterating once the (fixed!) size of the output buffers is\nreached. In response to\nhttps://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0317\n\nHowever, this code is a huge mess anyway and is in no way\nanything like up-to-date C++ code. Please, anyone, replace it\nwith something more modern. Thanks.",
+    "tree": {
+      "sha": "a3de7598c56b2cc8fadb87aa81d0f4e43423f224",
+      "url": "https://api.github.com/repos/libofx/libofx/git/trees/a3de7598c56b2cc8fadb87aa81d0f4e43423f224"
+    },
+    "url": "https://api.github.com/repos/libofx/libofx/git/commits/a70934eea95c76a7737b83773bffe8738935082d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/libofx/libofx/commits/a70934eea95c76a7737b83773bffe8738935082d",
+  "html_url": "https://github.com/libofx/libofx/commit/a70934eea95c76a7737b83773bffe8738935082d",
+  "comments_url": "https://api.github.com/repos/libofx/libofx/commits/a70934eea95c76a7737b83773bffe8738935082d/comments",
+  "author": {
+    "login": "cstim",
+    "id": 227778,
+    "node_id": "MDQ6VXNlcjIyNzc3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/227778?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cstim",
+    "html_url": "https://github.com/cstim",
+    "followers_url": "https://api.github.com/users/cstim/followers",
+    "following_url": "https://api.github.com/users/cstim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cstim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cstim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cstim/subscriptions",
+    "organizations_url": "https://api.github.com/users/cstim/orgs",
+    "repos_url": "https://api.github.com/users/cstim/repos",
+    "events_url": "https://api.github.com/users/cstim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cstim/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "cstim",
+    "id": 227778,
+    "node_id": "MDQ6VXNlcjIyNzc3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/227778?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cstim",
+    "html_url": "https://github.com/cstim",
+    "followers_url": "https://api.github.com/users/cstim/followers",
+    "following_url": "https://api.github.com/users/cstim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cstim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cstim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cstim/subscriptions",
+    "organizations_url": "https://api.github.com/users/cstim/orgs",
+    "repos_url": "https://api.github.com/users/cstim/repos",
+    "events_url": "https://api.github.com/users/cstim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cstim/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f589f0aefff7f663ec3db818863fb07de9338963",
+      "url": "https://api.github.com/repos/libofx/libofx/commits/f589f0aefff7f663ec3db818863fb07de9338963",
+      "html_url": "https://github.com/libofx/libofx/commit/f589f0aefff7f663ec3db818863fb07de9338963"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 11,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "f07f2749232bc51da938b972ca09449d6dc1d941",
+      "filename": "lib/ofx_preproc.cpp",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 15,
+      "blob_url": "https://github.com/libofx/libofx/blob/a70934eea95c76a7737b83773bffe8738935082d/lib%2Fofx_preproc.cpp",
+      "raw_url": "https://github.com/libofx/libofx/raw/a70934eea95c76a7737b83773bffe8738935082d/lib%2Fofx_preproc.cpp",
+      "contents_url": "https://api.github.com/repos/libofx/libofx/contents/lib%2Fofx_preproc.cpp?ref=a70934eea95c76a7737b83773bffe8738935082d",
+      "patch": "@@ -417,7 +417,6 @@ int ofx_proc_file(LibofxContextPtr ctx, const char * p_filename)\n string sanitize_proprietary_tags(string input_string)\n {\n   unsigned int i;\n-  size_t input_string_size;\n   bool strip = false;\n   bool tag_open = false;\n   int tag_open_idx = 0; //Are we within < > ?\n@@ -438,9 +437,17 @@ string sanitize_proprietary_tags(string input_string)\n     close_tagname[i] = 0;\n   }\n \n-  input_string_size = input_string.size();\n-\n-  for (i = 0; i < input_string_size; i++)\n+  size_t input_string_size = input_string.size();\n+\n+  // Minimum workaround to prevent buffer overflow: Stop iterating\n+  // once the (fixed!) size of the output buffers is reached. In\n+  // response to\n+  // https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0317\n+  //\n+  // However, this code is a huge mess anyway and is in no way\n+  // anything like up-to-date C++ code. Please, anyone, replace it\n+  // with something more modern. Thanks. - cstim, 2017-09-17.\n+  for (i = 0; i < std::min(input_string_size, size_t(READ_BUFFER_SIZE)); i++)\n   {\n     if (input_string.c_str()[i] == '<')\n     {"
+    }
+  ]
+}

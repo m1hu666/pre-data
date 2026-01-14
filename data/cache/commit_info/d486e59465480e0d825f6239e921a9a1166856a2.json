@@ -1,0 +1,97 @@
+{
+  "sha": "d486e59465480e0d825f6239e921a9a1166856a2",
+  "node_id": "C_kwDOByyPPdoAKGQ0ODZlNTk0NjU0ODBlMGQ4MjVmNjIzOWU5MjFhOWExMTY2ODU2YTI",
+  "commit": {
+    "author": {
+      "name": "Jeffrey Cohen",
+      "email": "jeffreycohen@google.com",
+      "date": "2022-06-30T18:43:50Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-06-30T18:43:50Z"
+    },
+    "message": "browser: tolerate RenderFrameHost death with link generation menu open\n\nIf:\n1. The context menu is open with the link generation item in it, and\n2. The RenderFrameHost crashes, and\n3. The link generation menu's timeout response arrives after the crash,\n\nthen the browser, too, will crash trying to use the dead\nRenderFrameHost. To avoid that, retain the RenderFrameHost only as an ID\nand look it up each time it is needed. Also, avoid trying to use Mojo\nremotes we got from that RFH if the RFH is dead, since the remotes will\nbe unbound at that point as well.\n\nFixed: 1329794\nChange-Id: I57a3471f8e7fdd84373006eacc30f2da5b3e3f8d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3705832\nReviewed-by: Avi Drissman <avi@chromium.org>\nReviewed-by: danakj <danakj@chromium.org>\nCommit-Queue: Jeffrey Cohen <jeffreycohen@chromium.org>\nCr-Commit-Position: refs/heads/main@{#1019761}",
+    "tree": {
+      "sha": "1506a565e4bc61b5d5b6ddc509e7c8f1faa05963",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/1506a565e4bc61b5d5b6ddc509e7c8f1faa05963"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/d486e59465480e0d825f6239e921a9a1166856a2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/d486e59465480e0d825f6239e921a9a1166856a2",
+  "html_url": "https://github.com/chromium/chromium/commit/d486e59465480e0d825f6239e921a9a1166856a2",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/d486e59465480e0d825f6239e921a9a1166856a2/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "f71d6d34373ba18f69821faa768aadb44ef71912",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/f71d6d34373ba18f69821faa768aadb44ef71912",
+      "html_url": "https://github.com/chromium/chromium/commit/f71d6d34373ba18f69821faa768aadb44ef71912"
+    }
+  ],
+  "stats": {
+    "total": 99,
+    "additions": 63,
+    "deletions": 36
+  },
+  "files": [
+    {
+      "sha": "65f480ebafc72fefdcc7563a6de34b2d562ae816",
+      "filename": "chrome/browser/renderer_context_menu/link_to_text_menu_observer.cc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 19,
+      "changes": 61,
+      "blob_url": "https://github.com/chromium/chromium/blob/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.cc?ref=d486e59465480e0d825f6239e921a9a1166856a2",
+      "patch": "@@ -75,7 +75,7 @@ std::vector<std::string> GetAggregatedSelectors(\n // static\n std::unique_ptr<LinkToTextMenuObserver> LinkToTextMenuObserver::Create(\n     RenderViewContextMenuProxy* proxy,\n-    content::RenderFrameHost* render_frame_host,\n+    content::GlobalRenderFrameHostId render_frame_host_id,\n     CompletionCallback callback) {\n   // WebContents can be null in tests.\n   content::WebContents* web_contents = proxy->GetWebContents();\n@@ -86,17 +86,17 @@ std::unique_ptr<LinkToTextMenuObserver> LinkToTextMenuObserver::Create(\n     return nullptr;\n   }\n \n-  DCHECK(render_frame_host);\n-  return base::WrapUnique(new LinkToTextMenuObserver(proxy, render_frame_host,\n-                                                     std::move(callback)));\n+  DCHECK(content::RenderFrameHost::FromID(render_frame_host_id));\n+  return base::WrapUnique(new LinkToTextMenuObserver(\n+      proxy, render_frame_host_id, std::move(callback)));\n }\n \n LinkToTextMenuObserver::LinkToTextMenuObserver(\n     RenderViewContextMenuProxy* proxy,\n-    content::RenderFrameHost* render_frame_host,\n+    content::GlobalRenderFrameHostId render_frame_host_id,\n     CompletionCallback callback)\n     : proxy_(proxy),\n-      render_frame_host_(render_frame_host),\n+      render_frame_host_id_(render_frame_host_id),\n       completion_callback_(std::move(callback)) {}\n \n LinkToTextMenuObserver::~LinkToTextMenuObserver() = default;\n@@ -177,11 +177,22 @@ void LinkToTextMenuObserver::OnRequestLinkGenerationCompleted(\n   LinkGenerationStatus status = selector.empty()\n                                     ? LinkGenerationStatus::kFailure\n                                     : LinkGenerationStatus::kSuccess;\n+\n+  // If the RenderFrameHost is no longer in the frame tree since the request was\n+  // issued, mark the request as a failure to ensure the RenderFrameHost isn't\n+  // used later for UKM.\n+  auto* rfh = content::RenderFrameHost::FromID(render_frame_host_id_);\n+  if (!rfh && status == LinkGenerationStatus::kSuccess) {\n+    status = LinkGenerationStatus::kFailure;\n+    error = LinkGenerationError::kUnknown;\n+  }\n+\n   shared_highlighting::LogLinkRequestedBeforeStatus(status, ready_status);\n+\n   if (status == LinkGenerationStatus::kSuccess) {\n     DCHECK_EQ(error, LinkGenerationError::kNone);\n-    shared_highlighting::LogRequestedSuccessMetrics(\n-        render_frame_host_->GetPageUkmSourceId());\n+    DCHECK(rfh);\n+    shared_highlighting::LogRequestedSuccessMetrics(rfh->GetPageUkmSourceId());\n   } else {\n     DCHECK_NE(error, LinkGenerationError::kNone);\n     CompleteWithError(error);\n@@ -272,19 +283,26 @@ void LinkToTextMenuObserver::ExecuteCopyLinkToText() {\n }\n \n void LinkToTextMenuObserver::Timeout() {\n-  DCHECK(remote_.is_bound());\n-  DCHECK(remote_.is_connected());\n-  if (is_generation_complete_)\n-    return;\n-  remote_->Cancel();\n-  remote_.reset();\n+  auto* rfh = content::RenderFrameHost::FromID(render_frame_host_id_);\n+  // The renderer may remove the frame. Or it may have crashed leaving the\n+  // remote disconnected with the Timeout task still queued.\n+  if (rfh && rfh->IsRenderFrameLive()) {\n+    CHECK(remote_.is_connected());\n+    if (is_generation_complete_)\n+      return;\n+    remote_->Cancel();\n+    remote_.reset();\n+  }\n   CompleteWithError(LinkGenerationError::kTimeout);\n }\n \n void LinkToTextMenuObserver::CompleteWithError(LinkGenerationError error) {\n   is_generation_complete_ = true;\n-  shared_highlighting::LogRequestedFailureMetrics(\n-      render_frame_host_->GetPageUkmSourceId(), error);\n+  auto* rfh = content::RenderFrameHost::FromID(render_frame_host_id_);\n+  if (rfh) {\n+    shared_highlighting::LogRequestedFailureMetrics(rfh->GetPageUkmSourceId(),\n+                                                    error);\n+  }\n \n   execute_command_pending_ = false;\n   NotifyLinkToTextMenuCompleted();\n@@ -372,17 +390,22 @@ void LinkToTextMenuObserver::RemoveHighlights() {\n mojo::Remote<blink::mojom::TextFragmentReceiver>&\n LinkToTextMenuObserver::GetRemote() {\n   if (!remote_.is_bound()) {\n-    render_frame_host_->GetRemoteInterfaces()->GetInterface(\n+    auto* rfh = content::RenderFrameHost::FromID(render_frame_host_id_);\n+    CHECK(rfh);\n+    rfh->GetRemoteInterfaces()->GetInterface(\n         remote_.BindNewPipeAndPassReceiver());\n   }\n   return remote_;\n }\n \n void LinkToTextMenuObserver::CopyTextToClipboard(const std::string& text) {\n+  auto* rfh = content::RenderFrameHost::FromID(render_frame_host_id_);\n+  CHECK(rfh);\n+\n   std::unique_ptr<ui::DataTransferEndpoint> data_transfer_endpoint =\n-      !render_frame_host_->GetBrowserContext()->IsOffTheRecord()\n+      !rfh->GetBrowserContext()->IsOffTheRecord()\n           ? std::make_unique<ui::DataTransferEndpoint>(\n-                render_frame_host_->GetMainFrame()->GetLastCommittedURL())\n+                rfh->GetMainFrame()->GetLastCommittedURL())\n           : nullptr;\n \n   ui::ScopedClipboardWriter scw(ui::ClipboardBuffer::kCopyPaste,"
+    },
+    {
+      "sha": "6a7914e8fa2319e46aee84ada26054967f38f739",
+      "filename": "chrome/browser/renderer_context_menu/link_to_text_menu_observer.h",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "blob_url": "https://github.com/chromium/chromium/blob/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer.h?ref=d486e59465480e0d825f6239e921a9a1166856a2",
+      "patch": "@@ -23,7 +23,7 @@ class LinkToTextMenuObserver : public RenderViewContextMenuObserver {\n  public:\n   static std::unique_ptr<LinkToTextMenuObserver> Create(\n       RenderViewContextMenuProxy* proxy,\n-      content::RenderFrameHost* render_frame_host,\n+      content::GlobalRenderFrameHostId render_frame_host_id,\n       CompletionCallback callback);\n \n   LinkToTextMenuObserver(const LinkToTextMenuObserver&) = delete;\n@@ -44,9 +44,10 @@ class LinkToTextMenuObserver : public RenderViewContextMenuObserver {\n  private:\n   friend class MockLinkToTextMenuObserver;\n \n-  explicit LinkToTextMenuObserver(RenderViewContextMenuProxy* proxy,\n-                                  content::RenderFrameHost* render_frame_host,\n-                                  CompletionCallback callback);\n+  explicit LinkToTextMenuObserver(\n+      RenderViewContextMenuProxy* proxy,\n+      content::GlobalRenderFrameHostId render_frame_host_id,\n+      CompletionCallback callback);\n   // Returns true if the link should be generated from the constructor, vs\n   // determined when executed.\n   bool ShouldPreemptivelyGenerateLink();\n@@ -105,7 +106,7 @@ class LinkToTextMenuObserver : public RenderViewContextMenuObserver {\n   raw_ptr<RenderViewContextMenuProxy> proxy_;\n   GURL url_;\n   GURL raw_url_;\n-  raw_ptr<content::RenderFrameHost> render_frame_host_;\n+  content::GlobalRenderFrameHostId render_frame_host_id_;\n \n   std::unordered_map<content::GlobalRenderFrameHostId,\n                      std::vector<std::string>,"
+    },
+    {
+      "sha": "9453bfef6dae0a9bc78ac63a1ce00f479bf810e2",
+      "filename": "chrome/browser/renderer_context_menu/link_to_text_menu_observer_interactive_uitest.cc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 11,
+      "changes": 24,
+      "blob_url": "https://github.com/chromium/chromium/blob/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer_interactive_uitest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer_interactive_uitest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Frenderer_context_menu%2Flink_to_text_menu_observer_interactive_uitest.cc?ref=d486e59465480e0d825f6239e921a9a1166856a2",
+      "patch": "@@ -26,7 +26,7 @@ class MockLinkToTextMenuObserver : public LinkToTextMenuObserver {\n  public:\n   static std::unique_ptr<MockLinkToTextMenuObserver> Create(\n       RenderViewContextMenuProxy* proxy,\n-      content::RenderFrameHost* render_frame_host) {\n+      content::GlobalRenderFrameHostId render_frame_host_id) {\n     // WebContents can be null in tests.\n     content::WebContents* web_contents = proxy->GetWebContents();\n     if (web_contents && extensions::ProcessManager::Get(\n@@ -36,14 +36,16 @@ class MockLinkToTextMenuObserver : public LinkToTextMenuObserver {\n       return nullptr;\n     }\n \n-    DCHECK(render_frame_host);\n     return base::WrapUnique(new MockLinkToTextMenuObserver(\n-        proxy, render_frame_host, base::BindOnce([]() {})));\n+        proxy, render_frame_host_id, base::BindOnce([]() {})));\n   }\n-  MockLinkToTextMenuObserver(RenderViewContextMenuProxy* proxy,\n-                             content::RenderFrameHost* render_frame_host,\n-                             CompletionCallback callback)\n-      : LinkToTextMenuObserver(proxy, render_frame_host, std::move(callback)) {}\n+  MockLinkToTextMenuObserver(\n+      RenderViewContextMenuProxy* proxy,\n+      content::GlobalRenderFrameHostId render_frame_host_id,\n+      CompletionCallback callback)\n+      : LinkToTextMenuObserver(proxy,\n+                               render_frame_host_id,\n+                               std::move(callback)) {}\n \n   void SetGenerationResults(\n       std::string selector,\n@@ -104,7 +106,7 @@ class LinkToTextMenuObserverTest : public extensions::ExtensionBrowserTest {\n   void Reset(bool incognito) {\n     menu_ = std::make_unique<MockRenderViewContextMenu>(incognito);\n     observer_ =\n-        MockLinkToTextMenuObserver::Create(menu_.get(), getRenderFrameHost());\n+        MockLinkToTextMenuObserver::Create(menu_.get(), getRenderFrameHostId());\n     menu_->SetObserver(observer_.get());\n   }\n \n@@ -120,9 +122,9 @@ class LinkToTextMenuObserverTest : public extensions::ExtensionBrowserTest {\n   MockRenderViewContextMenu* menu() { return menu_.get(); }\n   MockLinkToTextMenuObserver* observer() { return observer_.get(); }\n \n-  content::RenderFrameHost* getRenderFrameHost() {\n+  content::GlobalRenderFrameHostId getRenderFrameHostId() {\n     auto* web_contents = browser()->tab_strip_model()->GetActiveWebContents();\n-    return web_contents->GetPrimaryMainFrame();\n+    return web_contents->GetPrimaryMainFrame()->GetGlobalId();\n   }\n \n  private:\n@@ -259,7 +261,7 @@ IN_PROC_BROWSER_TEST_F(LinkToTextMenuObserverTest, HiddenForExtensions) {\n   menu()->set_web_contents(web_contents);\n \n   std::unique_ptr<MockLinkToTextMenuObserver> observer =\n-      MockLinkToTextMenuObserver::Create(menu(), getRenderFrameHost());\n+      MockLinkToTextMenuObserver::Create(menu(), getRenderFrameHostId());\n   EXPECT_EQ(nullptr, observer);\n }\n "
+    },
+    {
+      "sha": "bf9fb13e93ca92df126e5b28a33c022810d131ef",
+      "filename": "chrome/browser/renderer_context_menu/render_view_context_menu.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Frender_view_context_menu.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/d486e59465480e0d825f6239e921a9a1166856a2/chrome%2Fbrowser%2Frenderer_context_menu%2Frender_view_context_menu.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Frenderer_context_menu%2Frender_view_context_menu.cc?ref=d486e59465480e0d825f6239e921a9a1166856a2",
+      "patch": "@@ -1814,7 +1814,8 @@ void RenderViewContextMenu::AppendLinkToTextItems() {\n     return;\n \n   link_to_text_menu_observer_ = LinkToTextMenuObserver::Create(\n-      this, GetRenderFrameHost(),\n+      this,\n+      content::GlobalRenderFrameHostId(render_process_id_, render_frame_id_),\n       base::BindOnce(&RenderViewContextMenu::OnLinkToTextMenuCompleted,\n                      weak_pointer_factory_.GetWeakPtr()));\n   if (link_to_text_menu_observer_) {"
+    }
+  ]
+}

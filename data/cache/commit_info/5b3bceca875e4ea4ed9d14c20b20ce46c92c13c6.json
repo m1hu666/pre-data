@@ -1,0 +1,113 @@
+{
+  "sha": "5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+  "node_id": "MDY6Q29tbWl0Mjc4ODk2OTQ6NWIzYmNlY2E4NzVlNGVhNGVkOWQxNGMyMGIyMGNlNDZjOTJjMTNjNg==",
+  "commit": {
+    "author": {
+      "name": "Kyle Nekritz",
+      "email": "knekritz@fb.com",
+      "date": "2019-04-16T16:20:51Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-04-16T16:25:25Z"
+    },
+    "message": "Peek for \\n in LineBasedFrameDecoder.\n\nSummary:\nPreviously this could underflow if there was not a following \\n.\n\nCVE-2019-3563\n\nReviewed By: siyengar\n\nDifferential Revision: D14935715\n\nfbshipit-source-id: 25c3eecf373f89efa1232456aeeb092f13b7fa06",
+    "tree": {
+      "sha": "bdcca8110e806b12662063c828a0ba24c5ecfc0a",
+      "url": "https://api.github.com/repos/facebook/wangle/git/trees/bdcca8110e806b12662063c828a0ba24c5ecfc0a"
+    },
+    "url": "https://api.github.com/repos/facebook/wangle/git/commits/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/wangle/commits/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+  "html_url": "https://github.com/facebook/wangle/commit/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+  "comments_url": "https://api.github.com/repos/facebook/wangle/commits/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6/comments",
+  "author": {
+    "login": "knekritz",
+    "id": 5401630,
+    "node_id": "MDQ6VXNlcjU0MDE2MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5401630?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/knekritz",
+    "html_url": "https://github.com/knekritz",
+    "followers_url": "https://api.github.com/users/knekritz/followers",
+    "following_url": "https://api.github.com/users/knekritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/knekritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/knekritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/knekritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/knekritz/orgs",
+    "repos_url": "https://api.github.com/users/knekritz/repos",
+    "events_url": "https://api.github.com/users/knekritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/knekritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1df008b54413135ae861b5bc129b36fc42bb99fe",
+      "url": "https://api.github.com/repos/facebook/wangle/commits/1df008b54413135ae861b5bc129b36fc42bb99fe",
+      "html_url": "https://github.com/facebook/wangle/commit/1df008b54413135ae861b5bc129b36fc42bb99fe"
+    }
+  ],
+  "stats": {
+    "total": 39,
+    "additions": 37,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "be6f47f97dd023894cd0babc0efaaa7307605364",
+      "filename": "wangle/codec/LineBasedFrameDecoder.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/wangle/blob/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6/wangle%2Fcodec%2FLineBasedFrameDecoder.cpp",
+      "raw_url": "https://github.com/facebook/wangle/raw/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6/wangle%2Fcodec%2FLineBasedFrameDecoder.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/wangle/contents/wangle%2Fcodec%2FLineBasedFrameDecoder.cpp?ref=5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+      "patch": "@@ -97,8 +97,9 @@ int64_t LineBasedFrameDecoder::findEndOfLine(IOBufQueue& buf) {\n     auto b = c.read<char>();\n     if (b == '\\n' && terminatorType_ != TerminatorType::CARRIAGENEWLINE) {\n       return i;\n-    } else if (terminatorType_ != TerminatorType::NEWLINE &&\n-               b == '\\r' && !c.isAtEnd() && c.read<char>() == '\\n') {\n+    } else if (\n+        terminatorType_ != TerminatorType::NEWLINE && b == '\\r' &&\n+        !c.isAtEnd() && *c.peekBytes().data() == '\\n') {\n       return i;\n     }\n   }"
+    },
+    {
+      "sha": "4d3480941329a6e01d91530d9e1644699fe36e89",
+      "filename": "wangle/codec/test/CodecTest.cpp",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 0,
+      "changes": 34,
+      "blob_url": "https://github.com/facebook/wangle/blob/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6/wangle%2Fcodec%2Ftest%2FCodecTest.cpp",
+      "raw_url": "https://github.com/facebook/wangle/raw/5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6/wangle%2Fcodec%2Ftest%2FCodecTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/wangle/contents/wangle%2Fcodec%2Ftest%2FCodecTest.cpp?ref=5b3bceca875e4ea4ed9d14c20b20ce46c92c13c6",
+      "patch": "@@ -606,3 +606,37 @@ TEST(LineBasedFrameDecoder, CarriageNewLineOnly) {\n   pipeline->read(q);\n   EXPECT_EQ(called, 1);\n }\n+\n+TEST(LineBasedFrameDecoder, CarriageOnly) {\n+  auto pipeline = Pipeline<IOBufQueue&, std::unique_ptr<IOBuf>>::create();\n+\n+  (*pipeline)\n+      .addBack(LineBasedFrameDecoder(\n+          10, true, LineBasedFrameDecoder::TerminatorType::CARRIAGENEWLINE))\n+      .addBack(test::FrameTester([&](std::unique_ptr<IOBuf>) { FAIL(); }))\n+      .finalize();\n+\n+  IOBufQueue q(IOBufQueue::cacheChainLength());\n+  q.append(IOBuf::copyBuffer(\"\\raa\"));\n+  pipeline->read(q);\n+}\n+\n+TEST(LineBasedFrameDecoder, DoubleCarriage) {\n+  auto pipeline = Pipeline<IOBufQueue&, std::unique_ptr<IOBuf>>::create();\n+  int called = 0;\n+\n+  (*pipeline)\n+      .addBack(LineBasedFrameDecoder(\n+          10, true, LineBasedFrameDecoder::TerminatorType::CARRIAGENEWLINE))\n+      .addBack(test::FrameTester([&](std::unique_ptr<IOBuf> buf) {\n+        auto sz = buf->computeChainDataLength();\n+        called++;\n+        EXPECT_EQ(sz, 1);\n+      }))\n+      .finalize();\n+\n+  IOBufQueue q(IOBufQueue::cacheChainLength());\n+  q.append(IOBuf::copyBuffer(\"\\r\\r\\na\\r\\n\"));\n+  pipeline->read(q);\n+  EXPECT_EQ(called, 2);\n+}"
+    }
+  ]
+}

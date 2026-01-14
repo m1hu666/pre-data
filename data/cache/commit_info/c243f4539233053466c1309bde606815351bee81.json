@@ -1,0 +1,101 @@
+{
+  "sha": "c243f4539233053466c1309bde606815351bee81",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmMyNDNmNDUzOTIzMzA1MzQ2NmMxMzA5YmRlNjA2ODE1MzUxYmVlODE=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-05-10T17:48:24Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-05-10T18:22:49Z"
+    },
+    "message": "additional checks in parseSonySRF\n\nparseSonySR2: buffer size check",
+    "tree": {
+      "sha": "02152711553d6e12bdcf550e8a5e0284dae95b11",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/02152711553d6e12bdcf550e8a5e0284dae95b11"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/c243f4539233053466c1309bde606815351bee81",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/c243f4539233053466c1309bde606815351bee81",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/c243f4539233053466c1309bde606815351bee81",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/c243f4539233053466c1309bde606815351bee81/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1f60a9ec6133094cfc5f9ca284873f4723ca0127",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/1f60a9ec6133094cfc5f9ca284873f4723ca0127",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/1f60a9ec6133094cfc5f9ca284873f4723ca0127"
+    }
+  ],
+  "stats": {
+    "total": 90,
+    "additions": 62,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "42b1d622d46e009f1fc4c5f8493d3768a7048142",
+      "filename": "src/metadata/sony.cpp",
+      "status": "modified",
+      "additions": 62,
+      "deletions": 28,
+      "changes": 90,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/c243f4539233053466c1309bde606815351bee81/src%2Fmetadata%2Fsony.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/c243f4539233053466c1309bde606815351bee81/src%2Fmetadata%2Fsony.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/src%2Fmetadata%2Fsony.cpp?ref=c243f4539233053466c1309bde606815351bee81",
+      "patch": "@@ -1799,6 +1799,14 @@ void LibRaw::parseSonySR2(uchar *cbuf_SR2, unsigned SR2SubIFDOffset,\n   float num;\n   int i;\n   int WBCTC_count;\n+#define CHECKBUFFER_N(offset,N)                                     \\\n+  do                                                                \\\n+  {                                                                 \\\n+    if ((((offset) + (N)) > SR2SubIFDLength) || ((offset) < 0))     \\\n+      return;\t\t\t\t\t\t\t\t\t\t\t\t\t\t\\\n+  } while (0)\n+\n+  CHECKBUFFER_N(0, 2);\n   entries = sget2(cbuf_SR2);\n   if (entries > 1000)\n     return;\n@@ -1812,43 +1820,52 @@ void LibRaw::parseSonySR2(uchar *cbuf_SR2, unsigned SR2SubIFDOffset,\n       if (dng_writer == nonDNG) {\n         switch (tag_id) {\n         case 0x7300:\n-          FORC4 cblack[c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 4,0);\n+\t\t\tFORC4 cblack[c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n           TagProcessed = 1;\n           break;\n         case 0x7303:\n-          FORC4 cam_mul[GRBG_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 4, 0);\n+\t\t\tFORC4 cam_mul[GRBG_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n           TagProcessed = 1;\n           break;\n         case 0x7310:\n-          FORC4 cblack[RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 4, 0);\n+\t\t\tFORC4 cblack[RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n           i = cblack[3];\n           FORC3 if (i > cblack[c]) i = cblack[c];\n           FORC4 cblack[c] -= i;\n           black = i;\n           TagProcessed = 1;\n           break;\n         case 0x7313:\n-          FORC4 cam_mul[RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 4, 0);\n+\t\t\tFORC4 cam_mul[RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n           TagProcessed = 1;\n           break;\n         case 0x74a0:\n-          ilm.MaxAp4MaxFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset, 4);\n+\t\t\tilm.MaxAp4MaxFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n           TagProcessed = 1;\n           break;\n         case 0x74a1:\n-          ilm.MaxAp4MinFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset, 4);\n+\t\t\tilm.MaxAp4MinFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n           TagProcessed = 1;\n           break;\n         case 0x74a2:\n-          ilm.MaxFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset, 4);\n+\t\t\tilm.MaxFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n           TagProcessed = 1;\n           break;\n         case 0x74a3:\n-          ilm.MinFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset, 4);\n+\t\t\tilm.MinFocal = sgetreal(tag_type, cbuf_SR2 + tag_dataoffset);\n           TagProcessed = 1;\n           break;\n         case 0x7800:\n-          for (i = 0; i < 3; i++)\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 8, 2);\n+\t\t  for (i = 0; i < 3; i++)\n           {\n             num = 0.0;\n             for (c = 0; c < 3; c++)\n@@ -1865,12 +1882,14 @@ void LibRaw::parseSonySR2(uchar *cbuf_SR2, unsigned SR2SubIFDOffset,\n         case 0x787f:\n           if (tag_datalen == 3)\n           {\n-            FORC3 imgdata.color.linear_max[c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\t  CHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 2, 2);\n+\t\t\t  FORC3 imgdata.color.linear_max[c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n             imgdata.color.linear_max[3] = imgdata.color.linear_max[1];\n           }\n           else if (tag_datalen == 1)\n           {\n-            imgdata.color.linear_max[0] = imgdata.color.linear_max[1] =\n+\t\t\t  CHECKBUFFER_N(tag_dataoffset, 2);\n+\t\t\t  imgdata.color.linear_max[0] = imgdata.color.linear_max[1] =\n                 imgdata.color.linear_max[2] = imgdata.color.linear_max[3] =\n                     sget2(cbuf_SR2 + tag_dataoffset);\n           }\n@@ -1884,37 +1903,44 @@ void LibRaw::parseSonySR2(uchar *cbuf_SR2, unsigned SR2SubIFDOffset,\n           i = tag_id - 0x7480;\n           if (Sony_SR2_wb_list[i] > 255) {\n             icWBCCTC[WBCTC_count][0] = Sony_SR2_wb_list[i];\n-            FORC3 icWBCCTC[WBCTC_count][c + 1] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 2, 2);\n+\t\t\tFORC3 icWBCCTC[WBCTC_count][c + 1] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n             icWBCCTC[WBCTC_count][4] = icWBCCTC[WBCTC_count][2];\n             WBCTC_count++;\n           } else {\n-            FORC3 icWBC[Sony_SR2_wb_list[i]][c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\t  CHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 2, 2);\n+\t\t\t  FORC3 icWBC[Sony_SR2_wb_list[i]][c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n             icWBC[Sony_SR2_wb_list[i]][3] = icWBC[Sony_SR2_wb_list[i]][1];\n           }\n         } else if ((tag_id >= 0x7820) && (tag_id <= 0x782d)) {\n           i = tag_id - 0x7820;\n           if (Sony_SR2_wb_list1[i] > 255) {\n             icWBCCTC[WBCTC_count][0] = Sony_SR2_wb_list1[i];\n-            FORC3 icWBCCTC[WBCTC_count][c + 1] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 2, 2);\n+\t\t\tFORC3 icWBCCTC[WBCTC_count][c + 1] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n             icWBCCTC[WBCTC_count][4] = icWBCCTC[WBCTC_count][2];\n             if (Sony_SR2_wb_list1[i] == 3200) {\n               FORC3 icWBC[LIBRAW_WBI_StudioTungsten][c] = icWBCCTC[WBCTC_count][c + 1];\n               icWBC[LIBRAW_WBI_StudioTungsten][3] = icWBC[LIBRAW_WBI_StudioTungsten][1];\n             }\n             WBCTC_count++;\n           } else {\n-            FORC3 icWBC[Sony_SR2_wb_list1[i]][c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\t  CHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 2, 2);\n+\t\t\t  FORC3 icWBC[Sony_SR2_wb_list1[i]][c] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n             icWBC[Sony_SR2_wb_list1[i]][3] = icWBC[Sony_SR2_wb_list1[i]][1];\n           }\n         } else if (tag_id == 0x7302) {\n-          FORC4 icWBC[LIBRAW_WBI_Auto][GRBG_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 3, 2);\n+\t\t\tFORC4 icWBC[LIBRAW_WBI_Auto][GRBG_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n         } else if (tag_id == 0x7312) {\n-          FORC4 icWBC[LIBRAW_WBI_Auto][RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n+\t\t\tCHECKBUFFER_N(tag_dataoffset + tag_dataunitlen * 3, 2);\n+\t\t\tFORC4 icWBC[LIBRAW_WBI_Auto][RGGB_2_RGBG(c)] = sget2(cbuf_SR2 + tag_dataoffset + tag_dataunitlen * c);\n         }\n       }\n     }\n   }\n }\n+#undef CHECKBUFFER_N\n \n void LibRaw::parseSonySRF(unsigned len)\n {\n@@ -1935,10 +1961,10 @@ void LibRaw::parseSonySRF(unsigned len)\n   INT64 srf_offset, tag_offset, tag_data, tag_dataoffset;\n   int tag_dataunitlen;\n   uchar *srf_buf;\n-  short entries;\n+  ushort entries;\n   unsigned tag_id, tag_type, tag_datalen;\n \n-  srf_buf = (uchar *)malloc(len);\n+  srf_buf = (uchar *)malloc(len+64);\n   fread(srf_buf, len, 1, ifp);\n \n   offset += srf_buf[offset] << 2;\n@@ -1995,9 +2021,11 @@ void LibRaw::parseSonySRF(unsigned len)\n                    &tag_offset, &tag_id, &tag_type, &tag_dataoffset,\n                    &tag_datalen, &tag_dataunitlen) == 0) {\n       if (tag_id == 0x0000) {\n-        SRF2Key = sget4(srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset);\n+\t\t  SRF2Key = sget4(srf_buf + tag_dataoffset);\n       } else if (tag_id == 0x0001) {\n-        RawDataKey = sget4(srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset);\n+\t\t  RawDataKey = sget4(srf_buf + tag_dataoffset);\n       }\n     } else goto restore_after_parseSonySRF;\n   }\n@@ -2019,20 +2047,22 @@ void LibRaw::parseSonySRF(unsigned len)\n   tag_offset = offset;\n \n   while (entries--) {\n-    if (tiff_sget (save, srf_buf, len,\n+\t  if (tiff_sget(save, srf_buf, len,\n                    &tag_offset, &tag_id, &tag_type, &tag_dataoffset,\n                    &tag_datalen, &tag_dataunitlen) == 0) {\n       if ((tag_id >= 0x00c0) && (tag_id <= 0x00ce)) {\n         i = (tag_id - 0x00c0) % 3;\n         nWB = (tag_id - 0x00c0) / 3;\n-        icWBC[Sony_SRF_wb_list[nWB]][i] = sget4(srf_buf + tag_dataoffset);\n+\t\tCHECKBUFFER_SGET4(tag_dataoffset);\n+\t\ticWBC[Sony_SRF_wb_list[nWB]][i] = sget4(srf_buf + tag_dataoffset);\n         if (i == 1) {\n           icWBC[Sony_SRF_wb_list[nWB]][3] =\n             icWBC[Sony_SRF_wb_list[nWB]][i];\n         }\n       } else if ((tag_id >= 0x00d0) && (tag_id <= 0x00d2)) {\n         i = (tag_id - 0x00d0) % 3;\n-        cam_mul[i] = sget4(srf_buf + tag_dataoffset);\n+\t\tCHECKBUFFER_SGET4(tag_dataoffset);\n+\t\tcam_mul[i] = sget4(srf_buf + tag_dataoffset);\n         if (i == 1) {\n           cam_mul[3] = cam_mul[i];\n         }\n@@ -2044,16 +2074,20 @@ void LibRaw::parseSonySRF(unsigned len)\n         0x0005  RawDataLength\n         */\n       case 0x0043:\n-        ilm.MaxAp4MaxFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset); // need to add extra space\n+\t\t  ilm.MaxAp4MaxFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n         break;\n       case 0x0044:\n-         ilm.MaxAp4MinFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset);\n+\t\t  ilm.MaxAp4MinFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n         break;\n       case 0x0045:\n-        ilm.MinFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset);\n+\t\t  ilm.MinFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n         break;\n       case 0x0046:\n-        ilm.MaxFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n+\t\t  CHECKBUFFER_SGET4(tag_dataoffset);\n+\t\t  ilm.MaxFocal = sgetreal(tag_type, srf_buf + tag_dataoffset);\n         break;\n       }\n     } else goto restore_after_parseSonySRF;"
+    }
+  ]
+}

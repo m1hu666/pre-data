@@ -1,0 +1,101 @@
+{
+  "sha": "0fc24fe2564736689859e7edfa177a86dac36bf9",
+  "node_id": "MDY6Q29tbWl0MTYwMDgzNzk1OjBmYzI0ZmUyNTY0NzM2Njg5ODU5ZTdlZGZhMTc3YTg2ZGFjMzZiZjk=",
+  "commit": {
+    "author": {
+      "name": "Andreas Kling",
+      "email": "awesomekling@gmail.com",
+      "date": "2019-12-30T23:21:50Z"
+    },
+    "committer": {
+      "name": "Andreas Kling",
+      "email": "awesomekling@gmail.com",
+      "date": "2019-12-30T23:24:35Z"
+    },
+    "message": "Kernel: User pointer validation should reject kernel-only addresses\n\nWe were happily allowing syscalls with pointers into kernel-only\nregions (virtual address >= 0xc0000000).\n\nThis patch fixes that by only considering user regions in the current\nprocess, and also double-checking the Region::is_user_accessible() flag\nbefore approving an access.\n\nThanks to Fire30 for finding the bug! :^)",
+    "tree": {
+      "sha": "a9815dc4e73ce05139e3fd3d9d583fb57b7932cf",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/git/trees/a9815dc4e73ce05139e3fd3d9d583fb57b7932cf"
+    },
+    "url": "https://api.github.com/repos/SerenityOS/serenity/git/commits/0fc24fe2564736689859e7edfa177a86dac36bf9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/SerenityOS/serenity/commits/0fc24fe2564736689859e7edfa177a86dac36bf9",
+  "html_url": "https://github.com/SerenityOS/serenity/commit/0fc24fe2564736689859e7edfa177a86dac36bf9",
+  "comments_url": "https://api.github.com/repos/SerenityOS/serenity/commits/0fc24fe2564736689859e7edfa177a86dac36bf9/comments",
+  "author": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "25d7a7efa627b83066b5d76f2c5b5a76da2337bf",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/commits/25d7a7efa627b83066b5d76f2c5b5a76da2337bf",
+      "html_url": "https://github.com/SerenityOS/serenity/commit/25d7a7efa627b83066b5d76f2c5b5a76da2337bf"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "d6afdf0b975de766fb4eaac0e50cbaa350d65367",
+      "filename": "Kernel/VM/MemoryManager.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/SerenityOS/serenity/blob/0fc24fe2564736689859e7edfa177a86dac36bf9/Kernel%2FVM%2FMemoryManager.cpp",
+      "raw_url": "https://github.com/SerenityOS/serenity/raw/0fc24fe2564736689859e7edfa177a86dac36bf9/Kernel%2FVM%2FMemoryManager.cpp",
+      "contents_url": "https://api.github.com/repos/SerenityOS/serenity/contents/Kernel%2FVM%2FMemoryManager.cpp?ref=0fc24fe2564736689859e7edfa177a86dac36bf9",
+      "patch": "@@ -592,14 +592,14 @@ bool MemoryManager::validate_user_stack(const Process& process, VirtualAddress v\n \n bool MemoryManager::validate_user_read(const Process& process, VirtualAddress vaddr) const\n {\n-    auto* region = region_from_vaddr(process, vaddr);\n-    return region && region->is_readable();\n+    auto* region = user_region_from_vaddr(const_cast<Process&>(process), vaddr);\n+    return region && region->is_user_accessible() && region->is_readable();\n }\n \n bool MemoryManager::validate_user_write(const Process& process, VirtualAddress vaddr) const\n {\n-    auto* region = region_from_vaddr(process, vaddr);\n-    return region && region->is_writable();\n+    auto* region = user_region_from_vaddr(const_cast<Process&>(process), vaddr);\n+    return region && region->is_user_accessible() && region->is_writable();\n }\n \n void MemoryManager::register_vmobject(VMObject& vmobject)"
+    }
+  ]
+}

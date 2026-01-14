@@ -1,0 +1,101 @@
+{
+  "sha": "31d670b6489e6d708c3b04b911cdf14ac43d846d",
+  "node_id": "MDY6Q29tbWl0NDExNTE5MjE6MzFkNjcwYjY0ODllNmQ3MDhjM2IwNGI5MTFjZGYxNGFjNDNkODQ2ZA==",
+  "commit": {
+    "author": {
+      "name": "Andrew Scheidecker",
+      "email": "andrew@scheidecker.net",
+      "date": "2018-09-16T13:55:34Z"
+    },
+    "committer": {
+      "name": "Andrew Scheidecker",
+      "email": "andrew@scheidecker.net",
+      "date": "2018-09-16T13:55:34Z"
+    },
+    "message": "Fix dereferencing null pointer when running wavm with WebAssembly main function that takes command-line arguments but no Emscripten memory to write them to",
+    "tree": {
+      "sha": "8a546eb3482918730408369ce8ce91289bd939ef",
+      "url": "https://api.github.com/repos/WAVM/WAVM/git/trees/8a546eb3482918730408369ce8ce91289bd939ef"
+    },
+    "url": "https://api.github.com/repos/WAVM/WAVM/git/commits/31d670b6489e6d708c3b04b911cdf14ac43d846d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WAVM/WAVM/commits/31d670b6489e6d708c3b04b911cdf14ac43d846d",
+  "html_url": "https://github.com/WAVM/WAVM/commit/31d670b6489e6d708c3b04b911cdf14ac43d846d",
+  "comments_url": "https://api.github.com/repos/WAVM/WAVM/commits/31d670b6489e6d708c3b04b911cdf14ac43d846d/comments",
+  "author": {
+    "login": "AndrewScheidecker",
+    "id": 2691804,
+    "node_id": "MDQ6VXNlcjI2OTE4MDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2691804?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewScheidecker",
+    "html_url": "https://github.com/AndrewScheidecker",
+    "followers_url": "https://api.github.com/users/AndrewScheidecker/followers",
+    "following_url": "https://api.github.com/users/AndrewScheidecker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewScheidecker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewScheidecker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewScheidecker/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewScheidecker/orgs",
+    "repos_url": "https://api.github.com/users/AndrewScheidecker/repos",
+    "events_url": "https://api.github.com/users/AndrewScheidecker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewScheidecker/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "AndrewScheidecker",
+    "id": 2691804,
+    "node_id": "MDQ6VXNlcjI2OTE4MDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2691804?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewScheidecker",
+    "html_url": "https://github.com/AndrewScheidecker",
+    "followers_url": "https://api.github.com/users/AndrewScheidecker/followers",
+    "following_url": "https://api.github.com/users/AndrewScheidecker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewScheidecker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewScheidecker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewScheidecker/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewScheidecker/orgs",
+    "repos_url": "https://api.github.com/users/AndrewScheidecker/repos",
+    "events_url": "https://api.github.com/users/AndrewScheidecker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewScheidecker/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bc7e0318a560c4055553efc97985a1a797db5dd3",
+      "url": "https://api.github.com/repos/WAVM/WAVM/commits/bc7e0318a560c4055553efc97985a1a797db5dd3",
+      "html_url": "https://github.com/WAVM/WAVM/commit/bc7e0318a560c4055553efc97985a1a797db5dd3"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 10,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "b21e4103ca564eb8c5a3986d0602a8bce851fb00",
+      "filename": "Programs/wavm/wavm.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 18,
+      "blob_url": "https://github.com/WAVM/WAVM/blob/31d670b6489e6d708c3b04b911cdf14ac43d846d/Programs%2Fwavm%2Fwavm.cpp",
+      "raw_url": "https://github.com/WAVM/WAVM/raw/31d670b6489e6d708c3b04b911cdf14ac43d846d/Programs%2Fwavm%2Fwavm.cpp",
+      "contents_url": "https://api.github.com/repos/WAVM/WAVM/contents/Programs%2Fwavm%2Fwavm.cpp?ref=31d670b6489e6d708c3b04b911cdf14ac43d846d",
+      "patch": "@@ -250,21 +250,23 @@ static int run(const CommandLineOptions& options)\n \t{\n \t\tif(functionType.params().size() == 2)\n \t\t{\n-\t\t\tMemoryInstance* defaultMemory = Runtime::getDefaultMemory(moduleInstance);\n-\t\t\tif(!defaultMemory)\n+\t\t\tif(!emscriptenInstance)\n \t\t\t{\n \t\t\t\tLog::printf(\n \t\t\t\t\tLog::error,\n \t\t\t\t\t\"Module does not declare a default memory object to put arguments in.\\n\");\n \t\t\t\treturn EXIT_FAILURE;\n \t\t\t}\n+\t\t\telse\n+\t\t\t{\n+\t\t\t\tstd::vector<const char*> argStrings;\n+\t\t\t\targStrings.push_back(options.filename);\n+\t\t\t\tchar** args = options.args;\n+\t\t\t\twhile(*args) { argStrings.push_back(*args++); };\n \n-\t\t\tstd::vector<const char*> argStrings;\n-\t\t\targStrings.push_back(options.filename);\n-\t\t\tchar** args = options.args;\n-\t\t\twhile(*args) { argStrings.push_back(*args++); };\n-\n-\t\t\tEmscripten::injectCommandArgs(emscriptenInstance, argStrings, invokeArgs);\n+\t\t\t\twavmAssert(emscriptenInstance);\n+\t\t\t\tEmscripten::injectCommandArgs(emscriptenInstance, argStrings, invokeArgs);\n+\t\t\t}\n \t\t}\n \t\telse if(functionType.params().size() > 0)\n \t\t{"
+    }
+  ]
+}

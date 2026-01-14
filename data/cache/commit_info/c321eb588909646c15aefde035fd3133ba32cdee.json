@@ -1,0 +1,125 @@
+{
+  "sha": "c321eb588909646c15aefde035fd3133ba32cdee",
+  "node_id": "MDY6Q29tbWl0NDUyNDE4MTpjMzIxZWI1ODg5MDk2NDZjMTVhZWZkZTAzNWZkMzEzM2JhMzJjZGVl",
+  "commit": {
+    "author": {
+      "name": "Kyle Nekritz",
+      "email": "knekritz@fb.com",
+      "date": "2019-10-28T22:47:35Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-10-28T22:49:03Z"
+    },
+    "message": "Handle close_notify as standard writeErr in AsyncSSLSocket.\n\nSummary: Fixes CVE-2019-11934\n\nReviewed By: mingtaoy\n\nDifferential Revision: D18020613\n\nfbshipit-source-id: db82bb250e53f0d225f1280bd67bc74abd417836",
+    "tree": {
+      "sha": "bc1e57029d5980f7f6d5491ed2781707e0984f24",
+      "url": "https://api.github.com/repos/facebook/folly/git/trees/bc1e57029d5980f7f6d5491ed2781707e0984f24"
+    },
+    "url": "https://api.github.com/repos/facebook/folly/git/commits/c321eb588909646c15aefde035fd3133ba32cdee",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/folly/commits/c321eb588909646c15aefde035fd3133ba32cdee",
+  "html_url": "https://github.com/facebook/folly/commit/c321eb588909646c15aefde035fd3133ba32cdee",
+  "comments_url": "https://api.github.com/repos/facebook/folly/commits/c321eb588909646c15aefde035fd3133ba32cdee/comments",
+  "author": {
+    "login": "knekritz",
+    "id": 5401630,
+    "node_id": "MDQ6VXNlcjU0MDE2MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5401630?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/knekritz",
+    "html_url": "https://github.com/knekritz",
+    "followers_url": "https://api.github.com/users/knekritz/followers",
+    "following_url": "https://api.github.com/users/knekritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/knekritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/knekritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/knekritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/knekritz/orgs",
+    "repos_url": "https://api.github.com/users/knekritz/repos",
+    "events_url": "https://api.github.com/users/knekritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/knekritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "df7b665226a7153faa7d737bec46ef29371a3882",
+      "url": "https://api.github.com/repos/facebook/folly/commits/df7b665226a7153faa7d737bec46ef29371a3882",
+      "html_url": "https://github.com/facebook/folly/commit/df7b665226a7153faa7d737bec46ef29371a3882"
+    }
+  ],
+  "stats": {
+    "total": 120,
+    "additions": 112,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "2fc58b2fccbcc00cc772a672821ab124f70c969a",
+      "filename": "folly/io/async/AsyncSSLSocket.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 7,
+      "changes": 8,
+      "blob_url": "https://github.com/facebook/folly/blob/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2FAsyncSSLSocket.cpp",
+      "raw_url": "https://github.com/facebook/folly/raw/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2FAsyncSSLSocket.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2Fio%2Fasync%2FAsyncSSLSocket.cpp?ref=c321eb588909646c15aefde035fd3133ba32cdee",
+      "patch": "@@ -1450,9 +1450,6 @@ AsyncSocket::WriteResult AsyncSSLSocket::interpretSSLError(int rc, int error) {\n         WRITE_ERROR,\n         std::make_unique<SSLException>(SSLError::INVALID_RENEGOTIATION));\n   } else {\n-    if (zero_return(error, rc, errno)) {\n-      return WriteResult(0);\n-    }\n     auto errError = ERR_get_error();\n     VLOG(3) << \"ERROR: AsyncSSLSocket(fd=\" << fd_ << \", state=\" << int(state_)\n             << \", sslState=\" << sslState_ << \", events=\" << eventFlags_ << \"): \"\n@@ -1589,10 +1586,7 @@ AsyncSocket::WriteResult AsyncSSLSocket::performWrite(\n         *partialWritten = uint32_t(offset);\n         return WriteResult(totalWritten);\n       }\n-      auto writeResult = interpretSSLError(int(bytes), error);\n-      if (writeResult.writeReturn < 0) {\n-        return writeResult;\n-      } // else fall through to below to correctly record totalWritten\n+      return interpretSSLError(int(bytes), error);\n     }\n \n     totalWritten += bytes;"
+    },
+    {
+      "sha": "7544282df02dcb0239798dae58b3caf670beb3e1",
+      "filename": "folly/io/async/test/AsyncSSLSocketTest.cpp",
+      "status": "modified",
+      "additions": 108,
+      "deletions": 0,
+      "changes": 108,
+      "blob_url": "https://github.com/facebook/folly/blob/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.cpp",
+      "raw_url": "https://github.com/facebook/folly/raw/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.cpp?ref=c321eb588909646c15aefde035fd3133ba32cdee",
+      "patch": "@@ -808,6 +808,114 @@ TEST(AsyncSSLSocketTest, SSLClientTimeoutTest) {\n   cerr << \"SSLClientTimeoutTest test completed\" << endl;\n }\n \n+class PerLoopReadCallback : public AsyncTransportWrapper::ReadCallback {\n+ public:\n+  void getReadBuffer(void** bufReturn, size_t* lenReturn) override {\n+    *bufReturn = buf_.data();\n+    *lenReturn = buf_.size();\n+  }\n+\n+  void readDataAvailable(size_t len) noexcept override {\n+    VLOG(3) << \"Read of size: \" << len;\n+    s_->setReadCB(nullptr);\n+    s_->getEventBase()->runInLoop([this]() { s_->setReadCB(this); });\n+  }\n+\n+  void readErr(const AsyncSocketException&) noexcept override {}\n+\n+  void readEOF() noexcept override {}\n+\n+  void setSocket(AsyncSocket* s) {\n+    s_ = s;\n+  }\n+\n+ private:\n+  AsyncSocket* s_;\n+  std::array<uint8_t, 1000> buf_;\n+};\n+\n+class CloseNotifyConnector : public AsyncSocket::ConnectCallback {\n+ public:\n+  CloseNotifyConnector(EventBase* evb, const SocketAddress& addr) {\n+    evb_ = evb;\n+    ssl_ = AsyncSSLSocket::newSocket(std::make_shared<SSLContext>(), evb_);\n+    ssl_->connect(this, addr);\n+  }\n+\n+  void connectSuccess() noexcept override {\n+    ssl_->writeChain(nullptr, IOBuf::copyBuffer(\"hi\"));\n+    auto ssl = const_cast<SSL*>(ssl_->getSSL());\n+    SSL_shutdown(ssl);\n+    auto fd = ssl_->detachNetworkSocket();\n+    tcp_.reset(new AsyncSocket(evb_, fd), AsyncSocket::Destructor());\n+    evb_->runAfterDelay(\n+        [this]() {\n+          perLoopReads_.setSocket(tcp_.get());\n+          tcp_->setReadCB(&perLoopReads_);\n+          evb_->runAfterDelay([this]() { tcp_->closeNow(); }, 10);\n+        },\n+        100);\n+  }\n+\n+  void connectErr(const AsyncSocketException& ex) noexcept override {\n+    FAIL() << ex.what();\n+  }\n+\n+ private:\n+  EventBase* evb_;\n+  std::shared_ptr<AsyncSSLSocket> ssl_;\n+  std::shared_ptr<AsyncSocket> tcp_;\n+  PerLoopReadCallback perLoopReads_;\n+};\n+\n+class ErrorCheckingWriteCallback : public AsyncSocket::WriteCallback {\n+ public:\n+  void writeSuccess() noexcept override {}\n+\n+  void writeErr(size_t, const AsyncSocketException& ex) noexcept override {\n+    LOG(ERROR) << \"write error: \" << ex.what();\n+    EXPECT_NE(\n+        ex.getType(),\n+        AsyncSocketException::AsyncSocketExceptionType::SSL_ERROR);\n+  }\n+};\n+\n+class WriteOnEofReadCallback : public ReadCallback {\n+ public:\n+  using ReadCallback::ReadCallback;\n+\n+  void readEOF() noexcept override {\n+    LOG(INFO) << \"Got EOF\";\n+    auto chain = IOBuf::create(0);\n+    for (size_t i = 0; i < 1000 * 1000; i++) {\n+      auto buf = IOBuf::create(10);\n+      buf->append(10);\n+      memset(buf->writableData(), 'x', 10);\n+      chain->prependChain(std::move(buf));\n+    }\n+    socket_->writeChain(&writeCallback_, std::move(chain));\n+  }\n+\n+  void readErr(const AsyncSocketException& ex) noexcept override {\n+    LOG(ERROR) << ex.what();\n+  }\n+\n+ private:\n+  ErrorCheckingWriteCallback writeCallback_;\n+};\n+\n+TEST(AsyncSSLSocketTest, EarlyCloseNotify) {\n+  WriteOnEofReadCallback readCallback(nullptr);\n+  HandshakeCallback handshakeCallback(&readCallback);\n+  SSLServerAcceptCallback acceptCallback(&handshakeCallback);\n+  TestSSLServer server(&acceptCallback);\n+\n+  EventBase eventBase;\n+  CloseNotifyConnector cnc(&eventBase, server.getAddress());\n+\n+  eventBase.loop();\n+}\n+\n /**\n  * Verify Client Ciphers obtained using SSL MSG Callback.\n  */"
+    },
+    {
+      "sha": "8684f6ad906ccec5cbdb18bd8a9ba73f3980de97",
+      "filename": "folly/io/async/test/AsyncSSLSocketTest.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/folly/blob/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.h",
+      "raw_url": "https://github.com/facebook/folly/raw/c321eb588909646c15aefde035fd3133ba32cdee/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.h",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2Fio%2Fasync%2Ftest%2FAsyncSSLSocketTest.h?ref=c321eb588909646c15aefde035fd3133ba32cdee",
+      "patch": "@@ -389,7 +389,9 @@ class ReadCallback : public ReadCallbackBase {\n \n     currentBuffer.length = len;\n \n-    wcb_->setSocket(socket_);\n+    if (wcb_) {\n+      wcb_->setSocket(socket_);\n+    }\n \n     // Write back the same data.\n     socket_->write(wcb_, currentBuffer.buffer, len, writeFlags);"
+    }
+  ]
+}

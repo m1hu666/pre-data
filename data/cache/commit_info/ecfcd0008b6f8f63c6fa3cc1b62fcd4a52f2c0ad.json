@@ -1,0 +1,101 @@
+{
+  "sha": "ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad",
+  "node_id": "MDY6Q29tbWl0MTMxMDM2NDM2OmVjZmNkMDAwOGI2ZjhmNjNjNmZhM2NjMWI2MmZjZDRhNTJmMmMwYWQ=",
+  "commit": {
+    "author": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-03-12T18:43:12Z"
+    },
+    "committer": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-03-12T18:43:12Z"
+    },
+    "message": "Store untrusted input to enclave variable\n\nThe untrusted input pointer should be stored to trusted variable before\nchecking to avoid unexpected modifications after checking.\n\nPiperOrigin-RevId: 362553830\nChange-Id: I743f9bd3487de60269e247d74f2188f2ffc06d01",
+    "tree": {
+      "sha": "6abe9d16869d3ffe84ec5508379f0b7bc1f3b59f",
+      "url": "https://api.github.com/repos/google/asylo/git/trees/6abe9d16869d3ffe84ec5508379f0b7bc1f3b59f"
+    },
+    "url": "https://api.github.com/repos/google/asylo/git/commits/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/google/asylo/commits/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad",
+  "html_url": "https://github.com/google/asylo/commit/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad",
+  "comments_url": "https://api.github.com/repos/google/asylo/commits/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad/comments",
+  "author": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e95fc9eddd497bdb2e08a1d9eff2f2bb008387e2",
+      "url": "https://api.github.com/repos/google/asylo/commits/e95fc9eddd497bdb2e08a1d9eff2f2bb008387e2",
+      "html_url": "https://github.com/google/asylo/commit/e95fc9eddd497bdb2e08a1d9eff2f2bb008387e2"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "3b16e39fbf62d3da9189ce75808e0930722d190b",
+      "filename": "asylo/platform/primitives/sgx/trusted_sgx.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/google/asylo/blob/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad/asylo%2Fplatform%2Fprimitives%2Fsgx%2Ftrusted_sgx.cc",
+      "raw_url": "https://github.com/google/asylo/raw/ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad/asylo%2Fplatform%2Fprimitives%2Fsgx%2Ftrusted_sgx.cc",
+      "contents_url": "https://api.github.com/repos/google/asylo/contents/asylo%2Fplatform%2Fprimitives%2Fsgx%2Ftrusted_sgx.cc?ref=ecfcd0008b6f8f63c6fa3cc1b62fcd4a52f2c0ad",
+      "patch": "@@ -281,12 +281,13 @@ PrimitiveStatus TrustedPrimitives::UntrustedCall(uint64_t untrusted_selector,\n     if (sgx_params->input_size > 0) {\n       // Allocate and copy data to |input_buffer|.\n       sgx_params->input = untrusted_cache->Malloc(sgx_params->input_size);\n-      if (!TrustedPrimitives::IsOutsideEnclave(sgx_params->input,\n-                                               sgx_params->input_size)) {\n+      const void *input_pointer = sgx_params->input;\n+      uint64_t input_size = sgx_params->input_size;\n+      if (!TrustedPrimitives::IsOutsideEnclave(input_pointer, input_size)) {\n         TrustedPrimitives::BestEffortAbort(\n             \"UntrustedCall: sgx_param input should be in untrusted memory\");\n       }\n-      input->Serialize(const_cast<void *>(sgx_params->input));\n+      input->Serialize(const_cast<void *>(input_pointer));\n     }\n   }\n   sgx_params->output_size = 0;"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "f6c6047e49f1517778f5565681fb64750b14bf60",
+  "node_id": "MDY6Q29tbWl0MTYwMDgzNzk1OmY2YzYwNDdlNDlmMTUxNzc3OGY1NTY1NjgxZmI2NDc1MGIxNGJmNjA=",
+  "commit": {
+    "author": {
+      "name": "Andreas Kling",
+      "email": "kling@serenityos.org",
+      "date": "2021-01-27T06:50:46Z"
+    },
+    "committer": {
+      "name": "Andreas Kling",
+      "email": "kling@serenityos.org",
+      "date": "2021-01-27T06:57:07Z"
+    },
+    "message": "LibJS: Add overflow checks when creating TypedArray from ArrayBuffer\n\nThanks to Iliad for finding this! :^)",
+    "tree": {
+      "sha": "d5328a9bb90340c0fc0dcf1c54f1f6ed7efbe3b0",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/git/trees/d5328a9bb90340c0fc0dcf1c54f1f6ed7efbe3b0"
+    },
+    "url": "https://api.github.com/repos/SerenityOS/serenity/git/commits/f6c6047e49f1517778f5565681fb64750b14bf60",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/SerenityOS/serenity/commits/f6c6047e49f1517778f5565681fb64750b14bf60",
+  "html_url": "https://github.com/SerenityOS/serenity/commit/f6c6047e49f1517778f5565681fb64750b14bf60",
+  "comments_url": "https://api.github.com/repos/SerenityOS/serenity/commits/f6c6047e49f1517778f5565681fb64750b14bf60/comments",
+  "author": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c899ace3ad1efbf1bc8f8ee2ebb1e35903d7224b",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/commits/c899ace3ad1efbf1bc8f8ee2ebb1e35903d7224b",
+      "html_url": "https://github.com/SerenityOS/serenity/commit/c899ace3ad1efbf1bc8f8ee2ebb1e35903d7224b"
+    }
+  ],
+  "stats": {
+    "total": 35,
+    "additions": 28,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "60783154ce790f73592bb9bf96b75dfe8651a16f",
+      "filename": "Userland/Libraries/LibJS/Runtime/TypedArray.cpp",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 7,
+      "changes": 30,
+      "blob_url": "https://github.com/SerenityOS/serenity/blob/f6c6047e49f1517778f5565681fb64750b14bf60/Userland%2FLibraries%2FLibJS%2FRuntime%2FTypedArray.cpp",
+      "raw_url": "https://github.com/SerenityOS/serenity/raw/f6c6047e49f1517778f5565681fb64750b14bf60/Userland%2FLibraries%2FLibJS%2FRuntime%2FTypedArray.cpp",
+      "contents_url": "https://api.github.com/repos/SerenityOS/serenity/contents/Userland%2FLibraries%2FLibJS%2FRuntime%2FTypedArray.cpp?ref=f6c6047e49f1517778f5565681fb64750b14bf60",
+      "patch": "@@ -54,7 +54,7 @@ static void initialize_typed_array_from_array_buffer(GlobalObject& global_object\n     }\n     // FIXME: 8. If IsDetachedBuffer(buffer) is true, throw a TypeError exception.\n     auto buffer_byte_length = array_buffer.byte_length();\n-    size_t new_byte_length;\n+    Checked<size_t> new_byte_length;\n     if (length.is_undefined()) {\n         if (buffer_byte_length % element_size != 0) {\n             vm.throw_exception<RangeError>(global_object, ErrorType::TypedArrayInvalidBufferLength, typed_array.class_name(), element_size, buffer_byte_length);\n@@ -64,18 +64,34 @@ static void initialize_typed_array_from_array_buffer(GlobalObject& global_object\n             vm.throw_exception<RangeError>(global_object, ErrorType::TypedArrayOutOfRangeByteOffset, offset, buffer_byte_length);\n             return;\n         }\n-        new_byte_length = buffer_byte_length - offset;\n+        new_byte_length = buffer_byte_length;\n+        new_byte_length -= offset;\n     } else {\n-        new_byte_length = new_length * element_size;\n-        if (offset + new_byte_length > buffer_byte_length) {\n-            vm.throw_exception<RangeError>(global_object, ErrorType::TypedArrayOutOfRangeByteOffsetOrLength, offset, offset + new_byte_length, buffer_byte_length);\n+        new_byte_length = new_length;\n+        new_byte_length *= element_size;\n+\n+        Checked<size_t> new_byte_end = new_byte_length;\n+        new_byte_end += offset;\n+\n+        if (new_byte_end.has_overflow()) {\n+            vm.throw_exception<RangeError>(global_object, ErrorType::InvalidLength, \"typed array\");\n+            return;\n+        }\n+\n+        if (new_byte_end.value() > buffer_byte_length) {\n+            vm.throw_exception<RangeError>(global_object, ErrorType::TypedArrayOutOfRangeByteOffsetOrLength, offset, new_byte_end.value(), buffer_byte_length);\n             return;\n         }\n     }\n+    if (new_byte_length.has_overflow()) {\n+        vm.throw_exception<RangeError>(global_object, ErrorType::InvalidLength, \"typed array\");\n+        return;\n+    }\n+\n     typed_array.set_viewed_array_buffer(&array_buffer);\n-    typed_array.set_byte_length(new_byte_length);\n+    typed_array.set_byte_length(new_byte_length.value());\n     typed_array.set_byte_offset(offset);\n-    typed_array.set_array_length(new_byte_length / element_size);\n+    typed_array.set_array_length(new_byte_length.value() / element_size);\n }\n \n void TypedArrayBase::visit_edges(Visitor& visitor)"
+    },
+    {
+      "sha": "34c8d5d917d66f5c9ce70163a21b40c5383cfcad",
+      "filename": "Userland/Libraries/LibJS/Tests/builtins/TypedArray/typed-array-from-ArrayBuffer-bad-offset.js",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/SerenityOS/serenity/blob/f6c6047e49f1517778f5565681fb64750b14bf60/Userland%2FLibraries%2FLibJS%2FTests%2Fbuiltins%2FTypedArray%2Ftyped-array-from-ArrayBuffer-bad-offset.js",
+      "raw_url": "https://github.com/SerenityOS/serenity/raw/f6c6047e49f1517778f5565681fb64750b14bf60/Userland%2FLibraries%2FLibJS%2FTests%2Fbuiltins%2FTypedArray%2Ftyped-array-from-ArrayBuffer-bad-offset.js",
+      "contents_url": "https://api.github.com/repos/SerenityOS/serenity/contents/Userland%2FLibraries%2FLibJS%2FTests%2Fbuiltins%2FTypedArray%2Ftyped-array-from-ArrayBuffer-bad-offset.js?ref=f6c6047e49f1517778f5565681fb64750b14bf60",
+      "patch": "@@ -0,0 +1,5 @@\n+test(\"construct Uint32Array with zero-length ArrayBuffer and overflowing offset\", () => {\n+    expect(() => new Uint32Array(new ArrayBuffer(0), 4, 1024 * 1024 * 1024 - 1)).toThrow(\n+        RangeError\n+    );\n+});"
+    }
+  ]
+}

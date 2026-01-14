@@ -1,0 +1,101 @@
+{
+  "sha": "303fa88fe664ded4bf8753b997abd916f0a3c03f",
+  "node_id": "MDY6Q29tbWl0MjE0MTE4NjozMDNmYTg4ZmU2NjRkZWQ0YmY4NzUzYjk5N2FiZDkxNmYwYTNjMDNm",
+  "commit": {
+    "author": {
+      "name": "James Allsup",
+      "email": "james@allsup.eu",
+      "date": "2015-12-17T23:59:08Z"
+    },
+    "committer": {
+      "name": "James Allsup",
+      "email": "james@allsup.eu",
+      "date": "2015-12-17T23:59:08Z"
+    },
+    "message": "Fixed low risk XSS issue with user account address edit. Thanks to @robert81 for the find.\n\nClose #3721",
+    "tree": {
+      "sha": "5c35301b1950c5c5f9ed4dc443df800ba58b2c19",
+      "url": "https://api.github.com/repos/opencart/opencart/git/trees/5c35301b1950c5c5f9ed4dc443df800ba58b2c19"
+    },
+    "url": "https://api.github.com/repos/opencart/opencart/git/commits/303fa88fe664ded4bf8753b997abd916f0a3c03f",
+    "comment_count": 3,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/opencart/opencart/commits/303fa88fe664ded4bf8753b997abd916f0a3c03f",
+  "html_url": "https://github.com/opencart/opencart/commit/303fa88fe664ded4bf8753b997abd916f0a3c03f",
+  "comments_url": "https://api.github.com/repos/opencart/opencart/commits/303fa88fe664ded4bf8753b997abd916f0a3c03f/comments",
+  "author": {
+    "login": "jamesallsup",
+    "id": 2026129,
+    "node_id": "MDQ6VXNlcjIwMjYxMjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2026129?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jamesallsup",
+    "html_url": "https://github.com/jamesallsup",
+    "followers_url": "https://api.github.com/users/jamesallsup/followers",
+    "following_url": "https://api.github.com/users/jamesallsup/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jamesallsup/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jamesallsup/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jamesallsup/subscriptions",
+    "organizations_url": "https://api.github.com/users/jamesallsup/orgs",
+    "repos_url": "https://api.github.com/users/jamesallsup/repos",
+    "events_url": "https://api.github.com/users/jamesallsup/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jamesallsup/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jamesallsup",
+    "id": 2026129,
+    "node_id": "MDQ6VXNlcjIwMjYxMjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2026129?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jamesallsup",
+    "html_url": "https://github.com/jamesallsup",
+    "followers_url": "https://api.github.com/users/jamesallsup/followers",
+    "following_url": "https://api.github.com/users/jamesallsup/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jamesallsup/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jamesallsup/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jamesallsup/subscriptions",
+    "organizations_url": "https://api.github.com/users/jamesallsup/orgs",
+    "repos_url": "https://api.github.com/users/jamesallsup/repos",
+    "events_url": "https://api.github.com/users/jamesallsup/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jamesallsup/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3319a6158f45ccd651b7d42d43b89547ce6c247e",
+      "url": "https://api.github.com/repos/opencart/opencart/commits/3319a6158f45ccd651b7d42d43b89547ce6c247e",
+      "html_url": "https://github.com/opencart/opencart/commit/3319a6158f45ccd651b7d42d43b89547ce6c247e"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "a84f99fdaa714546df5966ad355899371978bc08",
+      "filename": "upload/catalog/controller/account/address.php",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/opencart/opencart/blob/303fa88fe664ded4bf8753b997abd916f0a3c03f/upload%2Fcatalog%2Fcontroller%2Faccount%2Faddress.php",
+      "raw_url": "https://github.com/opencart/opencart/raw/303fa88fe664ded4bf8753b997abd916f0a3c03f/upload%2Fcatalog%2Fcontroller%2Faccount%2Faddress.php",
+      "contents_url": "https://api.github.com/repos/opencart/opencart/contents/upload%2Fcatalog%2Fcontroller%2Faccount%2Faddress.php?ref=303fa88fe664ded4bf8753b997abd916f0a3c03f",
+      "patch": "@@ -425,15 +425,15 @@ protected function getForm() {\n \t\t}\n \n \t\tif (isset($this->request->post['country_id'])) {\n-\t\t\t$data['country_id'] = $this->request->post['country_id'];\n+\t\t\t$data['country_id'] = (int)$this->request->post['country_id'];\n \t\t}  elseif (!empty($address_info)) {\n \t\t\t$data['country_id'] = $address_info['country_id'];\n \t\t} else {\n \t\t\t$data['country_id'] = $this->config->get('config_country_id');\n \t\t}\n \n \t\tif (isset($this->request->post['zone_id'])) {\n-\t\t\t$data['zone_id'] = $this->request->post['zone_id'];\n+\t\t\t$data['zone_id'] = (int)$this->request->post['zone_id'];\n \t\t}  elseif (!empty($address_info)) {\n \t\t\t$data['zone_id'] = $address_info['zone_id'];\n \t\t} else {\n@@ -503,11 +503,11 @@ protected function validateForm() {\n \t\t\t$this->error['postcode'] = $this->language->get('error_postcode');\n \t\t}\n \n-\t\tif ($this->request->post['country_id'] == '') {\n+\t\tif ($this->request->post['country_id'] == '' || !is_int($this->request->post['country_id'])) {\n \t\t\t$this->error['country'] = $this->language->get('error_country');\n \t\t}\n \n-\t\tif (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {\n+\t\tif (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '' || !is_int($this->request->post['zone_id'])) {\n \t\t\t$this->error['zone'] = $this->language->get('error_zone');\n \t\t}\n "
+    }
+  ]
+}

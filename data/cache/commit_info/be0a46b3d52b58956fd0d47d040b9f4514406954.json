@@ -1,0 +1,149 @@
+{
+  "sha": "be0a46b3d52b58956fd0d47d040b9f4514406954",
+  "node_id": "C_kwDOAS5ehtoAKGJlMGE0NmIzZDUyYjU4OTU2ZmQwZDQ3ZDA0MGI5ZjQ1MTQ0MDY5NTQ",
+  "commit": {
+    "author": {
+      "name": "Nayuta Yanagisawa",
+      "email": "nayuta.yanagisawa@hey.com",
+      "date": "2022-09-27T06:22:57Z"
+    },
+    "committer": {
+      "name": "Nayuta Yanagisawa",
+      "email": "nayuta.yanagisawa@hey.com",
+      "date": "2022-09-28T05:55:56Z"
+    },
+    "message": "MDEV-29644 a potential bug of null pointer dereference in spider_db_mbase::print_warnings()\n\nThe function spider_db_mbase::print_warnings() can potentially result\nin a null pointer dereference.\n\nRemove the null pointer dereference by cleaning up the function.",
+    "tree": {
+      "sha": "34bb5c97cc1211567f1c7f9cd681259245c9ea5a",
+      "url": "https://api.github.com/repos/MariaDB/server/git/trees/34bb5c97cc1211567f1c7f9cd681259245c9ea5a"
+    },
+    "url": "https://api.github.com/repos/MariaDB/server/git/commits/be0a46b3d52b58956fd0d47d040b9f4514406954",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/MariaDB/server/commits/be0a46b3d52b58956fd0d47d040b9f4514406954",
+  "html_url": "https://github.com/MariaDB/server/commit/be0a46b3d52b58956fd0d47d040b9f4514406954",
+  "comments_url": "https://api.github.com/repos/MariaDB/server/commits/be0a46b3d52b58956fd0d47d040b9f4514406954/comments",
+  "author": {
+    "login": "nayuta-yanagisawa",
+    "id": 39556451,
+    "node_id": "MDQ6VXNlcjM5NTU2NDUx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39556451?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nayuta-yanagisawa",
+    "html_url": "https://github.com/nayuta-yanagisawa",
+    "followers_url": "https://api.github.com/users/nayuta-yanagisawa/followers",
+    "following_url": "https://api.github.com/users/nayuta-yanagisawa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nayuta-yanagisawa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nayuta-yanagisawa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nayuta-yanagisawa/subscriptions",
+    "organizations_url": "https://api.github.com/users/nayuta-yanagisawa/orgs",
+    "repos_url": "https://api.github.com/users/nayuta-yanagisawa/repos",
+    "events_url": "https://api.github.com/users/nayuta-yanagisawa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nayuta-yanagisawa/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nayuta-yanagisawa",
+    "id": 39556451,
+    "node_id": "MDQ6VXNlcjM5NTU2NDUx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39556451?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nayuta-yanagisawa",
+    "html_url": "https://github.com/nayuta-yanagisawa",
+    "followers_url": "https://api.github.com/users/nayuta-yanagisawa/followers",
+    "following_url": "https://api.github.com/users/nayuta-yanagisawa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nayuta-yanagisawa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nayuta-yanagisawa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nayuta-yanagisawa/subscriptions",
+    "organizations_url": "https://api.github.com/users/nayuta-yanagisawa/orgs",
+    "repos_url": "https://api.github.com/users/nayuta-yanagisawa/repos",
+    "events_url": "https://api.github.com/users/nayuta-yanagisawa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nayuta-yanagisawa/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2b89598fe017d8ae1898a97071d00581b7ba6271",
+      "url": "https://api.github.com/repos/MariaDB/server/commits/2b89598fe017d8ae1898a97071d00581b7ba6271",
+      "html_url": "https://github.com/MariaDB/server/commit/2b89598fe017d8ae1898a97071d00581b7ba6271"
+    }
+  ],
+  "stats": {
+    "total": 197,
+    "additions": 141,
+    "deletions": 56
+  },
+  "files": [
+    {
+      "sha": "eb72560273784f452f4f682e2ab9b54d4a2367c8",
+      "filename": "storage/spider/mysql-test/spider/bugfix/r/mdev_29644.result",
+      "status": "added",
+      "additions": 44,
+      "deletions": 0,
+      "changes": 44,
+      "blob_url": "https://github.com/MariaDB/server/blob/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Fr%2Fmdev_29644.result",
+      "raw_url": "https://github.com/MariaDB/server/raw/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Fr%2Fmdev_29644.result",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Fr%2Fmdev_29644.result?ref=be0a46b3d52b58956fd0d47d040b9f4514406954",
+      "patch": "@@ -0,0 +1,44 @@\n+#\n+# MDEV-29644 a potential bug of null pointer dereference in spider_db_mbase::print_warnings()\n+#\n+for master_1\n+for child2\n+child2_1\n+child2_2\n+child2_3\n+for child3\n+connection child2_1;\n+CREATE DATABASE auto_test_remote;\n+USE auto_test_remote;\n+CREATE TABLE tbl_a (\n+a CHAR(5)\n+) ENGINE=InnoDB DEFAULT CHARSET=utf8;\n+set @orig_sql_mode=@@global.sql_mode;\n+SET GLOBAL sql_mode='';\n+connection master_1;\n+CREATE DATABASE auto_test_local;\n+USE auto_test_local;\n+CREATE TABLE tbl_a (\n+a CHAR(255)\n+) ENGINE=Spider DEFAULT CHARSET=utf8 COMMENT='table \"tbl_a\", srv \"s_2_1\"';\n+SET @orig_sql_mode=@@global.sql_mode;\n+SET GLOBAL sql_mode='';\n+INSERT INTO tbl_a VALUES (\"this will be truncated\");\n+NOT FOUND /\\[WARN SPIDER RESULT\\].* Warning 1265 Data truncated for column 'a' at row 1.*/ in mysqld.1.1.err\n+SET @orig_log_result_errors=@@global.spider_log_result_errors;\n+SET GLOBAL spider_log_result_errors=4;\n+INSERT INTO tbl_a VALUES (\"this will be truncated\");\n+FOUND 1 /\\[WARN SPIDER RESULT\\].* Warning 1265 Data truncated for column 'a' at row 1.*/ in mysqld.1.1.err\n+connection master_1;\n+SET GLOBAL spider_log_result_errors=@orig_log_result_errors;\n+SET GLOBAL sql_mode=@orig_sql_mode;\n+DROP DATABASE IF EXISTS auto_test_local;\n+connection child2_1;\n+SET GLOBAL sql_mode=@orig_sql_mode;\n+DROP DATABASE IF EXISTS auto_test_remote;\n+for master_1\n+for child2\n+child2_1\n+child2_2\n+child2_3\n+for child3"
+    },
+    {
+      "sha": "05dfd8a0bcea9cbceef1f16b1eae507e05a609c3",
+      "filename": "storage/spider/mysql-test/spider/bugfix/t/mdev_29644.cnf",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/MariaDB/server/blob/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.cnf",
+      "raw_url": "https://github.com/MariaDB/server/raw/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.cnf",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.cnf?ref=be0a46b3d52b58956fd0d47d040b9f4514406954",
+      "patch": "@@ -0,0 +1,3 @@\n+!include include/default_mysqld.cnf\n+!include ../my_1_1.cnf\n+!include ../my_2_1.cnf"
+    },
+    {
+      "sha": "4ebdf317e8699a1a006619583c00d37800926c02",
+      "filename": "storage/spider/mysql-test/spider/bugfix/t/mdev_29644.test",
+      "status": "added",
+      "additions": 58,
+      "deletions": 0,
+      "changes": 58,
+      "blob_url": "https://github.com/MariaDB/server/blob/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.test",
+      "raw_url": "https://github.com/MariaDB/server/raw/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.test",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/storage%2Fspider%2Fmysql-test%2Fspider%2Fbugfix%2Ft%2Fmdev_29644.test?ref=be0a46b3d52b58956fd0d47d040b9f4514406954",
+      "patch": "@@ -0,0 +1,58 @@\n+--echo #\n+--echo # MDEV-29644 a potential bug of null pointer dereference in spider_db_mbase::print_warnings()\n+--echo #\n+\n+# The test case below does not cause the potential null pointer dereference.\n+# It is just for checking spider_db_mbase::fetch_and_print_warnings() works.\n+\n+--disable_query_log\n+--disable_result_log\n+--source ../../t/test_init.inc\n+--enable_result_log\n+--enable_query_log\n+\n+--connection child2_1\n+CREATE DATABASE auto_test_remote;\n+USE auto_test_remote;\n+eval CREATE TABLE tbl_a (\n+    a CHAR(5)\n+) $CHILD2_1_ENGINE $CHILD2_1_CHARSET;\n+set @orig_sql_mode=@@global.sql_mode;\n+SET GLOBAL sql_mode='';\n+\n+--connection master_1\n+CREATE DATABASE auto_test_local;\n+USE auto_test_local;\n+eval CREATE TABLE tbl_a (\n+    a CHAR(255)\n+) $MASTER_1_ENGINE $MASTER_1_CHARSET COMMENT='table \"tbl_a\", srv \"s_2_1\"';\n+\n+SET @orig_sql_mode=@@global.sql_mode;\n+SET GLOBAL sql_mode='';\n+\n+let SEARCH_FILE= $MYSQLTEST_VARDIR/log/mysqld.1.1.err;\n+let SEARCH_PATTERN= \\[WARN SPIDER RESULT\\].* Warning 1265 Data truncated for column 'a' at row 1.*;\n+\n+INSERT INTO tbl_a VALUES (\"this will be truncated\");\n+--source include/search_pattern_in_file.inc # should not find\n+\n+SET @orig_log_result_errors=@@global.spider_log_result_errors;\n+SET GLOBAL spider_log_result_errors=4;\n+\n+INSERT INTO tbl_a VALUES (\"this will be truncated\");\n+--source include/search_pattern_in_file.inc # should find\n+\n+--connection master_1\n+SET GLOBAL spider_log_result_errors=@orig_log_result_errors;\n+SET GLOBAL sql_mode=@orig_sql_mode;\n+DROP DATABASE IF EXISTS auto_test_local;\n+\n+--connection child2_1\n+SET GLOBAL sql_mode=@orig_sql_mode;\n+DROP DATABASE IF EXISTS auto_test_remote;\n+\n+--disable_query_log\n+--disable_result_log\n+--source ../t/test_deinit.inc\n+--enable_query_log\n+--enable_result_log"
+    },
+    {
+      "sha": "1ed95f352bd3144352410d4592e5d1176da739bc",
+      "filename": "storage/spider/spd_db_mysql.cc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 53,
+      "changes": 88,
+      "blob_url": "https://github.com/MariaDB/server/blob/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fspd_db_mysql.cc",
+      "raw_url": "https://github.com/MariaDB/server/raw/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fspd_db_mysql.cc",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/storage%2Fspider%2Fspd_db_mysql.cc?ref=be0a46b3d52b58956fd0d47d040b9f4514406954",
+      "patch": "@@ -2090,7 +2090,7 @@ int spider_db_mbase::exec_query(\n         db_conn->affected_rows, db_conn->insert_id,\n         db_conn->server_status, db_conn->warning_count);\n       if (spider_param_log_result_errors() >= 3)\n-        print_warnings(l_time);\n+        fetch_and_print_warnings(l_time);\n     } else if (log_result_errors >= 4)\n     {\n       time_t cur_time = (time_t) time((time_t*) 0);\n@@ -2172,61 +2172,43 @@ bool spider_db_mbase::is_xa_nota_error(\n   DBUG_RETURN(xa_nota);\n }\n \n-void spider_db_mbase::print_warnings(\n-  struct tm *l_time\n-) {\n-  DBUG_ENTER(\"spider_db_mbase::print_warnings\");\n-  DBUG_PRINT(\"info\",(\"spider this=%p\", this));\n-  if (db_conn->status == MYSQL_STATUS_READY)\n+void spider_db_mbase::fetch_and_print_warnings(struct tm *l_time)\n+{\n+  DBUG_ENTER(\"spider_db_mbase::fetch_and_print_warnings\");\n+\n+  if (spider_param_dry_access() || db_conn->status != MYSQL_STATUS_READY ||\n+      db_conn->server_status & SERVER_MORE_RESULTS_EXISTS)\n+    DBUG_VOID_RETURN;\n+\n+  if (mysql_real_query(db_conn, SPIDER_SQL_SHOW_WARNINGS_STR,\n+                       SPIDER_SQL_SHOW_WARNINGS_LEN))\n+    DBUG_VOID_RETURN;\n+\n+  MYSQL_RES *res= mysql_store_result(db_conn);\n+  if (!res)\n+    DBUG_VOID_RETURN;\n+\n+  uint num_fields= mysql_num_fields(res);\n+  if (num_fields != 3)\n   {\n-#if MYSQL_VERSION_ID < 50500\n-    if (!(db_conn->last_used_con->server_status & SERVER_MORE_RESULTS_EXISTS))\n-#else\n-    if (!(db_conn->server_status & SERVER_MORE_RESULTS_EXISTS))\n-#endif\n-    {\n-      if (\n-        spider_param_dry_access() ||\n-        !mysql_real_query(db_conn, SPIDER_SQL_SHOW_WARNINGS_STR,\n-          SPIDER_SQL_SHOW_WARNINGS_LEN)\n-      ) {\n-        MYSQL_RES *res = NULL;\n-        MYSQL_ROW row = NULL;\n-        uint num_fields;\n-        if (\n-          spider_param_dry_access() ||\n-          !(res = mysql_store_result(db_conn)) ||\n-          !(row = mysql_fetch_row(res))\n-        ) {\n-          if (mysql_errno(db_conn))\n-          {\n-            if (res)\n-              mysql_free_result(res);\n-            DBUG_VOID_RETURN;\n-          }\n-          /* no record is ok */\n-        }\n-        num_fields = mysql_num_fields(res);\n-        if (num_fields != 3)\n-        {\n-          mysql_free_result(res);\n-          DBUG_VOID_RETURN;\n-        }\n-        while (row)\n-        {\n-          fprintf(stderr, \"%04d%02d%02d %02d:%02d:%02d [WARN SPIDER RESULT] \"\n-            \"from [%s] %ld to %ld: %s %s %s\\n\",\n+    mysql_free_result(res);\n+    DBUG_VOID_RETURN;\n+  }\n+\n+  MYSQL_ROW row= mysql_fetch_row(res);\n+  while (row)\n+  {\n+    fprintf(stderr,\n+            \"%04d%02d%02d %02d:%02d:%02d [WARN SPIDER RESULT] from [%s] %ld \"\n+            \"to %ld: %s %s %s\\n\",\n             l_time->tm_year + 1900, l_time->tm_mon + 1, l_time->tm_mday,\n-            l_time->tm_hour, l_time->tm_min, l_time->tm_sec,\n-            conn->tgt_host, (ulong) db_conn->thread_id,\n-            (ulong) current_thd->thread_id, row[0], row[1], row[2]);\n-          row = mysql_fetch_row(res);\n-        }\n-        if (res)\n-          mysql_free_result(res);\n-      }\n-    }\n+            l_time->tm_hour, l_time->tm_min, l_time->tm_sec, conn->tgt_host,\n+            (ulong) db_conn->thread_id, (ulong) current_thd->thread_id, row[0],\n+            row[1], row[2]);\n+    row= mysql_fetch_row(res);\n   }\n+  mysql_free_result(res);\n+\n   DBUG_VOID_RETURN;\n }\n "
+    },
+    {
+      "sha": "576162b2b55e6c53e4c490b59ae55a9f796a0524",
+      "filename": "storage/spider/spd_db_mysql.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/MariaDB/server/blob/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fspd_db_mysql.h",
+      "raw_url": "https://github.com/MariaDB/server/raw/be0a46b3d52b58956fd0d47d040b9f4514406954/storage%2Fspider%2Fspd_db_mysql.h",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/storage%2Fspider%2Fspd_db_mysql.h?ref=be0a46b3d52b58956fd0d47d040b9f4514406954",
+      "patch": "@@ -392,9 +392,7 @@ class spider_db_mbase: public spider_db_conn\n   bool is_xa_nota_error(\n     int error_num\n   );\n-  void print_warnings(\n-    struct tm *l_time\n-  );\n+  void fetch_and_print_warnings(struct tm *l_time);\n   spider_db_result *store_result(\n     spider_db_result_buffer **spider_res_buf,\n     st_spider_db_request_key *request_key,"
+    }
+  ]
+}

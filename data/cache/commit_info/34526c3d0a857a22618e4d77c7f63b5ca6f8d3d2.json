@@ -1,0 +1,93 @@
+{
+  "sha": "34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+  "node_id": "C_kwDOByyPPdoAKDM0NTI2YzNkMGE4NTdhMjI2MThlNGQ3N2M3ZjYzYjVjYTZmOGQzZDI",
+  "commit": {
+    "author": {
+      "name": "Ted Meyer",
+      "email": "tmathmeyer@chromium.org",
+      "date": "2022-02-14T21:00:35Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-02-14T21:00:35Z"
+    },
+    "message": "Guard BatchingMediaLog::event_handlers_ with lock\n\nIt seems that despite MediaLog::OnWebMediaPlayerDestroyed and\nMediaLog::AddLogRecord both grabbing a lock,\nBatchingMediaLog::AddLogRecordLocked can escape the lock handle by\nposting BatchingMediaLog::SendQueuedMediaEvents, causing a race.\n\nWhen the addition of an event is interrupted by the deletion of a player\ndue to player culling in MediaInspectorContextImpl, a UAF can occur.\n\nR=dalecurtis\n\nBug: 1295786\nChange-Id: I77df94988f806e4d98924669d27860e50455299d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3451494\nReviewed-by: Dale Curtis <dalecurtis@chromium.org>\nCommit-Queue: Ted (Chromium) Meyer <tmathmeyer@chromium.org>\nCr-Commit-Position: refs/heads/main@{#970815}",
+    "tree": {
+      "sha": "eecebeeeac675eb110d7c978df6e3ddb9750420e",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/eecebeeeac675eb110d7c978df6e3ddb9750420e"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+  "html_url": "https://github.com/chromium/chromium/commit/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2/comments",
+  "author": {
+    "login": "tmathmeyer",
+    "id": 597848,
+    "node_id": "MDQ6VXNlcjU5Nzg0OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/597848?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tmathmeyer",
+    "html_url": "https://github.com/tmathmeyer",
+    "followers_url": "https://api.github.com/users/tmathmeyer/followers",
+    "following_url": "https://api.github.com/users/tmathmeyer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tmathmeyer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tmathmeyer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tmathmeyer/subscriptions",
+    "organizations_url": "https://api.github.com/users/tmathmeyer/orgs",
+    "repos_url": "https://api.github.com/users/tmathmeyer/repos",
+    "events_url": "https://api.github.com/users/tmathmeyer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tmathmeyer/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "754e4f19d12677962537c297b6ea5f7338c4d4c0",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/754e4f19d12677962537c297b6ea5f7338c4d4c0",
+      "html_url": "https://github.com/chromium/chromium/commit/754e4f19d12677962537c297b6ea5f7338c4d4c0"
+    }
+  ],
+  "stats": {
+    "total": 59,
+    "additions": 30,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "a95f4f35ca25feacdaa73ab6466173518f8eda4a",
+      "filename": "content/renderer/media/batching_media_log.cc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 19,
+      "changes": 37,
+      "blob_url": "https://github.com/chromium/chromium/blob/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2/content%2Frenderer%2Fmedia%2Fbatching_media_log.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2/content%2Frenderer%2Fmedia%2Fbatching_media_log.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Frenderer%2Fmedia%2Fbatching_media_log.cc?ref=34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+      "patch": "@@ -52,9 +52,9 @@ BatchingMediaLog::BatchingMediaLog(\n     scoped_refptr<base::SingleThreadTaskRunner> task_runner,\n     std::vector<std::unique_ptr<EventHandler>> event_handlers)\n     : task_runner_(std::move(task_runner)),\n-      event_handlers_(std::move(event_handlers)),\n       tick_clock_(base::DefaultTickClock::GetInstance()),\n       last_ipc_send_time_(tick_clock_->NowTicks()),\n+      event_handlers_(std::move(event_handlers)),\n       ipc_send_pending_(false),\n       logged_rate_limit_warning_(false) {\n   // Pre-bind the WeakPtr on the right thread since we'll receive calls from\n@@ -76,6 +76,7 @@ BatchingMediaLog::~BatchingMediaLog() {\n }\n \n void BatchingMediaLog::OnWebMediaPlayerDestroyedLocked() {\n+  base::AutoLock lock(lock_);\n   for (const auto& handler : event_handlers_)\n     handler->OnWebMediaPlayerDestroyed();\n }\n@@ -204,32 +205,30 @@ std::string BatchingMediaLog::MediaEventToMessageString(\n \n void BatchingMediaLog::SendQueuedMediaEvents() {\n   DCHECK(task_runner_->BelongsToCurrentThread());\n+  base::AutoLock auto_lock(lock_);\n \n-  std::vector<media::MediaLogRecord> events_to_send;\n-  {\n-    base::AutoLock auto_lock(lock_);\n-    DCHECK(ipc_send_pending_);\n-    ipc_send_pending_ = false;\n-\n-    if (last_duration_changed_event_) {\n-      queued_media_events_.push_back(*last_duration_changed_event_);\n-      last_duration_changed_event_.reset();\n-    }\n+  DCHECK(ipc_send_pending_);\n+  ipc_send_pending_ = false;\n \n-    if (last_buffering_state_event_) {\n-      queued_media_events_.push_back(*last_buffering_state_event_);\n-      last_buffering_state_event_.reset();\n-    }\n+  if (last_duration_changed_event_) {\n+    queued_media_events_.push_back(*last_duration_changed_event_);\n+    last_duration_changed_event_.reset();\n+  }\n \n-    queued_media_events_.swap(events_to_send);\n-    last_ipc_send_time_ = tick_clock_->NowTicks();\n+  if (last_buffering_state_event_) {\n+    queued_media_events_.push_back(*last_buffering_state_event_);\n+    last_buffering_state_event_.reset();\n   }\n \n-  if (events_to_send.empty())\n+  last_ipc_send_time_ = tick_clock_->NowTicks();\n+\n+  if (queued_media_events_.empty())\n     return;\n \n   for (const auto& handler : event_handlers_)\n-    handler->SendQueuedMediaEvents(events_to_send);\n+    handler->SendQueuedMediaEvents(queued_media_events_);\n+\n+  queued_media_events_.clear();\n }\n \n void BatchingMediaLog::SetTickClockForTesting("
+    },
+    {
+      "sha": "eb757a4ca922bd5456d0e436d10cc540ee9134ae",
+      "filename": "content/renderer/media/batching_media_log.h",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 10,
+      "changes": 22,
+      "blob_url": "https://github.com/chromium/chromium/blob/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2/content%2Frenderer%2Fmedia%2Fbatching_media_log.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2/content%2Frenderer%2Fmedia%2Fbatching_media_log.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Frenderer%2Fmedia%2Fbatching_media_log.h?ref=34526c3d0a857a22618e4d77c7f63b5ca6f8d3d2",
+      "patch": "@@ -66,29 +66,31 @@ class CONTENT_EXPORT BatchingMediaLog : public media::MediaLog {\n \n   scoped_refptr<base::SingleThreadTaskRunner> task_runner_;\n \n-  // impl for sending queued events.\n-  std::vector<std::unique_ptr<EventHandler>> event_handlers_;\n-\n   // |lock_| protects access to all of the following member variables.  It\n   // allows any render process thread to AddEvent(), while preserving their\n   // sequence for throttled send on |task_runner_| and coherent retrieval by\n   // GetErrorMessage().  This is needed in addition to the synchronization\n   // guarantees provided by MediaLog, since SendQueuedMediaEvents must also\n   // be synchronized with respect to AddEvent.\n   mutable base::Lock lock_;\n-  const base::TickClock* tick_clock_;\n-  base::TimeTicks last_ipc_send_time_;\n-  std::vector<media::MediaLogRecord> queued_media_events_;\n+  const base::TickClock* tick_clock_ GUARDED_BY(lock_);\n+  base::TimeTicks last_ipc_send_time_ GUARDED_BY(lock_);\n+  std::vector<media::MediaLogRecord> queued_media_events_ GUARDED_BY(lock_);\n+\n+  // impl for sending queued events.\n+  std::vector<std::unique_ptr<EventHandler>> event_handlers_ GUARDED_BY(lock_);\n \n   // For enforcing max 1 pending send.\n-  bool ipc_send_pending_;\n+  bool ipc_send_pending_ GUARDED_BY(lock_);\n \n   // True if we've logged a warning message about exceeding rate limits.\n-  bool logged_rate_limit_warning_;\n+  bool logged_rate_limit_warning_ GUARDED_BY(lock_);\n \n   // Limits the number of events we send over IPC to one.\n-  absl::optional<media::MediaLogRecord> last_duration_changed_event_;\n-  absl::optional<media::MediaLogRecord> last_buffering_state_event_;\n+  absl::optional<media::MediaLogRecord> last_duration_changed_event_\n+      GUARDED_BY(lock_);\n+  absl::optional<media::MediaLogRecord> last_buffering_state_event_\n+      GUARDED_BY(lock_);\n \n   // Holds the earliest MEDIA_ERROR_LOG_ENTRY event added to this log. This is\n   // most likely to contain the most specific information available describing"
+    }
+  ]
+}

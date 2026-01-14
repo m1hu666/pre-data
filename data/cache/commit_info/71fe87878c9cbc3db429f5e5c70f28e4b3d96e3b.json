@@ -1,0 +1,113 @@
+{
+  "sha": "71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+  "node_id": "C_kwDOBPP1p9oAKDcxZmU4Nzg3OGM5Y2JjM2RiNDI5ZjVlNWM3MGYyOGU0YjNkOTZlM2I",
+  "commit": {
+    "author": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-12-30T18:34:50Z"
+    },
+    "committer": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-12-30T18:34:50Z"
+    },
+    "message": "Fix potential heap overflow bug with GIF images (Issue #461)",
+    "tree": {
+      "sha": "f296b5c66d6eb688074b5f44d4ab290934909563",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/trees/f296b5c66d6eb688074b5f44d4ab290934909563"
+    },
+    "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/commits/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJOBAABCAA4FiEEhFRkZgtoaqs2VAtvmZVZoCeBWVUFAmHN+8oaHG1pY2hhZWwu\nci5zd2VldEBnbWFpbC5jb20ACgkQmZVZoCeBWVU+vQ//chRhkL21GUrhqbj5cvna\nCxardX2ZLssCVdn2+OQzAmQC3F7FdxP5dsgD+MdUMdjLdgVvzxgeWGSUNt65BUd3\nNn8RaWj2gsmHOwJXcxr6K1tGG+D8PUFEAtjmHG5S49Hd4zVtVsC0518Fdwl4f8dI\nqL4XeqMKHbecoidXND6aU/RQX0n4gGhOfjaEcSScZcYDEgiDVJBReAiylVyaYQl0\nMDFgdjc7s3KYcDD5GU+iQSj5c0uBlqE+0aZ5M/sIOVBj7fgWMgFGVFHFm5DhvRL5\nSHIG5jmUmfZNoptPftMU0IWKONeG0C27EB9F9torkRXb1WBzLfNirQWZjQoqfp2J\nKmNy5KIepXFqCaVLtjzIZQ7KMMFKILCS+se5SQouA0Qh/L0zR4jSpwq/RhEX//1O\n1JEkZT+qq41QdoQEVi/eL/wJ9vMffr5paeXCgsozu6lGh5C6ilPjVo4lYMc2Ycbh\n7Qx7LBFP6vNI4xmAb/in6A4yr2qh7yZhN+qpruMH3qBykdBFY73OjdTqQmp8Ks9c\nJCAvRfDcf4WL1G/rOLY+VJozbrX4HskCX2xEz+hCWtVju9RYDIDuZETtWg60b8TR\nqfDeTFXqd8WUTpIuCJ9va++CltCbcg1j4dAqOxlrz/HLNsYHdYop5/U27jEPfmLp\ngCW06Du4HY/ukOy7GYPUWyg=\n=Cly8\n-----END PGP SIGNATURE-----",
+      "payload": "tree f296b5c66d6eb688074b5f44d4ab290934909563\nparent e8153076d7efc52ac1619cd2c6a626c73776a77e\nauthor Michael R Sweet <michael.r.sweet@gmail.com> 1640889290 -0500\ncommitter Michael R Sweet <michael.r.sweet@gmail.com> 1640889290 -0500\n\nFix potential heap overflow bug with GIF images (Issue #461)\n",
+      "verified_at": "2024-11-13T10:05:15Z"
+    }
+  },
+  "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+  "html_url": "https://github.com/michaelrsweet/htmldoc/commit/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+  "comments_url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b/comments",
+  "author": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e8153076d7efc52ac1619cd2c6a626c73776a77e",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/e8153076d7efc52ac1619cd2c6a626c73776a77e",
+      "html_url": "https://github.com/michaelrsweet/htmldoc/commit/e8153076d7efc52ac1619cd2c6a626c73776a77e"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 13,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "5f25e64773a0b75cf95e9f4aa7b4114b27cb0d37",
+      "filename": "CHANGES.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b/CHANGES.md",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b/CHANGES.md",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/CHANGES.md?ref=71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+      "patch": "@@ -1,3 +1,8 @@\n+# Changes in HTMLDOC v1.9.15\n+\n+- Fixed a potential heap overflow bug with GIF images (Issue #461)\n+\n+\n # Changes in HTMLDOC v1.9.14\n \n - BMP image support is now deprecated and will be removed in a future"
+    },
+    {
+      "sha": "17ddb6d856e373a1cc868e02131cceb7103ba9f6",
+      "filename": "htmldoc/image.cxx",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 8,
+      "changes": 16,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b/htmldoc%2Fimage.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b/htmldoc%2Fimage.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fimage.cxx?ref=71fe87878c9cbc3db429f5e5c70f28e4b3d96e3b",
+      "patch": "@@ -1312,6 +1312,13 @@ image_load_gif(image_t *img,\t/* I - Image pointer */\n \t      return (-1);\n \t  }\n \n+          img->width  = (buf[5] << 8) | buf[4];\n+          img->height = (buf[7] << 8) | buf[6];\n+          img->depth  = gray ? 1 : 3;\n+\n+\t  if (img->width <= 0 || img->width > 32767 || img->height <= 0 || img->height > 32767)\n+\t    return (-1);\n+\n           if (transparent >= 0)\n           {\n            /*\n@@ -1343,13 +1350,6 @@ image_load_gif(image_t *img,\t/* I - Image pointer */\n             image_need_mask(img);\n \t  }\n \n-          img->width  = (buf[5] << 8) | buf[4];\n-          img->height = (buf[7] << 8) | buf[6];\n-          img->depth  = gray ? 1 : 3;\n-\n-\t  if (img->width <= 0 || img->width > 32767 || img->height <= 0 || img->height > 32767)\n-\t    return (-1);\n-\n \t  if (!load_data)\n \t    return (0);\n \n@@ -1784,7 +1784,7 @@ image_set_mask(image_t *img,\t/* I - Image to operate on */\n \n \n   if (img == NULL || img->mask == NULL || x < 0 || x >= img->width ||\n-      y < 0 || y > img->height)\n+      y < 0 || y >= img->height)\n     return;\n \n   if (img->maskscale == 8)"
+    }
+  ]
+}

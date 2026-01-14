@@ -1,0 +1,113 @@
+{
+  "sha": "787a894897b7872ae96e6f5804a182210edd5c78",
+  "node_id": "C_kwDOAR2kcNoAKDc4N2E4OTQ4OTdiNzg3MmFlOTZlNmY1ODA0YTE4MjIxMGVkZDVjNzg",
+  "commit": {
+    "author": {
+      "name": "Georg Zotti",
+      "email": "Georg.Zotti@univie.ac.at",
+      "date": "2023-03-04T17:03:44Z"
+    },
+    "committer": {
+      "name": "Georg Zotti",
+      "email": "Georg.Zotti@univie.ac.at",
+      "date": "2023-03-04T17:03:44Z"
+    },
+    "message": "Fix a possible security issue\n- Require manually set flag to run scripts from absolute pathname\n- Mostly applies to scripts given on the command line",
+    "tree": {
+      "sha": "4746a0a5e45e276f738b1b30111f5c21514269d6",
+      "url": "https://api.github.com/repos/Stellarium/stellarium/git/trees/4746a0a5e45e276f738b1b30111f5c21514269d6"
+    },
+    "url": "https://api.github.com/repos/Stellarium/stellarium/git/commits/787a894897b7872ae96e6f5804a182210edd5c78",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Stellarium/stellarium/commits/787a894897b7872ae96e6f5804a182210edd5c78",
+  "html_url": "https://github.com/Stellarium/stellarium/commit/787a894897b7872ae96e6f5804a182210edd5c78",
+  "comments_url": "https://api.github.com/repos/Stellarium/stellarium/commits/787a894897b7872ae96e6f5804a182210edd5c78/comments",
+  "author": {
+    "login": "gzotti",
+    "id": 18099873,
+    "node_id": "MDQ6VXNlcjE4MDk5ODcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18099873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gzotti",
+    "html_url": "https://github.com/gzotti",
+    "followers_url": "https://api.github.com/users/gzotti/followers",
+    "following_url": "https://api.github.com/users/gzotti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gzotti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gzotti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gzotti/subscriptions",
+    "organizations_url": "https://api.github.com/users/gzotti/orgs",
+    "repos_url": "https://api.github.com/users/gzotti/repos",
+    "events_url": "https://api.github.com/users/gzotti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gzotti/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gzotti",
+    "id": 18099873,
+    "node_id": "MDQ6VXNlcjE4MDk5ODcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18099873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gzotti",
+    "html_url": "https://github.com/gzotti",
+    "followers_url": "https://api.github.com/users/gzotti/followers",
+    "following_url": "https://api.github.com/users/gzotti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gzotti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gzotti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gzotti/subscriptions",
+    "organizations_url": "https://api.github.com/users/gzotti/orgs",
+    "repos_url": "https://api.github.com/users/gzotti/repos",
+    "events_url": "https://api.github.com/users/gzotti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gzotti/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+      "url": "https://api.github.com/repos/Stellarium/stellarium/commits/eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+      "html_url": "https://github.com/Stellarium/stellarium/commit/eba61df3b38605befcb43687a4c0a159dbc0c5cb"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 18,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "8afafe13545e928fe7bde8a0d1f0e91c1abb25ea",
+      "filename": "guide/app_config_ini.tex",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/Stellarium/stellarium/blob/787a894897b7872ae96e6f5804a182210edd5c78/guide%2Fapp_config_ini.tex",
+      "raw_url": "https://github.com/Stellarium/stellarium/raw/787a894897b7872ae96e6f5804a182210edd5c78/guide%2Fapp_config_ini.tex",
+      "contents_url": "https://api.github.com/repos/Stellarium/stellarium/contents/guide%2Fapp_config_ini.tex?ref=787a894897b7872ae96e6f5804a182210edd5c78",
+      "patch": "@@ -736,6 +736,8 @@ \\subsection{\\big[scripts\\big]}\n \\begin{tabularx}{\\textwidth}{l|l|l|X}\\toprule\n \\emph{ID}                  & \\emph{Type} & \\emph{Default} & \\emph{Description}\\\\\\midrule\n startup\\_script                            & string & startup.ssc & name of script executed on program start\\\\\n+flag\\_script\\_allow\\_absolute\\_path        & bool   & false       & set true to allow scripts from absolute pathnames.\n+                                                                    This may pose a security risk if you run arbitrary scripts.\\\\\n flag\\_script\\_allow\\_write\\_absolute\\_path & bool   & false       & set true to let scripts store files to absolute pathnames.\n                                                                     This may pose a security risk if you run scripts from other authors\n                                                                     without checking what they are doing.\\\\\\bottomrule "
+    },
+    {
+      "sha": "fc1debc72946653b79e79648567447dc10f9d985",
+      "filename": "src/scripting/StelScriptMgr.cpp",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 3,
+      "changes": 19,
+      "blob_url": "https://github.com/Stellarium/stellarium/blob/787a894897b7872ae96e6f5804a182210edd5c78/src%2Fscripting%2FStelScriptMgr.cpp",
+      "raw_url": "https://github.com/Stellarium/stellarium/raw/787a894897b7872ae96e6f5804a182210edd5c78/src%2Fscripting%2FStelScriptMgr.cpp",
+      "contents_url": "https://api.github.com/repos/Stellarium/stellarium/contents/src%2Fscripting%2FStelScriptMgr.cpp?ref=787a894897b7872ae96e6f5804a182210edd5c78",
+      "patch": "@@ -794,8 +794,10 @@ bool StelScriptMgr::runPreprocessedScript(const QString &preprocessedScript, con\n bool StelScriptMgr::runScript(const QString& fileName, const QString& includePath)\n {\n \tQString preprocessedScript;\n-\tprepareScript(preprocessedScript,fileName,includePath);\n-\treturn runPreprocessedScript(preprocessedScript,fileName);\n+\tif (prepareScript(preprocessedScript,fileName,includePath))\n+\t\treturn runPreprocessedScript(preprocessedScript,fileName);\n+\telse\n+\t\treturn false;\n }\n \n bool StelScriptMgr::runScriptDirect(const QString scriptId, const QString &scriptCode, int &errLoc, const QString& includePath)\n@@ -820,9 +822,20 @@ bool StelScriptMgr::runScriptDirect(const QString& scriptCode, const QString &in\n bool StelScriptMgr::prepareScript( QString &script, const QString &fileName, const QString &includePath)\n {\n \tQString absPath;\n+\tconst bool okToRunScriptFromAbsolutePath=StelApp::getInstance().getSettings()->value(\"scripts/flag_script_allow_absolute_path\", false).toBool();\n \n \tif (QFileInfo(fileName).isAbsolute())\n-\t\tabsPath = fileName;\n+\t{\n+\t\t// Absolute paths may bear a security risk. We need a flag to allow them!\n+\t\tif (okToRunScriptFromAbsolutePath)\n+\t\t\tabsPath = fileName;\n+\t\telse\n+\t\t{\n+\t\t\tqWarning() << \"SCRIPTING CONFIGURATION ISSUE: You are trying to run a script from absolute pathname.\";\n+\t\t\tqWarning() << \"  To enable this, edit config.ini and set [scripts]/flag_script_allow_absolute_path=true\";\n+\t\t\treturn false;\n+\t\t}\n+\t}\n \telse\n \t\tabsPath = StelFileMgr::findFile(\"scripts/\" + fileName);\n "
+    }
+  ]
+}

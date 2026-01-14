@@ -1,0 +1,129 @@
+{
+  "sha": "05ec05342e17dc94670db1818447c06d0da8f41a",
+  "node_id": "MDY6Q29tbWl0ODk2MjMwMzE6MDVlYzA1MzQyZTE3ZGM5NDY3MGRiMTgxODQ0N2MwNmQwZGE4ZjQxYQ==",
+  "commit": {
+    "author": {
+      "name": "Robin Mills",
+      "email": "robin@clanmills.com",
+      "date": "2021-04-06T15:22:54Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-04-06T15:22:54Z"
+    },
+    "message": "Merge pull request #1523 from Exiv2/fix_1522_jp2image_exif_asan\n\nFix 1522 jp2image exif asan",
+    "tree": {
+      "sha": "c01030984d35208bc44de58bbdbe15dde2be3c86",
+      "url": "https://api.github.com/repos/Exiv2/exiv2/git/trees/c01030984d35208bc44de58bbdbe15dde2be3c86"
+    },
+    "url": "https://api.github.com/repos/Exiv2/exiv2/git/commits/05ec05342e17dc94670db1818447c06d0da8f41a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgbHzOCRBK7hj4Ov3rIwAAdHIIAFbWfaKAQryMRJbPg90WBwIw\n7QaxdUDnhhgdlrA9c8aF9w+M16py//rXqXLeMjLcPwUhrpNdAD/KSUXvyUc65DFe\nYNc2N18QeWwCmyjDQCWhyhOrkA5J2ok7Mum0jJ1UTRoVO+PsnKX1xQ8O1k3lx3+M\nFqVD4xRqIM+5V0eHtj3TKsqAiftRlMLttzSqJ6jQDfU7KYo+gYF0UIfh08zDUTuf\niZ7vhBFjSZ6fQSzOgadfUkdhnDtbgjoNVyw6hv+lA7SM8hteUstX1D5/ElOuSSlI\nO+2pSeIlUwOW1Q8R/cJnjgnKenKAQCXXNHmWnNNXydDNlWdDQkyeWC6TGbs5RT0=\n=v904\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c01030984d35208bc44de58bbdbe15dde2be3c86\nparent 4bf2e196287c6b6c7c6e371e6a07adc2c605917e\nparent cac151ec052d44da3dc779e9e4028e581acb128a\nauthor Robin Mills <robin@clanmills.com> 1617722574 +0100\ncommitter GitHub <noreply@github.com> 1617722574 +0100\n\nMerge pull request #1523 from Exiv2/fix_1522_jp2image_exif_asan\n\nFix 1522 jp2image exif asan",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/Exiv2/exiv2/commits/05ec05342e17dc94670db1818447c06d0da8f41a",
+  "html_url": "https://github.com/Exiv2/exiv2/commit/05ec05342e17dc94670db1818447c06d0da8f41a",
+  "comments_url": "https://api.github.com/repos/Exiv2/exiv2/commits/05ec05342e17dc94670db1818447c06d0da8f41a/comments",
+  "author": {
+    "login": "clanmills",
+    "id": 529982,
+    "node_id": "MDQ6VXNlcjUyOTk4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/529982?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/clanmills",
+    "html_url": "https://github.com/clanmills",
+    "followers_url": "https://api.github.com/users/clanmills/followers",
+    "following_url": "https://api.github.com/users/clanmills/following{/other_user}",
+    "gists_url": "https://api.github.com/users/clanmills/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/clanmills/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/clanmills/subscriptions",
+    "organizations_url": "https://api.github.com/users/clanmills/orgs",
+    "repos_url": "https://api.github.com/users/clanmills/repos",
+    "events_url": "https://api.github.com/users/clanmills/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/clanmills/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4bf2e196287c6b6c7c6e371e6a07adc2c605917e",
+      "url": "https://api.github.com/repos/Exiv2/exiv2/commits/4bf2e196287c6b6c7c6e371e6a07adc2c605917e",
+      "html_url": "https://github.com/Exiv2/exiv2/commit/4bf2e196287c6b6c7c6e371e6a07adc2c605917e"
+    },
+    {
+      "sha": "cac151ec052d44da3dc779e9e4028e581acb128a",
+      "url": "https://api.github.com/repos/Exiv2/exiv2/commits/cac151ec052d44da3dc779e9e4028e581acb128a",
+      "html_url": "https://github.com/Exiv2/exiv2/commit/cac151ec052d44da3dc779e9e4028e581acb128a"
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "additions": 31,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "88ab9b2d6133831249ca04f56d5884c8d01c4685",
+      "filename": "src/jp2image.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/Exiv2/exiv2/blob/05ec05342e17dc94670db1818447c06d0da8f41a/src%2Fjp2image.cpp",
+      "raw_url": "https://github.com/Exiv2/exiv2/raw/05ec05342e17dc94670db1818447c06d0da8f41a/src%2Fjp2image.cpp",
+      "contents_url": "https://api.github.com/repos/Exiv2/exiv2/contents/src%2Fjp2image.cpp?ref=05ec05342e17dc94670db1818447c06d0da8f41a",
+      "patch": "@@ -28,6 +28,7 @@\n #include \"image.hpp\"\n #include \"image_int.hpp\"\n #include \"basicio.hpp\"\n+#include \"enforce.hpp\"\n #include \"error.hpp\"\n #include \"futils.hpp\"\n #include \"types.hpp\"\n@@ -353,7 +354,7 @@ static void boxes_check(size_t b,size_t m)\n                             if (io_->error()) throw Error(kerFailedToReadImageData);\n                             if (bufRead != rawData.size_) throw Error(kerInputDataReadFailed);\n \n-                            if (rawData.size_ > 0)\n+                            if (rawData.size_ > 8) // \"II*\\0long\"\n                             {\n                                 // Find the position of Exif header in bytes array.\n                                 long pos = (     (rawData.pData_[0]      == rawData.pData_[1])\n@@ -497,6 +498,7 @@ static void boxes_check(size_t b,size_t m)\n                 position   = io_->tell();\n                 box.length = getLong((byte*)&box.length, bigEndian);\n                 box.type = getLong((byte*)&box.type, bigEndian);\n+                enforce(box.length <= io_->size()-io_->tell() , Exiv2::kerCorruptedMetadata);\n \n                 if (bPrint) {\n                     out << Internal::stringFormat(\"%8ld | %8ld | \", (size_t)(position - sizeof(box)),\n@@ -581,12 +583,13 @@ static void boxes_check(size_t b,size_t m)\n                                 throw Error(kerInputDataReadFailed);\n \n                             if (bPrint) {\n-                                out << Internal::binaryToString(makeSlice(rawData, 0, 40));\n+                                out << Internal::binaryToString(\n+                                        makeSlice(rawData, 0, rawData.size_>40?40:rawData.size_));\n                                 out.flush();\n                             }\n                             lf(out, bLF);\n \n-                            if (bIsExif && bRecursive && rawData.size_ > 0) {\n+                            if (bIsExif && bRecursive && rawData.size_ > 8) { // \"II*\\0long\"\n                                 if ((rawData.pData_[0] == rawData.pData_[1]) &&\n                                     (rawData.pData_[0] == 'I' || rawData.pData_[0] == 'M')) {\n                                     BasicIo::AutoPtr p = BasicIo::AutoPtr(new MemIo(rawData.pData_, rawData.size_));"
+    },
+    {
+      "sha": "d2a3f12152a047adc47fcbaaad904b102c30fe87",
+      "filename": "test/data/poc_1522.jp2",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/Exiv2/exiv2/blob/05ec05342e17dc94670db1818447c06d0da8f41a/test%2Fdata%2Fpoc_1522.jp2",
+      "raw_url": "https://github.com/Exiv2/exiv2/raw/05ec05342e17dc94670db1818447c06d0da8f41a/test%2Fdata%2Fpoc_1522.jp2",
+      "contents_url": "https://api.github.com/repos/Exiv2/exiv2/contents/test%2Fdata%2Fpoc_1522.jp2?ref=05ec05342e17dc94670db1818447c06d0da8f41a"
+    },
+    {
+      "sha": "e5831b2516515a47297d8177afa7a33efece3693",
+      "filename": "tests/bugfixes/github/test_issue_1522.py",
+      "status": "added",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/Exiv2/exiv2/blob/05ec05342e17dc94670db1818447c06d0da8f41a/tests%2Fbugfixes%2Fgithub%2Ftest_issue_1522.py",
+      "raw_url": "https://github.com/Exiv2/exiv2/raw/05ec05342e17dc94670db1818447c06d0da8f41a/tests%2Fbugfixes%2Fgithub%2Ftest_issue_1522.py",
+      "contents_url": "https://api.github.com/repos/Exiv2/exiv2/contents/tests%2Fbugfixes%2Fgithub%2Ftest_issue_1522.py?ref=05ec05342e17dc94670db1818447c06d0da8f41a",
+      "patch": "@@ -0,0 +1,25 @@\n+# -*- coding: utf-8 -*-\n+\n+import system_tests\n+class issue_1522_exif_asan(metaclass=system_tests.CaseMeta):\n+    url      = \"https://github.com/Exiv2/exiv2/issues/1522\"\n+    filename = \"$data_path/poc_1522.jp2\"\n+    commands = [\"$exiv2     $filename\"\n+               ,\"$exiv2 -pS $filename\"\n+               ]\n+    retval   = [ 253,1 ] \n+    stderr   = [ \"\"\"Warning: Failed to decode Exif metadata.\n+$filename: No Exif data found in the file\n+\"\"\",\"\"\"$exiv2_exception_message $filename:\n+$kerCorruptedMetadata\n+\"\"\"] \n+    stdout   = [\"\"\"File name       : $filename\n+File size       : 268 Bytes\n+MIME type       : image/jp2\n+Image size      : 0 x 0\n+\"\"\",\"\"\"STRUCTURE OF JPEG2000 FILE: $filename\n+ address |   length | box       | data\n+       0 |       12 | jP        | \n+      12 |       25 | uuid      | Exif: .\n+\"\"\"\n+]"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "d75af00681a74dcc8b929207eb895611a6eceb68",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmQ3NWFmMDA2ODFhNzRkY2M4YjkyOTIwN2ViODk1NjExYTZlY2ViNjg=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-04-04T14:29:32Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2020-04-04T16:34:05Z"
+    },
+    "message": "X3F: check for data offset limit",
+    "tree": {
+      "sha": "311999929b8ff76daaea5fae0a5b31ce163b7870",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/311999929b8ff76daaea5fae0a5b31ce163b7870"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/d75af00681a74dcc8b929207eb895611a6eceb68",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/d75af00681a74dcc8b929207eb895611a6eceb68",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/d75af00681a74dcc8b929207eb895611a6eceb68",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/d75af00681a74dcc8b929207eb895611a6eceb68/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "84bbb972d94a965f70302b85738778443540774a",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/84bbb972d94a965f70302b85738778443540774a",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/84bbb972d94a965f70302b85738778443540774a"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9ed2da54160e51ba64d2f97f8cf07a2a94471dbe",
+      "filename": "src/x3f/x3f_utils_patched.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/d75af00681a74dcc8b929207eb895611a6eceb68/src%2Fx3f%2Fx3f_utils_patched.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/d75af00681a74dcc8b929207eb895611a6eceb68/src%2Fx3f%2Fx3f_utils_patched.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/src%2Fx3f%2Fx3f_utils_patched.cpp?ref=d75af00681a74dcc8b929207eb895611a6eceb68",
+      "patch": "@@ -1042,6 +1042,8 @@ static void huffman_decode_row(x3f_info_t *I, x3f_directory_entry_t *DE,\n   int col;\n   bit_state_t BS;\n \n+  if (HUF->row_offsets.element[row] > ID->data_size - 1)\n+\t  throw LIBRAW_EXCEPTION_IO_CORRUPT;\n   set_bit_state(&BS, (uint8_t *)ID->data + HUF->row_offsets.element[row]);\n \n   for (col = 0; col < ID->columns; col++)"
+    }
+  ]
+}

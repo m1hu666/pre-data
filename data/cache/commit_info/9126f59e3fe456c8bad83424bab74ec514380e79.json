@@ -1,0 +1,81 @@
+{
+  "sha": "9126f59e3fe456c8bad83424bab74ec514380e79",
+  "node_id": "C_kwDOByyPPdoAKDkxMjZmNTllM2ZlNDU2YzhiYWQ4MzQyNGJhYjc0ZWM1MTQzODBlNzk",
+  "commit": {
+    "author": {
+      "name": "Jinsuk Kim",
+      "email": "jinsukkim@chromium.org",
+      "date": "2022-01-10T18:13:27Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-10T18:13:27Z"
+    },
+    "message": "Android: Extend the fullscreen toast duration when defocused\n\nIf the fullscreen toast message becomes invisible due to other window\nstealing the focus, pause the timer of the toast and resume it\nwhen the focus is regained. In this way we can guarantee that the toast\nwill be visible to users for the fixed amount of time.\n\nBug: 1270052\nChange-Id: I4f80e160cb8b230de48473afbaf782443b6ff27d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3372521\nReviewed-by: Matthew Jones <mdjones@chromium.org>\nReviewed-by: Theresa Sullivan <twellington@chromium.org>\nCommit-Queue: Jinsuk Kim <jinsukkim@chromium.org>\nCr-Commit-Position: refs/heads/main@{#957110}",
+    "tree": {
+      "sha": "8c0ce8bc875bd76b764b1a1115a5868a7cf50a40",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/8c0ce8bc875bd76b764b1a1115a5868a7cf50a40"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/9126f59e3fe456c8bad83424bab74ec514380e79",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/9126f59e3fe456c8bad83424bab74ec514380e79",
+  "html_url": "https://github.com/chromium/chromium/commit/9126f59e3fe456c8bad83424bab74ec514380e79",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/9126f59e3fe456c8bad83424bab74ec514380e79/comments",
+  "author": {
+    "login": "JinsukKim",
+    "id": 24905520,
+    "node_id": "MDQ6VXNlcjI0OTA1NTIw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24905520?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JinsukKim",
+    "html_url": "https://github.com/JinsukKim",
+    "followers_url": "https://api.github.com/users/JinsukKim/followers",
+    "following_url": "https://api.github.com/users/JinsukKim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JinsukKim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JinsukKim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JinsukKim/subscriptions",
+    "organizations_url": "https://api.github.com/users/JinsukKim/orgs",
+    "repos_url": "https://api.github.com/users/JinsukKim/repos",
+    "events_url": "https://api.github.com/users/JinsukKim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JinsukKim/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "b22da3e2943fe557d5ff6509a6b9d7e024d197e3",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/b22da3e2943fe557d5ff6509a6b9d7e024d197e3",
+      "html_url": "https://github.com/chromium/chromium/commit/b22da3e2943fe557d5ff6509a6b9d7e024d197e3"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 19,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "295286eb1ab2a8be96cf38f8b1c192bfb1db906a",
+      "filename": "chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 2,
+      "changes": 21,
+      "blob_url": "https://github.com/chromium/chromium/blob/9126f59e3fe456c8bad83424bab74ec514380e79/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java",
+      "raw_url": "https://github.com/chromium/chromium/raw/9126f59e3fe456c8bad83424bab74ec514380e79/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java?ref=9126f59e3fe456c8bad83424bab74ec514380e79",
+      "patch": "@@ -89,6 +89,9 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo\n     // Toast at the top of the screen that is shown when user enters fullscreen for the\n     // first time.\n     private View mNotificationToast;\n+    private long mNotificationStartTimestamp;\n+    private long mNotificationRemainingTimeMs;\n+    private final Runnable mHideNotificationToastRunnable;\n \n     private OnLayoutChangeListener mFullscreenOnLayoutChangeListener;\n \n@@ -199,6 +202,7 @@ public FullscreenHtmlApiHandler(Activity activity,\n         mPersistentModeSupplier = new ObservableSupplierImpl<>();\n         mPersistentModeSupplier.set(false);\n         mExitFullscreenOnStop = exitFullscreenOnStop;\n+        mHideNotificationToastRunnable = this::hideNotificationToast;\n     }\n \n     /**\n@@ -524,7 +528,11 @@ private void showNotificationToast() {\n         mNotificationToast.setAlpha(0);\n         parent.addView(mNotificationToast);\n         mNotificationToast.animate().alpha(1).setDuration(TOAST_FADE_MS).start();\n-        mHandler.postDelayed(this::hideNotificationToast, 5000);\n+        mNotificationRemainingTimeMs = 5000;\n+        if (parent.hasWindowFocus()) {\n+            mNotificationStartTimestamp = System.currentTimeMillis();\n+            mHandler.postDelayed(mHideNotificationToastRunnable, mNotificationRemainingTimeMs);\n+        }\n     }\n \n     /**\n@@ -570,7 +578,16 @@ public void onSystemUiVisibilityChange(int visibility) {\n     @Override\n     public void onWindowFocusChanged(Activity activity, boolean hasWindowFocus) {\n         if (mActivity != activity) return;\n-        if (!hasWindowFocus) hideNotificationToast();\n+        if (mNotificationToast != null) {\n+            if (hasWindowFocus) {\n+                mNotificationStartTimestamp = System.currentTimeMillis();\n+                mHandler.postDelayed(mHideNotificationToastRunnable, mNotificationRemainingTimeMs);\n+            } else {\n+                mHandler.removeCallbacks(mHideNotificationToastRunnable);\n+                mNotificationRemainingTimeMs -=\n+                        System.currentTimeMillis() - mNotificationStartTimestamp;\n+            }\n+        }\n \n         mHandler.removeMessages(MSG_ID_SET_FULLSCREEN_SYSTEM_UI_FLAGS);\n         mHandler.removeMessages(MSG_ID_CLEAR_LAYOUT_FULLSCREEN_FLAG);"
+    }
+  ]
+}

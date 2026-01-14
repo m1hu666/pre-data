@@ -1,0 +1,93 @@
+{
+  "sha": "4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OjRkNjY2MzQ4ZGUzZjY3ZDVjYjdiNTQwMWYwZjY5ZjZiOWQzNzE5ZWI=",
+  "commit": {
+    "author": {
+      "name": "Joe DeBlasio",
+      "email": "jdeblasio@chromium.org",
+      "date": "2018-10-17T22:50:50Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2018-10-17T22:50:50Z"
+    },
+    "message": "Include U+0517 in set of Cyrillic/Latin lookalikes.\n\nCyrillic letter U+0517 (\u0517) looks somewhat similar to the Latin letter p.\nThis CL adds this character to the set of Cyrillic characters that look\nlike Latin characters. Domains made up entirely of Cyrillic/Latin\nlookalikes are displayed as punycode in URLs.\n\nBug: 863663\nChange-Id: I4340c48d124c9c4cd3d3b5d0f9d3865d709e082d\nReviewed-on: https://chromium-review.googlesource.com/c/1286825\nCommit-Queue: Joe DeBlasio <jdeblasio@chromium.org>\nCommit-Queue: Peter Kasting <pkasting@chromium.org>\nReviewed-by: Peter Kasting <pkasting@chromium.org>\nCr-Commit-Position: refs/heads/master@{#600582}",
+    "tree": {
+      "sha": "48b97daac7d5dd4b5423a63ed51f8abd2c44ac81",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/48b97daac7d5dd4b5423a63ed51f8abd2c44ac81"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+  "html_url": "https://github.com/chromium/chromium/commit/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb/comments",
+  "author": {
+    "login": "jdeblasio",
+    "id": 1619409,
+    "node_id": "MDQ6VXNlcjE2MTk0MDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1619409?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jdeblasio",
+    "html_url": "https://github.com/jdeblasio",
+    "followers_url": "https://api.github.com/users/jdeblasio/followers",
+    "following_url": "https://api.github.com/users/jdeblasio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jdeblasio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jdeblasio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jdeblasio/subscriptions",
+    "organizations_url": "https://api.github.com/users/jdeblasio/orgs",
+    "repos_url": "https://api.github.com/users/jdeblasio/repos",
+    "events_url": "https://api.github.com/users/jdeblasio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jdeblasio/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "c5aef007f73db96b9ca9cdb101d2d4d1612d6ba2",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/c5aef007f73db96b9ca9cdb101d2d4d1612d6ba2",
+      "html_url": "https://github.com/chromium/chromium/commit/c5aef007f73db96b9ca9cdb101d2d4d1612d6ba2"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "15dcb36e2433178c9dca1194e287e67a876c4676",
+      "filename": "components/url_formatter/idn_spoof_checker.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Fidn_spoof_checker.cc?ref=4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+      "patch": "@@ -177,7 +177,7 @@ IDNSpoofChecker::IDNSpoofChecker() {\n   // These Cyrillic letters look like Latin. A domain label entirely made of\n   // these letters is blocked as a simplified whole-script-spoofable.\n   cyrillic_letters_latin_alike_ = icu::UnicodeSet(\n-      icu::UnicodeString::fromUTF8(\"[\u0430\u0441\u0501\u0435\u04bb\u0456\u0458\u04cf\u043e\u0440\u051b\u0455\u051d\u0445\u0443\u044a\u042c\u04bd\u043f\u0433\u0475\u0461]\"), status);\n+      icu::UnicodeString::fromUTF8(\"[\u0430\u0441\u0501\u0435\u04bb\u0456\u0458\u04cf\u043e\u0440\u0517\u051b\u0455\u051d\u0445\u0443\u044a\u042c\u04bd\u043f\u0433\u0475\u0461]\"), status);\n   cyrillic_letters_latin_alike_.freeze();\n \n   cyrillic_letters_ ="
+    },
+    {
+      "sha": "9949222fc22af8a5c33b7acda6f017405e70dc4e",
+      "filename": "components/url_formatter/url_formatter_unittest.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/4d666348de3f67d5cb7b5401f0f69f6b9d3719eb/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Furl_formatter_unittest.cc?ref=4d666348de3f67d5cb7b5401f0f69f6b9d3719eb",
+      "patch": "@@ -382,6 +382,9 @@ const IDNTestCase idn_cases[] = {\n     // \u043c\u0443\u0437\u0435\u0439 (museum in Russian) has characters without a Latin-look-alike.\n     {\"xn--e1adhj9a.com\", L\"\\x043c\\x0443\\x0437\\x0435\\x0439.com\", true},\n \n+    // \u0455\u0441\u043e\u0517\u0435.com is Cyrillic with Latin lookalikes.\n+    {\"xn--e1ari3f61c.com\", L\"\\x0455\\x0441\\x043e\\x0517\\x0435.com\", false},\n+\n     // Combining Diacritic marks after a script other than Latin-Greek-Cyrillic\n     {\"xn--rsa2568fvxya.com\", L\"\\xd55c\\x0301\\xae00.com\", false},  // \ud55c\u0301\uae00.com\n     {\"xn--rsa0336bjom.com\", L\"\\x6f22\\x0307\\x5b57.com\", false},   // \u6f22\u0307\u5b57.com"
+    }
+  ]
+}

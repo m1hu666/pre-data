@@ -36,13 +36,7 @@ env/
 *~
 
 # Data files
-data/raw/*.csv
-data/raw/*.json
-!data/raw/README.md
-data/processed/
-data/output/*.csv
-data/output/*.json
-!data/output/.gitkeep
+data/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -53,6 +47,7 @@ Thumbs.db
 
 # Logs
 *.log
+build_dataset.log
 
 # Testing
 .pytest_cache/
@@ -62,3 +57,8 @@ htmlcov/
 # Temporary files
 *.tmp
 *.bak
+
+# Tree-sitter
+tools/tree-sitter-*/
+tools/build/
+!tools/tree-sitter-*/.gitkeep

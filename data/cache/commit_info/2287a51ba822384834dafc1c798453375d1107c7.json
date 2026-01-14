@@ -1,0 +1,101 @@
+{
+  "sha": "2287a51ba822384834dafc1c798453375d1107c7",
+  "node_id": "MDY6Q29tbWl0MjMyNTI5ODoyMjg3YTUxYmE4MjIzODQ4MzRkYWZjMWM3OTg0NTMzNzVkMTEwN2M3",
+  "commit": {
+    "author": {
+      "name": "Linus Torvalds",
+      "email": "torvalds@linux-foundation.org",
+      "date": "2021-08-30T15:55:18Z"
+    },
+    "committer": {
+      "name": "Linus Torvalds",
+      "email": "torvalds@linux-foundation.org",
+      "date": "2021-08-30T15:55:18Z"
+    },
+    "message": "vt_kdsetmode: extend console locking\n\nAs per the long-suffering comment.\n\nReported-by: Minh Yuan <yuanmingbuaa@gmail.com>\nCc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>\nCc: Jiri Slaby <jirislaby@kernel.org>\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>",
+    "tree": {
+      "sha": "a97ae1e0c2ebb4bfead4949c305691509723d358",
+      "url": "https://api.github.com/repos/torvalds/linux/git/trees/a97ae1e0c2ebb4bfead4949c305691509723d358"
+    },
+    "url": "https://api.github.com/repos/torvalds/linux/git/commits/2287a51ba822384834dafc1c798453375d1107c7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/torvalds/linux/commits/2287a51ba822384834dafc1c798453375d1107c7",
+  "html_url": "https://github.com/torvalds/linux/commit/2287a51ba822384834dafc1c798453375d1107c7",
+  "comments_url": "https://api.github.com/repos/torvalds/linux/commits/2287a51ba822384834dafc1c798453375d1107c7/comments",
+  "author": {
+    "login": "torvalds",
+    "id": 1024025,
+    "node_id": "MDQ6VXNlcjEwMjQwMjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1024025?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/torvalds",
+    "html_url": "https://github.com/torvalds",
+    "followers_url": "https://api.github.com/users/torvalds/followers",
+    "following_url": "https://api.github.com/users/torvalds/following{/other_user}",
+    "gists_url": "https://api.github.com/users/torvalds/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/torvalds/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/torvalds/subscriptions",
+    "organizations_url": "https://api.github.com/users/torvalds/orgs",
+    "repos_url": "https://api.github.com/users/torvalds/repos",
+    "events_url": "https://api.github.com/users/torvalds/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/torvalds/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "torvalds",
+    "id": 1024025,
+    "node_id": "MDQ6VXNlcjEwMjQwMjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1024025?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/torvalds",
+    "html_url": "https://github.com/torvalds",
+    "followers_url": "https://api.github.com/users/torvalds/followers",
+    "following_url": "https://api.github.com/users/torvalds/following{/other_user}",
+    "gists_url": "https://api.github.com/users/torvalds/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/torvalds/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/torvalds/subscriptions",
+    "organizations_url": "https://api.github.com/users/torvalds/orgs",
+    "repos_url": "https://api.github.com/users/torvalds/repos",
+    "events_url": "https://api.github.com/users/torvalds/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/torvalds/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3a2b2eb55681158d3e3ef464fbf47574cf0c517c",
+      "url": "https://api.github.com/repos/torvalds/linux/commits/3a2b2eb55681158d3e3ef464fbf47574cf0c517c",
+      "html_url": "https://github.com/torvalds/linux/commit/3a2b2eb55681158d3e3ef464fbf47574cf0c517c"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 6,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "3639bb6dc372e288db75960253de4663a0dede06",
+      "filename": "drivers/tty/vt/vt_ioctl.c",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/torvalds/linux/blob/2287a51ba822384834dafc1c798453375d1107c7/drivers%2Ftty%2Fvt%2Fvt_ioctl.c",
+      "raw_url": "https://github.com/torvalds/linux/raw/2287a51ba822384834dafc1c798453375d1107c7/drivers%2Ftty%2Fvt%2Fvt_ioctl.c",
+      "contents_url": "https://api.github.com/repos/torvalds/linux/contents/drivers%2Ftty%2Fvt%2Fvt_ioctl.c?ref=2287a51ba822384834dafc1c798453375d1107c7",
+      "patch": "@@ -246,6 +246,8 @@ int vt_waitactive(int n)\n  *\n  * XXX It should at least call into the driver, fbdev's definitely need to\n  * restore their engine state. --BenH\n+ *\n+ * Called with the console lock held.\n  */\n static int vt_kdsetmode(struct vc_data *vc, unsigned long mode)\n {\n@@ -262,7 +264,6 @@ static int vt_kdsetmode(struct vc_data *vc, unsigned long mode)\n \t\treturn -EINVAL;\n \t}\n \n-\t/* FIXME: this needs the console lock extending */\n \tif (vc->vc_mode == mode)\n \t\treturn 0;\n \n@@ -271,12 +272,10 @@ static int vt_kdsetmode(struct vc_data *vc, unsigned long mode)\n \t\treturn 0;\n \n \t/* explicitly blank/unblank the screen if switching modes */\n-\tconsole_lock();\n \tif (mode == KD_TEXT)\n \t\tdo_unblank_screen(1);\n \telse\n \t\tdo_blank_screen(1);\n-\tconsole_unlock();\n \n \treturn 0;\n }\n@@ -378,7 +377,10 @@ static int vt_k_ioctl(struct tty_struct *tty, unsigned int cmd,\n \t\tif (!perm)\n \t\t\treturn -EPERM;\n \n-\t\treturn vt_kdsetmode(vc, arg);\n+\t\tconsole_lock();\n+\t\tret = vt_kdsetmode(vc, arg);\n+\t\tconsole_unlock();\n+\t\treturn ret;\n \n \tcase KDGETMODE:\n \t\treturn put_user(vc->vc_mode, (int __user *)arg);"
+    }
+  ]
+}

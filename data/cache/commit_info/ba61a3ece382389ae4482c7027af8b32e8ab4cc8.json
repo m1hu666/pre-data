@@ -1,0 +1,113 @@
+{
+  "sha": "ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+  "node_id": "MDY6Q29tbWl0ODMwOTY5OTk6YmE2MWEzZWNlMzgyMzg5YWU0NDgyYzcwMjdhZjhiMzJlOGFiNGNjOA==",
+  "commit": {
+    "author": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-04-01T12:21:57Z"
+    },
+    "committer": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-04-01T12:21:57Z"
+    },
+    "message": "Fix crash bugs with bogus table attributes (Issue #416)",
+    "tree": {
+      "sha": "fd7c684fae83a43a2d0280d686d5df8f9ac0beea",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/trees/fd7c684fae83a43a2d0280d686d5df8f9ac0beea"
+    },
+    "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/commits/ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJOBAABCAA4FiEEhFRkZgtoaqs2VAtvmZVZoCeBWVUFAmBluuUaHG1pY2hhZWwu\nci5zd2VldEBnbWFpbC5jb20ACgkQmZVZoCeBWVVo+hAAmN6RtyvTKBA2WCy9agmr\nWUA1amgQ+ezMRdqwmoVSofzxvtwdfrnc8ftnL5nPKinLBd5Mkz8koTRhqT9AjRNl\n58uzuII1K0aVDXqNfCMvYR6qw+zLYwkTftmTXun5hJocSk65ctpK76IIxFOCjOZQ\n5IaOoer0hMl9G0tIqp0bvZ0gO2RoDy3fuapIerueVa+mTelsNmIRzGpZVgHBBUMx\n9S1TZ7fEnOj5iPfrtQSb8FiA3xebPE0X76uQIZiRVtQqhWgtyMcKfc1BCwxIWzJE\nBAXIE8NIWZqY5Dzu6fd2eB2oeOeBzJL5x0T5SarOL8f5s0VNjVsMJVZMLSY84SCU\nooJbuEwfhUorDl8m5eXElj+0Ww4WZeZDuOSgn363T6koebr6ijBCyyS9pVoDMuUi\nzXFuUkzYmZylHRyTW/Z//Lx88RL7F6lG5F3vK0/xfio59i4+WvFtYqEL/JJs4vLb\nRDhptMPSl28cngSCguIqxq8FqSfVmyZUUv4ljyNu8BZSlj8x+oO9qBVEAWWqyStj\njTMRhoIhFCl1q0qJWMFgGVZDejwB4pQ4IIUAZ6ZH/3yqk3UVQ+cIhVozPFAyd/u+\ntkEjzv10BzkJURP+MASjSSgGJa0ZEamBeLD5DePIpBdDSOhvNJiChBiuCAQtXF7e\n9paHtWr/fbCvSqtdAXWhrUI=\n=47xM\n-----END PGP SIGNATURE-----",
+      "payload": "tree fd7c684fae83a43a2d0280d686d5df8f9ac0beea\nparent 0ddab26a542c74770317b622e985c52430092ba5\nauthor Michael R Sweet <michael.r.sweet@gmail.com> 1617279717 -0400\ncommitter Michael R Sweet <michael.r.sweet@gmail.com> 1617279717 -0400\n\nFix crash bugs with bogus table attributes (Issue #416)\n",
+      "verified_at": "2024-11-13T10:03:37Z"
+    }
+  },
+  "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+  "html_url": "https://github.com/michaelrsweet/htmldoc/commit/ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+  "comments_url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/ba61a3ece382389ae4482c7027af8b32e8ab4cc8/comments",
+  "author": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0ddab26a542c74770317b622e985c52430092ba5",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/0ddab26a542c74770317b622e985c52430092ba5",
+      "html_url": "https://github.com/michaelrsweet/htmldoc/commit/0ddab26a542c74770317b622e985c52430092ba5"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 14,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "faeff3b4a1f6b1242a98003585a6c501fa74cea6",
+      "filename": "CHANGES.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ba61a3ece382389ae4482c7027af8b32e8ab4cc8/CHANGES.md",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ba61a3ece382389ae4482c7027af8b32e8ab4cc8/CHANGES.md",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/CHANGES.md?ref=ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+      "patch": "@@ -1,7 +1,7 @@\n # Changes in HTMLDOC v1.9.12\n \n - Fixed a crash bug with \"data:\" URIs and EPUB output (Issue #410)\n-- Fixed a crach bug with bogus table attributes (Issue #417)\n+- Fixed crash bugs with bogus table attributes (Issue #416, Issue #417)\n - Fixed a crash bug with malformed URIs (Issue #418)\n - Fixed a crash bug with malformed GIF files (Issue #423)\n - Fixed some issues reported by Coverity."
+    },
+    {
+      "sha": "85257e5f80e5e5d171dae436327e264e8156b58b",
+      "filename": "htmldoc/ps-pdf.cxx",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 3,
+      "changes": 16,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ba61a3ece382389ae4482c7027af8b32e8ab4cc8/htmldoc%2Fps-pdf.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ba61a3ece382389ae4482c7027af8b32e8ab4cc8/htmldoc%2Fps-pdf.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fps-pdf.cxx?ref=ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+      "patch": "@@ -5735,7 +5735,7 @@ render_table_row(hdtable_t &table,\n       if ((var = htmlGetVariable(cells[row][col], (uchar *)\"ROWSPAN\")) != NULL)\n         table.row_spans[col] = atoi((char *)var);\n \n-      if (table.row_spans[col] == 1)\n+      if (table.row_spans[col] <= 1)\n         table.row_spans[col] = 0;\n \n       if (table.row_spans[col] > (table.num_rows - row))\n@@ -6570,15 +6570,20 @@ parse_table(tree_t *t,\t\t\t// I - Tree to parse\n         {\n \t  // Handle colspan and rowspan stuff...\n           if ((var = htmlGetVariable(tempcol, (uchar *)\"COLSPAN\")) != NULL)\n-            colspan = atoi((char *)var);\n+          {\n+            if ((colspan = atoi((char *)var)) < 1)\n+              colspan = 1;\n+            else if (colspan > (MAX_COLUMNS - col))\n+              colspan = MAX_COLUMNS - col;\n+          }\n           else\n             colspan = 1;\n \n           if ((var = htmlGetVariable(tempcol, (uchar *)\"ROWSPAN\")) != NULL)\n \t  {\n             table.row_spans[col] = atoi((char *)var);\n \n-\t    if (table.row_spans[col] == 1)\n+\t    if (table.row_spans[col] <= 1)\n \t      table.row_spans[col] = 0;\n \n \t    for (tcol = 1; tcol < colspan; tcol ++)\n@@ -6600,6 +6605,11 @@ parse_table(tree_t *t,\t\t\t// I - Tree to parse\n \t    {\n               col_width -= 2.0 * table.cellpadding;\n \t    }\n+\n+\t    if (col_width <= 0.0f)\n+\t      col_width = 0.0f;\n+\t    else if (col_width > PageWidth)\n+\t      col_width = PageWidth;\n \t  }\n \t  else\n \t    col_width = 0.0f;"
+    }
+  ]
+}

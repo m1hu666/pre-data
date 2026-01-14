@@ -1,0 +1,125 @@
+{
+  "sha": "49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+  "node_id": "MDY6Q29tbWl0NjE3Mzc3NjU6NDlkODc2ZjJjNWZjMDBiY2VkYWE5ODZhN2NmNmRlZGQ2YmYxNmY1NA==",
+  "commit": {
+    "author": {
+      "name": "Martin Prikryl",
+      "email": "martin@winscp.net",
+      "date": "2018-09-03T12:50:44Z"
+    },
+    "committer": {
+      "name": "Martin Prikryl",
+      "email": "martin@winscp.net",
+      "date": "2018-09-03T23:54:28Z"
+    },
+    "message": "Bug 1675: Prevent SCP server sending files that were not requested\n\nhttps://winscp.net/tracker/1675\n\nSource commit: 4aa587620973bf793fb6e783052277c0f7be4b55",
+    "tree": {
+      "sha": "268e3b3f162ce834dc2c2d959242ed8bd832216e",
+      "url": "https://api.github.com/repos/winscp/winscp/git/trees/268e3b3f162ce834dc2c2d959242ed8bd832216e"
+    },
+    "url": "https://api.github.com/repos/winscp/winscp/git/commits/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/winscp/winscp/commits/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+  "html_url": "https://github.com/winscp/winscp/commit/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+  "comments_url": "https://api.github.com/repos/winscp/winscp/commits/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/comments",
+  "author": {
+    "login": "martinprikryl",
+    "id": 1632297,
+    "node_id": "MDQ6VXNlcjE2MzIyOTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1632297?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/martinprikryl",
+    "html_url": "https://github.com/martinprikryl",
+    "followers_url": "https://api.github.com/users/martinprikryl/followers",
+    "following_url": "https://api.github.com/users/martinprikryl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/martinprikryl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/martinprikryl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/martinprikryl/subscriptions",
+    "organizations_url": "https://api.github.com/users/martinprikryl/orgs",
+    "repos_url": "https://api.github.com/users/martinprikryl/repos",
+    "events_url": "https://api.github.com/users/martinprikryl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/martinprikryl/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "martinprikryl",
+    "id": 1632297,
+    "node_id": "MDQ6VXNlcjE2MzIyOTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1632297?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/martinprikryl",
+    "html_url": "https://github.com/martinprikryl",
+    "followers_url": "https://api.github.com/users/martinprikryl/followers",
+    "following_url": "https://api.github.com/users/martinprikryl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/martinprikryl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/martinprikryl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/martinprikryl/subscriptions",
+    "organizations_url": "https://api.github.com/users/martinprikryl/orgs",
+    "repos_url": "https://api.github.com/users/martinprikryl/repos",
+    "events_url": "https://api.github.com/users/martinprikryl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/martinprikryl/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ec5977ba2741522f1f27604e45644c6b72681713",
+      "url": "https://api.github.com/repos/winscp/winscp/commits/ec5977ba2741522f1f27604e45644c6b72681713",
+      "html_url": "https://github.com/winscp/winscp/commit/ec5977ba2741522f1f27604e45644c6b72681713"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "40dcb5401d75884d0ec688ee876ddbc6aef0489c",
+      "filename": "source/core/ScpFileSystem.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/winscp/winscp/blob/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fcore%2FScpFileSystem.cpp",
+      "raw_url": "https://github.com/winscp/winscp/raw/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fcore%2FScpFileSystem.cpp",
+      "contents_url": "https://api.github.com/repos/winscp/winscp/contents/source%2Fcore%2FScpFileSystem.cpp?ref=49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+      "patch": "@@ -2361,6 +2361,10 @@ void __fastcall TSCPFileSystem::SCPSink(const UnicodeString TargetDir,\n           {\r\n             FTerminal->LogEvent(FORMAT(L\"Warning: Remote host set a compound pathname '%s'\", (Line)));\r\n           }\r\n+          if ((Level == 0) && (OnlyFileName != UnixExtractFileName(FileName)))\r\n+          {\r\n+            SCPError(LoadStr(UNREQUESTED_FILE), False);\r\n+          }\r\n \r\n           FullFileName = SourceDir + OnlyFileName;\r\n           OperationProgress->SetFile(FullFileName);\r"
+    },
+    {
+      "sha": "4f4f70a83124dcc204125130688f16e02c93f159",
+      "filename": "source/resource/TextsCore.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/winscp/winscp/blob/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fresource%2FTextsCore.h",
+      "raw_url": "https://github.com/winscp/winscp/raw/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fresource%2FTextsCore.h",
+      "contents_url": "https://api.github.com/repos/winscp/winscp/contents/source%2Fresource%2FTextsCore.h?ref=49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+      "patch": "@@ -270,6 +270,7 @@\n #define S3_STATUS_ACCESS_DENIED 746\r\n #define UNKNOWN_FILE_ENCRYPTION 747\r\n #define INVALID_ENCRYPT_KEY     748\r\n+#define UNREQUESTED_FILE        749\r\n \r\n #define CORE_CONFIRMATION_STRINGS 300\r\n #define CONFIRM_PROLONG_TIMEOUT3 301\r"
+    },
+    {
+      "sha": "ee50347ac17d61d4c18209fb588fe38a84f59b95",
+      "filename": "source/resource/TextsCore1.rc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/winscp/winscp/blob/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fresource%2FTextsCore1.rc",
+      "raw_url": "https://github.com/winscp/winscp/raw/49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54/source%2Fresource%2FTextsCore1.rc",
+      "contents_url": "https://api.github.com/repos/winscp/winscp/contents/source%2Fresource%2FTextsCore1.rc?ref=49d876f2c5fc00bcedaa986a7cf6dedd6bf16f54",
+      "patch": "@@ -241,6 +241,7 @@ BEGIN\n   MISSING_TARGET_BUCKET, \"Specify target bucket.\"\r\n   UNKNOWN_FILE_ENCRYPTION, \"File is not encrypted using a known encryption.\"\r\n   INVALID_ENCRYPT_KEY, \"**Invalid encryption key.**\\n\\nEncryption key for %s encryption must have %d bytes. It must be entered in hexadecimal representation (i.e. %d characters).\"\r\n+  UNREQUESTED_FILE, \"Server sent a file that was not requested.\"\r\n \r\n   CORE_CONFIRMATION_STRINGS, \"CORE_CONFIRMATION\"\r\n   CONFIRM_PROLONG_TIMEOUT3, \"Host is not communicating for %d seconds.\\n\\nWait for another %0:d seconds?\"\r"
+    }
+  ]
+}

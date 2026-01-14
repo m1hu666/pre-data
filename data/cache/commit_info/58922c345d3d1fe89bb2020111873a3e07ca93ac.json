@@ -1,0 +1,106 @@
+{
+  "sha": "58922c345d3d1fe89bb2020111873a3e07ca93ac",
+  "node_id": "MDY6Q29tbWl0MjE4NjA3MTI6NTg5MjJjMzQ1ZDNkMWZlODliYjIwMjAxMTE4NzNhM2UwN2NhOTNhYw==",
+  "commit": {
+    "author": {
+      "name": "Sara Dickinson",
+      "email": "sara@sinodun.com",
+      "date": "2021-05-13T15:49:28Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-05-13T15:49:28Z"
+    },
+    "message": "Merge pull request #190 from japroc/fix-potential-sqli-through-fs-path\n\nFix potential sql injection through fs path",
+    "tree": {
+      "sha": "d975c7a1f5ab5ff7d36667ee5e787c5e9f94c01f",
+      "url": "https://api.github.com/repos/dns-stats/hedgehog/git/trees/d975c7a1f5ab5ff7d36667ee5e787c5e9f94c01f"
+    },
+    "url": "https://api.github.com/repos/dns-stats/hedgehog/git/commits/58922c345d3d1fe89bb2020111873a3e07ca93ac",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgnUqICRBK7hj4Ov3rIwAAb1MIAKiUGqXxH4IGn0Xbuwfj7q3B\nbXyp+GJiycP5vwpEE3AW8yF4Ljej6b8kM4nduTmcm0xiDLSr2dPSQ4QLw/9SXLb6\n+N55CRuZKtGmke/zyDgaj5y634Uqr9pcj9nbckVC8+aFg1zCo9/L55be2quP0mdU\nneqlEQkIDQl0KmKCJKCGz9QSlGYHFwDk1yHdsYPC1lQi84l8nR2P0Bec3DM4brCR\nQASnVTk1BwnNZxreME1KTWKDTiaQvqiUuPNI/nJXQzS5r85gDsMtCC6plM3HqCet\n9A6CKI614K8SPZltHuZtn64oWdHI4cjNSYizLGBh71rb1ke47+1FStNELNrgGtg=\n=FD/f\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree d975c7a1f5ab5ff7d36667ee5e787c5e9f94c01f\nparent d00d466a58c2b27df943a5057aa08496903e18af\nparent 736427d0e2b4f10c19a2f41dd33b5d6fd3305980\nauthor Sara Dickinson <sara@sinodun.com> 1620920968 +0100\ncommitter GitHub <noreply@github.com> 1620920968 +0100\n\nMerge pull request #190 from japroc/fix-potential-sqli-through-fs-path\n\nFix potential sql injection through fs path",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/dns-stats/hedgehog/commits/58922c345d3d1fe89bb2020111873a3e07ca93ac",
+  "html_url": "https://github.com/dns-stats/hedgehog/commit/58922c345d3d1fe89bb2020111873a3e07ca93ac",
+  "comments_url": "https://api.github.com/repos/dns-stats/hedgehog/commits/58922c345d3d1fe89bb2020111873a3e07ca93ac/comments",
+  "author": {
+    "login": "saradickinson",
+    "id": 6229980,
+    "node_id": "MDQ6VXNlcjYyMjk5ODA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6229980?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/saradickinson",
+    "html_url": "https://github.com/saradickinson",
+    "followers_url": "https://api.github.com/users/saradickinson/followers",
+    "following_url": "https://api.github.com/users/saradickinson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/saradickinson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/saradickinson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/saradickinson/subscriptions",
+    "organizations_url": "https://api.github.com/users/saradickinson/orgs",
+    "repos_url": "https://api.github.com/users/saradickinson/repos",
+    "events_url": "https://api.github.com/users/saradickinson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/saradickinson/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d00d466a58c2b27df943a5057aa08496903e18af",
+      "url": "https://api.github.com/repos/dns-stats/hedgehog/commits/d00d466a58c2b27df943a5057aa08496903e18af",
+      "html_url": "https://github.com/dns-stats/hedgehog/commit/d00d466a58c2b27df943a5057aa08496903e18af"
+    },
+    {
+      "sha": "736427d0e2b4f10c19a2f41dd33b5d6fd3305980",
+      "url": "https://api.github.com/repos/dns-stats/hedgehog/commits/736427d0e2b4f10c19a2f41dd33b5d6fd3305980",
+      "html_url": "https://github.com/dns-stats/hedgehog/commit/736427d0e2b4f10c19a2f41dd33b5d6fd3305980"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "fd9414d62c0a4ac011d9cd7302d0258716b1e41f",
+      "filename": "src/DSCIOManager.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/dns-stats/hedgehog/blob/58922c345d3d1fe89bb2020111873a3e07ca93ac/src%2FDSCIOManager.cpp",
+      "raw_url": "https://github.com/dns-stats/hedgehog/raw/58922c345d3d1fe89bb2020111873a3e07ca93ac/src%2FDSCIOManager.cpp",
+      "contents_url": "https://api.github.com/repos/dns-stats/hedgehog/contents/src%2FDSCIOManager.cpp?ref=58922c345d3d1fe89bb2020111873a3e07ca93ac",
+      "patch": "@@ -214,6 +214,9 @@ DSCIOManager::dsc_import_input_from_source() {\n     \n     string node = bfs::initial_path().filename().generic_string();\n     string server = bfs::initial_path().parent_path().filename().generic_string();\n+    //fix potential sql injection\n+    replace(node.begin(), node.end(), '\\'', '_');\n+    replace(server.begin(), server.end(), '\\'', '_');\n     //transform to 'internal' name\n     replace(server.begin(), server.end(), '-', '_');\n     replace_string(server, \".\", \"__\");"
+    }
+  ]
+}

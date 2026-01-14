@@ -1,0 +1,101 @@
+{
+  "sha": "b1351c15946349f9daa7e5297fb2ac6f3139e4a8",
+  "node_id": "MDY6Q29tbWl0MTk4MTYwNzA6YjEzNTFjMTU5NDYzNDlmOWRhYTdlNTI5N2ZiMmFjNmYzMTM5ZTRhOA==",
+  "commit": {
+    "author": {
+      "name": "Vladislav Vaintroub",
+      "email": "wlad@mariadb.com",
+      "date": "2021-09-15T12:55:45Z"
+    },
+    "committer": {
+      "name": "Vladislav Vaintroub",
+      "email": "wlad@mariadb.com",
+      "date": "2021-09-15T12:55:45Z"
+    },
+    "message": "MDEV-26574 An improper locking bug due to unreleased lock in the ds_xbstream.cc\n\nrelease lock in all as cases n xbstream_open, also fix the case where malloc would return NULL.",
+    "tree": {
+      "sha": "27854fa258de84e5d13f046a1f6f37ac570f6344",
+      "url": "https://api.github.com/repos/MariaDB/server/git/trees/27854fa258de84e5d13f046a1f6f37ac570f6344"
+    },
+    "url": "https://api.github.com/repos/MariaDB/server/git/commits/b1351c15946349f9daa7e5297fb2ac6f3139e4a8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/MariaDB/server/commits/b1351c15946349f9daa7e5297fb2ac6f3139e4a8",
+  "html_url": "https://github.com/MariaDB/server/commit/b1351c15946349f9daa7e5297fb2ac6f3139e4a8",
+  "comments_url": "https://api.github.com/repos/MariaDB/server/commits/b1351c15946349f9daa7e5297fb2ac6f3139e4a8/comments",
+  "author": {
+    "login": "vaintroub",
+    "id": 1708204,
+    "node_id": "MDQ6VXNlcjE3MDgyMDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1708204?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vaintroub",
+    "html_url": "https://github.com/vaintroub",
+    "followers_url": "https://api.github.com/users/vaintroub/followers",
+    "following_url": "https://api.github.com/users/vaintroub/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vaintroub/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vaintroub/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vaintroub/subscriptions",
+    "organizations_url": "https://api.github.com/users/vaintroub/orgs",
+    "repos_url": "https://api.github.com/users/vaintroub/repos",
+    "events_url": "https://api.github.com/users/vaintroub/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vaintroub/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vaintroub",
+    "id": 1708204,
+    "node_id": "MDQ6VXNlcjE3MDgyMDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1708204?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vaintroub",
+    "html_url": "https://github.com/vaintroub",
+    "followers_url": "https://api.github.com/users/vaintroub/followers",
+    "following_url": "https://api.github.com/users/vaintroub/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vaintroub/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vaintroub/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vaintroub/subscriptions",
+    "organizations_url": "https://api.github.com/users/vaintroub/orgs",
+    "repos_url": "https://api.github.com/users/vaintroub/repos",
+    "events_url": "https://api.github.com/users/vaintroub/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vaintroub/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8937762ead9623f4bcd23d445319c08e07d6c321",
+      "url": "https://api.github.com/repos/MariaDB/server/commits/8937762ead9623f4bcd23d445319c08e07d6c321",
+      "html_url": "https://github.com/MariaDB/server/commit/8937762ead9623f4bcd23d445319c08e07d6c321"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 7,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "798d7da6da4cf994e30a50e2d27a2dd1ba524f50",
+      "filename": "extra/mariabackup/ds_xbstream.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 10,
+      "blob_url": "https://github.com/MariaDB/server/blob/b1351c15946349f9daa7e5297fb2ac6f3139e4a8/extra%2Fmariabackup%2Fds_xbstream.cc",
+      "raw_url": "https://github.com/MariaDB/server/raw/b1351c15946349f9daa7e5297fb2ac6f3139e4a8/extra%2Fmariabackup%2Fds_xbstream.cc",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/extra%2Fmariabackup%2Fds_xbstream.cc?ref=b1351c15946349f9daa7e5297fb2ac6f3139e4a8",
+      "patch": "@@ -126,15 +126,19 @@ xbstream_open(ds_ctxt_t *ctxt, const char *path, MY_STAT *mystat)\n \tpthread_mutex_lock(&stream_ctxt->mutex);\n \tif (stream_ctxt->dest_file == NULL) {\n \t\tstream_ctxt->dest_file = ds_open(dest_ctxt, path, mystat);\n-\t\tif (stream_ctxt->dest_file == NULL) {\n-\t\t\treturn NULL;\n-\t\t}\n \t}\n \tpthread_mutex_unlock(&stream_ctxt->mutex);\n+\tif (stream_ctxt->dest_file == NULL) {\n+\t\treturn NULL;\n+\t}\n \n \tfile = (ds_file_t *) my_malloc(sizeof(ds_file_t) +\n \t\t\t\t       sizeof(ds_stream_file_t),\n \t\t\t\t       MYF(MY_FAE));\n+\tif (!file) {\n+\t\tmsg(\"my_malloc() failed.\");\n+\t\tgoto err;\n+\t}\n \tstream_file = (ds_stream_file_t *) (file + 1);\n \n \txbstream = stream_ctxt->xbstream;"
+    }
+  ]
+}

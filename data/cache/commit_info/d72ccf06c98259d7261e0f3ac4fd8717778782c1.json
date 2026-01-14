@@ -1,0 +1,136 @@
+{
+  "sha": "d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+  "node_id": "MDY6Q29tbWl0MTQ3MzAzNTpkNzJjY2YwNmM5ODI1OWQ3MjYxZTBmM2FjNGZkODcxNzc3ODc4MmMx",
+  "commit": {
+    "author": {
+      "name": "Wez Furlong",
+      "email": "wez@wezfurlong.org",
+      "date": "2021-07-13T06:10:28Z"
+    },
+    "committer": {
+      "name": "Wez Furlong",
+      "email": "wez@wezfurlong.org",
+      "date": "2021-07-13T06:10:28Z"
+    },
+    "message": "Avoid stack overflow\n\nrefs: https://github.com/wez/atomicparsley/issues/32",
+    "tree": {
+      "sha": "cff6ceb995ac35c16b4e17002e5860e50eb19207",
+      "url": "https://api.github.com/repos/wez/atomicparsley/git/trees/cff6ceb995ac35c16b4e17002e5860e50eb19207"
+    },
+    "url": "https://api.github.com/repos/wez/atomicparsley/git/commits/d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/wez/atomicparsley/commits/d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+  "html_url": "https://github.com/wez/atomicparsley/commit/d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+  "comments_url": "https://api.github.com/repos/wez/atomicparsley/commits/d72ccf06c98259d7261e0f3ac4fd8717778782c1/comments",
+  "author": {
+    "login": "wez",
+    "id": 117777,
+    "node_id": "MDQ6VXNlcjExNzc3Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/117777?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wez",
+    "html_url": "https://github.com/wez",
+    "followers_url": "https://api.github.com/users/wez/followers",
+    "following_url": "https://api.github.com/users/wez/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wez/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wez/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wez/subscriptions",
+    "organizations_url": "https://api.github.com/users/wez/orgs",
+    "repos_url": "https://api.github.com/users/wez/repos",
+    "events_url": "https://api.github.com/users/wez/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wez/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wez",
+    "id": 117777,
+    "node_id": "MDQ6VXNlcjExNzc3Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/117777?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wez",
+    "html_url": "https://github.com/wez",
+    "followers_url": "https://api.github.com/users/wez/followers",
+    "following_url": "https://api.github.com/users/wez/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wez/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wez/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wez/subscriptions",
+    "organizations_url": "https://api.github.com/users/wez/orgs",
+    "repos_url": "https://api.github.com/users/wez/repos",
+    "events_url": "https://api.github.com/users/wez/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wez/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "020176f688d9efec68f1ce1b100e052bff1cfc2e",
+      "url": "https://api.github.com/repos/wez/atomicparsley/commits/020176f688d9efec68f1ce1b100e052bff1cfc2e",
+      "html_url": "https://github.com/wez/atomicparsley/commit/020176f688d9efec68f1ce1b100e052bff1cfc2e"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 17,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "990dd2b7c4a7f33ab6f27079888bd5e0a8312038",
+      "filename": ".github/workflows/ci.yml",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/wez/atomicparsley/blob/d72ccf06c98259d7261e0f3ac4fd8717778782c1/.github%2Fworkflows%2Fci.yml",
+      "raw_url": "https://github.com/wez/atomicparsley/raw/d72ccf06c98259d7261e0f3ac4fd8717778782c1/.github%2Fworkflows%2Fci.yml",
+      "contents_url": "https://api.github.com/repos/wez/atomicparsley/contents/.github%2Fworkflows%2Fci.yml?ref=d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+      "patch": "@@ -23,3 +23,16 @@ jobs:\n       run: cmake .\n     - name: build\n       run: cmake --build . --config Release\n+\n+  asan:\n+    runs-on: ubuntu-latest\n+    strategy:\n+      fail-fast: false\n+    steps:\n+    - uses: actions/checkout@v2\n+    - name: configure\n+      run: cmake -DASAN=on -DCMAKE_BUILD_TYPE=Debug .\n+    - name: build\n+      run: cmake --build .\n+    - name: test\n+      run: tests/test.sh"
+    },
+    {
+      "sha": "f5249c1bf06980869420171ff48bedfbbe661a4a",
+      "filename": "src/extracts.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/wez/atomicparsley/blob/d72ccf06c98259d7261e0f3ac4fd8717778782c1/src%2Fextracts.cpp",
+      "raw_url": "https://github.com/wez/atomicparsley/raw/d72ccf06c98259d7261e0f3ac4fd8717778782c1/src%2Fextracts.cpp",
+      "contents_url": "https://api.github.com/repos/wez/atomicparsley/contents/src%2Fextracts.cpp?ref=d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+      "patch": "@@ -1588,7 +1588,7 @@ void APar_Print_TrackDetails(TrackInfo *track_info) {\n }\n \n void APar_ExtractDetails(FILE *isofile, uint8_t optional_output) {\n-  char uint32_buffer[5];\n+  char uint32_buffer[8];\n   Trackage track = {0};\n \n   AtomicInfo *mvhdAtom = APar_FindAtom(\"moov.mvhd\", false, VERSIONED_ATOM, 0);"
+    },
+    {
+      "sha": "bae1839de37446d1b1667e1fd1205ff322e9660f",
+      "filename": "tests/issue-32.mp4",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/wez/atomicparsley/blob/d72ccf06c98259d7261e0f3ac4fd8717778782c1/tests%2Fissue-32.mp4",
+      "raw_url": "https://github.com/wez/atomicparsley/raw/d72ccf06c98259d7261e0f3ac4fd8717778782c1/tests%2Fissue-32.mp4",
+      "contents_url": "https://api.github.com/repos/wez/atomicparsley/contents/tests%2Fissue-32.mp4?ref=d72ccf06c98259d7261e0f3ac4fd8717778782c1"
+    },
+    {
+      "sha": "ed8fd9c20b3f95136f32b885f2c1eb7972c3a31d",
+      "filename": "tests/test.sh",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/wez/atomicparsley/blob/d72ccf06c98259d7261e0f3ac4fd8717778782c1/tests%2Ftest.sh",
+      "raw_url": "https://github.com/wez/atomicparsley/raw/d72ccf06c98259d7261e0f3ac4fd8717778782c1/tests%2Ftest.sh",
+      "contents_url": "https://api.github.com/repos/wez/atomicparsley/contents/tests%2Ftest.sh?ref=d72ccf06c98259d7261e0f3ac4fd8717778782c1",
+      "patch": "@@ -0,0 +1,3 @@\n+#!/bin/bash\n+set -xe\n+./AtomicParsley ./tests/issue-32.mp4 -T 1 -t +"
+    }
+  ]
+}

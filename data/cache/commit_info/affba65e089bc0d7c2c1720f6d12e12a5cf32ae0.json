@@ -1,0 +1,141 @@
+{
+  "sha": "affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+  "node_id": "C_kwDOByyPPdoAKGFmZmJhNjVlMDg5YmMwZDdjMmMxNzIwZjZkMTJlMTJhNWNmMzJhZTA",
+  "commit": {
+    "author": {
+      "name": "Jinsuk Kim",
+      "email": "jinsukkim@chromium.org",
+      "date": "2022-01-05T05:33:44Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-05T05:33:44Z"
+    },
+    "message": "Reland \"Android: Custom Toast view for fullscreen\"\n\nThe culprit CL used a delayed post runnable to remove the notification\nview from the Tab's content view. It is possible, however, the Tab\nalready has been destroyed by the time the runnable is executed.\n\nThis CL reinstated the CL with an additional change that replaces\nthe assert with if statement to check the presence of the Tab and its\ncontent view.\n\nThis reverts commit a62652a590df20ab936dcb8b30c22095e01386c6.\n\nBug: 1264561, 1282137\nChange-Id: I5d5c46c37310e7d450918f4bf6969eb7132922d5\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3354437\nReviewed-by: Theresa Sullivan <twellington@chromium.org>\nCommit-Queue: Jinsuk Kim <jinsukkim@chromium.org>\nCr-Commit-Position: refs/heads/main@{#955569}",
+    "tree": {
+      "sha": "62dc88b83e277c80e80c5f702a3ea137f5031157",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/62dc88b83e277c80e80c5f702a3ea137f5031157"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+  "html_url": "https://github.com/chromium/chromium/commit/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/comments",
+  "author": {
+    "login": "JinsukKim",
+    "id": 24905520,
+    "node_id": "MDQ6VXNlcjI0OTA1NTIw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24905520?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JinsukKim",
+    "html_url": "https://github.com/JinsukKim",
+    "followers_url": "https://api.github.com/users/JinsukKim/followers",
+    "following_url": "https://api.github.com/users/JinsukKim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JinsukKim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JinsukKim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JinsukKim/subscriptions",
+    "organizations_url": "https://api.github.com/users/JinsukKim/orgs",
+    "repos_url": "https://api.github.com/users/JinsukKim/repos",
+    "events_url": "https://api.github.com/users/JinsukKim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JinsukKim/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "dc8112ff40d6b7530b8fb57c0d4f621dc3d6c9ea",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/dc8112ff40d6b7530b8fb57c0d4f621dc3d6c9ea",
+      "html_url": "https://github.com/chromium/chromium/commit/dc8112ff40d6b7530b8fb57c0d4f621dc3d6c9ea"
+    }
+  ],
+  "stats": {
+    "total": 82,
+    "additions": 69,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "1824e362af466e0ddadd7b32f63a316197be70e0",
+      "filename": "chrome/android/chrome_java_resources.gni",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fchrome_java_resources.gni",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fchrome_java_resources.gni",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fchrome_java_resources.gni?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -531,6 +531,7 @@ chrome_java_resources = [\n   \"java/res/drawable/material_tooltip_background.xml\",\n   \"java/res/drawable/mir_card.xml\",\n   \"java/res/drawable/outline_chevron_right_24dp.xml\",\n+  \"java/res/drawable/pill_background.xml\",\n   \"java/res/drawable/price_tracking_disabled.xml\",\n   \"java/res/drawable/price_tracking_enabled_filled.xml\",\n   \"java/res/drawable/price_tracking_enabled_outline.xml\",\n@@ -650,6 +651,7 @@ chrome_java_resources = [\n   \"java/res/layout/fre_data_reduction_proxy_lite_mode.xml\",\n   \"java/res/layout/fre_tos_privacy_disclaimer.xml\",\n   \"java/res/layout/fre_tosanduma.xml\",\n+  \"java/res/layout/fullscreen_notification.xml\",\n   \"java/res/layout/history_clear_browsing_data_header.xml\",\n   \"java/res/layout/history_item_view.xml\",\n   \"java/res/layout/history_main.xml\","
+    },
+    {
+      "sha": "b9ed6ad709572dbc9e533129739a5c01ba4a9b83",
+      "filename": "chrome/android/java/res/drawable/pill_background.xml",
+      "status": "added",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Fdrawable%2Fpill_background.xml",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Fdrawable%2Fpill_background.xml",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fjava%2Fres%2Fdrawable%2Fpill_background.xml?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -0,0 +1,14 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<!-- Copyright 2021 The Chromium Authors. All rights reserved.\n+     Use of this source code is governed by a BSD-style license that can be\n+     found in the LICENSE file. -->\n+\n+<shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:dither=\"true\"\n+    android:shape=\"rectangle\">\n+    <corners android:radius=\"40dp\" />\n+    <solid android:color=\"@color/default_bg_color_dark\"/>\n+    <size\n+        android:width=\"60dp\"\n+        android:height=\"20dp\" />\n+</shape>"
+    },
+    {
+      "sha": "5687b66a01b41cc7af31acc8d45b9511a361d174",
+      "filename": "chrome/android/java/res/layout/fullscreen_notification.xml",
+      "status": "added",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Flayout%2Ffullscreen_notification.xml",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Flayout%2Ffullscreen_notification.xml",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fjava%2Fres%2Flayout%2Ffullscreen_notification.xml?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -0,0 +1,26 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<!-- Copyright 2021 The Chromium Authors. All rights reserved.\n+     Use of this source code is governed by a BSD-style license that can be\n+     found in the LICENSE file. -->\n+\n+<LinearLayout\n+    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\"\n+    android:paddingTop=\"24dp\">\n+    <TextView\n+        android:id=\"@+id/text\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_width=\"wrap_content\"\n+        android:maxWidth=\"@dimen/fullscreen_notification_max_width\"\n+        android:layout_gravity=\"center\"\n+        android:background=\"@drawable/pill_background\"\n+        android:textAppearance=\"@style/TextAppearance.Toast\"\n+        android:paddingStart=\"20dp\"\n+        android:paddingEnd=\"20dp\"\n+        android:paddingTop=\"8dp\"\n+        android:paddingBottom=\"8dp\"\n+        android:textAlignment=\"center\"\n+        android:text=\"@string/immersive_fullscreen_api_notification\"/>\n+</LinearLayout>"
+    },
+    {
+      "sha": "b2547931f427c8341aa21ec1cdc492a9f3aff0c5",
+      "filename": "chrome/android/java/res/values/dimens.xml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Fvalues%2Fdimens.xml",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fres%2Fvalues%2Fdimens.xml",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fjava%2Fres%2Fvalues%2Fdimens.xml?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -157,6 +157,7 @@\n     <!-- Should match toolbar_height_no_shadow -->\n     <dimen name=\"control_container_height\">56dp</dimen>\n     <dimen name=\"custom_tabs_control_container_height\">56dp</dimen>\n+    <dimen name=\"fullscreen_notification_max_width\">320dp</dimen>\n \n     <!-- The combined height of the tab strip and toolbar. -->\n     <dimen name=\"tab_strip_and_toolbar_height\">56dp</dimen>"
+    },
+    {
+      "sha": "1af3b737b3dfaa8137c7134a4ffc875e3361dd22",
+      "filename": "chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 13,
+      "changes": 34,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fandroid%2Fjava%2Fsrc%2Forg%2Fchromium%2Fchrome%2Fbrowser%2Ffullscreen%2FFullscreenHtmlApiHandler.java?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -11,9 +11,10 @@\n import android.app.Activity;\n import android.os.Handler;\n import android.os.Message;\n-import android.view.Gravity;\n+import android.view.LayoutInflater;\n import android.view.View;\n import android.view.View.OnLayoutChangeListener;\n+import android.view.ViewGroup;\n import android.view.Window;\n import android.view.WindowManager;\n \n@@ -46,7 +47,6 @@\n import org.chromium.content_public.browser.NavigationHandle;\n import org.chromium.content_public.browser.SelectionPopupController;\n import org.chromium.content_public.browser.WebContents;\n-import org.chromium.ui.widget.Toast;\n \n import java.lang.ref.WeakReference;\n \n@@ -66,6 +66,8 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo\n     // Delay to allow a frame to render between getting the fullscreen layout update and clearing\n     // the SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN flag.\n     private static final long CLEAR_LAYOUT_FULLSCREEN_DELAY_MS = 20;\n+    // Fade in/out animation duration for fullscreen notification toast.\n+    private static final int TOAST_FADE_MS = 500;\n \n     private final Activity mActivity;\n     private final Handler mHandler;\n@@ -86,7 +88,7 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo\n \n     // Toast at the top of the screen that is shown when user enters fullscreen for the\n     // first time.\n-    private Toast mNotificationToast;\n+    private View mNotificationToast;\n \n     private OnLayoutChangeListener mFullscreenOnLayoutChangeListener;\n \n@@ -509,23 +511,29 @@ private boolean shouldShowToast() {\n      * Create and show the fullscreen notification toast.\n      */\n     private void showNotificationToast() {\n-        if (mNotificationToast != null) {\n-            mNotificationToast.cancel();\n-        }\n-        int resId = R.string.immersive_fullscreen_api_notification;\n-        mNotificationToast = Toast.makeText(mActivity, resId, Toast.LENGTH_LONG);\n-        mNotificationToast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 0);\n-        mNotificationToast.show();\n+        assert mTab != null && mTab.getContentView() != null;\n+        ViewGroup parent = mTab.getContentView();\n+        if (mNotificationToast != null) parent.removeView(mNotificationToast);\n+        mNotificationToast =\n+                LayoutInflater.from(mActivity).inflate(R.layout.fullscreen_notification, null);\n+        mNotificationToast.setAlpha(0);\n+        parent.addView(mNotificationToast);\n+        mNotificationToast.animate().alpha(1).setDuration(TOAST_FADE_MS).start();\n+        mHandler.postDelayed(this::hideNotificationToast, 5000);\n     }\n \n     /**\n      * Hides the notification toast.\n      */\n     private void hideNotificationToast() {\n-        if (mNotificationToast != null) {\n-            mNotificationToast.cancel();\n+        if (mNotificationToast == null) return;\n+        mNotificationToast.animate().alpha(0).setDuration(TOAST_FADE_MS).withEndAction(() -> {\n+            // The Tab might have been destroyed while the toast is on.\n+            if (mTab != null && mTab.getContentView() != null) {\n+                mTab.getContentView().removeView(mNotificationToast);\n+            }\n             mNotificationToast = null;\n-        }\n+        });\n     }\n \n     // ActivityStateListener"
+    },
+    {
+      "sha": "51df0a067829622152ec807289e17f1f810ef3f9",
+      "filename": "ui/android/java/res/values-v17/styles.xml",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/chromium/chromium/blob/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/ui%2Fandroid%2Fjava%2Fres%2Fvalues-v17%2Fstyles.xml",
+      "raw_url": "https://github.com/chromium/chromium/raw/affba65e089bc0d7c2c1720f6d12e12a5cf32ae0/ui%2Fandroid%2Fjava%2Fres%2Fvalues-v17%2Fstyles.xml",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/ui%2Fandroid%2Fjava%2Fres%2Fvalues-v17%2Fstyles.xml?ref=affba65e089bc0d7c2c1720f6d12e12a5cf32ae0",
+      "patch": "@@ -343,6 +343,11 @@\n         <item name=\"android:textColor\">@color/chip_text_color_secondary</item>\n     </style>\n \n+    <!-- Toast UI -->\n+    <style name=\"TextAppearance.Toast\" parent=\"TextAppearance.TextSmall\">\n+        <item name=\"android:textColor\">@color/default_text_color_light</item>\n+    </style>\n+\n     <!-- Dividers -->\n     <style name=\"HorizontalDivider\"\n            tools:ignore=\"UnusedResources\">"
+    }
+  ]
+}

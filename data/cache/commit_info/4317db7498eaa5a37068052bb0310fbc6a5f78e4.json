@@ -1,0 +1,101 @@
+{
+  "sha": "4317db7498eaa5a37068052bb0310fbc6a5f78e4",
+  "node_id": "MDY6Q29tbWl0MTYwMDgzNzk1OjQzMTdkYjc0OThlYWE1YTM3MDY4MDUyYmIwMzEwZmJjNmE1Zjc4ZTQ=",
+  "commit": {
+    "author": {
+      "name": "Idan Horowitz",
+      "email": "idan.horowitz@gmail.com",
+      "date": "2021-03-27T14:28:22Z"
+    },
+    "committer": {
+      "name": "Andreas Kling",
+      "email": "kling@serenityos.org",
+      "date": "2021-03-27T15:28:48Z"
+    },
+    "message": "LibArchive: Make bounds checks stricter in the Zip parser\n\nWe now also check we have enough space in the incoming buffer for the\nvarious signatures and optional (length specified) fields. This helps\nprevents a possible heap overflow read.",
+    "tree": {
+      "sha": "894d72f149099fa5b82f0ccfab30cd41db58a16b",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/git/trees/894d72f149099fa5b82f0ccfab30cd41db58a16b"
+    },
+    "url": "https://api.github.com/repos/SerenityOS/serenity/git/commits/4317db7498eaa5a37068052bb0310fbc6a5f78e4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/SerenityOS/serenity/commits/4317db7498eaa5a37068052bb0310fbc6a5f78e4",
+  "html_url": "https://github.com/SerenityOS/serenity/commit/4317db7498eaa5a37068052bb0310fbc6a5f78e4",
+  "comments_url": "https://api.github.com/repos/SerenityOS/serenity/commits/4317db7498eaa5a37068052bb0310fbc6a5f78e4/comments",
+  "author": {
+    "login": "IdanHo",
+    "id": 16208640,
+    "node_id": "MDQ6VXNlcjE2MjA4NjQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16208640?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/IdanHo",
+    "html_url": "https://github.com/IdanHo",
+    "followers_url": "https://api.github.com/users/IdanHo/followers",
+    "following_url": "https://api.github.com/users/IdanHo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/IdanHo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/IdanHo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/IdanHo/subscriptions",
+    "organizations_url": "https://api.github.com/users/IdanHo/orgs",
+    "repos_url": "https://api.github.com/users/IdanHo/repos",
+    "events_url": "https://api.github.com/users/IdanHo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/IdanHo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1ff6f2b4b266ff90f15d9a462c3b44f88c4c645b",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/commits/1ff6f2b4b266ff90f15d9a462c3b44f88c4c645b",
+      "html_url": "https://github.com/SerenityOS/serenity/commit/1ff6f2b4b266ff90f15d9a462c3b44f88c4c645b"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 9,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "66a25acf726ef8af58f1f4a7f7ac9bd367e3c8a4",
+      "filename": "Userland/Libraries/LibArchive/Zip.h",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/SerenityOS/serenity/blob/4317db7498eaa5a37068052bb0310fbc6a5f78e4/Userland%2FLibraries%2FLibArchive%2FZip.h",
+      "raw_url": "https://github.com/SerenityOS/serenity/raw/4317db7498eaa5a37068052bb0310fbc6a5f78e4/Userland%2FLibraries%2FLibArchive%2FZip.h",
+      "contents_url": "https://api.github.com/repos/SerenityOS/serenity/contents/Userland%2FLibraries%2FLibArchive%2FZip.h?ref=4317db7498eaa5a37068052bb0310fbc6a5f78e4",
+      "patch": "@@ -52,11 +52,13 @@ struct [[gnu::packed]] EndOfCentralDirectory {\n     bool read(ReadonlyBytes buffer)\n     {\n         auto fields_size = sizeof(EndOfCentralDirectory) - sizeof(u8*);\n-        if (buffer.size() < fields_size)\n+        if (buffer.size() < sizeof(end_of_central_directory_signature) + fields_size)\n             return false;\n         if (memcmp(buffer.data(), end_of_central_directory_signature, sizeof(end_of_central_directory_signature)) != 0)\n             return false;\n         memcpy(reinterpret_cast<void*>(&disk_number), buffer.data() + sizeof(end_of_central_directory_signature), fields_size);\n+        if (buffer.size() < sizeof(end_of_central_directory_signature) + fields_size + comment_length)\n+            return false;\n         comment = buffer.data() + sizeof(end_of_central_directory_signature) + fields_size;\n         return true;\n     }\n@@ -101,11 +103,13 @@ struct [[gnu::packed]] CentralDirectoryRecord {\n     bool read(ReadonlyBytes buffer)\n     {\n         auto fields_size = sizeof(CentralDirectoryRecord) - (sizeof(u8*) * 3);\n-        if (buffer.size() < fields_size)\n+        if (buffer.size() < sizeof(central_directory_record_signature) + fields_size)\n             return false;\n         if (memcmp(buffer.data(), central_directory_record_signature, sizeof(central_directory_record_signature)) != 0)\n             return false;\n         memcpy(reinterpret_cast<void*>(&made_by_version), buffer.data() + sizeof(central_directory_record_signature), fields_size);\n+        if (buffer.size() < sizeof(end_of_central_directory_signature) + fields_size + comment_length + name_length + extra_data_length)\n+            return false;\n         name = buffer.data() + sizeof(central_directory_record_signature) + fields_size;\n         extra_data = name + name_length;\n         comment = extra_data + extra_data_length;\n@@ -165,11 +169,13 @@ struct [[gnu::packed]] LocalFileHeader {\n     bool read(ReadonlyBytes buffer)\n     {\n         auto fields_size = sizeof(LocalFileHeader) - (sizeof(u8*) * 3);\n-        if (buffer.size() < fields_size)\n+        if (buffer.size() < sizeof(local_file_header_signature) + fields_size)\n             return false;\n         if (memcmp(buffer.data(), local_file_header_signature, sizeof(local_file_header_signature)) != 0)\n             return false;\n         memcpy(reinterpret_cast<void*>(&minimum_version), buffer.data() + sizeof(local_file_header_signature), fields_size);\n+        if (buffer.size() < sizeof(end_of_central_directory_signature) + fields_size + name_length + extra_data_length + compressed_size)\n+            return false;\n         name = buffer.data() + sizeof(local_file_header_signature) + fields_size;\n         extra_data = name + name_length;\n         compressed_data = extra_data + extra_data_length;"
+    }
+  ]
+}

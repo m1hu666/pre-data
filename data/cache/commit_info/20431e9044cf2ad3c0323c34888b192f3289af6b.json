@@ -1,0 +1,81 @@
+{
+  "sha": "20431e9044cf2ad3c0323c34888b192f3289af6b",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MjA0MzFlOTA0NGNmMmFkM2MwMzIzYzM0ODg4YjE5MmYzMjg5YWY2Yg==",
+  "commit": {
+    "author": {
+      "name": "Amit Patankar",
+      "email": "amitpatankar@google.com",
+      "date": "2021-04-26T20:43:59Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-26T21:03:25Z"
+    },
+    "message": "Fix `tf.raw_ops.QuantizeAndDequantizeV4Grad` CHECK failure.\n\nPiperOrigin-RevId: 370532425\nChange-Id: I767721be266851b63d8fe55e7ac6be0af6017f6c",
+    "tree": {
+      "sha": "625a016980e00069a033f95e91a3925edb1c6d61",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/625a016980e00069a033f95e91a3925edb1c6d61"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/20431e9044cf2ad3c0323c34888b192f3289af6b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/20431e9044cf2ad3c0323c34888b192f3289af6b",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/20431e9044cf2ad3c0323c34888b192f3289af6b",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/20431e9044cf2ad3c0323c34888b192f3289af6b/comments",
+  "author": null,
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "95078c145b5a7a43ee046144005f733092756ab5",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/95078c145b5a7a43ee046144005f733092756ab5",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/95078c145b5a7a43ee046144005f733092756ab5"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 10,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c2a7a90d8713d8e99fa40252edd2135c6acd11f3",
+      "filename": "tensorflow/core/kernels/quantize_and_dequantize_op.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/20431e9044cf2ad3c0323c34888b192f3289af6b/tensorflow%2Fcore%2Fkernels%2Fquantize_and_dequantize_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/20431e9044cf2ad3c0323c34888b192f3289af6b/tensorflow%2Fcore%2Fkernels%2Fquantize_and_dequantize_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fquantize_and_dequantize_op.cc?ref=20431e9044cf2ad3c0323c34888b192f3289af6b",
+      "patch": "@@ -160,7 +160,17 @@ class QuantizeAndDequantizeV4GradientOp : public OpKernel {\n         errors::InvalidArgument(\"gradient and input must be the same size\"));\n     const int depth = (axis_ == -1) ? 1 : input.dim_size(axis_);\n     const Tensor& input_min_tensor = ctx->input(2);\n+    OP_REQUIRES(ctx,\n+                input_min_tensor.dims() == 0 || input_min_tensor.dims() == 1,\n+                errors::InvalidArgument(\n+                    \"Input min tensor must have dimension 1. Recieved \",\n+                    input_min_tensor.dims(), \".\"));\n     const Tensor& input_max_tensor = ctx->input(3);\n+    OP_REQUIRES(ctx,\n+                input_max_tensor.dims() == 0 || input_max_tensor.dims() == 1,\n+                errors::InvalidArgument(\n+                    \"Input max tensor must have dimension 1. Recieved \",\n+                    input_max_tensor.dims(), \".\"));\n     if (axis_ != -1) {\n       OP_REQUIRES(\n           ctx, input_min_tensor.dim_size(0) == depth,"
+    }
+  ]
+}

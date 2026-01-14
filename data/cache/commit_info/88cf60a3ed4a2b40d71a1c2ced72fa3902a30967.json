@@ -1,0 +1,305 @@
+{
+  "sha": "88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+  "node_id": "MDY6Q29tbWl0NTQ3MTk2NzI6ODhjZjYwYTNlZDRhMmI0MGQ3MWExYzJjZWQ3MmZhMzkwMmEzMDk2Nw==",
+  "commit": {
+    "author": {
+      "name": "Oleg Korshul",
+      "email": "Oleg.Korshul@onlyoffice.com",
+      "date": "2020-10-13T17:11:21Z"
+    },
+    "committer": {
+      "name": "Oleg Korshul",
+      "email": "Oleg.Korshul@onlyoffice.com",
+      "date": "2020-10-13T17:11:21Z"
+    },
+    "message": "Fix 25 errors",
+    "tree": {
+      "sha": "f0e87a868de341aad4e0da733d5f5b273743a1ea",
+      "url": "https://api.github.com/repos/ONLYOFFICE/core/git/trees/f0e87a868de341aad4e0da733d5f5b273743a1ea"
+    },
+    "url": "https://api.github.com/repos/ONLYOFFICE/core/git/commits/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ONLYOFFICE/core/commits/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+  "html_url": "https://github.com/ONLYOFFICE/core/commit/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+  "comments_url": "https://api.github.com/repos/ONLYOFFICE/core/commits/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/comments",
+  "author": {
+    "login": "K0R0L",
+    "id": 16754960,
+    "node_id": "MDQ6VXNlcjE2NzU0OTYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16754960?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/K0R0L",
+    "html_url": "https://github.com/K0R0L",
+    "followers_url": "https://api.github.com/users/K0R0L/followers",
+    "following_url": "https://api.github.com/users/K0R0L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/K0R0L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/K0R0L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/K0R0L/subscriptions",
+    "organizations_url": "https://api.github.com/users/K0R0L/orgs",
+    "repos_url": "https://api.github.com/users/K0R0L/repos",
+    "events_url": "https://api.github.com/users/K0R0L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/K0R0L/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "K0R0L",
+    "id": 16754960,
+    "node_id": "MDQ6VXNlcjE2NzU0OTYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16754960?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/K0R0L",
+    "html_url": "https://github.com/K0R0L",
+    "followers_url": "https://api.github.com/users/K0R0L/followers",
+    "following_url": "https://api.github.com/users/K0R0L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/K0R0L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/K0R0L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/K0R0L/subscriptions",
+    "organizations_url": "https://api.github.com/users/K0R0L/orgs",
+    "repos_url": "https://api.github.com/users/K0R0L/repos",
+    "events_url": "https://api.github.com/users/K0R0L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/K0R0L/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "66a6b7a11116d5c3c02b8a4fc3588ec03066fffd",
+      "url": "https://api.github.com/repos/ONLYOFFICE/core/commits/66a6b7a11116d5c3c02b8a4fc3588ec03066fffd",
+      "html_url": "https://github.com/ONLYOFFICE/core/commit/66a6b7a11116d5c3c02b8a4fc3588ec03066fffd"
+    }
+  ],
+  "stats": {
+    "total": 320,
+    "additions": 233,
+    "deletions": 87
+  },
+  "files": [
+    {
+      "sha": "eeebe8b3054ba6c2f5ec21777f69bf0127e3a133",
+      "filename": "DesktopEditor/common/File.cpp",
+      "status": "modified",
+      "additions": 103,
+      "deletions": 48,
+      "changes": 151,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcommon%2FFile.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcommon%2FFile.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcommon%2FFile.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -159,60 +159,90 @@ namespace NSFile\n             else if (0x00 == (byteMain & 0x20))\n             {\n                 // 2 byte\n-                int val = (int)(((byteMain & 0x1F) << 6) |\n-                    (pBuffer[lIndex + 1] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 1) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x1F) << 6) |\n+                                (pBuffer[lIndex + 1] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 2;\n             }\n             else if (0x00 == (byteMain & 0x10))\n             {\n                 // 3 byte\n-                int val = (int)(((byteMain & 0x0F) << 12) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 2] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 2) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x0F) << 12) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 2] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 3;\n             }\n             else if (0x00 == (byteMain & 0x0F))\n             {\n                 // 4 byte\n-                int val = (int)(((byteMain & 0x07) << 18) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 3] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 3) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x07) << 18) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 3] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 4;\n             }\n             else if (0x00 == (byteMain & 0x08))\n             {\n                 // 4 byte\n-                int val = (int)(((byteMain & 0x07) << 18) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 3] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 3) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x07) << 18) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 3] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 4;\n             }\n             else if (0x00 == (byteMain & 0x04))\n             {\n                 // 5 byte\n-                int val = (int)(((byteMain & 0x03) << 24) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 18) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 3] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 4] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 4) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x03) << 24) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 18) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 3] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 4] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 5;\n             }\n             else\n             {\n                 // 6 byte\n-                int val = (int)(((byteMain & 0x01) << 30) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 24) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 18) |\n-                    ((pBuffer[lIndex + 3] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 4] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 5] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 5) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x01) << 30) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 24) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 18) |\n+                                ((pBuffer[lIndex + 3] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 4] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 5] & 0x3F));\n+                }\n+\n                 pUnicodeString[lIndexUnicode++] = (WCHAR)(val);\n                 lIndex += 5;\n             }\n@@ -242,64 +272,89 @@ namespace NSFile\n             else if (0x00 == (byteMain & 0x20))\n             {\n                 // 2 byte\n-                int val = (int)(((byteMain & 0x1F) << 6) |\n-                    (pBuffer[lIndex + 1] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 1) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x1F) << 6) |\n+                                (pBuffer[lIndex + 1] & 0x3F));\n+                }\n+\n                 *pUnicodeString++ = (WCHAR)(val);\n                 lIndex += 2;\n             }\n             else if (0x00 == (byteMain & 0x10))\n             {\n                 // 3 byte\n-                int val = (int)(((byteMain & 0x0F) << 12) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 2] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 2) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x0F) << 12) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 2] & 0x3F));\n+                }\n \n                 WriteUtf16_WCHAR(val, pUnicodeString);\n                 lIndex += 3;\n             }\n             else if (0x00 == (byteMain & 0x0F))\n             {\n                 // 4 byte\n-                int val = (int)(((byteMain & 0x07) << 18) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 3] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 3) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x07) << 18) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 3] & 0x3F));\n+                }\n \n                 WriteUtf16_WCHAR(val, pUnicodeString);\n                 lIndex += 4;\n             }\n             else if (0x00 == (byteMain & 0x08))\n             {\n                 // 4 byte\n-                int val = (int)(((byteMain & 0x07) << 18) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 3] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 3) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x07) << 18) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 3] & 0x3F));\n+                }\n \n                 WriteUtf16_WCHAR(val, pUnicodeString);\n                 lIndex += 4;\n             }\n             else if (0x00 == (byteMain & 0x04))\n             {\n                 // 5 byte\n-                int val = (int)(((byteMain & 0x03) << 24) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 18) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 3] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 4] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 4) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x03) << 24) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 18) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 3] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 4] & 0x3F));\n+                }\n \n                 WriteUtf16_WCHAR(val, pUnicodeString);\n                 lIndex += 5;\n             }\n             else\n             {\n                 // 6 byte\n-                int val = (int)(((byteMain & 0x01) << 30) |\n-                    ((pBuffer[lIndex + 1] & 0x3F) << 24) |\n-                    ((pBuffer[lIndex + 2] & 0x3F) << 18) |\n-                    ((pBuffer[lIndex + 3] & 0x3F) << 12) |\n-                    ((pBuffer[lIndex + 4] & 0x3F) << 6) |\n-                    (pBuffer[lIndex + 5] & 0x3F));\n+                int val = 0;\n+                if ((lIndex + 5) < lCount)\n+                {\n+                    val = (int)(((byteMain & 0x01) << 30) |\n+                                ((pBuffer[lIndex + 1] & 0x3F) << 24) |\n+                                ((pBuffer[lIndex + 2] & 0x3F) << 18) |\n+                                ((pBuffer[lIndex + 3] & 0x3F) << 12) |\n+                                ((pBuffer[lIndex + 4] & 0x3F) << 6) |\n+                                (pBuffer[lIndex + 5] & 0x3F));\n+                }\n \n                 WriteUtf16_WCHAR(val, pUnicodeString);\n                 lIndex += 5;"
+    },
+    {
+      "sha": "1e84f1c156965bd6f10987138d3f0810d4d7eb3c",
+      "filename": "DesktopEditor/cximage/CxImage/xfile.h",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 3,
+      "changes": 29,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxfile.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxfile.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fxfile.h?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -49,11 +49,11 @@\n class DLL_EXP CxFile\r\n {\r\n public:\r\n-\tCxFile(void) { };\r\n-\tvirtual ~CxFile() { };\r\n+\tCxFile(void) { }\r\n+\tvirtual ~CxFile() { }\r\n \r\n \tvirtual bool\tClose() = 0;\r\n-\tvirtual size_t\tRead(void *buffer, size_t size, size_t count) = 0;\r\n+\tvirtual size_t\tRead(void *buffer, size_t size, size_t count, void* limit_start = NULL, void* limit_end = NULL) = 0;\r\n \tvirtual size_t\tWrite(const void *buffer, size_t size, size_t count) = 0;\r\n \tvirtual bool\tSeek(int32_t offset, int32_t origin) = 0;\r\n \tvirtual int32_t\tTell() = 0;\r\n@@ -72,4 +72,27 @@ class DLL_EXP CxFile\n \tvirtual int32_t\tScanf(const char *format, void* output) = 0;\r\n };\r\n \r\n+static void clamp_buffer(void*& buffer, size_t& size, void* limit_start, void* limit_end)\r\n+{\r\n+\tif (NULL == limit_start || NULL == limit_end)\r\n+\t\treturn;\r\n+\r\n+\tuint8_t* _buffer = (uint8_t*)buffer;\r\n+\tuint8_t* _limit_start = (uint8_t*)limit_start;\r\n+\tuint8_t* _limit_end = (uint8_t*)limit_end;\r\n+\r\n+\tif (_buffer > _limit_end)\r\n+\t{\r\n+\t\tbuffer = limit_end;\r\n+\t\tsize = 0;\r\n+\t\treturn;\r\n+\t}\r\n+\r\n+\tif (_buffer < _limit_start)\r\n+\t\t_buffer = _limit_start;\r\n+\r\n+\tif ((_buffer + size) > _limit_end)\r\n+\t\tsize = (_limit_end - _buffer);\r\n+}\r\n+\r\n #endif //__xfile_h\r"
+    },
+    {
+      "sha": "cd8b2743e7a93549ed0567f01f6bdde65e5262f5",
+      "filename": "DesktopEditor/cximage/CxImage/ximabmp.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximabmp.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximabmp.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximabmp.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -133,15 +133,15 @@ bool CxImageBMP::Decode(CxFile * hFile)\n         if (bIsOldBmp){\r\n              // convert a old color table (3 byte entries) to a new\r\n              // color table (4 byte entries)\r\n-            hFile->Read((void*)pRgb,DibNumColors(&bmpHeader) * sizeof(RGBTRIPLE),1);\r\n+            hFile->Read((void*)pRgb,DibNumColors(&bmpHeader) * sizeof(RGBTRIPLE),1,GetDIB(),GetDIBLimit());\r\n             for (int32_t i=DibNumColors(&head)-1; i>=0; i--){\r\n                 pRgb[i].rgbRed      = ((RGBTRIPLE *)pRgb)[i].rgbtRed;\r\n                 pRgb[i].rgbBlue     = ((RGBTRIPLE *)pRgb)[i].rgbtBlue;\r\n                 pRgb[i].rgbGreen    = ((RGBTRIPLE *)pRgb)[i].rgbtGreen;\r\n                 pRgb[i].rgbReserved = (uint8_t)0;\r\n             }\r\n         } else {\r\n-            hFile->Read((void*)pRgb,DibNumColors(&bmpHeader) * sizeof(RGBQUAD),1);\r\n+            hFile->Read((void*)pRgb,DibNumColors(&bmpHeader) * sizeof(RGBQUAD),1,GetDIB(),GetDIBLimit());\r\n \t\t\t//force rgbReserved=0, to avoid problems with some WinXp bitmaps\r\n \t\t\tfor (uint32_t i=0; i<head.biClrUsed; i++) pRgb[i].rgbReserved=0;\r\n         }\r\n@@ -165,7 +165,7 @@ bool CxImageBMP::Decode(CxFile * hFile)\n \t\t\t\tint32_t imagesize=4*head.biHeight*head.biWidth;\r\n \t\t\t\tuint8_t* buff32=(uint8_t*)malloc(imagesize);\r\n \t\t\t\tif (buff32){\r\n-\t\t\t\t\thFile->Read(buff32, imagesize,1); // read in the pixels\r\n+                    hFile->Read(buff32, imagesize,1,GetDIB(),GetDIBLimit()); // read in the pixels\r\n \r\n #if CXIMAGE_SUPPORT_ALPHA\r\n \t\t\t\t\tif (dwCompression == BI_RGB){\r\n@@ -195,7 +195,7 @@ bool CxImageBMP::Decode(CxFile * hFile)\n \t\tcase 24 :\r\n \t\t\tif (bf.bfOffBits != 0L) hFile->Seek(off + bf.bfOffBits,SEEK_SET);\r\n \t\t\tif (dwCompression == BI_RGB){\r\n-\t\t\t\thFile->Read(info.pImage, head.biSizeImage,1); // read in the pixels\r\n+                hFile->Read(info.pImage, head.biSizeImage,1,GetDIB(),GetDIBLimit()); // read in the pixels\r\n \t\t\t} else cx_throw(\"unknown compression\");\r\n \t\t\tbreak;\r\n \t\tcase 16 :\r\n@@ -210,7 +210,7 @@ bool CxImageBMP::Decode(CxFile * hFile)\n \t\t\t// bf.bfOffBits required after the bitfield mask <Cui Ying Jie>\r\n \t\t\tif (bf.bfOffBits != 0L) hFile->Seek(off + bf.bfOffBits,SEEK_SET);\r\n \t\t\t// read in the pixels\r\n-\t\t\thFile->Read(info.pImage, head.biHeight*((head.biWidth+1)/2)*4,1);\r\n+            hFile->Read(info.pImage, head.biHeight*((head.biWidth+1)/2)*4,1,GetDIB(),GetDIBLimit());\r\n \t\t\t// transform into RGB\r\n \t\t\tBitfield2RGB(info.pImage,bfmask[0],bfmask[1],bfmask[2],16);\r\n \t\t\tbreak;\r\n@@ -229,7 +229,7 @@ bool CxImageBMP::Decode(CxFile * hFile)\n \t\t\t}\r\n \t\tswitch (dwCompression) {\r\n \t\t\tcase BI_RGB :\r\n-\t\t\t\thFile->Read(info.pImage, head.biSizeImage,1); // read in the pixels\r\n+                hFile->Read(info.pImage, head.biSizeImage,1,GetDIB(),GetDIBLimit()); // read in the pixels\r\n \t\t\t\tbreak;\r\n \t\t\tcase BI_RLE4 :\r\n \t\t\t{\r\n@@ -355,7 +355,7 @@ bool CxImageBMP::Decode(CxFile * hFile)\n \t\t\t\t\t\t\t\t\tbreak;\r\n \t\t\t\t\t\t\t\t}\r\n \t\t\t\t\t\t\t\tdefault :\r\n-\t\t\t\t\t\t\t\t\thFile->Read((void *)(iter.GetRow(scanline) + bits), sizeof(uint8_t) * status_byte, 1);\r\n+                                    hFile->Read((void *)(iter.GetRow(scanline) + bits), sizeof(uint8_t) * status_byte, 1,GetDIB(),GetDIBLimit());\r\n \t\t\t\t\t\t\t\t\t// align run length to even number of bytes \r\n \t\t\t\t\t\t\t\t\tif ((status_byte & 1) == 1)\r\n \t\t\t\t\t\t\t\t\t\thFile->Read(&second_byte, sizeof(uint8_t), 1);\t\t\t\t\t\t\t\t\t\t\t\t\r"
+    },
+    {
+      "sha": "6d2315d51f4d1655ef9c6d4140450653a66fb5bc",
+      "filename": "DesktopEditor/cximage/CxImage/ximage.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 14,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximage.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximage.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximage.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -21,7 +21,7 @@\n void CxImage::Startup(uint32_t imagetype)\r\n {\r\n \t//init pointers\r\n-\tpDib = pSelection = pAlpha = NULL;\r\n+    pDib = pDibLimit = pSelection = pAlpha = NULL;\r\n \tppLayers = ppFrames = NULL;\r\n \t//init structures\r\n \tmemset(&head,0,sizeof(BITMAPINFOHEADER));\r\n@@ -232,6 +232,7 @@ void* CxImage::Create(uint32_t dwWidth, uint32_t dwHeight, uint32_t wBpp, uint32\n \t\tstrcpy(info.szLastError,\"CxImage::Create can't allocate memory\");\r\n \t\treturn NULL;\r\n \t}\r\n+    pDibLimit = (void*)((uint8_t*)pDib + GetSize());\r\n \r\n \t//clear the palette\r\n \tRGBQUAD* pal=GetPalette();\r\n@@ -278,9 +279,12 @@ uint8_t* CxImage::GetBits(uint32_t row)\n /**\r\n  * \\return the size in bytes of the internal pDib object\r\n  */\r\n-int32_t CxImage::GetSize()\r\n+uint32_t CxImage::GetSize()\r\n {\r\n-\treturn head.biSize + head.biSizeImage + GetPaletteSize();\r\n+    uint64_t size64 = head.biSize + head.biSizeImage + GetPaletteSize();\r\n+    if (size64 > 0xFFFFFFFF)\r\n+        return 0xFFFFFFFF;\r\n+    return (uint32_t)size64;\r\n }\r\n ////////////////////////////////////////////////////////////////////////////////\r\n /**\r\n@@ -324,13 +328,14 @@ bool CxImage::Transfer(CxImage &from, bool bTransferFrames /*=true*/)\n \tmemcpy(&info,&from.info,sizeof(CXIMAGEINFO));\r\n \r\n \tpDib = from.pDib;\r\n+    pDib = from.pDibLimit;\r\n \tpSelection = from.pSelection;\r\n \tpAlpha = from.pAlpha;\r\n \tppLayers = from.ppLayers;\r\n \r\n \tmemset(&from.head,0,sizeof(BITMAPINFOHEADER));\r\n \tmemset(&from.info,0,sizeof(CXIMAGEINFO));\r\n-\tfrom.pDib = from.pSelection = from.pAlpha = NULL;\r\n+    from.pDib = from.pDibLimit = from.pSelection = from.pAlpha = NULL;\r\n \tfrom.ppLayers = NULL;\r\n \r\n \tif (bTransferFrames){\r\n@@ -352,6 +357,7 @@ void CxImage::Ghost(const CxImage *from)\n \t\tmemcpy(&head,&from->head,sizeof(BITMAPINFOHEADER));\r\n \t\tmemcpy(&info,&from->info,sizeof(CXIMAGEINFO));\r\n \t\tpDib = from->pDib;\r\n+        pDibLimit = from->pDibLimit;\r\n \t\tpSelection = from->pSelection;\r\n \t\tpAlpha = from->pAlpha;\r\n \t\tppLayers = from->ppLayers;\r"
+    },
+    {
+      "sha": "599ecf1af9189fa3bbb612b0b7513f2206e23a42",
+      "filename": "DesktopEditor/cximage/CxImage/ximage.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximage.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximage.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximage.h?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -289,10 +289,11 @@ typedef struct tagCxTextInfo\n //@}\r\n \r\n /** \\addtogroup Attributes */ //@{\r\n-\tint32_t\tGetSize();\r\n+\tuint32_t\tGetSize();\r\n \tuint8_t*\tGetBits(uint32_t row = 0);\r\n \tuint8_t\tGetColorType();\r\n \tvoid*\tGetDIB() const;\r\n+\tvoid*\tGetDIBLimit() const;\r\n \tuint32_t\tGetHeight() const;\r\n \tuint32_t\tGetWidth() const;\r\n \tuint32_t\tGetEffWidth() const;\r\n@@ -796,6 +797,8 @@ typedef struct tagCxTextInfo\n \tvoid bihtoh(BITMAPINFOHEADER* bih);\r\n \r\n \tvoid*\t\t\t\tpDib; //contains the header, the palette, the pixels\r\n+\tvoid*\t\t\t\tpDibLimit;\r\n+\r\n     BITMAPINFOHEADER    head; //standard header\r\n \tCXIMAGEINFO\t\t\tinfo; //extended information\r\n \tuint8_t*\t\t\tpSelection;\t//selected region\r"
+    },
+    {
+      "sha": "c9f653a66fb3c3411ac2f682a325c5b4b36c6c7b",
+      "filename": "DesktopEditor/cximage/CxImage/ximaico.cpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 10,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximaico.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximaico.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximaico.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -95,9 +95,15 @@ bool CxImageICO::Decode(CxFile *hFile)\n \t\t\t\t// read the palette\r\n \t\t\t\tRGBQUAD pal[256];\r\n \t\t\t\tif (bih.biClrUsed)\r\n-\t\t\t\t\thFile->Read(pal,bih.biClrUsed*sizeof(RGBQUAD), 1);\r\n+                {\r\n+                    DWORD _count = bih.biClrUsed; if (_count > 256) _count = 256;\r\n+                    hFile->Read(pal,_count*sizeof(RGBQUAD), 1);\r\n+                }\r\n \t\t\t\telse\r\n-\t\t\t\t\thFile->Read(pal,head.biClrUsed*sizeof(RGBQUAD), 1);\r\n+                {\r\n+                    DWORD _count = head.biClrUsed; if (_count > 256) _count = 256;\r\n+                    hFile->Read(pal,_count*sizeof(RGBQUAD), 1);\r\n+                }\r\n \r\n \t\t\t\tSetPalette(pal,head.biClrUsed);\t//palette assign\r\n \r"
+    },
+    {
+      "sha": "9ebd904e894957abcb69bf1b38f120fa02dc2099",
+      "filename": "DesktopEditor/cximage/CxImage/ximainfo.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximainfo.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximainfo.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximainfo.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -181,6 +181,10 @@ void* CxImage::GetDIB() const\n {\r\n \treturn pDib;\r\n }\r\n+void* CxImage::GetDIBLimit() const\r\n+{\r\n+    return pDibLimit;\r\n+}\r\n ////////////////////////////////////////////////////////////////////////////////\r\n uint32_t CxImage::GetHeight() const\r\n {\r"
+    },
+    {
+      "sha": "b233557e02dac5b0b27cb74764b01e4626a37472",
+      "filename": "DesktopEditor/cximage/CxImage/ximapcx.cpp",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 1,
+      "changes": 16,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximapcx.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximapcx.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximapcx.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -50,6 +50,9 @@ bool CxImagePCX::Decode(CxFile *hFile)\n \tinfo.xDPI = pcxHeader.Hres;\r\n \tinfo.yDPI = pcxHeader.Vres;\r\n \r\n+    if (Width <= 0 || Height <= 0)\r\n+        cx_throw(\"Error: Not a PCX file\");\r\n+\r\n \tif (info.nEscape == -1){\r\n \t\thead.biWidth = Width;\r\n \t\thead.biHeight= Height;\r\n@@ -76,7 +79,11 @@ bool CxImagePCX::Decode(CxFile *hFile)\n \r\n \t//Read the image and check if it's ok\r\n     nbytes = pcxHeader.BytesPerLine * pcxHeader.ColorPlanes * Height;\r\n+    uint32_t pcximage_size = nbytes;\r\n     lpHead1 = pcximage = (uint8_t*)malloc(nbytes);\r\n+    if (!pcximage)\r\n+        cx_throw(\"Cancelled\");\r\n+\r\n     while (nbytes > 0){\r\n \t\tif (hFile == NULL || hFile->Eof()) cx_throw(\"corrupted PCX\");\r\n \r\n@@ -119,6 +126,9 @@ bool CxImagePCX::Decode(CxFile *hFile)\n \tfor (uint32_t idx=0; idx<head.biClrUsed; idx++) SetPaletteColor((uint8_t)idx,ColorMap[idx][0],ColorMap[idx][1],ColorMap[idx][2]);\r\n \r\n     lpHead2 = pcxpixels = (uint8_t *)malloc(Width + pcxHeader.BytesPerLine * 8);\r\n+    if (!pcxpixels)\r\n+        cx_throw(\"Cancelled\");\r\n+\r\n     // Convert the image\r\n     for (y = 0; y < Height; y++){\r\n \r\n@@ -138,7 +148,11 @@ bool CxImagePCX::Decode(CxFile *hFile)\n \t\t} else if (pcxHeader.ColorPlanes == 4 && pcxHeader.BitsPerPixel == 8){\r\n \t\t\tfor (x = 0; x < Width; x++){\r\n \t\t\t\tSetPixelColor(x,y2,RGB(pcxplanes[x],pcxplanes[pcxHeader.BytesPerLine + x],pcxplanes[2*pcxHeader.BytesPerLine + x]));\r\n-\t\t\t\tAlphaSet(x,y2,pcxplanes[3*pcxHeader.BytesPerLine + x]);\r\n+\r\n+                uint32_t alphaIndex = 3*pcxHeader.BytesPerLine + x;\r\n+\r\n+                if (alphaIndex < pcximage_size)\r\n+                    AlphaSet(x,y2,pcxplanes[alphaIndex]);\r\n \t\t\t}\r\n \t\t\tcontinue;\r\n #endif //CXIMAGE_SUPPORT_ALPHA\r"
+    },
+    {
+      "sha": "2cfd5bbf6738890dbe7945ad3454c4f968cb4080",
+      "filename": "DesktopEditor/cximage/CxImage/ximatif.cpp",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 4,
+      "changes": 19,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximatif.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fximatif.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fximatif.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -301,14 +301,16 @@ bool CxImageTIF::Decode(CxFile * hFile)\n \t\t\ttilebuf = (uint8_t*)malloc(TIFFTileSize(m_tif));\r\n \t\t}\r\n \t\t\r\n-\t\tbits = (uint8_t*)malloc(bitspersample==16? bitsize*2 : bitsize); // * VK\r\n+        int32_t bitsize_correct = bitspersample==16? bitsize*2 : bitsize;\r\n+        bits = (uint8_t*)malloc(bitsize_correct); // * VK\r\n \t\tuint8_t * bits16 = NULL;\t\t\t\t\t\t\t\t\t\t  // + VK\r\n \t\tint32_t line16    = 0;\t\t\t\t\t\t\t\t\t\t\t  // + VK\r\n \r\n \t\tif (!tiled_image && bitspersample==16) {\t\t\t\t\t  // + VK +\r\n \t\t\tline16 = line;\r\n \t\t\tline   = CalculateLine(width, 8 * samplesperpixel);\r\n \t\t\tbits16 = bits;\r\n+            bitsize_correct = bitsize;\r\n \t\t\tbits   = (uint8_t*)malloc(bitsize);\r\n \t\t}\r\n \r\n@@ -454,9 +456,18 @@ bool CxImageTIF::Decode(CxFile * hFile)\n \t\t\t\t\tdouble p,cx,cy,cz,cr,cg,cb;\r\n \t\t\t\t\twhile (ii</*line*/width){\t\t// * VK\r\n \t\t\t\t\t\tbitsoffset = ii*samplesperpixel+offset;\r\n-\t\t\t\t\t\tl=bits[bitsoffset];\r\n-\t\t\t\t\t\ta=bits[bitsoffset+1];\r\n-\t\t\t\t\t\tb=bits[bitsoffset+2];\r\n+                        if (bitsoffset + 2 < bitsize_correct)\r\n+                        {\r\n+                            l=bits[bitsoffset];\r\n+                            a=bits[bitsoffset+1];\r\n+                            b=bits[bitsoffset+2];\r\n+                        }\r\n+                        else\r\n+                        {\r\n+                            l=0;\r\n+                            a=0;\r\n+                            b=0;\r\n+                        }\r\n \t\t\t\t\t\tif (a>127) a-=256;\r\n \t\t\t\t\t\tif (b>127) b-=256;\r\n \t\t\t\t\t\t// lab to xyz\r"
+    },
+    {
+      "sha": "e6b8334c08c9c38a6cb3c3aed2f5c7443a59d7ef",
+      "filename": "DesktopEditor/cximage/CxImage/xiofile.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxiofile.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxiofile.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fxiofile.h?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -59,9 +59,10 @@ class DLL_EXP CxIOFile : public CxFile\n \t\treturn (bool)(iErr==0);\r\n \t}\r\n //////////////////////////////////////////////////////////\r\n-\tvirtual size_t\tRead(void *buffer, size_t size, size_t count)\r\n+\tvirtual size_t\tRead(void *buffer, size_t size, size_t count, void* limit_start = NULL, void* limit_end = NULL)\r\n \t{\r\n \t\tif (!m_fp) return 0;\r\n+\t\tclamp_buffer(buffer, size, limit_start, limit_end);\r\n \t\treturn fread(buffer, size, count, m_fp);\r\n \t}\r\n //////////////////////////////////////////////////////////\r"
+    },
+    {
+      "sha": "180184db22c1825d072dad1da2ab0d25bcec72bf",
+      "filename": "DesktopEditor/cximage/CxImage/xmemfile.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -45,15 +45,15 @@ uint8_t* CxMemFile::GetBuffer(bool bDetachBuffer)\n \treturn m_pBuffer;\r\n }\r\n //////////////////////////////////////////////////////////\r\n-size_t CxMemFile::Read(void *buffer, size_t size, size_t count)\r\n+size_t CxMemFile::Read(void *buffer, size_t size, size_t count, void* limit_start, void* limit_end)\r\n {\r\n \tif (buffer==NULL) return 0;\r\n \r\n \tif (m_pBuffer==NULL) return 0;\r\n \tif (m_Position >= (int32_t)m_Size){\r\n \t\tm_bEOF = true;\r\n \t\treturn 0;\r\n-\t}\r\n+    }\r\n \r\n \tint32_t nCount = (int32_t)(count*size);\r\n \tif (nCount == 0) return 0;\r"
+    },
+    {
+      "sha": "385d16b30ee59fd55e78bca48091657e8c321c66",
+      "filename": "DesktopEditor/cximage/CxImage/xmemfile.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2FCxImage%2Fxmemfile.h?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -14,7 +14,7 @@ class DLL_EXP CxMemFile : public CxFile\n \tuint8_t* GetBuffer(bool bDetachBuffer = true);\r\n \r\n \tvirtual bool\tClose();\r\n-\tvirtual size_t\tRead(void *buffer, size_t size, size_t count);\r\n+\tvirtual size_t\tRead(void *buffer, size_t size, size_t count, void* limit_start = NULL, void* limit_end = NULL);\r\n \tvirtual size_t\tWrite(const void *buffer, size_t size, size_t count);\r\n \tvirtual bool\tSeek(int32_t offset, int32_t origin);\r\n \tvirtual int32_t\tTell();\r"
+    },
+    {
+      "sha": "df986bcc66256650cd2f7fa3396beac04334aedb",
+      "filename": "DesktopEditor/cximage/jasper/jpc/jpc_dec.c",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Fjasper%2Fjpc%2Fjpc_dec.c",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Fjasper%2Fjpc%2Fjpc_dec.c",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2Fjasper%2Fjpc%2Fjpc_dec.c?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -2171,7 +2171,12 @@ int jpc_ppxstab_insert(jpc_ppxstab_t *tab, jpc_ppxstabent_t *ent)\n \tint inspt;\n \tint i;\n \n-\tfor (i = 0; i < tab->numents; ++i) {\n+    // check on MAX_INT\n+    int correct_num_ents = tab->numents;\n+    if (correct_num_ents > 0x7FFFFFFE)\n+        correct_num_ents = 0x7FFFFFFE;\n+\n+    for (i = 0; i < correct_num_ents; ++i) {\n \t\tif (tab->ents[i]->ind > ent->ind) {\n \t\t\tbreak;\n \t\t}"
+    },
+    {
+      "sha": "73f4ab3758684af48ecadd9d059ef1795033b209",
+      "filename": "DesktopEditor/cximage/raw/libdcr.c",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 7,
+      "changes": 25,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Fraw%2Flibdcr.c",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Fraw%2Flibdcr.c",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2Fraw%2Flibdcr.c?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -3518,20 +3518,21 @@ void DCR_CLASS dcr_cam_xyz_coeff (DCRAW* p, double cam_xyz[4][3])\n {\r\n \tdouble cam_rgb[4][3], inverse[4][3], num;\r\n \tint i, j, k;\r\n-\r\n-\tfor (i=0; i < p->colors; i++)\t\t/* Multiply out XYZ colorspace */\r\n+    int max_colors = p->colors;\r\n+    if (max_colors > 4) max_colors = 4;\r\n+    for (i=0; i < max_colors; i++)\t\t/* Multiply out XYZ colorspace */\r\n \t\tfor (j=0; j < 3; j++)\r\n \t\t\tfor (cam_rgb[i][j] = k=0; k < 3; k++)\r\n \t\t\t\tcam_rgb[i][j] += cam_xyz[i][k] * xyz_rgb[k][j];\r\n \r\n-\tfor (i=0; i < p->colors; i++) {\t\t/* Normalize cam_rgb so that */\r\n+    for (i=0; i < max_colors; i++) {\t\t/* Normalize cam_rgb so that */\r\n \t\tfor (num=j=0; j < 3; j++)\t\t/* cam_rgb * (1,1,1) is (1,1,1,1) */\r\n \t\t\tnum += cam_rgb[i][j];\r\n \t\tfor (j=0; j < 3; j++)\r\n \t\t\tcam_rgb[i][j] /= num;\r\n \t\tp->pre_mul[i] = 1 / (float)num;\r\n \t}\r\n-\tdcr_pseudoinverse (cam_rgb, inverse, p->colors);\r\n+    dcr_pseudoinverse (cam_rgb, inverse, max_colors);\r\n \tfor (p->raw_color = i=0; i < 3; i++)\r\n \t\tfor (j=0; j < p->colors; j++)\r\n \t\t\tp->rgb_cam[i][j] = (float)inverse[j][i];\r\n@@ -5391,16 +5392,20 @@ void DCR_CLASS dcr_parse_tiff (DCRAW* p, int base)\n \t\tp->tiff_ifd[raw].phint == 1) p->is_raw = 0;\r\n \tif (p->tiff_bps == 8 && p->tiff_samples == 4) p->is_raw = 0;\r\n \tfor (i=0; i < (int)p->tiff_nifds; i++)\r\n+    {\r\n+        int sqr_1 = SQR(p->tiff_ifd[i].bps+1); if (sqr_1 == 0) sqr_1 = 1;\r\n+        int sqr_2 = SQR(p->thumb_misc+1); if (sqr_2 == 0) sqr_2 = 1;\r\n \t\tif (i != raw && p->tiff_ifd[i].samples == max_samp &&\r\n-\t\t\tp->tiff_ifd[i].width * p->tiff_ifd[i].height / SQR(p->tiff_ifd[i].bps+1) >\r\n-\t\t\t(int)(p->thumb_width *       p->thumb_height / SQR(p->thumb_misc+1))) {\r\n+            p->tiff_ifd[i].width * p->tiff_ifd[i].height / sqr_1 >\r\n+            (int)(p->thumb_width *       p->thumb_height / sqr_2)) {\r\n \t\t\tp->thumb_width  = p->tiff_ifd[i].width;\r\n \t\t\tp->thumb_height = p->tiff_ifd[i].height;\r\n \t\t\tp->thumb_offset = p->tiff_ifd[i].offset;\r\n \t\t\tp->thumb_length = p->tiff_ifd[i].bytes;\r\n \t\t\tp->thumb_misc   = p->tiff_ifd[i].bps;\r\n \t\t\tthm = i;\r\n \t\t}\r\n+    }\r\n \tif (thm >= 0) {\r\n \t\tp->thumb_misc |= p->tiff_ifd[thm].samples << 5;\r\n \t\tswitch (p->tiff_ifd[thm].comp) {\r\n@@ -5845,10 +5850,16 @@ void DCR_CLASS dcr_parse_riff(DCRAW* p)\n \t{ \"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\" };\r\n \tstruct tm t;\r\n \r\n+    if (dcr_feof(p->obj_))\r\n+    {\r\n+        fprintf (stderr,_(\"Unexpected end of file\\n\"));\r\n+        return;\r\n+    }\r\n+\r\n \tp->order = 0x4949;\r\n \tdcr_fread(p->obj_, tag, 4, 1);\r\n \tsize = dcr_get4(p);\r\n-\tend = dcr_ftell(p->obj_) + size;\r\n+    end = dcr_ftell(p->obj_) + size;\r\n \tif (!memcmp(tag,\"RIFF\",4) || !memcmp(tag,\"LIST\",4)) {\r\n \t\tdcr_get4(p);\r\n \t\twhile (dcr_ftell(p->obj_)+7 < (long)end)\r"
+    },
+    {
+      "sha": "408b9980f4655a0647cea3ec54727cf70b58d74b",
+      "filename": "DesktopEditor/cximage/tiff/tif_dirread.c",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Ftiff%2Ftif_dirread.c",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Ftiff%2Ftif_dirread.c",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2Ftiff%2Ftif_dirread.c?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -205,7 +205,7 @@ TIFFReadDirectory(TIFF* tif)\n \t\t    && fix < tif->tif_nfields) {\n \t\t\tif (fip->field_type == TIFF_ANY)\t/* wildcard */\n \t\t\t\tbreak;\n-\t\t\tfip = tif->tif_fieldinfo[++fix];\n+            ++fix; fip = (fix >= tif->tif_nfields) ? 0 : tif->tif_fieldinfo[++fix];\n \t\t\tif (fix >= tif->tif_nfields ||\n \t\t\t    fip->field_tag != dp->tdir_tag) {\n \t\t\t\tTIFFWarningExt(tif->tif_clientdata, module,\n@@ -333,7 +333,7 @@ TIFFReadDirectory(TIFF* tif)\n \t\t    && fix < tif->tif_nfields) {\n \t\t\tif (fip->field_type == TIFF_ANY)\t/* wildcard */\n \t\t\t\tbreak;\n-\t\t\tfip = tif->tif_fieldinfo[++fix];\n+            ++fix; fip = (fix >= tif->tif_nfields) ? 0 : tif->tif_fieldinfo[++fix];\n \t\t\tif (fix >= tif->tif_nfields ||\n \t\t\t    fip->field_tag != dp->tdir_tag) {\n \t\t\t\tTIFFWarningExt(tif->tif_clientdata, module,\n@@ -887,7 +887,7 @@ TIFFReadCustomDirectory(TIFF* tif, toff_t diroff,\n                        && fix < tif->tif_nfields) {\n \t\t\tif (fip->field_type == TIFF_ANY)\t/* wildcard */\n \t\t\t\tbreak;\n-                        fip = tif->tif_fieldinfo[++fix];\n+            ++fix; fip = (fix >= tif->tif_nfields) ? 0 : tif->tif_fieldinfo[++fix];\n \t\t\tif (fix >= tif->tif_nfields ||\n \t\t\t    fip->field_tag != dp->tdir_tag) {\n \t\t\t\tTIFFWarningExt(tif->tif_clientdata, module,"
+    },
+    {
+      "sha": "dea897484f56d7a37e73afa1d242226b15c2de96",
+      "filename": "DesktopEditor/cximage/tiff/tif_ojpeg.c",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Ftiff%2Ftif_ojpeg.c",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Fcximage%2Ftiff%2Ftif_ojpeg.c",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Fcximage%2Ftiff%2Ftif_ojpeg.c?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -1920,7 +1920,9 @@ OJPEGReadBufferFill(OJPEGState* sp)\n \t\t\t\t\t\t\tsp->in_buffer_file_pos=0;\n \t\t\t\t\t\telse\n \t\t\t\t\t\t{\n-\t\t\t\t\t\t\tsp->in_buffer_file_togo=sp->tif->tif_dir.td_stripbytecount[sp->in_buffer_next_strile];  \n+                            sp->in_buffer_file_togo=0;\n+                            if (sp->tif->tif_dir.td_stripbytecount)\n+                                sp->in_buffer_file_togo=sp->tif->tif_dir.td_stripbytecount[sp->in_buffer_next_strile];\n \t\t\t\t\t\t\tif (sp->in_buffer_file_togo==0)\n \t\t\t\t\t\t\t\tsp->in_buffer_file_pos=0;\n \t\t\t\t\t\t\telse if (sp->in_buffer_file_pos+sp->in_buffer_file_togo>sp->file_size)"
+    },
+    {
+      "sha": "b2df678b14b8d737451aaae938aafdc9116e0690",
+      "filename": "DesktopEditor/fontengine/fontconverter/FontFileType1.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -633,13 +633,16 @@ namespace NSFontConverter\n         // (\u043f\u0440\u043e\u0431\u0435\u043b, \u0442\u0430\u0431, \u043f\u0435\u0440\u0435\u043d\u043e\u0441 \u043a\u0430\u0440\u0435\u0442\u043a\u0438 \u0438\u043b\u0438 \u043f\u0435\u0440\u0435\u043d\u043e\u0441 \u0441\u0442\u0440\u043e\u043a\u0438).\n         unsigned char *sCur = (unsigned char*)(*ppEexecBuffer);\n         while( sCur < (unsigned char*)(*ppEexecBuffer) + nLen && ( ' ' == *sCur || '\\t' == *sCur || '\\r' == *sCur || '\\n' == *sCur ) )\n+        {\n             ++sCur;\n+            --nLen;\n+        }\n \n         // \u0422\u0435\u043f\u0435\u0440\u044c \u043d\u0430\u043c \u043d\u0430\u0434\u043e \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c \u0432 \u043a\u0430\u043a\u043e\u043c \u0444\u043e\u0440\u043c\u0430\u0442\u0435 \u0443 \u043d\u0430\u0441 \u0434\u0430\u043d\u043d\u044b\u0435: ASKII \u0438\u043b\u0438 \u0431\u0438\u043d\u0430\u0440\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435.\n         // \u0415\u0441\u043b\u0438 \u043f\u0435\u0440\u0432\u044b\u0435 \u0447\u0435\u0442\u044b\u0440\u0435 \u0431\u0430\u0439\u0442\u0430 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0448\u0435\u0441\u0442\u043d\u0430\u0434\u0446\u0430\u0442\u0438\u0440\u0438\u0447\u043d\u044b\u043c\u0438 \u0441\u0438\u043c\u0432\u043e\u043b\u0430\u043c\u0438, \u0437\u043d\u0430\u0447\u0438\u0442, \u043a\u043e\u0434\u0438\u0440\u043e\u0432\u043a\u0430 ASCII.\n         bool bASCII = false;\n \n-        if ( isxdigit( sCur[0] ) && isxdigit( sCur[1] ) && isxdigit( sCur[2] ) && isxdigit( sCur[3] ) )\n+        if ( nLen > 3 && isxdigit( sCur[0] ) && isxdigit( sCur[1] ) && isxdigit( sCur[2] ) && isxdigit( sCur[3] ) )\n             bASCII = true;\n \n         if ( bASCII )"
+    },
+    {
+      "sha": "a126b91a15c77a217bb00bc70011f0daa01a5e58",
+      "filename": "DesktopEditor/fontengine/fontconverter/FontFileType1.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/88cf60a3ed4a2b40d71a1c2ced72fa3902a30967/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.h?ref=88cf60a3ed4a2b40d71a1c2ced72fa3902a30967",
+      "patch": "@@ -259,6 +259,8 @@ namespace NSFontConverter\n                 }\n \n                 sBuffer[nBufPos++] = unChar;\n+                if (nBufPos >= c_nNumLimit)\n+                    break;\n             }\n \n             if ( 0 != sBuffer[0] && nCount > 0 )"
+    }
+  ]
+}

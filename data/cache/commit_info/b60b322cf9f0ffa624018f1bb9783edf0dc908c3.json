@@ -1,0 +1,101 @@
+{
+  "sha": "b60b322cf9f0ffa624018f1bb9783edf0dc908c3",
+  "node_id": "MDY6Q29tbWl0ODI5MTM2MzA6YjYwYjMyMmNmOWYwZmZhNjI0MDE4ZjFiYjk3ODNlZGYwZGM5MDhjMw==",
+  "commit": {
+    "author": {
+      "name": "J\u00f6rn Heusipp",
+      "email": "manx@openmpt.org",
+      "date": "2018-02-03T16:14:38Z"
+    },
+    "committer": {
+      "name": "J\u00f6rn Heusipp",
+      "email": "manx@openmpt.org",
+      "date": "2018-02-03T16:14:38Z"
+    },
+    "message": "[Sec] STP: Possible out-of-bounds memory read with malformed STP files (caught with afl-fuzz).\nPatch-by: sagamusix\n(originally committed as part of r9568)\n\n\ngit-svn-id: https://source.openmpt.org/svn/openmpt/branches/OpenMPT-1.27@9576 56274372-70c3-4bfc-bfc3-4c3a0b034d27",
+    "tree": {
+      "sha": "29fdb1ff76242089ece283fa2fe9276b248faf71",
+      "url": "https://api.github.com/repos/OpenMPT/openmpt/git/trees/29fdb1ff76242089ece283fa2fe9276b248faf71"
+    },
+    "url": "https://api.github.com/repos/OpenMPT/openmpt/git/commits/b60b322cf9f0ffa624018f1bb9783edf0dc908c3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/OpenMPT/openmpt/commits/b60b322cf9f0ffa624018f1bb9783edf0dc908c3",
+  "html_url": "https://github.com/OpenMPT/openmpt/commit/b60b322cf9f0ffa624018f1bb9783edf0dc908c3",
+  "comments_url": "https://api.github.com/repos/OpenMPT/openmpt/commits/b60b322cf9f0ffa624018f1bb9783edf0dc908c3/comments",
+  "author": {
+    "login": "manxorist",
+    "id": 6185338,
+    "node_id": "MDQ6VXNlcjYxODUzMzg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6185338?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/manxorist",
+    "html_url": "https://github.com/manxorist",
+    "followers_url": "https://api.github.com/users/manxorist/followers",
+    "following_url": "https://api.github.com/users/manxorist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/manxorist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/manxorist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/manxorist/subscriptions",
+    "organizations_url": "https://api.github.com/users/manxorist/orgs",
+    "repos_url": "https://api.github.com/users/manxorist/repos",
+    "events_url": "https://api.github.com/users/manxorist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/manxorist/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "manxorist",
+    "id": 6185338,
+    "node_id": "MDQ6VXNlcjYxODUzMzg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6185338?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/manxorist",
+    "html_url": "https://github.com/manxorist",
+    "followers_url": "https://api.github.com/users/manxorist/followers",
+    "following_url": "https://api.github.com/users/manxorist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/manxorist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/manxorist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/manxorist/subscriptions",
+    "organizations_url": "https://api.github.com/users/manxorist/orgs",
+    "repos_url": "https://api.github.com/users/manxorist/repos",
+    "events_url": "https://api.github.com/users/manxorist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/manxorist/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73e5145ad7a944ad27d5f604d4f0c816629ccc1e",
+      "url": "https://api.github.com/repos/OpenMPT/openmpt/commits/73e5145ad7a944ad27d5f604d4f0c816629ccc1e",
+      "html_url": "https://github.com/OpenMPT/openmpt/commit/73e5145ad7a944ad27d5f604d4f0c816629ccc1e"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 9,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "4389a4f357c493f8c64fc488db3589b0b5cef3ca",
+      "filename": "soundlib/Load_stp.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 4,
+      "changes": 13,
+      "blob_url": "https://github.com/OpenMPT/openmpt/blob/b60b322cf9f0ffa624018f1bb9783edf0dc908c3/soundlib%2FLoad_stp.cpp",
+      "raw_url": "https://github.com/OpenMPT/openmpt/raw/b60b322cf9f0ffa624018f1bb9783edf0dc908c3/soundlib%2FLoad_stp.cpp",
+      "contents_url": "https://api.github.com/repos/OpenMPT/openmpt/contents/soundlib%2FLoad_stp.cpp?ref=b60b322cf9f0ffa624018f1bb9783edf0dc908c3",
+      "patch": "@@ -108,7 +108,12 @@ static TEMPO ConvertTempo(uint16 ciaSpeed)\n \n static void ConvertLoopSlice(ModSample &src, ModSample &dest, SmpLength start, SmpLength len, bool loop)\n {\n-\tif(!src.HasSampleData()) return;\n+\tif(!src.HasSampleData()\n+\t\t|| start >= src.nLength\n+\t\t|| src.nLength - start < len)\n+\t{\n+\t\treturn;\n+\t}\n \n \tdest.FreeSample();\n \tdest = src;\n@@ -156,9 +161,9 @@ static void ConvertLoopSequence(ModSample &smp, STPLoopList &loopList)\n \n \t\t// If adding this loop would cause the sample length to exceed maximum,\n \t\t// then limit and bail out\n-\t\tif((newSmp.nLength + info.loopLength > MAX_SAMPLE_LENGTH) ||\n-\t\t   (info.loopLength > MAX_SAMPLE_LENGTH) ||\n-\t\t   (info.loopStart + info.loopLength > smp.nLength))\n+\t\tif(info.loopStart >= smp.nLength\n+\t\t\t|| smp.nLength - info.loopStart < info.loopLength\n+\t\t\t|| newSmp.nLength > MAX_SAMPLE_LENGTH - info.loopLength)\n \t\t{\n \t\t\tnumLoops = i;\n \t\t\tbreak;"
+    }
+  ]
+}

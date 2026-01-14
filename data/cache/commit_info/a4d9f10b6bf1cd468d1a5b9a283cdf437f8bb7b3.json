@@ -1,0 +1,113 @@
+{
+  "sha": "a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+  "node_id": "MDY6Q29tbWl0MTQxODk4MzU1OmE0ZDlmMTBiNmJmMWNkNDY4ZDFhNWI5YTI4M2NkZjQzN2Y4YmI3YjM=",
+  "commit": {
+    "author": {
+      "name": "Jakob Krigovsky",
+      "email": "jakob@krigovsky.com",
+      "date": "2018-07-22T14:46:20Z"
+    },
+    "committer": {
+      "name": "Jakob Krigovsky",
+      "email": "jakob@krigovsky.com",
+      "date": "2018-07-22T14:46:20Z"
+    },
+    "message": "Throw TypeError if argument is not a buffer",
+    "tree": {
+      "sha": "0a7bddce3187ca548207436d35fe736ca2b2f563",
+      "url": "https://api.github.com/repos/sonicdoe/ced/git/trees/0a7bddce3187ca548207436d35fe736ca2b2f563"
+    },
+    "url": "https://api.github.com/repos/sonicdoe/ced/git/commits/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/sonicdoe/ced/commits/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+  "html_url": "https://github.com/sonicdoe/ced/commit/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+  "comments_url": "https://api.github.com/repos/sonicdoe/ced/commits/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3/comments",
+  "author": {
+    "login": "sonicdoe",
+    "id": 652793,
+    "node_id": "MDQ6VXNlcjY1Mjc5Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/652793?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sonicdoe",
+    "html_url": "https://github.com/sonicdoe",
+    "followers_url": "https://api.github.com/users/sonicdoe/followers",
+    "following_url": "https://api.github.com/users/sonicdoe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sonicdoe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sonicdoe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sonicdoe/subscriptions",
+    "organizations_url": "https://api.github.com/users/sonicdoe/orgs",
+    "repos_url": "https://api.github.com/users/sonicdoe/repos",
+    "events_url": "https://api.github.com/users/sonicdoe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sonicdoe/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sonicdoe",
+    "id": 652793,
+    "node_id": "MDQ6VXNlcjY1Mjc5Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/652793?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sonicdoe",
+    "html_url": "https://github.com/sonicdoe",
+    "followers_url": "https://api.github.com/users/sonicdoe/followers",
+    "following_url": "https://api.github.com/users/sonicdoe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sonicdoe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sonicdoe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sonicdoe/subscriptions",
+    "organizations_url": "https://api.github.com/users/sonicdoe/orgs",
+    "repos_url": "https://api.github.com/users/sonicdoe/repos",
+    "events_url": "https://api.github.com/users/sonicdoe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sonicdoe/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8545f46ea4da3517b98fc49a9086b0e107f7758c",
+      "url": "https://api.github.com/repos/sonicdoe/ced/commits/8545f46ea4da3517b98fc49a9086b0e107f7758c",
+      "html_url": "https://github.com/sonicdoe/ced/commit/8545f46ea4da3517b98fc49a9086b0e107f7758c"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 10,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d1e177bb7c05472e1456939c20a188ea973d4841",
+      "filename": "index.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/sonicdoe/ced/blob/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3/index.js",
+      "raw_url": "https://github.com/sonicdoe/ced/raw/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3/index.js",
+      "contents_url": "https://api.github.com/repos/sonicdoe/ced/contents/index.js?ref=a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+      "patch": "@@ -3,5 +3,9 @@\n const bindings = require('bindings')('ced.node')\n \n module.exports = buf => {\n+  if (!Buffer.isBuffer(buf)) {\n+    throw new TypeError('Expected a buffer')\n+  }\n+\n   return bindings.detectEncoding(buf)\n }"
+    },
+    {
+      "sha": "b84ae199536a5f0d7666b9184763cb34db7032fd",
+      "filename": "test.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/sonicdoe/ced/blob/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3/test.js",
+      "raw_url": "https://github.com/sonicdoe/ced/raw/a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3/test.js",
+      "contents_url": "https://api.github.com/repos/sonicdoe/ced/contents/test.js?ref=a4d9f10b6bf1cd468d1a5b9a283cdf437f8bb7b3",
+      "patch": "@@ -10,3 +10,9 @@ test('detects ASCII', t => {\n   const buf = Buffer.from('t\u00e9st', 'ascii')\n   t.is(ced(buf), 'ASCII')\n })\n+\n+test('throws a TypeError if the argument is not a buffer', t => {\n+  t.throws(() => {\n+    ced('t\u00e9st')\n+  }, TypeError)\n+})"
+    }
+  ]
+}

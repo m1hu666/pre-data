@@ -1,0 +1,101 @@
+{
+  "sha": "f791a9313c58a911ce09f465f4bba594243b29ec",
+  "node_id": "C_kwDOAOWKhtoAKGY3OTFhOTMxM2M1OGE5MTFjZTA5ZjQ2NWY0YmJhNTk0MjQzYjI5ZWM",
+  "commit": {
+    "author": {
+      "name": "Dave Horton",
+      "email": "daveh@beachdognet.com",
+      "date": "2022-11-23T21:07:49Z"
+    },
+    "committer": {
+      "name": "Dave Horton",
+      "email": "daveh@beachdognet.com",
+      "date": "2022-11-23T21:07:49Z"
+    },
+    "message": "make drachtio log file not globally readable (#241)",
+    "tree": {
+      "sha": "c855e63769238098cbae6fb054a2c3936a17875d",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/git/trees/c855e63769238098cbae6fb054a2c3936a17875d"
+    },
+    "url": "https://api.github.com/repos/drachtio/drachtio-server/git/commits/f791a9313c58a911ce09f465f4bba594243b29ec",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/f791a9313c58a911ce09f465f4bba594243b29ec",
+  "html_url": "https://github.com/drachtio/drachtio-server/commit/f791a9313c58a911ce09f465f4bba594243b29ec",
+  "comments_url": "https://api.github.com/repos/drachtio/drachtio-server/commits/f791a9313c58a911ce09f465f4bba594243b29ec/comments",
+  "author": {
+    "login": "davehorton",
+    "id": 1884973,
+    "node_id": "MDQ6VXNlcjE4ODQ5NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1884973?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davehorton",
+    "html_url": "https://github.com/davehorton",
+    "followers_url": "https://api.github.com/users/davehorton/followers",
+    "following_url": "https://api.github.com/users/davehorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davehorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davehorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davehorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/davehorton/orgs",
+    "repos_url": "https://api.github.com/users/davehorton/repos",
+    "events_url": "https://api.github.com/users/davehorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davehorton/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davehorton",
+    "id": 1884973,
+    "node_id": "MDQ6VXNlcjE4ODQ5NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1884973?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davehorton",
+    "html_url": "https://github.com/davehorton",
+    "followers_url": "https://api.github.com/users/davehorton/followers",
+    "following_url": "https://api.github.com/users/davehorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davehorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davehorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davehorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/davehorton/orgs",
+    "repos_url": "https://api.github.com/users/davehorton/repos",
+    "events_url": "https://api.github.com/users/davehorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davehorton/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "860f025468feb31c43227153d8fb3f34210a522e",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/860f025468feb31c43227153d8fb3f34210a522e",
+      "html_url": "https://github.com/drachtio/drachtio-server/commit/860f025468feb31c43227153d8fb3f34210a522e"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 8,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c63ef1cc3cea7b4d9261baf2b41857297307158a",
+      "filename": "src/controller.cpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/drachtio/drachtio-server/blob/f791a9313c58a911ce09f465f4bba594243b29ec/src%2Fcontroller.cpp",
+      "raw_url": "https://github.com/drachtio/drachtio-server/raw/f791a9313c58a911ce09f465f4bba594243b29ec/src%2Fcontroller.cpp",
+      "contents_url": "https://api.github.com/repos/drachtio/drachtio-server/contents/src%2Fcontroller.cpp?ref=f791a9313c58a911ce09f465f4bba594243b29ec",
+      "patch": "@@ -68,6 +68,7 @@ THE SOFTWARE.\n #include <boost/log/sinks.hpp>\n #include <boost/log/sources/logger.hpp>\n #include <boost/algorithm/string/replace.hpp>\n+#include <boost/filesystem.hpp>\n \n #if defined(__clang__)\n     #pragma clang diagnostic pop\n@@ -1006,6 +1007,13 @@ namespace drachtio {\n                     ));\n                                \n                     logging::core::get()->add_sink(m_sinkTextFile);\n+                    boost::filesystem::permissions(name,\n+                        boost::filesystem::perms::owner_read |\n+                        boost::filesystem::perms::owner_write |\n+                        boost::filesystem::perms::group_read |\n+                        boost::filesystem::perms::group_write\n+                    );\n+\n                 }\n                 logging::core::get()->set_filter(\n                    expr::attr<severity_levels>(\"Severity\") <= m_current_severity_threshold"
+    }
+  ]
+}

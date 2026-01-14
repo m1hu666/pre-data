@@ -1,0 +1,269 @@
+{
+  "sha": "cb4ef0b09200c720dfdb07e097092dd105450343",
+  "node_id": "C_kwDOA-MW79oAKGNiNGVmMGIwOTIwMGM3MjBkZmRiMDdlMDk3MDkyZGQxMDU0NTAzNDM",
+  "commit": {
+    "author": {
+      "name": "Pradeep Rao",
+      "email": "pcrao@google.com",
+      "date": "2022-06-08T23:08:55Z"
+    },
+    "committer": {
+      "name": "Pradeep Rao",
+      "email": "pcrao@google.com",
+      "date": "2022-06-08T23:08:55Z"
+    },
+    "message": "decompressors: stop decompressing upon excessive compression ratio (#733)\n\nSigned-off-by: Dmitry Rozhkov <dmitry.rozhkov@intel.com>\nCo-authored-by: Ryan Hamilton <rch@google.com>\nSigned-off-by: Matt Klein <mklein@lyft.com>\nSigned-off-by: Pradeep Rao <pcrao@google.com>",
+    "tree": {
+      "sha": "851daac47e41a82887fff8d576a016704c729fec",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/851daac47e41a82887fff8d576a016704c729fec"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/cb4ef0b09200c720dfdb07e097092dd105450343",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/cb4ef0b09200c720dfdb07e097092dd105450343",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/cb4ef0b09200c720dfdb07e097092dd105450343",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/cb4ef0b09200c720dfdb07e097092dd105450343/comments",
+  "author": {
+    "login": "pradeepcrao",
+    "id": 84025829,
+    "node_id": "MDQ6VXNlcjg0MDI1ODI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84025829?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pradeepcrao",
+    "html_url": "https://github.com/pradeepcrao",
+    "followers_url": "https://api.github.com/users/pradeepcrao/followers",
+    "following_url": "https://api.github.com/users/pradeepcrao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pradeepcrao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pradeepcrao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pradeepcrao/subscriptions",
+    "organizations_url": "https://api.github.com/users/pradeepcrao/orgs",
+    "repos_url": "https://api.github.com/users/pradeepcrao/repos",
+    "events_url": "https://api.github.com/users/pradeepcrao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pradeepcrao/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pradeepcrao",
+    "id": 84025829,
+    "node_id": "MDQ6VXNlcjg0MDI1ODI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84025829?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pradeepcrao",
+    "html_url": "https://github.com/pradeepcrao",
+    "followers_url": "https://api.github.com/users/pradeepcrao/followers",
+    "following_url": "https://api.github.com/users/pradeepcrao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pradeepcrao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pradeepcrao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pradeepcrao/subscriptions",
+    "organizations_url": "https://api.github.com/users/pradeepcrao/orgs",
+    "repos_url": "https://api.github.com/users/pradeepcrao/repos",
+    "events_url": "https://api.github.com/users/pradeepcrao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pradeepcrao/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3b0488f7032ebb1c2a00ae9dca7fa1ae36676196",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/3b0488f7032ebb1c2a00ae9dca7fa1ae36676196",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/3b0488f7032ebb1c2a00ae9dca7fa1ae36676196"
+    }
+  ],
+  "stats": {
+    "total": 164,
+    "additions": 155,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "25468d81e283fb5bb8816293fc4ce5bd119cb662",
+      "filename": "docs/root/version_history/current.rst",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/docs%2Froot%2Fversion_history%2Fcurrent.rst?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -13,7 +13,6 @@ Bug Fixes\n ---------\n *Changes expected to improve the state of the world and are unlikely to have negative effects*\n \n-\n Removed Config or Runtime\n -------------------------\n *Normally occurs at the end of the* :ref:`deprecation period <deprecated>`"
+    },
+    {
+      "sha": "b5ee64e960cc4049bbdf69b228d01c71699bbc29",
+      "filename": "source/common/runtime/runtime_features.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fcommon%2Fruntime%2Fruntime_features.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fcommon%2Fruntime%2Fruntime_features.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fcommon%2Fruntime%2Fruntime_features.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -40,6 +40,7 @@ RUNTIME_GUARD(envoy_reloadable_features_correctly_validate_alpn);\n RUNTIME_GUARD(envoy_reloadable_features_deprecate_global_ints);\n RUNTIME_GUARD(envoy_reloadable_features_disable_tls_inspector_injection);\n RUNTIME_GUARD(envoy_reloadable_features_do_not_await_headers_on_upstream_timeout_to_emit_stats);\n+RUNTIME_GUARD(envoy_reloadable_features_enable_compression_bomb_protection);\n RUNTIME_GUARD(envoy_reloadable_features_enable_grpc_async_client_cache);\n RUNTIME_GUARD(envoy_reloadable_features_fix_added_trailers);\n RUNTIME_GUARD(envoy_reloadable_features_handle_stream_reset_during_hcm_encoding);"
+    },
+    {
+      "sha": "edbd9be90d9fdc0eb1fad80b116df091764c858b",
+      "filename": "source/extensions/compression/brotli/common/base.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -6,9 +6,10 @@ namespace Compression {\n namespace Brotli {\n namespace Common {\n \n-BrotliContext::BrotliContext(const uint32_t chunk_size)\n-    : chunk_size_{chunk_size}, chunk_ptr_{std::make_unique<uint8_t[]>(chunk_size)}, next_in_{},\n-      next_out_{chunk_ptr_.get()}, avail_in_{0}, avail_out_{chunk_size} {}\n+BrotliContext::BrotliContext(uint32_t chunk_size, uint32_t max_output_size)\n+    : max_output_size_{max_output_size}, chunk_size_{chunk_size},\n+      chunk_ptr_{std::make_unique<uint8_t[]>(chunk_size)}, next_in_{}, next_out_{chunk_ptr_.get()},\n+      avail_in_{0}, avail_out_{chunk_size} {}\n \n void BrotliContext::updateOutput(Buffer::Instance& output_buffer) {\n   if (avail_out_ == 0) {"
+    },
+    {
+      "sha": "929081c6ef7f222d9fc14a857b18cb303ed5ca12",
+      "filename": "source/extensions/compression/brotli/common/base.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fbrotli%2Fcommon%2Fbase.h?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -12,11 +12,12 @@ namespace Common {\n \n // Keeps a `Brotli` compression stream's state.\n struct BrotliContext {\n-  BrotliContext(const uint32_t chunk_size);\n+  BrotliContext(uint32_t chunk_size, uint32_t max_output_size = 0);\n \n   void updateOutput(Buffer::Instance& output_buffer);\n   void finalizeOutput(Buffer::Instance& output_buffer);\n \n+  const uint32_t max_output_size_;\n   const uint32_t chunk_size_;\n   std::unique_ptr<uint8_t[]> chunk_ptr_;\n   const uint8_t* next_in_;"
+    },
+    {
+      "sha": "18155bfaae369d791570e46060c966b643654e19",
+      "filename": "source/extensions/compression/brotli/decompressor/BUILD",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2FBUILD",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2FBUILD",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2FBUILD?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -19,6 +19,7 @@ envoy_cc_library(\n         \"//envoy/stats:stats_interface\",\n         \"//envoy/stats:stats_macros\",\n         \"//source/common/buffer:buffer_lib\",\n+        \"//source/common/runtime:runtime_features_lib\",\n         \"//source/extensions/compression/brotli/common:brotli_base_lib\",\n     ],\n )"
+    },
+    {
+      "sha": "eb1bb144baa51d45525d700fbe69e974e26a69ef",
+      "filename": "source/extensions/compression/brotli/decompressor/brotli_decompressor_impl.cc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 1,
+      "changes": 21,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -2,12 +2,24 @@\n \n #include <memory>\n \n+#include \"source/common/runtime/runtime_features.h\"\n+\n namespace Envoy {\n namespace Extensions {\n namespace Compression {\n namespace Brotli {\n namespace Decompressor {\n \n+namespace {\n+\n+// How many times the output buffer is allowed to be bigger than the input\n+// buffer. This value is used to detect compression bombs.\n+// TODO(rojkov): Re-design the Decompressor interface to handle compression\n+// bombs gracefully instead of this quick solution.\n+constexpr uint32_t MaxInflateRatio = 100;\n+\n+} // namespace\n+\n BrotliDecompressorImpl::BrotliDecompressorImpl(Stats::Scope& scope, const std::string& stats_prefix,\n                                                const uint32_t chunk_size,\n                                                const bool disable_ring_buffer_reallocation)\n@@ -22,7 +34,7 @@ BrotliDecompressorImpl::BrotliDecompressorImpl(Stats::Scope& scope, const std::s\n \n void BrotliDecompressorImpl::decompress(const Buffer::Instance& input_buffer,\n                                         Buffer::Instance& output_buffer) {\n-  Common::BrotliContext ctx(chunk_size_);\n+  Common::BrotliContext ctx(chunk_size_, MaxInflateRatio * input_buffer.length());\n \n   for (const Buffer::RawSlice& input_slice : input_buffer.getRawSlices()) {\n     ctx.avail_in_ = input_slice.len_;\n@@ -58,6 +70,13 @@ bool BrotliDecompressorImpl::process(Common::BrotliContext& ctx, Buffer::Instanc\n     return false;\n   }\n \n+  if (Runtime::runtimeFeatureEnabled(\n+          \"envoy.reloadable_features.enable_compression_bomb_protection\") &&\n+      (output_buffer.length() > ctx.max_output_size_)) {\n+    stats_.brotli_error_.inc();\n+    return false;\n+  }\n+\n   ctx.updateOutput(output_buffer);\n \n   return true;"
+    },
+    {
+      "sha": "4f427fb909858bdf78d8864524fce115aef58371",
+      "filename": "source/extensions/compression/gzip/common/base.h",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fcommon%2Fbase.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fcommon%2Fbase.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fgzip%2Fcommon%2Fbase.h?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -12,7 +12,6 @@ namespace Zlib {\n /**\n  * Shared code between the compressor and the decompressor.\n  */\n-// TODO(junr03): move to extensions tree once the compressor side is moved to extensions.\n class Base {\n public:\n   Base(uint64_t chunk_size, std::function<void(z_stream*)> zstream_deleter);"
+    },
+    {
+      "sha": "2090f49bcd689c59ccbff77eaa0f1f3712a1c02e",
+      "filename": "source/extensions/compression/gzip/decompressor/BUILD",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2FBUILD",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2FBUILD",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2FBUILD?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -21,6 +21,7 @@ envoy_cc_library(\n         \"//source/common/buffer:buffer_lib\",\n         \"//source/common/common:assert_lib\",\n         \"//source/common/common:minimal_logger_lib\",\n+        \"//source/common/runtime:runtime_features_lib\",\n         \"//source/extensions/compression/gzip/common:zlib_base_lib\",\n     ],\n )"
+    },
+    {
+      "sha": "0932638315d18e287650ab6bf801e8ca533ee4d2",
+      "filename": "source/extensions/compression/gzip/decompressor/zlib_decompressor_impl.cc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -7,6 +7,7 @@\n #include \"envoy/common/exception.h\"\n \n #include \"source/common/common/assert.h\"\n+#include \"source/common/runtime/runtime_features.h\"\n \n #include \"absl/container/fixed_array.h\"\n \n@@ -16,6 +17,16 @@ namespace Compression {\n namespace Gzip {\n namespace Decompressor {\n \n+namespace {\n+\n+// How many times the output buffer is allowed to be bigger than the size of\n+// accumulated input. This value is used to detect compression bombs.\n+// TODO(rojkov): Re-design the Decompressor interface to handle compression\n+// bombs gracefully instead of this quick solution.\n+constexpr uint64_t MaxInflateRatio = 100;\n+\n+} // namespace\n+\n ZlibDecompressorImpl::ZlibDecompressorImpl(Stats::Scope& scope, const std::string& stats_prefix)\n     : ZlibDecompressorImpl(scope, stats_prefix, 4096) {}\n \n@@ -43,13 +54,26 @@ void ZlibDecompressorImpl::init(int64_t window_bits) {\n \n void ZlibDecompressorImpl::decompress(const Buffer::Instance& input_buffer,\n                                       Buffer::Instance& output_buffer) {\n+  uint64_t limit = MaxInflateRatio * input_buffer.length();\n+\n   for (const Buffer::RawSlice& input_slice : input_buffer.getRawSlices()) {\n     zstream_ptr_->avail_in = input_slice.len_;\n     zstream_ptr_->next_in = static_cast<Bytef*>(input_slice.mem_);\n     while (inflateNext()) {\n       if (zstream_ptr_->avail_out == 0) {\n         updateOutput(output_buffer);\n       }\n+\n+      if (Runtime::runtimeFeatureEnabled(\n+              \"envoy.reloadable_features.enable_compression_bomb_protection\") &&\n+          (output_buffer.length() > limit)) {\n+        stats_.zlib_data_error_.inc();\n+        ENVOY_LOG(trace,\n+                  \"excessive decompression ratio detected: output \"\n+                  \"size {} for input size {}\",\n+                  output_buffer.length(), input_buffer.length());\n+        return;\n+      }\n     }\n   }\n "
+    },
+    {
+      "sha": "7a165da1973c663772e790038dbaf64c977e2094",
+      "filename": "source/extensions/compression/zstd/decompressor/zstd_decompressor_impl.cc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -1,11 +1,23 @@\n #include \"source/extensions/compression/zstd/decompressor/zstd_decompressor_impl.h\"\n \n+#include \"source/common/runtime/runtime_features.h\"\n+\n namespace Envoy {\n namespace Extensions {\n namespace Compression {\n namespace Zstd {\n namespace Decompressor {\n \n+namespace {\n+\n+// How many times the output buffer is allowed to be bigger than the size of\n+// accumulated input. This value is used to detect compression bombs.\n+// TODO(rojkov): Re-design the Decompressor interface to handle compression\n+// bombs gracefully instead of this quick solution.\n+constexpr uint64_t MaxInflateRatio = 100;\n+\n+} // namespace\n+\n ZstdDecompressorImpl::ZstdDecompressorImpl(Stats::Scope& scope, const std::string& stats_prefix,\n                                            const ZstdDDictManagerPtr& ddict_manager,\n                                            uint32_t chunk_size)\n@@ -14,6 +26,8 @@ ZstdDecompressorImpl::ZstdDecompressorImpl(Stats::Scope& scope, const std::strin\n \n void ZstdDecompressorImpl::decompress(const Buffer::Instance& input_buffer,\n                                       Buffer::Instance& output_buffer) {\n+  uint64_t limit = MaxInflateRatio * input_buffer.length();\n+\n   for (const Buffer::RawSlice& input_slice : input_buffer.getRawSlices()) {\n     if (input_slice.len_ > 0) {\n       if (ddict_manager_ && !is_dictionary_set_) {\n@@ -38,6 +52,16 @@ void ZstdDecompressorImpl::decompress(const Buffer::Instance& input_buffer,\n       if (!process(output_buffer)) {\n         return;\n       }\n+      if (Runtime::runtimeFeatureEnabled(\n+              \"envoy.reloadable_features.enable_compression_bomb_protection\") &&\n+          (output_buffer.length() > limit)) {\n+        stats_.zstd_generic_error_.inc();\n+        ENVOY_LOG(trace,\n+                  \"excessive decompression ratio detected: output \"\n+                  \"size {} for input size {}\",\n+                  output_buffer.length(), input_buffer.length());\n+        return;\n+      }\n     }\n   }\n }"
+    },
+    {
+      "sha": "597a8c72ad0e5eb3602b4130d8d080276a9e182e",
+      "filename": "source/extensions/compression/zstd/decompressor/zstd_decompressor_impl.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl.h?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -4,6 +4,7 @@\n #include \"envoy/stats/scope.h\"\n #include \"envoy/stats/stats_macros.h\"\n \n+#include \"source/common/common/logger.h\"\n #include \"source/extensions/compression/zstd/common/base.h\"\n #include \"source/extensions/compression/zstd/common/dictionary_manager.h\"\n \n@@ -40,6 +41,7 @@ struct ZstdDecompressorStats {\n  */\n class ZstdDecompressorImpl : public Common::Base,\n                              public Envoy::Compression::Decompressor::Decompressor,\n+                             public Logger::Loggable<Logger::Id::decompression>,\n                              NonCopyable {\n public:\n   ZstdDecompressorImpl(Stats::Scope& scope, const std::string& stats_prefix,"
+    },
+    {
+      "sha": "57102b7e838e7282651316595d33f4788e4d1552",
+      "filename": "test/extensions/compression/brotli/decompressor/brotli_decompressor_impl_test.cc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Fcompression%2Fbrotli%2Fdecompressor%2Fbrotli_decompressor_impl_test.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -25,6 +25,32 @@ class BrotliDecompressorImplTest : public testing::Test {\n   static constexpr uint32_t default_input_size{796};\n };\n \n+// Detect excessive compression ratio by compressing a long whitespace string\n+// into a very small chunk of data and decompressing it again.\n+TEST_F(BrotliDecompressorImplTest, DetectExcessiveCompressionRatio) {\n+  const absl::string_view ten_whitespaces = \"          \";\n+  Brotli::Compressor::BrotliCompressorImpl compressor{\n+      default_quality,\n+      default_window_bits,\n+      default_input_block_bits,\n+      false,\n+      Brotli::Compressor::BrotliCompressorImpl::EncoderMode::Default,\n+      4096};\n+  Buffer::OwnedImpl buffer;\n+\n+  for (int i = 0; i < 1000; i++) {\n+    buffer.add(ten_whitespaces);\n+  }\n+\n+  compressor.compress(buffer, Envoy::Compression::Compressor::State::Finish);\n+\n+  Buffer::OwnedImpl output_buffer;\n+  Stats::IsolatedStoreImpl stats_store{};\n+  BrotliDecompressorImpl decompressor{stats_store, \"test.\", 16, false};\n+  decompressor.decompress(buffer, output_buffer);\n+  EXPECT_EQ(1, stats_store.counterFromString(\"test.brotli_error\").value());\n+}\n+\n // Exercises compression and decompression by compressing some data, decompressing it and then\n // comparing compressor's input/checksum with decompressor's output/checksum.\n TEST_F(BrotliDecompressorImplTest, CompressAndDecompress) {"
+    },
+    {
+      "sha": "c745abb7a9a2478c40d8278621b5d0651bf8bd12",
+      "filename": "test/extensions/compression/gzip/compressor_fuzz_test.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fgzip%2Fcompressor_fuzz_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fgzip%2Fcompressor_fuzz_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Fcompression%2Fgzip%2Fcompressor_fuzz_test.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -71,8 +71,10 @@ DEFINE_FUZZER(const uint8_t* buf, size_t len) {\n                                                : Envoy::Compression::Compressor::State::Flush);\n     decompressor.decompress(buffer, full_output);\n   }\n-  RELEASE_ASSERT(full_input.toString() == full_output.toString(), \"\");\n-  RELEASE_ASSERT(compressor.checksum() == decompressor.checksum(), \"\");\n+  if (stats_store.counterFromString(\"test.zlib_data_error\").value() == 0) {\n+    RELEASE_ASSERT(full_input.toString() == full_output.toString(), \"\");\n+    RELEASE_ASSERT(compressor.checksum() == decompressor.checksum(), \"\");\n+  }\n }\n \n } // namespace Fuzz"
+    },
+    {
+      "sha": "b895415f887099851a1f41e46db4a2b8bdd5acb7",
+      "filename": "test/extensions/compression/gzip/decompressor/zlib_decompressor_impl_test.cc",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Fcompression%2Fgzip%2Fdecompressor%2Fzlib_decompressor_impl_test.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -122,6 +122,31 @@ TEST_F(ZlibDecompressorImplTest, CallingChecksum) {\n   ASSERT_EQ(0, decompressor.decompression_error_);\n }\n \n+// Detect excessive compression ratio by compressing a long whitespace string\n+// into a very small chunk of data and decompressing it again.\n+TEST_F(ZlibDecompressorImplTest, DetectExcessiveCompressionRatio) {\n+  const absl::string_view ten_whitespaces = \"          \";\n+  Buffer::OwnedImpl buffer;\n+  Extensions::Compression::Gzip::Compressor::ZlibCompressorImpl compressor;\n+  compressor.init(\n+      Extensions::Compression::Gzip::Compressor::ZlibCompressorImpl::CompressionLevel::Standard,\n+      Extensions::Compression::Gzip::Compressor::ZlibCompressorImpl::CompressionStrategy::Standard,\n+      gzip_window_bits, memory_level);\n+\n+  for (int i = 0; i < 1000; i++) {\n+    buffer.add(ten_whitespaces);\n+  }\n+\n+  compressor.compress(buffer, Envoy::Compression::Compressor::State::Finish);\n+\n+  Buffer::OwnedImpl output_buffer;\n+  Stats::IsolatedStoreImpl stats_store{};\n+  ZlibDecompressorImpl decompressor{stats_store, \"test.\"};\n+  decompressor.init(gzip_window_bits);\n+  decompressor.decompress(buffer, output_buffer);\n+  ASSERT_EQ(stats_store.counterFromString(\"test.zlib_data_error\").value(), 1);\n+}\n+\n // Exercises compression and decompression by compressing some data, decompressing it and then\n // comparing compressor's input/checksum with decompressor's output/checksum.\n TEST_F(ZlibDecompressorImplTest, CompressAndDecompress) {"
+    },
+    {
+      "sha": "be14e14ec11a4e405c6ab4d087768a2248f822ec",
+      "filename": "test/extensions/compression/zstd/decompressor/zstd_decompressor_impl_test.cc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/cb4ef0b09200c720dfdb07e097092dd105450343/test%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Fcompression%2Fzstd%2Fdecompressor%2Fzstd_decompressor_impl_test.cc?ref=cb4ef0b09200c720dfdb07e097092dd105450343",
+      "patch": "@@ -149,6 +149,27 @@ TEST_F(ZstdDecompressorImplTest, IllegalConfig) {\n                \"assert failure: id != 0. Details: Illegal Zstd dictionary\");\n }\n \n+// Detect excessive compression ratio by compressing a long whitespace string\n+// into a very small chunk of data and decompressing it again.\n+TEST_F(ZstdDecompressorImplTest, DetectExcessiveCompressionRatio) {\n+  const absl::string_view ten_whitespaces = \"          \";\n+  Buffer::OwnedImpl buffer;\n+  for (int i = 0; i < 1000; i++) {\n+    buffer.add(ten_whitespaces);\n+  }\n+\n+  Zstd::Compressor::ZstdCompressorImpl compressor{default_compression_level_,\n+                                                  default_enable_checksum_, default_strategy_,\n+                                                  default_cdict_manager_, 4096};\n+  compressor.compress(buffer, Envoy::Compression::Compressor::State::Finish);\n+\n+  Buffer::OwnedImpl output_buffer;\n+  Stats::IsolatedStoreImpl stats_store{};\n+  ZstdDecompressorImpl decompressor{stats_store, \"test.\", default_ddict_manager_, 16};\n+  decompressor.decompress(buffer, output_buffer);\n+  ASSERT_EQ(stats_store.counterFromString(\"test.zstd_generic_error\").value(), 1);\n+}\n+\n } // namespace\n \n // Copy from"
+    }
+  ]
+}

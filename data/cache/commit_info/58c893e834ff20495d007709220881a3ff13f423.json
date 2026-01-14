@@ -1,0 +1,101 @@
+{
+  "sha": "58c893e834ff20495d007709220881a3ff13f423",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODo1OGM4OTNlODM0ZmYyMDQ5NWQwMDc3MDkyMjA4ODFhM2ZmMTNmNDIz",
+  "commit": {
+    "author": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2012-03-28T01:39:50Z"
+    },
+    "committer": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2012-03-28T01:39:50Z"
+    },
+    "message": "Fixed infinite loop cauesd by invalid dns packets",
+    "tree": {
+      "sha": "d4c59f63c9aa884802a3a2b71bd8f1ddfe5ea8ca",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/d4c59f63c9aa884802a3a2b71bd8f1ddfe5ea8ca"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/58c893e834ff20495d007709220881a3ff13f423",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/58c893e834ff20495d007709220881a3ff13f423",
+  "html_url": "https://github.com/inspircd/inspircd/commit/58c893e834ff20495d007709220881a3ff13f423",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/58c893e834ff20495d007709220881a3ff13f423/comments",
+  "author": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ed28c1ba666b39581adb860bf51cdde43c84cc89",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/ed28c1ba666b39581adb860bf51cdde43c84cc89",
+      "html_url": "https://github.com/inspircd/inspircd/commit/ed28c1ba666b39581adb860bf51cdde43c84cc89"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 9,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "58cbcca76647e4c8bd8593020a9f2a180d11127d",
+      "filename": "src/dns.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/58c893e834ff20495d007709220881a3ff13f423/src%2Fdns.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/58c893e834ff20495d007709220881a3ff13f423/src%2Fdns.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fdns.cpp?ref=58c893e834ff20495d007709220881a3ff13f423",
+      "patch": "@@ -800,6 +800,8 @@ DNSInfo DNSRequest::ResultIsReady(DNSHeader &header, unsigned length)\n \t\t */\n \t\tcase DNS_QUERY_CNAME:\n \t\tcase DNS_QUERY_PTR:\n+\t\t{\n+\t\t\tunsigned short lowest_pos = length;\n \t\t\to = 0;\n \t\t\tq = 0;\n \t\t\twhile (q == 0 && i < length && o + 256 < 1023)\n@@ -812,14 +814,18 @@ DNSInfo DNSRequest::ResultIsReady(DNSHeader &header, unsigned length)\n \t\t\t\t\ti = ntohs(ptr);\n \n \t\t\t\t\t/* check that highest two bits are set. if not, we've been had */\n-\t\t\t\t\tif (!(i & DN_COMP_BITMASK))\n+\t\t\t\t\tif ((i & DN_COMP_BITMASK) != DN_COMP_BITMASK)\n \t\t\t\t\t\treturn std::make_pair((unsigned char *) NULL, \"DN label decompression header is bogus\");\n \n \t\t\t\t\t/* mask away the two highest bits. */\n \t\t\t\t\ti &= ~DN_COMP_BITMASK;\n \n \t\t\t\t\t/* and decrease length by 12 bytes. */\n-\t\t\t\t\ti =- 12;\n+\t\t\t\t\ti -= 12;\n+\n+\t\t\t\t\tif (i >= lowest_pos)\n+\t\t\t\t\t\treturn std::make_pair((unsigned char *) NULL, \"Invalid decompression pointer\");\n+\t\t\t\t\tlowest_pos = i;\n \t\t\t\t}\n \t\t\t\telse\n \t\t\t\t{\n@@ -843,6 +849,7 @@ DNSInfo DNSRequest::ResultIsReady(DNSHeader &header, unsigned length)\n \t\t\t\t}\n \t\t\t}\n \t\t\tres[o] = 0;\n+\t\t}\n \t\tbreak;\n \t\tcase DNS_QUERY_AAAA:\n \t\t\tif (rr.rdlength != sizeof(struct in6_addr))"
+    }
+  ]
+}

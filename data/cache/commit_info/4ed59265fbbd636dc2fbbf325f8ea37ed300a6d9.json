@@ -1,0 +1,125 @@
+{
+  "sha": "4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+  "node_id": "C_kwDOAFma4NoAKDRlZDU5MjY1ZmJiZDYzNmRjMmZiYmYzMjVmOGVhMzdlZDMwMGE2ZDk",
+  "commit": {
+    "author": {
+      "name": "ruven",
+      "email": "ruven@users.sourceforge.net",
+      "date": "2022-01-14T22:22:09Z"
+    },
+    "committer": {
+      "name": "ruven",
+      "email": "ruven@users.sourceforge.net",
+      "date": "2022-01-14T22:22:09Z"
+    },
+    "message": "Added verification that image has been set in SPECTRA.cc and check on the validity of the requested tile resolution in JTL.cc. Fixes a couple of the crash conditions reported in https://github.com/ruven/iipsrv/issues/223",
+    "tree": {
+      "sha": "7ac4e924a0c14407a0588de0d6f33ea730077fd8",
+      "url": "https://api.github.com/repos/ruven/iipsrv/git/trees/7ac4e924a0c14407a0588de0d6f33ea730077fd8"
+    },
+    "url": "https://api.github.com/repos/ruven/iipsrv/git/commits/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE93ahmHLcbk2Fd4+ntUwu8cCHvvsFAmHh960ACgkQtUwu8cCH\nvvvorg//Sfy030tmYlUCo2LN307s3ifX4EemxiW5T72KOqQjLcxCHB72kEKbViFl\nqhkYnzDZfKqdQ3r84HuewGMMgk8ZxX4KWf1+xDOR1AIm2mscFJltpocYXeWTO/pf\nFZ/o3WNnE4yMnH2M8dssmRsB9N8oWdKbS4ltync14yTPqV1SpK5dARvbXSpr8wHR\n8rSH9EQ9lKRvJbJi+qEVJOjDPxgzfEbXobDM6froc2tMt5MD+/oL710GE6MPzqkx\nBtz2iIDIoXa8V5mb1sk1OJ/Ta6V52cAV3oYYCLTliZpqsScFUYtm5v/H+ibBrCq/\njYVa9LdT8jfu2Uq3bM2khMs0BRbiIYYYdeVjOTGeOMf7CMTwNfby7tnFYiA0Sjc4\ndx3nLsin3xs8WiNTNy9AEJQBNkIdrIO996+zpSrI84uZCY/77xb+7ZThJ8bzq1Wg\nNdjTIrBnJvanLDnpALRv/R/cItVBsWjdlQLOME6csqKOS0GmaHcJ+HmH7WHHNLh0\nKLFxQNK7PLF4AGn3+Gn1cGghQ9H8AQXUiDSWaaO4wt7KqL/RrAFaMM+eM/MYeUgS\nnM/5itSFr1SXPy5w4Yok+hCTO9V+Ofj/9DTEQF4K9Xm/7kxLewDkM1QX01J968rb\nKld2EANTTtZtoEvWcqL67bSEI3mYQkbbjoQ/RNKSm3wiljPmB0M=\n=hjH4\n-----END PGP SIGNATURE-----",
+      "payload": "tree 7ac4e924a0c14407a0588de0d6f33ea730077fd8\nparent 4db9fff42dc2c07d871bca508b2f33a4cf376185\nauthor ruven <ruven@users.sourceforge.net> 1642198929 +0100\ncommitter ruven <ruven@users.sourceforge.net> 1642198929 +0100\n\nAdded verification that image has been set in SPECTRA.cc and check on the validity of the requested tile resolution in JTL.cc. Fixes a couple of the crash conditions reported in https://github.com/ruven/iipsrv/issues/223\n",
+      "verified_at": "2024-11-06T03:25:30Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ruven/iipsrv/commits/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+  "html_url": "https://github.com/ruven/iipsrv/commit/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+  "comments_url": "https://api.github.com/repos/ruven/iipsrv/commits/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/comments",
+  "author": {
+    "login": "ruven",
+    "id": 776628,
+    "node_id": "MDQ6VXNlcjc3NjYyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/776628?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ruven",
+    "html_url": "https://github.com/ruven",
+    "followers_url": "https://api.github.com/users/ruven/followers",
+    "following_url": "https://api.github.com/users/ruven/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ruven/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ruven/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ruven/subscriptions",
+    "organizations_url": "https://api.github.com/users/ruven/orgs",
+    "repos_url": "https://api.github.com/users/ruven/repos",
+    "events_url": "https://api.github.com/users/ruven/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ruven/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ruven",
+    "id": 776628,
+    "node_id": "MDQ6VXNlcjc3NjYyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/776628?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ruven",
+    "html_url": "https://github.com/ruven",
+    "followers_url": "https://api.github.com/users/ruven/followers",
+    "following_url": "https://api.github.com/users/ruven/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ruven/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ruven/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ruven/subscriptions",
+    "organizations_url": "https://api.github.com/users/ruven/orgs",
+    "repos_url": "https://api.github.com/users/ruven/repos",
+    "events_url": "https://api.github.com/users/ruven/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ruven/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4db9fff42dc2c07d871bca508b2f33a4cf376185",
+      "url": "https://api.github.com/repos/ruven/iipsrv/commits/4db9fff42dc2c07d871bca508b2f33a4cf376185",
+      "html_url": "https://github.com/ruven/iipsrv/commit/4db9fff42dc2c07d871bca508b2f33a4cf376185"
+    }
+  ],
+  "stats": {
+    "total": 51,
+    "additions": 32,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "6725c694500b23c8e222c61c6aded482d5a4828a",
+      "filename": "ChangeLog",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/ChangeLog",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/ChangeLog",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/ChangeLog?ref=4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+      "patch": "@@ -1,3 +1,8 @@\n+15/01/2022:\n+\t- Added verification that image has been set in SPECTRA.cc and check on the validity of the requested tile\n+\t  resolution in JTL.cc. Fixes a couple of the crash conditions reported in https://github.com/ruven/iipsrv/issues/223\n+\n+\n 14/01/2022:\n \t- Detection of HTJ2K also added for KakaduImage.cc for logging purposes (DEBUG needs to be enabled at compile time)\n "
+    },
+    {
+      "sha": "4d48af960737b2d41c498fc0c3b7fb245378a86a",
+      "filename": "src/JTL.cc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 13,
+      "changes": 31,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/src%2FJTL.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/src%2FJTL.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FJTL.cc?ref=4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+      "patch": "@@ -1,7 +1,7 @@\n /*\n     IIP JTL Command Handler Class Member Function: Export a single tile\n \n-    Copyright (C) 2006-2021 Ruven Pillay.\n+    Copyright (C) 2006-2022 Ruven Pillay.\n \n     This program is free software; you can redistribute it and/or modify\n     it under the terms of the GNU General Public License as published by\n@@ -43,6 +43,10 @@ void JTL::send( Session* session, int resolution, int tile ){\n   if( session->loglevel >= 2 ) command_timer.start();\n \n \n+  // Need to know the number of resolutions\n+  int num_res = (*session->image)->getNumResolutions();\n+\n+\n   // If we have requested a rotation, remap the tile index to rotated coordinates\n   if( (int)((session->view)->getRotation()) % 360 == 90 ){\n \n@@ -51,7 +55,6 @@ void JTL::send( Session* session, int resolution, int tile ){\n \n   }\n   else if( (int)((session->view)->getRotation()) % 360 == 180 ){\n-    int num_res = (*session->image)->getNumResolutions();\n     unsigned int im_width = (*session->image)->image_widths[num_res-resolution-1];\n     unsigned int im_height = (*session->image)->image_heights[num_res-resolution-1];\n     unsigned int tw = (*session->image)->getTileWidth();\n@@ -62,7 +65,7 @@ void JTL::send( Session* session, int resolution, int tile ){\n \n \n   // Sanity check\n-  if( (resolution<0) || (tile<0) ){\n+  if( (resolution<0) || (tile<0) || (resolution>=num_res) ){\n     ostringstream error;\n     error << \"JTL :: Invalid resolution/tile number: \" << resolution << \",\" << tile;\n     throw error.str();\n@@ -120,18 +123,20 @@ void JTL::send( Session* session, int resolution, int tile ){\n \n \n   // Set the physical output resolution for this particular view and zoom level\n-  int num_res = (*session->image)->getNumResolutions();\n-  unsigned int im_width = (*session->image)->image_widths[num_res-resolution-1];\n-  unsigned int im_height = (*session->image)->image_heights[num_res-resolution-1];\n-  float dpi_x = (*session->image)->dpi_x * (float) im_width / (float) (*session->image)->getImageWidth();\n-  float dpi_y = (*session->image)->dpi_y * (float) im_height / (float) (*session->image)->getImageHeight();\n-  compressor->setResolution( dpi_x, dpi_y, (*session->image)->dpi_units );\n-\n-  if( session->loglevel >= 5 ){\n-    *(session->logfile) << \"JTL :: Setting physical resolution of tile to \" <<  dpi_x << \" x \" << dpi_y\n-                        << ( ((*session->image)->dpi_units==1) ? \" pixels/inch\" : \" pixels/cm\" ) << endl;\n+  if( (*session->image)->dpi_x > 0 && (*session->image)->dpi_y > 0 ){\n+    unsigned int im_width = (*session->image)->image_widths[num_res-resolution-1];\n+    unsigned int im_height = (*session->image)->image_heights[num_res-resolution-1];\n+    float dpi_x = (*session->image)->dpi_x * ( (float)im_width / (float)(*session->image)->getImageWidth() );\n+    float dpi_y = (*session->image)->dpi_y * ( (float)im_height / (float)(*session->image)->getImageHeight() );\n+    compressor->setResolution( dpi_x, dpi_y, (*session->image)->dpi_units );\n+\n+    if( session->loglevel >= 5 ){\n+      *(session->logfile) << \"JTL :: Setting physical resolution of tile to \" <<  dpi_x << \" x \" << dpi_y\n+\t\t\t  << ( ((*session->image)->dpi_units==1) ? \" pixels/inch\" : \" pixels/cm\" ) << endl;\n+    }\n   }\n \n+\n   // Embed ICC profile\n   if( session->view->embedICC() && ((*session->image)->getMetadata(\"icc\").size()>0) ){\n     if( session->loglevel >= 3 ){"
+    },
+    {
+      "sha": "500e207f00cbc2d32958dfda7fda1fc9c6140bd4",
+      "filename": "src/SPECTRA.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 15,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/src%2FSPECTRA.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9/src%2FSPECTRA.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FSPECTRA.cc?ref=4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+      "patch": "@@ -1,7 +1,7 @@\n /*\n     IIP SPECTRA Command Handler Class Member Function\n \n-    Copyright (C) 2009-2021 Ruven Pillay.\n+    Copyright (C) 2009-2022 Ruven Pillay.\n \n     This program is free software; you can redistribute it and/or modify\n     it under the terms of the GNU General Public License as published by\n@@ -36,7 +36,10 @@ void SPECTRA::run( Session* session, const std::string& argument ){\n \n   if( session->loglevel >= 3 ) (*session->logfile) << \"SPECTRA handler reached\" << endl;\n \n-  int resolution, tile, x, y;\n+\n+  // Make sure we have set our image\n+  this->session = session;\n+  checkImage();\n \n \n   // Time this command\n@@ -46,19 +49,19 @@ void SPECTRA::run( Session* session, const std::string& argument ){\n   // Parse the argument list\n   string arg = argument;\n   int delimitter = arg.find( \",\" );\n-  resolution = atoi( arg.substr(0,delimitter).c_str() );\n+  int resolution = atoi( arg.substr(0,delimitter).c_str() );\n \n   arg = arg.substr( delimitter + 1, arg.length() );\n   delimitter = arg.find( \",\" );\n-  tile = atoi( arg.substr(0,delimitter).c_str() );\n+  int tile = atoi( arg.substr(0,delimitter).c_str() );\n \n   arg = arg.substr( delimitter + 1, arg.length() );\n   delimitter = arg.find( \",\" );\n-  x = atoi( arg.substr(0,delimitter).c_str() );\n+  int x = atoi( arg.substr(0,delimitter).c_str() );\n \n   arg = arg.substr( delimitter + 1, arg.length() );\n   delimitter = arg.find( \",\" );\n-  y = atoi( arg.substr(0,arg.length()).c_str() );\n+  int y = atoi( arg.substr(0,arg.length()).c_str() );\n \n   if( session->loglevel >= 5 ){ \n     (*session->logfile) << \"SPECTRA :: resolution: \" << resolution"
+    }
+  ]
+}

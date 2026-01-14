@@ -1,0 +1,101 @@
+{
+  "sha": "e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+  "node_id": "C_kwDOAS5ehtoAKGUxZWIzOWE0NDZjMzBiODQ1OWMzOWZkN2YyZWUxYzU1YTM2ZTk3ZDI",
+  "commit": {
+    "author": {
+      "name": "ryancaicse",
+      "email": "73822648+ryancaicse@users.noreply.github.com",
+      "date": "2021-10-26T10:48:44Z"
+    },
+    "committer": {
+      "name": "Daniel Black",
+      "email": "daniel@mariadb.org",
+      "date": "2021-11-09T06:05:55Z"
+    },
+    "message": "MDEV-26561 Fix a bug due to unreleased lock\n\nFix a bug of unreleased lock ctrl_mutex in the method create_worker_threads",
+    "tree": {
+      "sha": "e074e7a739c415a1a0a23486d20f7167b9f85149",
+      "url": "https://api.github.com/repos/MariaDB/server/git/trees/e074e7a739c415a1a0a23486d20f7167b9f85149"
+    },
+    "url": "https://api.github.com/repos/MariaDB/server/git/commits/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/MariaDB/server/commits/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+  "html_url": "https://github.com/MariaDB/server/commit/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+  "comments_url": "https://api.github.com/repos/MariaDB/server/commits/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2/comments",
+  "author": {
+    "login": "ryancaicse",
+    "id": 73822648,
+    "node_id": "MDQ6VXNlcjczODIyNjQ4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/73822648?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ryancaicse",
+    "html_url": "https://github.com/ryancaicse",
+    "followers_url": "https://api.github.com/users/ryancaicse/followers",
+    "following_url": "https://api.github.com/users/ryancaicse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryancaicse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryancaicse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryancaicse/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryancaicse/orgs",
+    "repos_url": "https://api.github.com/users/ryancaicse/repos",
+    "events_url": "https://api.github.com/users/ryancaicse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryancaicse/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "grooverdan",
+    "id": 462287,
+    "node_id": "MDQ6VXNlcjQ2MjI4Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/462287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/grooverdan",
+    "html_url": "https://github.com/grooverdan",
+    "followers_url": "https://api.github.com/users/grooverdan/followers",
+    "following_url": "https://api.github.com/users/grooverdan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/grooverdan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/grooverdan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/grooverdan/subscriptions",
+    "organizations_url": "https://api.github.com/users/grooverdan/orgs",
+    "repos_url": "https://api.github.com/users/grooverdan/repos",
+    "events_url": "https://api.github.com/users/grooverdan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/grooverdan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8b6dfc3c029e32dccd6c311b861d6a2ec5163ab6",
+      "url": "https://api.github.com/repos/MariaDB/server/commits/8b6dfc3c029e32dccd6c311b861d6a2ec5163ab6",
+      "html_url": "https://github.com/MariaDB/server/commit/8b6dfc3c029e32dccd6c311b861d6a2ec5163ab6"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "72c93879947319fea29378fa7b81a81dbc98f2fe",
+      "filename": "extra/mariabackup/ds_compress.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/MariaDB/server/blob/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2/extra%2Fmariabackup%2Fds_compress.cc",
+      "raw_url": "https://github.com/MariaDB/server/raw/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2/extra%2Fmariabackup%2Fds_compress.cc",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/extra%2Fmariabackup%2Fds_compress.cc?ref=e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+      "patch": "@@ -369,6 +369,7 @@ create_worker_threads(uint n)\n \t\t\t\t   thd)) {\n \t\t\tmsg(\"compress: pthread_create() failed: \"\n \t\t\t    \"errno = %d\", errno);\n+\t\t\tpthread_mutex_unlock(&thd->ctrl_mutex);\n \t\t\tgoto err;\n \t\t}\n \t}"
+    }
+  ]
+}

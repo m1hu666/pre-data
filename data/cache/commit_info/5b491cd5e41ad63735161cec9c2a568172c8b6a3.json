@@ -1,0 +1,101 @@
+{
+  "sha": "5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+  "node_id": "C_kwDOArmXAtoAKDViNDkxY2Q1ZTQxYWQ2MzczNTE2MWNlYzljMmE1NjgxNzJjOGI2YTM",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-08T17:51:28Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-08T18:03:25Z"
+    },
+    "message": "Validate `proto.dtype()` before calling `set_dtype()`.\n\nThis prevents a `DCHECK`-fail when the proto contains an invalid dtype for a tensor shape with 0 elements or for an incomplete tensor shape.\n\nPiperOrigin-RevId: 408369083\nChange-Id: Ia21a3e3d62a90d642a4561f08f3b543e5ad00c46",
+    "tree": {
+      "sha": "a42da510db68409de7324fc6ae1588b4b88e6fda",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/a42da510db68409de7324fc6ae1588b4b88e6fda"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/5b491cd5e41ad63735161cec9c2a568172c8b6a3/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9f3eb61a8033efa4ef45b1f291ef67d5beef8b0e",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/9f3eb61a8033efa4ef45b1f291ef67d5beef8b0e",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/9f3eb61a8033efa4ef45b1f291ef67d5beef8b0e"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 9,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c7a08ee0808043964afbba1c5db610e3cd7c701e",
+      "filename": "tensorflow/core/framework/tensor.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/5b491cd5e41ad63735161cec9c2a568172c8b6a3/tensorflow%2Fcore%2Fframework%2Ftensor.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/5b491cd5e41ad63735161cec9c2a568172c8b6a3/tensorflow%2Fcore%2Fframework%2Ftensor.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Ftensor.cc?ref=5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+      "patch": "@@ -983,6 +983,15 @@ bool Tensor::FromProto(Allocator* a, const TensorProto& proto) {\n                          dtype_error = true, dtype_error = true);\n     }\n     if (dtype_error || p == nullptr) return false;\n+  } else {\n+    // Handle the case of empty tensors (N = 0) or tensors with incomplete shape\n+    // (N = -1). All other values of `shape.num_elements()` should be invalid by\n+    // construction.\n+    // Here, we just need to validate that the `proto.dtype()` value is valid.\n+    bool dtype_error = false;\n+    CASES_WITH_DEFAULT(proto.dtype(), break, dtype_error = true,\n+                       dtype_error = true);\n+    if (dtype_error) return false;\n   }\n   shape_ = shape;\n   set_dtype(proto.dtype());"
+    }
+  ]
+}

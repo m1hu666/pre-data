@@ -1,0 +1,93 @@
+{
+  "sha": "0745e0e497bd0c9fd422c824eca50e91abe333c5",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OjA3NDVlMGU0OTdiZDBjOWZkNDIyYzgyNGVjYTUwZTkxYWJlMzMzYzU=",
+  "commit": {
+    "author": {
+      "name": "Joey Arhar",
+      "email": "jarhar@chromium.org",
+      "date": "2019-01-25T21:33:54Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2019-01-25T21:33:54Z"
+    },
+    "message": "[DevTools] Escape exclamation points in copy as curl\n\nBug: 919356\nChange-Id: I8b7769f6d6fef258f31dd16367d54b505284a7d8\nReviewed-on: https://chromium-review.googlesource.com/c/1437265\nCommit-Queue: Joey Arhar <jarhar@chromium.org>\nReviewed-by: Dmitry Gozman <dgozman@chromium.org>\nCr-Commit-Position: refs/heads/master@{#626211}",
+    "tree": {
+      "sha": "bc78a97c23fa71f2ac748cb675ebee2090cca626",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/bc78a97c23fa71f2ac748cb675ebee2090cca626"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/0745e0e497bd0c9fd422c824eca50e91abe333c5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/0745e0e497bd0c9fd422c824eca50e91abe333c5",
+  "html_url": "https://github.com/chromium/chromium/commit/0745e0e497bd0c9fd422c824eca50e91abe333c5",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/0745e0e497bd0c9fd422c824eca50e91abe333c5/comments",
+  "author": {
+    "login": "josepharhar",
+    "id": 7681467,
+    "node_id": "MDQ6VXNlcjc2ODE0Njc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7681467?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/josepharhar",
+    "html_url": "https://github.com/josepharhar",
+    "followers_url": "https://api.github.com/users/josepharhar/followers",
+    "following_url": "https://api.github.com/users/josepharhar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/josepharhar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/josepharhar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/josepharhar/subscriptions",
+    "organizations_url": "https://api.github.com/users/josepharhar/orgs",
+    "repos_url": "https://api.github.com/users/josepharhar/repos",
+    "events_url": "https://api.github.com/users/josepharhar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/josepharhar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "5201c070aae44bbe1d912763e745f60fb862d756",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/5201c070aae44bbe1d912763e745f60fb862d756",
+      "html_url": "https://github.com/chromium/chromium/commit/5201c070aae44bbe1d912763e745f60fb862d756"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "045ed1e1611969b1c3201a0fec4721b771e30c78",
+      "filename": "third_party/blink/renderer/devtools/front_end/network/NetworkLogView.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/chromium/chromium/blob/0745e0e497bd0c9fd422c824eca50e91abe333c5/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FNetworkLogView.js",
+      "raw_url": "https://github.com/chromium/chromium/raw/0745e0e497bd0c9fd422c824eca50e91abe333c5/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FNetworkLogView.js",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FNetworkLogView.js?ref=0745e0e497bd0c9fd422c824eca50e91abe333c5",
+      "patch": "@@ -1673,14 +1673,14 @@ Network.NetworkLogView = class extends UI.VBox {\n         return code < 16 ? '\\\\u0' + code.toString(16) : '\\\\u' + code.toString(16);\n       }\n \n-      if (/[\\u0000-\\u001f\\u007f-\\u009f]|\\'/.test(str)) {\n+      if (/[\\u0000-\\u001f\\u007f-\\u009f!]|\\'/.test(str)) {\n         // Use ANSI-C quoting syntax.\n         return '$\\'' +\n             str.replace(/\\\\/g, '\\\\\\\\')\n                 .replace(/\\'/g, '\\\\\\'')\n                 .replace(/\\n/g, '\\\\n')\n                 .replace(/\\r/g, '\\\\r')\n-                .replace(/[\\u0000-\\u001f\\u007f-\\u009f]/g, escapeCharacter) +\n+                .replace(/[\\u0000-\\u001f\\u007f-\\u009f!]/g, escapeCharacter) +\n             '\\'';\n       } else {\n         // Use single quote syntax."
+    },
+    {
+      "sha": "4c3e2d3f42caab9aecd38e3bd7a4a5def316475a",
+      "filename": "third_party/blink/web_tests/http/tests/devtools/copy-network-request-expected.txt",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/chromium/chromium/blob/0745e0e497bd0c9fd422c824eca50e91abe333c5/third_party%2Fblink%2Fweb_tests%2Fhttp%2Ftests%2Fdevtools%2Fcopy-network-request-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/0745e0e497bd0c9fd422c824eca50e91abe333c5/third_party%2Fblink%2Fweb_tests%2Fhttp%2Ftests%2Fdevtools%2Fcopy-network-request-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fhttp%2Ftests%2Fdevtools%2Fcopy-network-request-expected.txt?ref=0745e0e497bd0c9fd422c824eca50e91abe333c5",
+      "patch": "@@ -19,21 +19,21 @@ fetch: fetch(\"http://example.org/path\", {\"credentials\":\"omit\",\"headers\":{\"conten\n cURL Windows: curl \"http://example.org/path\" -H \"Content-Type: application/binary\" --data-binary ^\"1234^\n \n 00^\u0002^\u0003^\u0004^\u0005'^\\^\"^!^\" --compressed\n-cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'1234\\r\\n00\\u02\\u03\\u04\\u05\\'\"!' --compressed\n+cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'1234\\r\\n00\\u02\\u03\\u04\\u05\\'\"\\u21' --compressed\n Powershell: Invoke-WebRequest -Uri \"http://example.org/path\" -Method \"POST\" -ContentType \"application/binary\" -Body ([System.Text.Encoding]::UTF8.GetBytes(\"1234$([char]13)$([char]10)00$([char]2)$([char]3)$([char]4)$([char]5)'`\"!\"))\n fetch: fetch(\"http://example.org/path\", {\"credentials\":\"omit\",\"headers\":{\"content-type\":\"application/binary\"},\"body\":\"1234\\r\\n00\\u0002\\u0003\\u0004\\u0005'\\\"!\",\"method\":\"POST\",\"mode\":\"cors\"});\n cURL Windows: curl \"http://example.org/path\" -H \"Content-Type: application/binary\" --data-binary ^\"1234^\n \n ^\u000100^\u0002^\u0003^\u0004^\u0005'^\\^\"^!^\" --compressed\n-cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'1234\\r\\n\\u0100\\u02\\u03\\u04\\u05\\'\"!' --compressed\n+cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'1234\\r\\n\\u0100\\u02\\u03\\u04\\u05\\'\"\\u21' --compressed\n Powershell: Invoke-WebRequest -Uri \"http://example.org/path\" -Method \"POST\" -ContentType \"application/binary\" -Body ([System.Text.Encoding]::UTF8.GetBytes(\"1234$([char]13)$([char]10)$([char]1)00$([char]2)$([char]3)$([char]4)$([char]5)'`\"!\"))\n fetch: fetch(\"http://example.org/path\", {\"credentials\":\"omit\",\"headers\":{\"content-type\":\"application/binary\"},\"body\":\"1234\\r\\n\\u000100\\u0002\\u0003\\u0004\\u0005'\\\"!\",\"method\":\"POST\",\"mode\":\"cors\"});\n cURL Windows: curl \"http://example.org/path\" -H \"Content-Type: application/binary\" --data-binary ^\"^%^OS^%^\n \n ^%^%^OS^%^%^\n \n ^\\^\"^\\^\\^\\^\"'^$^&^!^\" --compressed\n-cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'%OS%\\r\\n%%OS%%\\r\\n\"\\\\\"\\'$&!' --compressed\n+cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'%OS%\\r\\n%%OS%%\\r\\n\"\\\\\"\\'$&\\u21' --compressed\n Powershell: Invoke-WebRequest -Uri \"http://example.org/path\" -Method \"POST\" -ContentType \"application/binary\" -Body ([System.Text.Encoding]::UTF8.GetBytes(\"%OS%$([char]13)$([char]10)%%OS%%$([char]13)$([char]10)`\"\\`\"'`$&!\"))\n fetch: fetch(\"http://example.org/path\", {\"credentials\":\"omit\",\"headers\":{\"content-type\":\"application/binary\"},\"body\":\"%OS%\\r\\n%%OS%%\\r\\n\\\"\\\\\\\"'$&!\",\"method\":\"POST\",\"mode\":\"cors\"});\n cURL Windows: curl \"http://example.org/path\" -H \"Content-Type: application/binary\" --data-binary ^\"^!^@^#^$^%^^^&*()_+~`1234567890-=^[^]^{^};':^\\^\",./^\n@@ -47,7 +47,7 @@ t^\n ^\n \n yuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM^\" --compressed\n-cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'!@#$%^&*()_+~`1234567890-=[]{};\\':\",./\\r<>?\\r\\nqwer\\nt\\n\\nyuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM' --compressed\n+cURL Unix: curl 'http://example.org/path' -H 'Content-Type: application/binary' --data-binary $'\\u21@#$%^&*()_+~`1234567890-=[]{};\\':\",./\\r<>?\\r\\nqwer\\nt\\n\\nyuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM' --compressed\n Powershell: Invoke-WebRequest -Uri \"http://example.org/path\" -Method \"POST\" -ContentType \"application/binary\" -Body ([System.Text.Encoding]::UTF8.GetBytes(\"!@#`$%^&*()_+~``1234567890-=[]{};':`\",./$([char]13)<>?$([char]13)$([char]10)qwer$([char]10)t$([char]10)$([char]10)yuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM\"))\n fetch: fetch(\"http://example.org/path\", {\"credentials\":\"omit\",\"headers\":{\"content-type\":\"application/binary\"},\"body\":\"!@#$%^&*()_+~`1234567890-=[]{};':\\\",./\\r<>?\\r\\nqwer\\nt\\n\\nyuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM\",\"method\":\"POST\",\"mode\":\"cors\"});\n cURL Windows: curl \"http://example.org/path\" -H \"Content-Type: application/binary\" --data-binary \"^\u007f^\u0080^\u0090^\u00ff\t^\u0700\" --compressed"
+    }
+  ]
+}

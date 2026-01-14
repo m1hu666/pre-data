@@ -1,0 +1,101 @@
+{
+  "sha": "860f025468feb31c43227153d8fb3f34210a522e",
+  "node_id": "C_kwDOAOWKhtoAKDg2MGYwMjU0NjhmZWIzMWM0MzIyNzE1M2Q4ZmIzZjM0MjEwYTUyMmU",
+  "commit": {
+    "author": {
+      "name": "Dave Horton",
+      "email": "daveh@beachdognet.com",
+      "date": "2022-11-23T20:24:44Z"
+    },
+    "committer": {
+      "name": "Dave Horton",
+      "email": "daveh@beachdognet.com",
+      "date": "2022-11-23T20:24:44Z"
+    },
+    "message": "fix for use-after-free (#240)",
+    "tree": {
+      "sha": "a705f6b180a2381c20c664edb6814a788f4bfe67",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/git/trees/a705f6b180a2381c20c664edb6814a788f4bfe67"
+    },
+    "url": "https://api.github.com/repos/drachtio/drachtio-server/git/commits/860f025468feb31c43227153d8fb3f34210a522e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/860f025468feb31c43227153d8fb3f34210a522e",
+  "html_url": "https://github.com/drachtio/drachtio-server/commit/860f025468feb31c43227153d8fb3f34210a522e",
+  "comments_url": "https://api.github.com/repos/drachtio/drachtio-server/commits/860f025468feb31c43227153d8fb3f34210a522e/comments",
+  "author": {
+    "login": "davehorton",
+    "id": 1884973,
+    "node_id": "MDQ6VXNlcjE4ODQ5NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1884973?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davehorton",
+    "html_url": "https://github.com/davehorton",
+    "followers_url": "https://api.github.com/users/davehorton/followers",
+    "following_url": "https://api.github.com/users/davehorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davehorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davehorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davehorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/davehorton/orgs",
+    "repos_url": "https://api.github.com/users/davehorton/repos",
+    "events_url": "https://api.github.com/users/davehorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davehorton/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davehorton",
+    "id": 1884973,
+    "node_id": "MDQ6VXNlcjE4ODQ5NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1884973?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davehorton",
+    "html_url": "https://github.com/davehorton",
+    "followers_url": "https://api.github.com/users/davehorton/followers",
+    "following_url": "https://api.github.com/users/davehorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davehorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davehorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davehorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/davehorton/orgs",
+    "repos_url": "https://api.github.com/users/davehorton/repos",
+    "events_url": "https://api.github.com/users/davehorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davehorton/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ace3645c1ef4b5a71f2613546cc2e75e2bde73a6",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/ace3645c1ef4b5a71f2613546cc2e75e2bde73a6",
+      "html_url": "https://github.com/drachtio/drachtio-server/commit/ace3645c1ef4b5a71f2613546cc2e75e2bde73a6"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "4514e624f780fc7a8eede0eb5148a6aea54d8570",
+      "filename": "src/request-handler.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/drachtio/drachtio-server/blob/860f025468feb31c43227153d8fb3f34210a522e/src%2Frequest-handler.cpp",
+      "raw_url": "https://github.com/drachtio/drachtio-server/raw/860f025468feb31c43227153d8fb3f34210a522e/src%2Frequest-handler.cpp",
+      "contents_url": "https://api.github.com/repos/drachtio/drachtio-server/contents/src%2Frequest-handler.cpp?ref=860f025468feb31c43227153d8fb3f34210a522e",
+      "patch": "@@ -267,6 +267,7 @@ namespace drachtio {\n   void event_cb(drachtio::RequestHandler::GlobalInfo *g, curl_socket_t s,\n                        int action, const boost::system::error_code & error,\n                        int *fdp) {\n+    int f = *fdp;\n     std::shared_ptr<RequestHandler> p = RequestHandler::getInstance() ;\n     std::map<curl_socket_t, boost::asio::ip::tcp::socket *>& socket_map = p->getSocketMap() ;\n     boost::asio::deadline_timer& timer = p->getTimer() ;\n@@ -277,7 +278,7 @@ namespace drachtio {\n     }\n \n     /* make sure the event matches what are wanted */\n-    if(*fdp == action || *fdp == CURL_POLL_INOUT) {\n+    if(f == action || f == CURL_POLL_INOUT) {\n       CURLMcode rc;\n       if(error)\n         action = CURL_CSELECT_ERR;\n@@ -294,7 +295,7 @@ namespace drachtio {\n        * the socket may have been closed and/or fdp may have been changed\n        * in curl_multi_socket_action(), so check them both */\n       if(!error && socket_map.find(s) != socket_map.end() &&\n-         (*fdp == action || *fdp == CURL_POLL_INOUT)) {\n+         (f == action || f == CURL_POLL_INOUT)) {\n         boost::asio::ip::tcp::socket *tcp_socket = socket_map.find(s)->second;\n \n         if(action == CURL_POLL_IN) {\n@@ -476,7 +477,6 @@ namespace drachtio {\n     DR_LOG(log_info) << \"RequestHandler::startRequest: sending http \" << httpMethod << \": \" << url ;\n \n     conn = m_pool.malloc() ;\n-\n     CURL* easy = NULL ;\n     {\n       //alloc and free happen in the same thread\n@@ -498,6 +498,7 @@ namespace drachtio {\n     strncpy(conn->body, body.c_str(), HTTP_BODY_LEN);\n     strncpy(conn->transactionId, transactionId.c_str(), TXNID_LEN);\n     conn->hdr_list = NULL ;\n+    *conn->response = '\\0' ;\n \n     curl_easy_setopt(easy, CURLOPT_URL, conn->url);\n     curl_easy_setopt(easy, CURLOPT_WRITEFUNCTION, write_cb);"
+    }
+  ]
+}

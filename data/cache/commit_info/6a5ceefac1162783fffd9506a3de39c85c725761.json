@@ -1,0 +1,101 @@
+{
+  "sha": "6a5ceefac1162783fffd9506a3de39c85c725761",
+  "node_id": "MDY6Q29tbWl0NjMyNjIxNzg6NmE1Y2VlZmFjMTE2Mjc4M2ZmZmQ5NTA2YTNkZTM5Yzg1YzcyNTc2MQ==",
+  "commit": {
+    "author": {
+      "name": "Daniel Reiter Horn",
+      "email": "danielrh@dropbox.com",
+      "date": "2019-04-09T23:32:33Z"
+    },
+    "committer": {
+      "name": "Daniel Reiter Horn",
+      "email": "danielrh@dropbox.com",
+      "date": "2019-04-09T23:32:33Z"
+    },
+    "message": "fix #111",
+    "tree": {
+      "sha": "307a8f3fbe22a13eeb605fd13eb48358161f3387",
+      "url": "https://api.github.com/repos/dropbox/lepton/git/trees/307a8f3fbe22a13eeb605fd13eb48358161f3387"
+    },
+    "url": "https://api.github.com/repos/dropbox/lepton/git/commits/6a5ceefac1162783fffd9506a3de39c85c725761",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/dropbox/lepton/commits/6a5ceefac1162783fffd9506a3de39c85c725761",
+  "html_url": "https://github.com/dropbox/lepton/commit/6a5ceefac1162783fffd9506a3de39c85c725761",
+  "comments_url": "https://api.github.com/repos/dropbox/lepton/commits/6a5ceefac1162783fffd9506a3de39c85c725761/comments",
+  "author": {
+    "login": "danielrh",
+    "id": 47249,
+    "node_id": "MDQ6VXNlcjQ3MjQ5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47249?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielrh",
+    "html_url": "https://github.com/danielrh",
+    "followers_url": "https://api.github.com/users/danielrh/followers",
+    "following_url": "https://api.github.com/users/danielrh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielrh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielrh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielrh/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielrh/orgs",
+    "repos_url": "https://api.github.com/users/danielrh/repos",
+    "events_url": "https://api.github.com/users/danielrh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielrh/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "danielrh",
+    "id": 47249,
+    "node_id": "MDQ6VXNlcjQ3MjQ5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47249?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielrh",
+    "html_url": "https://github.com/danielrh",
+    "followers_url": "https://api.github.com/users/danielrh/followers",
+    "following_url": "https://api.github.com/users/danielrh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielrh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielrh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielrh/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielrh/orgs",
+    "repos_url": "https://api.github.com/users/danielrh/repos",
+    "events_url": "https://api.github.com/users/danielrh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielrh/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0b9967ec13b2c95771fa3da30bcc49d2fc055bfe",
+      "url": "https://api.github.com/repos/dropbox/lepton/commits/0b9967ec13b2c95771fa3da30bcc49d2fc055bfe",
+      "html_url": "https://github.com/dropbox/lepton/commit/0b9967ec13b2c95771fa3da30bcc49d2fc055bfe"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4a9e3b0da2ce5ef8b7eba627fe798a3de7b10f08",
+      "filename": "src/lepton/jpgcoder.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/dropbox/lepton/blob/6a5ceefac1162783fffd9506a3de39c85c725761/src%2Flepton%2Fjpgcoder.cc",
+      "raw_url": "https://github.com/dropbox/lepton/raw/6a5ceefac1162783fffd9506a3de39c85c725761/src%2Flepton%2Fjpgcoder.cc",
+      "contents_url": "https://api.github.com/repos/dropbox/lepton/contents/src%2Flepton%2Fjpgcoder.cc?ref=6a5ceefac1162783fffd9506a3de39c85c725761",
+      "patch": "@@ -4163,7 +4163,7 @@ bool read_ujpg( void )\n                               Sirikata::BrotliCodec::Decompress(compressed_header_buffer.data(),\n                                                                 compressed_header_buffer.size(),\n                                                                 JpegAllocator<uint8_t>(),\n-                                                                max_file_size * 2 + 128 * 1024 * 1024));\n+                                                                ((size_t)max_file_size) * 2 + 128 * 1024 * 1024));\n                 if (uncompressed_header_buffer.second) {\n                     always_assert(false && \"Data not properly zlib coded\");\n                     return false;"
+    }
+  ]
+}

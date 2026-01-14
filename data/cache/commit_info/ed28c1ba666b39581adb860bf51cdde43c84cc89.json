@@ -1,0 +1,101 @@
+{
+  "sha": "ed28c1ba666b39581adb860bf51cdde43c84cc89",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODplZDI4YzFiYTY2NmIzOTU4MWFkYjg2MGJmNTFjZGRlNDNjODRjYzg5",
+  "commit": {
+    "author": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2012-03-26T08:59:13Z"
+    },
+    "committer": {
+      "name": "Adam",
+      "email": "Adam@anope.org",
+      "date": "2012-03-26T08:59:13Z"
+    },
+    "message": "Fixed out of bounds memory access from malformed DNS queries that have an invalid length label. Introduced in a6a07de0daa353bcd29056a4535a9c4784c113c8.",
+    "tree": {
+      "sha": "8e148ccceb52bca5e69447c48e3b16ef0f8ccbd6",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/8e148ccceb52bca5e69447c48e3b16ef0f8ccbd6"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/ed28c1ba666b39581adb860bf51cdde43c84cc89",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/ed28c1ba666b39581adb860bf51cdde43c84cc89",
+  "html_url": "https://github.com/inspircd/inspircd/commit/ed28c1ba666b39581adb860bf51cdde43c84cc89",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/ed28c1ba666b39581adb860bf51cdde43c84cc89/comments",
+  "author": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Adam-",
+    "id": 309739,
+    "node_id": "MDQ6VXNlcjMwOTczOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/309739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Adam-",
+    "html_url": "https://github.com/Adam-",
+    "followers_url": "https://api.github.com/users/Adam-/followers",
+    "following_url": "https://api.github.com/users/Adam-/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Adam-/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Adam-/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Adam-/subscriptions",
+    "organizations_url": "https://api.github.com/users/Adam-/orgs",
+    "repos_url": "https://api.github.com/users/Adam-/repos",
+    "events_url": "https://api.github.com/users/Adam-/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Adam-/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7fcda51612c27ecbe7c78a535266d306e285afb0",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/7fcda51612c27ecbe7c78a535266d306e285afb0",
+      "html_url": "https://github.com/inspircd/inspircd/commit/7fcda51612c27ecbe7c78a535266d306e285afb0"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "be74e6aa341f5fa3581b29051bcfe874d7df3936",
+      "filename": "src/dns.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/ed28c1ba666b39581adb860bf51cdde43c84cc89/src%2Fdns.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/ed28c1ba666b39581adb860bf51cdde43c84cc89/src%2Fdns.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fdns.cpp?ref=ed28c1ba666b39581adb860bf51cdde43c84cc89",
+      "patch": "@@ -760,7 +760,7 @@ DNSInfo DNSRequest::ResultIsReady(DNSHeader &header, unsigned length)\n \t\t\t\telse i += header.payload[i] + 1; /* skip length and label */\n \t\t\t}\n \t\t}\n-\t\tif (length - i < 10)\n+\t\tif (static_cast<int>(length - i) < 10)\n \t\t\treturn std::make_pair((unsigned char*)NULL,\"Incorrectly sized DNS reply\");\n \n \t\t/* XXX: We actually initialise 'rr' here including its ttl field */"
+    }
+  ]
+}

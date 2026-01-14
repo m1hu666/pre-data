@@ -1,0 +1,101 @@
+{
+  "sha": "b8c3161281f8e15873f8decabd8eac461717aefe",
+  "node_id": "MDY6Q29tbWl0NTU4MDg3ODc6YjhjMzE2MTI4MWY4ZTE1ODczZjhkZWNhYmQ4ZWFjNDYxNzE3YWVmZQ==",
+  "commit": {
+    "author": {
+      "name": "Jonathan Hui",
+      "email": "jonhui@google.com",
+      "date": "2019-12-12T19:25:53Z"
+    },
+    "committer": {
+      "name": "Jonathan Hui",
+      "email": "jonhui@google.com",
+      "date": "2019-12-16T17:04:09Z"
+    },
+    "message": "[commissioner] add network name length check in GeneratePskc() (#4404)",
+    "tree": {
+      "sha": "1be193842d6d65b904339b493436cfadc67d9957",
+      "url": "https://api.github.com/repos/openthread/openthread/git/trees/1be193842d6d65b904339b493436cfadc67d9957"
+    },
+    "url": "https://api.github.com/repos/openthread/openthread/git/commits/b8c3161281f8e15873f8decabd8eac461717aefe",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/openthread/openthread/commits/b8c3161281f8e15873f8decabd8eac461717aefe",
+  "html_url": "https://github.com/openthread/openthread/commit/b8c3161281f8e15873f8decabd8eac461717aefe",
+  "comments_url": "https://api.github.com/repos/openthread/openthread/commits/b8c3161281f8e15873f8decabd8eac461717aefe/comments",
+  "author": {
+    "login": "jwhui",
+    "id": 16142208,
+    "node_id": "MDQ6VXNlcjE2MTQyMjA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16142208?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jwhui",
+    "html_url": "https://github.com/jwhui",
+    "followers_url": "https://api.github.com/users/jwhui/followers",
+    "following_url": "https://api.github.com/users/jwhui/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jwhui/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jwhui/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jwhui/subscriptions",
+    "organizations_url": "https://api.github.com/users/jwhui/orgs",
+    "repos_url": "https://api.github.com/users/jwhui/repos",
+    "events_url": "https://api.github.com/users/jwhui/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jwhui/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jwhui",
+    "id": 16142208,
+    "node_id": "MDQ6VXNlcjE2MTQyMjA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16142208?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jwhui",
+    "html_url": "https://github.com/jwhui",
+    "followers_url": "https://api.github.com/users/jwhui/followers",
+    "following_url": "https://api.github.com/users/jwhui/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jwhui/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jwhui/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jwhui/subscriptions",
+    "organizations_url": "https://api.github.com/users/jwhui/orgs",
+    "repos_url": "https://api.github.com/users/jwhui/repos",
+    "events_url": "https://api.github.com/users/jwhui/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jwhui/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e8735f45f2015c30c8e8572506f5d462558823fc",
+      "url": "https://api.github.com/repos/openthread/openthread/commits/e8735f45f2015c30c8e8572506f5d462558823fc",
+      "html_url": "https://github.com/openthread/openthread/commit/e8735f45f2015c30c8e8572506f5d462558823fc"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "9f09b280d894d6de587641b8775e2113b1721bc8",
+      "filename": "src/core/meshcop/commissioner.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/openthread/openthread/blob/b8c3161281f8e15873f8decabd8eac461717aefe/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp",
+      "raw_url": "https://github.com/openthread/openthread/raw/b8c3161281f8e15873f8decabd8eac461717aefe/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp",
+      "contents_url": "https://api.github.com/repos/openthread/openthread/contents/src%2Fcore%2Fmeshcop%2Fcommissioner.cpp?ref=b8c3161281f8e15873f8decabd8eac461717aefe",
+      "patch": "@@ -1109,7 +1109,8 @@ otError Commissioner::GeneratePskc(const char *              aPassPhrase,\n     uint16_t    saltLen = 0;\n \n     VerifyOrExit((strlen(aPassPhrase) >= OT_COMMISSIONING_PASSPHRASE_MIN_SIZE) &&\n-                     (strlen(aPassPhrase) <= OT_COMMISSIONING_PASSPHRASE_MAX_SIZE),\n+                     (strlen(aPassPhrase) <= OT_COMMISSIONING_PASSPHRASE_MAX_SIZE) &&\n+                     (strlen(aNetworkName) <= OT_NETWORK_NAME_MAX_SIZE),\n                  error = OT_ERROR_INVALID_ARGS);\n \n     memset(salt, 0, sizeof(salt));"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "c2426bba00a01de6913738df8fa78e0215fcce02",
+  "node_id": "C_kwDOArmXAtoAKGMyNDI2YmJhMDBhMDFkZTY5MTM3MzhkZjhmYTc4ZTAyMTVmY2NlMDI",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-11T19:50:53Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-11T20:19:44Z"
+    },
+    "message": "Use `PartialTensorShape` instead of `TensorShape`.\n\n`TensorShape` constructor throws a CHECK-fail if shape is partial/overflows which the other doesn't. We are only determining the number of elements in the shape and partial shape should be used as it returns negative number when needed.\n\nPiperOrigin-RevId: 409205384\nChange-Id: Ia56542ff9ec758f2c9ffc7e4dcc9fa7eecd86e7b",
+    "tree": {
+      "sha": "f77910f3f66f4d8662e1cae48d6324c976094b59",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/f77910f3f66f4d8662e1cae48d6324c976094b59"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/c2426bba00a01de6913738df8fa78e0215fcce02",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c2426bba00a01de6913738df8fa78e0215fcce02",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/c2426bba00a01de6913738df8fa78e0215fcce02",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c2426bba00a01de6913738df8fa78e0215fcce02/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "31d8f8035f559fc6f03516f18ca3afea652d69b0",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/31d8f8035f559fc6f03516f18ca3afea652d69b0",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/31d8f8035f559fc6f03516f18ca3afea652d69b0"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "019063e22d3c62c52ab910c560c2ad41d801cdea",
+      "filename": "tensorflow/core/framework/attr_value_util.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c2426bba00a01de6913738df8fa78e0215fcce02/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c2426bba00a01de6913738df8fa78e0215fcce02/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc?ref=c2426bba00a01de6913738df8fa78e0215fcce02",
+      "patch": "@@ -45,7 +45,7 @@ constexpr int kMaxTensorNestDepth = 100;\n // not fully defined return -1.\n int64_t TensorByteSize(const TensorProto& t) {\n   // num_elements returns -1 if shape is not fully defined.\n-  int64_t num_elems = TensorShape(t.tensor_shape()).num_elements();\n+  int64_t num_elems = PartialTensorShape(t.tensor_shape()).num_elements();\n   return num_elems < 0 ? -1 : num_elems * DataTypeSize(t.dtype());\n }\n "
+    }
+  ]
+}

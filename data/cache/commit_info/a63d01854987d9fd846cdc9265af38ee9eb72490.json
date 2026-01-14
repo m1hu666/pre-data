@@ -1,0 +1,113 @@
+{
+  "sha": "a63d01854987d9fd846cdc9265af38ee9eb72490",
+  "node_id": "C_kwDOAOWKhtoAKGE2M2QwMTg1NDk4N2Q5ZmQ4NDZjZGM5MjY1YWYzOGVlOWViNzI0OTA",
+  "commit": {
+    "author": {
+      "name": "Dave Horton",
+      "email": "daveh@beachdognet.com",
+      "date": "2022-11-06T16:27:55Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-11-06T16:27:55Z"
+    },
+    "message": "sending an invite with a request-uri longer than 255 characters can cause a crash (#238)",
+    "tree": {
+      "sha": "c8350f7e2d5ed4b0dd3f58bdc71ef5bf3cceb9d2",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/git/trees/c8350f7e2d5ed4b0dd3f58bdc71ef5bf3cceb9d2"
+    },
+    "url": "https://api.github.com/repos/drachtio/drachtio-server/git/commits/a63d01854987d9fd846cdc9265af38ee9eb72490",
+    "comment_count": 2,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjZ+CLCRBK7hj4Ov3rIwAAGuMIAFb6eUlvymami5foW423AIpA\nTjX+srEHYH5YdD3zpkc6Lk9tsTobALiN4xeh4ojKJkCFSBjEjRWEBpYvpEFs2i7y\nVBUDHBcxyR0qh9MklANHJjF0J+6ghw0F+s/Og5Any3VwKeQlLXTyCNZ4Ta8E7XFm\nUb8XUZ5eYSbS1HnhCRF/a9galgyEACit8xe77+roc9KX+b5fKBVDQgNkS+KYZIeD\nWxAopuwJm0oRhD2DcZukPBpE3SX/vyMgBfCNem8j7YVs1I7iikqJ/avCmJDKYWJ/\niTuZL93eYu6yY4CpISYxjGKTYMzzxRaJ0L/mZjUJToSL/h47+N5rzI4iMn6t/Nw=\n=6OAl\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c8350f7e2d5ed4b0dd3f58bdc71ef5bf3cceb9d2\nparent 85e4862d23090306449a3f7de4a64cbbf1628031\nauthor Dave Horton <daveh@beachdognet.com> 1667752075 -0500\ncommitter GitHub <noreply@github.com> 1667752075 -0500\n\nsending an invite with a request-uri longer than 255 characters can cause a crash (#238)\n\n",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/a63d01854987d9fd846cdc9265af38ee9eb72490",
+  "html_url": "https://github.com/drachtio/drachtio-server/commit/a63d01854987d9fd846cdc9265af38ee9eb72490",
+  "comments_url": "https://api.github.com/repos/drachtio/drachtio-server/commits/a63d01854987d9fd846cdc9265af38ee9eb72490/comments",
+  "author": {
+    "login": "davehorton",
+    "id": 1884973,
+    "node_id": "MDQ6VXNlcjE4ODQ5NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1884973?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davehorton",
+    "html_url": "https://github.com/davehorton",
+    "followers_url": "https://api.github.com/users/davehorton/followers",
+    "following_url": "https://api.github.com/users/davehorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davehorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davehorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davehorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/davehorton/orgs",
+    "repos_url": "https://api.github.com/users/davehorton/repos",
+    "events_url": "https://api.github.com/users/davehorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davehorton/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "85e4862d23090306449a3f7de4a64cbbf1628031",
+      "url": "https://api.github.com/repos/drachtio/drachtio-server/commits/85e4862d23090306449a3f7de4a64cbbf1628031",
+      "html_url": "https://github.com/drachtio/drachtio-server/commit/85e4862d23090306449a3f7de4a64cbbf1628031"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 12,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "68216aeb3d9f3cf940f15fb53d958139f388a11f",
+      "filename": "src/drachtio.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 7,
+      "changes": 16,
+      "blob_url": "https://github.com/drachtio/drachtio-server/blob/a63d01854987d9fd846cdc9265af38ee9eb72490/src%2Fdrachtio.cpp",
+      "raw_url": "https://github.com/drachtio/drachtio-server/raw/a63d01854987d9fd846cdc9265af38ee9eb72490/src%2Fdrachtio.cpp",
+      "contents_url": "https://api.github.com/repos/drachtio/drachtio-server/contents/src%2Fdrachtio.cpp?ref=a63d01854987d9fd846cdc9265af38ee9eb72490",
+      "patch": "@@ -54,6 +54,8 @@ THE SOFTWARE.\n \n #define MAX_LINELEN 2047\n \n+#define MAX_SIP_URI_LEN (1024)\n+\n #define BOOST_UUID (1)\n \n using namespace std ;\n@@ -336,8 +338,8 @@ namespace drachtio {\n     bool normalizeSipUri( std::string& uri, int brackets ) {\n         su_home_t* home = theOneAndOnlyController->getHome() ;\n         char *s ;\n-        char buf[255];\n-        char obuf[255] ;\n+        char buf[MAX_SIP_URI_LEN];\n+        char obuf[MAX_SIP_URI_LEN] ;\n         char hp[64] ;\n         char const *display = NULL;\n         url_t url[1];\n@@ -346,7 +348,7 @@ namespace drachtio {\n         int rc ;\n \n         // buf gets passed into sip_name_addr_d which puts NULs in various locations so the url_t members can point to their bits\n-        s = strncpy( buf, uri.c_str(), 255 ) ;\n+        s = strncpy( buf, uri.c_str(), MAX_SIP_URI_LEN ) ;\n \n         // first we decode the string\n         rc = sip_name_addr_d(home, &s, &display, url, &params, &comment) ;\n@@ -374,14 +376,14 @@ namespace drachtio {\n             return false ;\n         }\n         uri.assign( obuf ) ;\n-        return true ;\n+        return uri.length() < MAX_SIP_URI_LEN ;\n     }\n \n     bool replaceHostInUri( std::string& uri, const char* szHost, const char* szPort ) {\n         su_home_t* home = theOneAndOnlyController->getHome() ;\n         char *s ;\n-        char buf[255];\n-        char obuf[255] ;\n+        char buf[MAX_SIP_URI_LEN];\n+        char obuf[MAX_SIP_URI_LEN] ;\n         char hp[64] ;\n         char const *display = NULL;\n         url_t url[1];\n@@ -404,7 +406,7 @@ namespace drachtio {\n         url->url_port = szPort ;\n \n         // now we re-encode it\n-        int nChars = sip_name_addr_e(obuf, 255, 0, display, 1, url, params, comment) ;\n+        int nChars = sip_name_addr_e(obuf, MAX_SIP_URI_LEN, 0, display, 1, url, params, comment) ;\n \n         // cleanup: free the msg_params if any were allocated        \n         if( params ) {"
+    },
+    {
+      "sha": "6544a4678861241b075de37bbb0fa3aea9d21226",
+      "filename": "src/sip-dialog-controller.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/drachtio/drachtio-server/blob/a63d01854987d9fd846cdc9265af38ee9eb72490/src%2Fsip-dialog-controller.cpp",
+      "raw_url": "https://github.com/drachtio/drachtio-server/raw/a63d01854987d9fd846cdc9265af38ee9eb72490/src%2Fsip-dialog-controller.cpp",
+      "contents_url": "https://api.github.com/repos/drachtio/drachtio-server/contents/src%2Fsip-dialog-controller.cpp?ref=a63d01854987d9fd846cdc9265af38ee9eb72490",
+      "patch": "@@ -529,7 +529,9 @@ namespace drachtio {\n              }\n \n             //prevent looping messages\n-            normalizeSipUri( requestUri, 0 ) ;\n+            if (!normalizeSipUri( requestUri, 0 )) {\n+                throw std::runtime_error(string(\"invalid request-uri: \") + requestUri ) ;\n+            }\n             if( isLocalSipUri( requestUri ) ) {\n                 throw std::runtime_error(\"can not send request to myself\") ;\n             }"
+    }
+  ]
+}

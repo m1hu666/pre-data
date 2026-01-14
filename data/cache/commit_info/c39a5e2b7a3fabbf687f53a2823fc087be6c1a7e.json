@@ -1,0 +1,101 @@
+{
+  "sha": "c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e",
+  "node_id": "MDY6Q29tbWl0NDA4OTI4MTc6YzM5YTVlMmI3YTNmYWJiZjY4N2Y1M2EyODIzZmMwODdiZTZjMWE3ZQ==",
+  "commit": {
+    "author": {
+      "name": "Daniel Kirchner",
+      "email": "daniel@ekpyron.org",
+      "date": "2020-12-07T10:24:13Z"
+    },
+    "committer": {
+      "name": "Daniel Kirchner",
+      "email": "daniel@ekpyron.org",
+      "date": "2020-12-07T10:24:13Z"
+    },
+    "message": "Fix accidental repetition in ir breaking changes docs.",
+    "tree": {
+      "sha": "dbce93b2e354711c4f197fef3250a5b8d56754ef",
+      "url": "https://api.github.com/repos/argotorg/solidity/git/trees/dbce93b2e354711c4f197fef3250a5b8d56754ef"
+    },
+    "url": "https://api.github.com/repos/argotorg/solidity/git/commits/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/argotorg/solidity/commits/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e",
+  "html_url": "https://github.com/argotorg/solidity/commit/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e",
+  "comments_url": "https://api.github.com/repos/argotorg/solidity/commits/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e/comments",
+  "author": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f456d939afac7b2a2b014cfe185dc81cb9ad7a39",
+      "url": "https://api.github.com/repos/argotorg/solidity/commits/f456d939afac7b2a2b014cfe185dc81cb9ad7a39",
+      "html_url": "https://github.com/argotorg/solidity/commit/f456d939afac7b2a2b014cfe185dc81cb9ad7a39"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0d8521c52f3fb6f39fcb9abe2cb26a5c143a7c42",
+      "filename": "docs/ir/ir-breaking-changes.rst",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/argotorg/solidity/blob/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e/docs%2Fir%2Fir-breaking-changes.rst",
+      "raw_url": "https://github.com/argotorg/solidity/raw/c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e/docs%2Fir%2Fir-breaking-changes.rst",
+      "contents_url": "https://api.github.com/repos/argotorg/solidity/contents/docs%2Fir%2Fir-breaking-changes.rst?ref=c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e",
+      "patch": "@@ -46,7 +46,7 @@ New order:\n  - All state variables are zero-initialized at the beginning.\n  - Evaluate base constructor arguments from most derived to most base contract.\n  - For every contract in order from most base to most derived in the linearized hierarchy execute:\n-     1. State variables are assigned value their initial values, if present at declaration.\n+     1. State variables are assigned their initial values, if present at declaration.\n      2. Constructor, if present.\n \n This causes differences in some contracts, for example:"
+    }
+  ]
+}

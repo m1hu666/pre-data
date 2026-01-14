@@ -1,0 +1,106 @@
+{
+  "sha": "b8edbda019eeb99da8663193e224efc9d1265dc7",
+  "node_id": "MDY6Q29tbWl0NzAwNzQxOTpiOGVkYmRhMDE5ZWViOTlkYTg2NjMxOTNlMjI0ZWZjOWQxMjY1ZGM3",
+  "commit": {
+    "author": {
+      "name": "Manuel Nickschas",
+      "email": "sputnick@quassel-irc.org",
+      "date": "2015-11-22T22:20:30Z"
+    },
+    "committer": {
+      "name": "Manuel Nickschas",
+      "email": "sputnick@quassel-irc.org",
+      "date": "2015-11-22T22:20:30Z"
+    },
+    "message": "Merge pull request #153 from elxa/fix-op-command-crashing-core\n\nFixes a crash of the core when executing \"/op *\" in a query.",
+    "tree": {
+      "sha": "0cc428db36da0982e165cc5e9c8404b79f9fc3c7",
+      "url": "https://api.github.com/repos/quassel/quassel/git/trees/0cc428db36da0982e165cc5e9c8404b79f9fc3c7"
+    },
+    "url": "https://api.github.com/repos/quassel/quassel/git/commits/b8edbda019eeb99da8663193e224efc9d1265dc7",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/quassel/quassel/commits/b8edbda019eeb99da8663193e224efc9d1265dc7",
+  "html_url": "https://github.com/quassel/quassel/commit/b8edbda019eeb99da8663193e224efc9d1265dc7",
+  "comments_url": "https://api.github.com/repos/quassel/quassel/commits/b8edbda019eeb99da8663193e224efc9d1265dc7/comments",
+  "author": {
+    "login": "Sput42",
+    "id": 2965622,
+    "node_id": "MDQ6VXNlcjI5NjU2MjI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2965622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Sput42",
+    "html_url": "https://github.com/Sput42",
+    "followers_url": "https://api.github.com/users/Sput42/followers",
+    "following_url": "https://api.github.com/users/Sput42/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Sput42/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Sput42/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Sput42/subscriptions",
+    "organizations_url": "https://api.github.com/users/Sput42/orgs",
+    "repos_url": "https://api.github.com/users/Sput42/repos",
+    "events_url": "https://api.github.com/users/Sput42/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Sput42/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Sput42",
+    "id": 2965622,
+    "node_id": "MDQ6VXNlcjI5NjU2MjI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2965622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Sput42",
+    "html_url": "https://github.com/Sput42",
+    "followers_url": "https://api.github.com/users/Sput42/followers",
+    "following_url": "https://api.github.com/users/Sput42/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Sput42/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Sput42/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Sput42/subscriptions",
+    "organizations_url": "https://api.github.com/users/Sput42/orgs",
+    "repos_url": "https://api.github.com/users/Sput42/repos",
+    "events_url": "https://api.github.com/users/Sput42/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Sput42/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1c9be124a51aeb184c2aeb1f606792e48ccbd8d1",
+      "url": "https://api.github.com/repos/quassel/quassel/commits/1c9be124a51aeb184c2aeb1f606792e48ccbd8d1",
+      "html_url": "https://github.com/quassel/quassel/commit/1c9be124a51aeb184c2aeb1f606792e48ccbd8d1"
+    },
+    {
+      "sha": "476aaa050f26d6a31494631d172724409e4c569b",
+      "url": "https://api.github.com/repos/quassel/quassel/commits/476aaa050f26d6a31494631d172724409e4c569b",
+      "html_url": "https://github.com/quassel/quassel/commit/476aaa050f26d6a31494631d172724409e4c569b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "73aac48ae3cb8cfcba99ec943ca0cb1e57ed955c",
+      "filename": "src/core/coreuserinputhandler.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/quassel/quassel/blob/b8edbda019eeb99da8663193e224efc9d1265dc7/src%2Fcore%2Fcoreuserinputhandler.cpp",
+      "raw_url": "https://github.com/quassel/quassel/raw/b8edbda019eeb99da8663193e224efc9d1265dc7/src%2Fcore%2Fcoreuserinputhandler.cpp",
+      "contents_url": "https://api.github.com/repos/quassel/quassel/contents/src%2Fcore%2Fcoreuserinputhandler.cpp?ref=b8edbda019eeb99da8663193e224efc9d1265dc7",
+      "patch": "@@ -228,7 +228,7 @@ void CoreUserInputHandler::doMode(const BufferInfo &bufferInfo, const QChar& add\n     if (!isNumber || maxModes == 0) maxModes = 1;\n \n     QStringList nickList;\n-    if (nicks == \"*\") { // All users in channel\n+    if (nicks == \"*\" && bufferInfo.type() == BufferInfo::ChannelBuffer) { // All users in channel\n         const QList<IrcUser*> users = network()->ircChannel(bufferInfo.bufferName())->ircUsers();\n         foreach(IrcUser *user, users) {\n             if ((addOrRemove == '+' && !network()->ircChannel(bufferInfo.bufferName())->userModes(user).contains(mode))"
+    }
+  ]
+}

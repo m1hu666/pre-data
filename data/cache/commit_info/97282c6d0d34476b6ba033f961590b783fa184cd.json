@@ -1,0 +1,101 @@
+{
+  "sha": "97282c6d0d34476b6ba033f961590b783fa184cd",
+  "node_id": "C_kwDOArmXAtoAKDk3MjgyYzZkMGQzNDQ3NmI2YmEwMzNmOTYxNTkwYjc4M2ZhMTg0Y2Q",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-08T13:48:40Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-08T13:54:06Z"
+    },
+    "message": "Prevent a crash due to heap OOB write in grappler.\n\nPiperOrigin-RevId: 408318417\nChange-Id: If095feb8c001e3a8ac4a85b7387b81e8309df47d",
+    "tree": {
+      "sha": "d0c1fa31463dfba7a930c1119b95b714ee46e0c0",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/d0c1fa31463dfba7a930c1119b95b714ee46e0c0"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/97282c6d0d34476b6ba033f961590b783fa184cd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/97282c6d0d34476b6ba033f961590b783fa184cd",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/97282c6d0d34476b6ba033f961590b783fa184cd",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/97282c6d0d34476b6ba033f961590b783fa184cd/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "557a09455bc98108bc29b3b78e818f9d7dca920f",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/557a09455bc98108bc29b3b78e818f9d7dca920f",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/557a09455bc98108bc29b3b78e818f9d7dca920f"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 6,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3cc12173ba10c552a3a8cad92079f5831c96d4a6",
+      "filename": "tensorflow/core/grappler/costs/graph_properties.cc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/97282c6d0d34476b6ba033f961590b783fa184cd/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fgraph_properties.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/97282c6d0d34476b6ba033f961590b783fa184cd/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fgraph_properties.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fgrappler%2Fcosts%2Fgraph_properties.cc?ref=97282c6d0d34476b6ba033f961590b783fa184cd",
+      "patch": "@@ -1134,7 +1134,12 @@ class SymbolicShapeRefiner {\n         GetUnknownOutputShape(node, output_port);\n     InferenceContext* ctx = GetContext(node);\n     if (ctx == nullptr) {\n-      return errors::InvalidArgument(\"Missing context\");\n+      return errors::InvalidArgument(\"SetUnknownShape: Missing context\");\n+    }\n+    if (output_port < 0 || output_port >= ctx->num_outputs()) {\n+      return errors::InvalidArgument(\n+          \"SetUnknownShape: output_port must be in [0, \", ctx->num_outputs(),\n+          \") but was \", output_port);\n     }\n     ctx->set_output(output_port, shape);\n     return Status::OK();"
+    }
+  ]
+}

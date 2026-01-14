@@ -1,0 +1,142 @@
+{
+  "sha": "987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+  "node_id": "MDY6Q29tbWl0ODYwODI1NDo5ODdhZDc0N2RiNmQwZDdlMzZmODQwMzk4ZjNjZjAyZTJmYmZkOTBm",
+  "commit": {
+    "author": {
+      "name": "Jack Lloyd",
+      "email": "jack@randombit.net",
+      "date": "2016-11-28T10:31:02Z"
+    },
+    "committer": {
+      "name": "Jack Lloyd",
+      "email": "jack@randombit.net",
+      "date": "2016-11-28T10:31:02Z"
+    },
+    "message": "Fix BER decoder integer overflow",
+    "tree": {
+      "sha": "e01b3845dc61e7f96bd00b3c73443576dabbb23e",
+      "url": "https://api.github.com/repos/randombit/botan/git/trees/e01b3845dc61e7f96bd00b3c73443576dabbb23e"
+    },
+    "url": "https://api.github.com/repos/randombit/botan/git/commits/987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEEEXUQFJ30GKvRnLBtn/1Zb6tQ+Q0FAlg8B2YACgkQn/1Zb6tQ\n+Q2rCwgAhQCRfnD5s2B48Nto1ARbqHVMPhLQ+4F02TwZcbbFMT5pDM5oC0GuYKZK\n26CUg/m4kFMnktRfgkDeDI5AiFRq1Gwj4TuUZIq2nxoOkS26tktzoARPcEV3SgeF\nUdgXKYJ+lIwWAo8P4uW1BQotpI+PbjU1go0la8SFxf92qGEWZi/TfHUAxHnfFedU\n3T5dJb24eMhc/EcicxwKY13+SLFD+N7V41o46JxEirBD9ETu/J2K/JNKT7ZbboSo\nAZYjGeoZNR42ngouRsnwIEC7V16WAhgD8mY9scig7W5YSiWPA/N1pZihwT60tAJG\nPpSPABNmWQb/aLpzE1JVyt3/Fi+bSA==\n=Zjhq\n-----END PGP SIGNATURE-----",
+      "payload": "tree e01b3845dc61e7f96bd00b3c73443576dabbb23e\nparent 71406354a1ec7c2021b92e051ede72fe0466639a\nparent 06a93345fb715dfaefbdb5774ec66eff46fdfaa3\nauthor Jack Lloyd <jack@randombit.net> 1480329062 -0500\ncommitter Jack Lloyd <jack@randombit.net> 1480329062 -0500\n\nFix BER decoder integer overflow\n",
+      "verified_at": "2024-11-09T08:38:43Z"
+    }
+  },
+  "url": "https://api.github.com/repos/randombit/botan/commits/987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+  "html_url": "https://github.com/randombit/botan/commit/987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+  "comments_url": "https://api.github.com/repos/randombit/botan/commits/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/comments",
+  "author": {
+    "login": "randombit",
+    "id": 469092,
+    "node_id": "MDQ6VXNlcjQ2OTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/469092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/randombit",
+    "html_url": "https://github.com/randombit",
+    "followers_url": "https://api.github.com/users/randombit/followers",
+    "following_url": "https://api.github.com/users/randombit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/randombit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/randombit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/randombit/subscriptions",
+    "organizations_url": "https://api.github.com/users/randombit/orgs",
+    "repos_url": "https://api.github.com/users/randombit/repos",
+    "events_url": "https://api.github.com/users/randombit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/randombit/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "randombit",
+    "id": 469092,
+    "node_id": "MDQ6VXNlcjQ2OTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/469092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/randombit",
+    "html_url": "https://github.com/randombit",
+    "followers_url": "https://api.github.com/users/randombit/followers",
+    "following_url": "https://api.github.com/users/randombit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/randombit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/randombit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/randombit/subscriptions",
+    "organizations_url": "https://api.github.com/users/randombit/orgs",
+    "repos_url": "https://api.github.com/users/randombit/repos",
+    "events_url": "https://api.github.com/users/randombit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/randombit/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "71406354a1ec7c2021b92e051ede72fe0466639a",
+      "url": "https://api.github.com/repos/randombit/botan/commits/71406354a1ec7c2021b92e051ede72fe0466639a",
+      "html_url": "https://github.com/randombit/botan/commit/71406354a1ec7c2021b92e051ede72fe0466639a"
+    },
+    {
+      "sha": "06a93345fb715dfaefbdb5774ec66eff46fdfaa3",
+      "url": "https://api.github.com/repos/randombit/botan/commits/06a93345fb715dfaefbdb5774ec66eff46fdfaa3",
+      "html_url": "https://github.com/randombit/botan/commit/06a93345fb715dfaefbdb5774ec66eff46fdfaa3"
+    }
+  ],
+  "stats": {
+    "total": 58,
+    "additions": 55,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "151c279f649576c214034f37cd5f714dcf07a098",
+      "filename": "doc/security.rst",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/randombit/botan/blob/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/doc%2Fsecurity.rst",
+      "raw_url": "https://github.com/randombit/botan/raw/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/doc%2Fsecurity.rst",
+      "contents_url": "https://api.github.com/repos/randombit/botan/contents/doc%2Fsecurity.rst?ref=987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+      "patch": "@@ -21,7 +21,16 @@ Advisories\n 2016\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \n-* 2016-10-8871 (CVE-2016-8871) OAEP side channel\n+* 2016-11-27 (CVE-2016-xxxx) Integer overflow in BER decoder\n+\n+  While decoding BER length fields, an integer overflow could occur. This could\n+  occur while parsing untrusted inputs such as X.509 certificates. The overflow\n+  does not seem to lead to any obviously exploitable condition, but exploitation\n+  cannot be positively ruled out. Only 32-bit platforms are likely affected; to\n+  cause an overflow on 64-bit the parsed data would have to be many gigabytes.\n+  Bug found by Falko Strenzke, cryptosource GmbH.\n+\n+* 2016-10-26 (CVE-2016-8871) OAEP side channel\n \n   A side channel in OAEP decoding could be used to distinguish RSA ciphertexts\n   that did or did not have a leading 0 byte. For an attacker capable of"
+    },
+    {
+      "sha": "81c04aa6adfc121aa62733b046d91c8e666a8e03",
+      "filename": "src/lib/asn1/ber_dec.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/randombit/botan/blob/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Fasn1%2Fber_dec.cpp",
+      "raw_url": "https://github.com/randombit/botan/raw/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Fasn1%2Fber_dec.cpp",
+      "contents_url": "https://api.github.com/repos/randombit/botan/contents/src%2Flib%2Fasn1%2Fber_dec.cpp?ref=987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+      "patch": "@@ -9,6 +9,7 @@\n #include <botan/ber_dec.h>\n #include <botan/bigint.h>\n #include <botan/loadstor.h>\n+#include <botan/internal/safeint.h>\n \n namespace Botan {\n \n@@ -126,7 +127,9 @@ size_t find_eoc(DataSource* ber)\n       size_t item_size = decode_length(&source, length_size);\n       source.discard_next(item_size);\n \n-      length += item_size + length_size + tag_size;\n+      length = BOTAN_CHECKED_ADD(length, item_size);\n+      length = BOTAN_CHECKED_ADD(length, tag_size);\n+      length = BOTAN_CHECKED_ADD(length, length_size);\n \n       if(type_tag == EOC && class_tag == UNIVERSAL)\n          break;"
+    },
+    {
+      "sha": "306e6e9adb48d0b7a8d83b86a61d46ad3745e896",
+      "filename": "src/lib/utils/info.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/randombit/botan/blob/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Futils%2Finfo.txt",
+      "raw_url": "https://github.com/randombit/botan/raw/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Futils%2Finfo.txt",
+      "contents_url": "https://api.github.com/repos/randombit/botan/contents/src%2Flib%2Futils%2Finfo.txt?ref=987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+      "patch": "@@ -1,4 +1,4 @@\n-define UTIL_FUNCTIONS 20150919\n+define UTIL_FUNCTIONS 20161127\n \n load_on always\n \n@@ -31,6 +31,7 @@ filesystem.h\n os_utils.h\n prefetch.h\n rounding.h\n+safeint.h\n semaphore.h\n stl_util.h\n </header:internal>"
+    },
+    {
+      "sha": "e0bd66232cbfabae381eeff4a14514a2b2ad5aed",
+      "filename": "src/lib/utils/safeint.h",
+      "status": "added",
+      "additions": 39,
+      "deletions": 0,
+      "changes": 39,
+      "blob_url": "https://github.com/randombit/botan/blob/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Futils%2Fsafeint.h",
+      "raw_url": "https://github.com/randombit/botan/raw/987ad747db6d0d7e36f840398f3cf02e2fbfd90f/src%2Flib%2Futils%2Fsafeint.h",
+      "contents_url": "https://api.github.com/repos/randombit/botan/contents/src%2Flib%2Futils%2Fsafeint.h?ref=987ad747db6d0d7e36f840398f3cf02e2fbfd90f",
+      "patch": "@@ -0,0 +1,39 @@\n+/*\n+* Safe(r) Integer Handling\n+* (C) 2016 Jack Lloyd\n+*\n+* Botan is released under the Simplified BSD License (see license.txt)\n+*/\n+\n+#ifndef BOTAN_UTILS_SAFE_INT_H__\n+#define BOTAN_UTILS_SAFE_INT_H__\n+\n+#include <botan/exceptn.h>\n+#include <string>\n+\n+namespace Botan {\n+\n+class Integer_Overflow_Detected : public Exception\n+   {\n+   public:\n+      Integer_Overflow_Detected(const std::string& file, int line) :\n+         Exception(\"Integer overflow detected at \" + file + \":\" + std::to_string(line))\n+         {}\n+   };\n+\n+inline size_t checked_add(size_t x, size_t y, const char* file, int line)\n+   {\n+   // TODO: use __builtin_x_overflow on GCC and Clang\n+   size_t z = x + y;\n+   if(z < x)\n+      {\n+      throw Integer_Overflow_Detected(file, line);\n+      }\n+   return z;\n+   }\n+\n+#define BOTAN_CHECKED_ADD(x,y) checked_add(x,y,__FILE__,__LINE__)\n+\n+}\n+\n+#endif"
+    }
+  ]
+}

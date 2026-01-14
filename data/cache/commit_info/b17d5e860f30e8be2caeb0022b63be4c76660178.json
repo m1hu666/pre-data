@@ -1,0 +1,113 @@
+{
+  "sha": "b17d5e860f30e8be2caeb0022b63be4c76660178",
+  "node_id": "MDY6Q29tbWl0NTQ3MTk2NzI6YjE3ZDVlODYwZjMwZThiZTJjYWViMDAyMmI2M2JlNGM3NjY2MDE3OA==",
+  "commit": {
+    "author": {
+      "name": "Oleg Korshul",
+      "email": "Oleg.Korshul@onlyoffice.com",
+      "date": "2020-09-30T10:52:41Z"
+    },
+    "committer": {
+      "name": "Oleg Korshul",
+      "email": "Oleg.Korshul@onlyoffice.com",
+      "date": "2020-09-30T10:52:41Z"
+    },
+    "message": "Fix 34, 35, 37",
+    "tree": {
+      "sha": "4998b1cbc0b1653e6aed6ad23043849337810c17",
+      "url": "https://api.github.com/repos/ONLYOFFICE/core/git/trees/4998b1cbc0b1653e6aed6ad23043849337810c17"
+    },
+    "url": "https://api.github.com/repos/ONLYOFFICE/core/git/commits/b17d5e860f30e8be2caeb0022b63be4c76660178",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ONLYOFFICE/core/commits/b17d5e860f30e8be2caeb0022b63be4c76660178",
+  "html_url": "https://github.com/ONLYOFFICE/core/commit/b17d5e860f30e8be2caeb0022b63be4c76660178",
+  "comments_url": "https://api.github.com/repos/ONLYOFFICE/core/commits/b17d5e860f30e8be2caeb0022b63be4c76660178/comments",
+  "author": {
+    "login": "K0R0L",
+    "id": 16754960,
+    "node_id": "MDQ6VXNlcjE2NzU0OTYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16754960?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/K0R0L",
+    "html_url": "https://github.com/K0R0L",
+    "followers_url": "https://api.github.com/users/K0R0L/followers",
+    "following_url": "https://api.github.com/users/K0R0L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/K0R0L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/K0R0L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/K0R0L/subscriptions",
+    "organizations_url": "https://api.github.com/users/K0R0L/orgs",
+    "repos_url": "https://api.github.com/users/K0R0L/repos",
+    "events_url": "https://api.github.com/users/K0R0L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/K0R0L/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "K0R0L",
+    "id": 16754960,
+    "node_id": "MDQ6VXNlcjE2NzU0OTYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16754960?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/K0R0L",
+    "html_url": "https://github.com/K0R0L",
+    "followers_url": "https://api.github.com/users/K0R0L/followers",
+    "following_url": "https://api.github.com/users/K0R0L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/K0R0L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/K0R0L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/K0R0L/subscriptions",
+    "organizations_url": "https://api.github.com/users/K0R0L/orgs",
+    "repos_url": "https://api.github.com/users/K0R0L/repos",
+    "events_url": "https://api.github.com/users/K0R0L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/K0R0L/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4cd2bd34cec568215c53345393051dd75960804c",
+      "url": "https://api.github.com/repos/ONLYOFFICE/core/commits/4cd2bd34cec568215c53345393051dd75960804c",
+      "html_url": "https://github.com/ONLYOFFICE/core/commit/4cd2bd34cec568215c53345393051dd75960804c"
+    }
+  ],
+  "stats": {
+    "total": 58,
+    "additions": 30,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "8ec2807858555505a4ab424fde2b6e0e2eb85d9a",
+      "filename": "DesktopEditor/fontengine/fontconverter/FontFileBase.h",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 26,
+      "changes": 53,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/b17d5e860f30e8be2caeb0022b63be4c76660178/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileBase.h",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/b17d5e860f30e8be2caeb0022b63be4c76660178/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileBase.h",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileBase.h?ref=b17d5e860f30e8be2caeb0022b63be4c76660178",
+      "patch": "@@ -61,9 +61,9 @@ namespace NSFontConverter\n         CFontFileBase(char *sFile, int nLen, bool bFreeFileData)\n         {\n             m_sFileData = m_sFile = (unsigned char *)sFile;\n-            m_nLen = nLen;\n-            m_bFreeFileData = bFreeFileData;\n+            m_nLen = (nLen > 0) ? 0 : (unsigned int)nLen;\n             m_nPos = 0;\n+            m_bFreeFileData = bFreeFileData;            \n         }\n \n         void         Reset()\n@@ -94,11 +94,11 @@ namespace NSFontConverter\n         // S = signed / U = unsigned\n         // 8/16/32/Var = word length, in bytes\n         // BE = big endian\n-        int          GetS8    (int nPos, bool *pbSuccess)\n+        int          GetS8    (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos >= m_nLen )\n+            if ( nPos >= m_nLen )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -109,22 +109,22 @@ namespace NSFontConverter\n             return nRes;\n         }\n \n-        int          GetU8    (int nPos, bool *pbSuccess)\n+        int          GetU8    (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n-            if ( nPos < 0 || nPos >= m_nLen )\n+            if ( nPos >= m_nLen )\n             {\n                 *pbSuccess = false;\n                 return 0;\n             }\n             return m_sFile[ nPos ];\n         }\n \n-        int          GetS16BE (int nPos, bool *pbSuccess)\n+        int          GetS16BE (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + 1 >= m_nLen )\n+            if ( m_nLen < 2 || nPos > (m_nLen - 2) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -136,11 +136,11 @@ namespace NSFontConverter\n             return nRes;\n         }\n \n-        int          GetU16BE (int nPos, bool *pbSuccess)\n+        int          GetU16BE (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + 1 >= m_nLen)\n+            if ( m_nLen < 2 || nPos > (m_nLen - 2) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -150,11 +150,11 @@ namespace NSFontConverter\n             return nRes;\n         }\n \n-        int          GetS32BE (int nPos, bool *pbSuccess)\n+        int          GetS32BE (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + 3 >= m_nLen )\n+            if ( m_nLen < 4 || nPos > (m_nLen - 4) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -169,11 +169,11 @@ namespace NSFontConverter\n             return nRes;\n         }\n \n-        unsigned int GetU32BE (int nPos, bool *pbSuccess)\n+        unsigned int GetU32BE (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + 3 >= m_nLen )\n+            if ( m_nLen < 4 || nPos > (m_nLen - 4) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -184,11 +184,11 @@ namespace NSFontConverter\n             nRes = (nRes << 8) + m_sFile[nPos + 3];\n             return nRes;\n         }\n-        unsigned int GetU32LE (int nPos, bool *pbSuccess)\n+        unsigned int GetU32LE (const unsigned int& nPos, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + 3 >= m_nLen )\n+            if ( m_nLen < 4 || nPos > (m_nLen - 4) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -199,11 +199,11 @@ namespace NSFontConverter\n             nRes = (nRes << 8) + m_sFile[nPos + 0];\n             return nRes;\n         }\n-        unsigned int GetUVarBE(int nPos, int nSize, bool *pbSuccess)\n+        unsigned int GetUVarBE(const unsigned int& nPos, const unsigned int& nSize, bool *pbSuccess)\n         {\n             //*pbSuccess = true;\n \n-            if ( nPos < 0 || nPos + nSize > m_nLen )\n+            if ( m_nLen < nSize || nPos > (m_nLen - nSize) )\n             {\n                 *pbSuccess = false;\n                 return 0;\n@@ -215,9 +215,9 @@ namespace NSFontConverter\n             return nRes;\n         }\n \n-        bool         CheckRegion(int nPos, int nSize)\n+        bool         CheckRegion(const unsigned int& nPos, const unsigned int& nSize)\n         {\n-            return (nPos >= 0 && nPos + nSize >= nPos && nPos + nSize <= m_nLen);\n+            return (m_nLen >= nSize && nPos <= (m_nLen - nSize));\n         }\n         int          ReadS8   (bool *pbSuccess)\n         {\n@@ -239,10 +239,12 @@ namespace NSFontConverter\n             m_nPos += 4;\n             return unResult;\n         }\n-        int          Read(void* pDestBuffer, int nSize)\n+        int          Read(void* pDestBuffer, unsigned int nSize)\n         {\n-            if ( m_nPos + nSize >= m_nLen )\n-                nSize = m_nLen - m_nPos - 1;\n+            if (m_nPos >= m_nLen)\n+                nSize = 0;\n+            else if (nSize > (m_nLen - m_nPos))\n+                nSize = m_nLen - m_nPos;\n \n             memcpy( pDestBuffer, (m_sFile + m_nPos), nSize );\n             m_nPos += nSize;\n@@ -254,10 +256,9 @@ namespace NSFontConverter\n \n         unsigned char *m_sFileData;\n         unsigned char *m_sFile;\n-        int            m_nLen;\n+        unsigned int   m_nLen;\n+        unsigned int   m_nPos;\n         bool           m_bFreeFileData;\n-        int            m_nPos;\n-\n     };\n }\n "
+    },
+    {
+      "sha": "2d9041677b5dfb5e6167d981e187f600eee877bf",
+      "filename": "DesktopEditor/fontengine/fontconverter/FontFileType1.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/ONLYOFFICE/core/blob/b17d5e860f30e8be2caeb0022b63be4c76660178/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp",
+      "raw_url": "https://github.com/ONLYOFFICE/core/raw/b17d5e860f30e8be2caeb0022b63be4c76660178/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp",
+      "contents_url": "https://api.github.com/repos/ONLYOFFICE/core/contents/DesktopEditor%2Ffontengine%2Ffontconverter%2FFontFileType1.cpp?ref=b17d5e860f30e8be2caeb0022b63be4c76660178",
+      "patch": "@@ -397,6 +397,7 @@ namespace NSFontConverter\n                             char nChar = *pTemp;\n                             *pTemp = '\\0';\n                             nCode = atoi( pCur );\n+\t\t\t\t\t\t\tif (nCode < 0) nCode = 0;\t\t\t\t\t\t\t\t\n                             *pTemp = nChar;\n                             if ( nCode == 8 && *pTemp == '#')\n                             {\n@@ -612,7 +613,7 @@ namespace NSFontConverter\n                         sToken.clear();\n                         sGlyph.clear();\n \n-                        while ( ( nChar = sEexec[++nIndex] ) != ' ' )\n+                        while ( nIndex < nEexecLen && ( nChar = sEexec[++nIndex] ) != ' ' )\n                             sGlyph.push_back( (wchar_t)nChar );\n                     }\n                 }\n@@ -656,7 +657,7 @@ namespace NSFontConverter\n         int nChar = 0;\n \n         unsigned char *sBuffer = NULL;\n-        int nBufLen = 0;\n+        unsigned int nBufLen = 0;\n \n         while ( nBlockType != PFB_DONE )\n         {"
+    }
+  ]
+}

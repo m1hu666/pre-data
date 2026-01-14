@@ -1,0 +1,113 @@
+{
+  "sha": "ce103a09ec079d0a0ed95475992348bed6e860de",
+  "node_id": "MDY6Q29tbWl0MTExMzk2ODA6Y2UxMDNhMDllYzA3OWQwYTBlZDk1NDc1OTkyMzQ4YmVkNmU4NjBkZQ==",
+  "commit": {
+    "author": {
+      "name": "presstab",
+      "email": "presstab1337@gmail.com",
+      "date": "2017-11-15T21:31:13Z"
+    },
+    "committer": {
+      "name": "presstab",
+      "email": "presstab1337@gmail.com",
+      "date": "2017-11-15T21:31:13Z"
+    },
+    "message": "Patch serial # exploit.\n\nThe serial # range needs to be checked or else the serial number is able to be incremented to a value that will create a valid proof, thus allowing multiple spends of a single mint.",
+    "tree": {
+      "sha": "e60f0ab4845cb0948440e014517991ff430dde86",
+      "url": "https://api.github.com/repos/Zerocoin/libzerocoin/git/trees/e60f0ab4845cb0948440e014517991ff430dde86"
+    },
+    "url": "https://api.github.com/repos/Zerocoin/libzerocoin/git/commits/ce103a09ec079d0a0ed95475992348bed6e860de",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQIcBAABAgAGBQJaDLJ1AAoJEIXdFgQE+nyweQ4P/2GUJNHiHdWWrcQ8s211B/xr\nvSzhsajVuXlkh/WSh15oY5widjMmgZA+soXrtOQ4jc1GQBfN8gm1d4djvod/dRJG\nsIpi9+tRmI/obERr6Mb4Mduimthrm6uPTWMTBuv6U0kAPg6H2dvbhmS2knhbk5oi\nHRPdTU7gVJNsGB52+ZXd882hNVz5RX3ckaT7Gzo9Abv2yfTvbf5CzeTl89q7XUas\n9EymVNEUgQhVDulWsq2vyqJd6emwDsbbKv/fAI5Wv0mPVP3jlBDLFGW90PSbNDFJ\noHpMY9B3QywvlaOmCTaNyk7zDqoSNFbbs4c85BsDLj0mU6MwdaRarepQF/Kwo0Z1\nJqHxTMAv+dBOmPN+kKgzicaw29EMdSHeASrGkdcFC+TMQjUwfhrnl5/Qul0TZIVA\n/Y0HDpfMT8rtOJ7XVZzCv5mzrkXWTsC+M+0t91+g00US6ovff+ePQclGpZ1JTQbZ\nIjAlkN9MGFWV8bMwx+dRb0bRorYSCxGb0JIFPz1IAkVL8m1EjhpLBOGSLvdBZgrk\n56NqQ+2+2EOI+ysHntSmwBzScAsuz0EbTsRZmZvVuVWM9OIaqWgr39Pb4rQMRnQz\n7KSG8bGVbYv9Wci7UFmiEi3TmtUjjE2ycIMNJqcvcYhGKngzNEkHmIrtPG6eXC7x\n/SOIjQA6xlShrNBIiufO\n=21xS\n-----END PGP SIGNATURE-----",
+      "payload": "tree e60f0ab4845cb0948440e014517991ff430dde86\nparent b3618fa585e80cb1cb77c85c9c005568c45b9838\nauthor presstab <presstab1337@gmail.com> 1510781473 -0700\ncommitter presstab <presstab1337@gmail.com> 1510781473 -0700\n\nPatch serial # exploit.\n\nThe serial # range needs to be checked or else the serial number is able to be incremented to a value that will create a valid proof, thus allowing multiple spends of a single mint.\n",
+      "verified_at": "2024-11-07T08:04:40Z"
+    }
+  },
+  "url": "https://api.github.com/repos/Zerocoin/libzerocoin/commits/ce103a09ec079d0a0ed95475992348bed6e860de",
+  "html_url": "https://github.com/Zerocoin/libzerocoin/commit/ce103a09ec079d0a0ed95475992348bed6e860de",
+  "comments_url": "https://api.github.com/repos/Zerocoin/libzerocoin/commits/ce103a09ec079d0a0ed95475992348bed6e860de/comments",
+  "author": {
+    "login": "presstab",
+    "id": 6628210,
+    "node_id": "MDQ6VXNlcjY2MjgyMTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6628210?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/presstab",
+    "html_url": "https://github.com/presstab",
+    "followers_url": "https://api.github.com/users/presstab/followers",
+    "following_url": "https://api.github.com/users/presstab/following{/other_user}",
+    "gists_url": "https://api.github.com/users/presstab/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/presstab/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/presstab/subscriptions",
+    "organizations_url": "https://api.github.com/users/presstab/orgs",
+    "repos_url": "https://api.github.com/users/presstab/repos",
+    "events_url": "https://api.github.com/users/presstab/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/presstab/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "presstab",
+    "id": 6628210,
+    "node_id": "MDQ6VXNlcjY2MjgyMTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6628210?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/presstab",
+    "html_url": "https://github.com/presstab",
+    "followers_url": "https://api.github.com/users/presstab/followers",
+    "following_url": "https://api.github.com/users/presstab/following{/other_user}",
+    "gists_url": "https://api.github.com/users/presstab/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/presstab/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/presstab/subscriptions",
+    "organizations_url": "https://api.github.com/users/presstab/orgs",
+    "repos_url": "https://api.github.com/users/presstab/repos",
+    "events_url": "https://api.github.com/users/presstab/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/presstab/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b3618fa585e80cb1cb77c85c9c005568c45b9838",
+      "url": "https://api.github.com/repos/Zerocoin/libzerocoin/commits/b3618fa585e80cb1cb77c85c9c005568c45b9838",
+      "html_url": "https://github.com/Zerocoin/libzerocoin/commit/b3618fa585e80cb1cb77c85c9c005568c45b9838"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 11,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "ae1b31acd21c6c69f16ad204e8672f65d4cb04db",
+      "filename": "CoinSpend.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/Zerocoin/libzerocoin/blob/ce103a09ec079d0a0ed95475992348bed6e860de/CoinSpend.cpp",
+      "raw_url": "https://github.com/Zerocoin/libzerocoin/raw/ce103a09ec079d0a0ed95475992348bed6e860de/CoinSpend.cpp",
+      "contents_url": "https://api.github.com/repos/Zerocoin/libzerocoin/contents/CoinSpend.cpp?ref=ce103a09ec079d0a0ed95475992348bed6e860de",
+      "patch": "@@ -29,6 +29,11 @@ CoinSpend::CoinSpend(const Params* p, const PrivateCoin& coin,\n \t\tthrow ZerocoinException(\"Accumulator witness does not verify\");\n \t}\n \n+\t// The serial # needs to be within the specified range our else it can be incremented by the modulus and create another valid proof\n+\tif (!HasValidSerial()) {\n+\t\tthrow ZerocoinException(\"Invalid serial # range\");\n+\t}\n+\n \t// 1: Generate two separate commitments to the public coin (C), each under\n \t// a different set of public parameters. We do this because the RSA accumulator\n \t// has specific requirements for the commitment parameters that are not\n@@ -79,4 +84,9 @@ const uint256 CoinSpend::signatureHash(const SpendMetaData &m) const {\n \treturn h.GetHash();\n }\n \n+bool CoinSpend::HasValidSerial() const\n+{\n+\treturn coinSerialNumber > 0 && coinSerialNumber < params->coinCommitmentGroup.groupOrder;\n+}\n+\n } /* namespace libzerocoin */"
+    },
+    {
+      "sha": "5bd52fa79dff66d5d10e02c042b67981f46b3a65",
+      "filename": "CoinSpend.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/Zerocoin/libzerocoin/blob/ce103a09ec079d0a0ed95475992348bed6e860de/CoinSpend.h",
+      "raw_url": "https://github.com/Zerocoin/libzerocoin/raw/ce103a09ec079d0a0ed95475992348bed6e860de/CoinSpend.h",
+      "contents_url": "https://api.github.com/repos/Zerocoin/libzerocoin/contents/CoinSpend.h?ref=ce103a09ec079d0a0ed95475992348bed6e860de",
+      "patch": "@@ -76,6 +76,7 @@ class CoinSpend {\n \t */\n \tconst CoinDenomination getDenomination();\n \n+\tbool HasValidSerial() const;\n \tbool Verify(const Accumulator& a, const SpendMetaData &metaData) const;\n \n \tIMPLEMENT_SERIALIZE"
+    }
+  ]
+}

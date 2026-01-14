@@ -1,0 +1,125 @@
+{
+  "sha": "d13e8f6d1e987b7491182040a188c16a395f1d21",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmQxM2U4ZjZkMWU5ODdiNzQ5MTE4MjA0MGExODhjMTZhMzk1ZjFkMjE=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2017-09-13T06:31:01Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2017-09-13T06:31:23Z"
+    },
+    "message": "CVE-2017-1438 credits; fix for Kodak 65000 out of bounds access",
+    "tree": {
+      "sha": "80144f45f663c354d6d9e927b121f361c7d5d9ad",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/80144f45f663c354d6d9e927b121f361c7d5d9ad"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/d13e8f6d1e987b7491182040a188c16a395f1d21",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/d13e8f6d1e987b7491182040a188c16a395f1d21",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/d13e8f6d1e987b7491182040a188c16a395f1d21",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/d13e8f6d1e987b7491182040a188c16a395f1d21/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8303e74b0567806dd5f16fc39aab70fe928de1a2",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/8303e74b0567806dd5f16fc39aab70fe928de1a2",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/8303e74b0567806dd5f16fc39aab70fe928de1a2"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 23,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "9b24788286e8568857cb5a4fed5547ae28e1bf14",
+      "filename": "Changelog.txt",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/d13e8f6d1e987b7491182040a188c16a395f1d21/Changelog.txt",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/d13e8f6d1e987b7491182040a188c16a395f1d21/Changelog.txt",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/Changelog.txt?ref=d13e8f6d1e987b7491182040a188c16a395f1d21",
+      "patch": "@@ -1,5 +1,9 @@\n+2017-09-13  Alex Tutubalin <lexa@lexa.ru>\n+ * Fixed possible out of bound access in Kodak 6500 loader\n+\n 2017-09-12  Alex Tutubalin <lexa@lexa.ru>\n- * Fix for possible heap overrun in Canon makernotes parser\n+ * CVE-2017-14348: Fix for possible heap overrun in Canon makernotes parser\n+   Credit: Henri Salo from Nixu Corporation\n  * LibRaw 0.18.4\n \n 2017-09-09  Alex Tutubalin <lexa@lexa.ru>"
+    },
+    {
+      "sha": "60d87218fa1fd2eea8a1c107a7c6fc80f94c9f34",
+      "filename": "dcraw/dcraw.c",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/d13e8f6d1e987b7491182040a188c16a395f1d21/dcraw%2Fdcraw.c",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/d13e8f6d1e987b7491182040a188c16a395f1d21/dcraw%2Fdcraw.c",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/dcraw%2Fdcraw.c?ref=d13e8f6d1e987b7491182040a188c16a395f1d21",
+      "patch": "@@ -3528,8 +3528,15 @@ void CLASS kodak_65000_load_raw()\n       len = MIN (256, width-col);\n       ret = kodak_65000_decode (buf, len);\n       for (i=0; i < len; i++)\n-\tif ((RAW(row,col+i) =\tcurve[ret ? buf[i] :\n-\t\t(pred[i & 1] += buf[i])]) >> 12) derror();\n+      {\n+\tint idx = ret ? buf[i] : (pred[i & 1] += buf[i]);\n+\tif(idx >=0 && idx <= 0xffff)\n+\t {\n+\t   if ((RAW(row,col+i) = curve[idx]) >> 12) derror();\n+         }\n+\t else\n+\t   derror();\n+      }\n     }\n   }\n }"
+    },
+    {
+      "sha": "8fb2b07351787bbf3829a029ca9dd5b3571d2752",
+      "filename": "internal/dcraw_common.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/d13e8f6d1e987b7491182040a188c16a395f1d21/internal%2Fdcraw_common.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/d13e8f6d1e987b7491182040a188c16a395f1d21/internal%2Fdcraw_common.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/internal%2Fdcraw_common.cpp?ref=d13e8f6d1e987b7491182040a188c16a395f1d21",
+      "patch": "@@ -3240,8 +3240,15 @@ void CLASS kodak_65000_load_raw()\n       len = MIN (256, width-col);\n       ret = kodak_65000_decode (buf, len);\n       for (i=0; i < len; i++)\n-\tif ((RAW(row,col+i) =\tcurve[ret ? buf[i] :\n-\t\t(pred[i & 1] += buf[i])]) >> 12) derror();\n+      {\n+\tint idx = ret ? buf[i] : (pred[i & 1] += buf[i]);\n+\tif(idx >=0 && idx <= 0xffff)\n+\t {\n+\t   if ((RAW(row,col+i) = curve[idx]) >> 12) derror();\n+         }\n+\t else\n+\t   derror();\n+      }\n     }\n   }\n }"
+    }
+  ]
+}

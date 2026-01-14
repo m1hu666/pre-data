@@ -1,0 +1,117 @@
+{
+  "sha": "af38308b7112bdfbc0cfcc27f966314accc471d0",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OmFmMzgzMDhiNzExMmJkZmJjMGNmY2MyN2Y5NjYzMTRhY2NjNDcxZDA=",
+  "commit": {
+    "author": {
+      "name": "Joe DeBlasio",
+      "email": "jdeblasio@chromium.org",
+      "date": "2018-10-23T18:30:11Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2018-10-23T18:30:11Z"
+    },
+    "message": "Mapping several Indic characters to confusables.\n\nA number of characters from several Indian scripts are confusable,\nespecially with numbers. This change maps these characters to their\nASCII lookalike to allow fallback to punycode when displaying probable\nspoofing URLs.\n\nBug: 849421\nBug: 892646\nBug: 896722\nChange-Id: I6d463642f3541454dc39bf4b32b8291417697c52\nReviewed-on: https://chromium-review.googlesource.com/c/1295179\nReviewed-by: Tommy Li <tommycli@chromium.org>\nCommit-Queue: Joe DeBlasio <jdeblasio@chromium.org>\nCr-Commit-Position: refs/heads/master@{#602032}",
+    "tree": {
+      "sha": "14163ab4972454db3bdfd87ef37e75d7dea752c1",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/14163ab4972454db3bdfd87ef37e75d7dea752c1"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/af38308b7112bdfbc0cfcc27f966314accc471d0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/af38308b7112bdfbc0cfcc27f966314accc471d0",
+  "html_url": "https://github.com/chromium/chromium/commit/af38308b7112bdfbc0cfcc27f966314accc471d0",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/af38308b7112bdfbc0cfcc27f966314accc471d0/comments",
+  "author": {
+    "login": "jdeblasio",
+    "id": 1619409,
+    "node_id": "MDQ6VXNlcjE2MTk0MDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1619409?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jdeblasio",
+    "html_url": "https://github.com/jdeblasio",
+    "followers_url": "https://api.github.com/users/jdeblasio/followers",
+    "following_url": "https://api.github.com/users/jdeblasio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jdeblasio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jdeblasio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jdeblasio/subscriptions",
+    "organizations_url": "https://api.github.com/users/jdeblasio/orgs",
+    "repos_url": "https://api.github.com/users/jdeblasio/repos",
+    "events_url": "https://api.github.com/users/jdeblasio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jdeblasio/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "3c776ae59ca73a14daf0dee9fa264d522a18ea40",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/3c776ae59ca73a14daf0dee9fa264d522a18ea40",
+      "html_url": "https://github.com/chromium/chromium/commit/3c776ae59ca73a14daf0dee9fa264d522a18ea40"
+    }
+  ],
+  "stats": {
+    "total": 66,
+    "additions": 64,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d2fba49b10b15ddf3d85404a53dcc0f9b01811a6",
+      "filename": "components/url_formatter/idn_spoof_checker.cc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 2,
+      "changes": 21,
+      "blob_url": "https://github.com/chromium/chromium/blob/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Fidn_spoof_checker.cc?ref=af38308b7112bdfbc0cfcc27f966314accc471d0",
+      "patch": "@@ -237,9 +237,18 @@ IDNSpoofChecker::IDNSpoofChecker() {\n   //   - {U+050D (\u050d), U+100c (\u100c)} => g\n   //   - {U+0D1F (\u0d1f), U+0E23 (\u0e23), U+0EA3 (\u0ea3), U+0EAE (\u0eae)} => s\n   //   - U+1042 (\u1042) => j\n+  //   - {U+0966 (\u0966), U+09E6 (\u09e6), U+0A66 (\u0a66), U+0AE6 (\u0ae6), U+0B30 (\u0b20),\n+  //      U+0B66 (\u0b66), U+0CE6 (\u0ce6)} => o,\n+  //   - {U+09ED (\u09ed), U+0A67 (\u0a67), U+0AE7 (\u0ae7)} => q,\n+  //   - {U+0E1A (\u0e1a), U+0E9A (\u0e9a)} => u\n+  //   - {U+0968 (\u0968), U+09E8 (\u09e8), U+0A68 (\u0a68), U+0A68 (\u0a68), U+0AE8 (\u0ae8),\n+  //      U+0ce9 (\u0ce9), U+0ced (\u0ced)} => 2,\n   //   - {U+0437 (\u0437), U+0499 (\u0499), U+04E1 (\u04e1), U+0909 (\u0909), U+0993 (\u0993),\n+  //      U+0A69 (\u0a69), U+0AE9 (\u0ae9), U+0C69 (\u0c69),\n   //      U+1012 (\u1012), U+10D5 (\u10d5), U+10DE (\u10de)} => 3\n-  //   - {U+0E1A (\u0e1a), U+0E9A (\u0e9a)} => u\n+  //   - {U+0A6B (\u0a6b)} => 4,\n+  //   - {U+09EA (\u09ea), U+0A6A (\u0a6a), U+0b6b (\u0b6b)} => 8,\n+  //   - {U+0AED (\u0aed), U+0b68 (\u0b68), U+0C68 (\u0c68)} => 9,\n   extra_confusable_mapper_.reset(icu::Transliterator::createFromRules(\n       UNICODE_STRING_SIMPLE(\"ExtraConf\"),\n       icu::UnicodeString::fromUTF8(\n@@ -249,7 +258,15 @@ IDNSpoofChecker::IDNSpoofChecker() {\n           \"[\u043c\u04ce] > m; [\u0454\u04bd\u04bf\u1054] > e; \u0491 > r; [\u0493\u04fb] > f;\"\n           \"[\u04ab\u1004] > c; \u04b1 > y; [\u03c7\u04b3\u04fd\u04ff] > x;\"\n           \"\u0503  > d; [\u050d\u100c] > g; [\u0d1f\u0e23\u0ea3\u0eae] > s; \u1042 > j;\"\n-          \"[\u0437\u0499\u04e1\u0909\u0993\u1012\u10d5\u10de] > 3; [\u0e1a\u0e9a] > u\"),\n+          \"[\u0966\u09e6\u0a66\u0ae6\u0b20\u0b66\u0ce6] > o;\"\n+          \"[\u09ed\u0a67\u0ae7] > q;\"\n+          \"[\u0e1a\u0e9a] > u;\"\n+          \"[\u0968\u09e8\u0a68\u0a68\u0ae8\u0ce9\u0ced] > 2;\"\n+          \"[\u0437\u0499\u04e1\u0909\u0993\u0a69\u0ae9\u0c69\u1012\u10d5\u10de] > 3;\"\n+          \"[\u0a6b] > 4;\"\n+          \"[\u09ea\u0a6a\u0b6b] > 8;\"\n+          \"[\u0aed\u0b68\u0c68] > 9;\"\n+      ),\n       UTRANS_FORWARD, parse_error, status));\n   DCHECK(U_SUCCESS(status))\n       << \"Spoofchecker initalization failed due to an error: \""
+    },
+    {
+      "sha": "466dadebff59824e5ee546801bc8aec1486c22dd",
+      "filename": "components/url_formatter/top_domains/test_domains.list",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/chromium/chromium/blob/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.list",
+      "raw_url": "https://github.com/chromium/chromium/raw/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.list",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.list?ref=af38308b7112bdfbc0cfcc27f966314accc471d0",
+      "patch": "@@ -23,3 +23,10 @@ wsou.com\n aece.com\n aen.com\n n11.com\n+o2.com\n+28.com\n+39.com\n+89.com\n+43.com\n+oo.com\n+qq.com"
+    },
+    {
+      "sha": "ecf5b68a7954af63ef4ee322cdeeadacd064ff38",
+      "filename": "components/url_formatter/top_domains/test_domains.skeletons",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/chromium/chromium/blob/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.skeletons",
+      "raw_url": "https://github.com/chromium/chromium/raw/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.skeletons",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Ftop_domains%2Ftest_domains.skeletons?ref=af38308b7112bdfbc0cfcc27f966314accc471d0",
+      "patch": "@@ -34,3 +34,10 @@ l23456789O.corn, 1234567890.com\n aece.corn, aece.com\n aen.corn, aen.com\n nll.corn, n11.com\n+o2.corn, o2.com\n+28.corn, 28.com\n+39.corn, 39.com\n+89.corn, 89.com\n+43.corn, 43.com\n+oo.corn, oo.com\n+qq.corn, qq.com"
+    },
+    {
+      "sha": "23d37a7473b24668a7149b9e9b428bd0b38f3c76",
+      "filename": "components/url_formatter/url_formatter_unittest.cc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 0,
+      "changes": 31,
+      "blob_url": "https://github.com/chromium/chromium/blob/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/af38308b7112bdfbc0cfcc27f966314accc471d0/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Furl_formatter_unittest.cc?ref=af38308b7112bdfbc0cfcc27f966314accc471d0",
+      "patch": "@@ -421,6 +421,35 @@ const IDNTestCase idn_cases[] = {\n      L\"123.com\",\n      false},\n \n+    // 'o2.com', '28.com', '39.com', '43.com', '89.com', 'oo.com' and 'qq.com'\n+    // are all explicitly added to the test domain list to aid testing of\n+    // Latin-lookalikes that are numerics in other character sets and similar\n+    // edge cases.\n+    //\n+    // Bengali:\n+    {\"xn--07be.com\", L\"\\x09e6\\x09e8.com\", false},\n+    {\"xn--27be.com\", L\"\\x09e8\\x09ea.com\", false},\n+    {\"xn--77ba.com\", L\"\\x09ed\\x09ed.com\", false},\n+    // Gurmukhi:\n+    {\"xn--qcce.com\", L\"\\x0a68\\x0a6a.com\", false},\n+    {\"xn--occe.com\", L\"\\x0a66\\x0a68.com\", false},\n+    {\"xn--rccd.com\", L\"\\x0a6b\\x0a69.com\", false},\n+    {\"xn--pcca.com\", L\"\\x0a67\\x0a67.com\", false},\n+    // Telugu:\n+    {\"xn--drcb.com\", L\"\\x0c69\\x0c68.com\", false},\n+    // Devanagari:\n+    {\"xn--d4be.com\", L\"\\x0966\\x0968.com\", false},\n+    // Kannada:\n+    {\"xn--yucg.com\", L\"\\x0ce6\\x0ce9.com\", false},\n+    {\"xn--yuco.com\", L\"\\x0ce6\\x0ced.com\", false},\n+    // Oriya:\n+    {\"xn--1jcf.com\", L\"\\x0b6b\\x0b68.com\", false},\n+    {\"xn--zjca.com\", L\"\\x0b66\\x0b66.com\", false},\n+    // Gujarati:\n+    {\"xn--cgce.com\", L\"\\x0ae6\\x0ae8.com\", false},\n+    {\"xn--fgci.com\", L\"\\x0ae9\\x0aed.com\", false},\n+    {\"xn--dgca.com\", L\"\\x0ae7\\x0ae7.com\", false},\n+\n     // wmhtb.com\n     {\"xn--l1acpvx.com\", L\"\\x0448\\x043c\\x043d\\x0442\\x044c.com\", false},\n     // \u0449\u043c\u043d\u0442\u044c.com\n@@ -600,6 +629,8 @@ const IDNTestCase idn_cases[] = {\n      L\"12345678\\x0b68\"\n      L\"0.com\",\n      false},\n+    // 123456789\u0b20.com\n+    {\"xn--http://123456789-v01b.com\", L\"http://123456789\\x0b20.com\", false},\n     // 123456789\ua4f3.com\n     {\"xn--123456789-tx75a.com\", L\"123456789\\xa4f3.com\", false},\n "
+    }
+  ]
+}

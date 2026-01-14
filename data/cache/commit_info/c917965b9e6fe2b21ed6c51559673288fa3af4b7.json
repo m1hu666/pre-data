@@ -1,0 +1,125 @@
+{
+  "sha": "c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+  "node_id": "MDY6Q29tbWl0NTA1MDUyNTpjOTE3OTY1YjllNmZlMmIyMWVkNmM1MTU1OTY3MzI4OGZhM2FmNGI3",
+  "commit": {
+    "author": {
+      "name": "Behdad Esfahbod",
+      "email": "behdad@behdad.org",
+      "date": "2015-09-29T13:45:35Z"
+    },
+    "committer": {
+      "name": "Behdad Esfahbod",
+      "email": "behdad@behdad.org",
+      "date": "2015-09-29T13:45:35Z"
+    },
+    "message": "Add missing returns\n\nFixes possible invalid read of two bytes.\n\nReported by Behzad Najjarpour Jabbari, Secunia Research.",
+    "tree": {
+      "sha": "b92b3201ec65d063071ce1602c3b77534480c35b",
+      "url": "https://api.github.com/repos/harfbuzz/harfbuzz/git/trees/b92b3201ec65d063071ce1602c3b77534480c35b"
+    },
+    "url": "https://api.github.com/repos/harfbuzz/harfbuzz/git/commits/c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/harfbuzz/harfbuzz/commits/c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+  "html_url": "https://github.com/harfbuzz/harfbuzz/commit/c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+  "comments_url": "https://api.github.com/repos/harfbuzz/harfbuzz/commits/c917965b9e6fe2b21ed6c51559673288fa3af4b7/comments",
+  "author": {
+    "login": "behdad",
+    "id": 142891,
+    "node_id": "MDQ6VXNlcjE0Mjg5MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142891?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/behdad",
+    "html_url": "https://github.com/behdad",
+    "followers_url": "https://api.github.com/users/behdad/followers",
+    "following_url": "https://api.github.com/users/behdad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/behdad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/behdad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/behdad/subscriptions",
+    "organizations_url": "https://api.github.com/users/behdad/orgs",
+    "repos_url": "https://api.github.com/users/behdad/repos",
+    "events_url": "https://api.github.com/users/behdad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/behdad/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "behdad",
+    "id": 142891,
+    "node_id": "MDQ6VXNlcjE0Mjg5MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142891?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/behdad",
+    "html_url": "https://github.com/behdad",
+    "followers_url": "https://api.github.com/users/behdad/followers",
+    "following_url": "https://api.github.com/users/behdad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/behdad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/behdad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/behdad/subscriptions",
+    "organizations_url": "https://api.github.com/users/behdad/orgs",
+    "repos_url": "https://api.github.com/users/behdad/repos",
+    "events_url": "https://api.github.com/users/behdad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/behdad/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f3159ba5141c2ab0e430e64742972df140f91c43",
+      "url": "https://api.github.com/repos/harfbuzz/harfbuzz/commits/f3159ba5141c2ab0e430e64742972df140f91c43",
+      "html_url": "https://github.com/harfbuzz/harfbuzz/commit/f3159ba5141c2ab0e430e64742972df140f91c43"
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "additions": 17,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "b90ad8c2afbe1e53d36c6eb3b8b9940a6defa673",
+      "filename": "src/hb-ot-layout-gpos-table.hh",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/harfbuzz/harfbuzz/blob/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gpos-table.hh",
+      "raw_url": "https://github.com/harfbuzz/harfbuzz/raw/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gpos-table.hh",
+      "contents_url": "https://api.github.com/repos/harfbuzz/harfbuzz/contents/src%2Fhb-ot-layout-gpos-table.hh?ref=c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+      "patch": "@@ -548,7 +548,7 @@ struct SinglePos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     case 2: return TRACE_RETURN (c->dispatch (u.format2));\n@@ -843,7 +843,7 @@ struct PairPos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     case 2: return TRACE_RETURN (c->dispatch (u.format2));\n@@ -1024,7 +1024,7 @@ struct CursivePos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1117,7 +1117,7 @@ struct MarkBasePos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1232,7 +1232,7 @@ struct MarkLigPos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1345,7 +1345,7 @@ struct MarkMarkPos\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1397,7 +1397,7 @@ struct PosLookupSubTable\n   {\n     TRACE_DISPATCH (this, lookup_type);\n     /* The sub_format passed to may_dispatch is unnecessary but harmless. */\n-    if (unlikely (!c->may_dispatch (this, &u.sub_format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.sub_format))) return TRACE_RETURN (c->default_return_value ());\n     switch (lookup_type) {\n     case Single:\t\treturn TRACE_RETURN (u.single.dispatch (c));\n     case Pair:\t\t\treturn TRACE_RETURN (u.pair.dispatch (c));"
+    },
+    {
+      "sha": "a6c1f39b8cb48ff12c92c68172195833c1e76f2f",
+      "filename": "src/hb-ot-layout-gsub-table.hh",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/harfbuzz/harfbuzz/blob/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gsub-table.hh",
+      "raw_url": "https://github.com/harfbuzz/harfbuzz/raw/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gsub-table.hh",
+      "contents_url": "https://api.github.com/repos/harfbuzz/harfbuzz/contents/src%2Fhb-ot-layout-gsub-table.hh?ref=c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+      "patch": "@@ -225,7 +225,7 @@ struct SingleSubst\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     case 2: return TRACE_RETURN (c->dispatch (u.format2));\n@@ -418,7 +418,7 @@ struct MultipleSubst\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -562,7 +562,7 @@ struct AlternateSubst\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -873,7 +873,7 @@ struct LigatureSubst\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1030,7 +1030,7 @@ struct ReverseChainSingleSubst\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     default:return TRACE_RETURN (c->default_return_value ());\n@@ -1070,7 +1070,7 @@ struct SubstLookupSubTable\n   {\n     TRACE_DISPATCH (this, lookup_type);\n     /* The sub_format passed to may_dispatch is unnecessary but harmless. */\n-    if (unlikely (!c->may_dispatch (this, &u.sub_format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.sub_format))) return TRACE_RETURN (c->default_return_value ());\n     switch (lookup_type) {\n     case Single:\t\treturn TRACE_RETURN (u.single.dispatch (c));\n     case Multiple:\t\treturn TRACE_RETURN (u.multiple.dispatch (c));"
+    },
+    {
+      "sha": "ffca21e891664ea9e08edbf442fa8180583af939",
+      "filename": "src/hb-ot-layout-gsubgpos-private.hh",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/harfbuzz/harfbuzz/blob/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gsubgpos-private.hh",
+      "raw_url": "https://github.com/harfbuzz/harfbuzz/raw/c917965b9e6fe2b21ed6c51559673288fa3af4b7/src%2Fhb-ot-layout-gsubgpos-private.hh",
+      "contents_url": "https://api.github.com/repos/harfbuzz/harfbuzz/contents/src%2Fhb-ot-layout-gsubgpos-private.hh?ref=c917965b9e6fe2b21ed6c51559673288fa3af4b7",
+      "patch": "@@ -1517,7 +1517,7 @@ struct Context\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     case 2: return TRACE_RETURN (c->dispatch (u.format2));\n@@ -2130,7 +2130,7 @@ struct ChainContext\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (c->dispatch (u.format1));\n     case 2: return TRACE_RETURN (c->dispatch (u.format2));\n@@ -2166,7 +2166,7 @@ struct ExtensionFormat1\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, format);\n-    if (unlikely (!c->may_dispatch (this, this))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, this))) return TRACE_RETURN (c->default_return_value ());\n     return TRACE_RETURN (get_subtable<typename T::LookupSubTable> ().dispatch (c, get_type ()));\n   }\n \n@@ -2211,7 +2211,7 @@ struct Extension\n   inline typename context_t::return_t dispatch (context_t *c) const\n   {\n     TRACE_DISPATCH (this, u.format);\n-    if (unlikely (!c->may_dispatch (this, &u.format))) TRACE_RETURN (c->default_return_value ());\n+    if (unlikely (!c->may_dispatch (this, &u.format))) return TRACE_RETURN (c->default_return_value ());\n     switch (u.format) {\n     case 1: return TRACE_RETURN (u.format1.dispatch (c));\n     default:return TRACE_RETURN (c->default_return_value ());"
+    }
+  ]
+}

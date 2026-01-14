@@ -1,0 +1,101 @@
+{
+  "sha": "6937de5544c3eead3466b75020d8382080ed0cff",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjY5MzdkZTU1NDRjM2VlYWQzNDY2Yjc1MDIwZDgzODIwODBlZDBjZmY=",
+  "commit": {
+    "author": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-03-30T18:21:01Z"
+    },
+    "committer": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-03-30T18:21:01Z"
+    },
+    "message": "[security][CVE-2018-6334] kill globals for file uploads in hhvm\n\nCode should look at _GET, _POST, _FILES, etc. directly to avoid security concerns.\n\nThis included both `$GLOBALS` and `register_globals`-like behavior.\n\nCVE-2018-6334",
+    "tree": {
+      "sha": "5dfaa2b321782ad7369b7686d607997b75fb8215",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/5dfaa2b321782ad7369b7686d607997b75fb8215"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/6937de5544c3eead3466b75020d8382080ed0cff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unverified_email",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEETmdyBbheUDPYpvn3BsIqnXifyigFAlq+gDkACgkQBsIqnXif\nyii7bg/+MVCsy85+vQcvC5dYvJYjWt7ENDG6QFotzllNKREL5OWX+OWJykodUdbE\njrPlb5nCfCARg3PaZzaiCRFEurbGBkA99E4qhEFCKx/FSIMwnFmXklk0NglTFp17\ni6jh3Q+pZPHzLTWk103xQG2cbifKFyS9QZc0Uya5Ni3e9gD/TRcGu6iPuo5FwzMK\n+PhtVPy4vOZu6d75h6Fo3Wz+cHGOW/x2wOz7MyD1FHlnHaDFKR/8unhzPpiUMV1Z\n2lIl+ydiyuhgzcjeRtMh2VhBH4wRU5YRqdh9BeaR3s+2qJR9/c16FgpS9ZGTY8Ew\n/q/zqavjjxfumCMH0s4i5zbEPJPJ2ImNYocWVIaWPDKYOcjypJQ+yerR5n32+jWC\nMStLzeLJxuJbobPfSU/dt2L89btn/Zwp6+xjD4BS9Tv33WDE7dXPZ+ptA0i5csL1\nbjBX9ErsQTB2ghQsy7ofb5lFCk8uFCE3UNgIFE2zgF48j/7LDOTiq6NX6QcTgTTi\ntbHxRq/13pAJaHoY/IHZI/WV1+gRrIyX1IFWJPYKuuRGlqMyHzFbJF/+A+Jy5QQu\nkor+zsZxYC0P5vCDSNJvMZbwXyAER1ZTOEcmnnsBc8FuobX8OW4+LlGdUpyt11LW\n5NuF3qHvajpEhVFL4nUA11muUdQ/XP2gnRFmK6008yZ/WvtOpsY=\n=WRdj\n-----END PGP SIGNATURE-----",
+      "payload": "tree 5dfaa2b321782ad7369b7686d607997b75fb8215\nparent 305fa864ac6ad012bed1ab80d1854c371c0dbb06\nauthor Fred Emmott <fe@fb.com> 1522434061 -0700\ncommitter Fred Emmott <fe@fb.com> 1522434061 -0700\n\n[security][CVE-2018-6334] kill globals for file uploads in hhvm\n\nCode should look at _GET, _POST, _FILES, etc. directly to avoid security concerns.\n\nThis included both `$GLOBALS` and `register_globals`-like behavior.\n\nCVE-2018-6334\n",
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/6937de5544c3eead3466b75020d8382080ed0cff",
+  "html_url": "https://github.com/facebook/hhvm/commit/6937de5544c3eead3466b75020d8382080ed0cff",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/6937de5544c3eead3466b75020d8382080ed0cff/comments",
+  "author": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "305fa864ac6ad012bed1ab80d1854c371c0dbb06",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/305fa864ac6ad012bed1ab80d1854c371c0dbb06",
+      "html_url": "https://github.com/facebook/hhvm/commit/305fa864ac6ad012bed1ab80d1854c371c0dbb06"
+    }
+  ],
+  "stats": {
+    "total": 54,
+    "additions": 7,
+    "deletions": 47
+  },
+  "files": [
+    {
+      "sha": "c67364f5fea18ebcbdf661a5933a0df621bcd477",
+      "filename": "hphp/runtime/server/upload.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 47,
+      "changes": 54,
+      "blob_url": "https://github.com/facebook/hhvm/blob/6937de5544c3eead3466b75020d8382080ed0cff/hphp%2Fruntime%2Fserver%2Fupload.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/6937de5544c3eead3466b75020d8382080ed0cff/hphp%2Fruntime%2Fserver%2Fupload.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fserver%2Fupload.cpp?ref=6937de5544c3eead3466b75020d8382080ed0cff",
+      "patch": "@@ -16,16 +16,18 @@\n */\n \n #include \"hphp/runtime/server/upload.h\"\n+\n #include \"hphp/runtime/base/program-functions.h\"\n-#include \"hphp/runtime/base/runtime-option.h\"\n+#include \"hphp/runtime/base/request-event-handler.h\"\n #include \"hphp/runtime/base/request-local.h\"\n+#include \"hphp/runtime/base/runtime-option.h\"\n+#include \"hphp/runtime/base/string-util.h\"\n #include \"hphp/runtime/base/zend-printf.h\"\n-#include \"hphp/runtime/base/php-globals.h\"\n #include \"hphp/runtime/ext/apc/ext_apc.h\"\n+\n #include \"hphp/util/logger.h\"\n-#include \"hphp/runtime/base/string-util.h\"\n #include \"hphp/util/text-util.h\"\n-#include \"hphp/runtime/base/request-event-handler.h\"\n+\n #include <folly/FileUtil.h>\n \n using std::set;\n@@ -714,7 +716,7 @@ void rfc1867PostHandler(Transport* transport,\n   std::string array_index, abuf;\n   char *lbuf=nullptr;\n   int total_bytes=0, cancel_upload=0, is_arr_upload=0, array_len=0;\n-  int max_file_size=0, skip_upload=0, anonindex=0, is_anonymous;\n+  int max_file_size=0, skip_upload=0, anonindex=0;\n   std::set<std::string> &uploaded_files = s_rfc1867_data->rfc1867UploadedFiles;\n   multipart_buffer *mbuff;\n   int fd=-1;\n@@ -855,11 +857,8 @@ void rfc1867PostHandler(Transport* transport,\n       }\n \n       if (!param) {\n-        is_anonymous = 1;\n         param = (char*)malloc(MAX_SIZE_ANONNAME);\n         snprintf(param, MAX_SIZE_ANONNAME, \"%u\", anonindex++);\n-      } else {\n-        is_anonymous = 0;\n       }\n \n       /* New Rule: never repair potential malicious user input */\n@@ -1067,17 +1066,6 @@ void rfc1867PostHandler(Transport* transport,\n         s = tmp;\n       }\n \n-      Array globals = php_globals_as_array();\n-      if (!is_anonymous) {\n-        if (s) {\n-          String val(s+1, strlen(s+1), CopyString);\n-          safe_php_register_variable(lbuf, val, globals, 0);\n-        } else {\n-          String val(filename, strlen(filename), CopyString);\n-          safe_php_register_variable(lbuf, val, globals, 0);\n-        }\n-      }\n-\n       /* Add $foo[name] */\n       if (is_arr_upload) {\n         snprintf(lbuf, llen, \"%s[name][%s]\",\n@@ -1107,18 +1095,6 @@ void rfc1867PostHandler(Transport* transport,\n         }\n       }\n \n-      /* Add $foo_type */\n-      if (is_arr_upload) {\n-        snprintf(lbuf, llen, \"%s_type[%s]\",\n-                 abuf.c_str(), array_index.c_str());\n-      } else {\n-        snprintf(lbuf, llen, \"%s_type\", param);\n-      }\n-      if (!is_anonymous) {\n-        String val(cd, strlen(cd), CopyString);\n-        safe_php_register_variable(lbuf, val, globals, 0);\n-      }\n-\n       /* Add $foo[type] */\n       if (is_arr_upload) {\n         snprintf(lbuf, llen, \"%s[type][%s]\",\n@@ -1140,11 +1116,6 @@ void rfc1867PostHandler(Transport* transport,\n \n       Variant tempFileName(temp_filename);\n \n-      /* if param is of form xxx[.*] this will cut it to xxx */\n-      if (!is_anonymous) {\n-        safe_php_register_variable(param, tempFileName, globals, 1);\n-      }\n-\n       /* Add $foo[tmp_name] */\n       if (is_arr_upload) {\n         snprintf(lbuf, llen, \"%s[tmp_name][%s]\",\n@@ -1174,17 +1145,6 @@ void rfc1867PostHandler(Transport* transport,\n       }\n       safe_php_register_variable(lbuf, error_type, files, 0);\n \n-      /* Add $foo_size */\n-      if (is_arr_upload) {\n-        snprintf(lbuf, llen, \"%s_size[%s]\",\n-                 abuf.c_str(), array_index.c_str());\n-      } else {\n-        snprintf(lbuf, llen, \"%s_size\", param);\n-      }\n-      if (!is_anonymous) {\n-        safe_php_register_variable(lbuf, file_size, globals, 0);\n-      }\n-\n       /* Add $foo[size] */\n       if (is_arr_upload) {\n         snprintf(lbuf, llen, \"%s[size][%s]\","
+    }
+  ]
+}

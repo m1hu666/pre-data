@@ -1,0 +1,101 @@
+{
+  "sha": "14755416e364f17fb1870882fa778c7fec7f16e3",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MTQ3NTU0MTZlMzY0ZjE3ZmIxODcwODgyZmE3NzhjN2ZlYzdmMTZlMw==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-12-08T04:31:31Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-12-08T04:37:00Z"
+    },
+    "message": "Prevent CHECK-fail in LSTM/GRU with zero-length input.\n\nPiperOrigin-RevId: 346239181\nChange-Id: I5f233dbc076aab7bb4e31ba24f5abd4eaf99ea4f",
+    "tree": {
+      "sha": "cfaa45eef8696cff8390adef699097f30433b58c",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/cfaa45eef8696cff8390adef699097f30433b58c"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/14755416e364f17fb1870882fa778c7fec7f16e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/14755416e364f17fb1870882fa778c7fec7f16e3",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/14755416e364f17fb1870882fa778c7fec7f16e3",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/14755416e364f17fb1870882fa778c7fec7f16e3/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "042a6923d7f9ff05e7514bf6011e4ca30be70113",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/042a6923d7f9ff05e7514bf6011e4ca30be70113",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/042a6923d7f9ff05e7514bf6011e4ca30be70113"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 6,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e4e9914adf0febd2fef176b1b795e0063906fd74",
+      "filename": "tensorflow/stream_executor/cuda/cuda_dnn.cc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/14755416e364f17fb1870882fa778c7fec7f16e3/tensorflow%2Fstream_executor%2Fcuda%2Fcuda_dnn.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/14755416e364f17fb1870882fa778c7fec7f16e3/tensorflow%2Fstream_executor%2Fcuda%2Fcuda_dnn.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fstream_executor%2Fcuda%2Fcuda_dnn.cc?ref=14755416e364f17fb1870882fa778c7fec7f16e3",
+      "patch": "@@ -1468,7 +1468,9 @@ class CudnnRnnSequenceTensorDescriptor\n   static port::StatusOr<CudnnRnnSequenceTensorDescriptor> Create(\n       GpuExecutor* parent, int max_seq_length, int batch_size, int data_size,\n       cudnnDataType_t data_type) {\n-    CHECK_GT(max_seq_length, 0);\n+    if (max_seq_length <= 0) {\n+      return port::Status(port::error::INVALID_ARGUMENT, \"max_seq_length <= 0\");\n+    }\n     int dims[] = {batch_size, data_size, 1};\n     int strides[] = {dims[1] * dims[2], dims[2], 1};\n     TensorDescriptor tensor_desc = CreateTensorDescriptor();\n@@ -1486,7 +1488,9 @@ class CudnnRnnSequenceTensorDescriptor\n       GpuExecutor* parent, int max_seq_length, int batch_size, int data_size,\n       const absl::Span<const int>& seq_lengths, bool time_major,\n       cudnnDataType_t data_type) {\n-    CHECK_GT(max_seq_length, 0);\n+    if (max_seq_length <= 0) {\n+      return port::Status(port::error::INVALID_ARGUMENT, \"max_seq_length <= 0\");\n+    }\n     int dims[] = {batch_size, data_size, 1};\n     int strides[] = {dims[1] * dims[2], dims[2], 1};\n     TensorDescriptor tensor_desc = CreateTensorDescriptor();"
+    }
+  ]
+}

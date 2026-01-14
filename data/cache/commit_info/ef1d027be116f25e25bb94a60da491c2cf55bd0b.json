@@ -1,0 +1,101 @@
+{
+  "sha": "ef1d027be116f25e25bb94a60da491c2cf55bd0b",
+  "node_id": "C_kwDOArmXAtoAKGVmMWQwMjdiZTExNmYyNWUyNWJiOTRhNjBkYTQ5MWMyY2Y1NWJkMGI",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-09T19:04:04Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-09T19:22:09Z"
+    },
+    "message": "Prevent copying uninitialized data in `AssignOp`.\n\nThis prevents harder to debug undefined behaviors that cannot be traced back to the original tensor after assignments occur earlier in the graph execution. Several of these undefined behaviors are just reference bindings to null pointers, which are caught when running under ubsan/asan.\n\nPiperOrigin-RevId: 408654780\nChange-Id: Iad2ec40d43f5fd7ea016c20283356c12d5ddeab1",
+    "tree": {
+      "sha": "ebcca3f9cd4529e72b1fb66595e8323e0f8fb240",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/ebcca3f9cd4529e72b1fb66595e8323e0f8fb240"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/ef1d027be116f25e25bb94a60da491c2cf55bd0b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ef1d027be116f25e25bb94a60da491c2cf55bd0b",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/ef1d027be116f25e25bb94a60da491c2cf55bd0b",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ef1d027be116f25e25bb94a60da491c2cf55bd0b/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eeb5e2168a5b3a701656b7366e3bc60d5234471e",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/eeb5e2168a5b3a701656b7366e3bc60d5234471e",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/eeb5e2168a5b3a701656b7366e3bc60d5234471e"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "1e84436b27e0d85a27beecbdfc006fd94a8d4066",
+      "filename": "tensorflow/core/kernels/assign_op.h",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/ef1d027be116f25e25bb94a60da491c2cf55bd0b/tensorflow%2Fcore%2Fkernels%2Fassign_op.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/ef1d027be116f25e25bb94a60da491c2cf55bd0b/tensorflow%2Fcore%2Fkernels%2Fassign_op.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fassign_op.h?ref=ef1d027be116f25e25bb94a60da491c2cf55bd0b",
+      "patch": "@@ -50,6 +50,12 @@ class AssignOp : public OpKernel {\n     // We always return the input ref.\n     context->forward_ref_input_to_ref_output(0, 0);\n \n+    // Prevent copying uninitialized data, to solve harder to debug undefined\n+    // behaviors that cannot be traced back to the original tensor.\n+    OP_REQUIRES(\n+        context, rhs.IsInitialized(),\n+        errors::Internal(\"Right hand side of AssignOp is not initialized\"));\n+\n     // We can't always know how this value will be used downstream, so make\n     // conservative assumptions in specifying constraints on the memory\n     // allocation attributes, unless the Grappler graph analysis determined that"
+    }
+  ]
+}

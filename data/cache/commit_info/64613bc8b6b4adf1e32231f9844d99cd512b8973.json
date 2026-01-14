@@ -1,0 +1,149 @@
+{
+  "sha": "64613bc8b6b4adf1e32231f9844d99cd512b8973",
+  "node_id": "MDY6Q29tbWl0NDY1NjgxOjY0NjEzYmM4YjZiNGFkZjFlMzIyMzFmOTg0NGQ5OWNkNTEyYjg5NzM=",
+  "commit": {
+    "author": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2019-03-15T20:34:10Z"
+    },
+    "committer": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2019-03-22T00:22:00Z"
+    },
+    "message": "Don't crash if user specified invalid encoding.\n\nThis is CVE-2019-9917",
+    "tree": {
+      "sha": "ccc8454caf144e2d96b067035c97767de0804c9b",
+      "url": "https://api.github.com/repos/znc/znc/git/trees/ccc8454caf144e2d96b067035c97767de0804c9b"
+    },
+    "url": "https://api.github.com/repos/znc/znc/git/commits/64613bc8b6b4adf1e32231f9844d99cd512b8973",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/znc/znc/commits/64613bc8b6b4adf1e32231f9844d99cd512b8973",
+  "html_url": "https://github.com/znc/znc/commit/64613bc8b6b4adf1e32231f9844d99cd512b8973",
+  "comments_url": "https://api.github.com/repos/znc/znc/commits/64613bc8b6b4adf1e32231f9844d99cd512b8973/comments",
+  "author": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "46544d9067deb7c3f051e4592e5d454ce07aac4a",
+      "url": "https://api.github.com/repos/znc/znc/commits/46544d9067deb7c3f051e4592e5d454ce07aac4a",
+      "html_url": "https://github.com/znc/znc/commit/46544d9067deb7c3f051e4592e5d454ce07aac4a"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 34,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "109f8c6b0307efccd9114878fe16698c62996908",
+      "filename": "modules/controlpanel.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/znc/znc/blob/64613bc8b6b4adf1e32231f9844d99cd512b8973/modules%2Fcontrolpanel.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/64613bc8b6b4adf1e32231f9844d99cd512b8973/modules%2Fcontrolpanel.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/modules%2Fcontrolpanel.cpp?ref=64613bc8b6b4adf1e32231f9844d99cd512b8973",
+      "patch": "@@ -495,7 +495,7 @@ class CAdminMod : public CModule {\n #ifdef HAVE_ICU\n         else if (sVar == \"clientencoding\") {\n             pUser->SetClientEncoding(sValue);\n-            PutModule(\"ClientEncoding = \" + sValue);\n+            PutModule(\"ClientEncoding = \" + pUser->GetClientEncoding());\n         }\n #endif\n         else"
+    },
+    {
+      "sha": "0e1d6e2a3ee7f6ada4ea3fdc8041fd89dec9c5c8",
+      "filename": "src/IRCNetwork.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/znc/znc/blob/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2FIRCNetwork.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2FIRCNetwork.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2FIRCNetwork.cpp?ref=64613bc8b6b4adf1e32231f9844d99cd512b8973",
+      "patch": "@@ -1482,9 +1482,9 @@ void CIRCNetwork::SetBindHost(const CString& s) {\n }\n \n void CIRCNetwork::SetEncoding(const CString& s) {\n-    m_sEncoding = s;\n+    m_sEncoding = CZNC::Get().FixupEncoding(s);\n     if (GetIRCSock()) {\n-        GetIRCSock()->SetEncoding(s);\n+        GetIRCSock()->SetEncoding(m_sEncoding);\n     }\n }\n "
+    },
+    {
+      "sha": "c44cf607016710dec918c806fae9c12bd63d54ba",
+      "filename": "src/User.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/znc/znc/blob/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2FUser.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2FUser.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2FUser.cpp?ref=64613bc8b6b4adf1e32231f9844d99cd512b8973",
+      "patch": "@@ -1253,9 +1253,9 @@ void CUser::SetAdmin(bool b) { m_bAdmin = b; }\n void CUser::SetDenySetBindHost(bool b) { m_bDenySetBindHost = b; }\n void CUser::SetDefaultChanModes(const CString& s) { m_sDefaultChanModes = s; }\n void CUser::SetClientEncoding(const CString& s) {\n-    m_sClientEncoding = s;\n+    m_sClientEncoding = CZNC::Get().FixupEncoding(s);\n     for (CClient* pClient : GetAllClients()) {\n-        pClient->SetEncoding(s);\n+        pClient->SetEncoding(m_sClientEncoding);\n     }\n }\n void CUser::SetQuitMsg(const CString& s) { m_sQuitMsg = s; }"
+    },
+    {
+      "sha": "3f4dd2e07b135095dc92af5e3b3ff7fe308e0096",
+      "filename": "src/znc.cpp",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 4,
+      "changes": 26,
+      "blob_url": "https://github.com/znc/znc/blob/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2Fznc.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/64613bc8b6b4adf1e32231f9844d99cd512b8973/src%2Fznc.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2Fznc.cpp?ref=64613bc8b6b4adf1e32231f9844d99cd512b8973",
+      "patch": "@@ -2092,18 +2092,36 @@ void CZNC::ForceEncoding() {\n     m_uiForceEncoding++;\n #ifdef HAVE_ICU\n     for (Csock* pSock : GetManager()) {\n-        if (pSock->GetEncoding().empty()) {\n-            pSock->SetEncoding(\"UTF-8\");\n-        }\n+        pSock->SetEncoding(FixupEncoding(pSock->GetEncoding()));\n     }\n #endif\n }\n void CZNC::UnforceEncoding() { m_uiForceEncoding--; }\n bool CZNC::IsForcingEncoding() const { return m_uiForceEncoding; }\n CString CZNC::FixupEncoding(const CString& sEncoding) const {\n-    if (sEncoding.empty() && m_uiForceEncoding) {\n+    if (!m_uiForceEncoding) {\n+        return sEncoding;\n+    }\n+    if (sEncoding.empty()) {\n+        return \"UTF-8\";\n+    }\n+    const char* sRealEncoding = sEncoding.c_str();\n+    if (sEncoding[0] == '*' || sEncoding[0] == '^') {\n+        sRealEncoding++;\n+    }\n+    if (!*sRealEncoding) {\n         return \"UTF-8\";\n     }\n+#ifdef HAVE_ICU\n+    UErrorCode e = U_ZERO_ERROR;\n+    UConverter* cnv = ucnv_open(sRealEncoding, &e);\n+    if (cnv) {\n+        ucnv_close(cnv);\n+    }\n+    if (U_FAILURE(e)) {\n+        return \"UTF-8\";\n+    }\n+#endif\n     return sEncoding;\n }\n "
+    },
+    {
+      "sha": "8f809f50cf142c8b42a523c76eacb9c26dc2ff41",
+      "filename": "test/integration/tests/scripting.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/znc/znc/blob/64613bc8b6b4adf1e32231f9844d99cd512b8973/test%2Fintegration%2Ftests%2Fscripting.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/64613bc8b6b4adf1e32231f9844d99cd512b8973/test%2Fintegration%2Ftests%2Fscripting.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/test%2Fintegration%2Ftests%2Fscripting.cpp?ref=64613bc8b6b4adf1e32231f9844d99cd512b8973",
+      "patch": "@@ -55,6 +55,13 @@ TEST_F(ZNCTest, Modpython) {\n     ircd.Write(\":n!u@h PRIVMSG nick :Hi\\xF0, github issue #1229\");\n     // \"replacement character\"\n     client.ReadUntil(\"Hi\\xEF\\xBF\\xBD, github issue\");\n+\n+    // Non-existing encoding\n+    client.Write(\"PRIVMSG *controlpanel :Set ClientEncoding $me Western\");\n+    client.Write(\"JOIN #a\\342\");\n+    client.ReadUntil(\n+        \":*controlpanel!znc@znc.in PRIVMSG nick :ClientEncoding = UTF-8\");\n+    ircd.ReadUntil(\"JOIN #a\\xEF\\xBF\\xBD\");\n }\n \n TEST_F(ZNCTest, ModpythonSocket) {"
+    }
+  ]
+}

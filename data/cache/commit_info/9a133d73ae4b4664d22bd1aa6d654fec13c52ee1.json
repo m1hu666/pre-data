@@ -1,0 +1,113 @@
+{
+  "sha": "9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6OWExMzNkNzNhZTRiNDY2NGQyMmJkMWFhNmQ2NTRmZWMxM2M1MmVlMQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T23:23:20Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T23:30:02Z"
+    },
+    "message": "Prevent segfault in `GetSessionHandle{,V2}`.\n\nIn eager mode, session state is null.\n\nPiperOrigin-RevId: 332548597\nChange-Id: If094812c2e094044220b9ba28f7d7601be042f38",
+    "tree": {
+      "sha": "65b870d78aba408d8023d0ec8ede6560264139c4",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/65b870d78aba408d8023d0ec8ede6560264139c4"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73b291b6ace69ca9063d086f05c0c4dc05cfcbbf",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/73b291b6ace69ca9063d086f05c0c4dc05cfcbbf",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/73b291b6ace69ca9063d086f05c0c4dc05cfcbbf"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 15,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ee81ad27632622cbea82a3ca629e9e77d09503be",
+      "filename": "tensorflow/core/kernels/session_ops.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1/tensorflow%2Fcore%2Fkernels%2Fsession_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1/tensorflow%2Fcore%2Fkernels%2Fsession_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fsession_ops.cc?ref=9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+      "patch": "@@ -16,6 +16,7 @@ limitations under the License.\n // See docs in ../ops/data_flow_ops.cc.\n \n #include <limits.h>\n+\n #include <vector>\n \n #include \"tensorflow/core/common_runtime/device.h\"\n@@ -27,6 +28,7 @@ limitations under the License.\n #include \"tensorflow/core/framework/types.h\"\n #include \"tensorflow/core/lib/core/errors.h\"\n #include \"tensorflow/core/lib/gtl/map_util.h\"\n+#include \"tensorflow/core/platform/errors.h\"\n #include \"tensorflow/core/platform/logging.h\"\n #include \"tensorflow/core/platform/macros.h\"\n #include \"tensorflow/core/platform/mutex.h\"\n@@ -42,7 +44,11 @@ class GetSessionHandleOp : public OpKernel {\n \n   void Compute(OpKernelContext* ctx) override {\n     const Tensor& val = ctx->input(0);\n-    int64 id = ctx->session_state()->GetNewId();\n+    auto session_state = ctx->session_state();\n+    OP_REQUIRES(ctx, session_state != nullptr,\n+                errors::FailedPrecondition(\n+                    \"GetSessionHandle called on null session state\"));\n+    int64 id = session_state->GetNewId();\n     TensorStore::TensorAndKey tk{val, id, requested_device()};\n     OP_REQUIRES_OK(ctx, ctx->tensor_store()->AddTensor(name(), tk));\n "
+    },
+    {
+      "sha": "6706ef194b221a285e44852edf4d006de3e33289",
+      "filename": "tensorflow/python/ops/raw_ops_test.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1/tensorflow%2Fpython%2Fops%2Fraw_ops_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1/tensorflow%2Fpython%2Fops%2Fraw_ops_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fops%2Fraw_ops_test.py?ref=9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+      "patch": "@@ -25,6 +25,7 @@\n from tensorflow.python.framework import errors\n from tensorflow.python.framework import ops\n from tensorflow.python.framework import test_util\n+from tensorflow.python.ops import gen_data_flow_ops\n from tensorflow.python.ops import gen_math_ops\n from tensorflow.python.ops import gen_string_ops\n from tensorflow.python.platform import test\n@@ -79,6 +80,13 @@ def testStringNGramsBadDataSplits(self, splits):\n               pad_width=0,\n               preserve_short_sequences=False))\n \n+  def testGetSessionHandle(self):\n+    if context.executing_eagerly():\n+      with self.assertRaisesRegex(\n+          errors.FailedPreconditionError,\n+          \"GetSessionHandle called on null session state\"):\n+        gen_data_flow_ops.GetSessionHandle(value=[1])\n+\n \n if __name__ == \"__main__\":\n   ops.enable_eager_execution()"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "sha": "ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+  "node_id": "MDY6Q29tbWl0NjUyMTQxOTE6ZWEzOWUzY2JhNjUyYmNjNGIxMWJiMGQ1YzYyYjAxN2U1ODRkMmU1YQ==",
+  "commit": {
+    "author": {
+      "name": "Wayne Zhang",
+      "email": "qiwzhang@google.com",
+      "date": "2021-02-26T00:49:10Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-26T00:49:10Z"
+    },
+    "message": "jwt_authn: fix a bug where JWT with wrong issuer is allowed in allow_missing case (#15194)\n\n[jwt] When allow_missing is used inside RequiresAny, the requests with JWT with wrong issuer are accepted. This is a bug, allow_missing should only allow requests without any JWT. This change fixed the above issue by preserving JwtUnknownIssuer in allow_missing case.\r\n\r\nSigned-off-by: Wayne Zhang <qiwzhang@google.com>",
+    "tree": {
+      "sha": "2832cf4b7f6837b34212728c54f241b51be15dc6",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/2832cf4b7f6837b34212728c54f241b51be15dc6"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgOEWGCRBK7hj4Ov3rIwAAdHIIAA2j46QsWS5JKemnRJx14zNv\nssPa15aIDwrEwN0FtnCFAY+yINcJENC9F4nZ4p1VPFCRCdxf7KcArtzmMeg2KK9T\n3Pd1fyKjLKNocDqbJrxkqptHybdif4oJgbvvLvOJFk7yQYHV/GckUOhNDwAypzZ7\n2fnQy14BlOfWqPrPoRoC/I3q34hLIhC1tra9MsMq9E8zxQPsQ/xPu4ladKDMHY0O\niJ17JfaUvEbHs36CZkq0GG7iGgMgkyM75FopadhKXA3HytMCX3OPuTEcptJaHc22\nOJrb4yRTsAhFzh2l4gfYNTdvJvLyh6wmEB5Lbn/MkWmSq9CfSN9KU0J2dqFd42g=\n=2B83\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 2832cf4b7f6837b34212728c54f241b51be15dc6\nparent d3ff1c6c789636be6f74bd410c542a9d018fe69b\nauthor Wayne Zhang <qiwzhang@google.com> 1614300550 -0800\ncommitter GitHub <noreply@github.com> 1614300550 -0500\n\njwt_authn: fix a bug where JWT with wrong issuer is allowed in allow_missing case (#15194)\n\n[jwt] When allow_missing is used inside RequiresAny, the requests with JWT with wrong issuer are accepted. This is a bug, allow_missing should only allow requests without any JWT. This change fixed the above issue by preserving JwtUnknownIssuer in allow_missing case.\r\n\r\nSigned-off-by: Wayne Zhang <qiwzhang@google.com>",
+      "verified_at": "2024-11-07T15:23:05Z"
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/comments",
+  "author": {
+    "login": "qiwzhang",
+    "id": 11790727,
+    "node_id": "MDQ6VXNlcjExNzkwNzI3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11790727?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qiwzhang",
+    "html_url": "https://github.com/qiwzhang",
+    "followers_url": "https://api.github.com/users/qiwzhang/followers",
+    "following_url": "https://api.github.com/users/qiwzhang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qiwzhang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qiwzhang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qiwzhang/subscriptions",
+    "organizations_url": "https://api.github.com/users/qiwzhang/orgs",
+    "repos_url": "https://api.github.com/users/qiwzhang/repos",
+    "events_url": "https://api.github.com/users/qiwzhang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qiwzhang/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d3ff1c6c789636be6f74bd410c542a9d018fe69b",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/d3ff1c6c789636be6f74bd410c542a9d018fe69b",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/d3ff1c6c789636be6f74bd410c542a9d018fe69b"
+    }
+  ],
+  "stats": {
+    "total": 35,
+    "additions": 22,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "1c08fb66e6d17920b6edab0c0ef5354e5a268a08",
+      "filename": "docs/root/version_history/current.rst",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/docs%2Froot%2Fversion_history%2Fcurrent.rst",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/docs%2Froot%2Fversion_history%2Fcurrent.rst?ref=ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+      "patch": "@@ -58,6 +58,7 @@ Bug Fixes\n * grpc_http_bridge: the downstream HTTP status is now correctly set for trailers-only responses from the upstream.\n * http: disallowing \"host:\" in request_headers_to_add for behavioral consistency with rejecting :authority header. This behavior can be temporarily reverted by setting `envoy.reloadable_features.treat_host_like_authority` to false.\n * http: reverting a behavioral change where upstream connect timeouts were temporarily treated differently from other connection failures. The change back to the original behavior can be temporarily reverted by setting `envoy.reloadable_features.treat_upstream_connect_timeout_as_connect_failure` to false.\n+* jwt_authn: reject requests with a proper error if JWT has the wrong issuer when allow_missing is used. Before this change, the requests are accepted.\n * listener: prevent crashing when an unknown listener config proto is received and debug logging is enabled.\n * overload: fix a bug that can cause use-after-free when one scaled timer disables another one with the same duration.\n * sni: as the server name in sni should be case-insensitive, envoy will convert the server name as lower case first before any other process inside envoy."
+    },
+    {
+      "sha": "83361c8edd7b8a95702928589036a6ed4137bfd5",
+      "filename": "source/extensions/filters/http/jwt_authn/verifier.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 8,
+      "changes": 15,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fverifier.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fverifier.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fverifier.cc?ref=ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+      "patch": "@@ -301,17 +301,16 @@ class AnyVerifierImpl : public BaseGroupVerifierImpl {\n     // Then wait for all children to be done.\n     if (++completion_state.number_completed_children_ == verifiers_.size()) {\n       // Aggregate all children status into a final status.\n-      // JwtMissing should be treated differently than other failure status\n-      // since it simply means there is not Jwt token for the required provider.\n-      // If there is a failure status other than JwtMissing in the children,\n-      // it should be used as the final status.\n+      // JwtMissed and JwtUnknownIssuer should be treated differently than other errors.\n+      // JwtMissed means not Jwt token for the required provider.\n+      // JwtUnknownIssuer means wrong issuer for the required provider.\n       Status final_status = Status::JwtMissed;\n       for (const auto& it : verifiers_) {\n-        // If a Jwt is extracted from a location not specified by the required provider,\n-        // the authenticator returns JwtUnknownIssuer. It should be treated the same as\n-        // JwtMissed.\n+        // Prefer errors which are not JwtMissed nor JwtUnknownIssuer.\n+        // Prefer JwtUnknownIssuer between JwtMissed and JwtUnknownIssuer.\n         Status child_status = context.getCompletionState(it.get()).status_;\n-        if (child_status != Status::JwtMissed && child_status != Status::JwtUnknownIssuer) {\n+        if ((child_status != Status::JwtMissed && child_status != Status::JwtUnknownIssuer) ||\n+            final_status == Status::JwtMissed) {\n           final_status = child_status;\n         }\n       }"
+    },
+    {
+      "sha": "ba198bb922a5f7b0027d2ba741e30e4fd219c0ca",
+      "filename": "test/extensions/filters/http/jwt_authn/all_verifier_test.cc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 2,
+      "changes": 13,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fall_verifier_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fall_verifier_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fall_verifier_test.cc?ref=ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+      "patch": "@@ -197,7 +197,7 @@ TEST_F(SingleAllowMissingInOrListTest, BadJwt) {\n }\n \n TEST_F(SingleAllowMissingInOrListTest, MissingIssToken) {\n-  EXPECT_CALL(mock_cb_, onComplete(Status::Ok));\n+  EXPECT_CALL(mock_cb_, onComplete(Status::JwtUnknownIssuer));\n   auto headers = Http::TestRequestHeaderMapImpl{{kExampleHeader, ES256WithoutIssToken}};\n   context_ = Verifier::createContext(headers, parent_span_, &mock_cb_);\n   verifier_->verify(context_);\n@@ -471,6 +471,15 @@ TEST_F(AllowMissingInOrListTest, OtherGoodJwt) {\n   EXPECT_THAT(headers, JwtOutputFailedOrIgnore(kOtherHeader));\n }\n \n+TEST_F(AllowMissingInOrListTest, WrongIssuer) {\n+  EXPECT_CALL(mock_cb_, onComplete(Status::JwtUnknownIssuer));\n+  auto headers = Http::TestRequestHeaderMapImpl{{kExampleHeader, OtherGoodToken}};\n+  context_ = Verifier::createContext(headers, parent_span_, &mock_cb_);\n+  verifier_->verify(context_);\n+  // x-other JWT should be ignored.\n+  EXPECT_THAT(headers, JwtOutputFailedOrIgnore(kOtherHeader));\n+}\n+\n TEST_F(AllowMissingInOrListTest, BadAndGoodJwts) {\n   EXPECT_CALL(mock_cb_, onComplete(Status::JwtVerificationFail));\n   auto headers = Http::TestRequestHeaderMapImpl{{kExampleHeader, NonExistKidToken},\n@@ -589,7 +598,7 @@ TEST_F(AllowMissingInAndOfOrListTest, TwoGoodJwts) {\n }\n \n TEST_F(AllowMissingInAndOfOrListTest, GoodAndBadJwts) {\n-  EXPECT_CALL(mock_cb_, onComplete(Status::Ok));\n+  EXPECT_CALL(mock_cb_, onComplete(Status::JwtUnknownIssuer));\n   // Use the token with example.com issuer for x-other.\n   auto headers =\n       Http::TestRequestHeaderMapImpl{{kExampleHeader, GoodToken}, {kOtherHeader, GoodToken}};"
+    },
+    {
+      "sha": "0ccbe3aac770f06141d7e7d634e872088b390465",
+      "filename": "test/extensions/filters/http/jwt_authn/group_verifier_test.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fgroup_verifier_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fgroup_verifier_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Ffilters%2Fhttp%2Fjwt_authn%2Fgroup_verifier_test.cc?ref=ea39e3cba652bcc4b11bb0d5c62b017e584d2e5a",
+      "patch": "@@ -582,8 +582,8 @@ TEST_F(GroupVerifierTest, TestRequiresAnyWithAllowMissingButFailed) {\n   callbacks_[\"other_provider\"](Status::JwtExpired);\n }\n \n-// Test RequiresAny with two providers and allow_missing, but OK\n-TEST_F(GroupVerifierTest, TestRequiresAnyWithAllowMissingButOk) {\n+// Test RequiresAny with two providers and allow_missing, but one returns JwtUnknownIssuer\n+TEST_F(GroupVerifierTest, TestRequiresAnyWithAllowMissingButUnknownIssuer) {\n   TestUtility::loadFromYaml(RequiresAnyConfig, proto_config_);\n   proto_config_.mutable_rules(0)\n       ->mutable_requires()\n@@ -592,7 +592,7 @@ TEST_F(GroupVerifierTest, TestRequiresAnyWithAllowMissingButOk) {\n       ->mutable_allow_missing();\n \n   createAsyncMockAuthsAndVerifier(std::vector<std::string>{\"example_provider\", \"other_provider\"});\n-  EXPECT_CALL(mock_cb_, onComplete(Status::Ok));\n+  EXPECT_CALL(mock_cb_, onComplete(Status::JwtUnknownIssuer));\n \n   auto headers = Http::TestRequestHeaderMapImpl{};\n   context_ = Verifier::createContext(headers, parent_span_, &mock_cb_);"
+    }
+  ]
+}

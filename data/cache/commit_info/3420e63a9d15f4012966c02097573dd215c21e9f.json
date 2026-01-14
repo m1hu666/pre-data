@@ -1,0 +1,113 @@
+{
+  "sha": "3420e63a9d15f4012966c02097573dd215c21e9f",
+  "node_id": "C_kwDOBQqYXNoAKDM0MjBlNjNhOWQxNWY0MDEyOTY2YzAyMDk3NTczZGQyMTVjMjFlOWY",
+  "commit": {
+    "author": {
+      "name": "Nickolay Olshevsky",
+      "email": "o.nickolay@gmail.com",
+      "date": "2023-03-31T09:23:54Z"
+    },
+    "committer": {
+      "name": "Ronald Tse",
+      "email": "ronald.tse@ribose.com",
+      "date": "2023-04-13T00:27:38Z"
+    },
+    "message": "Fix typo with unnamed variable in stream-parse and update tests.",
+    "tree": {
+      "sha": "d7aaddaa0da7cb06c9518554708ac91a946fb238",
+      "url": "https://api.github.com/repos/rnpgp/rnp/git/trees/d7aaddaa0da7cb06c9518554708ac91a946fb238"
+    },
+    "url": "https://api.github.com/repos/rnpgp/rnp/git/commits/3420e63a9d15f4012966c02097573dd215c21e9f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/rnpgp/rnp/commits/3420e63a9d15f4012966c02097573dd215c21e9f",
+  "html_url": "https://github.com/rnpgp/rnp/commit/3420e63a9d15f4012966c02097573dd215c21e9f",
+  "comments_url": "https://api.github.com/repos/rnpgp/rnp/commits/3420e63a9d15f4012966c02097573dd215c21e9f/comments",
+  "author": {
+    "login": "ni4",
+    "id": 4312096,
+    "node_id": "MDQ6VXNlcjQzMTIwOTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4312096?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ni4",
+    "html_url": "https://github.com/ni4",
+    "followers_url": "https://api.github.com/users/ni4/followers",
+    "following_url": "https://api.github.com/users/ni4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ni4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ni4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ni4/subscriptions",
+    "organizations_url": "https://api.github.com/users/ni4/orgs",
+    "repos_url": "https://api.github.com/users/ni4/repos",
+    "events_url": "https://api.github.com/users/ni4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ni4/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ronaldtse",
+    "id": 11865,
+    "node_id": "MDQ6VXNlcjExODY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11865?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ronaldtse",
+    "html_url": "https://github.com/ronaldtse",
+    "followers_url": "https://api.github.com/users/ronaldtse/followers",
+    "following_url": "https://api.github.com/users/ronaldtse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ronaldtse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ronaldtse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ronaldtse/subscriptions",
+    "organizations_url": "https://api.github.com/users/ronaldtse/orgs",
+    "repos_url": "https://api.github.com/users/ronaldtse/repos",
+    "events_url": "https://api.github.com/users/ronaldtse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ronaldtse/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fe19e5d740b284dd732ac6d7fe4610d4b5ea8b69",
+      "url": "https://api.github.com/repos/rnpgp/rnp/commits/fe19e5d740b284dd732ac6d7fe4610d4b5ea8b69",
+      "html_url": "https://github.com/rnpgp/rnp/commit/fe19e5d740b284dd732ac6d7fe4610d4b5ea8b69"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 42,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "88b0f0b9c573441e76b185d2035f1a8d17e030c4",
+      "filename": "src/librepgp/stream-write.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/rnpgp/rnp/blob/3420e63a9d15f4012966c02097573dd215c21e9f/src%2Flibrepgp%2Fstream-write.cpp",
+      "raw_url": "https://github.com/rnpgp/rnp/raw/3420e63a9d15f4012966c02097573dd215c21e9f/src%2Flibrepgp%2Fstream-write.cpp",
+      "contents_url": "https://api.github.com/repos/rnpgp/rnp/contents/src%2Flibrepgp%2Fstream-write.cpp?ref=3420e63a9d15f4012966c02097573dd215c21e9f",
+      "patch": "@@ -1126,7 +1126,7 @@ signed_fill_signature(pgp_dest_signed_param_t &param,\n     }\n \n     /* decrypt the secret key if needed */\n-    rnp::KeyLocker(*signer.key);\n+    rnp::KeyLocker keylock(*signer.key);\n     if (signer.key->encrypted() &&\n         !signer.key->unlock(*param.password_provider, PGP_OP_SIGN)) {\n         RNP_LOG(\"wrong secret key password\");"
+    },
+    {
+      "sha": "7ecc1f4cba508be1af9cd634cd7fd28036dabded",
+      "filename": "src/tests/ffi-enc.cpp",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 0,
+      "changes": 41,
+      "blob_url": "https://github.com/rnpgp/rnp/blob/3420e63a9d15f4012966c02097573dd215c21e9f/src%2Ftests%2Fffi-enc.cpp",
+      "raw_url": "https://github.com/rnpgp/rnp/raw/3420e63a9d15f4012966c02097573dd215c21e9f/src%2Ftests%2Fffi-enc.cpp",
+      "contents_url": "https://api.github.com/repos/rnpgp/rnp/contents/src%2Ftests%2Fffi-enc.cpp?ref=3420e63a9d15f4012966c02097573dd215c21e9f",
+      "patch": "@@ -670,6 +670,28 @@ TEST_F(rnp_tests, test_ffi_encrypt_and_sign)\n     // make sure the output file was created\n     assert_true(rnp_file_exists(\"encrypted\"));\n \n+    // check whether keys are locked\n+    rnp_identifier_iterator_t it = NULL;\n+    assert_rnp_success(rnp_identifier_iterator_create(ffi, &it, \"fingerprint\"));\n+    const char *fp = NULL;\n+    while (!rnp_identifier_iterator_next(it, &fp)) {\n+        if (!fp) {\n+            break;\n+        }\n+        SCOPED_TRACE(fp);\n+        rnp_key_handle_t skey = NULL;\n+        assert_rnp_success(rnp_locate_key(ffi, \"fingerprint\", fp, &skey));\n+        bool secret = true;\n+        assert_rnp_success(rnp_key_have_secret(skey, &secret));\n+        if (secret) {\n+            bool locked = false;\n+            assert_rnp_success(rnp_key_is_locked(skey, &locked));\n+            assert_true(locked);\n+        }\n+        rnp_key_handle_destroy(skey);\n+    }\n+    rnp_identifier_iterator_destroy(it);\n+\n     // cleanup\n     assert_rnp_success(rnp_input_destroy(input));\n     input = NULL;\n@@ -762,6 +784,25 @@ TEST_F(rnp_tests, test_ffi_encrypt_and_sign)\n     assert_string_equal(hname, \"SHA512\");\n     rnp_buffer_destroy(hname);\n     hname = NULL;\n+    // make sure keys are locked\n+    assert_rnp_success(rnp_identifier_iterator_create(ffi, &it, \"fingerprint\"));\n+    while (!rnp_identifier_iterator_next(it, &fp)) {\n+        if (!fp) {\n+            break;\n+        }\n+        SCOPED_TRACE(fp);\n+        rnp_key_handle_t skey = NULL;\n+        assert_rnp_success(rnp_locate_key(ffi, \"fingerprint\", fp, &skey));\n+        bool secret = true;\n+        assert_rnp_success(rnp_key_have_secret(skey, &secret));\n+        if (secret) {\n+            bool locked = false;\n+            assert_rnp_success(rnp_key_is_locked(skey, &locked));\n+            assert_true(locked);\n+        }\n+        rnp_key_handle_destroy(skey);\n+    }\n+    rnp_identifier_iterator_destroy(it);\n     // cleanup\n     rnp_op_verify_destroy(verify);\n     rnp_input_destroy(input);"
+    }
+  ]
+}

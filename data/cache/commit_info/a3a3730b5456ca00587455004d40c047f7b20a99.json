@@ -1,0 +1,101 @@
+{
+  "sha": "a3a3730b5456ca00587455004d40c047f7b20a99",
+  "node_id": "MDY6Q29tbWl0MTYxNDQxMDphM2EzNzMwYjU0NTZjYTAwNTg3NDU1MDA0ZDQwYzA0N2Y3YjIwYTk5",
+  "commit": {
+    "author": {
+      "name": "Michael Niedermayer",
+      "email": "michael@niedermayer.cc",
+      "date": "2020-03-07T14:42:58Z"
+    },
+    "committer": {
+      "name": "Michael Niedermayer",
+      "email": "michael@niedermayer.cc",
+      "date": "2020-07-03T10:10:23Z"
+    },
+    "message": "avcodec/cbs_jpeg: Check length for SOS\n\nFixes: out of array access\nFixes: 19734/clusterfuzz-testcase-minimized-ffmpeg_BSF_TRACE_HEADERS_fuzzer-5673507031875584\nFixes: 19353/clusterfuzz-testcase-minimized-ffmpeg_BSF_TRACE_HEADERS_fuzzer-5703944462663680\n\nFound-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/projects/ffmpeg\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>\n(cherry picked from commit 1812352d767ccf5431aa440123e2e260a4db2726)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+    "tree": {
+      "sha": "f9340df982627d9956ee4f17924779eb5993ea2d",
+      "url": "https://api.github.com/repos/FFmpeg/FFmpeg/git/trees/f9340df982627d9956ee4f17924779eb5993ea2d"
+    },
+    "url": "https://api.github.com/repos/FFmpeg/FFmpeg/git/commits/a3a3730b5456ca00587455004d40c047f7b20a99",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/a3a3730b5456ca00587455004d40c047f7b20a99",
+  "html_url": "https://github.com/FFmpeg/FFmpeg/commit/a3a3730b5456ca00587455004d40c047f7b20a99",
+  "comments_url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/a3a3730b5456ca00587455004d40c047f7b20a99/comments",
+  "author": {
+    "login": "michaelni",
+    "id": 729390,
+    "node_id": "MDQ6VXNlcjcyOTM5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/729390?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelni",
+    "html_url": "https://github.com/michaelni",
+    "followers_url": "https://api.github.com/users/michaelni/followers",
+    "following_url": "https://api.github.com/users/michaelni/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelni/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelni/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelni/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelni/orgs",
+    "repos_url": "https://api.github.com/users/michaelni/repos",
+    "events_url": "https://api.github.com/users/michaelni/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelni",
+    "id": 729390,
+    "node_id": "MDQ6VXNlcjcyOTM5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/729390?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelni",
+    "html_url": "https://github.com/michaelni",
+    "followers_url": "https://api.github.com/users/michaelni/followers",
+    "following_url": "https://api.github.com/users/michaelni/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelni/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelni/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelni/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelni/orgs",
+    "repos_url": "https://api.github.com/users/michaelni/repos",
+    "events_url": "https://api.github.com/users/michaelni/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8640db14e70fa7f52397dbb6e54a62e5e1f0d2c2",
+      "url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/8640db14e70fa7f52397dbb6e54a62e5e1f0d2c2",
+      "html_url": "https://github.com/FFmpeg/FFmpeg/commit/8640db14e70fa7f52397dbb6e54a62e5e1f0d2c2"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "f4e40862e2ba1af7ac7f995bd3ca2a6508ea5619",
+      "filename": "libavcodec/cbs_jpeg.c",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/FFmpeg/FFmpeg/blob/a3a3730b5456ca00587455004d40c047f7b20a99/libavcodec%2Fcbs_jpeg.c",
+      "raw_url": "https://github.com/FFmpeg/FFmpeg/raw/a3a3730b5456ca00587455004d40c047f7b20a99/libavcodec%2Fcbs_jpeg.c",
+      "contents_url": "https://api.github.com/repos/FFmpeg/FFmpeg/contents/libavcodec%2Fcbs_jpeg.c?ref=a3a3730b5456ca00587455004d40c047f7b20a99",
+      "patch": "@@ -197,6 +197,9 @@ static int cbs_jpeg_split_fragment(CodedBitstreamContext *ctx,\n         if (marker == JPEG_MARKER_SOS) {\n             length = AV_RB16(frag->data + start);\n \n+            if (length > end - start)\n+                return AVERROR_INVALIDDATA;\n+\n             data_ref = NULL;\n             data     = av_malloc(end - start +\n                                  AV_INPUT_BUFFER_PADDING_SIZE);"
+    }
+  ]
+}

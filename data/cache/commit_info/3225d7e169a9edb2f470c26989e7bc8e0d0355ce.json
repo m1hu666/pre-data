@@ -1,0 +1,113 @@
+{
+  "sha": "3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+  "node_id": "MDY6Q29tbWl0NDI3OTY4MjozMjI1ZDdlMTY5YTllZGIyZjQ3MGMyNjk4OWU3YmM4ZTBkMDM1NWNl",
+  "commit": {
+    "author": {
+      "name": "David Adam",
+      "email": "zanchey@ucc.gu.uwa.edu.au",
+      "date": "2014-04-28T15:37:02Z"
+    },
+    "committer": {
+      "name": "David Adam",
+      "email": "zanchey@ucc.gu.uwa.edu.au",
+      "date": "2014-05-12T01:30:05Z"
+    },
+    "message": "avoid symlink attacks in __fish_print_packages and spawning fishd\n\n * use $XDG_CACHE_HOME for __fish_print_packages completion caches\n * when starting fishd, redirect fishd output to /dev/null, not a\n   predictable path\n\nFix for CVE-2014-3219.\n\nCloses #1440.",
+    "tree": {
+      "sha": "dc5286223db2f3b723fb944bd41e2560d8e02ff2",
+      "url": "https://api.github.com/repos/fish-shell/fish-shell/git/trees/dc5286223db2f3b723fb944bd41e2560d8e02ff2"
+    },
+    "url": "https://api.github.com/repos/fish-shell/fish-shell/git/commits/3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/fish-shell/fish-shell/commits/3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+  "html_url": "https://github.com/fish-shell/fish-shell/commit/3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+  "comments_url": "https://api.github.com/repos/fish-shell/fish-shell/commits/3225d7e169a9edb2f470c26989e7bc8e0d0355ce/comments",
+  "author": {
+    "login": "zanchey",
+    "id": 520741,
+    "node_id": "MDQ6VXNlcjUyMDc0MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/520741?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zanchey",
+    "html_url": "https://github.com/zanchey",
+    "followers_url": "https://api.github.com/users/zanchey/followers",
+    "following_url": "https://api.github.com/users/zanchey/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zanchey/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zanchey/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zanchey/subscriptions",
+    "organizations_url": "https://api.github.com/users/zanchey/orgs",
+    "repos_url": "https://api.github.com/users/zanchey/repos",
+    "events_url": "https://api.github.com/users/zanchey/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zanchey/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zanchey",
+    "id": 520741,
+    "node_id": "MDQ6VXNlcjUyMDc0MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/520741?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zanchey",
+    "html_url": "https://github.com/zanchey",
+    "followers_url": "https://api.github.com/users/zanchey/followers",
+    "following_url": "https://api.github.com/users/zanchey/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zanchey/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zanchey/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zanchey/subscriptions",
+    "organizations_url": "https://api.github.com/users/zanchey/orgs",
+    "repos_url": "https://api.github.com/users/zanchey/repos",
+    "events_url": "https://api.github.com/users/zanchey/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zanchey/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6596d91c8264a8a0705736003c129a4422e91564",
+      "url": "https://api.github.com/repos/fish-shell/fish-shell/commits/6596d91c8264a8a0705736003c129a4422e91564",
+      "html_url": "https://github.com/fish-shell/fish-shell/commit/6596d91c8264a8a0705736003c129a4422e91564"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 10,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "086f181ab2a84292d9580b0abdf80859e4fb073b",
+      "filename": "env.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/fish-shell/fish-shell/blob/3225d7e169a9edb2f470c26989e7bc8e0d0355ce/env.cpp",
+      "raw_url": "https://github.com/fish-shell/fish-shell/raw/3225d7e169a9edb2f470c26989e7bc8e0d0355ce/env.cpp",
+      "contents_url": "https://api.github.com/repos/fish-shell/fish-shell/contents/env.cpp?ref=3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+      "patch": "@@ -58,7 +58,7 @@\n #include \"fish_version.h\"\n \n /** Command used to start fishd */\n-#define FISHD_CMD L\"fishd ^ /tmp/fishd.log.%s\"\n+#define FISHD_CMD L\"fishd ^ /dev/null\"\n \n // Version for easier debugging\n //#define FISHD_CMD L\"fishd\""
+    },
+    {
+      "sha": "6755dd6ae24b892e7b7b80fdb1084b00931e6672",
+      "filename": "share/functions/__fish_print_packages.fish",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/fish-shell/fish-shell/blob/3225d7e169a9edb2f470c26989e7bc8e0d0355ce/share%2Ffunctions%2F__fish_print_packages.fish",
+      "raw_url": "https://github.com/fish-shell/fish-shell/raw/3225d7e169a9edb2f470c26989e7bc8e0d0355ce/share%2Ffunctions%2F__fish_print_packages.fish",
+      "contents_url": "https://api.github.com/repos/fish-shell/fish-shell/contents/share%2Ffunctions%2F__fish_print_packages.fish?ref=3225d7e169a9edb2f470c26989e7bc8e0d0355ce",
+      "patch": "@@ -12,6 +12,12 @@ function __fish_print_packages\n \t#Get the word 'Package' in the current language\n \tset -l package (_ Package)\n \n+\t# Set up cache directory\n+\tif test -z \"$XDG_CACHE_HOME\"\n+\t\tset XDG_CACHE_HOME $HOME/.cache\n+\tend\n+\tmkdir -m 700 -p $XDG_CACHE_HOME\n+\n \tif type -f apt-cache >/dev/null\n \t\t# Do not generate the cache as apparently sometimes this is slow.\n \t\t# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=547550\n@@ -31,7 +37,7 @@ function __fish_print_packages\n \n     # Caches for 5 minutes\n \tif type -f pacman >/dev/null\n-\t\tset cache_file /tmp/.pac-cache.$USER\n+\t\tset cache_file $XDG_CACHE_HOME/.pac-cache.$USER\n \t\tif test -f $cache_file\n \t\t\tcat $cache_file\n \t\t\tset age (math (date +%s) - (stat -c '%Y' $cache_file))\n@@ -51,7 +57,7 @@ function __fish_print_packages\n \n \t\t# If the cache is less than six hours old, we do not recalculate it\n \n-\t\tset cache_file /tmp/.yum-cache.$USER\n+\t\tset cache_file $XDG_CACHE_HOME/.yum-cache.$USER\n \t\t\tif test -f $cache_file\n \t\t\tcat $cache_file\n \t\t\tset age (math (date +%s) - (stat -c '%Y' $cache_file))\n@@ -73,7 +79,7 @@ function __fish_print_packages\n \n \t\t# If the cache is less than five minutes old, we do not recalculate it\n \n-\t\tset cache_file /tmp/.rpm-cache.$USER\n+\t\tset cache_file $XDG_CACHE_HOME/.rpm-cache.$USER\n \t\t\tif test -f $cache_file\n \t\t\tcat $cache_file\n \t\t\tset age (math (date +%s) - (stat -c '%Y' $cache_file))"
+    }
+  ]
+}

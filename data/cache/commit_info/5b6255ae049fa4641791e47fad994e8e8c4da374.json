@@ -1,0 +1,101 @@
+{
+  "sha": "5b6255ae049fa4641791e47fad994e8e8c4da374",
+  "node_id": "C_kwDOCTDsq9oAKDViNjI1NWFlMDQ5ZmE0NjQxNzkxZTQ3ZmFkOTk0ZThlOGM0ZGEzNzQ",
+  "commit": {
+    "author": {
+      "name": "Facebook Community Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2022-08-02T20:52:30Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-08-02T20:52:30Z"
+    },
+    "message": "Re-sync with internal repository (#791)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+    "tree": {
+      "sha": "ab78be12b52d665d704f123c822b6be96c6339af",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/ab78be12b52d665d704f123c822b6be96c6339af"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/5b6255ae049fa4641791e47fad994e8e8c4da374",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJi6Y6OCRBK7hj4Ov3rIwAARnAIAHQgIpJLkZPlytwrwpZw7YOo\nvUD3Iprrvb803oug4V79gPs+D/IjejB1uNnXXstsfUZiC6virDhG3HxJE0e/bCu5\nDc4Lk0NZHRSHRdPVL5arzTqRbdjqyGU0A+juw8l55H/x7/OAGL3cuvkfM8ijG4xw\nb+FhPfS2rEAY6L3w0pqiC/YKkUAJ4Df0SbUO7sOgMhlJIT5I7I/GdFDrbfpzAYiM\nVWjVEe4fgDdYC9obJ7cAT7E0AOBZFTJ/ju+u0KtY86KWA8nFZX06nN6lVmZKmN0I\ns56UCaEcV8thBcA9TMrALbckdc8dgYUfXja3TwA+agADYtdp4KmEMWB21rd5PeM=\n=SqNy\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ab78be12b52d665d704f123c822b6be96c6339af\nparent 8984dc998908eb507829046ac347e25e074d0a87\nauthor Facebook Community Bot <facebook-github-bot@users.noreply.github.com> 1659473550 -0700\ncommitter GitHub <noreply@github.com> 1659473550 -0700\n\nRe-sync with internal repository (#791)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/5b6255ae049fa4641791e47fad994e8e8c4da374",
+  "html_url": "https://github.com/facebook/hermes/commit/5b6255ae049fa4641791e47fad994e8e8c4da374",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/5b6255ae049fa4641791e47fad994e8e8c4da374/comments",
+  "author": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8984dc998908eb507829046ac347e25e074d0a87",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/8984dc998908eb507829046ac347e25e074d0a87",
+      "html_url": "https://github.com/facebook/hermes/commit/8984dc998908eb507829046ac347e25e074d0a87"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7cfbb198518e191a511f49cee3d6e7e3f180d5b7",
+      "filename": "lib/VM/detail/IdentifierHashTable.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hermes/blob/5b6255ae049fa4641791e47fad994e8e8c4da374/lib%2FVM%2Fdetail%2FIdentifierHashTable.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/5b6255ae049fa4641791e47fad994e8e8c4da374/lib%2FVM%2Fdetail%2FIdentifierHashTable.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2Fdetail%2FIdentifierHashTable.cpp?ref=5b6255ae049fa4641791e47fad994e8e8c4da374",
+      "patch": "@@ -138,6 +138,10 @@ void IdentifierHashTable::remove(const StringPrimitive *str) {\n }\n \n void IdentifierHashTable::growAndRehash(uint32_t newCapacity) {\n+  // Guard against potential overflow in the calculation of new capacity.\n+  if (LLVM_UNLIKELY(newCapacity <= capacity())) {\n+    hermes_fatal(\"too many identifiers created\");\n+  }\n   assert(llvh::isPowerOf2_32(newCapacity) && \"capacity must be power of 2\");\n   CompactTable tmpTable(newCapacity, table_.getCurrentScale());\n   tmpTable.swap(table_);"
+    }
+  ]
+}

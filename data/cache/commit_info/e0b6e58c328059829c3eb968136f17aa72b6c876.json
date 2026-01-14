@@ -1,0 +1,101 @@
+{
+  "sha": "e0b6e58c328059829c3eb968136f17aa72b6c876",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZTBiNmU1OGMzMjgwNTk4MjljM2ViOTY4MTM2ZjE3YWE3MmI2Yzg3Ng==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-07-29T21:58:43Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-07-29T22:08:55Z"
+    },
+    "message": "Fix segfault/heap buffer overflow in `{Experimental,}DatasetToTFRecord` where dataset is numeric.\n\nCode assumes only strings inputs and then interprets numbers as valid `tstring`s. Then, when trying to compute the CRC of the record this results in heap buffer overflow.\n\nPiperOrigin-RevId: 387675909\nChange-Id: I7396b9b8afc1ac744112af7c0b1cd7bb41e0f556",
+    "tree": {
+      "sha": "9efaea530e719937cda2ed004de2965b7f427973",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/9efaea530e719937cda2ed004de2965b7f427973"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/e0b6e58c328059829c3eb968136f17aa72b6c876",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e0b6e58c328059829c3eb968136f17aa72b6c876",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/e0b6e58c328059829c3eb968136f17aa72b6c876",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e0b6e58c328059829c3eb968136f17aa72b6c876/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b5b9ae94a68215d4498ea2b3d1072dc4b2bf5600",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/b5b9ae94a68215d4498ea2b3d1072dc4b2bf5600",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/b5b9ae94a68215d4498ea2b3d1072dc4b2bf5600"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 14,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4f759bede55b6166e45f184e85935d85c24f1798",
+      "filename": "tensorflow/core/kernels/data/experimental/to_tf_record_op.cc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 1,
+      "changes": 15,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/e0b6e58c328059829c3eb968136f17aa72b6c876/tensorflow%2Fcore%2Fkernels%2Fdata%2Fexperimental%2Fto_tf_record_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/e0b6e58c328059829c3eb968136f17aa72b6c876/tensorflow%2Fcore%2Fkernels%2Fdata%2Fexperimental%2Fto_tf_record_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fdata%2Fexperimental%2Fto_tf_record_op.cc?ref=e0b6e58c328059829c3eb968136f17aa72b6c876",
+      "patch": "@@ -18,6 +18,7 @@ limitations under the License.\n #include \"tensorflow/core/framework/function_handle_cache.h\"\n #include \"tensorflow/core/framework/op_kernel.h\"\n #include \"tensorflow/core/framework/resource_mgr.h\"\n+#include \"tensorflow/core/framework/types.h\"\n #include \"tensorflow/core/kernels/ops_util.h\"\n #include \"tensorflow/core/lib/core/threadpool.h\"\n #include \"tensorflow/core/lib/io/record_writer.h\"\n@@ -91,8 +92,20 @@ class ToTFRecordOp : public AsyncOpKernel {\n     TF_RETURN_IF_ERROR(finalized_dataset->MakeIterator(\n         &iter_ctx, /*parent=*/nullptr, \"ToTFRecordOpIterator\", &iterator));\n \n+    const int num_output_dtypes = finalized_dataset->output_dtypes().size();\n+    if (num_output_dtypes != 1) {\n+      return errors::InvalidArgument(\n+          \"ToTFRecordOp currently only support datasets of 1 single column, \",\n+          \"but got \", num_output_dtypes);\n+    }\n+    const DataType dt = finalized_dataset->output_dtypes()[0];\n+    if (dt != DT_STRING) {\n+      return errors::InvalidArgument(\n+          \"ToTFRecordOp currently only supports DT_STRING dataypes, but got \",\n+          DataTypeString(dt));\n+    }\n     std::vector<Tensor> components;\n-    components.reserve(finalized_dataset->output_dtypes().size());\n+    components.reserve(num_output_dtypes);\n     bool end_of_sequence;\n     do {\n       TF_RETURN_IF_ERROR("
+    }
+  ]
+}

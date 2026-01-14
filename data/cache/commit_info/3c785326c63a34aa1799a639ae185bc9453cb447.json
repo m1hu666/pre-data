@@ -1,0 +1,125 @@
+{
+  "sha": "3c785326c63a34aa1799a639ae185bc9453cb447",
+  "node_id": "C_kwDOB9KEStoAKDNjNzg1MzI2YzYzYTM0YWExNzk5YTYzOWFlMTg1YmM5NDUzY2I0NDc",
+  "commit": {
+    "author": {
+      "name": "Kirill",
+      "email": "kirill89@gmail.com",
+      "date": "2022-02-11T15:54:42Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-02-11T15:54:42Z"
+    },
+    "message": "Prevent malformed upload path causing arbitrary write (#1174)",
+    "tree": {
+      "sha": "794c3bfcc1353529df64e5ba06a090345405de34",
+      "url": "https://api.github.com/repos/drogonframework/drogon/git/trees/794c3bfcc1353529df64e5ba06a090345405de34"
+    },
+    "url": "https://api.github.com/repos/drogonframework/drogon/git/commits/3c785326c63a34aa1799a639ae185bc9453cb447",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiBobCCRBK7hj4Ov3rIwAATgEIABDl5/G4PWt7c3GYxZ/PI9mE\nRubycaHmL5wd8nY+NyUFFN1vGE9n53NOK/HyY7M4Tcc2hZ/H4CUXj2DX/GZ5Kx9P\n0vFZUfRovbc1c5jADx+vUe9Y0qumeha7goBt7ZEr8oBeFYgyMZQjWK6p7BTUV3vj\nOKqeA+H2EpdPFqtNBAlfsuM9M4AdWqH9mSj+59P/Dl5180wFIqCO9QuGinMOiN9s\nhMnONr3tRZ+WwcPuQwJKzfaMb8TTez/OFPUX2qYIEBzdHmE/2ttUfONNBs6QEXUR\nQ2GrlIzYpGkaFIAfYw7a9tiS2Y0PJizalBjzcK+KcG0ks3nmu5+MUIhrqI0WRBo=\n=L2oN\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 794c3bfcc1353529df64e5ba06a090345405de34\nparent 8ed0434ad8aa2167aed6afe627fed755e428e0bf\nauthor Kirill <kirill89@gmail.com> 1644594882 +0200\ncommitter GitHub <noreply@github.com> 1644594882 +0800\n\nPrevent malformed upload path causing arbitrary write (#1174)\n\n",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/drogonframework/drogon/commits/3c785326c63a34aa1799a639ae185bc9453cb447",
+  "html_url": "https://github.com/drogonframework/drogon/commit/3c785326c63a34aa1799a639ae185bc9453cb447",
+  "comments_url": "https://api.github.com/repos/drogonframework/drogon/commits/3c785326c63a34aa1799a639ae185bc9453cb447/comments",
+  "author": {
+    "login": "Kirill89",
+    "id": 2003936,
+    "node_id": "MDQ6VXNlcjIwMDM5MzY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2003936?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Kirill89",
+    "html_url": "https://github.com/Kirill89",
+    "followers_url": "https://api.github.com/users/Kirill89/followers",
+    "following_url": "https://api.github.com/users/Kirill89/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Kirill89/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Kirill89/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Kirill89/subscriptions",
+    "organizations_url": "https://api.github.com/users/Kirill89/orgs",
+    "repos_url": "https://api.github.com/users/Kirill89/repos",
+    "events_url": "https://api.github.com/users/Kirill89/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Kirill89/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8ed0434ad8aa2167aed6afe627fed755e428e0bf",
+      "url": "https://api.github.com/repos/drogonframework/drogon/commits/8ed0434ad8aa2167aed6afe627fed755e428e0bf",
+      "html_url": "https://github.com/drogonframework/drogon/commit/8ed0434ad8aa2167aed6afe627fed755e428e0bf"
+    }
+  ],
+  "stats": {
+    "total": 172,
+    "additions": 123,
+    "deletions": 49
+  },
+  "files": [
+    {
+      "sha": "faf93942460b68be0888aca07e273486d5138560",
+      "filename": "lib/src/HttpFileImpl.cc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 12,
+      "changes": 42,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Fsrc%2FHttpFileImpl.cc",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Fsrc%2FHttpFileImpl.cc",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Fsrc%2FHttpFileImpl.cc?ref=3c785326c63a34aa1799a639ae185bc9453cb447",
+      "patch": "@@ -18,6 +18,7 @@\n #include <drogon/MultiPart.h>\n #include <fstream>\n #include <iostream>\n+#include <algorithm>\n \n using namespace drogon;\n \n@@ -31,28 +32,45 @@ int HttpFileImpl::save(const std::string &path) const\n     assert(!path.empty());\n     if (fileName_.empty())\n         return -1;\n-    filesystem::path fsPath(utils::toNativePath(path));\n-    if (!fsPath.is_absolute() &&\n-        (!fsPath.has_parent_path() ||\n-         (fsPath.begin()->string() != \".\" && fsPath.begin()->string() != \"..\")))\n+    filesystem::path fsUploadDir(utils::toNativePath(path));\n+\n+    if (!fsUploadDir.is_absolute() && (!fsUploadDir.has_parent_path() ||\n+                                       (fsUploadDir.begin()->string() != \".\" &&\n+                                        fsUploadDir.begin()->string() != \"..\")))\n     {\n-        filesystem::path fsUploadPath(utils::toNativePath(\n-            HttpAppFrameworkImpl::instance().getUploadPath()));\n-        fsPath = fsUploadPath / fsPath;\n+        fsUploadDir = utils::toNativePath(\n+                          HttpAppFrameworkImpl::instance().getUploadPath()) /\n+                      fsUploadDir;\n     }\n-    filesystem::path fsFileName(utils::toNativePath(fileName_));\n-    if (!filesystem::exists(fsPath))\n+\n+    fsUploadDir = filesystem::weakly_canonical(fsUploadDir);\n+\n+    if (!filesystem::exists(fsUploadDir))\n     {\n-        LOG_TRACE << \"create path:\" << fsPath;\n+        LOG_TRACE << \"create path:\" << fsUploadDir;\n         drogon::error_code err;\n-        filesystem::create_directories(fsPath, err);\n+        filesystem::create_directories(fsUploadDir, err);\n         if (err)\n         {\n             LOG_SYSERR;\n             return -1;\n         }\n     }\n-    return saveTo(fsPath / fsFileName);\n+\n+    filesystem::path fsSaveToPath(filesystem::weakly_canonical(\n+        fsUploadDir / utils::toNativePath(fileName_)));\n+\n+    if (!std::equal(fsUploadDir.begin(),\n+                    fsUploadDir.end(),\n+                    fsSaveToPath.begin()))\n+    {\n+        LOG_ERROR\n+            << \"Attempt writing outside of upload directory detected. Path: \"\n+            << fileName_;\n+        return -1;\n+    }\n+\n+    return saveTo(fsSaveToPath);\n }\n int HttpFileImpl::saveAs(const std::string &fileName) const\n {"
+    },
+    {
+      "sha": "79409527c0baa2e5186f666be2c791665ed80778",
+      "filename": "lib/tests/CMakeLists.txt",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 37,
+      "changes": 78,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Ftests%2FCMakeLists.txt",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Ftests%2FCMakeLists.txt",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Ftests%2FCMakeLists.txt?ref=3c785326c63a34aa1799a639ae185bc9453cb447",
+      "patch": "@@ -1,45 +1,49 @@\n link_libraries(${PROJECT_NAME})\n-set(UNITTEST_SOURCES unittests/main.cc\n-                        unittests/Base64Test.cc\n-                        unittests/UrlCodecTest.cc\n-                        unittests/GzipTest.cc\n-                        unittests/HttpViewDataTest.cc\n-                        unittests/CookieTest.cc\n-                        unittests/ClassNameTest.cc\n-                        unittests/HttpDateTest.cc\n-                        unittests/HttpHeaderTest.cc\n-                        unittests/MD5Test.cc\n-                        unittests/MsgBufferTest.cc\n-                        unittests/OStringStreamTest.cc\n-                        unittests/PubSubServiceUnittest.cc\n-                        unittests/Sha1Test.cc\n-                        ../src/ssl_funcs/Sha1.cc\n-                        ../src/HttpUtils.cc\n-                        unittests/FileTypeTest.cc\n-                        unittests/DrObjectTest.cc\n-                        unittests/HttpFullDateTest.cc\n-                        unittests/MainLoopTest.cc\n-                        unittests/CacheMapTest.cc\n-                        unittests/StringOpsTest.cc)\n+set(UNITTEST_SOURCES\n+    unittests/main.cc\n+    unittests/Base64Test.cc\n+    unittests/UrlCodecTest.cc\n+    unittests/GzipTest.cc\n+    unittests/HttpViewDataTest.cc\n+    unittests/CookieTest.cc\n+    unittests/ClassNameTest.cc\n+    unittests/HttpDateTest.cc\n+    unittests/HttpHeaderTest.cc\n+    unittests/MD5Test.cc\n+    unittests/MsgBufferTest.cc\n+    unittests/OStringStreamTest.cc\n+    unittests/PubSubServiceUnittest.cc\n+    unittests/Sha1Test.cc\n+    ../src/ssl_funcs/Sha1.cc\n+    unittests/FileTypeTest.cc\n+    unittests/DrObjectTest.cc\n+    unittests/HttpFullDateTest.cc\n+    unittests/MainLoopTest.cc\n+    unittests/CacheMapTest.cc\n+    unittests/StringOpsTest.cc)\n \n if(DROGON_CXX_STANDARD GREATER_EQUAL 20 AND HAS_COROUTINE)\n-    set(UNITTEST_SOURCES ${UNITTEST_SOURCES} unittests/CoroutineTest.cc)\n+  set(UNITTEST_SOURCES ${UNITTEST_SOURCES} unittests/CoroutineTest.cc)\n endif()\n \n if(Brotli_FOUND)\n-    set(UNITTEST_SOURCES ${UNITTEST_SOURCES} unittests/BrotliTest.cc)\n+  set(UNITTEST_SOURCES ${UNITTEST_SOURCES} unittests/BrotliTest.cc)\n endif()\n \n-if (CMAKE_CXX_COMPILER_ID MATCHES \"MSVC\" AND BUILD_DROGON_SHARED)\n-    set(UNITTEST_SOURCES ${UNITTEST_SOURCES} ../src/HttpUtils.cc)\n+if(CMAKE_CXX_COMPILER_ID MATCHES \"MSVC\" AND BUILD_DROGON_SHARED)\n+  set(UNITTEST_SOURCES ${UNITTEST_SOURCES} ../src/HttpUtils.cc)\n+else()\n+  set(UNITTEST_SOURCES ${UNITTEST_SOURCES} ../src/HttpFileImpl.cc\n+                       unittests/HttpFileTest.cc)\n endif()\n \n add_executable(unittest ${UNITTEST_SOURCES})\n \n-set(INTEGRATION_TEST_CLIENT_SOURCES integration_test/client/main.cc\n-                                    integration_test/client/WebSocketTest.cc\n-                                    integration_test/client/MultipleWsTest.cc\n-                                    integration_test/client/HttpPipeliningTest.cc)\n+set(INTEGRATION_TEST_CLIENT_SOURCES\n+    integration_test/client/main.cc\n+    integration_test/client/WebSocketTest.cc\n+    integration_test/client/MultipleWsTest.cc\n+    integration_test/client/HttpPipeliningTest.cc)\n add_executable(integration_test_client ${INTEGRATION_TEST_CLIENT_SOURCES})\n \n set(INTEGRATION_TEST_SERVER_SOURCES\n@@ -64,10 +68,11 @@ set(INTEGRATION_TEST_SERVER_SOURCES\n     integration_test/server/main.cc)\n \n if(DROGON_CXX_STANDARD GREATER_EQUAL 20 AND HAS_COROUTINE)\n-    set(INTEGRATION_TEST_SERVER_SOURCES ${INTEGRATION_TEST_SERVER_SOURCES}\n-        integration_test/server/api_v1_CoroTest.cc)\n-    set(CMAKE_CXX_STANDARD 20)\n-    set(CMAKE_CXX_STANDARD_REQUIRED TRUE)\n+  set(INTEGRATION_TEST_SERVER_SOURCES\n+      ${INTEGRATION_TEST_SERVER_SOURCES}\n+      integration_test/server/api_v1_CoroTest.cc)\n+  set(CMAKE_CXX_STANDARD 20)\n+  set(CMAKE_CXX_STANDARD_REQUIRED TRUE)\n endif(DROGON_CXX_STANDARD GREATER_EQUAL 20 AND HAS_COROUTINE)\n \n add_executable(integration_test_server ${INTEGRATION_TEST_SERVER_SOURCES})\n@@ -98,9 +103,8 @@ add_custom_command(\n           $<TARGET_FILE_DIR:integration_test_server>/a-directory)\n \n set(tests unittest integration_test_server integration_test_client)\n-set_property(TARGET ${tests}\n-             PROPERTY CXX_STANDARD ${DROGON_CXX_STANDARD})\n+set_property(TARGET ${tests} PROPERTY CXX_STANDARD ${DROGON_CXX_STANDARD})\n set_property(TARGET ${tests} PROPERTY CXX_STANDARD_REQUIRED ON)\n set_property(TARGET ${tests} PROPERTY CXX_EXTENSIONS OFF)\n \n-ParseAndAddDrogonTests(unittest)\n+parseandadddrogontests(unittest)"
+    },
+    {
+      "sha": "d7bd50e5c9b3dc63ee0ecc9cfd6170b8acfcfef0",
+      "filename": "lib/tests/unittests/HttpFileTest.cc",
+      "status": "added",
+      "additions": 52,
+      "deletions": 0,
+      "changes": 52,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Ftests%2Funittests%2FHttpFileTest.cc",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/3c785326c63a34aa1799a639ae185bc9453cb447/lib%2Ftests%2Funittests%2FHttpFileTest.cc",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Ftests%2Funittests%2FHttpFileTest.cc?ref=3c785326c63a34aa1799a639ae185bc9453cb447",
+      "patch": "@@ -0,0 +1,52 @@\n+#include \"../../lib/src/HttpFileImpl.h\"\n+#include <drogon/drogon_test.h>\n+#include <filesystem>\n+\n+using namespace drogon;\n+using namespace std;\n+\n+DROGON_TEST(HttpFile)\n+{\n+    SUBSECTION(Save)\n+    {\n+        HttpFileImpl file;\n+        file.setFileName(\"test_file_name\");\n+        file.setFile(\"test\", 4);\n+        auto out = file.save(\"./test_uploads_dir\");\n+\n+        CHECK(out == 0);\n+        CHECK(filesystem::exists(\"./test_uploads_dir/test_file_name\"));\n+\n+        filesystem::remove_all(\"./test_uploads_dir\");\n+    }\n+\n+    SUBSECTION(SavePathRelativeTraversal)\n+    {\n+        auto uploadPath = filesystem::current_path() / \"test_uploads_dir\";\n+\n+        HttpFileImpl file;\n+        file.setFileName(\"../test_malicious_file_name\");\n+        file.setFile(\"test\", 4);\n+        auto out = file.save(uploadPath.string());\n+\n+        CHECK(out == -1);\n+        CHECK(!filesystem::exists(uploadPath / \"../test_malicious_file_name\"));\n+\n+        filesystem::remove_all(uploadPath);\n+        filesystem::remove(uploadPath / \"../test_malicious_file_name\");\n+    }\n+\n+    SUBSECTION(SavePathAbsoluteTraversal)\n+    {\n+        HttpFileImpl file;\n+        file.setFileName(\"/tmp/test_malicious_file_name\");\n+        file.setFile(\"test\", 4);\n+        auto out = file.save(\"./test_uploads_dir\");\n+\n+        CHECK(out == -1);\n+        CHECK(!filesystem::exists(\"/tmp/test_malicious_file_name\"));\n+\n+        filesystem::remove_all(\"test_uploads_dir\");\n+        filesystem::remove_all(\"/tmp/test_malicious_file_name\");\n+    }\n+}"
+    }
+  ]
+}

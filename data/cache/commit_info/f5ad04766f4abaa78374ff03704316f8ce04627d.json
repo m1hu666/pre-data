@@ -1,0 +1,113 @@
+{
+  "sha": "f5ad04766f4abaa78374ff03704316f8ce04627d",
+  "node_id": "MDY6Q29tbWl0MzM1MTg3MTpmNWFkMDQ3NjZmNGFiYWE3ODM3NGZmMDM3MDQzMTZmOGNlMDQ2Mjdk",
+  "commit": {
+    "author": {
+      "name": "ngosang",
+      "email": "ngosang@hotmail.es",
+      "date": "2017-02-06T19:44:57Z"
+    },
+    "committer": {
+      "name": "sledgehammer999",
+      "email": "hammered999@gmail.com",
+      "date": "2017-03-03T19:28:27Z"
+    },
+    "message": "[WebUI] Avoid clickjacking attacks",
+    "tree": {
+      "sha": "6fd9e2b9ea92ee1b6018a425d4c2ff3af004d775",
+      "url": "https://api.github.com/repos/qbittorrent/qBittorrent/git/trees/6fd9e2b9ea92ee1b6018a425d4c2ff3af004d775"
+    },
+    "url": "https://api.github.com/repos/qbittorrent/qBittorrent/git/commits/f5ad04766f4abaa78374ff03704316f8ce04627d",
+    "comment_count": 2,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v2\n\niQIcBAABCAAGBQJYucPcAAoJEG5KLQJbfMmiBlcP/1g9MN/nKNgPnvZgk8CspKI3\nkHaA2M0Zb6UfaSUwKwvz6GfRUEMjoTCP+jZPZCrj9AgyxnMH+6Su4jKVgMLrwVfC\nJhG5gHK7PZmQG/iRYvkRzqXzC6EdRGboOM3EVA8oNmuk6ce+PPWts0EccZbePCLU\nD4SpLW0sSWwcfsUU6aQP8jH3ayDCHItuwKR2iTTWJRt8+JWA2QVr7TqwhvFgrayY\nd6HlbXIer97zXXKtZ5Mx7JAV1jQU9ySvhAYRbSsLjdqCjMMat3V2niCkmwONVulT\nql1FPk8fU1QOuRJnLf94bkflwmEAoDHc1SEkLZcoRe4WPXYputlp+dqaMcO5h1JP\nqAHWmTO5xPUxOtpprv6g5j0Oc6BoUyMU/2tKI3+uNLAjw3zFsp1CDpTopYNaLlfo\nsbsaLcwXwAuW620gClyDTfz5R/uBN6PH8i0ZzJNMusisYJsvbI7eEIUM+lmZgKsX\nVY4ngJk0pq9MsbDYn/dyAketezm9gaxPE+WQrcFiKVj8yDMlnZkzbPc1dFjz77R1\neXP0tyJbzZmIVTfgSItHvPh6SJuufjAF/1NIa5nSDgqaieqz83mOpMqIRGFvW8oR\nNT2zFy0lwv9kENOb0pHDpnh03PUdnoV7cFxyRSIiDlMe1561gPI1rKWMlydW7xfa\nGU0+AjTJebbVNxrQ6obX\n=mZep\n-----END PGP SIGNATURE-----",
+      "payload": "tree 6fd9e2b9ea92ee1b6018a425d4c2ff3af004d775\nparent f9c39e3dace74ddfd31ef169790423f0e8bf6f11\nauthor ngosang <ngosang@hotmail.es> 1486410297 +0100\ncommitter sledgehammer999 <hammered999@gmail.com> 1488569307 +0200\n\n[WebUI] Avoid clickjacking attacks\n",
+      "verified_at": "2024-11-13T09:01:28Z"
+    }
+  },
+  "url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/f5ad04766f4abaa78374ff03704316f8ce04627d",
+  "html_url": "https://github.com/qbittorrent/qBittorrent/commit/f5ad04766f4abaa78374ff03704316f8ce04627d",
+  "comments_url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/f5ad04766f4abaa78374ff03704316f8ce04627d/comments",
+  "author": {
+    "login": "ngosang",
+    "id": 10577978,
+    "node_id": "MDQ6VXNlcjEwNTc3OTc4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10577978?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ngosang",
+    "html_url": "https://github.com/ngosang",
+    "followers_url": "https://api.github.com/users/ngosang/followers",
+    "following_url": "https://api.github.com/users/ngosang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ngosang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ngosang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ngosang/subscriptions",
+    "organizations_url": "https://api.github.com/users/ngosang/orgs",
+    "repos_url": "https://api.github.com/users/ngosang/repos",
+    "events_url": "https://api.github.com/users/ngosang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ngosang/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sledgehammer999",
+    "id": 273315,
+    "node_id": "MDQ6VXNlcjI3MzMxNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/273315?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sledgehammer999",
+    "html_url": "https://github.com/sledgehammer999",
+    "followers_url": "https://api.github.com/users/sledgehammer999/followers",
+    "following_url": "https://api.github.com/users/sledgehammer999/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sledgehammer999/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sledgehammer999/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sledgehammer999/subscriptions",
+    "organizations_url": "https://api.github.com/users/sledgehammer999/orgs",
+    "repos_url": "https://api.github.com/users/sledgehammer999/repos",
+    "events_url": "https://api.github.com/users/sledgehammer999/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sledgehammer999/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f9c39e3dace74ddfd31ef169790423f0e8bf6f11",
+      "url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/f9c39e3dace74ddfd31ef169790423f0e8bf6f11",
+      "html_url": "https://github.com/qbittorrent/qBittorrent/commit/f9c39e3dace74ddfd31ef169790423f0e8bf6f11"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 6,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ae401c71983b501d9421b65d199f2f35619c139e",
+      "filename": "src/base/http/types.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/f5ad04766f4abaa78374ff03704316f8ce04627d/src%2Fbase%2Fhttp%2Ftypes.h",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/f5ad04766f4abaa78374ff03704316f8ce04627d/src%2Fbase%2Fhttp%2Ftypes.h",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fbase%2Fhttp%2Ftypes.h?ref=f5ad04766f4abaa78374ff03704316f8ce04627d",
+      "patch": "@@ -43,6 +43,7 @@ namespace Http\n     const QString HEADER_CONTENT_ENCODING = \"Content-Encoding\";\n     const QString HEADER_CONTENT_LENGTH = \"Content-Length\";\n     const QString HEADER_CACHE_CONTROL = \"Cache-Control\";\n+    const QString HEADER_X_FRAME_OPTIONS = \"X-Frame-Options\";\n \n     const QString CONTENT_TYPE_CSS = \"text/css; charset=UTF-8\";\n     const QString CONTENT_TYPE_GIF = \"image/gif\";"
+    },
+    {
+      "sha": "738f7f4c273896484f38205b8c964e96c5e7fb22",
+      "filename": "src/webui/abstractwebapplication.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/f5ad04766f4abaa78374ff03704316f8ce04627d/src%2Fwebui%2Fabstractwebapplication.cpp",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/f5ad04766f4abaa78374ff03704316f8ce04627d/src%2Fwebui%2Fabstractwebapplication.cpp",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fwebui%2Fabstractwebapplication.cpp?ref=f5ad04766f4abaa78374ff03704316f8ce04627d",
+      "patch": "@@ -103,7 +103,11 @@ Http::Response AbstractWebApplication::processRequest(const Http::Request &reque\n     request_ = request;\n     env_ = env;\n \n-    clear(); // clear response\n+    // clear response\n+    clear();\n+\n+    // avoid clickjacking attacks\n+    header(Http::HEADER_X_FRAME_OPTIONS, \"SAMEORIGIN\");\n \n     sessionInitialize();\n     if (!sessionActive() && !isAuthNeeded())"
+    }
+  ]
+}

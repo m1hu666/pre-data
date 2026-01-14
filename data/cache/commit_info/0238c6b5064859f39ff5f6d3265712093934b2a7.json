@@ -1,0 +1,105 @@
+{
+  "sha": "0238c6b5064859f39ff5f6d3265712093934b2a7",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OjAyMzhjNmI1MDY0ODU5ZjM5ZmY1ZjZkMzI2NTcxMjA5MzkzNGIyYTc=",
+  "commit": {
+    "author": {
+      "name": "Joey Arhar",
+      "email": "jarhar@chromium.org",
+      "date": "2018-10-23T00:12:40Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2018-10-23T00:12:40Z"
+    },
+    "message": "[DevTools] Fix request preview for URI encoded html\n\nBug: 895081\nChange-Id: I49c6131e1cc432e470e4b04353282d3ebebcb063\nReviewed-on: https://chromium-review.googlesource.com/c/1286758\nReviewed-by: Dmitry Gozman <dgozman@chromium.org>\nCommit-Queue: Joey Arhar <jarhar@chromium.org>\nCr-Commit-Position: refs/heads/master@{#601792}",
+    "tree": {
+      "sha": "89248dcf59a308714d7f15bfcf9a08a8e21571d9",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/89248dcf59a308714d7f15bfcf9a08a8e21571d9"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/0238c6b5064859f39ff5f6d3265712093934b2a7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/0238c6b5064859f39ff5f6d3265712093934b2a7",
+  "html_url": "https://github.com/chromium/chromium/commit/0238c6b5064859f39ff5f6d3265712093934b2a7",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/0238c6b5064859f39ff5f6d3265712093934b2a7/comments",
+  "author": {
+    "login": "josepharhar",
+    "id": 7681467,
+    "node_id": "MDQ6VXNlcjc2ODE0Njc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7681467?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/josepharhar",
+    "html_url": "https://github.com/josepharhar",
+    "followers_url": "https://api.github.com/users/josepharhar/followers",
+    "following_url": "https://api.github.com/users/josepharhar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/josepharhar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/josepharhar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/josepharhar/subscriptions",
+    "organizations_url": "https://api.github.com/users/josepharhar/orgs",
+    "repos_url": "https://api.github.com/users/josepharhar/repos",
+    "events_url": "https://api.github.com/users/josepharhar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/josepharhar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "395516be219e7d31767e0ba47a5ac5c9f510c1ff",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/395516be219e7d31767e0ba47a5ac5c9f510c1ff",
+      "html_url": "https://github.com/chromium/chromium/commit/395516be219e7d31767e0ba47a5ac5c9f510c1ff"
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "additions": 24,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1fc2fa520620c93ee02240dc2009923e7f45653b",
+      "filename": "third_party/WebKit/LayoutTests/http/tests/devtools/network/request-preview-uri-escaping-expected.txt",
+      "status": "added",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/chromium/chromium/blob/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping-expected.txt?ref=0238c6b5064859f39ff5f6d3265712093934b2a7",
+      "patch": "@@ -0,0 +1,4 @@\n+Verifies that RequestHTMLView's iframe src is URI encoded\n+iframe.src: data:text/html,%3Cbody%3E%3Cp%3Ehello%20world!%3Cp%3E%253Cp%253EURI%2520encoded%2520tag!%253C%252Fp%253E%3C/body%3E\n+decoded iframe.src: data:text/html,<body><p>hello world!<p>%3Cp%3EURI%20encoded%20tag!%3C%2Fp%3E</body>\n+"
+    },
+    {
+      "sha": "075848bd12469903d2bef5cbfac27063c191d893",
+      "filename": "third_party/WebKit/LayoutTests/http/tests/devtools/network/request-preview-uri-escaping.js",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/chromium/chromium/blob/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping.js",
+      "raw_url": "https://github.com/chromium/chromium/raw/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping.js",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2FWebKit%2FLayoutTests%2Fhttp%2Ftests%2Fdevtools%2Fnetwork%2Frequest-preview-uri-escaping.js?ref=0238c6b5064859f39ff5f6d3265712093934b2a7",
+      "patch": "@@ -0,0 +1,19 @@\n+// Copyright 2018 The Chromium Authors. All rights reserved.\n+// Use of this source code is governed by a BSD-style license that can be\n+// found in the LICENSE file.\n+\n+(async function() {\n+  TestRunner.addResult(`Verifies that RequestHTMLView's iframe src is URI encoded`);\n+  await TestRunner.loadModule('network_test_runner');\n+  await TestRunner.showPanel('network');\n+\n+  const dataUrl = `data:text/html,<body><p>hello world!<p>%3Cp%3EURI%20encoded%20tag!%3C%2Fp%3E</body>`;\n+  const requestHtmlView = new Network.RequestHTMLView(dataUrl);\n+  requestHtmlView.wasShown();\n+  const iframe = requestHtmlView.contentElement.firstChild;\n+\n+  TestRunner.addResult('iframe.src: ' + iframe.src);\n+  TestRunner.addResult('decoded iframe.src: ' + decodeURIComponent(iframe.src));\n+\n+  TestRunner.completeTest();\n+})();"
+    },
+    {
+      "sha": "e2b85ba9af8c625e8a73ebb42d6a9c92455fa498",
+      "filename": "third_party/blink/renderer/devtools/front_end/network/RequestHTMLView.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FRequestHTMLView.js",
+      "raw_url": "https://github.com/chromium/chromium/raw/0238c6b5064859f39ff5f6d3265712093934b2a7/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FRequestHTMLView.js",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Frenderer%2Fdevtools%2Ffront_end%2Fnetwork%2FRequestHTMLView.js?ref=0238c6b5064859f39ff5f6d3265712093934b2a7",
+      "patch": "@@ -63,7 +63,7 @@ Network.RequestHTMLView = class extends UI.VBox {\n     const iframe = createElement('iframe');\n     iframe.className = 'html-preview-frame';\n     iframe.setAttribute('sandbox', '');  // Forbid to run JavaScript and set unique origin.\n-    iframe.setAttribute('src', this._dataURL);\n+    iframe.setAttribute('src', encodeURI(this._dataURL));\n     iframe.setAttribute('tabIndex', -1);\n     this.contentElement.appendChild(iframe);\n   }"
+    }
+  ]
+}

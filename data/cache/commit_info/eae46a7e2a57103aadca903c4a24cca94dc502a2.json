@@ -1,0 +1,101 @@
+{
+  "sha": "eae46a7e2a57103aadca903c4a24cca94dc502a2",
+  "node_id": "C_kwDOALtKVdoAKGVhZTQ2YTdlMmE1NzEwM2FhZGNhOTAzYzRhMjRjY2E5NGRjNTAyYTI",
+  "commit": {
+    "author": {
+      "name": "Philip Pearce",
+      "email": "philip.pearce@e2bn.org",
+      "date": "2021-11-23T09:52:38Z"
+    },
+    "committer": {
+      "name": "Philip Pearce",
+      "email": "philip.pearce@e2bn.org",
+      "date": "2021-11-23T09:52:38Z"
+    },
+    "message": "Fix bug #707 cert hostnames not being checked\n- only happened when openssl v1.1 is used",
+    "tree": {
+      "sha": "6b7d71cae54eb08ae6372d145530b44e25c61640",
+      "url": "https://api.github.com/repos/e2guardian/e2guardian/git/trees/6b7d71cae54eb08ae6372d145530b44e25c61640"
+    },
+    "url": "https://api.github.com/repos/e2guardian/e2guardian/git/commits/eae46a7e2a57103aadca903c4a24cca94dc502a2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/e2guardian/e2guardian/commits/eae46a7e2a57103aadca903c4a24cca94dc502a2",
+  "html_url": "https://github.com/e2guardian/e2guardian/commit/eae46a7e2a57103aadca903c4a24cca94dc502a2",
+  "comments_url": "https://api.github.com/repos/e2guardian/e2guardian/commits/eae46a7e2a57103aadca903c4a24cca94dc502a2/comments",
+  "author": {
+    "login": "philipianpearce",
+    "id": 5214681,
+    "node_id": "MDQ6VXNlcjUyMTQ2ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5214681?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philipianpearce",
+    "html_url": "https://github.com/philipianpearce",
+    "followers_url": "https://api.github.com/users/philipianpearce/followers",
+    "following_url": "https://api.github.com/users/philipianpearce/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philipianpearce/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philipianpearce/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philipianpearce/subscriptions",
+    "organizations_url": "https://api.github.com/users/philipianpearce/orgs",
+    "repos_url": "https://api.github.com/users/philipianpearce/repos",
+    "events_url": "https://api.github.com/users/philipianpearce/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philipianpearce/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "philipianpearce",
+    "id": 5214681,
+    "node_id": "MDQ6VXNlcjUyMTQ2ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5214681?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philipianpearce",
+    "html_url": "https://github.com/philipianpearce",
+    "followers_url": "https://api.github.com/users/philipianpearce/followers",
+    "following_url": "https://api.github.com/users/philipianpearce/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philipianpearce/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philipianpearce/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philipianpearce/subscriptions",
+    "organizations_url": "https://api.github.com/users/philipianpearce/orgs",
+    "repos_url": "https://api.github.com/users/philipianpearce/repos",
+    "events_url": "https://api.github.com/users/philipianpearce/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philipianpearce/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "69e23de99ce0b9dbadacbcf422e307c856c0efac",
+      "url": "https://api.github.com/repos/e2guardian/e2guardian/commits/69e23de99ce0b9dbadacbcf422e307c856c0efac",
+      "html_url": "https://github.com/e2guardian/e2guardian/commit/69e23de99ce0b9dbadacbcf422e307c856c0efac"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2b687ef5a9d0b1a98cc284e1b4193a73e0af2158",
+      "filename": "src/Socket.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/e2guardian/e2guardian/blob/eae46a7e2a57103aadca903c4a24cca94dc502a2/src%2FSocket.cpp",
+      "raw_url": "https://github.com/e2guardian/e2guardian/raw/eae46a7e2a57103aadca903c4a24cca94dc502a2/src%2FSocket.cpp",
+      "contents_url": "https://api.github.com/repos/e2guardian/e2guardian/contents/src%2FSocket.cpp?ref=eae46a7e2a57103aadca903c4a24cca94dc502a2",
+      "patch": "@@ -377,6 +377,10 @@ int Socket::startSslClient(const std::string &certificate_path, String hostname)\n     //fcntl(this->getFD() ,F_SETFL, O_NONBLOCK); // blocking mode used currently\n     SSL_set_fd(ssl, this->getFD());\n     SSL_set_tlsext_host_name(ssl, hostname.c_str());\n+#if OPENSSL_VERSION_NUMBER < 0x10100000L\n+#else\n+  X509_VERIFY_PARAM_set1_host(SSL_get0_param(ssl),hostname.c_str(),0);\n+#endif\n \n     //make io non blocking as select wont tell us if we can do a read without blocking\n     //BIO_set_nbio(SSL_get_rbio(ssl),1l);  // blocking mode used currently"
+    }
+  ]
+}

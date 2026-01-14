@@ -1,0 +1,101 @@
+{
+  "sha": "e21af685e1828f7ca65038307df5cc06de4479e8",
+  "node_id": "C_kwDOArmXAtoAKGUyMWFmNjg1ZTE4MjhmN2NhNjUwMzgzMDdkZjVjYzA2ZGU0NDc5ZTg",
+  "commit": {
+    "author": {
+      "name": "Smit Hinsu",
+      "email": "hinsu@google.com",
+      "date": "2022-01-08T00:20:27Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2022-01-08T00:25:21Z"
+    },
+    "message": "Fix Null-pointer dereference in BuildXlaCompilationCache\n\nIf ConfigProto is not used, then use the default settings which is to allow all devices.\n\nPiperOrigin-RevId: 420391800\nChange-Id: I88161ad7042990aef678e77b597a2fb2c8f815be",
+    "tree": {
+      "sha": "87630fcfa0a9d9bd2dcdf3c396053f6a097c795d",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/87630fcfa0a9d9bd2dcdf3c396053f6a097c795d"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/e21af685e1828f7ca65038307df5cc06de4479e8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e21af685e1828f7ca65038307df5cc06de4479e8",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/e21af685e1828f7ca65038307df5cc06de4479e8",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e21af685e1828f7ca65038307df5cc06de4479e8/comments",
+  "author": {
+    "login": "smit-hinsu",
+    "id": 1990079,
+    "node_id": "MDQ6VXNlcjE5OTAwNzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1990079?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/smit-hinsu",
+    "html_url": "https://github.com/smit-hinsu",
+    "followers_url": "https://api.github.com/users/smit-hinsu/followers",
+    "following_url": "https://api.github.com/users/smit-hinsu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/smit-hinsu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/smit-hinsu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/smit-hinsu/subscriptions",
+    "organizations_url": "https://api.github.com/users/smit-hinsu/orgs",
+    "repos_url": "https://api.github.com/users/smit-hinsu/repos",
+    "events_url": "https://api.github.com/users/smit-hinsu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/smit-hinsu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "30f8e5c460629a9f8dbb04dc562c7b579c07f11b",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/30f8e5c460629a9f8dbb04dc562c7b579c07f11b",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/30f8e5c460629a9f8dbb04dc562c7b579c07f11b"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 7,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "96d6e27d36a7ee84f01704ee9869d0b509bed053",
+      "filename": "tensorflow/compiler/jit/xla_platform_info.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 12,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/e21af685e1828f7ca65038307df5cc06de4479e8/tensorflow%2Fcompiler%2Fjit%2Fxla_platform_info.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/e21af685e1828f7ca65038307df5cc06de4479e8/tensorflow%2Fcompiler%2Fjit%2Fxla_platform_info.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcompiler%2Fjit%2Fxla_platform_info.cc?ref=e21af685e1828f7ca65038307df5cc06de4479e8",
+      "patch": "@@ -82,11 +82,13 @@ Status BuildXlaCompilationCache(DeviceBase* device, FunctionLibraryRuntime* flr,\n   client_options.set_intra_op_parallelism_threads(\n       device->tensorflow_cpu_worker_threads()->num_threads);\n \n-  string allowed_gpus =\n-      flr->config_proto()->gpu_options().visible_device_list();\n-  TF_ASSIGN_OR_RETURN(absl::optional<std::set<int>> gpu_ids,\n-                      ParseVisibleDeviceList(allowed_gpus));\n-  client_options.set_allowed_devices(gpu_ids);\n+  if (flr->config_proto()) {\n+    string allowed_gpus =\n+        flr->config_proto()->gpu_options().visible_device_list();\n+    TF_ASSIGN_OR_RETURN(absl::optional<std::set<int>> gpu_ids,\n+                        ParseVisibleDeviceList(allowed_gpus));\n+    client_options.set_allowed_devices(gpu_ids);\n+  }\n \n   auto client = xla::ClientLibrary::GetOrCreateLocalClient(client_options);\n   if (!client.ok()) {"
+    }
+  ]
+}

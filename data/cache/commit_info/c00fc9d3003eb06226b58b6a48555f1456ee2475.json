@@ -1,0 +1,85 @@
+{
+  "sha": "c00fc9d3003eb06226b58b6a48555f1456ee2475",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmMwMGZjOWQzMDAzZWIwNjIyNmI1OGI2YTQ4NTU1ZjE0NTZlZTI0NzU=",
+  "commit": {
+    "author": {
+      "name": "mwilliams@fb.com",
+      "email": "mwilliams@fb.com",
+      "date": "2016-08-01T22:13:10Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot-bot@fb.com",
+      "date": "2016-08-01T22:53:27Z"
+    },
+    "message": "Fix buffer overrun due to integer overflow in bcmath\n\nSummary: scale gets passed around as an int inside the library.\n\nReviewed By: mxw\n\nDifferential Revision: D3624520\n\nfbshipit-source-id: d39927413cec24fda2e475a296ad5d9019ccef0a",
+    "tree": {
+      "sha": "29e7a70868eb0084baab7dc00a95c8281d017342",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/29e7a70868eb0084baab7dc00a95c8281d017342"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/c00fc9d3003eb06226b58b6a48555f1456ee2475",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/c00fc9d3003eb06226b58b6a48555f1456ee2475",
+  "html_url": "https://github.com/facebook/hhvm/commit/c00fc9d3003eb06226b58b6a48555f1456ee2475",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/c00fc9d3003eb06226b58b6a48555f1456ee2475/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "2c9a8fcc73a151608634d3e712973d192027c271",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/2c9a8fcc73a151608634d3e712973d192027c271",
+      "html_url": "https://github.com/facebook/hhvm/commit/2c9a8fcc73a151608634d3e712973d192027c271"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 25,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "e5b037a60603054837f0ad950c5cefe027d56eef",
+      "filename": "hphp/runtime/ext/bcmath/ext_bcmath.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 8,
+      "changes": 25,
+      "blob_url": "https://github.com/facebook/hhvm/blob/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Fruntime%2Fext%2Fbcmath%2Fext_bcmath.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Fruntime%2Fext%2Fbcmath%2Fext_bcmath.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fbcmath%2Fext_bcmath.cpp?ref=c00fc9d3003eb06226b58b6a48555f1456ee2475",
+      "patch": "@@ -39,6 +39,15 @@ static IMPLEMENT_THREAD_LOCAL(bcmath_data, s_globals);\n \n ///////////////////////////////////////////////////////////////////////////////\n \n+static int64_t adjust_scale(int64_t scale) {\n+  if (scale < 0) {\n+    scale = BCG(bc_precision);\n+    if (scale < 0) scale = 0;\n+  }\n+  if ((uint64_t)scale > StringData::MaxSize) return StringData::MaxSize;\n+  return scale;\n+}\n+\n static void php_str2num(bc_num *num, const char *str) {\n   const char *p;\n   if (!(p = strchr(str, '.'))) {\n@@ -55,7 +64,7 @@ static bool HHVM_FUNCTION(bcscale, int64_t scale) {\n \n static String HHVM_FUNCTION(bcadd, const String& left, const String& right,\n                             int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -75,7 +84,7 @@ static String HHVM_FUNCTION(bcadd, const String& left, const String& right,\n \n static String HHVM_FUNCTION(bcsub, const String& left, const String& right,\n                             int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -95,7 +104,7 @@ static String HHVM_FUNCTION(bcsub, const String& left, const String& right,\n \n static int64_t HHVM_FUNCTION(bccomp, const String& left, const String& right,\n                              int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -109,7 +118,7 @@ static int64_t HHVM_FUNCTION(bccomp, const String& left, const String& right,\n \n static String HHVM_FUNCTION(bcmul, const String& left, const String& right,\n                             int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -129,7 +138,7 @@ static String HHVM_FUNCTION(bcmul, const String& left, const String& right,\n \n static Variant HHVM_FUNCTION(bcdiv, const String& left, const String& right,\n                int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -171,7 +180,7 @@ static Variant HHVM_FUNCTION(bcmod, const String& left, const String& right) {\n \n static String HHVM_FUNCTION(bcpow, const String& left, const String& right,\n                            int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -193,7 +202,7 @@ static String HHVM_FUNCTION(bcpow, const String& left, const String& right,\n \n static Variant HHVM_FUNCTION(bcpowmod, const String& left, const String& right,\n                              const String& modulus, int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num first, second, mod, result;\n   bc_init_num(&first);\n   bc_init_num(&second);\n@@ -220,7 +229,7 @@ static Variant HHVM_FUNCTION(bcpowmod, const String& left, const String& right,\n \n static Variant HHVM_FUNCTION(bcsqrt, const String& operand,\n                              int64_t scale /* = -1 */) {\n-  if (scale < 0) scale = BCG(bc_precision);\n+  scale = adjust_scale(scale);\n   bc_num result;\n   bc_init_num(&result);\n   SCOPE_EXIT {"
+    },
+    {
+      "sha": "5c5c419a2a33b8ae69f376cac4597387826757fe",
+      "filename": "hphp/test/slow/ext_bcmath/bccomp_overflow.php",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/facebook/hhvm/blob/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php?ref=c00fc9d3003eb06226b58b6a48555f1456ee2475",
+      "patch": "@@ -0,0 +1,7 @@\n+<?php\n+\n+$intMaxPre = PHP_INT_MAX - 1;\n+$stringNormal = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ';\n+\n+$number_bccomp_10 = bccomp(\"2015.5\", $stringNormal, $intMaxPre);\n+var_dump($number_bccomp_10);"
+    },
+    {
+      "sha": "82693695945d936cb58fe841c2bfe6a9de5bae74",
+      "filename": "hphp/test/slow/ext_bcmath/bccomp_overflow.php.expect",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/hhvm/blob/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php.expect",
+      "raw_url": "https://github.com/facebook/hhvm/raw/c00fc9d3003eb06226b58b6a48555f1456ee2475/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php.expect",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_bcmath%2Fbccomp_overflow.php.expect?ref=c00fc9d3003eb06226b58b6a48555f1456ee2475",
+      "patch": "@@ -0,0 +1 @@\n+int(1)"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+  "node_id": "MDY6Q29tbWl0ODc4OTE3ODI6ZjIzMWVjNTExYjlhMDlmNDNmNDliMmM3YmI3YzYwYjgwNDYyNzZiMQ==",
+  "commit": {
+    "author": {
+      "name": "Tobias Junghans",
+      "email": "tobydox@veyon.io",
+      "date": "2020-09-01T08:09:31Z"
+    },
+    "committer": {
+      "name": "Tobias Junghans",
+      "email": "tobydox@veyon.io",
+      "date": "2020-09-01T08:09:31Z"
+    },
+    "message": "WindowsServiceControl: quote service binary path\n\nFix unquoted service path vulnerability.\n\nCloses #657.",
+    "tree": {
+      "sha": "5f25f30be0ecf987b8bda96807103fad3db9ddb3",
+      "url": "https://api.github.com/repos/veyon/veyon/git/trees/5f25f30be0ecf987b8bda96807103fad3db9ddb3"
+    },
+    "url": "https://api.github.com/repos/veyon/veyon/git/commits/f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/veyon/veyon/commits/f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+  "html_url": "https://github.com/veyon/veyon/commit/f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+  "comments_url": "https://api.github.com/repos/veyon/veyon/commits/f231ec511b9a09f43f49b2c7bb7c60b8046276b1/comments",
+  "author": {
+    "login": "tobydox",
+    "id": 3300739,
+    "node_id": "MDQ6VXNlcjMzMDA3Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3300739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tobydox",
+    "html_url": "https://github.com/tobydox",
+    "followers_url": "https://api.github.com/users/tobydox/followers",
+    "following_url": "https://api.github.com/users/tobydox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tobydox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tobydox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tobydox/subscriptions",
+    "organizations_url": "https://api.github.com/users/tobydox/orgs",
+    "repos_url": "https://api.github.com/users/tobydox/repos",
+    "events_url": "https://api.github.com/users/tobydox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tobydox/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tobydox",
+    "id": 3300739,
+    "node_id": "MDQ6VXNlcjMzMDA3Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3300739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tobydox",
+    "html_url": "https://github.com/tobydox",
+    "followers_url": "https://api.github.com/users/tobydox/followers",
+    "following_url": "https://api.github.com/users/tobydox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tobydox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tobydox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tobydox/subscriptions",
+    "organizations_url": "https://api.github.com/users/tobydox/orgs",
+    "repos_url": "https://api.github.com/users/tobydox/repos",
+    "events_url": "https://api.github.com/users/tobydox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tobydox/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "afd0e6cf4a8afbe21203aec001ba003507a304d9",
+      "url": "https://api.github.com/repos/veyon/veyon/commits/afd0e6cf4a8afbe21203aec001ba003507a304d9",
+      "html_url": "https://github.com/veyon/veyon/commit/afd0e6cf4a8afbe21203aec001ba003507a304d9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ea505d8fae10e76b1dc4d77d3637d61645e9250e",
+      "filename": "plugins/platform/windows/WindowsServiceControl.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/veyon/veyon/blob/f231ec511b9a09f43f49b2c7bb7c60b8046276b1/plugins%2Fplatform%2Fwindows%2FWindowsServiceControl.cpp",
+      "raw_url": "https://github.com/veyon/veyon/raw/f231ec511b9a09f43f49b2c7bb7c60b8046276b1/plugins%2Fplatform%2Fwindows%2FWindowsServiceControl.cpp",
+      "contents_url": "https://api.github.com/repos/veyon/veyon/contents/plugins%2Fplatform%2Fwindows%2FWindowsServiceControl.cpp?ref=f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+      "patch": "@@ -158,6 +158,8 @@ bool WindowsServiceControl::stop()\n \n bool WindowsServiceControl::install( const QString& filePath, const QString& displayName  )\n {\n+\tconst auto binaryPath = QStringLiteral(\"\\\"%1\\\"\").arg( QString( filePath ).replace( QLatin1Char('\"'), QString() ) );\n+\n \tm_serviceHandle = CreateService(\n \t\t\t\tm_serviceManager,\t\t// SCManager database\n \t\t\t\tWindowsCoreFunctions::toConstWCharArray( m_name ),\t// name of service\n@@ -167,7 +169,7 @@ bool WindowsServiceControl::install( const QString& filePath, const QString& dis\n \t\t\t\t// service type\n \t\t\t\tSERVICE_AUTO_START,\t// start type\n \t\t\t\tSERVICE_ERROR_NORMAL,\t// error control type\n-\t\t\t\tWindowsCoreFunctions::toConstWCharArray( filePath ),\t\t// service's binary\n+\t\t\t\tWindowsCoreFunctions::toConstWCharArray( binaryPath ),\t\t// service's binary\n \t\t\t\tnullptr,\t\t\t// no load ordering group\n \t\t\t\tnullptr,\t\t\t// no tag identifier\n \t\t\t\tL\"Tcpip\\0RpcSs\\0\\0\",\t\t// dependencies"
+    }
+  ]
+}

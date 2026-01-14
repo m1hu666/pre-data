@@ -1,0 +1,93 @@
+{
+  "sha": "4535fe2334d0713535adb52b641a8cb34e11333c",
+  "node_id": "C_kwDOByyPPdoAKDQ1MzVmZTIzMzRkMDcxMzUzNWFkYjUyYjY0MWE4Y2IzNGUxMTMzM2M",
+  "commit": {
+    "author": {
+      "name": "Muyao Xu",
+      "email": "muyaoxu@google.com",
+      "date": "2022-01-31T23:58:23Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-31T23:58:23Z"
+    },
+    "message": "Replace WidgetObserver::OnWidgetClosing() with OnWidgetDestroying()\n\nIn some cases, OnWidgetClosing() is not called when the widget is\nclosed, resulting an invalid pointer |widget_| stored in\nWebContentsDisplayObserverView.\n\nThis CL replaces OnWidgetClosing() with OnWidgetDestroying(), which\nis recommended in crbug.com/1240365\n\nBug: 1291728\nChange-Id: I64fef8b30930f60220008809ee00f4385d6c3520\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3425473\nAuto-Submit: Muyao Xu <muyaoxu@google.com>\nReviewed-by: Takumi Fujimoto <takumif@chromium.org>\nCommit-Queue: Takumi Fujimoto <takumif@chromium.org>\nCr-Commit-Position: refs/heads/main@{#965431}",
+    "tree": {
+      "sha": "5bad5807d2edefc6514124f2c5d704fd42f9b5ff",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/5bad5807d2edefc6514124f2c5d704fd42f9b5ff"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/4535fe2334d0713535adb52b641a8cb34e11333c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/4535fe2334d0713535adb52b641a8cb34e11333c",
+  "html_url": "https://github.com/chromium/chromium/commit/4535fe2334d0713535adb52b641a8cb34e11333c",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/4535fe2334d0713535adb52b641a8cb34e11333c/comments",
+  "author": {
+    "login": "muyao-xu",
+    "id": 24618303,
+    "node_id": "MDQ6VXNlcjI0NjE4MzAz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24618303?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muyao-xu",
+    "html_url": "https://github.com/muyao-xu",
+    "followers_url": "https://api.github.com/users/muyao-xu/followers",
+    "following_url": "https://api.github.com/users/muyao-xu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muyao-xu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muyao-xu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muyao-xu/subscriptions",
+    "organizations_url": "https://api.github.com/users/muyao-xu/orgs",
+    "repos_url": "https://api.github.com/users/muyao-xu/repos",
+    "events_url": "https://api.github.com/users/muyao-xu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muyao-xu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "1933c3b1bb2ab1ca9139d90e229d0721192d3627",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/1933c3b1bb2ab1ca9139d90e229d0721192d3627",
+      "html_url": "https://github.com/chromium/chromium/commit/1933c3b1bb2ab1ca9139d90e229d0721192d3627"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "2061c2ecb476cd33ed999f180c0293641f7ac23a",
+      "filename": "chrome/browser/ui/views/media_router/web_contents_display_observer_view.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/4535fe2334d0713535adb52b641a8cb34e11333c/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/4535fe2334d0713535adb52b641a8cb34e11333c/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.cc?ref=4535fe2334d0713535adb52b641a8cb34e11333c",
+      "patch": "@@ -65,7 +65,7 @@ void WebContentsDisplayObserverView::OnBrowserSetLastActive(Browser* browser) {\n   }\n }\n \n-void WebContentsDisplayObserverView::OnWidgetClosing(views::Widget* widget) {\n+void WebContentsDisplayObserverView::OnWidgetDestroying(views::Widget* widget) {\n   if (widget_)\n     widget_->RemoveObserver(this);\n   widget_ = nullptr;"
+    },
+    {
+      "sha": "fc7d4084fde83c1c3252af71fea3012caf563f92",
+      "filename": "chrome/browser/ui/views/media_router/web_contents_display_observer_view.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/4535fe2334d0713535adb52b641a8cb34e11333c/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/4535fe2334d0713535adb52b641a8cb34e11333c/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fweb_contents_display_observer_view.h?ref=4535fe2334d0713535adb52b641a8cb34e11333c",
+      "patch": "@@ -29,7 +29,7 @@ class WebContentsDisplayObserverView : public WebContentsDisplayObserver,\n   void OnBrowserSetLastActive(Browser* browser) override;\n \n   // views::WidgetObserver overrides:\n-  void OnWidgetClosing(views::Widget* widget) override;\n+  void OnWidgetDestroying(views::Widget* widget) override;\n   void OnWidgetBoundsChanged(views::Widget* widget,\n                              const gfx::Rect& new_bounds) override;\n "
+    }
+  ]
+}

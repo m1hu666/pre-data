@@ -1,0 +1,81 @@
+{
+  "sha": "76eca90d0e9c09bfbb8c3e8999f36e6da6842a39",
+  "node_id": "C_kwDOByyPPdoAKDc2ZWNhOTBkMGU5YzA5YmZiYjhjM2U4OTk5ZjM2ZTZkYTY4NDJhMzk",
+  "commit": {
+    "author": {
+      "name": "Ken Rockot",
+      "email": "rockot@google.com",
+      "date": "2022-01-25T12:16:14Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-25T12:16:14Z"
+    },
+    "message": "Fix potential handle reuse in Mojo\n\nFixed: 1270333\nChange-Id: Ife188d519092e4e634355fd53d97c85009771b76\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3414063\nAuto-Submit: Ken Rockot <rockot@google.com>\nReviewed-by: Daniel Cheng <dcheng@chromium.org>\nCommit-Queue: Daniel Cheng <dcheng@chromium.org>\nCr-Commit-Position: refs/heads/main@{#962946}",
+    "tree": {
+      "sha": "a1b3495863eaa7af428e3c01f458b4ea2724249a",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/a1b3495863eaa7af428e3c01f458b4ea2724249a"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39",
+  "html_url": "https://github.com/chromium/chromium/commit/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39/comments",
+  "author": {
+    "login": "krockot",
+    "id": 667827,
+    "node_id": "MDQ6VXNlcjY2NzgyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/667827?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/krockot",
+    "html_url": "https://github.com/krockot",
+    "followers_url": "https://api.github.com/users/krockot/followers",
+    "following_url": "https://api.github.com/users/krockot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/krockot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/krockot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/krockot/subscriptions",
+    "organizations_url": "https://api.github.com/users/krockot/orgs",
+    "repos_url": "https://api.github.com/users/krockot/repos",
+    "events_url": "https://api.github.com/users/krockot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/krockot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "cbada262241770b245067eb872b768c293205f1a",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/cbada262241770b245067eb872b768c293205f1a",
+      "html_url": "https://github.com/chromium/chromium/commit/cbada262241770b245067eb872b768c293205f1a"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 9,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "a044f1c8e38f0affe269a87a10c70b49fe6d353c",
+      "filename": "mojo/core/handle_table.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/chromium/chromium/blob/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39/mojo%2Fcore%2Fhandle_table.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/76eca90d0e9c09bfbb8c3e8999f36e6da6842a39/mojo%2Fcore%2Fhandle_table.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/mojo%2Fcore%2Fhandle_table.cc?ref=76eca90d0e9c09bfbb8c3e8999f36e6da6842a39",
+      "patch": "@@ -65,13 +65,19 @@ bool HandleTable::AddDispatchersFromTransit(\n     const std::vector<Dispatcher::DispatcherInTransit>& dispatchers,\n     MojoHandle* handles) {\n   // Oops, we're out of handles.\n-  if (next_available_handle_ == MOJO_HANDLE_INVALID)\n+  if (next_available_handle_ == MOJO_HANDLE_INVALID) {\n     return false;\n+  }\n+\n+  // MOJO_HANDLE_INVALID is zero.\n+  DCHECK_GE(next_available_handle_, 1u);\n \n-  DCHECK_LE(dispatchers.size(), std::numeric_limits<uint32_t>::max());\n   // If this insertion would cause handle overflow, we're out of handles.\n-  if (next_available_handle_ + dispatchers.size() < next_available_handle_)\n+  const uint32_t num_handles_available =\n+      std::numeric_limits<uint32_t>::max() - next_available_handle_ + 1;\n+  if (num_handles_available < dispatchers.size()) {\n     return false;\n+  }\n \n   for (size_t i = 0; i < dispatchers.size(); ++i) {\n     MojoHandle handle = MOJO_HANDLE_INVALID;"
+    }
+  ]
+}

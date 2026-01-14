@@ -1,0 +1,113 @@
+{
+  "sha": "9b1c3962172a972bc0359398af6daa3790bb59db",
+  "node_id": "C_kwDOA-MW79oAKDliMWMzOTYyMTcyYTk3MmJjMDM1OTM5OGFmNmRhYTM3OTBiYjU5ZGI",
+  "commit": {
+    "author": {
+      "name": "Pradeep Rao",
+      "email": "pcrao@google.com",
+      "date": "2022-06-08T23:09:34Z"
+    },
+    "committer": {
+      "name": "Pradeep Rao",
+      "email": "pcrao@google.com",
+      "date": "2022-06-08T23:09:34Z"
+    },
+    "message": "healthcheck: fix grpc inline removal crashes (#749)\n\nSigned-off-by: Matt Klein <mklein@lyft.com>\nSigned-off-by: Pradeep Rao <pcrao@google.com>",
+    "tree": {
+      "sha": "f18180f45fd5994108438c7d6941dc326a256648",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/f18180f45fd5994108438c7d6941dc326a256648"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/9b1c3962172a972bc0359398af6daa3790bb59db",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/9b1c3962172a972bc0359398af6daa3790bb59db",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/9b1c3962172a972bc0359398af6daa3790bb59db",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/9b1c3962172a972bc0359398af6daa3790bb59db/comments",
+  "author": {
+    "login": "pradeepcrao",
+    "id": 84025829,
+    "node_id": "MDQ6VXNlcjg0MDI1ODI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84025829?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pradeepcrao",
+    "html_url": "https://github.com/pradeepcrao",
+    "followers_url": "https://api.github.com/users/pradeepcrao/followers",
+    "following_url": "https://api.github.com/users/pradeepcrao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pradeepcrao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pradeepcrao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pradeepcrao/subscriptions",
+    "organizations_url": "https://api.github.com/users/pradeepcrao/orgs",
+    "repos_url": "https://api.github.com/users/pradeepcrao/repos",
+    "events_url": "https://api.github.com/users/pradeepcrao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pradeepcrao/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pradeepcrao",
+    "id": 84025829,
+    "node_id": "MDQ6VXNlcjg0MDI1ODI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84025829?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pradeepcrao",
+    "html_url": "https://github.com/pradeepcrao",
+    "followers_url": "https://api.github.com/users/pradeepcrao/followers",
+    "following_url": "https://api.github.com/users/pradeepcrao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pradeepcrao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pradeepcrao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pradeepcrao/subscriptions",
+    "organizations_url": "https://api.github.com/users/pradeepcrao/orgs",
+    "repos_url": "https://api.github.com/users/pradeepcrao/repos",
+    "events_url": "https://api.github.com/users/pradeepcrao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pradeepcrao/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cb4ef0b09200c720dfdb07e097092dd105450343",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/cb4ef0b09200c720dfdb07e097092dd105450343",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/cb4ef0b09200c720dfdb07e097092dd105450343"
+    }
+  ],
+  "stats": {
+    "total": 90,
+    "additions": 83,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "6a8382a825ed0583d2167ea9421eb9cd412c43ca",
+      "filename": "source/common/upstream/health_checker_impl.cc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 7,
+      "changes": 26,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9b1c3962172a972bc0359398af6daa3790bb59db/source%2Fcommon%2Fupstream%2Fhealth_checker_impl.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9b1c3962172a972bc0359398af6daa3790bb59db/source%2Fcommon%2Fupstream%2Fhealth_checker_impl.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fcommon%2Fupstream%2Fhealth_checker_impl.cc?ref=9b1c3962172a972bc0359398af6daa3790bb59db",
+      "patch": "@@ -815,10 +815,17 @@ void GrpcHealthCheckerImpl::GrpcActiveHealthCheckSession::onGoAway(\n   // Even if we have active health check probe, fail it on GOAWAY and schedule new one.\n   if (request_encoder_) {\n     handleFailure(envoy::data::core::v3::NETWORK);\n-    expect_reset_ = true;\n-    request_encoder_->getStream().resetStream(Http::StreamResetReason::LocalReset);\n+    // request_encoder_ can already be destroyed if the host was removed during the failure callback\n+    // above.\n+    if (request_encoder_ != nullptr) {\n+      expect_reset_ = true;\n+      request_encoder_->getStream().resetStream(Http::StreamResetReason::LocalReset);\n+    }\n+  }\n+  // client_ can already be destroyed if the host was removed during the failure callback above.\n+  if (client_ != nullptr) {\n+    client_->close();\n   }\n-  client_->close();\n }\n \n bool GrpcHealthCheckerImpl::GrpcActiveHealthCheckSession::isHealthCheckSucceeded(\n@@ -852,12 +859,17 @@ void GrpcHealthCheckerImpl::GrpcActiveHealthCheckSession::onRpcComplete(\n   if (end_stream) {\n     resetState();\n   } else {\n-    // resetState() will be called by onResetStream().\n-    expect_reset_ = true;\n-    request_encoder_->getStream().resetStream(Http::StreamResetReason::LocalReset);\n+    // request_encoder_ can already be destroyed if the host was removed during the failure callback\n+    // above.\n+    if (request_encoder_ != nullptr) {\n+      // resetState() will be called by onResetStream().\n+      expect_reset_ = true;\n+      request_encoder_->getStream().resetStream(Http::StreamResetReason::LocalReset);\n+    }\n   }\n \n-  if (!parent_.reuse_connection_ || goaway) {\n+  // client_ can already be destroyed if the host was removed during the failure callback above.\n+  if (client_ != nullptr && (!parent_.reuse_connection_ || goaway)) {\n     client_->close();\n   }\n }"
+    },
+    {
+      "sha": "0aedf94a6e5e7aa556b307e9f1c2893f76b6382e",
+      "filename": "test/common/upstream/health_checker_impl_test.cc",
+      "status": "modified",
+      "additions": 64,
+      "deletions": 0,
+      "changes": 64,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/9b1c3962172a972bc0359398af6daa3790bb59db/test%2Fcommon%2Fupstream%2Fhealth_checker_impl_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/9b1c3962172a972bc0359398af6daa3790bb59db/test%2Fcommon%2Fupstream%2Fhealth_checker_impl_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fcommon%2Fupstream%2Fhealth_checker_impl_test.cc?ref=9b1c3962172a972bc0359398af6daa3790bb59db",
+      "patch": "@@ -4737,6 +4737,70 @@ TEST_F(GrpcHealthCheckerImplTest, SuccessStartFailedFailFirst) {\n   expectHostHealthy(true);\n }\n \n+// Verify functionality when a host is removed inline with a failure via RPC that was proceeded\n+// by a GOAWAY.\n+TEST_F(GrpcHealthCheckerImplTest, GrpcHealthFailViaRpcRemoveHostInCallback) {\n+  setupHC();\n+  cluster_->prioritySet().getMockHostSet(0)->hosts_ = {\n+      makeTestHost(cluster_->info_, \"tcp://127.0.0.1:80\", simTime())};\n+\n+  expectSessionCreate();\n+  expectHealthcheckStart(0);\n+  EXPECT_CALL(event_logger_, logUnhealthy(_, _, _, true));\n+  health_checker_->start();\n+\n+  EXPECT_CALL(*this, onHostStatus(_, HealthTransition::Changed))\n+      .WillOnce(Invoke([&](HostSharedPtr host, HealthTransition) {\n+        cluster_->prioritySet().getMockHostSet(0)->hosts_ = {};\n+        cluster_->prioritySet().runUpdateCallbacks(0, {}, {host});\n+      }));\n+  EXPECT_CALL(event_logger_, logEjectUnhealthy(_, _, _));\n+  test_sessions_[0]->codec_client_->raiseGoAway(Http::GoAwayErrorCode::NoError);\n+  respondServiceStatus(0, grpc::health::v1::HealthCheckResponse::NOT_SERVING);\n+}\n+\n+// Verify functionality when a host is removed inline with a failure via an error GOAWAY.\n+TEST_F(GrpcHealthCheckerImplTest, GrpcHealthFailViaGoawayRemoveHostInCallback) {\n+  setupHCWithUnhealthyThreshold(/*threshold=*/1);\n+  cluster_->prioritySet().getMockHostSet(0)->hosts_ = {\n+      makeTestHost(cluster_->info_, \"tcp://127.0.0.1:80\", simTime())};\n+\n+  expectSessionCreate();\n+  expectHealthcheckStart(0);\n+  EXPECT_CALL(event_logger_, logUnhealthy(_, _, _, true));\n+  health_checker_->start();\n+\n+  EXPECT_CALL(*this, onHostStatus(_, HealthTransition::Changed))\n+      .WillOnce(Invoke([&](HostSharedPtr host, HealthTransition) {\n+        cluster_->prioritySet().getMockHostSet(0)->hosts_ = {};\n+        cluster_->prioritySet().runUpdateCallbacks(0, {}, {host});\n+      }));\n+  EXPECT_CALL(event_logger_, logEjectUnhealthy(_, _, _));\n+  test_sessions_[0]->codec_client_->raiseGoAway(Http::GoAwayErrorCode::Other);\n+}\n+\n+// Verify functionality when a host is removed inline with by a bad RPC response.\n+TEST_F(GrpcHealthCheckerImplTest, GrpcHealthFailViaBadResponseRemoveHostInCallback) {\n+  setupHCWithUnhealthyThreshold(/*threshold=*/1);\n+  cluster_->prioritySet().getMockHostSet(0)->hosts_ = {\n+      makeTestHost(cluster_->info_, \"tcp://127.0.0.1:80\", simTime())};\n+\n+  expectSessionCreate();\n+  expectHealthcheckStart(0);\n+  EXPECT_CALL(event_logger_, logUnhealthy(_, _, _, true));\n+  health_checker_->start();\n+\n+  EXPECT_CALL(*this, onHostStatus(_, HealthTransition::Changed))\n+      .WillOnce(Invoke([&](HostSharedPtr host, HealthTransition) {\n+        cluster_->prioritySet().getMockHostSet(0)->hosts_ = {};\n+        cluster_->prioritySet().runUpdateCallbacks(0, {}, {host});\n+      }));\n+  EXPECT_CALL(event_logger_, logEjectUnhealthy(_, _, _));\n+  std::unique_ptr<Http::TestResponseHeaderMapImpl> response_headers(\n+      new Http::TestResponseHeaderMapImpl{{\":status\", \"500\"}});\n+  test_sessions_[0]->stream_response_callbacks_->decodeHeaders(std::move(response_headers), false);\n+}\n+\n // Test host recovery after explicit check failure requires several successful checks.\n TEST_F(GrpcHealthCheckerImplTest, GrpcHealthFail) {\n   setupHC();"
+    }
+  ]
+}

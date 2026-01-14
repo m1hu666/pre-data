@@ -1,0 +1,113 @@
+{
+  "sha": "e47384546b43d0fd536e933249047bc397a4d88b",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmU0NzM4NDU0NmI0M2QwZmQ1MzZlOTMzMjQ5MDQ3YmMzOTdhNGQ4OGI=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2018-05-10T08:27:30Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2018-05-10T08:27:30Z"
+    },
+    "message": "Secunia Advisory SA83050: possible infinite loop in parse_minolta()",
+    "tree": {
+      "sha": "9a84568ea3ce15d0ea2b5a237532ccd856cd911c",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/9a84568ea3ce15d0ea2b5a237532ccd856cd911c"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/e47384546b43d0fd536e933249047bc397a4d88b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/e47384546b43d0fd536e933249047bc397a4d88b",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/e47384546b43d0fd536e933249047bc397a4d88b",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/e47384546b43d0fd536e933249047bc397a4d88b/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3afcbfdc5f2edc3ac1268a53d2208d81ab1521da",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/3afcbfdc5f2edc3ac1268a53d2208d81ab1521da",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/3afcbfdc5f2edc3ac1268a53d2208d81ab1521da"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 14,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d1c8895b269d36b26b8eb9c1d6ce8f30b6325482",
+      "filename": "dcraw/dcraw.c",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/e47384546b43d0fd536e933249047bc397a4d88b/dcraw%2Fdcraw.c",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/e47384546b43d0fd536e933249047bc397a4d88b/dcraw%2Fdcraw.c",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/dcraw%2Fdcraw.c?ref=e47384546b43d0fd536e933249047bc397a4d88b",
+      "patch": "@@ -15669,11 +15669,18 @@ void CLASS parse_minolta(int base)\n     return;\n   order = fgetc(ifp) * 0x101;\n   offset = base + get4() + 8;\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(offset>ifp->size()-8) // At least 8 bytes for tag/len\n+    offset = ifp->size()-8;\n+#endif\n+\n   while ((save = ftell(ifp)) < offset)\n   {\n     for (tag = i = 0; i < 4; i++)\n       tag = tag << 8 | fgetc(ifp);\n     len = get4();\n+    if(len < 0)\n+      return; // just ignore wrong len?? or raise bad file exception?\n     switch (tag)\n     {\n     case 0x505244: /* PRD */"
+    },
+    {
+      "sha": "6406198fe3944c6468820c9e693558c0787a6bcb",
+      "filename": "internal/dcraw_common.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/e47384546b43d0fd536e933249047bc397a4d88b/internal%2Fdcraw_common.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/e47384546b43d0fd536e933249047bc397a4d88b/internal%2Fdcraw_common.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/internal%2Fdcraw_common.cpp?ref=e47384546b43d0fd536e933249047bc397a4d88b",
+      "patch": "@@ -14331,11 +14331,18 @@ void CLASS parse_minolta(int base)\n     return;\n   order = fgetc(ifp) * 0x101;\n   offset = base + get4() + 8;\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(offset>ifp->size()-8) // At least 8 bytes for tag/len\n+    offset = ifp->size()-8;\n+#endif\n+\n   while ((save = ftell(ifp)) < offset)\n   {\n     for (tag = i = 0; i < 4; i++)\n       tag = tag << 8 | fgetc(ifp);\n     len = get4();\n+    if(len < 0)\n+      return; // just ignore wrong len?? or raise bad file exception?\n     switch (tag)\n     {\n     case 0x505244: /* PRD */"
+    }
+  ]
+}

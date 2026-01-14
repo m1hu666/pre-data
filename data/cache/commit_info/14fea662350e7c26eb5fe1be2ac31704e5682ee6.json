@@ -1,0 +1,137 @@
+{
+  "sha": "14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+  "node_id": "C_kwDOArmXAtoAKDE0ZmVhNjYyMzUwZTdjMjZlYjVmZTFiZTJhYzMxNzA0ZTU2ODJlZTY",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-06T17:22:51Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-06T17:27:15Z"
+    },
+    "message": "Prevent `CHECK`-fail when decoding resource handles from proto\n\nIn certain scenarios, the proto might contain tensors that have too many elements (overflow). This is a `CHECK`-fail in general, but we should prevent this, given how many CVEs caused by that we have received this year (a large fraction of 200).\n\nPiperOrigin-RevId: 408049766\nChange-Id: I2ac20b247aa8ed9110846fbdb7a0a9401f2c168c",
+    "tree": {
+      "sha": "f5b94dc81e04bb69c15c0dfc60624a896ac73488",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/f5b94dc81e04bb69c15c0dfc60624a896ac73488"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/14fea662350e7c26eb5fe1be2ac31704e5682ee6/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ce8ac889ce260adf896c76cdb31df7aef421a8c3",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/ce8ac889ce260adf896c76cdb31df7aef421a8c3",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/ce8ac889ce260adf896c76cdb31df7aef421a8c3"
+    }
+  ],
+  "stats": {
+    "total": 80,
+    "additions": 72,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "3dd93fd9028665ef6f25823c925f26e7e437aa62",
+      "filename": "tensorflow/core/framework/BUILD",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2FBUILD",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2FBUILD",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2FBUILD?ref=14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+      "patch": "@@ -734,7 +734,9 @@ cc_library(\n         \"//tensorflow/core/lib/core:errors\",\n         \"//tensorflow/core/lib/strings:strcat\",\n         \"//tensorflow/core/platform:casts\",\n+        \"//tensorflow/core/platform:errors\",\n         \"//tensorflow/core/platform:intrusive_ptr\",\n+        \"//tensorflow/core/platform:macros\",\n         \"//tensorflow/core/platform:statusor\",\n         \"//tensorflow/core/platform:tensor_coding\",\n         \"//tensorflow/core/platform:types\","
+    },
+    {
+      "sha": "74b196dd62028043707a8a7b5a1c0bae5756701a",
+      "filename": "tensorflow/core/framework/resource_handle.cc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 7,
+      "changes": 31,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Fresource_handle.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Fresource_handle.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fresource_handle.cc?ref=14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+      "patch": "@@ -17,8 +17,11 @@ limitations under the License.\n \n #include \"absl/strings/str_format.h\"\n #include \"tensorflow/core/framework/resource_handle.pb.h\"\n+#include \"tensorflow/core/framework/tensor_shape.h\"\n #include \"tensorflow/core/lib/core/errors.h\"\n #include \"tensorflow/core/lib/strings/strcat.h\"\n+#include \"tensorflow/core/platform/errors.h\"\n+#include \"tensorflow/core/platform/macros.h\"\n \n namespace tensorflow {\n \n@@ -28,7 +31,15 @@ namespace tensorflow {\n ResourceHandle::ResourceHandle() {}\n \n ResourceHandle::ResourceHandle(const ResourceHandleProto& proto) {\n-  FromProto(proto);\n+  TF_CHECK_OK(FromProto(proto));\n+}\n+\n+Status ResourceHandle::BuildResourceHandle(const ResourceHandleProto& proto,\n+                                           ResourceHandle* out) {\n+  if (out == nullptr)\n+    return errors::Internal(\n+        \"BuildResourceHandle() was called with nullptr for the output\");\n+  return out->FromProto(proto);\n }\n \n ResourceHandle::~ResourceHandle() {}\n@@ -46,7 +57,7 @@ void ResourceHandle::AsProto(ResourceHandleProto* proto) const {\n   }\n }\n \n-void ResourceHandle::FromProto(const ResourceHandleProto& proto) {\n+Status ResourceHandle::FromProto(const ResourceHandleProto& proto) {\n   set_device(proto.device());\n   set_container(proto.container());\n   set_name(proto.name());\n@@ -55,10 +66,16 @@ void ResourceHandle::FromProto(const ResourceHandleProto& proto) {\n   std::vector<DtypeAndPartialTensorShape> dtypes_and_shapes;\n   for (const auto& dtype_and_shape : proto.dtypes_and_shapes()) {\n     DataType dtype = dtype_and_shape.dtype();\n-    PartialTensorShape shape(dtype_and_shape.shape());\n+    PartialTensorShape shape;\n+    Status s = PartialTensorShape::BuildPartialTensorShape(\n+        dtype_and_shape.shape(), &shape);\n+    if (!s.ok()) {\n+      return s;\n+    }\n     dtypes_and_shapes.push_back(DtypeAndPartialTensorShape{dtype, shape});\n   }\n   dtypes_and_shapes_ = std::move(dtypes_and_shapes);\n+  return Status::OK();\n }\n \n string ResourceHandle::SerializeAsString() const {\n@@ -69,9 +86,7 @@ string ResourceHandle::SerializeAsString() const {\n \n bool ResourceHandle::ParseFromString(const string& s) {\n   ResourceHandleProto proto;\n-  const bool status = proto.ParseFromString(s);\n-  if (status) FromProto(proto);\n-  return status;\n+  return proto.ParseFromString(s) && FromProto(proto).ok();\n }\n \n string ResourceHandle::DebugString() const {\n@@ -140,7 +155,9 @@ bool DecodeResourceHandleList(std::unique_ptr<port::StringListDecoder> d,\n     if (!proto.ParseFromArray(d->Data(sizes[i]), sizes[i])) {\n       return false;\n     }\n-    ps[i].FromProto(proto);\n+    if (!ps[i].FromProto(proto).ok()) {\n+      return false;\n+    }\n   }\n   return true;\n }"
+    },
+    {
+      "sha": "46926720a0057750bba23733903b9516e8c34851",
+      "filename": "tensorflow/core/framework/resource_handle.h",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Fresource_handle.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Fresource_handle.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fresource_handle.h?ref=14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+      "patch": "@@ -46,6 +46,11 @@ class ResourceHandle {\n   ResourceHandle(const ResourceHandleProto& proto);\n   ~ResourceHandle();\n \n+  // Use this factory method if the `proto` comes from user controlled input, to\n+  // prevent a denial of service.\n+  static Status BuildResourceHandle(const ResourceHandleProto& proto,\n+                                    ResourceHandle* out);\n+\n   // Unique name for the device containing the resource.\n   const std::string& device() const { return device_; }\n \n@@ -91,7 +96,7 @@ class ResourceHandle {\n \n   // Conversion to and from ResourceHandleProto\n   void AsProto(ResourceHandleProto* proto) const;\n-  void FromProto(const ResourceHandleProto& proto);\n+  Status FromProto(const ResourceHandleProto& proto);\n \n   // Serialization via ResourceHandleProto\n   std::string SerializeAsString() const;"
+    },
+    {
+      "sha": "8ae9fd0051652c64fb2092a520b81d34e7cd0453",
+      "filename": "tensorflow/core/framework/tensor.cc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 0,
+      "changes": 40,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Ftensor.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/14fea662350e7c26eb5fe1be2ac31704e5682ee6/tensorflow%2Fcore%2Fframework%2Ftensor.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Ftensor.cc?ref=14fea662350e7c26eb5fe1be2ac31704e5682ee6",
+      "patch": "@@ -537,6 +537,46 @@ TensorBuffer* FromProtoField(Allocator* a, const TensorProto& in, int64_t n) {\n   return buf;\n }\n \n+// Separate implementation for `ResourceHandle` to handle the case when the\n+// proto for the resource is invalid. See `resource_handle.h` constructor and\n+// static factory builder.\n+template <>\n+TensorBuffer* FromProtoField<ResourceHandle>(Allocator* a,\n+                                             const TensorProto& in, int64_t n) {\n+  CHECK_GT(n, 0);\n+  Buffer<ResourceHandle>* buf = new Buffer<ResourceHandle>(a, n);\n+  ResourceHandle* data = buf->template base<ResourceHandle>();\n+  if (data == nullptr) {\n+    buf->Unref();\n+    return nullptr;\n+  }\n+  const int64_t in_n = ProtoHelper<ResourceHandle>::NumElements(in);\n+  if (in_n <= 0) {\n+    std::fill_n(data, n, ResourceHandle());\n+  } else {\n+    // If tensor shape says we have n < in_n elements in the output tensor\n+    // then make sure to only decode the first n out of the in_n elements in the\n+    // in tensors. In all other cases, we decode all in_n elements of in and set\n+    // the remaining elements up to n to be the default ResourceHandle() value.\n+    const int64_t real_n = n < in_n ? n : in_n;\n+    for (int64_t i = 0; i < real_n; ++i) {\n+      Status s = ResourceHandle::BuildResourceHandle(in.resource_handle_val(i),\n+                                                     &data[i]);\n+      if (!s.ok()) {\n+        LOG(ERROR) << \"Could not decode resource handle from proto \\\"\"\n+                   << in.resource_handle_val(i).ShortDebugString()\n+                   << \"\\\", returned status: \" << s.ToString();\n+        buf->Unref();\n+        return nullptr;\n+      }\n+    }\n+    for (int64_t i = in_n; i < n; ++i) {\n+      data[i] = ResourceHandle();\n+    }\n+  }\n+  return buf;\n+}\n+\n template <>\n TensorBuffer* FromProtoField<Variant>(Allocator* a, const TensorProto& in,\n                                       int64_t n) {"
+    }
+  ]
+}

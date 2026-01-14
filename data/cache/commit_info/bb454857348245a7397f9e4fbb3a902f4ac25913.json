@@ -1,0 +1,101 @@
+{
+  "sha": "bb454857348245a7397f9e4fbb3a902f4ac25913",
+  "node_id": "MDY6Q29tbWl0NDY3NTgyOmJiNDU0ODU3MzQ4MjQ1YTczOTdmOWU0ZmJiM2E5MDJmNGFjMjU5MTM=",
+  "commit": {
+    "author": {
+      "name": "Va\u0301clav Slavi\u0301k",
+      "email": "vaclav@slavik.io",
+      "date": "2016-12-12T17:32:14Z"
+    },
+    "committer": {
+      "name": "Va\u0301clav Slavi\u0301k",
+      "email": "vaclav@slavik.io",
+      "date": "2016-12-12T17:32:14Z"
+    },
+    "message": "Verify UpdateTempDir isn't maliciously modified\n\nDon't just delete the stored updates temporary directory on launch, but\nvalidate the registry key to ensure it is in an expected location and\nfollows WinSparkle's naming convention. This is to prevent malicious\nusers from modifying this registry key and forcing the host app to\ndelete arbitrary directories (a user being able to delete the key would\nbe able to delete the directory themselves, so it's not a serious issue,\nbut it nevertheless is bad behavior and shouldn't be possible).",
+    "tree": {
+      "sha": "a2370b6c3abaa8ab3d341f497b9ca17dfb783cbf",
+      "url": "https://api.github.com/repos/vslavik/winsparkle/git/trees/a2370b6c3abaa8ab3d341f497b9ca17dfb783cbf"
+    },
+    "url": "https://api.github.com/repos/vslavik/winsparkle/git/commits/bb454857348245a7397f9e4fbb3a902f4ac25913",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/vslavik/winsparkle/commits/bb454857348245a7397f9e4fbb3a902f4ac25913",
+  "html_url": "https://github.com/vslavik/winsparkle/commit/bb454857348245a7397f9e4fbb3a902f4ac25913",
+  "comments_url": "https://api.github.com/repos/vslavik/winsparkle/commits/bb454857348245a7397f9e4fbb3a902f4ac25913/comments",
+  "author": {
+    "login": "vslavik",
+    "id": 145881,
+    "node_id": "MDQ6VXNlcjE0NTg4MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/145881?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vslavik",
+    "html_url": "https://github.com/vslavik",
+    "followers_url": "https://api.github.com/users/vslavik/followers",
+    "following_url": "https://api.github.com/users/vslavik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vslavik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vslavik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vslavik/subscriptions",
+    "organizations_url": "https://api.github.com/users/vslavik/orgs",
+    "repos_url": "https://api.github.com/users/vslavik/repos",
+    "events_url": "https://api.github.com/users/vslavik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vslavik/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vslavik",
+    "id": 145881,
+    "node_id": "MDQ6VXNlcjE0NTg4MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/145881?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vslavik",
+    "html_url": "https://github.com/vslavik",
+    "followers_url": "https://api.github.com/users/vslavik/followers",
+    "following_url": "https://api.github.com/users/vslavik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vslavik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vslavik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vslavik/subscriptions",
+    "organizations_url": "https://api.github.com/users/vslavik/orgs",
+    "repos_url": "https://api.github.com/users/vslavik/repos",
+    "events_url": "https://api.github.com/users/vslavik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vslavik/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "786d180882fd4fda6b5a253f6cc5dc0d2322fc9c",
+      "url": "https://api.github.com/repos/vslavik/winsparkle/commits/786d180882fd4fda6b5a253f6cc5dc0d2322fc9c",
+      "html_url": "https://github.com/vslavik/winsparkle/commit/786d180882fd4fda6b5a253f6cc5dc0d2322fc9c"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 27,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "b6893305a82934c8272fec3ab6db1897d00a7a08",
+      "filename": "src/updatedownloader.cpp",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 5,
+      "changes": 32,
+      "blob_url": "https://github.com/vslavik/winsparkle/blob/bb454857348245a7397f9e4fbb3a902f4ac25913/src%2Fupdatedownloader.cpp",
+      "raw_url": "https://github.com/vslavik/winsparkle/raw/bb454857348245a7397f9e4fbb3a902f4ac25913/src%2Fupdatedownloader.cpp",
+      "contents_url": "https://api.github.com/repos/vslavik/winsparkle/contents/src%2Fupdatedownloader.cpp?ref=bb454857348245a7397f9e4fbb3a902f4ac25913",
+      "patch": "@@ -45,6 +45,17 @@ namespace winsparkle\n namespace\n {\n \n+std::wstring GetUniqueTempDirectoryPrefix()\n+{\n+    wchar_t tmpdir[MAX_PATH + 1];\n+    if (GetTempPath(MAX_PATH + 1, tmpdir) == 0)\n+        throw Win32Exception(\"Cannot create temporary directory\");\n+\n+    std::wstring dir(tmpdir);\n+    dir += L\"Update-\";\n+    return dir;\n+}\n+\n std::wstring CreateUniqueTempDirectory()\n {\n     // We need to put downloaded updates into a directory of their own, because\n@@ -53,15 +64,11 @@ std::wstring CreateUniqueTempDirectory()\n     //\n     // This code creates a new randomized directory name and tries to create it;\n     // this process is repeated if the directory already exists.\n-    wchar_t tmpdir[MAX_PATH+1];\n-    if ( GetTempPath(MAX_PATH+1, tmpdir) == 0 )\n-        throw Win32Exception(\"Cannot create temporary directory\");\n+    const std::wstring tmpdir = GetUniqueTempDirectoryPrefix();\n \n     for ( ;; )\n     {\n         std::wstring dir(tmpdir);\n-        dir += L\"Update-\";\n-\n         UUID uuid;\n         UuidCreate(&uuid);\n         RPC_WSTR uuidStr;\n@@ -192,6 +199,21 @@ void UpdateDownloader::CleanLeftovers()\n     if ( !Settings::ReadConfigValue(\"UpdateTempDir\", tmpdir) )\n         return;\n \n+    // Check that the directory actually is a valid update temp dir, to prevent\n+    // malicious users from forcing us into deleting arbitrary directories:\n+    try\n+    {\n+        if (tmpdir.find(GetUniqueTempDirectoryPrefix()) != 0)\n+        {\n+            Settings::DeleteConfigValue(\"UpdateTempDir\");\n+            return;\n+        }\n+    }\n+    catch (Win32Exception&) // cannot determine temp directory\n+    {\n+        return;\n+    }\n+\n     tmpdir.append(1, '\\0'); // double NULL-terminate for SHFileOperation\n \n     SHFILEOPSTRUCT fos = {0};"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+  "node_id": "C_kwDOAR2kcNoAKGViYTYxZGYzYjM4NjA1YmVmY2I0MzY4N2E0YzBhMTU5ZGJjMGM1Y2I",
+  "commit": {
+    "author": {
+      "name": "Georg Zotti",
+      "email": "Georg.Zotti@univie.ac.at",
+      "date": "2023-03-04T17:02:01Z"
+    },
+    "committer": {
+      "name": "Georg Zotti",
+      "email": "Georg.Zotti@univie.ac.at",
+      "date": "2023-03-04T17:02:01Z"
+    },
+    "message": "Fix a possible security issue\n- disallow overwriting config.ini",
+    "tree": {
+      "sha": "efb712b61c77ad6ee0b9dfe0dcd9e08195a0fdd7",
+      "url": "https://api.github.com/repos/Stellarium/stellarium/git/trees/efb712b61c77ad6ee0b9dfe0dcd9e08195a0fdd7"
+    },
+    "url": "https://api.github.com/repos/Stellarium/stellarium/git/commits/eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Stellarium/stellarium/commits/eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+  "html_url": "https://github.com/Stellarium/stellarium/commit/eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+  "comments_url": "https://api.github.com/repos/Stellarium/stellarium/commits/eba61df3b38605befcb43687a4c0a159dbc0c5cb/comments",
+  "author": {
+    "login": "gzotti",
+    "id": 18099873,
+    "node_id": "MDQ6VXNlcjE4MDk5ODcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18099873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gzotti",
+    "html_url": "https://github.com/gzotti",
+    "followers_url": "https://api.github.com/users/gzotti/followers",
+    "following_url": "https://api.github.com/users/gzotti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gzotti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gzotti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gzotti/subscriptions",
+    "organizations_url": "https://api.github.com/users/gzotti/orgs",
+    "repos_url": "https://api.github.com/users/gzotti/repos",
+    "events_url": "https://api.github.com/users/gzotti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gzotti/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gzotti",
+    "id": 18099873,
+    "node_id": "MDQ6VXNlcjE4MDk5ODcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18099873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gzotti",
+    "html_url": "https://github.com/gzotti",
+    "followers_url": "https://api.github.com/users/gzotti/followers",
+    "following_url": "https://api.github.com/users/gzotti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gzotti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gzotti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gzotti/subscriptions",
+    "organizations_url": "https://api.github.com/users/gzotti/orgs",
+    "repos_url": "https://api.github.com/users/gzotti/repos",
+    "events_url": "https://api.github.com/users/gzotti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gzotti/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0c3a2569db5f38e04e7ee6f4859e29f74b35a6ee",
+      "url": "https://api.github.com/repos/Stellarium/stellarium/commits/0c3a2569db5f38e04e7ee6f4859e29f74b35a6ee",
+      "html_url": "https://github.com/Stellarium/stellarium/commit/0c3a2569db5f38e04e7ee6f4859e29f74b35a6ee"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "f994e36981c15a043cfc456790f851be6a383cfa",
+      "filename": "src/scripting/StelScriptOutput.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/Stellarium/stellarium/blob/eba61df3b38605befcb43687a4c0a159dbc0c5cb/src%2Fscripting%2FStelScriptOutput.cpp",
+      "raw_url": "https://github.com/Stellarium/stellarium/raw/eba61df3b38605befcb43687a4c0a159dbc0c5cb/src%2Fscripting%2FStelScriptOutput.cpp",
+      "contents_url": "https://api.github.com/repos/Stellarium/stellarium/contents/src%2Fscripting%2FStelScriptOutput.cpp?ref=eba61df3b38605befcb43687a4c0a159dbc0c5cb",
+      "patch": "@@ -62,6 +62,12 @@ void StelScriptOutput::saveOutputAs(const QString &name)\n \n \tconst bool okToSaveToAbsolutePath=StelApp::getInstance().getSettings()->value(\"scripts/flag_script_allow_write_absolute_path\", false).toBool();\n \n+\tif (name.contains(\"config.ini\"))\n+\t{\n+\t\tqWarning() << \"SCRIPTING ERROR: You are trying to overwrite config.ini. Ignoring.\";\n+\t\treturn;\n+\t}\n+\n \tif (!okToSaveToAbsolutePath && ((newFileNameInfo.isAbsolute() || (name.contains(\"..\"))))) // The last condition may include dangerous/malicious paths\n \t{\n \t\tqWarning() << \"SCRIPTING CONFIGURATION ISSUE: You are trying to save to an absolute pathname or move up in directories.\";"
+    }
+  ]
+}

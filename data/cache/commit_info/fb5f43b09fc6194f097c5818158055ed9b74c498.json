@@ -1,0 +1,81 @@
+{
+  "sha": "fb5f43b09fc6194f097c5818158055ed9b74c498",
+  "node_id": "MDY6Q29tbWl0MTU3NzMyMjk6ZmI1ZjQzYjA5ZmM2MTk0ZjA5N2M1ODE4MTU4MDU1ZWQ5Yjc0YzQ5OA==",
+  "commit": {
+    "author": {
+      "name": "Mike Reed",
+      "email": "reed@google.com",
+      "date": "2018-12-18T17:17:57Z"
+    },
+    "committer": {
+      "name": "Skia Commit-Bot",
+      "email": "skia-commit-bot@chromium.org",
+      "date": "2018-12-18T17:45:12Z"
+    },
+    "message": "add regression test for stale fLastMoveToIndex\n\nThis test used to assert/fail under ASAN because copyPath's\nfLastMoveToIndex was garbage after the internal copy (in SkPath::transform).\nNow the code sets it to the src's value.\n\nBug:883596\nChange-Id: I3cba82fb63398bf4aa0abc9d3f2a0067d8ad9006\nReviewed-on: https://skia-review.googlesource.com/c/178931\nCommit-Queue: Mike Reed <reed@google.com>\nReviewed-by: Mike Reed <reed@google.com>",
+    "tree": {
+      "sha": "7087dd34574ae645789bd6f22d44185dfbc84545",
+      "url": "https://api.github.com/repos/google/skia/git/trees/7087dd34574ae645789bd6f22d44185dfbc84545"
+    },
+    "url": "https://api.github.com/repos/google/skia/git/commits/fb5f43b09fc6194f097c5818158055ed9b74c498",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/google/skia/commits/fb5f43b09fc6194f097c5818158055ed9b74c498",
+  "html_url": "https://github.com/google/skia/commit/fb5f43b09fc6194f097c5818158055ed9b74c498",
+  "comments_url": "https://api.github.com/repos/google/skia/commits/fb5f43b09fc6194f097c5818158055ed9b74c498/comments",
+  "author": {
+    "login": "reed-at-google",
+    "id": 13024162,
+    "node_id": "MDQ6VXNlcjEzMDI0MTYy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13024162?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/reed-at-google",
+    "html_url": "https://github.com/reed-at-google",
+    "followers_url": "https://api.github.com/users/reed-at-google/followers",
+    "following_url": "https://api.github.com/users/reed-at-google/following{/other_user}",
+    "gists_url": "https://api.github.com/users/reed-at-google/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/reed-at-google/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/reed-at-google/subscriptions",
+    "organizations_url": "https://api.github.com/users/reed-at-google/orgs",
+    "repos_url": "https://api.github.com/users/reed-at-google/repos",
+    "events_url": "https://api.github.com/users/reed-at-google/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/reed-at-google/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "36c4fb3fa1bc9f9ab1ae8f9206d4c16f102a4545",
+      "url": "https://api.github.com/repos/google/skia/commits/36c4fb3fa1bc9f9ab1ae8f9206d4c16f102a4545",
+      "html_url": "https://github.com/google/skia/commit/36c4fb3fa1bc9f9ab1ae8f9206d4c16f102a4545"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 18,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "11d070df9773221bcbf4fbe19ab72cdf0f32734f",
+      "filename": "tests/PathTest.cpp",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 0,
+      "changes": 18,
+      "blob_url": "https://github.com/google/skia/blob/fb5f43b09fc6194f097c5818158055ed9b74c498/tests%2FPathTest.cpp",
+      "raw_url": "https://github.com/google/skia/raw/fb5f43b09fc6194f097c5818158055ed9b74c498/tests%2FPathTest.cpp",
+      "contents_url": "https://api.github.com/repos/google/skia/contents/tests%2FPathTest.cpp?ref=fb5f43b09fc6194f097c5818158055ed9b74c498",
+      "patch": "@@ -5394,3 +5394,21 @@ DEF_TEST(Path_survive_transform, r) {\n     REPORTER_ASSERT(r, path.getConvexity() == SkPath::kConvex_Convexity);\n     survive(&path, x, false, r, [](const SkPath& p) { return true; });\n }\n+\n+DEF_TEST(path_last_move_to_index, r) {\n+    // Make sure that copyPath is safe after the call to path.offset().\n+    // Previously, we would leave its fLastMoveToIndex alone after the copy, but now we should\n+    // set it to path's value inside SkPath::transform()\n+\n+    SkPath path;\n+    SkPath copyPath;\n+\n+    SkPaint paint;\n+    paint.getTextPath(\"hello\", 5, 20, 80, &(copyPath)); // <== init copyPath, set fake copyPath.fLastMoveToIndex\n+\n+    SkScalar radii[] = { 80, 100, 0, 0, 40, 60, 0, 0 };;\n+    path.addRoundRect({10, 10, 110, 110}, radii);\n+    path.offset(0, 5, &(copyPath));                     // <== change buffer copyPath.fPathRef->fPoints but not reset copyPath.fLastMoveToIndex lead to out of bound\n+\n+    copyPath.rConicTo(1, 1, 3, 3, 0.707107f);\n+}"
+    }
+  ]
+}

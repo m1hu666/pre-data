@@ -1,0 +1,61 @@
+{
+  "sha": "5a2a306942bc7e794ec147f685f5eb44e3746111",
+  "node_id": "C_kwDOByyPPdoAKDVhMmEzMDY5NDJiYzdlNzk0ZWMxNDdmNjg1ZjVlYjQ0ZTM3NDYxMTE",
+  "commit": {
+    "author": {
+      "name": "Daniel Andersson",
+      "email": "dandersson@chromium.org",
+      "date": "2022-02-14T21:17:20Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-02-14T21:17:20Z"
+    },
+    "message": "Prevent UAF in aura::Window::CleanupGestureState.\n\nCancelling active touches may, under certain circumstances, end up\ndestroying the window that it was called from. This change adds code\nto detect this and does an early exit if it happens.\n\nDetails and reproduction steps in the bug.\n\nTest: Manually verified.\nBug: 1292271\nChange-Id: I48934b3e062111544ae0b2782ea1516739e6f851\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3456997\nReviewed-by: Xiaoqian Dai <xdai@chromium.org>\nReviewed-by: Avi Drissman <avi@chromium.org>\nCommit-Queue: Daniel Andersson <dandersson@chromium.org>\nCr-Commit-Position: refs/heads/main@{#970825}",
+    "tree": {
+      "sha": "9a784a7a1db48cdb2ffb1645a8843815acf3e80a",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/9a784a7a1db48cdb2ffb1645a8843815acf3e80a"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/5a2a306942bc7e794ec147f685f5eb44e3746111",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/5a2a306942bc7e794ec147f685f5eb44e3746111",
+  "html_url": "https://github.com/chromium/chromium/commit/5a2a306942bc7e794ec147f685f5eb44e3746111",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/5a2a306942bc7e794ec147f685f5eb44e3746111/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "9d661555ee6df1b4bfa394dfc3723ecd89a123ce",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/9d661555ee6df1b4bfa394dfc3723ecd89a123ce",
+      "html_url": "https://github.com/chromium/chromium/commit/9d661555ee6df1b4bfa394dfc3723ecd89a123ce"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 9,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "b667d59f54dd3f39adb664d30efd5c9fad1296ac",
+      "filename": "ui/aura/window.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/chromium/chromium/blob/5a2a306942bc7e794ec147f685f5eb44e3746111/ui%2Faura%2Fwindow.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/5a2a306942bc7e794ec147f685f5eb44e3746111/ui%2Faura%2Fwindow.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/ui%2Faura%2Fwindow.cc?ref=5a2a306942bc7e794ec147f685f5eb44e3746111",
+      "patch": "@@ -9,7 +9,6 @@\n #include <algorithm>\n #include <utility>\n \n-#include \"base/auto_reset.h\"\n #include \"base/bind.h\"\n #include \"base/callback.h\"\n #include \"base/callback_helpers.h\"\n@@ -1252,11 +1251,18 @@ bool Window::CleanupGestureState() {\n   // happen through some event handlers for CancelActiveTouches().\n   if (cleaning_up_gesture_state_)\n     return false;\n+  cleaning_up_gesture_state_ = true;\n+\n+  // Cancelling active touches may end up destroying this window. We use a\n+  // tracker to detect this.\n+  // TODO(crbug.com/1292271): Add a regression test for this.\n+  WindowTracker tracking_this({this});\n \n-  base::AutoReset<bool> in_cleanup(&cleaning_up_gesture_state_, true);\n   bool state_modified = false;\n   Env* env = Env::GetInstance();\n   state_modified |= env->gesture_recognizer()->CancelActiveTouches(this);\n+  if (!tracking_this.Contains(this))\n+    return state_modified;\n   state_modified |= env->gesture_recognizer()->CleanupStateForConsumer(this);\n   // Potentially event handlers for CancelActiveTouches() within\n   // CleanupGestureState may change the window hierarchy (or reorder the\n@@ -1267,6 +1273,7 @@ bool Window::CleanupGestureState() {\n     Window* child = children.Pop();\n     state_modified |= child->CleanupGestureState();\n   }\n+  cleaning_up_gesture_state_ = false;\n   return state_modified;\n }\n "
+    }
+  ]
+}

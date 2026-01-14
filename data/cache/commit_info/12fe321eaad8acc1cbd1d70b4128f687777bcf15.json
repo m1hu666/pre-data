@@ -1,0 +1,118 @@
+{
+  "sha": "12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+  "node_id": "MDY6Q29tbWl0MTEwMTk4Mzg0OjEyZmUzMjFlYWFkOGFjYzFjYmQxZDcwYjQxMjhmNjg3Nzc3YmNmMTU=",
+  "commit": {
+    "author": {
+      "name": "Anthony Tseng",
+      "email": "darkdh@gmail.com",
+      "date": "2021-02-04T21:32:48Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-04T21:32:48Z"
+    },
+    "message": "Merge pull request #7769 from brave/tor-dns-leak\n\nFix Tor dns leak",
+    "tree": {
+      "sha": "b58a8a381b6b2ed3f50aa19e8c866c502b8be7e9",
+      "url": "https://api.github.com/repos/brave/brave-core/git/trees/b58a8a381b6b2ed3f50aa19e8c866c502b8be7e9"
+    },
+    "url": "https://api.github.com/repos/brave/brave-core/git/commits/12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgHGgBCRBK7hj4Ov3rIwAAdHIIAJ6rEu2IVvdNbOxWrkygkM8q\nYz9gWAxATsJf6r25Vd/LDHI4VgLLcnV1whbu2Rutnzst6Xilhy8gPbXwFWFKw/O/\nzitfhf9V0IXZULoSRqXkRk7f6EYerE61E8WbhG10eQQPlU7Ev7WnUlNoHKF/YDj0\np7Nw/21bRUTQtYWoExt5W6cbdT2nrddQMomqwke9hPAApXoKz69nNPec8bL2RJ7n\nqFUV2x2wLLsnvFX1LFG8m1jOCUxM9lh77SiaPWhtz912qcDkdOlZtJdB3EpIU6S5\neyoz0knWk84gkXjALqyyWDuRBHjjQ90h8ScNv/xFrYFYkwP3Od59ugYvZABv7ME=\n=mt78\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree b58a8a381b6b2ed3f50aa19e8c866c502b8be7e9\nparent 57f96ea6b7759dcf2506071321c7c0c5b4e6f28c\nparent a148c43124434ca5440c9fef1a99b9b712c966a0\nauthor Anthony Tseng <darkdh@gmail.com> 1612474368 -0800\ncommitter GitHub <noreply@github.com> 1612474368 -0800\n\nMerge pull request #7769 from brave/tor-dns-leak\n\nFix Tor dns leak",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/brave/brave-core/commits/12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+  "html_url": "https://github.com/brave/brave-core/commit/12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+  "comments_url": "https://api.github.com/repos/brave/brave-core/commits/12fe321eaad8acc1cbd1d70b4128f687777bcf15/comments",
+  "author": {
+    "login": "darkdh",
+    "id": 11330831,
+    "node_id": "MDQ6VXNlcjExMzMwODMx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11330831?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/darkdh",
+    "html_url": "https://github.com/darkdh",
+    "followers_url": "https://api.github.com/users/darkdh/followers",
+    "following_url": "https://api.github.com/users/darkdh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/darkdh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/darkdh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/darkdh/subscriptions",
+    "organizations_url": "https://api.github.com/users/darkdh/orgs",
+    "repos_url": "https://api.github.com/users/darkdh/repos",
+    "events_url": "https://api.github.com/users/darkdh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/darkdh/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "57f96ea6b7759dcf2506071321c7c0c5b4e6f28c",
+      "url": "https://api.github.com/repos/brave/brave-core/commits/57f96ea6b7759dcf2506071321c7c0c5b4e6f28c",
+      "html_url": "https://github.com/brave/brave-core/commit/57f96ea6b7759dcf2506071321c7c0c5b4e6f28c"
+    },
+    {
+      "sha": "a148c43124434ca5440c9fef1a99b9b712c966a0",
+      "url": "https://api.github.com/repos/brave/brave-core/commits/a148c43124434ca5440c9fef1a99b9b712c966a0",
+      "html_url": "https://github.com/brave/brave-core/commit/a148c43124434ca5440c9fef1a99b9b712c966a0"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 18,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "25be6c6b615858ea82d9380a04206d8153b355a6",
+      "filename": "browser/net/BUILD.gn",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/brave/brave-core/blob/12fe321eaad8acc1cbd1d70b4128f687777bcf15/browser%2Fnet%2FBUILD.gn",
+      "raw_url": "https://github.com/brave/brave-core/raw/12fe321eaad8acc1cbd1d70b4128f687777bcf15/browser%2Fnet%2FBUILD.gn",
+      "contents_url": "https://api.github.com/repos/brave/brave-core/contents/browser%2Fnet%2FBUILD.gn?ref=12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+      "patch": "@@ -54,11 +54,11 @@ source_set(\"net\") {\n     \"//brave/components/brave_webtorrent/browser/buildflags\",\n     \"//brave/components/ipfs/buildflags\",\n     \"//brave/extensions:common\",\n+    \"//components/content_settings/core/browser\",\n     \"//components/prefs\",\n     \"//components/user_prefs\",\n     \"//content/public/browser\",\n     \"//content/public/common\",\n-    \"//components/content_settings/core/browser\",\n     \"//extensions/common:common_constants\",\n     \"//mojo/public/cpp/bindings\",\n     \"//mojo/public/cpp/system\",\n@@ -88,9 +88,7 @@ source_set(\"net\") {\n       \"brave_referrals_network_delegate_helper.h\",\n     ]\n \n-    deps += [\n-      \"//brave/components/brave_referrals/browser\",\n-    ]\n+    deps += [ \"//brave/components/brave_referrals/browser\" ]\n   }\n \n   if (enable_brave_webtorrent) {"
+    },
+    {
+      "sha": "c5208b8a45b339083bbcd3bc253d9940c3a99165",
+      "filename": "browser/net/brave_ad_block_tp_network_delegate_helper.cc",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 9,
+      "changes": 25,
+      "blob_url": "https://github.com/brave/brave-core/blob/12fe321eaad8acc1cbd1d70b4128f687777bcf15/browser%2Fnet%2Fbrave_ad_block_tp_network_delegate_helper.cc",
+      "raw_url": "https://github.com/brave/brave-core/raw/12fe321eaad8acc1cbd1d70b4128f687777bcf15/browser%2Fnet%2Fbrave_ad_block_tp_network_delegate_helper.cc",
+      "contents_url": "https://api.github.com/repos/brave/brave-core/contents/browser%2Fnet%2Fbrave_ad_block_tp_network_delegate_helper.cc?ref=12fe321eaad8acc1cbd1d70b4128f687777bcf15",
+      "patch": "@@ -65,26 +65,24 @@ void ShouldBlockAdOnTaskRunner(std::shared_ptr<BraveRequestInfo> ctx,\n   std::string source_host = ctx->initiator_url.host();\n \n   g_brave_browser_process->ad_block_service()->ShouldStartRequest(\n-        ctx->request_url, ctx->resource_type, source_host,\n-        &did_match_rule, &did_match_exception, &did_match_important,\n-        &ctx->mock_data_url);\n+      ctx->request_url, ctx->resource_type, source_host, &did_match_rule,\n+      &did_match_exception, &did_match_important, &ctx->mock_data_url);\n   if (did_match_important) {\n     ctx->blocked_by = kAdBlocked;\n     return;\n   }\n \n-  if (canonical_name.has_value() && ctx->request_url.host() != *canonical_name\n-      && *canonical_name != \"\") {\n+  if (canonical_name.has_value() &&\n+      ctx->request_url.host() != *canonical_name && *canonical_name != \"\") {\n     GURL::Replacements replacements = GURL::Replacements();\n     replacements.SetHost(\n         canonical_name->c_str(),\n         url::Component(0, static_cast<int>(canonical_name->length())));\n     const GURL canonical_url = ctx->request_url.ReplaceComponents(replacements);\n \n     g_brave_browser_process->ad_block_service()->ShouldStartRequest(\n-        ctx->request_url, ctx->resource_type, source_host,\n-        &did_match_rule, &did_match_exception, &did_match_important,\n-        &ctx->mock_data_url);\n+        ctx->request_url, ctx->resource_type, source_host, &did_match_rule,\n+        &did_match_exception, &did_match_important, &ctx->mock_data_url);\n   }\n \n   if (did_match_important || (did_match_rule && !did_match_exception)) {\n@@ -206,7 +204,16 @@ void OnBeforeURLRequestAdBlockTP(const ResponseCallback& next_callback,\n   scoped_refptr<base::SequencedTaskRunner> task_runner =\n       g_brave_browser_process->ad_block_service()->GetTaskRunner();\n \n-  new AdblockCnameResolveHostClient(std::move(next_callback), task_runner, ctx);\n+  DCHECK(ctx->browser_context);\n+  // DoH or standard DNS quries won't be routed through Tor, so we need to skip\n+  // it.\n+  if (ctx->browser_context->IsTor()) {\n+    ShouldBlockAdWithOptionalCname(task_runner, std::move(next_callback), ctx,\n+                                   base::nullopt);\n+  } else {\n+    new AdblockCnameResolveHostClient(std::move(next_callback), task_runner,\n+                                      ctx);\n+  }\n }\n \n int OnBeforeURLRequest_AdBlockTPPreWork(const ResponseCallback& next_callback,"
+    }
+  ]
+}

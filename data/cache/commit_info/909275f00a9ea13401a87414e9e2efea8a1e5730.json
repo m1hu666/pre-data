@@ -1,0 +1,160 @@
+{
+  "sha": "909275f00a9ea13401a87414e9e2efea8a1e5730",
+  "node_id": "C_kwDOABQtLNoAKDkwOTI3NWYwMGE5ZWExMzQwMWE4NzQxNGU5ZTJlZmVhOGExZTU3MzA",
+  "commit": {
+    "author": {
+      "name": "Larry Gritz",
+      "email": "lg@larrygritz.com",
+      "date": "2022-10-21T16:04:29Z"
+    },
+    "committer": {
+      "name": "Larry Gritz",
+      "email": "lg@larrygritz.com",
+      "date": "2022-10-22T18:26:46Z"
+    },
+    "message": "TIFF: guard against corrupt files with buffer overflows\n\nAlong the way, improve the runtest.py script by giving the\ninfo_command() fuction the same silent, concat, and failureok\nparameters that the oiiotool() function has. (This lets individual\ntests assemble iinfo command lines with a little more flexibility.)",
+    "tree": {
+      "sha": "a1b9cfd17377d4d9053bbb92b4149a7e795308c3",
+      "url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/git/trees/a1b9cfd17377d4d9053bbb92b4149a7e795308c3"
+    },
+    "url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/git/commits/909275f00a9ea13401a87414e9e2efea8a1e5730",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/commits/909275f00a9ea13401a87414e9e2efea8a1e5730",
+  "html_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/commit/909275f00a9ea13401a87414e9e2efea8a1e5730",
+  "comments_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/commits/909275f00a9ea13401a87414e9e2efea8a1e5730/comments",
+  "author": {
+    "login": "lgritz",
+    "id": 504179,
+    "node_id": "MDQ6VXNlcjUwNDE3OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504179?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lgritz",
+    "html_url": "https://github.com/lgritz",
+    "followers_url": "https://api.github.com/users/lgritz/followers",
+    "following_url": "https://api.github.com/users/lgritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lgritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lgritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lgritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/lgritz/orgs",
+    "repos_url": "https://api.github.com/users/lgritz/repos",
+    "events_url": "https://api.github.com/users/lgritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lgritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "lgritz",
+    "id": 504179,
+    "node_id": "MDQ6VXNlcjUwNDE3OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504179?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lgritz",
+    "html_url": "https://github.com/lgritz",
+    "followers_url": "https://api.github.com/users/lgritz/followers",
+    "following_url": "https://api.github.com/users/lgritz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lgritz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lgritz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lgritz/subscriptions",
+    "organizations_url": "https://api.github.com/users/lgritz/orgs",
+    "repos_url": "https://api.github.com/users/lgritz/repos",
+    "events_url": "https://api.github.com/users/lgritz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lgritz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "737b3173940ba7c83f259738a562f406f6503bf5",
+      "url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/commits/737b3173940ba7c83f259738a562f406f6503bf5",
+      "html_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/commit/737b3173940ba7c83f259738a562f406f6503bf5"
+    }
+  ],
+  "stats": {
+    "total": 52,
+    "additions": 43,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "f072135300978c17ea3bffbfc3ef6a78536245fa",
+      "filename": "src/tiff.imageio/tiffinput.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 4,
+      "changes": 5,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/src%2Ftiff.imageio%2Ftiffinput.cpp",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/src%2Ftiff.imageio%2Ftiffinput.cpp",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/src%2Ftiff.imageio%2Ftiffinput.cpp?ref=909275f00a9ea13401a87414e9e2efea8a1e5730",
+      "patch": "@@ -294,10 +294,7 @@ class TIFFInput final : public ImageInput {\n             // the file. Punt.\n         }\n         if (ok && s && *s) {\n-            result = string_view(s, count);\n-            // Strip off sometimes-errant extra null characters\n-            while (result.size() && result.back() == '\\0')\n-                result.remove_suffix(1);\n+            result = Strutil::safe_string_view(s, count);\n         }\n         return ok;\n     }"
+    },
+    {
+      "sha": "b6b2794a3436292dc8d48603f1290cfc6637a86d",
+      "filename": "testsuite/runtest.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 14,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Fruntest.py",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Fruntest.py",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/testsuite%2Fruntest.py?ref=909275f00a9ea13401a87414e9e2efea8a1e5730",
+      "patch": "@@ -215,7 +215,8 @@ def oiio_app (app):\n # the file \"out.txt\".  If 'safematch' is nonzero, it will exclude printing\n # of fields that tend to change from run to run or release to release.\n def info_command (file, extraargs=\"\", safematch=False, hash=True,\n-                  verbose=True, info_program=\"oiiotool\") :\n+                  verbose=True, silent=False, concat=True, failureok=False,\n+                  info_program=\"oiiotool\") :\n     args = \"\"\n     if info_program == \"oiiotool\" :\n         args += \" --info\"\n@@ -225,8 +226,15 @@ def info_command (file, extraargs=\"\", safematch=False, hash=True,\n         args += \" --no-metamatch \\\"DateTime|Software|OriginatingProgram|ImageHistory\\\"\"\n     if hash :\n         args += \" --hash\"\n-    return (oiio_app(info_program) + args + \" \" + extraargs\n-            + \" \" + make_relpath(file,tmpdir) + redirect + \";\\n\")\n+    cmd = (oiio_app(info_program) + args + \" \" + extraargs\n+            + \" \" + make_relpath(file,tmpdir))\n+    if not silent :\n+        cmd += redirect\n+    if failureok :\n+        cmd += \" || true \"\n+    if concat:\n+        cmd += \" ;\\n\"\n+    return cmd\n \n \n # Construct a command that will compare two images, appending output to"
+    },
+    {
+      "sha": "0b853126dca6f4676ae2081b53228c3751be1120",
+      "filename": "testsuite/tiff-misc/ref/out-libtiff403.txt",
+      "status": "added",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fref%2Fout-libtiff403.txt",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fref%2Fout-libtiff403.txt",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/testsuite%2Ftiff-misc%2Fref%2Fout-libtiff403.txt?ref=909275f00a9ea13401a87414e9e2efea8a1e5730",
+      "patch": "@@ -0,0 +1,21 @@\n+Reading src/separate.tif\n+src/separate.tif     :  128 x  128, 3 channel, uint8 tiff\n+    SHA-1: 486088DECAE711C444FDCAB009C378F7783AD9C5\n+    channel list: R, G, B\n+    compression: \"zip\"\n+    DateTime: \"2020:10:25 15:32:04\"\n+    Orientation: 1 (normal)\n+    planarconfig: \"separate\"\n+    Software: \"OpenImageIO 2.3.0dev : oiiotool --pattern fill:topleft=0,0,0:topright=1,0,0:bottomleft=0,1,0:bottomright=1,1,1 128x128 3 --planarconfig separate -scanline -attrib tiff:rowsperstrip 17 -d uint8 -o separate.tif\"\n+    oiio:BitsPerSample: 8\n+    tiff:Compression: 8\n+    tiff:PhotometricInterpretation: 2\n+    tiff:PlanarConfiguration: 2\n+    tiff:RowsPerStrip: 7\n+Comparing \"src/separate.tif\" and \"separate.tif\"\n+PASS\n+oiiotool ERROR: read : \"src/corrupt1.tif\": Could not open file: IO error during reading of \"StripOffsets\"\n+Full command line was:\n+> oiiotool -colorconfig ../common/OpenColorIO/nuke-default/config.ocio --oiioattrib try_all_readers 0 --info -v src/corrupt1.tif\n+Comparing \"check1.tif\" and \"ref/check1.tif\"\n+PASS"
+    },
+    {
+      "sha": "30d4ad1633a12b33670210049d72c2abfc6c1471",
+      "filename": "testsuite/tiff-misc/ref/out.txt",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fref%2Fout.txt",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fref%2Fout.txt",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/testsuite%2Ftiff-misc%2Fref%2Fout.txt?ref=909275f00a9ea13401a87414e9e2efea8a1e5730",
+      "patch": "@@ -14,5 +14,8 @@ src/separate.tif     :  128 x  128, 3 channel, uint8 tiff\n     tiff:RowsPerStrip: 7\n Comparing \"src/separate.tif\" and \"separate.tif\"\n PASS\n+oiiotool ERROR: read : No support for data format of \"src/corrupt1.tif\"\n+Full command line was:\n+> oiiotool -colorconfig ../common/OpenColorIO/nuke-default/config.ocio --oiioattrib try_all_readers 0 --info -v src/corrupt1.tif\n Comparing \"check1.tif\" and \"ref/check1.tif\"\n PASS"
+    },
+    {
+      "sha": "f04b439dd7e1b60413d137a15e632ff2d5d1a1b4",
+      "filename": "testsuite/tiff-misc/run.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Frun.py",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Frun.py",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/testsuite%2Ftiff-misc%2Frun.py?ref=909275f00a9ea13401a87414e9e2efea8a1e5730",
+      "patch": "@@ -2,14 +2,19 @@\n \n # Miscellaneous TIFF-related tests\n \n-outputs = [ ]\n+# save the error output\n+redirect = \" >> out.txt 2>&1 \"\n \n # Regression test -- we once had a bug where 'separate' planarconfig\n # tiled float files would have data corrupted by a buffer overwrite.\n command += oiiotool(\"--pattern checker 128x128 4 --tile 64 64 --planarconfig separate -d float -o check1.tif\")\n-outputs += [ \"check1.tif\" ]\n \n # Test bug we had until OIIO 2.3 when reading planarconfig=separate files\n # (fixed by #2757) that was not detected by the uncompressed file. So copy\n # to force compression in order to properly test:\n command += rw_command (\"src\", \"separate.tif\")\n+\n+# Test bug we had until OIIO 2.4 for this corrupt file\n+command += oiiotool (\"--oiioattrib try_all_readers 0 --info -v src/corrupt1.tif\", failureok = True)\n+\n+outputs = [ \"check1.tif\", \"out.txt\" ]"
+    },
+    {
+      "sha": "90d90c35342c493d12ad93ba0744df5fe96a2ea3",
+      "filename": "testsuite/tiff-misc/src/corrupt1.tif",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fsrc%2Fcorrupt1.tif",
+      "raw_url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/raw/909275f00a9ea13401a87414e9e2efea8a1e5730/testsuite%2Ftiff-misc%2Fsrc%2Fcorrupt1.tif",
+      "contents_url": "https://api.github.com/repos/AcademySoftwareFoundation/OpenImageIO/contents/testsuite%2Ftiff-misc%2Fsrc%2Fcorrupt1.tif?ref=909275f00a9ea13401a87414e9e2efea8a1e5730"
+    }
+  ]
+}

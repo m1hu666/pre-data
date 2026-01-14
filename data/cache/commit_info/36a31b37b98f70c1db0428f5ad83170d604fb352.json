@@ -1,0 +1,101 @@
+{
+  "sha": "36a31b37b98f70c1db0428f5ad83170d604fb352",
+  "node_id": "C_kwDOEbTd_doAKDM2YTMxYjM3Yjk4ZjcwYzFkYjA0MjhmNWFkODMxNzBkNjA0ZmIzNTI",
+  "commit": {
+    "author": {
+      "name": "ultravnc",
+      "email": "rudi.de.vos@skynet.be",
+      "date": "2022-03-06T21:12:36Z"
+    },
+    "committer": {
+      "name": "ultravnc",
+      "email": "rudi.de.vos@skynet.be",
+      "date": "2022-03-08T19:04:12Z"
+    },
+    "message": "security fix",
+    "tree": {
+      "sha": "30ffb7fc23f4e5dc3fcdde05dcd047d98b612840",
+      "url": "https://api.github.com/repos/ultravnc/UltraVNC/git/trees/30ffb7fc23f4e5dc3fcdde05dcd047d98b612840"
+    },
+    "url": "https://api.github.com/repos/ultravnc/UltraVNC/git/commits/36a31b37b98f70c1db0428f5ad83170d604fb352",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ultravnc/UltraVNC/commits/36a31b37b98f70c1db0428f5ad83170d604fb352",
+  "html_url": "https://github.com/ultravnc/UltraVNC/commit/36a31b37b98f70c1db0428f5ad83170d604fb352",
+  "comments_url": "https://api.github.com/repos/ultravnc/UltraVNC/commits/36a31b37b98f70c1db0428f5ad83170d604fb352/comments",
+  "author": {
+    "login": "RudiDeVos",
+    "id": 71467484,
+    "node_id": "MDQ6VXNlcjcxNDY3NDg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/71467484?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RudiDeVos",
+    "html_url": "https://github.com/RudiDeVos",
+    "followers_url": "https://api.github.com/users/RudiDeVos/followers",
+    "following_url": "https://api.github.com/users/RudiDeVos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RudiDeVos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RudiDeVos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RudiDeVos/subscriptions",
+    "organizations_url": "https://api.github.com/users/RudiDeVos/orgs",
+    "repos_url": "https://api.github.com/users/RudiDeVos/repos",
+    "events_url": "https://api.github.com/users/RudiDeVos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RudiDeVos/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "RudiDeVos",
+    "id": 71467484,
+    "node_id": "MDQ6VXNlcjcxNDY3NDg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/71467484?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RudiDeVos",
+    "html_url": "https://github.com/RudiDeVos",
+    "followers_url": "https://api.github.com/users/RudiDeVos/followers",
+    "following_url": "https://api.github.com/users/RudiDeVos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RudiDeVos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RudiDeVos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RudiDeVos/subscriptions",
+    "organizations_url": "https://api.github.com/users/RudiDeVos/orgs",
+    "repos_url": "https://api.github.com/users/RudiDeVos/repos",
+    "events_url": "https://api.github.com/users/RudiDeVos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RudiDeVos/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cf9993b0777e4854b594048df32eff5f25e43ad1",
+      "url": "https://api.github.com/repos/ultravnc/UltraVNC/commits/cf9993b0777e4854b594048df32eff5f25e43ad1",
+      "html_url": "https://github.com/ultravnc/UltraVNC/commit/cf9993b0777e4854b594048df32eff5f25e43ad1"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 7,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "8880629331f70dd84a15bb647395c63fb7934ded",
+      "filename": "winvnc/winvnc/vncproperties.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 10,
+      "blob_url": "https://github.com/ultravnc/UltraVNC/blob/36a31b37b98f70c1db0428f5ad83170d604fb352/winvnc%2Fwinvnc%2Fvncproperties.cpp",
+      "raw_url": "https://github.com/ultravnc/UltraVNC/raw/36a31b37b98f70c1db0428f5ad83170d604fb352/winvnc%2Fwinvnc%2Fvncproperties.cpp",
+      "contents_url": "https://api.github.com/repos/ultravnc/UltraVNC/contents/winvnc%2Fwinvnc%2Fvncproperties.cpp?ref=36a31b37b98f70c1db0428f5ad83170d604fb352",
+      "patch": "@@ -43,6 +43,7 @@\n #include \"vncConnDialog.h\"\r\n \r\n #include \"Localization.h\" // ACT : Add localization on messages\r\n+#include \"shlwapi.h\"\r\n \r\n //extern HINSTANCE g_hInst;\r\n \r\n@@ -719,7 +720,7 @@ vncProperties::DialogProc(HWND hwnd,\n \r\n \t\t\t// Modif sf@2002\r\n \t\t\tSendMessage(GetDlgItem(hwnd, IDC_PLUGIN_CHECK), BM_SETCHECK, _this->m_server->IsDSMPluginEnabled(), 0);\r\n-\t\t\tEnableWindow(GetDlgItem(hwnd, IDC_PLUGIN_BUTTON), _this->m_server->IsDSMPluginEnabled());\r\n+\t\t\tEnableWindow(GetDlgItem(hwnd, IDC_PLUGIN_BUTTON),  (_this->m_server->AuthClientCount() == 0 ? _this->m_server->IsDSMPluginEnabled(): false));\r\n \r\n \t\t\t// Query window option - Taken from TightVNC advanced properties \r\n \t\t\tBOOL queryEnabled = (_this->m_server->QuerySetting() == 4);\r\n@@ -1285,8 +1286,9 @@ vncProperties::DialogProc(HWND hwnd,\n \t\t// sf@2002 - DSM Plugin\r\n \t\tcase IDC_PLUGIN_CHECK:\r\n \t\t\t{\r\n-\t\t\t\tEnableWindow(GetDlgItem(hwnd, IDC_PLUGIN_BUTTON),\r\n-\t\t\t\t\tSendMessage(GetDlgItem(hwnd, IDC_PLUGIN_CHECK), BM_GETCHECK, 0, 0) == BST_CHECKED);\r\n+\t\t\t\tEnableWindow(GetDlgItem(hwnd, IDC_PLUGIN_BUTTON), _this->m_server->AuthClientCount() == 0 \r\n+\t\t\t\t\t\t? SendMessage(GetDlgItem(hwnd, IDC_PLUGIN_CHECK), BM_GETCHECK, 0, 0) == BST_CHECKED \r\n+\t\t\t\t\t\t: BST_UNCHECKED);\r\n \t\t\t}\r\n \t\t\treturn TRUE;\r\n \t\t\t// Marscha@2004 - authSSP: moved MSLogon checkbox back to admin props page\r\n@@ -1368,6 +1370,8 @@ vncProperties::DialogProc(HWND hwnd,\n \t\t\t\t{\r\n \t\t\t\t\tTCHAR szPlugin[MAX_PATH];\r\n \t\t\t\t\tGetDlgItemText(hwnd, IDC_PLUGINS_COMBO, szPlugin, MAX_PATH);\r\n+\t\t\t\t\tPathStripPathA(szPlugin);\r\n+\r\n \t\t\t\t\tif (!_this->m_server->GetDSMPluginPointer()->IsLoaded())\r\n \t\t\t\t\t\t_this->m_server->GetDSMPluginPointer()->LoadPlugin(szPlugin, false);\r\n \t\t\t\t\telse\r"
+    }
+  ]
+}

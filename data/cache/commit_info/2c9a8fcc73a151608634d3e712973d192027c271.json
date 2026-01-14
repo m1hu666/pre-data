@@ -1,0 +1,85 @@
+{
+  "sha": "2c9a8fcc73a151608634d3e712973d192027c271",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjJjOWE4ZmNjNzNhMTUxNjA4NjM0ZDNlNzEyOTczZDE5MjAyN2MyNzE=",
+  "commit": {
+    "author": {
+      "name": "mwilliams@fb.com",
+      "email": "mwilliams@fb.com",
+      "date": "2016-08-01T22:13:08Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot-bot@fb.com",
+      "date": "2016-08-01T22:51:07Z"
+    },
+    "message": "Fix integer overflow in StringUtil::implode\n\nReviewed By: ricklavoie\n\nDifferential Revision: D3623922\n\nfbshipit-source-id: 136d124a850c07cc6c63535afc11d36499d576fc",
+    "tree": {
+      "sha": "e6c66aa978b681f92e2ad9483e5a509b19014f8a",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/e6c66aa978b681f92e2ad9483e5a509b19014f8a"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/2c9a8fcc73a151608634d3e712973d192027c271",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/2c9a8fcc73a151608634d3e712973d192027c271",
+  "html_url": "https://github.com/facebook/hhvm/commit/2c9a8fcc73a151608634d3e712973d192027c271",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/2c9a8fcc73a151608634d3e712973d192027c271/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "e264f04ae825a5d97758130cf8eec99862517e7e",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/e264f04ae825a5d97758130cf8eec99862517e7e",
+      "html_url": "https://github.com/facebook/hhvm/commit/e264f04ae825a5d97758130cf8eec99862517e7e"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 9,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "51408ef85a6453765618ffc0c3dc74641633a011",
+      "filename": "hphp/runtime/base/string-util.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Fruntime%2Fbase%2Fstring-util.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Fruntime%2Fbase%2Fstring-util.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fstring-util.cpp?ref=2c9a8fcc73a151608634d3e712973d192027c271",
+      "patch": "@@ -124,8 +124,8 @@ String StringUtil::Implode(const Variant& items, const String& delim,\n \n   req::vector<String> sitems;\n   sitems.reserve(size);\n-  int len = 0;\n-  int lenDelim = delim.size();\n+  size_t len = 0;\n+  size_t lenDelim = delim.size();\n   for (ArrayIter iter(items); iter; ++iter) {\n     sitems.emplace_back(iter.second().toString());\n     len += sitems.back().size() + lenDelim;"
+    },
+    {
+      "sha": "3d348321ac4b108017396293cd104c1bdf7188f8",
+      "filename": "hphp/test/slow/string_length_overflow/implode.php",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php?ref=2c9a8fcc73a151608634d3e712973d192027c271",
+      "patch": "@@ -0,0 +1,5 @@\n+<?php\n+\n+$stringLarge = str_repeat('*', 300289);\n+$arrayLarge = array_fill(0, 49981, '*');\n+$string_implode_2 = implode($stringLarge, $arrayLarge);"
+    },
+    {
+      "sha": "484c51265ce770b5a63c28b0503db7285303a7ac",
+      "filename": "hphp/test/slow/string_length_overflow/implode.php.expectf",
+      "status": "added",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/2c9a8fcc73a151608634d3e712973d192027c271/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fstring_length_overflow%2Fimplode.php.expectf?ref=2c9a8fcc73a151608634d3e712973d192027c271",
+      "patch": "@@ -0,0 +1,2 @@\n+\n+Fatal error: String length exceeded 2^31-2: 15008494201 in %s/test/slow/string_length_overflow/implode.php on line 5"
+    }
+  ]
+}

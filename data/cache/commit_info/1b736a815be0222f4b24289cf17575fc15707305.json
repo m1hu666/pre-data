@@ -1,0 +1,113 @@
+{
+  "sha": "1b736a815be0222f4b24289cf17575fc15707305",
+  "node_id": "C_kwDOAJbDD9oAKDFiNzM2YTgxNWJlMDIyMmY0YjI0Mjg5Y2YxNzU3NWZjMTU3MDczMDU",
+  "commit": {
+    "author": {
+      "name": "M\u00e5rten Nordheim",
+      "email": "marten.nordheim@qt.io",
+      "date": "2023-05-05T09:07:26Z"
+    },
+    "committer": {
+      "name": "M\u00e5rten Nordheim",
+      "email": "marten.nordheim@qt.io",
+      "date": "2023-05-08T18:28:46Z"
+    },
+    "message": "Hsts: match header names case insensitively\n\nHeader field names are always considered to be case-insensitive.\n\nPick-to: 6.5 6.5.1 6.2 5.15\nFixes: QTBUG-113392\nChange-Id: Ifb4def4bb7f2ac070416cdc76581a769f1e52b43\nReviewed-by: Qt CI Bot <qt_ci_bot@qt-project.org>\nReviewed-by: Edward Welbourne <edward.welbourne@qt.io>\nReviewed-by: Volker Hilsheimer <volker.hilsheimer@qt.io>",
+    "tree": {
+      "sha": "f546b83b9bd4357e6e297c850e1f194abc94b473",
+      "url": "https://api.github.com/repos/qt/qtbase/git/trees/f546b83b9bd4357e6e297c850e1f194abc94b473"
+    },
+    "url": "https://api.github.com/repos/qt/qtbase/git/commits/1b736a815be0222f4b24289cf17575fc15707305",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/qt/qtbase/commits/1b736a815be0222f4b24289cf17575fc15707305",
+  "html_url": "https://github.com/qt/qtbase/commit/1b736a815be0222f4b24289cf17575fc15707305",
+  "comments_url": "https://api.github.com/repos/qt/qtbase/commits/1b736a815be0222f4b24289cf17575fc15707305/comments",
+  "author": {
+    "login": "Morten242",
+    "id": 6974432,
+    "node_id": "MDQ6VXNlcjY5NzQ0MzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6974432?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Morten242",
+    "html_url": "https://github.com/Morten242",
+    "followers_url": "https://api.github.com/users/Morten242/followers",
+    "following_url": "https://api.github.com/users/Morten242/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Morten242/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Morten242/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Morten242/subscriptions",
+    "organizations_url": "https://api.github.com/users/Morten242/orgs",
+    "repos_url": "https://api.github.com/users/Morten242/repos",
+    "events_url": "https://api.github.com/users/Morten242/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Morten242/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Morten242",
+    "id": 6974432,
+    "node_id": "MDQ6VXNlcjY5NzQ0MzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6974432?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Morten242",
+    "html_url": "https://github.com/Morten242",
+    "followers_url": "https://api.github.com/users/Morten242/followers",
+    "following_url": "https://api.github.com/users/Morten242/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Morten242/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Morten242/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Morten242/subscriptions",
+    "organizations_url": "https://api.github.com/users/Morten242/orgs",
+    "repos_url": "https://api.github.com/users/Morten242/repos",
+    "events_url": "https://api.github.com/users/Morten242/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Morten242/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5f6600fa26b9b5d03d8880c9915f4ddffd716b98",
+      "url": "https://api.github.com/repos/qt/qtbase/commits/5f6600fa26b9b5d03d8880c9915f4ddffd716b98",
+      "html_url": "https://github.com/qt/qtbase/commit/5f6600fa26b9b5d03d8880c9915f4ddffd716b98"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 8,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "82deede172985c42d826a8f4ba688c53203881a4",
+      "filename": "src/network/access/qhsts.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/qt/qtbase/blob/1b736a815be0222f4b24289cf17575fc15707305/src%2Fnetwork%2Faccess%2Fqhsts.cpp",
+      "raw_url": "https://github.com/qt/qtbase/raw/1b736a815be0222f4b24289cf17575fc15707305/src%2Fnetwork%2Faccess%2Fqhsts.cpp",
+      "contents_url": "https://api.github.com/repos/qt/qtbase/contents/src%2Fnetwork%2Faccess%2Fqhsts.cpp?ref=1b736a815be0222f4b24289cf17575fc15707305",
+      "patch": "@@ -327,8 +327,8 @@ quoted-pair    = \"\\\" CHAR\n bool QHstsHeaderParser::parse(const QList<QPair<QByteArray, QByteArray>> &headers)\n {\n     for (const auto &h : headers) {\n-        // We use '==' since header name was already 'trimmed' for us:\n-        if (h.first == \"Strict-Transport-Security\") {\n+        // We compare directly because header name was already 'trimmed' for us:\n+        if (h.first.compare(\"Strict-Transport-Security\", Qt::CaseInsensitive) == 0) {\n             header = h.second;\n             // RFC6797, 8.1:\n             //"
+    },
+    {
+      "sha": "97a2d2889e57b3c80c8121024898e4f29c7f7ce8",
+      "filename": "tests/auto/network/access/hsts/tst_qhsts.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/qt/qtbase/blob/1b736a815be0222f4b24289cf17575fc15707305/tests%2Fauto%2Fnetwork%2Faccess%2Fhsts%2Ftst_qhsts.cpp",
+      "raw_url": "https://github.com/qt/qtbase/raw/1b736a815be0222f4b24289cf17575fc15707305/tests%2Fauto%2Fnetwork%2Faccess%2Fhsts%2Ftst_qhsts.cpp",
+      "contents_url": "https://api.github.com/repos/qt/qtbase/contents/tests%2Fauto%2Fnetwork%2Faccess%2Fhsts%2Ftst_qhsts.cpp?ref=1b736a815be0222f4b24289cf17575fc15707305",
+      "patch": "@@ -216,6 +216,12 @@ void tst_QHsts::testSTSHeaderParser()\n     QVERIFY(parser.expirationDate() > QDateTime::currentDateTimeUtc());\n     QVERIFY(parser.includeSubDomains());\n \n+    list.pop_back();\n+    list << Header(\"strict-transport-security\", \"includeSubDomains;max-age=1000\");\n+    QVERIFY(parser.parse(list));\n+    QVERIFY(parser.expirationDate() > QDateTime::currentDateTimeUtc());\n+    QVERIFY(parser.includeSubDomains());\n+\n     list.pop_back();\n     // Invalid (includeSubDomains twice):\n     list << Header(\"Strict-Transport-Security\", \"max-age = 1000 ; includeSubDomains;includeSubDomains\");"
+    }
+  ]
+}

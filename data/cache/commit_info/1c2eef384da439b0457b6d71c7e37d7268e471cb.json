@@ -1,0 +1,101 @@
+{
+  "sha": "1c2eef384da439b0457b6d71c7e37d7268e471cb",
+  "node_id": "C_kwDOAbIal9oAKDFjMmVlZjM4NGRhNDM5YjA0NTdiNmQ3MWM3ZTM3ZDcyNjhlNDcxY2I",
+  "commit": {
+    "author": {
+      "name": "Karol Bary\u0142a",
+      "email": "karol.baryla@scylladb.com",
+      "date": "2022-05-19T15:45:17Z"
+    },
+    "committer": {
+      "name": "Avi Kivity",
+      "email": "avi@scylladb.com",
+      "date": "2022-09-07T07:58:23Z"
+    },
+    "message": "transport/server.cc: Return correct size of decompressed lz4 buffer\n\nAn incorrect size is returned from the function, which could lead to\ncrashes or undefined behavior. Fix by erroring out in these cases.\n\nFixes #11476",
+    "tree": {
+      "sha": "2cd32a55eeac50f5465ff3e37867c1fc78fc6cb3",
+      "url": "https://api.github.com/repos/scylladb/scylladb/git/trees/2cd32a55eeac50f5465ff3e37867c1fc78fc6cb3"
+    },
+    "url": "https://api.github.com/repos/scylladb/scylladb/git/commits/1c2eef384da439b0457b6d71c7e37d7268e471cb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/scylladb/scylladb/commits/1c2eef384da439b0457b6d71c7e37d7268e471cb",
+  "html_url": "https://github.com/scylladb/scylladb/commit/1c2eef384da439b0457b6d71c7e37d7268e471cb",
+  "comments_url": "https://api.github.com/repos/scylladb/scylladb/commits/1c2eef384da439b0457b6d71c7e37d7268e471cb/comments",
+  "author": {
+    "login": "Lorak-mmk",
+    "id": 5958117,
+    "node_id": "MDQ6VXNlcjU5NTgxMTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5958117?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lorak-mmk",
+    "html_url": "https://github.com/Lorak-mmk",
+    "followers_url": "https://api.github.com/users/Lorak-mmk/followers",
+    "following_url": "https://api.github.com/users/Lorak-mmk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lorak-mmk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lorak-mmk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lorak-mmk/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lorak-mmk/orgs",
+    "repos_url": "https://api.github.com/users/Lorak-mmk/repos",
+    "events_url": "https://api.github.com/users/Lorak-mmk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lorak-mmk/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "avikivity",
+    "id": 1017210,
+    "node_id": "MDQ6VXNlcjEwMTcyMTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1017210?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/avikivity",
+    "html_url": "https://github.com/avikivity",
+    "followers_url": "https://api.github.com/users/avikivity/followers",
+    "following_url": "https://api.github.com/users/avikivity/following{/other_user}",
+    "gists_url": "https://api.github.com/users/avikivity/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/avikivity/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/avikivity/subscriptions",
+    "organizations_url": "https://api.github.com/users/avikivity/orgs",
+    "repos_url": "https://api.github.com/users/avikivity/repos",
+    "events_url": "https://api.github.com/users/avikivity/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/avikivity/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e5f6adf46c9e8b69b0c7567c89b7d4dcc5f81cb9",
+      "url": "https://api.github.com/repos/scylladb/scylladb/commits/e5f6adf46c9e8b69b0c7567c89b7d4dcc5f81cb9",
+      "html_url": "https://github.com/scylladb/scylladb/commit/e5f6adf46c9e8b69b0c7567c89b7d4dcc5f81cb9"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3e7b1520c5a8c75f1eebb1f9d473ff4964e93668",
+      "filename": "transport/server.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/scylladb/scylladb/blob/1c2eef384da439b0457b6d71c7e37d7268e471cb/transport%2Fserver.cc",
+      "raw_url": "https://github.com/scylladb/scylladb/raw/1c2eef384da439b0457b6d71c7e37d7268e471cb/transport%2Fserver.cc",
+      "contents_url": "https://api.github.com/repos/scylladb/scylladb/contents/transport%2Fserver.cc?ref=1c2eef384da439b0457b6d71c7e37d7268e471cb",
+      "patch": "@@ -727,7 +727,10 @@ future<fragmented_temporary_buffer> cql_server::connection::read_and_decompress_\n                     if (ret < 0) {\n                         throw std::runtime_error(\"CQL frame LZ4 uncompression failure\");\n                     }\n-                    return out.size();\n+                    if (ret != out.size()) {\n+                        throw std::runtime_error(\"Malformed CQL frame - provided uncompressed size different than real uncompressed size\");\n+                    }\n+                    return static_cast<size_t>(ret);\n                 });\n                 on_compression_buffer_use();\n                 return uncomp;"
+    }
+  ]
+}

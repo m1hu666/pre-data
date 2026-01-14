@@ -1,0 +1,161 @@
+{
+  "sha": "882925b295a80ec992063deffc2a3b0d803c3195",
+  "node_id": "C_kwDOAFma4NoAKDg4MjkyNWIyOTVhODBlYzk5MjA2M2RlZmZjMmEzYjBkODAzYzMxOTU",
+  "commit": {
+    "author": {
+      "name": "ruven",
+      "email": "ruven@users.sourceforge.net",
+      "date": "2022-01-16T13:34:07Z"
+    },
+    "committer": {
+      "name": "ruven",
+      "email": "ruven@users.sourceforge.net",
+      "date": "2022-01-16T13:34:07Z"
+    },
+    "message": "- Modified TileManager.cc to verify that malloc() has correctly allocated memory.\n- Updated numerical types to std::size_t in RawTile.h, TileManager.cc, KakaduImage.cc, OpenJPEG.cc and Transforms.cc when allocating memory via new to avoid integer overflow - fixes remaining problems identified in https://github.com/ruven/iipsrv/issues/223.",
+    "tree": {
+      "sha": "58eefcc35b17c0e98b4e7406eddecd352a9f6692",
+      "url": "https://api.github.com/repos/ruven/iipsrv/git/trees/58eefcc35b17c0e98b4e7406eddecd352a9f6692"
+    },
+    "url": "https://api.github.com/repos/ruven/iipsrv/git/commits/882925b295a80ec992063deffc2a3b0d803c3195",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE93ahmHLcbk2Fd4+ntUwu8cCHvvsFAmHkHvcACgkQtUwu8cCH\nvvvFTw//TrTI3OaVAr1hrE/PEoER+QY+wY9G+oU5XfQr+yA81GsSjPUWVMP/3wLz\n61HbKRLkjunI0/m+2g63PuFxYmuGrADEQjueB5h2XJ/2Otk1rELEnpi12+4K3Eeb\neCWCw0UQdE54IQ5kGSie7URkZhq6L2Sc8NqQDohSP2D/Pxt1UeckLitKKLAjXgsr\nWRgMrZEkWlx7A2p8bwbJ0UeZP8pSTmgoHpbyS6a9GN/si+k+LmM85NS0/TBtb6Zr\nqWKFvEW5VG1jRMh6vgXmIgPs0V3YfgENNS4AjJ0jcVPTawUvAyN4CrpXXxG3kc6F\nel99GyonOJfNenSpbYcVjm83T6n4qjNqGvPexUFQksjpbqevjQb3aQwff/9+RIRl\nL4vIVCReYqoLdwUYqL0jGAv52gfXMtpdMRLUTHQQ2iPatm+Pr9q3FErTkivE3UIU\nXsEy6lvCXdfYt6aGKvB7uwphiOKkzFUpoyzwwO+GhHG2aHT1wE5v+fUp5JHrcW8p\nWQi8JANATqCMcdQsnqOJXMAJJf462eRb+cUGh4BiVqqnPDddVP2IS4ci5uMGngUK\nOA54805IvrJ1lGqT1oTgnzRneAo648RtaKUbBxoA0lovG8qrMt7U1H4j44+LqeLm\nnvcMOQ4uoRIztKqFxR6FzlchB7/Jhv0iztqEksCpRSsiBkLlrRI=\n=4vXn\n-----END PGP SIGNATURE-----",
+      "payload": "tree 58eefcc35b17c0e98b4e7406eddecd352a9f6692\nparent 4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9\nauthor ruven <ruven@users.sourceforge.net> 1642340047 +0100\ncommitter ruven <ruven@users.sourceforge.net> 1642340047 +0100\n\n- Modified TileManager.cc to verify that malloc() has correctly allocated memory.\n- Updated numerical types to std::size_t in RawTile.h, TileManager.cc, KakaduImage.cc, OpenJPEG.cc and Transforms.cc when allocating memory via new to avoid integer overflow - fixes remaining problems identified in https://github.com/ruven/iipsrv/issues/223.\n",
+      "verified_at": "2024-11-06T12:54:39Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ruven/iipsrv/commits/882925b295a80ec992063deffc2a3b0d803c3195",
+  "html_url": "https://github.com/ruven/iipsrv/commit/882925b295a80ec992063deffc2a3b0d803c3195",
+  "comments_url": "https://api.github.com/repos/ruven/iipsrv/commits/882925b295a80ec992063deffc2a3b0d803c3195/comments",
+  "author": {
+    "login": "ruven",
+    "id": 776628,
+    "node_id": "MDQ6VXNlcjc3NjYyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/776628?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ruven",
+    "html_url": "https://github.com/ruven",
+    "followers_url": "https://api.github.com/users/ruven/followers",
+    "following_url": "https://api.github.com/users/ruven/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ruven/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ruven/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ruven/subscriptions",
+    "organizations_url": "https://api.github.com/users/ruven/orgs",
+    "repos_url": "https://api.github.com/users/ruven/repos",
+    "events_url": "https://api.github.com/users/ruven/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ruven/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ruven",
+    "id": 776628,
+    "node_id": "MDQ6VXNlcjc3NjYyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/776628?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ruven",
+    "html_url": "https://github.com/ruven",
+    "followers_url": "https://api.github.com/users/ruven/followers",
+    "following_url": "https://api.github.com/users/ruven/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ruven/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ruven/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ruven/subscriptions",
+    "organizations_url": "https://api.github.com/users/ruven/orgs",
+    "repos_url": "https://api.github.com/users/ruven/repos",
+    "events_url": "https://api.github.com/users/ruven/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ruven/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+      "url": "https://api.github.com/repos/ruven/iipsrv/commits/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9",
+      "html_url": "https://github.com/ruven/iipsrv/commit/4ed59265fbbd636dc2fbbf325f8ea37ed300a6d9"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 33,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "06c00819a61265d241e4474b6d70eb5e951011ee",
+      "filename": "ChangeLog",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/ChangeLog",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/ChangeLog",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/ChangeLog?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -1,3 +1,10 @@\n+16/01/2022:\n+\t- Modified TileManager.cc to verify that malloc() has correctly allocated memory.\n+\t- Updated numerical types to std::size_t in RawTile.h, TileManager.cc, KakaduImage.cc, OpenJPEG.cc and Transforms.cc\n+\t  when allocating memory via new to avoid integer overflow - fixes remaining problems identified in\n+\t  https://github.com/ruven/iipsrv/issues/223.\n+\n+\n 15/01/2022:\n \t- Added verification that image has been set in SPECTRA.cc and check on the validity of the requested tile\n \t  resolution in JTL.cc. Fixes a couple of the crash conditions reported in https://github.com/ruven/iipsrv/issues/223"
+    },
+    {
+      "sha": "8893c64b141cadd72945c1acd3c260e05ff84a8d",
+      "filename": "src/KakaduImage.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/src%2FKakaduImage.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/src%2FKakaduImage.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FKakaduImage.cc?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -447,11 +447,12 @@ RawTile KakaduImage::getRegion( int seq, int ang, unsigned int res, int layers,\n \n   RawTile rawtile( 0, res, seq, ang, w, h, channels, obpc );\n \n-  if( obpc == 16 ) rawtile.data = new unsigned short[w*h*channels];\n-  else if( obpc == 8 ) rawtile.data = new unsigned char[w*h*channels];\n+  size_t np = (size_t) w * (size_t) h * (size_t) channels;\n+  if( obpc == 16 ) rawtile.data = new unsigned short[np];\n+  else if( obpc == 8 ) rawtile.data = new unsigned char[np];\n   else throw file_error( \"Kakadu :: Unsupported number of bits\" );\n \n-  rawtile.dataLength = w*h*channels*(obpc/8);\n+  rawtile.dataLength = np*(obpc/8);\n   rawtile.filename = getImagePath();\n   rawtile.timestamp = timestamp;\n "
+    },
+    {
+      "sha": "1c3158055e307c713d6b3164c4bec6753a50ddae",
+      "filename": "src/OpenJPEGImage.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/src%2FOpenJPEGImage.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/src%2FOpenJPEGImage.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FOpenJPEGImage.cc?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -376,11 +376,12 @@ RawTile OpenJPEGImage::getRegion( int ha, int va, unsigned int res, int layers,\n \n   RawTile rawtile( 0, res, ha, va, w, h, channels, obpc );\n \n-  if( obpc == 16 ) rawtile.data = new unsigned short[w * h * channels];\n-  else if( obpc == 8 ) rawtile.data = new unsigned char[w * h * channels];\n+  size_t np = (size_t) w * (size_t) h * (size_t) channels;\n+  if( obpc == 16 ) rawtile.data = new unsigned short[np];\n+  else if( obpc == 8 ) rawtile.data = new unsigned char[np];\n   else throw file_error( \"OpenJPEG :: Unsupported number of bits\" );\n \n-  rawtile.dataLength = w*h*channels*(obpc/8);\n+  rawtile.dataLength = np*(obpc/8);\n   rawtile.filename = getImagePath();\n   rawtile.timestamp = timestamp;\n "
+    },
+    {
+      "sha": "7aedb0feed240c237e770b41eabdd6fd70c22b8d",
+      "filename": "src/RawTile.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/src%2FRawTile.h",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/src%2FRawTile.h",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FRawTile.h?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -79,7 +79,7 @@ class RawTile{\n   int memoryManaged;\n \n   /// The size of the data pointed to by data\n-  unsigned int dataLength;\n+  size_t dataLength;\n \n   /// The width in pixels of this tile\n   unsigned int width;"
+    },
+    {
+      "sha": "a6ccdb3e28b0dea19e333ad927322b51c35fe1fe",
+      "filename": "src/TileManager.cc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 8,
+      "changes": 23,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/src%2FTileManager.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/src%2FTileManager.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FTileManager.cc?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -4,7 +4,7 @@\n \n /*  IIP Server: Tile Cache Handler\n \n-    Copyright (C) 2005-2021 Ruven Pillay.\n+    Copyright (C) 2005-2022 Ruven Pillay.\n \n     This program is free software; you can redistribute it and/or modify\n     it under the terms of the GNU General Public License as published by\n@@ -130,8 +130,14 @@ void TileManager::crop( RawTile *ttt ){\n \n   // Create a new buffer, fill it with the old data, then copy\n   // back the cropped part into the RawTile buffer\n-  int len = tw * th * ttt->channels * (ttt->bpc/8);\n+  unsigned int len = tw * th * ttt->channels * (ttt->bpc/8);\n   unsigned char* buffer = (unsigned char*) malloc( len );\n+\n+  // Check whether we have successfully allocated memory via malloc\n+  if( buffer == NULL ){\n+    std::bad_alloc e;\n+    throw e;\n+  }\n   unsigned char* src_ptr = (unsigned char*) memcpy( buffer, ttt->data, len );\n   unsigned char* dst_ptr = (unsigned char*) ttt->data;\n \n@@ -365,21 +371,22 @@ RawTile TileManager::getRegion( unsigned int res, int seq, int ang, int layers,\n \n   // Create an empty tile with the correct dimensions\n   RawTile region( 0, res, seq, ang, width, height, channels, bpc );\n-  region.dataLength = width * height * channels * (bpc/8);\n+  size_t np = (size_t) width * (size_t) height * (size_t) channels;\n+  region.dataLength = np * (bpc/8);\n   region.sampleType = sampleType;\n \n   // Allocate memory for the region\n-  if( bpc == 8 ) region.data = new unsigned char[width*height*channels];\n-  else if( bpc == 16 ) region.data = new unsigned short[width*height*channels];\n-  else if( bpc == 32 && sampleType == FIXEDPOINT ) region.data = new int[width*height*channels];\n-  else if( bpc == 32 && sampleType == FLOATINGPOINT ) region.data = new float[width*height*channels];\n+  if( bpc == 8 ) region.data = new unsigned char[np];\n+  else if( bpc == 16 ) region.data = new unsigned short[np];\n+  else if( bpc == 32 && sampleType == FIXEDPOINT ) region.data = new int[np];\n+  else if( bpc == 32 && sampleType == FLOATINGPOINT ) region.data = new float[np];\n \n   unsigned int current_height = 0;\n \n   // Decode the image strip by strip\n   for( unsigned int i=starty; i<endy; i++ ){\n \n-    unsigned int buffer_index = 0;\n+    unsigned long buffer_index = 0;\n \n     // Keep track of the current pixel boundary horizontally. ie. only up\n     //  to the beginning of the current tile boundary."
+    },
+    {
+      "sha": "8f9cfa53147b3bf13b89e6a0db809c4e082e27a3",
+      "filename": "src/Transforms.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ruven/iipsrv/blob/882925b295a80ec992063deffc2a3b0d803c3195/src%2FTransforms.cc",
+      "raw_url": "https://github.com/ruven/iipsrv/raw/882925b295a80ec992063deffc2a3b0d803c3195/src%2FTransforms.cc",
+      "contents_url": "https://api.github.com/repos/ruven/iipsrv/contents/src%2FTransforms.cc?ref=882925b295a80ec992063deffc2a3b0d803c3195",
+      "patch": "@@ -532,7 +532,7 @@ void Transform::interpolate_nearestneighbour( RawTile& in, unsigned int resample\n   // Correctly set our Rawtile info\n   in.width = resampled_width;\n   in.height = resampled_height;\n-  in.dataLength = resampled_width * resampled_height * channels * (in.bpc/8);\n+  in.dataLength = (size_t)resampled_width * (size_t)resampled_height * (size_t)channels * (size_t)(in.bpc/8);\n   in.data = output;\n }\n \n@@ -618,7 +618,7 @@ void Transform::interpolate_bilinear( RawTile& in, unsigned int resampled_width,\n   // Correctly set our Rawtile info\n   in.width = resampled_width;\n   in.height = resampled_height;\n-  in.dataLength = resampled_width * resampled_height * channels * (in.bpc/8);\n+  in.dataLength = (size_t)resampled_width * (size_t)resampled_height * (size_t)channels * (size_t)(in.bpc/8);\n   in.data = output;\n }\n "
+    }
+  ]
+}

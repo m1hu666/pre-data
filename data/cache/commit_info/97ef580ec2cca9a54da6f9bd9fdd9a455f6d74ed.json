@@ -1,0 +1,197 @@
+{
+  "sha": "97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjk3ZWY1ODBlYzJjY2E5YTU0ZGE2ZjliZDlmZGQ5YTQ1NWY2ZDc0ZWQ=",
+  "commit": {
+    "author": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2019-06-11T18:44:59Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot@users.noreply.github.com",
+      "date": "2019-06-11T18:54:48Z"
+    },
+    "message": "Fix default FastCGI interface\n\nReviewed By: alexeyt\n\nDifferential Revision: D15567393\n\nfbshipit-source-id: ffab228f689d4ddca9ea4835c70aecf16da2aa9f",
+    "tree": {
+      "sha": "8b7b303d800712b311ed1a23d84a0c349dbbdd53",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/8b7b303d800712b311ed1a23d84a0c349dbbdd53"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+  "html_url": "https://github.com/facebook/hhvm/commit/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/comments",
+  "author": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hhvm-bot",
+    "id": 8306375,
+    "node_id": "MDQ6VXNlcjgzMDYzNzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8306375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hhvm-bot",
+    "html_url": "https://github.com/hhvm-bot",
+    "followers_url": "https://api.github.com/users/hhvm-bot/followers",
+    "following_url": "https://api.github.com/users/hhvm-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hhvm-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hhvm-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hhvm-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/hhvm-bot/orgs",
+    "repos_url": "https://api.github.com/users/hhvm-bot/repos",
+    "events_url": "https://api.github.com/users/hhvm-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hhvm-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "149c1e1562e122012cc08aada707bce577fb5f3a",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/149c1e1562e122012cc08aada707bce577fb5f3a",
+      "html_url": "https://github.com/facebook/hhvm/commit/149c1e1562e122012cc08aada707bce577fb5f3a"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 14,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "32d7bf6750370b51d3e1694f453be9c1b98d692e",
+      "filename": "hphp/runtime/server/fastcgi/fastcgi-server.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Fruntime%2Fserver%2Ffastcgi%2Ffastcgi-server.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Fruntime%2Fserver%2Ffastcgi%2Ffastcgi-server.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fserver%2Ffastcgi%2Ffastcgi-server.cpp?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -80,7 +80,8 @@ FastCGIServer::FastCGIServer(const std::string &address,\n   if (useFileSocket) {\n     sock_addr.setFromPath(address);\n   } else if (address.empty()) {\n-    sock_addr.setFromLocalPort(port);\n+    sock_addr.setFromHostPort(\"localhost\", port);\n+    assert(sock_addr.isLoopbackAddress());\n   } else {\n     sock_addr.setFromHostPort(address, port);\n   }"
+    },
+    {
+      "sha": "1c290e7c1d0b715ecb63b08230332a883849fa3a",
+      "filename": "hphp/test/server/debugger/tests/runTest1.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Fdebugger%2Ftests%2FrunTest1.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Fdebugger%2Ftests%2FrunTest1.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Fdebugger%2Ftests%2FrunTest1.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -5,9 +5,8 @@\n function test1Controller($hphpdOutput, $hphpdProcessId, $serverPort) {\n   // Request a page so that the client can debug it.\n   waitForClientToOutput($hphpdOutput, \"Waiting for server response\");\n-  $url = \"http://\".php_uname('n').':'.$serverPort.'/test1.php';\n   echo \"Requesting test1.php\\n\";\n-  request(php_uname('n'), $serverPort, 'test1.php', 10); // ignore response\n+  request('localhost', $serverPort, 'test1.php', 10); // ignore response\n \n   // Let client run until script quits\n   waitForClientToOutput($hphpdOutput, \"quit\");"
+    },
+    {
+      "sha": "42a4c89476a13cbc0ff67637a464da9e4d0a1a6f",
+      "filename": "hphp/test/server/fastcgi/tests/authDigestTest.php",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FauthDigestTest.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FauthDigestTest.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FauthDigestTest.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -8,7 +8,7 @@ function BadAuthDigestTestController($serverPort) {\n     'uri=\"/test_auth_digest.php\", cnonce=\"MjIyMTg2\", nc=00000001, ' .\n     'qop=\"auth\", response=\"6dfbea52fbf13016476c1879e6436004\", ' .\n     'opaque=\"cdce8a5c95a1427d74df7acbf41c9ce0\"');\n-  var_dump(request(php_uname('n'), $serverPort, \"test_auth_digest.php\",\n+  var_dump(request('localhost', $serverPort, \"test_auth_digest.php\",\n                   [], [], $args));\n }\n \n@@ -18,7 +18,7 @@ function GoodAuthDigestTestController($serverPort) {\n     'uri=\"/test_auth_digest.php\", cnonce=\"MjIyMTg1\", nc=00000001, ' .\n     'qop=\"auth\", response=\"e544aaed06917adea3e5c74dd49f0e32\", ' .\n     'opaque=\"cdce8a5c95a1427d74df7acbf41c9ce0\"');\n-  var_dump(request(php_uname('n'), $serverPort, \"test_auth_digest.php\",\n+  var_dump(request('localhost', $serverPort, \"test_auth_digest.php\",\n                   [], [], $args));\n }\n "
+    },
+    {
+      "sha": "e55c60c45a251fca46947834a24e0c6d89a33a88",
+      "filename": "hphp/test/server/fastcgi/tests/disable_ini_zend_compat.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fdisable_ini_zend_compat.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fdisable_ini_zend_compat.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fdisable_ini_zend_compat.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -6,7 +6,7 @@\n require_once('test_base.inc');\n \n function disableIniZendCompatController($port) {\n-  echo request(php_uname('n'), $port, 'test_disable_ini_zend_compat.php');\n+  echo request('localhost', $port, 'test_disable_ini_zend_compat.php');\n }\n \n echo \"---Enable Ini Zend Compat ON---\\n\";"
+    },
+    {
+      "sha": "b9f84bf076f99ad3111cb588cc457274e95d504d",
+      "filename": "hphp/test/server/fastcgi/tests/global_variables_server.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fglobal_variables_server.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fglobal_variables_server.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Fglobal_variables_server.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -23,6 +23,6 @@\n     $path = 'global_variables.php?var=GET&get=1';\n     $post = array('var' => 'POST', 'post' => 2);\n     $headers = array('Cookie' => 'var=COOKIE;cookie=3;');\n-    echo request(php_uname('n'), $port, $path, $post, $headers, $extra) . \"\\n\";\n+    echo request('localhost', $port, $path, $post, $headers, $extra) . \"\\n\";\n   }, $request[0]);\n }"
+    },
+    {
+      "sha": "91da6e5e1f13ee02f87b528ca262c917da932405",
+      "filename": "hphp/test/server/fastcgi/tests/headerTest.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FheaderTest.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FheaderTest.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FheaderTest.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -4,7 +4,7 @@\n \n function headerTestController($serverPort) {\n   $args = array('Authorization' => 'foo');\n-  var_dump(request(php_uname('n'), $serverPort, \"test_headers.php\",\n+  var_dump(request('localhost', $serverPort, \"test_headers.php\",\n                   [], ['PROXY' => 'foobar'], $args));\n }\n "
+    },
+    {
+      "sha": "7db48a7077dc669d2e485a1bbf48f9dfa7f2a7fa",
+      "filename": "hphp/test/server/fastcgi/tests/httpsTest.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FhttpsTest.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FhttpsTest.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2FhttpsTest.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -4,7 +4,7 @@\n \n function httpsTestController($serverPort) {\n   $args = array('HTTPS' => '');\n-  var_dump(request(php_uname('n'), $serverPort, \"test_https.php\",\n+  var_dump(request('localhost', $serverPort, \"test_https.php\",\n                   [], [], $args));\n }\n "
+    },
+    {
+      "sha": "e36eaac31df7975d64d1f5e7b8f6ddbb896836c5",
+      "filename": "hphp/test/server/fastcgi/tests/invalid.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Finvalid.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Finvalid.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Ffastcgi%2Ftests%2Finvalid.php?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -3,7 +3,7 @@\n require_once('test_base.inc');\n \n function invalidTestController($port) {\n-  $host = php_uname('n');\n+  $host = 'localhost';\n \n   $filename = __DIR__.'/request-doesnotexist.dat';\n   $file = fopen($filename, 'rb');"
+    },
+    {
+      "sha": "55366c55f3cb2c35d7d91aa3b2ee8ff5b2851e12",
+      "filename": "hphp/test/server/util/server_tests.inc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/facebook/hhvm/blob/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Futil%2Fserver_tests.inc",
+      "raw_url": "https://github.com/facebook/hhvm/raw/97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed/hphp%2Ftest%2Fserver%2Futil%2Fserver_tests.inc",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fserver%2Futil%2Fserver_tests.inc?ref=97ef580ec2cca9a54da6f9bd9fdd9a455f6d74ed",
+      "patch": "@@ -179,7 +179,7 @@ function startServer(&$serverPort, &$adminPort, &$debugPort, $home, $root,\n \n // Check if the server id is in the expected list of ids.\n function checkServerId($serverPort, $expectedIds) {\n-  $host = php_uname('n');\n+  $host = 'localhost';\n   $r = request($host, $serverPort, \"hello.php\");\n   if (preg_match('/Hello, World!(.*+)/', $r ?? '', &$matches)) {\n     foreach ((array)$expectedIds as $id) {\n@@ -217,7 +217,7 @@ function stopServer($adminPort, $serverProc) {\n \n   $r = \"\";\n   for ($i = 1; $i <= 10; $i++) {\n-    $r = request(php_uname('n'), $adminPort, 'stop?instance-id='.$test_run_id);\n+    $r = request('localhost', $adminPort, 'stop?instance-id='.$test_run_id);\n     if ($r === \"OK\") break;\n     usleep(100000);\n   }\n@@ -286,7 +286,7 @@ function http_request($host, $port, $path, $timeout = 1200, $curl_opts = '') {\n     $headers = implode(\" \", $s);\n   }\n   $url = \"http://$host:$port/$path\";\n-  $host_name = \"hphpd.debugger.\".php_uname('n');\n+  $host_name = \"hphpd.debugger.\".\\php_uname('n');\n \n   $LOG_ROOT = ServerUtilServerTests::$LOG_ROOT;\n   $test_run_id = ServerUtilServerTests::$test_run_id;\n@@ -304,7 +304,7 @@ function requestAll(array $requests, $customArgs = '', $repoArgs = '') {\n       foreach ($requests as $request) {\n         $r = is_array($request) ? $request[0] : $request;\n         echo \"Requesting '$r'\\n\";\n-        var_dump(request(php_uname('n'), $serverPort, $request));\n+        var_dump(request('localhost', $serverPort, $request));\n       }\n     },\n     $customArgs,"
+    }
+  ]
+}

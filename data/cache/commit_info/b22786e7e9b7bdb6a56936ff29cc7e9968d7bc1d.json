@@ -1,0 +1,101 @@
+{
+  "sha": "b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6YjIyNzg2ZTdlOWI3YmRiNmE1NjkzNmZmMjljYzdlOTk2OGQ3YmMxZA==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T22:31:26Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T22:36:46Z"
+    },
+    "message": "Prevent division by 0\n\nPiperOrigin-RevId: 370998952\nChange-Id: I6b1d49079624ee1447d2d9b53a8976fb356cc8f5",
+    "tree": {
+      "sha": "eaae659d4382532e3c3b32ff17d93b74c0321921",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/eaae659d4382532e3c3b32ff17d93b74c0321921"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e2752089ef7ce9bcf3db0ec618ebd23ea119d0c7",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e2752089ef7ce9bcf3db0ec618ebd23ea119d0c7",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/e2752089ef7ce9bcf3db0ec618ebd23ea119d0c7"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "cf778b0b951242a9d655649b92585ee61c08788f",
+      "filename": "tensorflow/lite/kernels/split.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d/tensorflow%2Flite%2Fkernels%2Fsplit.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d/tensorflow%2Flite%2Fkernels%2Fsplit.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fsplit.cc?ref=b22786e7e9b7bdb6a56936ff29cc7e9968d7bc1d",
+      "patch": "@@ -60,6 +60,7 @@ TfLiteStatus ResizeOutputTensors(TfLiteContext* context, TfLiteNode* node,\n   TF_LITE_ENSURE(context, axis_value < NumDimensions(input));\n \n   const int input_size = SizeOfDimension(input, axis_value);\n+  TF_LITE_ENSURE(context, num_splits != 0);\n   TF_LITE_ENSURE_MSG(context, input_size % num_splits == 0,\n                      \"Not an even split\");\n   const int slice_size = input_size / num_splits;"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b",
+  "node_id": "C_kwDOANFODNoAKDNhNTQ3NGY5MTAyY2JkYzEwZmJkOWU3YjFiMmM4ZDNmM2Y0NWQ5MWI",
+  "commit": {
+    "author": {
+      "name": "Johannes Schultz",
+      "email": "sagamusix@users.noreply.github.com",
+      "date": "2022-06-26T15:53:59Z"
+    },
+    "committer": {
+      "name": "Johannes Schultz",
+      "email": "sagamusix@users.noreply.github.com",
+      "date": "2022-06-26T15:53:59Z"
+    },
+    "message": "Fix possible stack corruption with XM instrument headers claiming a size of less than 4\n\nCloses #275",
+    "tree": {
+      "sha": "402ba79a6651ae57719940f24667abe93f842909",
+      "url": "https://api.github.com/repos/milkytracker/MilkyTracker/git/trees/402ba79a6651ae57719940f24667abe93f842909"
+    },
+    "url": "https://api.github.com/repos/milkytracker/MilkyTracker/git/commits/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/milkytracker/MilkyTracker/commits/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b",
+  "html_url": "https://github.com/milkytracker/MilkyTracker/commit/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b",
+  "comments_url": "https://api.github.com/repos/milkytracker/MilkyTracker/commits/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b/comments",
+  "author": {
+    "login": "sagamusix",
+    "id": 875883,
+    "node_id": "MDQ6VXNlcjg3NTg4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/875883?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sagamusix",
+    "html_url": "https://github.com/sagamusix",
+    "followers_url": "https://api.github.com/users/sagamusix/followers",
+    "following_url": "https://api.github.com/users/sagamusix/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sagamusix/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sagamusix/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sagamusix/subscriptions",
+    "organizations_url": "https://api.github.com/users/sagamusix/orgs",
+    "repos_url": "https://api.github.com/users/sagamusix/repos",
+    "events_url": "https://api.github.com/users/sagamusix/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sagamusix/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sagamusix",
+    "id": 875883,
+    "node_id": "MDQ6VXNlcjg3NTg4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/875883?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sagamusix",
+    "html_url": "https://github.com/sagamusix",
+    "followers_url": "https://api.github.com/users/sagamusix/followers",
+    "following_url": "https://api.github.com/users/sagamusix/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sagamusix/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sagamusix/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sagamusix/subscriptions",
+    "organizations_url": "https://api.github.com/users/sagamusix/orgs",
+    "repos_url": "https://api.github.com/users/sagamusix/repos",
+    "events_url": "https://api.github.com/users/sagamusix/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sagamusix/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "66c31bf66dad2c76f445f0f0ad814a1d4702f509",
+      "url": "https://api.github.com/repos/milkytracker/MilkyTracker/commits/66c31bf66dad2c76f445f0f0ad814a1d4702f509",
+      "html_url": "https://github.com/milkytracker/MilkyTracker/commit/66c31bf66dad2c76f445f0f0ad814a1d4702f509"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "303e349353b5d9fba1ded16536c0d9fdbfdc141a",
+      "filename": "src/milkyplay/LoaderXM.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/milkytracker/MilkyTracker/blob/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b/src%2Fmilkyplay%2FLoaderXM.cpp",
+      "raw_url": "https://github.com/milkytracker/MilkyTracker/raw/3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b/src%2Fmilkyplay%2FLoaderXM.cpp",
+      "contents_url": "https://api.github.com/repos/milkytracker/MilkyTracker/contents/src%2Fmilkyplay%2FLoaderXM.cpp?ref=3a5474f9102cbdc10fbd9e7b1b2c8d3f3f45d91b",
+      "patch": "@@ -478,7 +478,7 @@ mp_sint32 LoaderXM::load(XMFileBase& f, XModule* module)\n \t\t\n \t\t\tf.readDwords(&instr[y].size,1);\n \t\t\t\n-\t\t\tif (instr[y].size < 29)\n+\t\t\tif (instr[y].size >= 4 && instr[y].size < 29)\n \t\t\t{\n \t\t\t\tmp_ubyte buffer[29];\n \t\t\t\tmemset(buffer, 0, sizeof(buffer));"
+    }
+  ]
+}

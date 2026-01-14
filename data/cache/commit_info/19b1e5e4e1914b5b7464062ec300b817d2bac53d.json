@@ -1,0 +1,321 @@
+{
+  "sha": "19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OjE5YjFlNWU0ZTE5MTRiNWI3NDY0MDYyZWMzMDBiODE3ZDJiYWM1M2Q=",
+  "commit": {
+    "author": {
+      "name": "Charlie Harrison",
+      "email": "csharrison@chromium.org",
+      "date": "2019-04-05T13:30:53Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2019-04-05T13:30:53Z"
+    },
+    "message": "[url] Make path URL parsing more lax\n\nParsing the path component of a non-special URL like javascript or data\nshould not fail for invalid URL characters like \\uFFFF. See this bit\nin the spec:\nhttps://url.spec.whatwg.org/#cannot-be-a-base-url-path-state\n\nNote: some failing WPTs are added which are because url parsing\nreplaces invalid characters (e.g. \\uFFFF) with the replacement char\n\\uFFFD, when that isn't in the spec.\n\nBug: 925614\nChange-Id: I450495bfdfa68dc70334ebed16a3ecc0d5737e88\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1551917\nReviewed-by: Mike West <mkwst@chromium.org>\nCommit-Queue: Charlie Harrison <csharrison@chromium.org>\nCr-Commit-Position: refs/heads/master@{#648155}",
+    "tree": {
+      "sha": "7b1adc6b189d6776ff2eb1fc5dd8118545479bec",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/7b1adc6b189d6776ff2eb1fc5dd8118545479bec"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+  "html_url": "https://github.com/chromium/chromium/commit/19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/19b1e5e4e1914b5b7464062ec300b817d2bac53d/comments",
+  "author": {
+    "login": "csharrison",
+    "id": 1066818,
+    "node_id": "MDQ6VXNlcjEwNjY4MTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1066818?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/csharrison",
+    "html_url": "https://github.com/csharrison",
+    "followers_url": "https://api.github.com/users/csharrison/followers",
+    "following_url": "https://api.github.com/users/csharrison/following{/other_user}",
+    "gists_url": "https://api.github.com/users/csharrison/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/csharrison/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/csharrison/subscriptions",
+    "organizations_url": "https://api.github.com/users/csharrison/orgs",
+    "repos_url": "https://api.github.com/users/csharrison/repos",
+    "events_url": "https://api.github.com/users/csharrison/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/csharrison/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "9fd7dd691ab14791bc6efeabab641966c4b0807a",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/9fd7dd691ab14791bc6efeabab641966c4b0807a",
+      "html_url": "https://github.com/chromium/chromium/commit/9fd7dd691ab14791bc6efeabab641966c4b0807a"
+    }
+  ],
+  "stats": {
+    "total": 103,
+    "additions": 71,
+    "deletions": 32
+  },
+  "files": [
+    {
+      "sha": "bf4e2a7833d17fab604eb634051e627887fe936a",
+      "filename": "third_party/blink/web_tests/external/wpt/url/resources/urltestdata.json",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fexternal%2Fwpt%2Furl%2Fresources%2Furltestdata.json",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fexternal%2Fwpt%2Furl%2Fresources%2Furltestdata.json",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fexternal%2Fwpt%2Furl%2Fresources%2Furltestdata.json?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -4633,6 +4633,22 @@\n     \"search\": \"\",\n     \"hash\": \"\"\n   },\n+  \"# unknown scheme with non-URL characters in the path\",\n+  {\n+    \"input\": \"wow:\\uFFFF\",\n+    \"base\": \"about:blank\",\n+    \"href\": \"wow:%EF%BF%BF\",\n+    \"origin\": \"null\",\n+    \"protocol\": \"wow:\",\n+    \"username\": \"\",\n+    \"password\": \"\",\n+    \"host\": \"\",\n+    \"hostname\": \"\",\n+    \"port\": \"\",\n+    \"pathname\": \"%EF%BF%BF\",\n+    \"search\": \"\",\n+    \"hash\": \"\"\n+  },\n   \"# Hosts and percent-encoding\",\n   {\n     \"input\": \"ftp://example.com%80/\","
+    },
+    {
+      "sha": "a9c7a846a1b37c7eddc77f413c715b9cf72b6b20",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/a-element-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 334 PASS, 182 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 334 PASS, 183 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "2eff1d990b096567c04baf1ae52094f6b250626f",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/a-element-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 299 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 300 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "2eff1d990b096567c04baf1ae52094f6b250626f",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/a-element-origin-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 299 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 300 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "a9c7a846a1b37c7eddc77f413c715b9cf72b6b20",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/a-element-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 334 PASS, 182 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 334 PASS, 183 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "1938487bfcc56eba001143f545740dd0b4888adb",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/url-constructor-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 400 PASS, 116 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 400 PASS, 117 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -400,6 +400,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n PASS Parsing: <ftp://example.com%80/> against <about:blank>\n PASS Parsing: <ftp://example.com%A0/> against <about:blank>\n PASS Parsing: <https://example.com%80/> against <about:blank>"
+    },
+    {
+      "sha": "72594ffa002200dcf2ce52e23d3c6ca0c636491a",
+      "filename": "third_party/blink/web_tests/platform/linux/external/wpt/url/url-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Flinux%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 296 PASS, 7 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 297 PASS, 7 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Origin parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Origin parsing: <sc:\\../> against <about:blank>\n PASS Origin parsing: <sc::a@example.net> against <about:blank>\n PASS Origin parsing: <wow:%NBD> against <about:blank>\n PASS Origin parsing: <wow:%1G> against <about:blank>\n+PASS Origin parsing: <wow:\uffff> against <about:blank>\n PASS Origin parsing: <ftp://%e2%98%83> against <about:blank>\n PASS Origin parsing: <https://%e2%98%83> against <about:blank>\n PASS Origin parsing: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "a9c7a846a1b37c7eddc77f413c715b9cf72b6b20",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/a-element-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 334 PASS, 182 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 334 PASS, 183 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "2eff1d990b096567c04baf1ae52094f6b250626f",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/a-element-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 299 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 300 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "2eff1d990b096567c04baf1ae52094f6b250626f",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/a-element-origin-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 299 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 300 PASS, 4 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "a9c7a846a1b37c7eddc77f413c715b9cf72b6b20",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/a-element-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 334 PASS, 182 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 334 PASS, 183 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "1938487bfcc56eba001143f545740dd0b4888adb",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/url-constructor-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 400 PASS, 116 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 400 PASS, 117 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -400,6 +400,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n PASS Parsing: <ftp://example.com%80/> against <about:blank>\n PASS Parsing: <ftp://example.com%A0/> against <about:blank>\n PASS Parsing: <https://example.com%80/> against <about:blank>"
+    },
+    {
+      "sha": "72594ffa002200dcf2ce52e23d3c6ca0c636491a",
+      "filename": "third_party/blink/web_tests/platform/mac/external/wpt/url/url-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fmac%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 296 PASS, 7 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 297 PASS, 7 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Origin parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Origin parsing: <sc:\\../> against <about:blank>\n PASS Origin parsing: <sc::a@example.net> against <about:blank>\n PASS Origin parsing: <wow:%NBD> against <about:blank>\n PASS Origin parsing: <wow:%1G> against <about:blank>\n+PASS Origin parsing: <wow:\uffff> against <about:blank>\n PASS Origin parsing: <ftp://%e2%98%83> against <about:blank>\n PASS Origin parsing: <https://%e2%98%83> against <about:blank>\n PASS Origin parsing: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "ac76307e4a5508a755150779353d9169693f09ae",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/a-element-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 330 PASS, 186 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 330 PASS, 187 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "1955d9fd1d879f6452f5679936227943c8630707",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/a-element-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 297 PASS, 6 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 298 PASS, 6 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "1955d9fd1d879f6452f5679936227943c8630707",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/a-element-origin-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-origin-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 297 PASS, 6 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 298 PASS, 6 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing origin: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Parsing origin: <sc:\\../> against <about:blank>\n PASS Parsing origin: <sc::a@example.net> against <about:blank>\n PASS Parsing origin: <wow:%NBD> against <about:blank>\n PASS Parsing origin: <wow:%1G> against <about:blank>\n+PASS Parsing origin: <wow:\uffff> against <about:blank>\n PASS Parsing origin: <ftp://%e2%98%83> against <about:blank>\n PASS Parsing origin: <https://%e2%98%83> against <about:blank>\n PASS Parsing origin: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "ac76307e4a5508a755150779353d9169693f09ae",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/a-element-xhtml-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Fa-element-xhtml-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 330 PASS, 186 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 330 PASS, 187 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -360,6 +360,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n FAIL Parsing: <ftp://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%80/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <ftp://example.com%A0/> against <about:blank> assert_equals: failure should set href to input expected \"ftp://example.com%A0/\" but got \"ftp://example.com%EF%BF%BD/\"\n FAIL Parsing: <https://example.com%80/> against <about:blank> assert_equals: failure should set href to input expected \"https://example.com%80/\" but got \"https://example.com%EF%BF%BD/\""
+    },
+    {
+      "sha": "2aa72cbc76cb59ad908d8e7c0ddd83158bacf45b",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/url-constructor-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-constructor-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 516 tests; 394 PASS, 122 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 517 tests; 394 PASS, 123 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -400,6 +400,7 @@ PASS Parsing: <sc:\\../> against <about:blank>\n PASS Parsing: <sc::a@example.net> against <about:blank>\n PASS Parsing: <wow:%NBD> against <about:blank>\n PASS Parsing: <wow:%1G> against <about:blank>\n+FAIL Parsing: <wow:\uffff> against <about:blank> assert_equals: href expected \"wow:%EF%BF%BF\" but got \"wow:%EF%BF%BD\"\n PASS Parsing: <ftp://example.com%80/> against <about:blank>\n PASS Parsing: <ftp://example.com%A0/> against <about:blank>\n PASS Parsing: <https://example.com%80/> against <about:blank>"
+    },
+    {
+      "sha": "616310c96a28818af4042998f0a4920562a81562",
+      "filename": "third_party/blink/web_tests/platform/win/external/wpt/url/url-origin-expected.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Fplatform%2Fwin%2Fexternal%2Fwpt%2Furl%2Furl-origin-expected.txt?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1,5 +1,5 @@\n This is a testharness.js-based test.\n-Found 303 tests; 294 PASS, 9 FAIL, 0 TIMEOUT, 0 NOTRUN.\n+Found 304 tests; 295 PASS, 9 FAIL, 0 TIMEOUT, 0 NOTRUN.\n PASS Loading data\u2026\n PASS Origin parsing: <http://example\t.\n org> against <http://example.org/foo/bar>\n@@ -262,6 +262,7 @@ PASS Origin parsing: <sc:\\../> against <about:blank>\n PASS Origin parsing: <sc::a@example.net> against <about:blank>\n PASS Origin parsing: <wow:%NBD> against <about:blank>\n PASS Origin parsing: <wow:%1G> against <about:blank>\n+PASS Origin parsing: <wow:\uffff> against <about:blank>\n PASS Origin parsing: <ftp://%e2%98%83> against <about:blank>\n PASS Origin parsing: <https://%e2%98%83> against <about:blank>\n PASS Origin parsing: <http://127.0.0.1:10100/relative_import.html> against <about:blank>"
+    },
+    {
+      "sha": "36fbce8ee393031f9058ac02d7e56a708e1ab978",
+      "filename": "url/url_canon_pathurl.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 11,
+      "changes": 23,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/url%2Furl_canon_pathurl.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/url%2Furl_canon_pathurl.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/url%2Furl_canon_pathurl.cc?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -16,13 +16,12 @@ namespace {\n // Canonicalize the given |component| from |source| into |output| and\n // |new_component|. If |separator| is non-zero, it is pre-pended to |output|\n // prior to the canonicalized component; i.e. for the '?' or '#' characters.\n-template<typename CHAR, typename UCHAR>\n-bool DoCanonicalizePathComponent(const CHAR* source,\n+template <typename CHAR, typename UCHAR>\n+void DoCanonicalizePathComponent(const CHAR* source,\n                                  const Component& component,\n                                  char separator,\n                                  CanonOutput* output,\n                                  Component* new_component) {\n-  bool success = true;\n   if (component.is_valid()) {\n     if (separator)\n       output->push_back(separator);\n@@ -34,7 +33,7 @@ bool DoCanonicalizePathComponent(const CHAR* source,\n     for (int i = component.begin; i < end; i++) {\n       UCHAR uch = static_cast<UCHAR>(source[i]);\n       if (uch < 0x20 || uch >= 0x80)\n-        success &= AppendUTF8EscapedChar(source, &i, end, output);\n+        AppendUTF8EscapedChar(source, &i, end, output);\n       else\n         output->push_back(static_cast<char>(uch));\n     }\n@@ -43,7 +42,6 @@ bool DoCanonicalizePathComponent(const CHAR* source,\n     // Empty part.\n     new_component->reset();\n   }\n-  return success;\n }\n \n template <typename CHAR, typename UCHAR>\n@@ -63,12 +61,15 @@ bool DoCanonicalizePathURL(const URLComponentSource<CHAR>& source,\n   new_parsed->port.reset();\n   // We allow path URLs to have the path, query and fragment components, but we\n   // will canonicalize each of the via the weaker path URL rules.\n-  success &= DoCanonicalizePathComponent<CHAR, UCHAR>(\n-      source.path, parsed.path, '\\0', output, &new_parsed->path);\n-  success &= DoCanonicalizePathComponent<CHAR, UCHAR>(\n-      source.query, parsed.query, '?', output, &new_parsed->query);\n-  success &= DoCanonicalizePathComponent<CHAR, UCHAR>(\n-      source.ref, parsed.ref, '#', output, &new_parsed->ref);\n+  //\n+  // Note: parsing the path part should never cause a failure, see\n+  // https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state\n+  DoCanonicalizePathComponent<CHAR, UCHAR>(source.path, parsed.path, '\\0',\n+                                           output, &new_parsed->path);\n+  DoCanonicalizePathComponent<CHAR, UCHAR>(source.query, parsed.query, '?',\n+                                           output, &new_parsed->query);\n+  DoCanonicalizePathComponent<CHAR, UCHAR>(source.ref, parsed.ref, '#', output,\n+                                           &new_parsed->ref);\n \n   return success;\n }"
+    },
+    {
+      "sha": "5a487ca26e7713ded9191f99d3418bc32d3703eb",
+      "filename": "url/url_canon_unittest.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 10,
+      "blob_url": "https://github.com/chromium/chromium/blob/19b1e5e4e1914b5b7464062ec300b817d2bac53d/url%2Furl_canon_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/19b1e5e4e1914b5b7464062ec300b817d2bac53d/url%2Furl_canon_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/url%2Furl_canon_unittest.cc?ref=19b1e5e4e1914b5b7464062ec300b817d2bac53d",
+      "patch": "@@ -1873,9 +1873,13 @@ TEST(URLCanonTest, CanonicalizePathURL) {\n     const char* input;\n     const char* expected;\n   } path_cases[] = {\n-    {\"javascript:\", \"javascript:\"},\n-    {\"JavaScript:Foo\", \"javascript:Foo\"},\n-    {\"Foo:\\\":This /is interesting;?#\", \"foo:\\\":This /is interesting;?#\"},\n+      {\"javascript:\", \"javascript:\"},\n+      {\"JavaScript:Foo\", \"javascript:Foo\"},\n+      {\"Foo:\\\":This /is interesting;?#\", \"foo:\\\":This /is interesting;?#\"},\n+\n+      // Validation errors should not cause failure. See\n+      // https://crbug.com/925614.\n+      {\"javascript:\\uFFFF\", \"javascript:%EF%BF%BD\"},\n   };\n \n   for (size_t i = 0; i < base::size(path_cases); i++) {"
+    }
+  ]
+}

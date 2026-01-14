@@ -1,0 +1,101 @@
+{
+  "sha": "b265455a2518ece7c004b43c144199ec980fc620",
+  "node_id": "MDY6Q29tbWl0NDMwMTEzMjU6YjI2NTQ1NWEyNTE4ZWNlN2MwMDRiNDNjMTQ0MTk5ZWM5ODBmYzYyMA==",
+  "commit": {
+    "author": {
+      "name": "Vernon Mauery",
+      "email": "vernon.mauery@linux.intel.com",
+      "date": "2020-04-03T21:28:53Z"
+    },
+    "committer": {
+      "name": "Vernon Mauery",
+      "email": "vernon.mauery@linux.intel.com",
+      "date": "2020-04-08T23:58:55Z"
+    },
+    "message": "Use more restrictive permissions on /etc/ipmi-pass\n\nThis forces the permissions on /etc/ipmi-pass to be 0600 or RW only by\nowner. This is to prevent non-owners from reading the file, even though\nit is obfuscated to make it harder for ipmi passwords to leak.\n\nTested: change ipmi passwords and see that the /etc/ipmi-pass file has\n        0600 permissions.\n\nChange-Id: I4be0b8a65f98ced031493f7767879eb054e1ee84\nSigned-off-by: Vernon Mauery <vernon.mauery@linux.intel.com>",
+    "tree": {
+      "sha": "609cdc4e99ae44811cdd73a83e9b776097e13488",
+      "url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/git/trees/609cdc4e99ae44811cdd73a83e9b776097e13488"
+    },
+    "url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/git/commits/b265455a2518ece7c004b43c144199ec980fc620",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/commits/b265455a2518ece7c004b43c144199ec980fc620",
+  "html_url": "https://github.com/openbmc/phosphor-host-ipmid/commit/b265455a2518ece7c004b43c144199ec980fc620",
+  "comments_url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/commits/b265455a2518ece7c004b43c144199ec980fc620/comments",
+  "author": {
+    "login": "vmauery",
+    "id": 41592,
+    "node_id": "MDQ6VXNlcjQxNTky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/41592?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vmauery",
+    "html_url": "https://github.com/vmauery",
+    "followers_url": "https://api.github.com/users/vmauery/followers",
+    "following_url": "https://api.github.com/users/vmauery/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vmauery/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vmauery/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vmauery/subscriptions",
+    "organizations_url": "https://api.github.com/users/vmauery/orgs",
+    "repos_url": "https://api.github.com/users/vmauery/repos",
+    "events_url": "https://api.github.com/users/vmauery/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vmauery/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vmauery",
+    "id": 41592,
+    "node_id": "MDQ6VXNlcjQxNTky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/41592?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vmauery",
+    "html_url": "https://github.com/vmauery",
+    "followers_url": "https://api.github.com/users/vmauery/followers",
+    "following_url": "https://api.github.com/users/vmauery/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vmauery/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vmauery/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vmauery/subscriptions",
+    "organizations_url": "https://api.github.com/users/vmauery/orgs",
+    "repos_url": "https://api.github.com/users/vmauery/repos",
+    "events_url": "https://api.github.com/users/vmauery/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vmauery/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0e2dbee2d19ee6865d6e95b07398943b8f536336",
+      "url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/commits/0e2dbee2d19ee6865d6e95b07398943b8f536336",
+      "html_url": "https://github.com/openbmc/phosphor-host-ipmid/commit/0e2dbee2d19ee6865d6e95b07398943b8f536336"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "5e0b30da65ca1ef5e3c691f15aa981ecf9c27023",
+      "filename": "user_channel/passwd_mgr.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/openbmc/phosphor-host-ipmid/blob/b265455a2518ece7c004b43c144199ec980fc620/user_channel%2Fpasswd_mgr.cpp",
+      "raw_url": "https://github.com/openbmc/phosphor-host-ipmid/raw/b265455a2518ece7c004b43c144199ec980fc620/user_channel%2Fpasswd_mgr.cpp",
+      "contents_url": "https://api.github.com/repos/openbmc/phosphor-host-ipmid/contents/user_channel%2Fpasswd_mgr.cpp?ref=b265455a2518ece7c004b43c144199ec980fc620",
+      "patch": "@@ -444,8 +444,8 @@ int PasswdMgr::updatePasswdSpecialFile(const std::string& userName,\n         return -EIO;\n     }\n \n-    // Set the file mode as of actual ipmi-pass file.\n-    if (fchmod(fileno((temp)()), st.st_mode) < 0)\n+    // Set the file mode as read-write for owner only\n+    if (fchmod(fileno((temp)()), S_IRUSR | S_IWUSR) < 0)\n     {\n         log<level::DEBUG>(\"Error setting fchmod for temp file\");\n         return -EIO;"
+    }
+  ]
+}

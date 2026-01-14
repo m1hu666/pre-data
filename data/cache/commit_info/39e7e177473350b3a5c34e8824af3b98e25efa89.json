@@ -1,0 +1,117 @@
+{
+  "sha": "39e7e177473350b3a5c34e8824af3b98e25efa89",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjM5ZTdlMTc3NDczMzUwYjNhNWMzNGU4ODI0YWYzYjk4ZTI1ZWZhODk=",
+  "commit": {
+    "author": {
+      "name": "Max Wang",
+      "email": "mwang@fb.com",
+      "date": "2016-07-01T16:08:51Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot-bot@fb.com",
+      "date": "2016-07-01T16:19:23Z"
+    },
+    "message": "Fix param types for mcrypt_get_block_size() to match PHP\n\nReviewed By: edwinsmith\n\nDifferential Revision: D3447281\n\nfbshipit-source-id: a88549307faad886f5a0f78d421aa28e08d21b1c",
+    "tree": {
+      "sha": "6b5a69b0b23f2bb07abb1abcf70a8b2d1a4742db",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/6b5a69b0b23f2bb07abb1abcf70a8b2d1a4742db"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/39e7e177473350b3a5c34e8824af3b98e25efa89",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/39e7e177473350b3a5c34e8824af3b98e25efa89",
+  "html_url": "https://github.com/facebook/hhvm/commit/39e7e177473350b3a5c34e8824af3b98e25efa89",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/39e7e177473350b3a5c34e8824af3b98e25efa89/comments",
+  "author": {
+    "login": "mxw",
+    "id": 1013739,
+    "node_id": "MDQ6VXNlcjEwMTM3Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1013739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mxw",
+    "html_url": "https://github.com/mxw",
+    "followers_url": "https://api.github.com/users/mxw/followers",
+    "following_url": "https://api.github.com/users/mxw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mxw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mxw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mxw/subscriptions",
+    "organizations_url": "https://api.github.com/users/mxw/orgs",
+    "repos_url": "https://api.github.com/users/mxw/repos",
+    "events_url": "https://api.github.com/users/mxw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mxw/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "6d4cf88150ea8646e9e29c1ae3a228a8cb930d51",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/6d4cf88150ea8646e9e29c1ae3a228a8cb930d51",
+      "html_url": "https://github.com/facebook/hhvm/commit/6d4cf88150ea8646e9e29c1ae3a228a8cb930d51"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 6,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "4e0413dda602689fb456dbee6171540b78478f54",
+      "filename": "hphp/runtime/ext/mcrypt/ext_mcrypt.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.cpp?ref=39e7e177473350b3a5c34e8824af3b98e25efa89",
+      "patch": "@@ -457,10 +457,10 @@ Variant HHVM_FUNCTION(mcrypt_ofb, const String& cipher, const String& key,\n }\n \n Variant HHVM_FUNCTION(mcrypt_get_block_size, const String& cipher,\n-                                    const Variant& module /* = null_string */) {\n+                                             const String& mode) {\n   MCRYPT td = mcrypt_module_open((char*)cipher.data(),\n                                  (char*)MCG(algorithms_dir).data(),\n-                                 (char*)module.asCStrRef().data(),\n+                                 (char*)mode.data(),\n                                  (char*)MCG(modes_dir).data());\n   if (td == MCRYPT_FAILED) {\n     MCRYPT_OPEN_MODULE_FAILED(\"mcrypt_get_block_size\");"
+    },
+    {
+      "sha": "c447deb77c75e9879e9e4c9532b3eb01a3527eb2",
+      "filename": "hphp/runtime/ext/mcrypt/ext_mcrypt.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmcrypt%2Fext_mcrypt.php?ref=39e7e177473350b3a5c34e8824af3b98e25efa89",
+      "patch": "@@ -297,7 +297,7 @@ function mcrypt_generic(resource $td,\n  */\n <<__Native>>\n function mcrypt_get_block_size(string $cipher,\n-                               ?string $mode = null): mixed;\n+                               string $mode): mixed;\n \n /**\n  * Gets the name of the specified cipher"
+    },
+    {
+      "sha": "d44ebd148c733ec74ac4cabe6ce132a897e93387",
+      "filename": "hphp/test/slow/ext_mcrypt/ext_mcrypt.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/hhvm/blob/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php?ref=39e7e177473350b3a5c34e8824af3b98e25efa89",
+      "patch": "@@ -106,6 +106,7 @@ function VERIFY($x) { VS($x != false, true); }\n //////////////////////////////////////////////////////////////////////\n \n VS(mcrypt_get_block_size(\"tripledes\", \"ecb\"), 8);\n+mcrypt_get_block_size(\"tripledes\");\n VS(mcrypt_get_cipher_name(MCRYPT_TRIPLEDES), \"3DES\");\n VS(mcrypt_get_iv_size(MCRYPT_CAST_256, MCRYPT_MODE_CFB), 16);\n VS(mcrypt_get_iv_size(\"des\", \"ecb\"), 8);"
+    },
+    {
+      "sha": "4d3ac560b89c7b725891053f9d8548b4ec8332f1",
+      "filename": "hphp/test/slow/ext_mcrypt/ext_mcrypt.php.expectf",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/39e7e177473350b3a5c34e8824af3b98e25efa89/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_mcrypt%2Fext_mcrypt.php.expectf?ref=39e7e177473350b3a5c34e8824af3b98e25efa89",
+      "patch": "@@ -38,6 +38,8 @@ Deprecated: Function mcrypt_ofb() is deprecated in %s/test/slow/ext_mcrypt/ext_m\n bool(true)\n bool(true)\n bool(true)\n+\n+Warning: mcrypt_get_block_size() expects exactly 2 parameters, 1 given in %s/test/slow/ext_mcrypt/ext_mcrypt.php on line 109\n bool(true)\n bool(true)\n bool(true)"
+    }
+  ]
+}

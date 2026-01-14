@@ -1,0 +1,101 @@
+{
+  "sha": "27151bfecc260e96714443613880e3b2e6596704",
+  "node_id": "MDY6Q29tbWl0OTE4NjY2NTQ6MjcxNTFiZmVjYzI2MGU5NjcxNDQ0MzYxMzg4MGUzYjJlNjU5NjcwNA==",
+  "commit": {
+    "author": {
+      "name": "Marcel Laverdet",
+      "email": "marcel@laverdet.com",
+      "date": "2021-03-18T20:20:24Z"
+    },
+    "committer": {
+      "name": "Marcel Laverdet",
+      "email": "marcel@laverdet.com",
+      "date": "2021-03-18T20:20:24Z"
+    },
+    "message": "Disallow NativeModule creation unless main isolate",
+    "tree": {
+      "sha": "e2579d3045493c9354f4e4fdb616df734735acd2",
+      "url": "https://api.github.com/repos/laverdet/isolated-vm/git/trees/e2579d3045493c9354f4e4fdb616df734735acd2"
+    },
+    "url": "https://api.github.com/repos/laverdet/isolated-vm/git/commits/27151bfecc260e96714443613880e3b2e6596704",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/laverdet/isolated-vm/commits/27151bfecc260e96714443613880e3b2e6596704",
+  "html_url": "https://github.com/laverdet/isolated-vm/commit/27151bfecc260e96714443613880e3b2e6596704",
+  "comments_url": "https://api.github.com/repos/laverdet/isolated-vm/commits/27151bfecc260e96714443613880e3b2e6596704/comments",
+  "author": {
+    "login": "laverdet",
+    "id": 128856,
+    "node_id": "MDQ6VXNlcjEyODg1Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/128856?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/laverdet",
+    "html_url": "https://github.com/laverdet",
+    "followers_url": "https://api.github.com/users/laverdet/followers",
+    "following_url": "https://api.github.com/users/laverdet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/laverdet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/laverdet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/laverdet/subscriptions",
+    "organizations_url": "https://api.github.com/users/laverdet/orgs",
+    "repos_url": "https://api.github.com/users/laverdet/repos",
+    "events_url": "https://api.github.com/users/laverdet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/laverdet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "laverdet",
+    "id": 128856,
+    "node_id": "MDQ6VXNlcjEyODg1Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/128856?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/laverdet",
+    "html_url": "https://github.com/laverdet",
+    "followers_url": "https://api.github.com/users/laverdet/followers",
+    "following_url": "https://api.github.com/users/laverdet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/laverdet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/laverdet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/laverdet/subscriptions",
+    "organizations_url": "https://api.github.com/users/laverdet/orgs",
+    "repos_url": "https://api.github.com/users/laverdet/repos",
+    "events_url": "https://api.github.com/users/laverdet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/laverdet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b4ae52bf60e7a25f258e4122ace7837659f1bd0e",
+      "url": "https://api.github.com/repos/laverdet/isolated-vm/commits/b4ae52bf60e7a25f258e4122ace7837659f1bd0e",
+      "html_url": "https://github.com/laverdet/isolated-vm/commit/b4ae52bf60e7a25f258e4122ace7837659f1bd0e"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "1802c49a4237e9d6599a386859b16c0f1f317947",
+      "filename": "src/module/native_module_handle.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/laverdet/isolated-vm/blob/27151bfecc260e96714443613880e3b2e6596704/src%2Fmodule%2Fnative_module_handle.cc",
+      "raw_url": "https://github.com/laverdet/isolated-vm/raw/27151bfecc260e96714443613880e3b2e6596704/src%2Fmodule%2Fnative_module_handle.cc",
+      "contents_url": "https://api.github.com/repos/laverdet/isolated-vm/contents/src%2Fmodule%2Fnative_module_handle.cc?ref=27151bfecc260e96714443613880e3b2e6596704",
+      "patch": "@@ -15,6 +15,9 @@ namespace ivm {\n  * RAII wrapper around libuv dlopen\n  */\n NativeModule::NativeModule(const std::string& filename) : init(nullptr) {\n+\tif (!IsolateEnvironment::GetCurrent()->IsDefault()) {\n+\t\tthrow RuntimeGenericError(\"NativeModule may only be instantiated from default nodejs isolate\");\n+\t}\n \tif (uv_dlopen(filename.c_str(), &lib) != 0) {\n \t\tthrow RuntimeGenericError(\"Failed to load module\");\n \t}"
+    }
+  ]
+}

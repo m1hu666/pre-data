@@ -1,0 +1,101 @@
+{
+  "sha": "fc522ff6eb1bbb85e3de60c60a45762571e48c28",
+  "node_id": "MDY6Q29tbWl0MjMwMzgzMzQ6ZmM1MjJmZjZlYjFiYmI4NWUzZGU2MGM2MGE0NTc2MjU3MWU0OGMyOA==",
+  "commit": {
+    "author": {
+      "name": "Aidan Holm",
+      "email": "aidanholm@gmail.com",
+      "date": "2020-02-16T05:34:42Z"
+    },
+    "committer": {
+      "name": "Aidan Holm",
+      "email": "aidanholm@gmail.com",
+      "date": "2020-02-16T05:34:42Z"
+    },
+    "message": "Disable lua load(), loadstring() bytcode loading",
+    "tree": {
+      "sha": "d0bca1bcdbcb183caf6b18e62243085effa73139",
+      "url": "https://api.github.com/repos/crawl/crawl/git/trees/d0bca1bcdbcb183caf6b18e62243085effa73139"
+    },
+    "url": "https://api.github.com/repos/crawl/crawl/git/commits/fc522ff6eb1bbb85e3de60c60a45762571e48c28",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/crawl/crawl/commits/fc522ff6eb1bbb85e3de60c60a45762571e48c28",
+  "html_url": "https://github.com/crawl/crawl/commit/fc522ff6eb1bbb85e3de60c60a45762571e48c28",
+  "comments_url": "https://api.github.com/repos/crawl/crawl/commits/fc522ff6eb1bbb85e3de60c60a45762571e48c28/comments",
+  "author": {
+    "login": "aidanholm",
+    "id": 10691965,
+    "node_id": "MDQ6VXNlcjEwNjkxOTY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10691965?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aidanholm",
+    "html_url": "https://github.com/aidanholm",
+    "followers_url": "https://api.github.com/users/aidanholm/followers",
+    "following_url": "https://api.github.com/users/aidanholm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aidanholm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aidanholm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aidanholm/subscriptions",
+    "organizations_url": "https://api.github.com/users/aidanholm/orgs",
+    "repos_url": "https://api.github.com/users/aidanholm/repos",
+    "events_url": "https://api.github.com/users/aidanholm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aidanholm/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "aidanholm",
+    "id": 10691965,
+    "node_id": "MDQ6VXNlcjEwNjkxOTY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10691965?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aidanholm",
+    "html_url": "https://github.com/aidanholm",
+    "followers_url": "https://api.github.com/users/aidanholm/followers",
+    "following_url": "https://api.github.com/users/aidanholm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aidanholm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aidanholm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aidanholm/subscriptions",
+    "organizations_url": "https://api.github.com/users/aidanholm/orgs",
+    "repos_url": "https://api.github.com/users/aidanholm/repos",
+    "events_url": "https://api.github.com/users/aidanholm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aidanholm/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e77a69270c2c28fcc13eca3778e1921da8a530f4",
+      "url": "https://api.github.com/repos/crawl/crawl/commits/e77a69270c2c28fcc13eca3778e1921da8a530f4",
+      "html_url": "https://github.com/crawl/crawl/commit/e77a69270c2c28fcc13eca3778e1921da8a530f4"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "80976b68fd024a9af495bc83ff31a9537ec604c1",
+      "filename": "crawl-ref/source/clua.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/crawl/crawl/blob/fc522ff6eb1bbb85e3de60c60a45762571e48c28/crawl-ref%2Fsource%2Fclua.cc",
+      "raw_url": "https://github.com/crawl/crawl/raw/fc522ff6eb1bbb85e3de60c60a45762571e48c28/crawl-ref%2Fsource%2Fclua.cc",
+      "contents_url": "https://api.github.com/repos/crawl/crawl/contents/crawl-ref%2Fsource%2Fclua.cc?ref=fc522ff6eb1bbb85e3de60c60a45762571e48c28",
+      "patch": "@@ -304,6 +304,9 @@ int CLua::loadfile(lua_State *ls, const char *filename, bool trusted,\n     while (!f.eof())\n         script += f.get_line() + \"\\n\";\n \n+    if (script[0] == 0x1b)\n+        abort();\n+\n     // prefixing with @ stops lua from adding [string \"%s\"]\n     return luaL_loadbuffer(ls, &script[0], script.length(),\n                            (\"@\" + file).c_str());\n@@ -796,6 +799,8 @@ void CLua::init_libraries()\n \n     lua_pushcfunction(_state, lua_loadstring);\n     lua_setglobal(_state, \"loadstring\");\n+    lua_pushnil(_state);\n+    lua_setglobal(_state, \"load\");\n \n     // Open Crawl bindings\n     cluaopen_kills(_state);"
+    }
+  ]
+}

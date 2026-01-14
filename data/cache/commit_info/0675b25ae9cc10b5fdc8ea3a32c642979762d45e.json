@@ -1,0 +1,101 @@
+{
+  "sha": "0675b25ae9cc10b5fdc8ea3a32c642979762d45e",
+  "node_id": "MDY6Q29tbWl0MjgwOTg5ODg6MDY3NWIyNWFlOWNjMTBiNWZkYzhlYTNhMzJjNjQyOTc5NzYyZDQ1ZQ==",
+  "commit": {
+    "author": {
+      "name": "John Doering",
+      "email": "ghostlander@gmail.com",
+      "date": "2021-09-15T07:49:34Z"
+    },
+    "committer": {
+      "name": "John Doering",
+      "email": "ghostlander@gmail.com",
+      "date": "2021-09-15T07:49:34Z"
+    },
+    "message": "Block Verification Vulnerability Eliminated\n\nFixed a critical vulnerability allowing to accept a proof-of-work block\ncontaining one or more coin stake transactions in addition to a valid\ncoin base. Output values of such coin stakes were out of control.",
+    "tree": {
+      "sha": "9abc6cfc138693b4ebccc3d3ea086430c092b22c",
+      "url": "https://api.github.com/repos/ghostlander/Halcyon/git/trees/9abc6cfc138693b4ebccc3d3ea086430c092b22c"
+    },
+    "url": "https://api.github.com/repos/ghostlander/Halcyon/git/commits/0675b25ae9cc10b5fdc8ea3a32c642979762d45e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ghostlander/Halcyon/commits/0675b25ae9cc10b5fdc8ea3a32c642979762d45e",
+  "html_url": "https://github.com/ghostlander/Halcyon/commit/0675b25ae9cc10b5fdc8ea3a32c642979762d45e",
+  "comments_url": "https://api.github.com/repos/ghostlander/Halcyon/commits/0675b25ae9cc10b5fdc8ea3a32c642979762d45e/comments",
+  "author": {
+    "login": "ghostlander",
+    "id": 5027512,
+    "node_id": "MDQ6VXNlcjUwMjc1MTI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5027512?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghostlander",
+    "html_url": "https://github.com/ghostlander",
+    "followers_url": "https://api.github.com/users/ghostlander/followers",
+    "following_url": "https://api.github.com/users/ghostlander/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghostlander/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghostlander/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghostlander/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghostlander/orgs",
+    "repos_url": "https://api.github.com/users/ghostlander/repos",
+    "events_url": "https://api.github.com/users/ghostlander/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghostlander/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ghostlander",
+    "id": 5027512,
+    "node_id": "MDQ6VXNlcjUwMjc1MTI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5027512?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghostlander",
+    "html_url": "https://github.com/ghostlander",
+    "followers_url": "https://api.github.com/users/ghostlander/followers",
+    "following_url": "https://api.github.com/users/ghostlander/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghostlander/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghostlander/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghostlander/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghostlander/orgs",
+    "repos_url": "https://api.github.com/users/ghostlander/repos",
+    "events_url": "https://api.github.com/users/ghostlander/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghostlander/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "37c20150540be89fdfcfc9e19a09e10d60d52ac3",
+      "url": "https://api.github.com/repos/ghostlander/Halcyon/commits/37c20150540be89fdfcfc9e19a09e10d60d52ac3",
+      "html_url": "https://github.com/ghostlander/Halcyon/commit/37c20150540be89fdfcfc9e19a09e10d60d52ac3"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 27,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "ef594ab4b58bb7dec046a13be5c9d9a1b8baaea4",
+      "filename": "src/main.cpp",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 19,
+      "changes": 46,
+      "blob_url": "https://github.com/ghostlander/Halcyon/blob/0675b25ae9cc10b5fdc8ea3a32c642979762d45e/src%2Fmain.cpp",
+      "raw_url": "https://github.com/ghostlander/Halcyon/raw/0675b25ae9cc10b5fdc8ea3a32c642979762d45e/src%2Fmain.cpp",
+      "contents_url": "https://api.github.com/repos/ghostlander/Halcyon/contents/src%2Fmain.cpp?ref=0675b25ae9cc10b5fdc8ea3a32c642979762d45e",
+      "patch": "@@ -2099,6 +2099,7 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u\n \n \n bool CBlock::CheckBlock() const {\n+    uint i;\n \n     // These are checks that are independent of context\n     // that can be verified before saving an orphan block.\n@@ -2107,44 +2108,35 @@ bool CBlock::CheckBlock() const {\n     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)\n         return DoS(100, error(\"CheckBlock() : size limits failed\"));\n \n-    if(IsProofOfWork()) {\n-\n-        /* Proof-of-work verification against target */\n-        if(!CheckProofOfWork(GetHashPoW(), nBits))\n-          return(DoS(50, error(\"CheckBlock() : proof-of-work verification failed\")));\n-\n-        /* Proof-of-work block signature verification */\n-        if(!CheckBlockSignature())\n-          return(DoS(100, error(\"CheckBlock() : bad proof-of-work block signature\")));\n-    }\n-\n     // Check timestamp\n     if (GetBlockTime() > FutureDrift(GetAdjustedTime()))\n         return error(\"CheckBlock() : block timestamp too far in the future\");\n \n     // First transaction must be coinbase, the rest must not be\n     if (vtx.empty() || !vtx[0].IsCoinBase())\n         return DoS(100, error(\"CheckBlock() : first tx is not coinbase\"));\n-    for (unsigned int i = 1; i < vtx.size(); i++)\n-        if (vtx[i].IsCoinBase())\n-            return DoS(100, error(\"CheckBlock() : more than one coinbase\"));\n+    for(i = 1; i < vtx.size(); i++) {\n+        if(vtx[i].IsCoinBase())\n+          return(DoS(100, error(\"CheckBlock() : more than one coin base\")));\n+    }\n \n     // Check coinbase timestamp\n     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))\n         return DoS(50, error(\"CheckBlock() : coinbase timestamp is too early\"));\n \n-    if (IsProofOfStake())\n-    {\n+    if(IsProofOfStake()) {\n+\n         // Coinbase output should be empty if proof-of-stake block\n         if (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty())\n             return DoS(100, error(\"CheckBlock() : coinbase output not empty for proof-of-stake block\"));\n \n         // Second transaction must be coinstake, the rest must not be\n         if (vtx.empty() || !vtx[1].IsCoinStake())\n             return DoS(100, error(\"CheckBlock() : second tx is not coinstake\"));\n-        for (unsigned int i = 2; i < vtx.size(); i++)\n-            if (vtx[i].IsCoinStake())\n-                return DoS(100, error(\"CheckBlock() : more than one coinstake\"));\n+        for(i = 2; i < vtx.size(); i++) {\n+            if(vtx[i].IsCoinStake())\n+              return(DoS(100, error(\"CheckBlock() : more than one coin stake\")));\n+        }\n \n         // Check coinstake timestamp\n         if (!CheckCoinStakeTimestamp(GetBlockTime(), (int64_t)vtx[1].nTime))\n@@ -2153,6 +2145,22 @@ bool CBlock::CheckBlock() const {\n         // NovaCoin: check proof-of-stake block signature\n         if(!CheckBlockSignature())\n             return DoS(100, error(\"CheckBlock() : bad proof-of-stake block signature\"));\n+\n+    } else {\n+\n+        /* No coin stakes in PoW blocks */\n+        for(i = 1; i < vtx.size(); i++) {\n+            if(vtx[i].IsCoinStake() && (vtx[i].nTime > 1626307200))\n+              return(DoS(100, error(\"CheckBlock() : rogue coin stake\")));\n+        }\n+\n+        /* Proof-of-work verification against target */\n+        if(!CheckProofOfWork(GetHashPoW(), nBits))\n+          return(DoS(50, error(\"CheckBlock() : proof-of-work verification failed\")));\n+\n+        /* Proof-of-work block signature verification */\n+        if(!CheckBlockSignature())\n+          return(DoS(100, error(\"CheckBlock() : bad proof-of-work block signature\")));\n     }\n \n     // Check transactions"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "sha": "3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5",
+  "node_id": "MDY6Q29tbWl0MTk3NDk0MDA2OjM1NDhhNmI2ZmJkMzdiNzI3YTJjMGE1ZmFjMmE2YjIyZGRlZjkyZDU=",
+  "commit": {
+    "author": {
+      "name": "Lei Zhang",
+      "email": "thestig@chromium.org",
+      "date": "2019-02-07T18:45:58Z"
+    },
+    "committer": {
+      "name": "Chromium commit bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2019-02-07T18:45:58Z"
+    },
+    "message": "Check for integer overflows in AdjustGlyphSpace().\n\nBUG=chromium:914983\n\nChange-Id: I90f0ae85e547efbe52a27d32a06af10ed65d6722\nReviewed-on: https://pdfium-review.googlesource.com/c/50112\nReviewed-by: Tom Sepez <tsepez@chromium.org>\nCommit-Queue: Lei Zhang <thestig@chromium.org>",
+    "tree": {
+      "sha": "debd7d52efe06325a2743d90f1f2470e9307bbf5",
+      "url": "https://api.github.com/repos/sanarea/pdfium/git/trees/debd7d52efe06325a2743d90f1f2470e9307bbf5"
+    },
+    "url": "https://api.github.com/repos/sanarea/pdfium/git/commits/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/sanarea/pdfium/commits/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5",
+  "html_url": "https://github.com/sanarea/pdfium/commit/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5",
+  "comments_url": "https://api.github.com/repos/sanarea/pdfium/commits/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5/comments",
+  "author": {
+    "login": "leizleiz",
+    "id": 12983898,
+    "node_id": "MDQ6VXNlcjEyOTgzODk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12983898?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leizleiz",
+    "html_url": "https://github.com/leizleiz",
+    "followers_url": "https://api.github.com/users/leizleiz/followers",
+    "following_url": "https://api.github.com/users/leizleiz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leizleiz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leizleiz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leizleiz/subscriptions",
+    "organizations_url": "https://api.github.com/users/leizleiz/orgs",
+    "repos_url": "https://api.github.com/users/leizleiz/repos",
+    "events_url": "https://api.github.com/users/leizleiz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leizleiz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "533ade11b9d49d0f7de6d1565651b46e5f0e8896",
+      "url": "https://api.github.com/repos/sanarea/pdfium/commits/533ade11b9d49d0f7de6d1565651b46e5f0e8896",
+      "html_url": "https://github.com/sanarea/pdfium/commit/533ade11b9d49d0f7de6d1565651b46e5f0e8896"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 16,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "17770b1e393b5c2a72a4050e04f7148b92e6c098",
+      "filename": "core/fxge/cfx_renderdevice.cpp",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 4,
+      "changes": 20,
+      "blob_url": "https://github.com/sanarea/pdfium/blob/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5/core%2Ffxge%2Fcfx_renderdevice.cpp",
+      "raw_url": "https://github.com/sanarea/pdfium/raw/3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5/core%2Ffxge%2Fcfx_renderdevice.cpp",
+      "contents_url": "https://api.github.com/repos/sanarea/pdfium/contents/core%2Ffxge%2Fcfx_renderdevice.cpp?ref=3548a6b6fbd37b727a2c0a5fac2a6b22ddef92d5",
+      "patch": "@@ -39,7 +39,7 @@ void AdjustGlyphSpace(std::vector<TextGlyphPos>* pGlyphAndPos) {\n     return;\n \n   for (size_t i = glyphs.size() - 1; i > 1; --i) {\n-    TextGlyphPos& next = glyphs[i];\n+    const TextGlyphPos& next = glyphs[i];\n     int next_origin = bVertical ? next.m_Origin.y : next.m_Origin.x;\n     float next_origin_f = bVertical ? next.m_fOrigin.y : next.m_fOrigin.x;\n \n@@ -48,11 +48,23 @@ void AdjustGlyphSpace(std::vector<TextGlyphPos>* pGlyphAndPos) {\n     float current_origin_f =\n         bVertical ? current.m_fOrigin.y : current.m_fOrigin.x;\n \n-    int space = next_origin - current_origin;\n+    FX_SAFE_INT32 safe_space = next_origin;\n+    safe_space -= current_origin;\n+    if (!safe_space.IsValid())\n+      continue;\n+\n+    int space = safe_space.ValueOrDie();\n     float space_f = next_origin_f - current_origin_f;\n     float error = fabs(space_f) - fabs(static_cast<float>(space));\n-    if (error > 0.5f)\n-      current_origin += space > 0 ? -1 : 1;\n+    if (error <= 0.5f)\n+      continue;\n+\n+    FX_SAFE_INT32 safe_origin = current_origin;\n+    safe_origin += space > 0 ? -1 : 1;\n+    if (!safe_origin.IsValid())\n+      continue;\n+\n+    current_origin = safe_origin.ValueOrDie();\n   }\n }\n "
+    }
+  ]
+}

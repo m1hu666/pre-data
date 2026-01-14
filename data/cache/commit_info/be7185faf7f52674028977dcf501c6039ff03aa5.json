@@ -1,0 +1,101 @@
+{
+  "sha": "be7185faf7f52674028977dcf501c6039ff03aa5",
+  "node_id": "MDY6Q29tbWl0MjkyNjg2MTE6YmU3MTg1ZmFmN2Y1MjY3NDAyODk3N2RjZjUwMWM2MDM5ZmYwM2FhNQ==",
+  "commit": {
+    "author": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T17:36:28Z"
+    },
+    "committer": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T17:36:28Z"
+    },
+    "message": "fix for #182",
+    "tree": {
+      "sha": "252166568ecb91acc7e09658abdea4442c0294b4",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/trees/252166568ecb91acc7e09658abdea4442c0294b4"
+    },
+    "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/commits/be7185faf7f52674028977dcf501c6039ff03aa5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/be7185faf7f52674028977dcf501c6039ff03aa5",
+  "html_url": "https://github.com/axiomatic-systems/Bento4/commit/be7185faf7f52674028977dcf501c6039ff03aa5",
+  "comments_url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/be7185faf7f52674028977dcf501c6039ff03aa5/comments",
+  "author": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d0d9473b0c57345a6afa5890666a7250ad64bcb1",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/d0d9473b0c57345a6afa5890666a7250ad64bcb1",
+      "html_url": "https://github.com/axiomatic-systems/Bento4/commit/d0d9473b0c57345a6afa5890666a7250ad64bcb1"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 6,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "f5bd069694b58223c8ce8a25ca2b237137ddecfb",
+      "filename": "Source/C++/Core/Ap4AtomFactory.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/axiomatic-systems/Bento4/blob/be7185faf7f52674028977dcf501c6039ff03aa5/Source%2FC%2B%2B%2FCore%2FAp4AtomFactory.cpp",
+      "raw_url": "https://github.com/axiomatic-systems/Bento4/raw/be7185faf7f52674028977dcf501c6039ff03aa5/Source%2FC%2B%2B%2FCore%2FAp4AtomFactory.cpp",
+      "contents_url": "https://api.github.com/repos/axiomatic-systems/Bento4/contents/Source%2FC%2B%2B%2FCore%2FAp4AtomFactory.cpp?ref=be7185faf7f52674028977dcf501c6039ff03aa5",
+      "patch": "@@ -490,13 +490,17 @@ AP4_AtomFactory::CreateAtomFromStream(AP4_ByteStream& stream,\n           case AP4_ATOM_TYPE_HVCE:\n             if (atom_is_large) return AP4_ERROR_INVALID_FORMAT;\n             atom = AP4_HvccAtom::Create(size_32, stream);\n-            atom->SetType(AP4_ATOM_TYPE_HVCE);\n+            if (atom) {\n+                atom->SetType(AP4_ATOM_TYPE_HVCE);\n+            }\n             break;\n \n           case AP4_ATOM_TYPE_AVCE:\n             if (atom_is_large) return AP4_ERROR_INVALID_FORMAT;\n             atom = AP4_AvccAtom::Create(size_32, stream);\n-            atom->SetType(AP4_ATOM_TYPE_AVCE);\n+            if (atom) {\n+                atom->SetType(AP4_ATOM_TYPE_AVCE);\n+            }\n             break;\n \n     #if !defined(AP4_CONFIG_MINI_BUILD)"
+    }
+  ]
+}

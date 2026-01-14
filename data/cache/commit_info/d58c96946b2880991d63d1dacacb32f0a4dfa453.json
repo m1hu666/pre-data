@@ -1,0 +1,159 @@
+{
+  "sha": "d58c96946b2880991d63d1dacacb32f0a4dfa453",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZDU4Yzk2OTQ2YjI4ODA5OTFkNjNkMWRhY2FjYjMyZjBhNGRmYTQ1Mw==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T21:04:39Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T21:21:55Z"
+    },
+    "message": "[tflite] Ensure inputs and outputs don't overlap.\n\nIf a model uses the same tensor for both an input and an output then this can result in data loss and memory corruption. This should not happen.\n\nPiperOrigin-RevId: 332522916\nChange-Id: If0905b142415a9dfceaf2d181872f2a8fb88f48a",
+    "tree": {
+      "sha": "da62cf6ecfef550090371994d823e7c98fa0dae1",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/da62cf6ecfef550090371994d823e7c98fa0dae1"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/d58c96946b2880991d63d1dacacb32f0a4dfa453",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/d58c96946b2880991d63d1dacacb32f0a4dfa453",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/d58c96946b2880991d63d1dacacb32f0a4dfa453",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/d58c96946b2880991d63d1dacacb32f0a4dfa453/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1970c2158b1ffa416d159d03c3370b9a462aee35",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/1970c2158b1ffa416d159d03c3370b9a462aee35",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/1970c2158b1ffa416d159d03c3370b9a462aee35"
+    }
+  ],
+  "stats": {
+    "total": 66,
+    "additions": 66,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e50cd4549b297d9cea5a4c9fbeec1922fc3bfb65",
+      "filename": "tensorflow/lite/BUILD",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2FBUILD",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2FBUILD",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2FBUILD?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453",
+      "patch": "@@ -466,6 +466,7 @@ cc_test(\n     data = [\n         \"testdata/0_subgraphs.bin\",\n         \"testdata/2_subgraphs.bin\",\n+        \"testdata/add_shared_tensors.bin\",\n         \"testdata/empty_model.bin\",\n         \"testdata/multi_add_flex.bin\",\n         \"testdata/sparse_tensor.bin\","
+    },
+    {
+      "sha": "47d0fddb12bd6c8b2544d29262222f6fc22cc79d",
+      "filename": "tensorflow/lite/core/subgraph.cc",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.cc?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453",
+      "patch": "@@ -581,6 +581,33 @@ TfLiteStatus Subgraph::CheckTensorIndices(const char* label, const int* indices,\n   return kTfLiteOk;\n }\n \n+// We have two arrays and we need to check that elements from one array don't\n+// show up in the other. We could sort both arrays and then iterate with two\n+// pointers from start to finish always increasing the smaller one but since\n+// these arrays are usually short (<25 elements for inputs, usually <3 for\n+// outputs), this might be slower than the naive approach (if arrays have size n\n+// and m, with n >> m ~ O(1), first approach is O(nlogn) whereas the other is\n+// O(n)). Plus, sorting the input and output arrays might not be something we\n+// want as it destroys ordering of elements.\n+//\n+// If it turns out that this is an issue, we can switch to the other algorithm.\n+TfLiteStatus Subgraph::CheckInputAndOutputForOverlap(const int* input_indices,\n+                                                     int num_inputs,\n+                                                     const int* output_indices,\n+                                                     int num_outputs) {\n+  for (int i = 0; i < num_inputs; i++) {\n+    for (int j = 0; j < num_outputs; j++) {\n+      if (input_indices[i] == output_indices[j]) {\n+        ReportError(\"Tensor %d is both input %d and output %d\\n\",\n+                    input_indices[i], i, j);\n+        consistent_ = false;\n+        return kTfLiteError;\n+      }\n+    }\n+  }\n+  return kTfLiteOk;\n+}\n+\n namespace {\n // Multiply two sizes and return true if overflow occurred;\n // This is based off tensorflow/overflow.h but is simpler as we already\n@@ -707,6 +734,16 @@ TfLiteStatus Subgraph::AddNodeWithParameters(\n       &context_,\n       CheckTensorIndices(\"node outputs\", outputs.data(), outputs.size()));\n \n+  // For builtin ops, inputs and outputs must not overlap. Custom ops must do\n+  // this check by themselves if they don't support overlapping tensors. This\n+  // distinction is to allow custom ops to just forward a tensor, reusing it as\n+  // both input and output.\n+  if (builtin_data != nullptr) {\n+    TF_LITE_ENSURE_OK(&context_, CheckInputAndOutputForOverlap(\n+                                     inputs.data(), inputs.size(),\n+                                     outputs.data(), outputs.size()));\n+  }\n+\n   int new_node_index = nodes_and_registration_.size();\n   if (node_index) *node_index = new_node_index;\n   nodes_and_registration_.resize(nodes_and_registration_.size() + 1);"
+    },
+    {
+      "sha": "b94d1a0b2bc4dd9e0e1f96f87a7df6ace5c5a3a6",
+      "filename": "tensorflow/lite/core/subgraph.h",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fcore%2Fsubgraph.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fcore%2Fsubgraph.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.h?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453",
+      "patch": "@@ -451,6 +451,15 @@ class Subgraph {\n   TfLiteStatus CheckTensorIndices(const char* label, const int* indices,\n                                   int length);\n \n+  // Check that the input indices and the output indices don't overlap.\n+  // This is needed because same tensor must not be used both as input and\n+  // output for an operator.\n+  // NOTE: this changes consistent_ to be false if indices are out of bounds.\n+  TfLiteStatus CheckInputAndOutputForOverlap(const int* input_indices,\n+                                             int num_inputs,\n+                                             const int* output_indices,\n+                                             int num_outputs);\n+\n   // Compute the number of bytes required to represent a tensor with dimensions\n   // specified by the array dims (of length dims_size). Returns the status code\n   // and bytes."
+    },
+    {
+      "sha": "6993e350a48835d681e0adb902080c2e9a301525",
+      "filename": "tensorflow/lite/model_test.cc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fmodel_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Fmodel_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fmodel_test.cc?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453",
+      "patch": "@@ -438,6 +438,25 @@ TEST(BasicFlatBufferModel, TestParseModelWithSparseTensor) {\n }\n \n // TODO(b/150072943): Add malformed model with sparse tensor tests.\n+TEST(BasicFlatBufferModel, TestHandleMalformedModel) {\n+  const auto model_paths = {\n+      // These models use the same tensor as both input and ouput of a node\n+      \"tensorflow/lite/testdata/add_shared_tensors.bin\",\n+  };\n+\n+  for (const auto& model_path : model_paths) {\n+    std::unique_ptr<tflite::FlatBufferModel> model =\n+        FlatBufferModel::BuildFromFile(model_path);\n+    ASSERT_NE(model, nullptr);\n+\n+    tflite::ops::builtin::BuiltinOpResolver resolver;\n+    InterpreterBuilder builder(*model, resolver);\n+    std::unique_ptr<Interpreter> interpreter;\n+    ASSERT_EQ(builder(&interpreter), kTfLiteOk);\n+    ASSERT_NE(interpreter, nullptr);\n+    ASSERT_NE(interpreter->AllocateTensors(), kTfLiteOk);\n+  }\n+}\n \n // TODO(aselle): Add tests for serialization of builtin op data types.\n // These tests will occur with the evaluation tests of individual operators,"
+    },
+    {
+      "sha": "cf9f9775818b9fedc6a777be6f9ad3f4e58ffe1c",
+      "filename": "tensorflow/lite/testdata/add_shared_tensors.bin",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Ftestdata%2Fadd_shared_tensors.bin",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Ftestdata%2Fadd_shared_tensors.bin",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Ftestdata%2Fadd_shared_tensors.bin?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453"
+    },
+    {
+      "sha": "ec4c8dcf1fc3e2a51447303fe1791d31cc758d0e",
+      "filename": "tensorflow/lite/testdata/sparse_tensor.bin",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Ftestdata%2Fsparse_tensor.bin",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/d58c96946b2880991d63d1dacacb32f0a4dfa453/tensorflow%2Flite%2Ftestdata%2Fsparse_tensor.bin",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Ftestdata%2Fsparse_tensor.bin?ref=d58c96946b2880991d63d1dacacb32f0a4dfa453"
+    }
+  ]
+}

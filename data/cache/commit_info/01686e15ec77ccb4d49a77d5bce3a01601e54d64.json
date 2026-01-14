@@ -1,0 +1,101 @@
+{
+  "sha": "01686e15ec77ccb4d49a77d5bce3a01601e54d64",
+  "node_id": "MDY6Q29tbWl0MTExMzE2MzE6MDE2ODZlMTVlYzc3Y2NiNGQ0OWE3N2Q1YmNlM2EwMTYwMWU1NGQ2NA==",
+  "commit": {
+    "author": {
+      "name": "David Goldblatt",
+      "email": "davidgoldblatt@fb.com",
+      "date": "2019-05-03T01:52:10Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-05-03T01:55:05Z"
+    },
+    "message": "Throw on skipping an invalid type.\n\nSummary:\nCertain values (e.g.) T_STOP should not appear as a skip type. Allowing them to\ncan cause thrift to loop unboundedly.\n\nReviewed By: spalamarchuk\n\nDifferential Revision: D15102451\n\nfbshipit-source-id: c08d52f44f37e9c212d3480233ac217105586c9f",
+    "tree": {
+      "sha": "c1051c8a7df5e450068154da543283b7c7309de1",
+      "url": "https://api.github.com/repos/facebook/fbthrift/git/trees/c1051c8a7df5e450068154da543283b7c7309de1"
+    },
+    "url": "https://api.github.com/repos/facebook/fbthrift/git/commits/01686e15ec77ccb4d49a77d5bce3a01601e54d64",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/fbthrift/commits/01686e15ec77ccb4d49a77d5bce3a01601e54d64",
+  "html_url": "https://github.com/facebook/fbthrift/commit/01686e15ec77ccb4d49a77d5bce3a01601e54d64",
+  "comments_url": "https://api.github.com/repos/facebook/fbthrift/commits/01686e15ec77ccb4d49a77d5bce3a01601e54d64/comments",
+  "author": {
+    "login": "davidtgoldblatt",
+    "id": 1660204,
+    "node_id": "MDQ6VXNlcjE2NjAyMDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1660204?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtgoldblatt",
+    "html_url": "https://github.com/davidtgoldblatt",
+    "followers_url": "https://api.github.com/users/davidtgoldblatt/followers",
+    "following_url": "https://api.github.com/users/davidtgoldblatt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtgoldblatt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtgoldblatt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtgoldblatt/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtgoldblatt/orgs",
+    "repos_url": "https://api.github.com/users/davidtgoldblatt/repos",
+    "events_url": "https://api.github.com/users/davidtgoldblatt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtgoldblatt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "247af60c7fed8969485fcf7f548dcf4b64652306",
+      "url": "https://api.github.com/repos/facebook/fbthrift/commits/247af60c7fed8969485fcf7f548dcf4b64652306",
+      "html_url": "https://github.com/facebook/fbthrift/commit/247af60c7fed8969485fcf7f548dcf4b64652306"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "273ff10be68cf1bf816fbc2ef66b935cd064a4b6",
+      "filename": "thrift/lib/cpp/protocol/TProtocol.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/01686e15ec77ccb4d49a77d5bce3a01601e54d64/thrift%2Flib%2Fcpp%2Fprotocol%2FTProtocol.h",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/01686e15ec77ccb4d49a77d5bce3a01601e54d64/thrift%2Flib%2Fcpp%2Fprotocol%2FTProtocol.h",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fcpp%2Fprotocol%2FTProtocol.h?ref=01686e15ec77ccb4d49a77d5bce3a01601e54d64",
+      "patch": "@@ -165,8 +165,9 @@ uint32_t skip(Protocol_& prot, TType arg_type) {\n       result += prot.readListEnd();\n       return result;\n     }\n-    default:\n-      return 0;\n+    default: {\n+      TProtocolException::throwInvalidSkipType(arg_type);\n+    }\n   }\n }\n "
+    }
+  ]
+}

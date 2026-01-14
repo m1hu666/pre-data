@@ -1,0 +1,157 @@
+{
+  "sha": "adf095206f25471e864a8e63a0f1caef53a0e3a6",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6YWRmMDk1MjA2ZjI1NDcxZTg2NGE4ZTYzYTBmMWNhZWY1M2EwZTNhNg==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T22:10:57Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T22:17:30Z"
+    },
+    "message": "Validate `NodeDef`s from `FunctionDefLibrary` of a `GraphDef`.\n\nWe already validated `NodeDef`s from a `GraphDef` but missed validating those from the `FunctionDefLibrary`. Thus, some maliciously crafted models could evade detection and cause denial of service due to a `CHECK`-fail.\n\nPiperOrigin-RevId: 332536309\nChange-Id: I052efe919ff1fe2f90815e286a1aa4c54c7b94ff",
+    "tree": {
+      "sha": "6918f480dd1ab02e0dc0b3d863cc0eed50287f2a",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/6918f480dd1ab02e0dc0b3d863cc0eed50287f2a"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/adf095206f25471e864a8e63a0f1caef53a0e3a6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/adf095206f25471e864a8e63a0f1caef53a0e3a6",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/adf095206f25471e864a8e63a0f1caef53a0e3a6",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/adf095206f25471e864a8e63a0f1caef53a0e3a6/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2d88f470dea2671b430884260f3626b1fe99830a",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/2d88f470dea2671b430884260f3626b1fe99830a",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/2d88f470dea2671b430884260f3626b1fe99830a"
+    }
+  ],
+  "stats": {
+    "total": 63,
+    "additions": 48,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "70d080a682fb88f07d60ee550ed5026403982b11",
+      "filename": "tensorflow/cc/saved_model/loader.cc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 15,
+      "changes": 46,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Floader.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Floader.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Floader.cc?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6",
+      "patch": "@@ -21,6 +21,7 @@ limitations under the License.\n #include \"tensorflow/cc/saved_model/loader_util.h\"\n #include \"tensorflow/cc/saved_model/reader.h\"\n #include \"tensorflow/core/framework/attr_value.pb.h\"\n+#include \"tensorflow/core/framework/function.pb.h\"\n #include \"tensorflow/core/framework/node_def.pb.h\"\n #include \"tensorflow/core/framework/tensor.pb.h\"\n #include \"tensorflow/core/lib/io/path.h\"\n@@ -73,26 +74,41 @@ uint64 GetLatencyMicroseconds(const uint64 start_microseconds) {\n // Ensure that constant tensors loaded from the saved model have valid shape.\n // Also ensure that constant nodes have a value assigned to them.\n // TODO(b/154763635): this is temporary and will be replaced with a better audit\n+static Status ValidateNode(const NodeDef& node) {\n+  const auto node_iterator = node.attr().find(\"value\");\n+  if (node_iterator != node.attr().end()) {\n+    AttrValue node_value = node_iterator->second;\n+    if (node_value.has_tensor()) {\n+      const PartialTensorShape node_shape(node_value.tensor().tensor_shape());\n+      if (node_shape.num_elements() < 0) {\n+        return errors::FailedPrecondition(\n+            \"Saved model contains node \\\"\", node.name(), \"\\\" (op \\\"\", node.op(),\n+            \"\\\") which initializes from a tensor with \",\n+            node_shape.num_elements(), \" elements\");\n+      }\n+    }\n+  } else if (node.op() == \"Const\") {\n+    return errors::FailedPrecondition(\n+        \"Saved model contains node \\\"\", node.name(),\n+        \"\\\" which is a constant tensor but no value has been provided\");\n+  }\n+  return Status::OK();\n+}\n+\n static Status ValidateSavedTensors(const GraphDef& graph_def) {\n   for (const auto& node : graph_def.node()) {\n-    const auto node_iterator = node.attr().find(\"value\");\n-    if (node_iterator != node.attr().end()) {\n-      AttrValue node_value = node_iterator->second;\n-      if (node_value.has_tensor()) {\n-        const PartialTensorShape node_shape(node_value.tensor().tensor_shape());\n-        if (node_shape.num_elements() < 0) {\n-          return errors::FailedPrecondition(\n-              \"Saved model contains node \\\"\", node.name(), \"\\\" (op \\\"\",\n-              node.op(), \"\\\") which initializes from a tensor with \",\n-              node_shape.num_elements(), \" elements\");\n-        }\n+    TF_RETURN_IF_ERROR(ValidateNode(node));\n+  }\n+\n+  if (graph_def.has_library()) {\n+    const FunctionDefLibrary& library = graph_def.library();\n+    for (const auto& function : library.function()) {\n+      for (const auto& node : function.node_def()) {\n+        TF_RETURN_IF_ERROR(ValidateNode(node));\n       }\n-    } else if (node.op() == \"Const\") {\n-      return errors::FailedPrecondition(\n-          \"Saved model contains node \\\"\", node.name(),\n-          \"\\\" which is a constant tensor but no value has been provided\");\n     }\n   }\n+\n   return Status::OK();\n }\n "
+    },
+    {
+      "sha": "127176002b9aee1f80b3eed76b8e216d73a68cff",
+      "filename": "tensorflow/cc/saved_model/saved_model_bundle_test.cc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Fsaved_model_bundle_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Fsaved_model_bundle_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Fsaved_model_bundle_test.cc?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6",
+      "patch": "@@ -45,6 +45,8 @@ constexpr char kTestFuzzGeneratedNegativeShape[] =\n     \"cc/saved_model/testdata/fuzz_generated/negative_shape\";\n constexpr char kTestFuzzGeneratedConstWithNoValue[] =\n     \"cc/saved_model/testdata/fuzz_generated/const_with_no_value\";\n+constexpr char kTestFuzzGeneratedBadNodeAttr[] =\n+    \"cc/saved_model/testdata/fuzz_generated/bad_node_attr\";\n \n class LoaderTest : public ::testing::Test {\n  protected:\n@@ -328,5 +330,20 @@ TEST_F(LoaderTest, ConstNoValue) {\n       std::string::npos);\n }\n \n+TEST_F(LoaderTest, BadNodeAttr) {\n+  SavedModelBundle bundle;\n+  RunOptions run_options;\n+  SessionOptions session_options;\n+\n+  const string export_dir =\n+      io::JoinPath(testing::TensorFlowSrcRoot(), kTestFuzzGeneratedBadNodeAttr);\n+  Status st = LoadSavedModel(session_options, run_options, export_dir,\n+                             {kSavedModelTagServe}, &bundle);\n+  EXPECT_FALSE(st.ok());\n+  EXPECT_NE(\n+      st.error_message().find(\"constant tensor but no value has been provided\"),\n+      std::string::npos);\n+}\n+\n }  // namespace\n }  // namespace tensorflow"
+    },
+    {
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "filename": "tensorflow/cc/saved_model/testdata/fuzz_generated/bad_node_attr/assets/empty",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fassets%2Fempty",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fassets%2Fempty",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fassets%2Fempty?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6"
+    },
+    {
+      "sha": "0b33dbe73521c4644372465d188644d53cf96cce",
+      "filename": "tensorflow/cc/saved_model/testdata/fuzz_generated/bad_node_attr/saved_model.pb",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fsaved_model.pb",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fsaved_model.pb",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fsaved_model.pb?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6"
+    },
+    {
+      "sha": "3fd3ba2223d1f42f6935aa674285dea423175a0d",
+      "filename": "tensorflow/cc/saved_model/testdata/fuzz_generated/bad_node_attr/variables/variables.data-00000-of-00001",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.data-00000-of-00001",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.data-00000-of-00001",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.data-00000-of-00001?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6"
+    },
+    {
+      "sha": "7357e8d57edb5fd403e2821211c790526053ddd7",
+      "filename": "tensorflow/cc/saved_model/testdata/fuzz_generated/bad_node_attr/variables/variables.index",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.index",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/adf095206f25471e864a8e63a0f1caef53a0e3a6/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.index",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Ftestdata%2Ffuzz_generated%2Fbad_node_attr%2Fvariables%2Fvariables.index?ref=adf095206f25471e864a8e63a0f1caef53a0e3a6"
+    }
+  ]
+}

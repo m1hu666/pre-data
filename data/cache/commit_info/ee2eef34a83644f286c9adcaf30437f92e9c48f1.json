@@ -1,0 +1,101 @@
+{
+  "sha": "ee2eef34a83644f286c9adcaf30437f92e9c48f1",
+  "node_id": "MDY6Q29tbWl0MjkzMjI3ODk6ZWUyZWVmMzRhODM2NDRmMjg2YzlhZGNhZjMwNDM3ZjkyZTljNDhmMQ==",
+  "commit": {
+    "author": {
+      "name": "oXis",
+      "email": "oxis44@gmail.com",
+      "date": "2015-01-28T13:53:02Z"
+    },
+    "committer": {
+      "name": "oXis",
+      "email": "oxis44@gmail.com",
+      "date": "2015-01-28T13:53:02Z"
+    },
+    "message": "fixed overflow vulnerability",
+    "tree": {
+      "sha": "284a23a27cacc23dcdc20419b9c13cb2f4f166b5",
+      "url": "https://api.github.com/repos/AenBleidd/FiND/git/trees/284a23a27cacc23dcdc20419b9c13cb2f4f166b5"
+    },
+    "url": "https://api.github.com/repos/AenBleidd/FiND/git/commits/ee2eef34a83644f286c9adcaf30437f92e9c48f1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/AenBleidd/FiND/commits/ee2eef34a83644f286c9adcaf30437f92e9c48f1",
+  "html_url": "https://github.com/AenBleidd/FiND/commit/ee2eef34a83644f286c9adcaf30437f92e9c48f1",
+  "comments_url": "https://api.github.com/repos/AenBleidd/FiND/commits/ee2eef34a83644f286c9adcaf30437f92e9c48f1/comments",
+  "author": {
+    "login": "oXis",
+    "id": 5463132,
+    "node_id": "MDQ6VXNlcjU0NjMxMzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5463132?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oXis",
+    "html_url": "https://github.com/oXis",
+    "followers_url": "https://api.github.com/users/oXis/followers",
+    "following_url": "https://api.github.com/users/oXis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oXis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oXis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oXis/subscriptions",
+    "organizations_url": "https://api.github.com/users/oXis/orgs",
+    "repos_url": "https://api.github.com/users/oXis/repos",
+    "events_url": "https://api.github.com/users/oXis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oXis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oXis",
+    "id": 5463132,
+    "node_id": "MDQ6VXNlcjU0NjMxMzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5463132?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oXis",
+    "html_url": "https://github.com/oXis",
+    "followers_url": "https://api.github.com/users/oXis/followers",
+    "following_url": "https://api.github.com/users/oXis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oXis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oXis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oXis/subscriptions",
+    "organizations_url": "https://api.github.com/users/oXis/orgs",
+    "repos_url": "https://api.github.com/users/oXis/repos",
+    "events_url": "https://api.github.com/users/oXis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oXis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3cc9b685ff2bae41c9baebff71842b887503aac0",
+      "url": "https://api.github.com/repos/AenBleidd/FiND/commits/3cc9b685ff2bae41c9baebff71842b887503aac0",
+      "html_url": "https://github.com/AenBleidd/FiND/commit/3cc9b685ff2bae41c9baebff71842b887503aac0"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f1cc4c50d8f1757b1d6702d9c0d6393e3244802d",
+      "filename": "validator/my_validator.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/AenBleidd/FiND/blob/ee2eef34a83644f286c9adcaf30437f92e9c48f1/validator%2Fmy_validator.cpp",
+      "raw_url": "https://github.com/AenBleidd/FiND/raw/ee2eef34a83644f286c9adcaf30437f92e9c48f1/validator%2Fmy_validator.cpp",
+      "contents_url": "https://api.github.com/repos/AenBleidd/FiND/contents/validator%2Fmy_validator.cpp?ref=ee2eef34a83644f286c9adcaf30437f92e9c48f1",
+      "patch": "@@ -55,7 +55,8 @@ int init_result(RESULT & result, void*& data) {\n \tlog_messages.printf(MSG_DEBUG, \"Check result\\n\");\n \n \tchar buff[256];\n-\tn = fscanf(f, \"%s\", buff);\n+\t//n = fscanf(f, \"%s\", buff);\n+\tfgets(buff, 256, f);\n \tchar * pch;\n \tpch = strtok(buff, \" ,\");\n \tif (pch != NULL) {"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "sha": "190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjE5MGZmZGY2YzhiMWVjNDQzYmUyMDJjN2Q2OWU2M2E3ZTNkYTI1ZTM=",
+  "commit": {
+    "author": {
+      "name": "Guilherme Ottoni",
+      "email": "ottoni@fb.com",
+      "date": "2018-12-14T16:42:02Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot@users.noreply.github.com",
+      "date": "2018-12-14T16:49:28Z"
+    },
+    "message": "Fix a bug in number_format()\n\nSummary: In case of error while calling snprintf, return empty string instead of malformed string.\n\nReviewed By: binliu19\n\nDifferential Revision: D13379372\n\nfbshipit-source-id: 1e5611598464daccc674d5a96558c9f2aee08fc8",
+    "tree": {
+      "sha": "b121351b943ba5938372cfc7aecb6e5e47e55c10",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/b121351b943ba5938372cfc7aecb6e5e47e55c10"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+  "html_url": "https://github.com/facebook/hhvm/commit/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/comments",
+  "author": {
+    "login": "ottoni",
+    "id": 815047,
+    "node_id": "MDQ6VXNlcjgxNTA0Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/815047?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ottoni",
+    "html_url": "https://github.com/ottoni",
+    "followers_url": "https://api.github.com/users/ottoni/followers",
+    "following_url": "https://api.github.com/users/ottoni/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ottoni/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ottoni/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ottoni/subscriptions",
+    "organizations_url": "https://api.github.com/users/ottoni/orgs",
+    "repos_url": "https://api.github.com/users/ottoni/repos",
+    "events_url": "https://api.github.com/users/ottoni/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ottoni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hhvm-bot",
+    "id": 8306375,
+    "node_id": "MDQ6VXNlcjgzMDYzNzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8306375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hhvm-bot",
+    "html_url": "https://github.com/hhvm-bot",
+    "followers_url": "https://api.github.com/users/hhvm-bot/followers",
+    "following_url": "https://api.github.com/users/hhvm-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hhvm-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hhvm-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hhvm-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/hhvm-bot/orgs",
+    "repos_url": "https://api.github.com/users/hhvm-bot/repos",
+    "events_url": "https://api.github.com/users/hhvm-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hhvm-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "da1cc76d36bc37617180c364eddeaed52dbfc81f",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/da1cc76d36bc37617180c364eddeaed52dbfc81f",
+      "html_url": "https://github.com/facebook/hhvm/commit/da1cc76d36bc37617180c364eddeaed52dbfc81f"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 23,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "40267cffd6f70fb0c1cfeae71cdd4fd43a0af1bd",
+      "filename": "hphp/runtime/base/zend-string.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Fruntime%2Fbase%2Fzend-string.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Fruntime%2Fbase%2Fzend-string.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fzend-string.cpp?ref=190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+      "patch": "@@ -1768,6 +1768,7 @@ String string_number_format(double d, int dec,\n   String tmpstr(63, ReserveString);\n   tmpbuf = tmpstr.mutableData();\n   tmplen = snprintf(tmpbuf, 64, \"%.*F\", dec, d);\n+  if (tmplen < 0) return empty_string();\n   if (tmpbuf == nullptr || !isdigit((int)tmpbuf[0])) {\n     tmpstr.setSize(tmplen);\n     return tmpstr;\n@@ -1777,6 +1778,7 @@ String string_number_format(double d, int dec,\n     tmpstr = String(tmplen, ReserveString);\n     tmpbuf = tmpstr.mutableData();\n     tmplen = snprintf(tmpbuf, tmplen + 1, \"%.*F\", dec, d);\n+    if (tmplen < 0) return empty_string();\n     if (tmpbuf == nullptr || !isdigit((int)tmpbuf[0])) {\n       tmpstr.setSize(tmplen);\n       return tmpstr;"
+    },
+    {
+      "sha": "e5899967bc0da90fe62918c285b4de9e226f2518",
+      "filename": "hphp/test/slow/string/number_format_error.php",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/facebook/hhvm/blob/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php?ref=190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+      "patch": "@@ -0,0 +1,19 @@\n+<?php\n+  $READ_LENGTH = 0x1000; // choose leak size\n+// construct fake iptc header for controlled read\n+$iptc_hdr =\n+  \"\\x1c\\x01\" . // magic\n+  \"\\x00\\x80\" . // dataset, recnum\n+  \"\\x00\" .     // padding\n+  pack(\"N\", $READ_LENGTH);\n+// spray a bit so it's near the broken string\n+$holder = [];\n+for($i = 0; $i < 100; $i++)\n+  $holder[] = str_pad($iptc_hdr, 96);\n+// trigger bug to create string with len=-1\n+$badstr = number_format(0,0x7fffffff);\n+var_dump($badstr);\n+// leak memory :)\n+$tmp = iptcparse($badstr);\n+var_dump($tmp);\n+?>"
+    },
+    {
+      "sha": "4cbe7ce9a7853aabfff1d3e7bead7016581fc906",
+      "filename": "hphp/test/slow/string/number_format_error.php.expect",
+      "status": "added",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php.expect",
+      "raw_url": "https://github.com/facebook/hhvm/raw/190ffdf6c8b1ec443be202c7d69e63a7e3da25e3/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php.expect",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fstring%2Fnumber_format_error.php.expect?ref=190ffdf6c8b1ec443be202c7d69e63a7e3da25e3",
+      "patch": "@@ -0,0 +1,2 @@\n+string(0) \"\"\n+bool(false)"
+    }
+  ]
+}

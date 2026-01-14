@@ -1,0 +1,149 @@
+{
+  "sha": "e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+  "node_id": "MDY6Q29tbWl0MTAwOTM1Njg0OmUwNzlmM2UyNzEyYjRmOGMyOGUzZTYzZTcxYmExYTFmOTBmY2UxYWI=",
+  "commit": {
+    "author": {
+      "name": "zccrs",
+      "email": "zccrs@live.com",
+      "date": "2019-05-31T07:38:16Z"
+    },
+    "committer": {
+      "name": "zccrs",
+      "email": "zccrs@live.com",
+      "date": "2019-06-01T04:50:37Z"
+    },
+    "message": "fix: Do not use the \"/tmp\" directory\n\nhttps://github.com/linuxdeepin/deepin-clone/issues/16\nhttps://bugzilla.opensuse.org/show_bug.cgi?id=1130388",
+    "tree": {
+      "sha": "b77579a5d7e0c320a1be16389d5480aaccbb1083",
+      "url": "https://api.github.com/repos/martyr-deepin/deepin-clone/git/trees/b77579a5d7e0c320a1be16389d5480aaccbb1083"
+    },
+    "url": "https://api.github.com/repos/martyr-deepin/deepin-clone/git/commits/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/martyr-deepin/deepin-clone/commits/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+  "html_url": "https://github.com/martyr-deepin/deepin-clone/commit/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+  "comments_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/commits/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/comments",
+  "author": {
+    "login": "zccrs",
+    "id": 13449038,
+    "node_id": "MDQ6VXNlcjEzNDQ5MDM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13449038?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zccrs",
+    "html_url": "https://github.com/zccrs",
+    "followers_url": "https://api.github.com/users/zccrs/followers",
+    "following_url": "https://api.github.com/users/zccrs/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zccrs/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zccrs/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zccrs/subscriptions",
+    "organizations_url": "https://api.github.com/users/zccrs/orgs",
+    "repos_url": "https://api.github.com/users/zccrs/repos",
+    "events_url": "https://api.github.com/users/zccrs/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zccrs/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zccrs",
+    "id": 13449038,
+    "node_id": "MDQ6VXNlcjEzNDQ5MDM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13449038?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zccrs",
+    "html_url": "https://github.com/zccrs",
+    "followers_url": "https://api.github.com/users/zccrs/followers",
+    "following_url": "https://api.github.com/users/zccrs/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zccrs/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zccrs/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zccrs/subscriptions",
+    "organizations_url": "https://api.github.com/users/zccrs/orgs",
+    "repos_url": "https://api.github.com/users/zccrs/repos",
+    "events_url": "https://api.github.com/users/zccrs/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zccrs/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1268024023d8c65490ad12e60270af9335fc9989",
+      "url": "https://api.github.com/repos/martyr-deepin/deepin-clone/commits/1268024023d8c65490ad12e60270af9335fc9989",
+      "html_url": "https://github.com/martyr-deepin/deepin-clone/commit/1268024023d8c65490ad12e60270af9335fc9989"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 15,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "48a54ba887959ba175fbf32621a3a0566f5ee257",
+      "filename": "app/src/corelib/ddevicediskinfo.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/martyr-deepin/deepin-clone/blob/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fddevicediskinfo.cpp",
+      "raw_url": "https://github.com/martyr-deepin/deepin-clone/raw/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fddevicediskinfo.cpp",
+      "contents_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/contents/app%2Fsrc%2Fcorelib%2Fddevicediskinfo.cpp?ref=e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+      "patch": "@@ -303,9 +303,9 @@ bool DDeviceDiskInfoPrivate::openDataStream(int index)\n \n         if (currentMode == DDiskInfo::Read) {\n             const QString &executer = Helper::getPartcloneExecuter(part);\n-            process->start(QStringLiteral(\"%1 -s %2 -o - -c -z %3 -L /tmp/partclone.log\").arg(executer).arg(part.filePath()).arg(Global::bufferSize), QIODevice::ReadOnly);\n+            process->start(QStringLiteral(\"%1 -s %2 -o - -c -z %3 -L /var/log/partclone.log\").arg(executer).arg(part.filePath()).arg(Global::bufferSize), QIODevice::ReadOnly);\n         } else {\n-            process->start(QStringLiteral(\"partclone.restore -s - -o %2 -z %3 -L /tmp/partclone.log\").arg(part.filePath()).arg(Global::bufferSize));\n+            process->start(QStringLiteral(\"partclone.restore -s - -o %2 -z %3 -L /var/log/partclone.log\").arg(part.filePath()).arg(Global::bufferSize));\n         }\n \n         break;"
+    },
+    {
+      "sha": "ec9f072c2ae4255be17791acc3ea759fcb1e7b40",
+      "filename": "app/src/corelib/helper.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/martyr-deepin/deepin-clone/blob/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fhelper.cpp",
+      "raw_url": "https://github.com/martyr-deepin/deepin-clone/raw/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fhelper.cpp",
+      "contents_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/contents/app%2Fsrc%2Fcorelib%2Fhelper.cpp?ref=e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+      "patch": "@@ -100,6 +100,8 @@ int Helper::processExec(QProcess *process, const QString &command, int timeout,\n     if (process->state() != QProcess::NotRunning) {\n         dCDebug(\"The \\\"%s\\\" timeout, timeout: %d\", qPrintable(command), timeout);\n \n+        // QT Bug\uff0c\u67d0\u79cd\u60c5\u51b5\u4e0b(\u672a\u77e5) QProcess::state \u8fd4\u56de\u7684\u72b6\u6001\u6709\u8bef\uff0c\u5bfc\u81f4\u8fdb\u7a0b\u5df2\u9000\u51fa\u5374\u672a\u80fd\u6b63\u786e\u83b7\u53d6\u5230\u5176\u5f53\u524d\u72b6\u6001\n+        // \u56e0\u6b64,\u989d\u5916\u901a\u8fc7\u7cfb\u7edf\u6587\u4ef6\u5224\u65ad\u8fdb\u7a0b\u662f\u5426\u8fd8\u5b58\u5728\n         if (QFile::exists(QString(\"/proc/%1\").arg(process->pid()))) {\n             process->terminate();\n             process->waitForFinished();\n@@ -331,7 +333,7 @@ bool Helper::getPartitionSizeInfo(const QString &partDevice, qint64 *used, qint6\n \n         return true;\n     } else {\n-        process.start(QString(\"%1 -s %2 -c -q -C -L /tmp/partclone.log\").arg(getPartcloneExecuter(DDevicePartInfo(partDevice))).arg(partDevice));\n+        process.start(QString(\"%1 -s %2 -c -q -C -L /var/log/partclone.log\").arg(getPartcloneExecuter(DDevicePartInfo(partDevice))).arg(partDevice));\n         process.setStandardOutputFile(\"/dev/null\");\n         process.setReadChannel(QProcess::StandardError);\n         process.waitForStarted();\n@@ -501,9 +503,9 @@ QString Helper::temporaryMountDevice(const QString &device, const QString &name,\n         return mount_point;\n \n     mount_point = \"%1/.%2/mount/%3\";\n-    const QStringList &tmp_paths = QStandardPaths::standardLocations(QStandardPaths::TempLocation);\n+    const QStringList &tmp_paths = QStandardPaths::standardLocations(QStandardPaths::RuntimeLocation);\n \n-    mount_point = mount_point.arg(tmp_paths.isEmpty() ? \"/tmp\" : tmp_paths.first()).arg(qApp->applicationName()).arg(name);\n+    mount_point = mount_point.arg(tmp_paths.isEmpty() ? \"/run/user/0\" : tmp_paths.first()).arg(qApp->applicationName()).arg(name);\n \n     if (!QDir::current().mkpath(mount_point)) {\n         dCError(\"mkpath \\\"%s\\\" failed\", qPrintable(mount_point));"
+    },
+    {
+      "sha": "adca5a3448a954af69f83152463d25cb3934490b",
+      "filename": "app/src/corelib/helper.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/martyr-deepin/deepin-clone/blob/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fhelper.h",
+      "raw_url": "https://github.com/martyr-deepin/deepin-clone/raw/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fcorelib%2Fhelper.h",
+      "contents_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/contents/app%2Fsrc%2Fcorelib%2Fhelper.h?ref=e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+      "patch": "@@ -99,6 +99,8 @@ class Helper : public QObject\n     static QString parseSerialUrl(const QString &urlString, QString *errorString = 0);\n     static QString toSerialUrl(const QString &file);\n \n+    static bool clearSymlink(const QString &path);\n+\n signals:\n     void newWarning(const QString &message);\n     void newError(const QString &message);"
+    },
+    {
+      "sha": "494bb04a4fe21eee330ba40837d89628a3b5cfac",
+      "filename": "app/src/fixboot/bootdoctor.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/martyr-deepin/deepin-clone/blob/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Ffixboot%2Fbootdoctor.cpp",
+      "raw_url": "https://github.com/martyr-deepin/deepin-clone/raw/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Ffixboot%2Fbootdoctor.cpp",
+      "contents_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/contents/app%2Fsrc%2Ffixboot%2Fbootdoctor.cpp?ref=e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+      "patch": "@@ -55,8 +55,7 @@ bool BootDoctor::fix(const QString &partDevice)\n     }\n \n     {\n-        const QStringList &tmp_paths = QStandardPaths::standardLocations(QStandardPaths::TempLocation);\n-        const QString tmp_dir = (tmp_paths.isEmpty() ? \"/tmp\" : tmp_paths.first()) + \"/.deepin-clone\";\n+        const QString tmp_dir = \"/var/cache/deepin-clone\";\n \n         if (!QDir::current().mkpath(tmp_dir)) {\n             dCError(\"mkpath \\\"%s\\\" failed\", qPrintable(tmp_dir));"
+    },
+    {
+      "sha": "74be0544c65a9d46d9276a52ea6d28cc7cd3ccb4",
+      "filename": "app/src/main.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 21,
+      "changes": 26,
+      "blob_url": "https://github.com/martyr-deepin/deepin-clone/blob/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fmain.cpp",
+      "raw_url": "https://github.com/martyr-deepin/deepin-clone/raw/e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab/app%2Fsrc%2Fmain.cpp",
+      "contents_url": "https://api.github.com/repos/martyr-deepin/deepin-clone/contents/app%2Fsrc%2Fmain.cpp?ref=e079f3e2712b4f8c28e3e63e71ba1a1f90fce1ab",
+      "patch": "@@ -102,36 +102,20 @@ int main(int argc, char *argv[])\n         ConsoleAppender *consoleAppender = new ConsoleAppender;\n         consoleAppender->setFormat(logFormat);\n \n-        RollingFileAppender *rollingFileAppender = new RollingFileAppender(\"/tmp/.deepin-clone.log\");\n+        const QString log_file(\"/var/log/deepin-clone.log\");\n+\n+        RollingFileAppender *rollingFileAppender = new RollingFileAppender(log_file);\n         rollingFileAppender->setFormat(logFormat);\n         rollingFileAppender->setLogFilesLimit(5);\n         rollingFileAppender->setDatePattern(RollingFileAppender::DailyRollover);\n \n-        logger->registerAppender(consoleAppender);\n         logger->registerAppender(rollingFileAppender);\n+        logger->registerAppender(consoleAppender);\n \n         if (qEnvironmentVariableIsSet(\"PKEXEC_UID\")) {\n             const quint32 pkexec_uid = qgetenv(\"PKEXEC_UID\").toUInt();\n-            const QDir user_home(getpwuid(pkexec_uid)->pw_dir);\n-\n-            QFile pam_file(user_home.absoluteFilePath(\".pam_environment\"));\n \n-            if (pam_file.open(QIODevice::ReadOnly)) {\n-                while (!pam_file.atEnd()) {\n-                    const QByteArray &line = pam_file.readLine().simplified();\n-\n-                    if (line.startsWith(\"QT_SCALE_FACTOR\")) {\n-                        const QByteArrayList &list = line.split('=');\n-\n-                        if (list.count() == 2) {\n-                            qputenv(\"QT_SCALE_FACTOR\", list.last());\n-                            break;\n-                        }\n-                    }\n-                }\n-\n-                pam_file.close();\n-            }\n+            DApplication::customQtThemeConfigPathByUserHome(getpwuid(pkexec_uid)->pw_dir);\n         }\n \n         DApplication::loadDXcbPlugin();"
+    }
+  ]
+}

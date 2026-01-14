@@ -1,0 +1,101 @@
+{
+  "sha": "3b17ba10a82c71e7808760e027ac6af687e06074",
+  "node_id": "MDY6Q29tbWl0Mjc4ODk2OTQ6M2IxN2JhMTBhODJjNzFlNzgwODc2MGUwMjdhYzZhZjY4N2UwNjA3NA==",
+  "commit": {
+    "author": {
+      "name": "Mingtao Yang",
+      "email": "mingtao@fb.com",
+      "date": "2019-01-10T23:27:00Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-01-10T23:30:01Z"
+    },
+    "message": "AcceptRoutingHandler should not assume a folly::AsyncSocket\n\nSummary:\nThere is no reason to perform a cast to folly::AsyncSocket, when all of the\nrequired behavior is in folly::AsyncTransportWrapper.\n\nCVE-2019-3554\n\nReviewed By: avasylev\n\nDifferential Revision: D13599212\n\nfbshipit-source-id: 3bb5475fe464c04cf5c04115f34e1bcf237cb4aa",
+    "tree": {
+      "sha": "47e27bd0e69d3798e97491aff42223f54e428c88",
+      "url": "https://api.github.com/repos/facebook/wangle/git/trees/47e27bd0e69d3798e97491aff42223f54e428c88"
+    },
+    "url": "https://api.github.com/repos/facebook/wangle/git/commits/3b17ba10a82c71e7808760e027ac6af687e06074",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/wangle/commits/3b17ba10a82c71e7808760e027ac6af687e06074",
+  "html_url": "https://github.com/facebook/wangle/commit/3b17ba10a82c71e7808760e027ac6af687e06074",
+  "comments_url": "https://api.github.com/repos/facebook/wangle/commits/3b17ba10a82c71e7808760e027ac6af687e06074/comments",
+  "author": {
+    "login": "mingtaoy",
+    "id": 31021971,
+    "node_id": "MDQ6VXNlcjMxMDIxOTcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31021971?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mingtaoy",
+    "html_url": "https://github.com/mingtaoy",
+    "followers_url": "https://api.github.com/users/mingtaoy/followers",
+    "following_url": "https://api.github.com/users/mingtaoy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mingtaoy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mingtaoy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mingtaoy/subscriptions",
+    "organizations_url": "https://api.github.com/users/mingtaoy/orgs",
+    "repos_url": "https://api.github.com/users/mingtaoy/repos",
+    "events_url": "https://api.github.com/users/mingtaoy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mingtaoy/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "44ef9242a289aab950802262b4e2bc8da8a00cd8",
+      "url": "https://api.github.com/repos/facebook/wangle/commits/44ef9242a289aab950802262b4e2bc8da8a00cd8",
+      "html_url": "https://github.com/facebook/wangle/commit/44ef9242a289aab950802262b4e2bc8da8a00cd8"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b0b27f39b8eae8957b91238e1ede9c255f0ff8f3",
+      "filename": "wangle/bootstrap/AcceptRoutingHandler-inl.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/wangle/blob/3b17ba10a82c71e7808760e027ac6af687e06074/wangle%2Fbootstrap%2FAcceptRoutingHandler-inl.h",
+      "raw_url": "https://github.com/facebook/wangle/raw/3b17ba10a82c71e7808760e027ac6af687e06074/wangle%2Fbootstrap%2FAcceptRoutingHandler-inl.h",
+      "contents_url": "https://api.github.com/repos/facebook/wangle/contents/wangle%2Fbootstrap%2FAcceptRoutingHandler-inl.h?ref=3b17ba10a82c71e7808760e027ac6af687e06074",
+      "patch": "@@ -86,8 +86,9 @@ void AcceptRoutingHandler<Pipeline, R>::onRoutingData(\n \n   // Fetch the socket from the pipeline and pause reading from the\n   // socket\n-  auto socket = std::dynamic_pointer_cast<folly::AsyncSocket>(\n+  auto socket = std::dynamic_pointer_cast<folly::AsyncTransportWrapper>(\n       routingPipeline->getTransport());\n+  CHECK(socket);\n   routingPipeline->transportInactive();\n   socket->detachEventBase();\n "
+    }
+  ]
+}

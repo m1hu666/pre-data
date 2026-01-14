@@ -1,0 +1,113 @@
+{
+  "sha": "4350a11c663b0d75f8119743bffb7736d87abd4d",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODo0MzUwYTExYzY2M2IwZDc1ZjgxMTk3NDNiZmZiNzczNmQ4N2FiZDRk",
+  "commit": {
+    "author": {
+      "name": "Sadie Powell",
+      "email": "sadie@witchery.services",
+      "date": "2021-05-14T12:56:32Z"
+    },
+    "committer": {
+      "name": "Sadie Powell",
+      "email": "sadie@witchery.services",
+      "date": "2021-05-14T12:56:32Z"
+    },
+    "message": "Fix sending malformed pong messages in some cases.",
+    "tree": {
+      "sha": "bb3276c57e6c49eacbdd3e18272b9eea167e9230",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/bb3276c57e6c49eacbdd3e18272b9eea167e9230"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/4350a11c663b0d75f8119743bffb7736d87abd4d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/4350a11c663b0d75f8119743bffb7736d87abd4d",
+  "html_url": "https://github.com/inspircd/inspircd/commit/4350a11c663b0d75f8119743bffb7736d87abd4d",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/4350a11c663b0d75f8119743bffb7736d87abd4d/comments",
+  "author": {
+    "login": "sadiepowell",
+    "id": 1565825,
+    "node_id": "MDQ6VXNlcjE1NjU4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1565825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sadiepowell",
+    "html_url": "https://github.com/sadiepowell",
+    "followers_url": "https://api.github.com/users/sadiepowell/followers",
+    "following_url": "https://api.github.com/users/sadiepowell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sadiepowell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sadiepowell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sadiepowell/subscriptions",
+    "organizations_url": "https://api.github.com/users/sadiepowell/orgs",
+    "repos_url": "https://api.github.com/users/sadiepowell/repos",
+    "events_url": "https://api.github.com/users/sadiepowell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sadiepowell/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sadiepowell",
+    "id": 1565825,
+    "node_id": "MDQ6VXNlcjE1NjU4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1565825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sadiepowell",
+    "html_url": "https://github.com/sadiepowell",
+    "followers_url": "https://api.github.com/users/sadiepowell/followers",
+    "following_url": "https://api.github.com/users/sadiepowell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sadiepowell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sadiepowell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sadiepowell/subscriptions",
+    "organizations_url": "https://api.github.com/users/sadiepowell/orgs",
+    "repos_url": "https://api.github.com/users/sadiepowell/repos",
+    "events_url": "https://api.github.com/users/sadiepowell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sadiepowell/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1288e9e593bfa014548b1aa48aac4afda98002c8",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/1288e9e593bfa014548b1aa48aac4afda98002c8",
+      "html_url": "https://github.com/inspircd/inspircd/commit/1288e9e593bfa014548b1aa48aac4afda98002c8"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "144af9e44e1b2ccdc47a4fbc88d2bdf845df5e0d",
+      "filename": "include/clientprotocolmsg.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/4350a11c663b0d75f8119743bffb7736d87abd4d/include%2Fclientprotocolmsg.h",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/4350a11c663b0d75f8119743bffb7736d87abd4d/include%2Fclientprotocolmsg.h",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/include%2Fclientprotocolmsg.h?ref=4350a11c663b0d75f8119743bffb7736d87abd4d",
+      "patch": "@@ -668,9 +668,10 @@ struct ClientProtocol::Messages::Pong : public ClientProtocol::Message\n \tPong(const std::string& cookie, const std::string& server = \"\")\n \t\t: ClientProtocol::Message(\"PONG\", ServerInstance->Config->GetServerName())\n \t{\n-\t\tPushParamRef(ServerInstance->Config->GetServerName());\n-\t\tif (!server.empty())\n-\t\t\tPushParamRef(server);\n+\t\tif (server.empty())\n+\t\t\tPushParamRef(ServerInstance->Config->GetServerName());\n+\t\telse\n+\t\t\tPushParam(server);\n \t\tPushParamRef(cookie);\n \t}\n };"
+    },
+    {
+      "sha": "622e82c75813f927f717445463a5478b8fefec58",
+      "filename": "src/coremods/core_user/core_user.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/4350a11c663b0d75f8119743bffb7736d87abd4d/src%2Fcoremods%2Fcore_user%2Fcore_user.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/4350a11c663b0d75f8119743bffb7736d87abd4d/src%2Fcoremods%2Fcore_user%2Fcore_user.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fcoremods%2Fcore_user%2Fcore_user.cpp?ref=4350a11c663b0d75f8119743bffb7736d87abd4d",
+      "patch": "@@ -83,7 +83,7 @@ class CommandPing : public SplitCommand\n \t\t\treturn CMD_FAILURE;\n \t\t}\n \n-\t\tClientProtocol::Messages::Pong pong(parameters[0], origin ? parameters[1] : \"\");\n+\t\tClientProtocol::Messages::Pong pong(parameters[0], origin ? parameters[1] : ServerInstance->Config->GetServerName());\n \t\tuser->Send(ServerInstance->GetRFCEvents().pong, pong);\n \t\treturn CMD_SUCCESS;\n \t}"
+    }
+  ]
+}

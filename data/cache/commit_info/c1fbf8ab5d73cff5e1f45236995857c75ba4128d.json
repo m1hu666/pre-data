@@ -1,0 +1,101 @@
+{
+  "sha": "c1fbf8ab5d73cff5e1f45236995857c75ba4128d",
+  "node_id": "MDY6Q29tbWl0MjY5ODcwNDk6YzFmYmY4YWI1ZDczY2ZmNWUxZjQ1MjM2OTk1ODU3Yzc1YmE0MTI4ZA==",
+  "commit": {
+    "author": {
+      "name": "Jack Grigg",
+      "email": "jack@z.cash",
+      "date": "2019-09-19T17:25:09Z"
+    },
+    "committer": {
+      "name": "Jack Grigg",
+      "email": "jack@z.cash",
+      "date": "2019-09-19T21:29:24Z"
+    },
+    "message": "Ignore exceptions when deserializing note plaintexts",
+    "tree": {
+      "sha": "aae7378d020c8c4fce630486c8ce1193dd2554a1",
+      "url": "https://api.github.com/repos/zcash/zcash/git/trees/aae7378d020c8c4fce630486c8ce1193dd2554a1"
+    },
+    "url": "https://api.github.com/repos/zcash/zcash/git/commits/c1fbf8ab5d73cff5e1f45236995857c75ba4128d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE8I6KQ8WpZJVp86xhnoJVFyu/mJgFAl2D8zUACgkQnoJVFyu/\nmJhE9w//Soqb4/TvWNa4210o0cC/X+dV/9AHk/WC1cpS2mY4svhFe2+xJWsvDUtA\nfbgo4peEDM96flQO9Id3GGYclho7CwJm+PWRPd9PxKHiBO8UiU+rpbPOnZ+fcIqx\nACrc2enaySjgDi+vcKOtQbRcWAdQ29NgsiyGkA/nb4mNmNKww6IBNHvByzbsBckY\nDBebVD6HQ5bR5SdANFvXp5vqhrTvrzLacngoKAMlwXIC3BWtA6lAMe/q93ues2+p\n+ShcY3WGQDWNaPu16HaiSEGTFqDwRMpH7SsqNziTrftLc+XqvfZ8R5H2Xery6nLS\ns+asAuLUAeQW5UMfjDovohWYC1cv85HDvixgyRE1O+MCNfnFgIgxRw+aS/C2bTiQ\nvx8UQ/St+eZBn65GoRS1R2DBf7ePhAfM7Vfd4qdjWIdh6xtJCzzDtTbcuYuZ8Bg1\nInQ/PL9k2ITQ764fhgpzhhLKANMYZjC+/HpxhEcwHnxrNnP7GybvPCCgkhOUCBgR\noc1hdU/dzqX2fi0/NYF4WI7d7z/jQBt9NCAanyAx41OFZ38asralesLHLdTQ88vu\nub7TppTb50B2tRGarcVhHpY1QROG4fBCQI+/ZtDk2DCK8IbBvrP40b3x1q3D35nQ\noGBlS78sOq1b5FsqGCS4BIsi5xMfAMwKahn/HTPlr2395EC/UhI=\n=jWxE\n-----END PGP SIGNATURE-----",
+      "payload": "tree aae7378d020c8c4fce630486c8ce1193dd2554a1\nparent 87c45fcaebe859386c2d6aaf79ca8c78721ac533\nauthor Jack Grigg <jack@z.cash> 1568913909 +0100\ncommitter Jack Grigg <jack@z.cash> 1568928564 +0100\n\nIgnore exceptions when deserializing note plaintexts\n",
+      "verified_at": "2024-11-05T22:31:28Z"
+    }
+  },
+  "url": "https://api.github.com/repos/zcash/zcash/commits/c1fbf8ab5d73cff5e1f45236995857c75ba4128d",
+  "html_url": "https://github.com/zcash/zcash/commit/c1fbf8ab5d73cff5e1f45236995857c75ba4128d",
+  "comments_url": "https://api.github.com/repos/zcash/zcash/commits/c1fbf8ab5d73cff5e1f45236995857c75ba4128d/comments",
+  "author": {
+    "login": "str4d",
+    "id": 4993799,
+    "node_id": "MDQ6VXNlcjQ5OTM3OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4993799?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/str4d",
+    "html_url": "https://github.com/str4d",
+    "followers_url": "https://api.github.com/users/str4d/followers",
+    "following_url": "https://api.github.com/users/str4d/following{/other_user}",
+    "gists_url": "https://api.github.com/users/str4d/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/str4d/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/str4d/subscriptions",
+    "organizations_url": "https://api.github.com/users/str4d/orgs",
+    "repos_url": "https://api.github.com/users/str4d/repos",
+    "events_url": "https://api.github.com/users/str4d/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/str4d/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "str4d",
+    "id": 4993799,
+    "node_id": "MDQ6VXNlcjQ5OTM3OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4993799?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/str4d",
+    "html_url": "https://github.com/str4d",
+    "followers_url": "https://api.github.com/users/str4d/followers",
+    "following_url": "https://api.github.com/users/str4d/following{/other_user}",
+    "gists_url": "https://api.github.com/users/str4d/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/str4d/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/str4d/subscriptions",
+    "organizations_url": "https://api.github.com/users/str4d/orgs",
+    "repos_url": "https://api.github.com/users/str4d/repos",
+    "events_url": "https://api.github.com/users/str4d/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/str4d/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "87c45fcaebe859386c2d6aaf79ca8c78721ac533",
+      "url": "https://api.github.com/repos/zcash/zcash/commits/87c45fcaebe859386c2d6aaf79ca8c78721ac533",
+      "html_url": "https://github.com/zcash/zcash/commit/87c45fcaebe859386c2d6aaf79ca8c78721ac533"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 32,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "23210c784ab5e3f5bed5c945b897635d5a8d3243",
+      "filename": "src/zcash/Note.cpp",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 18,
+      "changes": 50,
+      "blob_url": "https://github.com/zcash/zcash/blob/c1fbf8ab5d73cff5e1f45236995857c75ba4128d/src%2Fzcash%2FNote.cpp",
+      "raw_url": "https://github.com/zcash/zcash/raw/c1fbf8ab5d73cff5e1f45236995857c75ba4128d/src%2Fzcash%2FNote.cpp",
+      "contents_url": "https://api.github.com/repos/zcash/zcash/contents/src%2Fzcash%2FNote.cpp?ref=c1fbf8ab5d73cff5e1f45236995857c75ba4128d",
+      "patch": "@@ -173,15 +173,21 @@ boost::optional<SaplingOutgoingPlaintext> SaplingOutgoingPlaintext::decrypt(\n     }\n \n     // Deserialize from the plaintext\n-    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n-    ss << pt.get();\n+    try {\n+        CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n+        ss << pt.get();\n \n-    SaplingOutgoingPlaintext ret;\n-    ss >> ret;\n+        SaplingOutgoingPlaintext ret;\n+        ss >> ret;\n \n-    assert(ss.size() == 0);\n+        assert(ss.size() == 0);\n \n-    return ret;\n+        return ret;\n+    } catch (const boost::thread_interrupted&) {\n+        throw;\n+    } catch (...) {\n+        return boost::none;\n+    }\n }\n \n boost::optional<SaplingNotePlaintext> SaplingNotePlaintext::decrypt(\n@@ -197,13 +203,17 @@ boost::optional<SaplingNotePlaintext> SaplingNotePlaintext::decrypt(\n     }\n \n     // Deserialize from the plaintext\n-    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n-    ss << pt.get();\n-\n     SaplingNotePlaintext ret;\n-    ss >> ret;\n-\n-    assert(ss.size() == 0);\n+    try {\n+        CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n+        ss << pt.get();\n+        ss >> ret;\n+        assert(ss.size() == 0);\n+    } catch (const boost::thread_interrupted&) {\n+        throw;\n+    } catch (...) {\n+        return boost::none;\n+    }\n \n     uint256 pk_d;\n     if (!librustzcash_ivk_to_pkd(ivk.begin(), ret.d.data(), pk_d.begin())) {\n@@ -243,11 +253,17 @@ boost::optional<SaplingNotePlaintext> SaplingNotePlaintext::decrypt(\n     }\n \n     // Deserialize from the plaintext\n-    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n-    ss << pt.get();\n-\n     SaplingNotePlaintext ret;\n-    ss >> ret;\n+    try {\n+        CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);\n+        ss << pt.get();\n+        ss >> ret;\n+        assert(ss.size() == 0);\n+    } catch (const boost::thread_interrupted&) {\n+        throw;\n+    } catch (...) {\n+        return boost::none;\n+    }\n \n     uint256 cmu_expected;\n     if (!librustzcash_sapling_compute_cm(\n@@ -265,8 +281,6 @@ boost::optional<SaplingNotePlaintext> SaplingNotePlaintext::decrypt(\n         return boost::none;\n     }\n \n-    assert(ss.size() == 0);\n-\n     return ret;\n }\n "
+    }
+  ]
+}

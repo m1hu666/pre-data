@@ -1,0 +1,161 @@
+{
+  "sha": "6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+  "node_id": "MDY6Q29tbWl0MzM1MTg3MTo2Y2EzZTRmMDk0ZGEwYTAwMTdjYjJkNDgzZWMxZGI2MTc2YmIwYjE2",
+  "commit": {
+    "author": {
+      "name": "Chocobo1",
+      "email": "Chocobo1@users.noreply.github.com",
+      "date": "2017-02-11T06:04:06Z"
+    },
+    "committer": {
+      "name": "sledgehammer999",
+      "email": "hammered999@gmail.com",
+      "date": "2017-03-03T19:28:30Z"
+    },
+    "message": "Add Utils::String::toHtmlEscaped",
+    "tree": {
+      "sha": "3f32fd0ae23ef3214c8646051d4323c61c45a30b",
+      "url": "https://api.github.com/repos/qbittorrent/qBittorrent/git/trees/3f32fd0ae23ef3214c8646051d4323c61c45a30b"
+    },
+    "url": "https://api.github.com/repos/qbittorrent/qBittorrent/git/commits/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v2\n\niQIcBAABCAAGBQJYucPfAAoJEG5KLQJbfMmiFZsP/3HQrsOK0fzLtYx0fEM8Nv6X\nt/opK//vid/aeTEFCaOOoxIzonf4SM/cSPtHi6eJENIc4xFxw/2Nw0lH5NRyW4JM\nymJUM9jq7tuluIFDbCOSy1ibpN4o36N5H/8PWZt1f2uWv8w8GkecCVDCAkDjafRF\nknUhoZOVzPebmMMbnZXzZtqDxF9lFfN9jKjKXeNTnWeNo+oTqpYN0HLJMjRJ8T3m\nYE+Eznososg/nl80lDAKvdVqi1MiW+5dd/4RydR6CHUrrLSTjziPwVmtmBMgJpgO\nv/QaqWPewB1HukcqhCCLvL+/PXYJ/85ILhzMS5g24v/VBno/8gdgjSx5+WX+OuWD\nriEt+W+4+Dna6qYP/OW2oMP3uXCO5BPRz+gtY1Qqtf8cLNQbQl85qzwOqd9skNm+\nPfrNHd6dmAPEwIeoDVV/iNqHgi3qWEcfD/bvkCntvpdOfMLYMjOSGZhl6vvFXp0D\nFd5bUHHOxeMPLmEqB9LP7dKWom5j/R0ax1Dr9tqsNoiel9apzH2CUI6s3pJiyJq8\nx3+2/tOk1ImNiZo4xb3h2YwYoMltw+kCjyyytsZpGbY90jdOlyh2HD18h+VWaduI\neacuqXwT5Bi+6V1uWRgHiyBKVFx60EAgexgj4FuqQ5ussVSuJKhrvRsy99JbhhvR\njYk2f8RiGCTi8saDum4N\n=dbrl\n-----END PGP SIGNATURE-----",
+      "payload": "tree 3f32fd0ae23ef3214c8646051d4323c61c45a30b\nparent eba45a0b267f89a38174249875d9dc112df93437\nauthor Chocobo1 <Chocobo1@users.noreply.github.com> 1486793046 +0800\ncommitter sledgehammer999 <hammered999@gmail.com> 1488569310 +0200\n\nAdd Utils::String::toHtmlEscaped\n",
+      "verified_at": "2024-11-13T11:31:25Z"
+    }
+  },
+  "url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+  "html_url": "https://github.com/qbittorrent/qBittorrent/commit/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+  "comments_url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/comments",
+  "author": {
+    "login": "Chocobo1",
+    "id": 9395168,
+    "node_id": "MDQ6VXNlcjkzOTUxNjg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9395168?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Chocobo1",
+    "html_url": "https://github.com/Chocobo1",
+    "followers_url": "https://api.github.com/users/Chocobo1/followers",
+    "following_url": "https://api.github.com/users/Chocobo1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Chocobo1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Chocobo1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Chocobo1/subscriptions",
+    "organizations_url": "https://api.github.com/users/Chocobo1/orgs",
+    "repos_url": "https://api.github.com/users/Chocobo1/repos",
+    "events_url": "https://api.github.com/users/Chocobo1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Chocobo1/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sledgehammer999",
+    "id": 273315,
+    "node_id": "MDQ6VXNlcjI3MzMxNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/273315?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sledgehammer999",
+    "html_url": "https://github.com/sledgehammer999",
+    "followers_url": "https://api.github.com/users/sledgehammer999/followers",
+    "following_url": "https://api.github.com/users/sledgehammer999/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sledgehammer999/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sledgehammer999/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sledgehammer999/subscriptions",
+    "organizations_url": "https://api.github.com/users/sledgehammer999/orgs",
+    "repos_url": "https://api.github.com/users/sledgehammer999/repos",
+    "events_url": "https://api.github.com/users/sledgehammer999/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sledgehammer999/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eba45a0b267f89a38174249875d9dc112df93437",
+      "url": "https://api.github.com/repos/qbittorrent/qBittorrent/commits/eba45a0b267f89a38174249875d9dc112df93437",
+      "html_url": "https://github.com/qbittorrent/qBittorrent/commit/eba45a0b267f89a38174249875d9dc112df93437"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 21,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "d2e95ab58e2037595c87b12c70c1e2acd81b6e5e",
+      "filename": "src/base/logger.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Flogger.cpp",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Flogger.cpp",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fbase%2Flogger.cpp?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -1,6 +1,7 @@\n #include \"logger.h\"\n \n #include <QDateTime>\n+#include \"base/utils/string.h\"\n \n Logger* Logger::m_instance = 0;\n \n@@ -36,7 +37,7 @@ void Logger::addMessage(const QString &message, const Log::MsgType &type)\n {\n     QWriteLocker locker(&lock);\n \n-    Log::Msg temp = { msgCounter++, QDateTime::currentMSecsSinceEpoch(), type, message };\n+    Log::Msg temp = { msgCounter++, QDateTime::currentMSecsSinceEpoch(), type, Utils::String::toHtmlEscaped(message) };\n     m_messages.push_back(temp);\n \n     if (m_messages.size() >= MAX_LOG_MESSAGES)\n@@ -49,7 +50,7 @@ void Logger::addPeer(const QString &ip, bool blocked, const QString &reason)\n {\n     QWriteLocker locker(&lock);\n \n-    Log::Peer temp = { peerCounter++, QDateTime::currentMSecsSinceEpoch(), ip, blocked, reason };\n+    Log::Peer temp = { peerCounter++, QDateTime::currentMSecsSinceEpoch(), Utils::String::toHtmlEscaped(ip), blocked, Utils::String::toHtmlEscaped(reason) };\n     m_peers.push_back(temp);\n \n     if (m_peers.size() >= MAX_LOG_MESSAGES)"
+    },
+    {
+      "sha": "7d76d9aaf08425ec7b33aaa759d8bbf4045e4808",
+      "filename": "src/base/utils/string.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Futils%2Fstring.cpp",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Futils%2Fstring.cpp",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fbase%2Futils%2Fstring.cpp?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -211,3 +211,12 @@ bool Utils::String::slowEquals(const QByteArray &a, const QByteArray &b)\n \n     return (diff == 0);\n }\n+\n+QString Utils::String::toHtmlEscaped(const QString &str)\n+{\n+#ifdef QBT_USES_QT5\n+    return str.toHtmlEscaped();\n+#else\n+    return Qt::escape(str);\n+#endif\n+}"
+    },
+    {
+      "sha": "52f4863ef687525b881d171edb54ca0307b8a1b7",
+      "filename": "src/base/utils/string.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Futils%2Fstring.h",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fbase%2Futils%2Fstring.h",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fbase%2Futils%2Fstring.h?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -47,6 +47,8 @@ namespace Utils\n         // Taken from https://crackstation.net/hashing-security.htm\n         bool slowEquals(const QByteArray &a, const QByteArray &b);\n \n+        QString toHtmlEscaped(const QString &str);\n+\n         bool naturalCompareCaseSensitive(const QString &left, const QString &right);\n         bool naturalCompareCaseInsensitive(const QString &left, const QString &right);\n     }"
+    },
+    {
+      "sha": "7e65df46c38ef1a08283a05e5320a895b18aa921",
+      "filename": "src/gui/deletionconfirmationdlg.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fdeletionconfirmationdlg.h",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fdeletionconfirmationdlg.h",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fgui%2Fdeletionconfirmationdlg.h?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -35,8 +35,9 @@\n #include <QPushButton>\n #include \"ui_confirmdeletiondlg.h\"\n #include \"base/preferences.h\"\n-#include \"guiiconprovider.h\"\n #include \"base/utils/misc.h\"\n+#include \"base/utils/string.h\"\n+#include \"guiiconprovider.h\"\n \n class DeletionConfirmationDlg : public QDialog, private Ui::confirmDeletionDlg {\n   Q_OBJECT\n@@ -45,7 +46,7 @@ class DeletionConfirmationDlg : public QDialog, private Ui::confirmDeletionDlg {\n   DeletionConfirmationDlg(QWidget *parent, const int &size, const QString &name, bool defaultDeleteFiles): QDialog(parent) {\n     setupUi(this);\n     if (size == 1)\n-      label->setText(tr(\"Are you sure you want to delete '%1' from the transfer list?\", \"Are you sure you want to delete 'ubuntu-linux-iso' from the transfer list?\").arg(name));\n+      label->setText(tr(\"Are you sure you want to delete '%1' from the transfer list?\", \"Are you sure you want to delete 'ubuntu-linux-iso' from the transfer list?\").arg(Utils::String::toHtmlEscaped(name)));\n     else\n       label->setText(tr(\"Are you sure you want to delete these %1 torrents from the transfer list?\", \"Are you sure you want to delete these 5 torrents from the transfer list?\").arg(QString::number(size)));\n     // Icons"
+    },
+    {
+      "sha": "01551e12ce88feb033428d88d9bd39fe41342361",
+      "filename": "src/gui/properties/peerlistwidget.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fproperties%2Fpeerlistwidget.cpp",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fproperties%2Fpeerlistwidget.cpp",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fgui%2Fproperties%2Fpeerlistwidget.cpp?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -401,7 +401,7 @@ QStandardItem* PeerListWidget::addPeer(const QString& ip, BitTorrent::TorrentHan\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::CONNECTION), peer.connectionType());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::FLAGS), peer.flags());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::FLAGS), peer.flagsDescription(), Qt::ToolTipRole);\n-    m_listModel->setData(m_listModel->index(row, PeerListDelegate::CLIENT), peer.client());\n+    m_listModel->setData(m_listModel->index(row, PeerListDelegate::CLIENT), Utils::String::toHtmlEscaped(peer.client()));\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::PROGRESS), peer.progress());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::DOWN_SPEED), peer.payloadDownSpeed());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::UP_SPEED), peer.payloadUpSpeed());\n@@ -432,7 +432,7 @@ void PeerListWidget::updatePeer(const QString &ip, BitTorrent::TorrentHandle *co\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::PORT), peer.address().port);\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::FLAGS), peer.flags());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::FLAGS), peer.flagsDescription(), Qt::ToolTipRole);\n-    m_listModel->setData(m_listModel->index(row, PeerListDelegate::CLIENT), peer.client());\n+    m_listModel->setData(m_listModel->index(row, PeerListDelegate::CLIENT), Utils::String::toHtmlEscaped(peer.client()));\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::PROGRESS), peer.progress());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::DOWN_SPEED), peer.payloadDownSpeed());\n     m_listModel->setData(m_listModel->index(row, PeerListDelegate::UP_SPEED), peer.payloadUpSpeed());"
+    },
+    {
+      "sha": "0e27c1c0494ec79d190d5caeb94ecde2fcecb863",
+      "filename": "src/gui/properties/propertieswidget.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/qbittorrent/qBittorrent/blob/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fproperties%2Fpropertieswidget.cpp",
+      "raw_url": "https://github.com/qbittorrent/qBittorrent/raw/6ca3e4f094da0a0017cb2d483ec1db6176bb0b16/src%2Fgui%2Fproperties%2Fpropertieswidget.cpp",
+      "contents_url": "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src%2Fgui%2Fproperties%2Fpropertieswidget.cpp?ref=6ca3e4f094da0a0017cb2d483ec1db6176bb0b16",
+      "patch": "@@ -314,12 +314,12 @@ void PropertiesWidget::loadTorrentInfos(BitTorrent::TorrentHandle *const torrent\n         label_total_size_val->setText(Utils::Misc::friendlyUnit(m_torrent->totalSize()));\n \n         // Comment\n-        comment_text->setText(Utils::Misc::parseHtmlLinks(m_torrent->comment()));\n+        comment_text->setText(Utils::Misc::parseHtmlLinks(Utils::String::toHtmlEscaped(m_torrent->comment())));\n \n         // URL seeds\n         loadUrlSeeds();\n \n-        label_created_by_val->setText(m_torrent->creator());\n+        label_created_by_val->setText(Utils::String::toHtmlEscaped(m_torrent->creator()));\n \n         // List files in torrent\n         PropListModel->model()->setupModelData(m_torrent->info());"
+    }
+  ]
+}

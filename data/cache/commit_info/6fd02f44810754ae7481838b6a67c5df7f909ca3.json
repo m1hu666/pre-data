@@ -1,0 +1,81 @@
+{
+  "sha": "6fd02f44810754ae7481838b6a67c5df7f909ca3",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6NmZkMDJmNDQ4MTA3NTRhZTc0ODE4MzhiNmE2N2M1ZGY3ZjkwOWNhMw==",
+  "commit": {
+    "author": {
+      "name": "Amit Patankar",
+      "email": "amitpatankar@google.com",
+      "date": "2021-04-26T23:40:49Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-26T23:46:06Z"
+    },
+    "message": "Fix `tf.raw_ops.SparseAdd ` invalid memory access failure.\n\nPiperOrigin-RevId: 370568774\nChange-Id: I5f73b31c865f2948a1c8dfb7ebd22b3cfb6405bf",
+    "tree": {
+      "sha": "56411b2446b5d0f4610671689a00cea65acfc857",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/56411b2446b5d0f4610671689a00cea65acfc857"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/6fd02f44810754ae7481838b6a67c5df7f909ca3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6fd02f44810754ae7481838b6a67c5df7f909ca3",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/6fd02f44810754ae7481838b6a67c5df7f909ca3",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6fd02f44810754ae7481838b6a67c5df7f909ca3/comments",
+  "author": null,
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b53e6666068dc02f9a8ecc33463d8f2a259e9fec",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/b53e6666068dc02f9a8ecc33463d8f2a259e9fec",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/b53e6666068dc02f9a8ecc33463d8f2a259e9fec"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "346206365af8d58bc1624d791779d003e30924c2",
+      "filename": "tensorflow/core/kernels/sparse_add_op.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/6fd02f44810754ae7481838b6a67c5df7f909ca3/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/6fd02f44810754ae7481838b6a67c5df7f909ca3/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc?ref=6fd02f44810754ae7481838b6a67c5df7f909ca3",
+      "patch": "@@ -14,6 +14,7 @@ limitations under the License.\n ==============================================================================*/\n \n #include \"tensorflow/core/framework/op_kernel.h\"\n+#include \"tensorflow/core/framework/op_requires.h\"\n #include \"tensorflow/core/framework/register_types.h\"\n #include \"tensorflow/core/framework/tensor.h\"\n #include \"tensorflow/core/framework/tensor_util.h\"\n@@ -101,6 +102,10 @@ class SparseAddOp : public OpKernel {\n     std::vector<T> out_values;\n     const int num_dims = a_shape->dim_size(0);\n \n+    OP_REQUIRES(ctx, num_dims > 0,\n+                errors::InvalidArgument(\"Invalid input_a shape. Received: \",\n+                                        a_shape->DebugString()));\n+\n     // The input and output sparse tensors are assumed to be ordered along\n     // increasing dimension number.\n     int64 i = 0, j = 0;"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "sha": "ea6315164b1649ff932a396b7600eac4bffcfaba",
+  "node_id": "C_kwDOAE9q7doAKGVhNjMxNTE2NGIxNjQ5ZmY5MzJhMzk2Yjc2MDBlYWM0YmZmY2ZhYmE",
+  "commit": {
+    "author": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-30T14:07:05Z"
+    },
+    "committer": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-30T14:07:05Z"
+    },
+    "message": "Added a check whether all components in a scan are actually present.",
+    "tree": {
+      "sha": "ea2eb1951248b4c05d563dd985903b5cd225d118",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/trees/ea2eb1951248b4c05d563dd985903b5cd225d118"
+    },
+    "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/commits/ea6315164b1649ff932a396b7600eac4bffcfaba",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/ea6315164b1649ff932a396b7600eac4bffcfaba",
+  "html_url": "https://github.com/thorfdbg/libjpeg/commit/ea6315164b1649ff932a396b7600eac4bffcfaba",
+  "comments_url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/ea6315164b1649ff932a396b7600eac4bffcfaba/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "920542bead9fec62b3d798b1179277f0f10334d6",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/920542bead9fec62b3d798b1179277f0f10334d6",
+      "html_url": "https://github.com/thorfdbg/libjpeg/commit/920542bead9fec62b3d798b1179277f0f10334d6"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 11,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "5b3858cfb19aec91cb42cc01bfba12e6761e30f8",
+      "filename": "codestream/entropyparser.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ea6315164b1649ff932a396b7600eac4bffcfaba/codestream%2Fentropyparser.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ea6315164b1649ff932a396b7600eac4bffcfaba/codestream%2Fentropyparser.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Fentropyparser.cpp?ref=ea6315164b1649ff932a396b7600eac4bffcfaba",
+      "patch": "@@ -43,7 +43,7 @@\n ** This class represents the interface for parsing the\n ** entropy coded data in JPEG as part of a single scan.\n **\n-** $Id: entropyparser.cpp,v 1.24 2021/09/08 10:30:06 thor Exp $\n+** $Id: entropyparser.cpp,v 1.25 2022/05/30 14:05:58 thor Exp $\n **\n */\n \n@@ -62,7 +62,7 @@ EntropyParser::EntropyParser(class Frame *frame,class Scan *scan)\n {\n   m_ucCount = scan->ComponentsInScan();\n \n-  // The residual scan uses all components here, not just for, but\n+  // The residual scan uses all components here, not just four, but\n   // it does not require the component count either.\n   for(volatile UBYTE i = 0;i < m_ucCount && i < 4;i++) {\n     JPG_TRY {"
+    },
+    {
+      "sha": "f85aac7a7f7a83a19208ad6ad63918c788ae7ba0",
+      "filename": "marker/scan.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 1,
+      "changes": 10,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ea6315164b1649ff932a396b7600eac4bffcfaba/marker%2Fscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ea6315164b1649ff932a396b7600eac4bffcfaba/marker%2Fscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/marker%2Fscan.cpp?ref=ea6315164b1649ff932a396b7600eac4bffcfaba",
+      "patch": "@@ -42,7 +42,7 @@\n **\n ** Represents all data in a single scan, and hence is the SOS marker.\n **\n-** $Id: scan.cpp,v 1.117 2021/11/15 07:39:43 thor Exp $\n+** $Id: scan.cpp,v 1.118 2022/05/30 14:06:11 thor Exp $\n **\n */\n \n@@ -338,6 +338,14 @@ void Scan::CreateParser(void)\n   //\n   assert(m_pParser == NULL);\n   //\n+  // Check whether all components are there.\n+  for(UBYTE i = 0;i < m_ucCount && i < 4;i++) {\n+    if (ComponentOf(i) == NULL) {\n+      JPG_THROW(MALFORMED_STREAM,\"Scan::CreateParser\",\n+                \"found a component ID in a scan that does not exist\");\n+    }\n+  }\n+  //\n   switch(type) {\n   case Baseline:\n     m_pParser = new(m_pEnviron) class SequentialScan(m_pFrame,this,"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "cb9f07d9dcd791b63e622da43f7b232adaec0a9a",
+  "node_id": "MDY6Q29tbWl0MTQ2NTAzMzpjYjlmMDdkOWRjZDc5MWI2M2U2MjJkYTQzZjdiMjMyYWRhZWMwYTlh",
+  "commit": {
+    "author": {
+      "name": "Stephen F. Booth",
+      "email": "me@sbooth.org",
+      "date": "2017-09-30T15:15:41Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2017-09-30T15:15:41Z"
+    },
+    "message": "Don't assume TDRC is an instance of TextIdentificationFrame (#831)\n\nIf TDRC is encrypted, FrameFactory::createFrame() returns UnknownFrame\r\nwhich causes problems in rebuildAggregateFrames() when it is assumed\r\nthat TDRC is a TextIdentificationFrame",
+    "tree": {
+      "sha": "a1ff82164c82c9d00519a4a29fc97165974727f7",
+      "url": "https://api.github.com/repos/taglib/taglib/git/trees/a1ff82164c82c9d00519a4a29fc97165974727f7"
+    },
+    "url": "https://api.github.com/repos/taglib/taglib/git/commits/cb9f07d9dcd791b63e622da43f7b232adaec0a9a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/taglib/taglib/commits/cb9f07d9dcd791b63e622da43f7b232adaec0a9a",
+  "html_url": "https://github.com/taglib/taglib/commit/cb9f07d9dcd791b63e622da43f7b232adaec0a9a",
+  "comments_url": "https://api.github.com/repos/taglib/taglib/commits/cb9f07d9dcd791b63e622da43f7b232adaec0a9a/comments",
+  "author": {
+    "login": "sbooth",
+    "id": 9965,
+    "node_id": "MDQ6VXNlcjk5NjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9965?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sbooth",
+    "html_url": "https://github.com/sbooth",
+    "followers_url": "https://api.github.com/users/sbooth/followers",
+    "following_url": "https://api.github.com/users/sbooth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sbooth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sbooth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sbooth/subscriptions",
+    "organizations_url": "https://api.github.com/users/sbooth/orgs",
+    "repos_url": "https://api.github.com/users/sbooth/repos",
+    "events_url": "https://api.github.com/users/sbooth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sbooth/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0b583bafd09c29695af9e84f7e7182280411a78e",
+      "url": "https://api.github.com/repos/taglib/taglib/commits/0b583bafd09c29695af9e84f7e7182280411a78e",
+      "html_url": "https://github.com/taglib/taglib/commit/0b583bafd09c29695af9e84f7e7182280411a78e"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "9347ab86972a32ea31229dfd719f8a4f0cd84947",
+      "filename": "taglib/mpeg/id3v2/id3v2framefactory.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/taglib/taglib/blob/cb9f07d9dcd791b63e622da43f7b232adaec0a9a/taglib%2Fmpeg%2Fid3v2%2Fid3v2framefactory.cpp",
+      "raw_url": "https://github.com/taglib/taglib/raw/cb9f07d9dcd791b63e622da43f7b232adaec0a9a/taglib%2Fmpeg%2Fid3v2%2Fid3v2framefactory.cpp",
+      "contents_url": "https://api.github.com/repos/taglib/taglib/contents/taglib%2Fmpeg%2Fid3v2%2Fid3v2framefactory.cpp?ref=cb9f07d9dcd791b63e622da43f7b232adaec0a9a",
+      "patch": "@@ -334,10 +334,11 @@ void FrameFactory::rebuildAggregateFrames(ID3v2::Tag *tag) const\n      tag->frameList(\"TDAT\").size() == 1)\n   {\n     TextIdentificationFrame *tdrc =\n-      static_cast<TextIdentificationFrame *>(tag->frameList(\"TDRC\").front());\n+      dynamic_cast<TextIdentificationFrame *>(tag->frameList(\"TDRC\").front());\n     UnknownFrame *tdat = static_cast<UnknownFrame *>(tag->frameList(\"TDAT\").front());\n \n-    if(tdrc->fieldList().size() == 1 &&\n+    if(tdrc &&\n+       tdrc->fieldList().size() == 1 &&\n        tdrc->fieldList().front().size() == 4 &&\n        tdat->data().size() >= 5)\n     {"
+    }
+  ]
+}

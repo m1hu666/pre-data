@@ -1,0 +1,105 @@
+{
+  "sha": "eb967bf2110884ddde91aea6ba1696ae6b56f892",
+  "node_id": "C_kwDOByyPPdoAKGViOTY3YmYyMTEwODg0ZGRkZTkxYWVhNmJhMTY5NmFlNmI1NmY4OTI",
+  "commit": {
+    "author": {
+      "name": "Justin Novosad",
+      "email": "junov@chromium.org",
+      "date": "2022-01-14T15:26:55Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-14T15:26:55Z"
+    },
+    "message": "Fix ImageBitmapRenderingContext interaction with software compositor.\n\nBefore this CL, there was an early exit condition that prevented\ntexture-backed resources from being presented to the software compositor\neven when the texture backing is swiftshader. This meant that in some\ncases, ImageBitmaps that were created by webGL contexts would fail to\nrender.  Once the early exit removed, there were other bugs due to the\nfact that bitmaps were not being converted to N32 format before being\ndispatched to the software compositor.  This could cause several types\nof rendering artifacts, including leaking bitmap data between contexts.\n\nBUG=1283434\n\nChange-Id: I6f353bc6301b79d7a4124445c85956125135f539\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3387268\nReviewed-by: Juanmi Huertas <juanmihd@chromium.org>\nCommit-Queue: Justin Novosad <junov@chromium.org>\nCr-Commit-Position: refs/heads/main@{#959192}",
+    "tree": {
+      "sha": "0a8e1e97e49f84981e1bc17cd16b205c4dee24d5",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/0a8e1e97e49f84981e1bc17cd16b205c4dee24d5"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/eb967bf2110884ddde91aea6ba1696ae6b56f892",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/eb967bf2110884ddde91aea6ba1696ae6b56f892",
+  "html_url": "https://github.com/chromium/chromium/commit/eb967bf2110884ddde91aea6ba1696ae6b56f892",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/eb967bf2110884ddde91aea6ba1696ae6b56f892/comments",
+  "author": {
+    "login": "junov",
+    "id": 2607864,
+    "node_id": "MDQ6VXNlcjI2MDc4NjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2607864?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/junov",
+    "html_url": "https://github.com/junov",
+    "followers_url": "https://api.github.com/users/junov/followers",
+    "following_url": "https://api.github.com/users/junov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/junov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/junov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/junov/subscriptions",
+    "organizations_url": "https://api.github.com/users/junov/orgs",
+    "repos_url": "https://api.github.com/users/junov/repos",
+    "events_url": "https://api.github.com/users/junov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/junov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "07743b739ac9469a2e9fae20d2ca54d1a95f7006",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/07743b739ac9469a2e9fae20d2ca54d1a95f7006",
+      "html_url": "https://github.com/chromium/chromium/commit/07743b739ac9469a2e9fae20d2ca54d1a95f7006"
+    }
+  ],
+  "stats": {
+    "total": 59,
+    "additions": 48,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "3d74e3013c6b051d85cb48fcecec5c94c88deeaf",
+      "filename": "third_party/blink/renderer/platform/graphics/gpu/image_layer_bridge.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 11,
+      "changes": 20,
+      "blob_url": "https://github.com/chromium/chromium/blob/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Frenderer%2Fplatform%2Fgraphics%2Fgpu%2Fimage_layer_bridge.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Frenderer%2Fplatform%2Fgraphics%2Fgpu%2Fimage_layer_bridge.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Frenderer%2Fplatform%2Fgraphics%2Fgpu%2Fimage_layer_bridge.cc?ref=eb967bf2110884ddde91aea6ba1696ae6b56f892",
+      "patch": "@@ -139,11 +139,6 @@ bool ImageLayerBridge::PrepareTransferableResource(\n   has_presented_since_last_set_image_ = true;\n \n   const bool gpu_compositing = SharedGpuContext::IsGpuCompositingEnabled();\n-  const bool gpu_image = image_->IsTextureBacked();\n-\n-  // Expect software images for software compositing.\n-  if (!gpu_compositing && gpu_image)\n-    return false;\n \n   const ImageOrientation origin = image_->IsOriginTopLeft()\n                                       ? ImageOrientationEnum::kOriginTopLeft\n@@ -211,14 +206,17 @@ bool ImageLayerBridge::PrepareTransferableResource(\n       return false;\n \n     const gfx::Size size(image_->width(), image_->height());\n-    viz::ResourceFormat resource_format = viz::RGBA_8888;\n-    if (sk_image->colorType() == SkColorType::kRGBA_F16_SkColorType)\n-      resource_format = viz::RGBA_F16;\n+\n+    // Always convert to N32 format.  This is a constraint of the software\n+    // compositor.\n+    constexpr SkColorType dst_color_type = kN32_SkColorType;\n+    viz::ResourceFormat resource_format =\n+        viz::SkColorTypeToResourceFormat(dst_color_type);\n     RegisteredBitmap registered =\n         CreateOrRecycleBitmap(size, resource_format, bitmap_registrar);\n \n     SkImageInfo dst_info =\n-        SkImageInfo::Make(size.width(), size.height(), sk_image->colorType(),\n+        SkImageInfo::Make(size.width(), size.height(), dst_color_type,\n                           kPremul_SkAlphaType, sk_image->refColorSpace());\n     void* pixels = registered.bitmap->memory();\n \n@@ -247,8 +245,8 @@ ImageLayerBridge::RegisteredBitmap ImageLayerBridge::CreateOrRecycleBitmap(\n       recycled_bitmaps_.begin(), recycled_bitmaps_.end(),\n       [&size, &format](const RegisteredBitmap& registered) {\n         unsigned src_bytes_per_pixel =\n-            (registered.bitmap->format() == viz::RGBA_8888) ? 4 : 8;\n-        unsigned target_bytes_per_pixel = (format == viz::RGBA_8888) ? 4 : 8;\n+            viz::BitsPerPixel(registered.bitmap->format()) / 8;\n+        unsigned target_bytes_per_pixel = viz::BitsPerPixel(format) / 8;\n         return (registered.bitmap->size().GetArea() * src_bytes_per_pixel !=\n                 size.GetArea() * target_bytes_per_pixel);\n       });"
+    },
+    {
+      "sha": "d0046a6c5ede6804497107318650f5f452b0d5e2",
+      "filename": "third_party/blink/web_tests/fast/canvas/bug1283434-expected.html",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/chromium/chromium/blob/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434-expected.html",
+      "raw_url": "https://github.com/chromium/chromium/raw/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434-expected.html",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434-expected.html?ref=eb967bf2110884ddde91aea6ba1696ae6b56f892",
+      "patch": "@@ -0,0 +1,11 @@\n+\n+<!doctype html>\n+<html>\n+<head>\n+</head>\n+<body>\n+<p>The two squares below should be filled in blue.</p>\n+<canvas id=\"c\" width=\"100\" height=\"100\" style=\"background-color: #00f;\"></canvas>\n+<canvas id=\"c2\" width=\"100\" height=\"100\" style=\"background-color: #00f;\"></canvas>\n+</body>\n+</html>\n\\ No newline at end of file"
+    },
+    {
+      "sha": "b07298cbcb356b7fb34e3923259c3365e3a976fb",
+      "filename": "third_party/blink/web_tests/fast/canvas/bug1283434.html",
+      "status": "added",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "blob_url": "https://github.com/chromium/chromium/blob/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434.html",
+      "raw_url": "https://github.com/chromium/chromium/raw/eb967bf2110884ddde91aea6ba1696ae6b56f892/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434.html",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/third_party%2Fblink%2Fweb_tests%2Ffast%2Fcanvas%2Fbug1283434.html?ref=eb967bf2110884ddde91aea6ba1696ae6b56f892",
+      "patch": "@@ -0,0 +1,28 @@\n+\n+<!doctype html>\n+<html>\n+<head>\n+</head>\n+<body>\n+<p>The two squares below should be filled in blue.</p>\n+<canvas id=\"c\" width=\"100\" height=\"100\" style=\"background-color: red;\"></canvas>\n+<canvas id=\"c2\" width=\"100\" height=\"100\" style=\"background-color: red;\"></canvas>\n+<script>\n+    const canvas = document.getElementById('c');\n+    const canvas2 = document.getElementById('c2');\n+    const renderer = canvas.getContext('bitmaprenderer');\n+    const renderer2 = canvas2.getContext('2d');\n+\n+    const temp_canvas = new OffscreenCanvas(640, 480);\n+    const gl = temp_canvas.getContext('webgl');\n+\n+    gl.clearColor(0.0, 0.0, 1.0, 1.0);\n+    gl.clear(gl.COLOR_BUFFER_BIT);\n+\n+    const bitmap = temp_canvas.transferToImageBitmap();\n+\n+    renderer2.drawImage(bitmap, 0, 0);\n+    renderer.transferFromImageBitmap(bitmap);\n+</script>\n+</body>\n+</html>\n\\ No newline at end of file"
+    }
+  ]
+}

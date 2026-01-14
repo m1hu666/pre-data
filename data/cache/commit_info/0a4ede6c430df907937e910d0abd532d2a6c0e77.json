@@ -1,0 +1,73 @@
+{
+  "sha": "0a4ede6c430df907937e910d0abd532d2a6c0e77",
+  "node_id": "C_kwDOByyPPdoAKDBhNGVkZTZjNDMwZGY5MDc5MzdlOTEwZDBhYmQ1MzJkMmE2YzBlNzc",
+  "commit": {
+    "author": {
+      "name": "Bo Majewski",
+      "email": "majewski@chromium.org",
+      "date": "2022-01-31T05:15:24Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-31T05:15:24Z"
+    },
+    "message": "[Files SWA]: Use WeakPtr to prevent a possible UAR bug.\n\nUAR = use after release.\n\nBug: 1290008\n\nChange-Id: I8ec1cab58830a6e12468523b737ee589cfe8e23a\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3426095\nReviewed-by: Luciano Pacheco <lucmult@chromium.org>\nCommit-Queue: Bo Majewski <majewski@chromium.org>\nCr-Commit-Position: refs/heads/main@{#965077}",
+    "tree": {
+      "sha": "1667654792b84ccaf3b9f8e6f693724079a4c0b8",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/1667654792b84ccaf3b9f8e6f693724079a4c0b8"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/0a4ede6c430df907937e910d0abd532d2a6c0e77",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/0a4ede6c430df907937e910d0abd532d2a6c0e77",
+  "html_url": "https://github.com/chromium/chromium/commit/0a4ede6c430df907937e910d0abd532d2a6c0e77",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/0a4ede6c430df907937e910d0abd532d2a6c0e77/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "56102b6f7aa34593dfe42a91024b6a0fe839464e",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/56102b6f7aa34593dfe42a91024b6a0fe839464e",
+      "html_url": "https://github.com/chromium/chromium/commit/56102b6f7aa34593dfe42a91024b6a0fe839464e"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 14,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "5f0d7d9045e88c2f2960629c0b11a50c26d6e638",
+      "filename": "chrome/browser/ui/views/select_file_dialog_extension.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 9,
+      "changes": 21,
+      "blob_url": "https://github.com/chromium/chromium/blob/0a4ede6c430df907937e910d0abd532d2a6c0e77/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/0a4ede6c430df907937e910d0abd532d2a6c0e77/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.cc?ref=0a4ede6c430df907937e910d0abd532d2a6c0e77",
+      "patch": "@@ -194,13 +194,13 @@ SelectFileDialogExtension::RoutingID GetRoutingID(\n class SystemFilesAppDialogDelegate : public chromeos::SystemWebDialogDelegate,\n                                      public ash::ColorModeObserver {\n  public:\n-  SystemFilesAppDialogDelegate(SelectFileDialogExtension* parent,\n+  SystemFilesAppDialogDelegate(base::WeakPtr<SelectFileDialogExtension> parent,\n                                const std::string& id,\n                                GURL url,\n                                std::u16string title)\n       : chromeos::SystemWebDialogDelegate(url, title),\n         id_(id),\n-        parent_(parent) {\n+        parent_(std::move(parent)) {\n     ash::ColorProvider::Get()->AddObserver(this);\n   }\n   ~SystemFilesAppDialogDelegate() override {\n@@ -240,11 +240,17 @@ class SystemFilesAppDialogDelegate : public chromeos::SystemWebDialogDelegate,\n   }\n \n   void OnDialogShown(content::WebUI* webui) override {\n-    parent_->OnSystemDialogShown(webui->GetWebContents(), id_);\n+    if (parent_) {\n+      parent_->OnSystemDialogShown(webui->GetWebContents(), id_);\n+    }\n     chromeos::SystemWebDialogDelegate::OnDialogShown(webui);\n   }\n \n-  void OnDialogWillClose() override { parent_->OnSystemDialogWillClose(); }\n+  void OnDialogWillClose() override {\n+    if (parent_) {\n+      parent_->OnSystemDialogWillClose();\n+    }\n+  }\n \n   void OnColorModeChanged(bool dark_mode_enabled) override {\n     auto* color_provider = ash::ColorProvider::Get();\n@@ -263,7 +269,7 @@ class SystemFilesAppDialogDelegate : public chromeos::SystemWebDialogDelegate,\n   const std::string id_;\n \n   // The parent of this delegate.\n-  SelectFileDialogExtension* parent_;\n+  base::WeakPtr<SelectFileDialogExtension> parent_;\n };\n \n /////////////////////////////////////////////////////////////////////////////\n@@ -536,11 +542,8 @@ void SelectFileDialogExtension::SelectFileWithFileManagerParams(\n       base_window ? base_window->GetNativeWindow() : owner.window;\n \n   if (ash::features::IsFileManagerSwaEnabled()) {\n-    // SystemFilesAppDialogDelegate is a self-deleting class that calls the\n-    // delete operator once the dialog for which it was created has been closed.\n-    // Hence this memory-leak looking code pattern.\n     auto* dialog_delegate = new SystemFilesAppDialogDelegate(\n-        this, routing_id, file_manager_url, dialog_title);\n+        weak_factory_.GetWeakPtr(), routing_id, file_manager_url, dialog_title);\n     dialog_delegate->SetModal(owner.window != nullptr);\n     dialog_delegate->set_can_resize(can_resize_);\n     dialog_delegate->ShowSystemDialogForBrowserContext(profile_, parent_window);"
+    },
+    {
+      "sha": "c9a6d0c0420b07b622b3f99b68381a74ed321edf",
+      "filename": "chrome/browser/ui/views/select_file_dialog_extension.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/0a4ede6c430df907937e910d0abd532d2a6c0e77/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/0a4ede6c430df907937e910d0abd532d2a6c0e77/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fselect_file_dialog_extension.h?ref=0a4ede6c430df907937e910d0abd532d2a6c0e77",
+      "patch": "@@ -11,6 +11,7 @@\n \n #include \"ash/public/cpp/style/color_mode_observer.h\"\n #include \"base/memory/ref_counted.h\"\n+#include \"base/memory/weak_ptr.h\"\n #include \"chrome/browser/ui/views/extensions/extension_dialog_observer.h\"\n #include \"third_party/abseil-cpp/absl/types/optional.h\"\n #include \"ui/gfx/native_widget_types.h\"  // gfx::NativeWindow\n@@ -185,6 +186,7 @@ class SelectFileDialogExtension : public ui::SelectFileDialog,\n   int selection_index_ = 0;\n   bool can_resize_ = true;\n   void* params_ = nullptr;\n+  base::WeakPtrFactory<SelectFileDialogExtension> weak_factory_{this};\n };\n \n #endif  // CHROME_BROWSER_UI_VIEWS_SELECT_FILE_DIALOG_EXTENSION_H_"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "sha": "1c518555dba6ceb45d5ba61845b96e261219c3b7",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjFjNTE4NTU1ZGJhNmNlYjQ1ZDViYTYxODQ1Yjk2ZTI2MTIxOWMzYjc=",
+  "commit": {
+    "author": {
+      "name": "Shaunak Kishore",
+      "email": "kshaunak@fb.com",
+      "date": "2019-10-29T03:20:37Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-10-29T03:23:43Z"
+    },
+    "message": "Fix buffer overflow in mb_ereg_replace\n\nSummary:\nThis diff has already been landed to release and to open-source branches. We're now landing it on master.\n\nCVE-2019-11935\n\nReviewed By: jjergus\n\nDifferential Revision: D18177934\n\nfbshipit-source-id: d108a59e38c67f5f5e835febd7255307605ba62c",
+    "tree": {
+      "sha": "8e7fd27f8be068407354c4854293499b0119ab73",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/8e7fd27f8be068407354c4854293499b0119ab73"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/1c518555dba6ceb45d5ba61845b96e261219c3b7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/1c518555dba6ceb45d5ba61845b96e261219c3b7",
+  "html_url": "https://github.com/facebook/hhvm/commit/1c518555dba6ceb45d5ba61845b96e261219c3b7",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/1c518555dba6ceb45d5ba61845b96e261219c3b7/comments",
+  "author": {
+    "login": "skishore",
+    "id": 623824,
+    "node_id": "MDQ6VXNlcjYyMzgyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/623824?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/skishore",
+    "html_url": "https://github.com/skishore",
+    "followers_url": "https://api.github.com/users/skishore/followers",
+    "following_url": "https://api.github.com/users/skishore/following{/other_user}",
+    "gists_url": "https://api.github.com/users/skishore/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/skishore/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/skishore/subscriptions",
+    "organizations_url": "https://api.github.com/users/skishore/orgs",
+    "repos_url": "https://api.github.com/users/skishore/repos",
+    "events_url": "https://api.github.com/users/skishore/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/skishore/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8b41a389c1e317b6985678a1b13b378cb690d886",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/8b41a389c1e317b6985678a1b13b378cb690d886",
+      "html_url": "https://github.com/facebook/hhvm/commit/8b41a389c1e317b6985678a1b13b378cb690d886"
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "additions": 22,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "0766bfd210e72382ec63e8e1c9d7b843a6e9620f",
+      "filename": "hphp/runtime/ext/mbstring/ext_mbstring.cpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp?ref=1c518555dba6ceb45d5ba61845b96e261219c3b7",
+      "patch": "@@ -3609,8 +3609,9 @@ static Variant _php_mb_regex_ereg_replace_exec(const Variant& pattern,\n       while (i < replacement.size()) {\n         int fwd = (int)php_mb_mbchar_bytes_ex(p, enc);\n         n = -1;\n-        if ((replacement.size() - i) >= 2 && fwd == 1 &&\n-          p[0] == '\\\\' && p[1] >= '0' && p[1] <= '9') {\n+        auto const remaining = replacement.size() - i;\n+        if (remaining >= 2 && fwd == 1 &&\n+            p[0] == '\\\\' && p[1] >= '0' && p[1] <= '9') {\n           n = p[1] - '0';\n         }\n         if (n >= 0 && n < regs->num_regs) {\n@@ -3621,10 +3622,14 @@ static Variant _php_mb_regex_ereg_replace_exec(const Variant& pattern,\n           }\n           p += 2;\n           i += 2;\n-        } else {\n+        } else if (remaining >= fwd) {\n           out_buf.append(p, fwd);\n           p += fwd;\n           i += fwd;\n+        } else {\n+          raise_warning(\"Replacement ends with unterminated %s: 0x%hhx\",\n+                        enc->name, *p);\n+          break;\n         }\n       }\n       n = regs->end[0];"
+    },
+    {
+      "sha": "949e7d8c90a7b441b55a4a65678b15a3c9f90509",
+      "filename": "hphp/test/zend/good/ext/mbstring/mb_ereg_replace_invalid_replacement.php",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php?ref=1c518555dba6ceb45d5ba61845b96e261219c3b7",
+      "patch": "@@ -0,0 +1,7 @@\n+<?hh\n+\n+<<__EntryPoint>>\n+function main(): void {\n+  var_dump(mb_ereg_replace(\"\", \"\\xf1\", \"\", \"\"));\n+  throw new Error(\"done\");\n+}"
+    },
+    {
+      "sha": "9b91fa9bca3a7e08eb76319af4cb5ae68c74d9a7",
+      "filename": "hphp/test/zend/good/ext/mbstring/mb_ereg_replace_invalid_replacement.php.expectf",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1c518555dba6ceb45d5ba61845b96e261219c3b7/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fzend%2Fgood%2Fext%2Fmbstring%2Fmb_ereg_replace_invalid_replacement.php.expectf?ref=1c518555dba6ceb45d5ba61845b96e261219c3b7",
+      "patch": "@@ -0,0 +1,7 @@\n+Warning: Replacement ends with unterminated UTF-8: 0xf1 in %s/mb_ereg_replace_invalid_replacement.php on line 5\n+string(0) \"\"\n+\n+Fatal error: Uncaught Error: done in %s/mb_ereg_replace_invalid_replacement.php:6\n+Stack trace:\n+#0 (): main()\n+#1 {main}"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "sha": "3da687e35069ff2ec44af3140923359ecb67005c",
+  "node_id": "C_kwDOByyPPdoAKDNkYTY4N2UzNTA2OWZmMmVjNDRhZjMxNDA5MjMzNTllY2I2NzAwNWM",
+  "commit": {
+    "author": {
+      "name": "David Bertoni",
+      "email": "dbertoni@chromium.org",
+      "date": "2022-02-01T20:32:17Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-02-01T20:32:17Z"
+    },
+    "message": "[Extensions] Fix UAF issue in webstorePrivate API.\n\nThe webstorePrivate API keeps a list of objects with pointers to\nProfile instances and those objects can, in rare cases, outlive\nthem. This CL adds code to observe Profile lifetimes and remove\nany objects that are associated with Profile instances that are\ndestroyed.\n\nBug: 1286940\nChange-Id: I6e8acc44469f7af3ecb5c522363d4365d9514107\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3416494\nAuto-Submit: David Bertoni <dbertoni@chromium.org>\nReviewed-by: Kelvin Jiang <kelvinjiang@chromium.org>\nCommit-Queue: Kelvin Jiang <kelvinjiang@chromium.org>\nCr-Commit-Position: refs/heads/main@{#965847}",
+    "tree": {
+      "sha": "514916480fb7c35deffb2cac09de87670ab4db70",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/514916480fb7c35deffb2cac09de87670ab4db70"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/3da687e35069ff2ec44af3140923359ecb67005c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/3da687e35069ff2ec44af3140923359ecb67005c",
+  "html_url": "https://github.com/chromium/chromium/commit/3da687e35069ff2ec44af3140923359ecb67005c",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/3da687e35069ff2ec44af3140923359ecb67005c/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "a5ec61635fe905ffcd7663c427c9ab2006cff519",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/a5ec61635fe905ffcd7663c427c9ab2006cff519",
+      "html_url": "https://github.com/chromium/chromium/commit/a5ec61635fe905ffcd7663c427c9ab2006cff519"
+    }
+  ],
+  "stats": {
+    "total": 88,
+    "additions": 80,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "094fe8347b065454cf4bc26c43e1f3fe1c47939b",
+      "filename": "chrome/browser/extensions/api/webstore_private/webstore_private_api.cc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 6,
+      "changes": 46,
+      "blob_url": "https://github.com/chromium/chromium/blob/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.cc?ref=3da687e35069ff2ec44af3140923359ecb67005c",
+      "patch": "@@ -12,11 +12,13 @@\n \n #include \"base/base64.h\"\n #include \"base/bind.h\"\n+#include \"base/containers/cxx20_erase_vector.h\"\n #include \"base/json/values_util.h\"\n #include \"base/lazy_instance.h\"\n #include \"base/memory/scoped_refptr.h\"\n #include \"base/metrics/histogram_functions.h\"\n #include \"base/metrics/histogram_macros.h\"\n+#include \"base/scoped_multi_source_observation.h\"\n #include \"base/strings/utf_string_conversions.h\"\n #include \"base/threading/thread_task_runner_handle.h\"\n #include \"base/values.h\"\n@@ -31,6 +33,7 @@\n #include \"chrome/browser/extensions/install_tracker.h\"\n #include \"chrome/browser/extensions/scoped_active_install.h\"\n #include \"chrome/browser/profiles/profile.h\"\n+#include \"chrome/browser/profiles/profile_observer.h\"\n #include \"chrome/browser/safe_browsing/safe_browsing_metrics_collector_factory.h\"\n #include \"chrome/browser/safe_browsing/safe_browsing_navigation_observer_manager_factory.h\"\n #include \"chrome/browser/safe_browsing/safe_browsing_service.h\"\n@@ -93,33 +96,59 @@ namespace SetStoreLogin = api::webstore_private::SetStoreLogin;\n namespace {\n \n // Holds the Approvals between the time we prompt and start the installs.\n-class PendingApprovals {\n+class PendingApprovals : public ProfileObserver {\n  public:\n-  PendingApprovals();\n+  PendingApprovals() = default;\n \n   PendingApprovals(const PendingApprovals&) = delete;\n   PendingApprovals& operator=(const PendingApprovals&) = delete;\n \n-  ~PendingApprovals();\n+  ~PendingApprovals() override = default;\n \n   void PushApproval(std::unique_ptr<WebstoreInstaller::Approval> approval);\n   std::unique_ptr<WebstoreInstaller::Approval> PopApproval(\n       Profile* profile,\n       const std::string& id);\n   void Clear();\n \n+  int GetCount() const { return approvals_.size(); }\n+\n  private:\n+  // ProfileObserver\n+  // Remove pending approvals if the Profile is being destroyed.\n+  void OnProfileWillBeDestroyed(Profile* profile) override {\n+    base::EraseIf(approvals_, [profile](const auto& approval) {\n+      return approval->profile == profile;\n+    });\n+    observation_.RemoveObservation(profile);\n+  }\n+\n+  void MaybeAddObservation(Profile* profile) {\n+    if (!observation_.IsObservingSource(profile))\n+      observation_.AddObservation(profile);\n+  }\n+\n+  // Remove observation if there are no pending approvals\n+  // for the Profile.\n+  void MaybeRemoveObservation(Profile* profile) {\n+    for (const auto& entry : approvals_) {\n+      if (entry->profile == profile)\n+        return;\n+    }\n+    observation_.RemoveObservation(profile);\n+  }\n+\n   using ApprovalList =\n       std::vector<std::unique_ptr<WebstoreInstaller::Approval>>;\n \n   ApprovalList approvals_;\n+  base::ScopedMultiSourceObservation<Profile, ProfileObserver> observation_{\n+      this};\n };\n \n-PendingApprovals::PendingApprovals() {}\n-PendingApprovals::~PendingApprovals() {}\n-\n void PendingApprovals::PushApproval(\n     std::unique_ptr<WebstoreInstaller::Approval> approval) {\n+  MaybeAddObservation(approval->profile);\n   approvals_.push_back(std::move(approval));\n }\n \n@@ -131,6 +160,7 @@ std::unique_ptr<WebstoreInstaller::Approval> PendingApprovals::PopApproval(\n         profile->IsSameOrParent(iter->get()->profile)) {\n       std::unique_ptr<WebstoreInstaller::Approval> approval = std::move(*iter);\n       approvals_.erase(iter);\n+      MaybeRemoveObservation(approval->profile);\n       return approval;\n     }\n   }\n@@ -398,6 +428,10 @@ void WebstorePrivateApi::ClearPendingApprovalsForTesting() {\n   g_pending_approvals.Get().Clear();\n }\n \n+int WebstorePrivateApi::GetPendingApprovalsCountForTesting() {\n+  return g_pending_approvals.Get().GetCount();\n+}\n+\n WebstorePrivateBeginInstallWithManifest3Function::\n     WebstorePrivateBeginInstallWithManifest3Function() = default;\n "
+    },
+    {
+      "sha": "5a760f8490c1e4b2cc9fe691951c78ec08275f9c",
+      "filename": "chrome/browser/extensions/api/webstore_private/webstore_private_api.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/chromium/chromium/blob/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_api.h?ref=3da687e35069ff2ec44af3140923359ecb67005c",
+      "patch": "@@ -51,8 +51,11 @@ class WebstorePrivateApi {\n       Profile* profile,\n       const std::string& extension_id);\n \n-  // Clear the pending approvals. This should be used for testing only.\n+  // Clear the pending approvals. This should only be used for testing.\n   static void ClearPendingApprovalsForTesting();\n+\n+  // Get the count of pending approvals. This should only be used for testing.\n+  static int GetPendingApprovalsCountForTesting();\n };\n \n class WebstorePrivateBeginInstallWithManifest3Function"
+    },
+    {
+      "sha": "4475f1de7df57ad97636821ad542b1eaf615950a",
+      "filename": "chrome/browser/extensions/api/webstore_private/webstore_private_unittest.cc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 1,
+      "changes": 37,
+      "blob_url": "https://github.com/chromium/chromium/blob/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/3da687e35069ff2ec44af3140923359ecb67005c/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fextensions%2Fapi%2Fwebstore_private%2Fwebstore_private_unittest.cc?ref=3da687e35069ff2ec44af3140923359ecb67005c",
+      "patch": "@@ -17,6 +17,7 @@\n #include \"chrome/browser/extensions/test_extension_system.h\"\n #include \"chrome/common/extensions/extension_constants.h\"\n #include \"chrome/common/pref_names.h\"\n+#include \"chrome/test/base/testing_profile_manager.h\"\n #include \"components/sync_preferences/testing_pref_service_syncable.h\"\n #include \"content/public/test/web_contents_tester.h\"\n #include \"extensions/browser/api_test_utils.h\"\n@@ -650,12 +651,46 @@ TEST_F(WebstorePrivateBeginInstallWithManifest3Test,\n \n   std::unique_ptr<base::Value> response = RunFunctionAndReturnValue(\n       function.get(), GenerateArgs(kExtensionId, kExtensionManifest));\n-  // The API returns empty string when extension is installed successfully.\n+  // The API returns an empty string on success.\n   ASSERT_TRUE(response);\n   ASSERT_TRUE(response->is_string());\n   EXPECT_EQ(std::string(), response->GetString());\n }\n \n+TEST_F(WebstorePrivateBeginInstallWithManifest3Test,\n+       ProfileDeletedBeforeCompleteInstall) {\n+  const std::string profile_name = \"deleted_before_complete_install\";\n+  TestingProfile* const test_profile =\n+      profile_manager()->CreateTestingProfile(profile_name);\n+  ASSERT_TRUE(test_profile);\n+  // There should be no pending approvals.\n+  EXPECT_EQ(WebstorePrivateApi::GetPendingApprovalsCountForTesting(), 0);\n+  {\n+    std::unique_ptr<content::WebContents> web_contents =\n+        content::WebContentsTester::CreateTestWebContents(test_profile,\n+                                                          nullptr);\n+    auto function = base::MakeRefCounted<\n+        WebstorePrivateBeginInstallWithManifest3Function>();\n+    function->SetRenderFrameHost(web_contents->GetMainFrame());\n+    ScopedTestDialogAutoConfirm auto_confirm(\n+        ScopedTestDialogAutoConfirm::ACCEPT);\n+\n+    function->set_extension(extension());\n+    auto response = api_test_utils::RunFunctionAndReturnSingleResult(\n+        function.get(), GenerateArgs(kExtensionId, kExtensionManifest),\n+        test_profile);\n+    // The API returns an empty string on success.\n+    ASSERT_TRUE(response);\n+    ASSERT_TRUE(response->is_string());\n+    EXPECT_EQ(response->GetString(), \"\");\n+    // Running the function creates a pending approval.\n+    EXPECT_EQ(WebstorePrivateApi::GetPendingApprovalsCountForTesting(), 1);\n+  }\n+  // Deleting the Profile should remove the pending approval.\n+  profile_manager()->DeleteTestingProfile(profile_name);\n+  EXPECT_EQ(WebstorePrivateApi::GetPendingApprovalsCountForTesting(), 0);\n+}\n+\n struct FrictionDialogTestCase {\n   std::string test_name;\n   bool esb_user;"
+    }
+  ]
+}

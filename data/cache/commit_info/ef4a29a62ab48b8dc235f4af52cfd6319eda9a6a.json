@@ -1,0 +1,145 @@
+{
+  "sha": "ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+  "node_id": "C_kwDOAE9q7doAKGVmNGEyOWE2MmFiNDhiOGRjMjM1ZjRhZjUyY2ZkNjMxOWVkYTlhNmE",
+  "commit": {
+    "author": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-23T05:57:40Z"
+    },
+    "committer": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-05-23T05:57:40Z"
+    },
+    "message": "Added out-of-bounds checks for lossless symbol decoding and AC context\nindices. Worked around some gcc warnings. Bumped to 1.64.",
+    "tree": {
+      "sha": "377e0fdb7c744bd4592eff3e9c7a81de101c31d2",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/trees/377e0fdb7c744bd4592eff3e9c7a81de101c31d2"
+    },
+    "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/commits/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+  "html_url": "https://github.com/thorfdbg/libjpeg/commit/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+  "comments_url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "4aebbf91dc4d25eec43175c8c7bdf89507749525",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/4aebbf91dc4d25eec43175c8c7bdf89507749525",
+      "html_url": "https://github.com/thorfdbg/libjpeg/commit/4aebbf91dc4d25eec43175c8c7bdf89507749525"
+    }
+  ],
+  "stats": {
+    "total": 104,
+    "additions": 75,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "40ef320a33ca88452828139b5a312b07e5d308ce",
+      "filename": "README",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/README",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/README",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/README?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -452,6 +452,17 @@ file for the alpha channel with the \"-al\" command line option.\n \r\n --------------------------------------------------------------------------\r\n \r\n+Release 1.64:\r\n+\r\n+The lossless scan, the arithmetically coded lossless scan and the\r\n+arithmetically coded sequential scan could run into cases where an\r\n+out-of-bounds symbol triggered and out-of-bounds array access and could\r\n+have crashed the decoder. The code is now more carefully changing the\r\n+validity of the symbols and aborts with an error if it finds illegal\r\n+codes.\r\n+\r\n+--------------------------------------------------------------------------\r\n+\r\n For license conditions, please check the file README.license in this\r\n directory.\r\n \r"
+    },
+    {
+      "sha": "672d08debf0fe3e92c1306c33a431197741f0ae2",
+      "filename": "README.history",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/README.history",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/README.history",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/README.history?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -555,3 +555,14 @@ now in this case simply disregarded. Note that you can define the output\n file for the alpha channel with the \"-al\" command line option.\r\n \r\n --------------------------------------------------------------------------\r\n+\r\n+Release 1.64:\r\n+\r\n+The lossless scan, the arithmetically coded lossless scan and the\r\n+arithmetically coded sequential scan could run into cases where an\r\n+out-of-bounds symbol triggered and out-of-bounds array access and could\r\n+have crashed the decoder. The code is now more carefully changing the\r\n+validity of the symbols and aborts with an error if it finds illegal\r\n+codes.\r\n+\r\n+--------------------------------------------------------------------------\r"
+    },
+    {
+      "sha": "cbfd2827ce0c1570ce75e4a5df2e3924d8c861cc",
+      "filename": "codestream/aclosslessscan.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Faclosslessscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Faclosslessscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Faclosslessscan.cpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -42,7 +42,7 @@\n **\n ** Represents the scan including the scan header.\n **\n-** $Id: aclosslessscan.cpp,v 1.42 2020/08/31 07:50:43 thor Exp $\n+** $Id: aclosslessscan.cpp,v 1.43 2022/05/23 05:56:51 thor Exp $\n **\n */\n \n@@ -359,7 +359,9 @@ void ACLosslessScan::ParseMCU(struct Line **prev,struct Line **top)\n             //\n             while(m_Coder.Get(mset.X[i])) {\n               m <<= 1;\n-              i++;\n+              if (++i >= QMContextSet::MagnitudeSet::MagnitudeContexts)\n+                JPG_THROW(MALFORMED_STREAM,\"ACLosslessScan::ParseMCU\",\n+                          \"received an out-of-bounds signal while parsing an AC-coded lossless symbol\");\n             }\n             //\n             m >>= 1;"
+    },
+    {
+      "sha": "db870df0ac1005c141d4d0b7411a20887b6981d8",
+      "filename": "codestream/aclosslessscan.hpp",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 12,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Faclosslessscan.hpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Faclosslessscan.hpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Faclosslessscan.hpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -43,7 +43,7 @@\n ** Represents the lossless scan - lines are coded directly with predictive\n ** coding, though here residuals are encoded with the arithmetic encoder.\n **\n-** $Id: aclosslessscan.hpp,v 1.28 2014/11/16 15:49:58 thor Exp $\n+** $Id: aclosslessscan.hpp,v 1.29 2022/05/23 05:56:51 thor Exp $\n **\n */\n \n@@ -111,12 +111,16 @@ class ACLosslessScan : public PredictiveScan {\n     //\n     // The Magnitude/refinement coding contexts.\n     struct MagnitudeSet {\n-      QMContext X[15];\n-      QMContext M[15];\n+      enum {\n+        MagnitudeContexts = 15\n+      };\n+      //\n+      QMContext X[MagnitudeContexts];\n+      QMContext M[MagnitudeContexts];\n       //\n       void Init(void)\n       {\n-        for(int i = 0;i < 15;i++) {\n+        for(int i = 0;i < MagnitudeContexts;i++) {\n           X[i].Init();\n           M[i].Init();\n         }"
+    },
+    {
+      "sha": "b12db52bb8ef6d24a940a733074c9bdf93ef3b85",
+      "filename": "codestream/acsequentialscan.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 5,
+      "changes": 8,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Facsequentialscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Facsequentialscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Facsequentialscan.cpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -42,7 +42,7 @@\n **\n ** Represents the scan including the scan header.\n **\n-** $Id: acsequentialscan.cpp,v 1.51 2016/10/28 13:58:53 thor Exp $\n+** $Id: acsequentialscan.cpp,v 1.52 2022/05/23 05:56:51 thor Exp $\n **\n */\n \n@@ -582,8 +582,7 @@ void ACSequentialScan::DecodeBlock(LONG *block,\n         \n         while(m_Coder.Get(m_Context[dc].DCMagnitude.X[i])) {\n           m <<= 1;\n-          i++;\n-          if (m == 0) \n+          if(++i >= QMContextSet::DCContextMagnitudeSet::MagnitudeContexts)\n             JPG_THROW(MALFORMED_STREAM,\"ACSequentialScan::DecodeBlock\",\n                       \"QMDecoder is out of sync\");\n         }\n@@ -653,8 +652,7 @@ void ACSequentialScan::DecodeBlock(LONG *block,\n           \n           while(m_Coder.Get(acm.X[i])) {\n             m <<= 1;\n-            i++;\n-            if (m == 0)\n+            if(++i >= QMContextSet::ACContextMagnitudeSet::MagnitudeContexts)\n               JPG_THROW(MALFORMED_STREAM,\"ACSequentialScan::DecodeBlock\",\n                         \"QMDecoder is out of sync\");\n           }"
+    },
+    {
+      "sha": "fbe7941d1bd97b91e88e82b46b29c0f2bec3e065",
+      "filename": "codestream/acsequentialscan.hpp",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 9,
+      "changes": 25,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Facsequentialscan.hpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Facsequentialscan.hpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Facsequentialscan.hpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -43,7 +43,7 @@\n ** Represents the scan including the scan header for the\n ** arithmetic coding procedure.\n **\n-** $Id: acsequentialscan.hpp,v 1.38 2016/10/28 13:58:53 thor Exp $\n+** $Id: acsequentialscan.hpp,v 1.39 2022/05/23 05:56:51 thor Exp $\n **\n */\n \n@@ -120,13 +120,17 @@ class ACSequentialScan : public EntropyParser {\n     //\n     // The DC Magnitude coding contexts.\n     struct DCContextMagnitudeSet {\n-      QMContext X[19];\n-      QMContext M[19];\n+      enum {\n+        MagnitudeContexts = 19\n+      };\n+      //\n+      QMContext X[MagnitudeContexts];\n+      QMContext M[MagnitudeContexts];\n       //\n       // Initialize\n       void Init(void)\n       {\n-        for(int i = 0;i < 19;i++) {\n+        for(int i = 0;i < MagnitudeContexts;i++) {\n #ifdef DEBUG_QMCODER\n           char string[5] = \"X0  \";\n           string[1] = (i / 10) + '0';\n@@ -171,14 +175,17 @@ class ACSequentialScan : public EntropyParser {\n     //\n     // The AC Magnitude coder.\n     struct ACContextMagnitudeSet {\n-      QMContext X[18];\n-      QMContext M[18];\n+      enum {\n+        MagnitudeContexts = 18\n+      };\n+      //\n+      QMContext X[MagnitudeContexts];\n+      QMContext M[MagnitudeContexts];\n       //\n-\n #ifdef DEBUG_QMCODER\n       void Init(bool hi) \n       {\n-        for(int i = 0;i < 18;i++) {\n+        for(int i = 0;i < MagnitudeContexts;i++) {\n           char string[5] = \"xl00\";\n           string[1] = (hi)?('h'):('l');\n           string[2] = (i / 10) + '0';\n@@ -191,7 +198,7 @@ class ACSequentialScan : public EntropyParser {\n #else\n       void Init(void)\n       {\n-        for(int i = 0;i < 18;i++) {\n+        for(int i = 0;i < MagnitudeContexts;i++) {\n           X[i].Init();\n           M[i].Init();\n         }"
+    },
+    {
+      "sha": "75a15a6539deab16f94f20e3fdd02bc483dc385b",
+      "filename": "codestream/losslessscan.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Flosslessscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Flosslessscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Flosslessscan.cpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -42,7 +42,7 @@\n **\n ** Represents the scan including the scan header.\n **\n-** $Id: losslessscan.cpp,v 1.50 2015/03/25 08:45:43 thor Exp $\n+** $Id: losslessscan.cpp,v 1.51 2022/05/23 05:56:51 thor Exp $\n **\n */\n \n@@ -377,6 +377,9 @@ void LosslessScan::ParseMCU(struct Line **prev,struct Line **top)\n           v = 0;\n         } else if (symbol == 16) {\n           v = -32768;\n+        } else if (symbol > 16) {\n+          JPG_THROW(MALFORMED_STREAM,\"LosslessScan::ParseMCU\",\n+                    \"received an out-of-bounds symbol in a lossless JPEG scan\");\n         } else {\n           LONG thre = 1L << (symbol - 1);\n           LONG diff = m_Stream.Get(symbol); // get the number of bits "
+    },
+    {
+      "sha": "a2d7c597fba59014d361da6324b8fa5961964424",
+      "filename": "codestream/rectanglerequest.hpp",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 8,
+      "changes": 26,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Frectanglerequest.hpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a/codestream%2Frectanglerequest.hpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Frectanglerequest.hpp?ref=ef4a29a62ab48b8dc235f4af52cfd6319eda9a6a",
+      "patch": "@@ -42,7 +42,7 @@\n  * Definition of how to request a given rectangle for display,\n  * for load or for checking for a necessary update.\n  * \n- * $Id: rectanglerequest.hpp,v 1.12 2017/11/28 13:08:07 thor Exp $\n+ * $Id: rectanglerequest.hpp,v 1.13 2022/05/23 05:56:51 thor Exp $\n  *\n  */\n \n@@ -105,19 +105,29 @@ struct RectangleRequest : public JObject, private Explicit {\n   RectangleRequest(const struct RectangleRequest &req)\n     : Explicit()\n   {\n-    // Not nice, but this is really faster and simpler\n-    memcpy(this,&req,sizeof(struct RectangleRequest));\n     // Not linked in any way if this is new.\n-    rr_pNext = NULL;\n+    rr_pNext            = NULL;\n+    rr_Request          = req.rr_Request;\n+    rr_usFirstComponent = req.rr_usFirstComponent;\n+    rr_usLastComponent  = req.rr_usLastComponent;\n+    rr_cPriority        = req.rr_cPriority;\n+    rr_bIncludeAlpha    = req.rr_bIncludeAlpha;\n+    rr_bUpsampling      = req.rr_bUpsampling;\n+    rr_bColorTrafo      = req.rr_bColorTrafo;\n   }\n   //\n   // Assignment operator.\n   RectangleRequest &operator=(const struct RectangleRequest &req)\n   { \n-    // Not nice, but this is really faster and simpler\n-    memcpy(this,&req,sizeof(struct RectangleRequest));\n-    // Not linked in any way if this is new.\n-    rr_pNext = NULL;\n+   // Not linked in any way if this is new.\n+    rr_pNext            = NULL;\n+    rr_Request          = req.rr_Request;\n+    rr_usFirstComponent = req.rr_usFirstComponent;\n+    rr_usLastComponent  = req.rr_usLastComponent;\n+    rr_cPriority        = req.rr_cPriority;\n+    rr_bIncludeAlpha    = req.rr_bIncludeAlpha;\n+    rr_bUpsampling      = req.rr_bUpsampling;\n+    rr_bColorTrafo      = req.rr_bColorTrafo;\n     //\n     return *this;\n   }"
+    }
+  ]
+}

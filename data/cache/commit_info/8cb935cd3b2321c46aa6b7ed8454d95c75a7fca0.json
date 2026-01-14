@@ -1,0 +1,113 @@
+{
+  "sha": "8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+  "node_id": "MDY6Q29tbWl0MTU0MjAxMjU5OjhjYjkzNWNkM2IyMzIxYzQ2YWE2YjdlZDg0NTRkOTVjNzVhN2ZjYTA=",
+  "commit": {
+    "author": {
+      "name": "Marc Horowitz",
+      "email": "mhorowitz@fb.com",
+      "date": "2020-09-26T03:52:54Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2020-09-26T03:54:05Z"
+    },
+    "message": "Handle set where internalSetter and Proxy are both true\n\nSummary:\nIf putComputed is called on a proxy whose target's prototype\nis an array with a propname of 'length', then internalSetter will be\ntrue, and the receiver will be a proxy.  In that case, proxy needs to\nwin; the behavior may assert or be UB otherwise.\n\nReviewed By: tmikov\n\nDifferential Revision: D23916279\n\nfbshipit-source-id: c760356d48a02ece565fb4bc1acdafd7ccad7c68",
+    "tree": {
+      "sha": "65fd7edc0c815a40f51a79fcb4dfbea0ee21efce",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/65fd7edc0c815a40f51a79fcb4dfbea0ee21efce"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+  "html_url": "https://github.com/facebook/hermes/commit/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0/comments",
+  "author": {
+    "login": "mhorowitz",
+    "id": 290225,
+    "node_id": "MDQ6VXNlcjI5MDIyNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/290225?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mhorowitz",
+    "html_url": "https://github.com/mhorowitz",
+    "followers_url": "https://api.github.com/users/mhorowitz/followers",
+    "following_url": "https://api.github.com/users/mhorowitz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mhorowitz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mhorowitz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mhorowitz/subscriptions",
+    "organizations_url": "https://api.github.com/users/mhorowitz/orgs",
+    "repos_url": "https://api.github.com/users/mhorowitz/repos",
+    "events_url": "https://api.github.com/users/mhorowitz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mhorowitz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "22019661bbe3637a764aae7eb027148fac5817f1",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/22019661bbe3637a764aae7eb027148fac5817f1",
+      "html_url": "https://github.com/facebook/hermes/commit/22019661bbe3637a764aae7eb027148fac5817f1"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 29,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "b06dbad158fc1313811ceb02cea37fbd5d8d76ea",
+      "filename": "lib/VM/JSObject.cpp",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 15,
+      "changes": 35,
+      "blob_url": "https://github.com/facebook/hermes/blob/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0/lib%2FVM%2FJSObject.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0/lib%2FVM%2FJSObject.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSObject.cpp?ref=8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+      "patch": "@@ -1699,6 +1699,24 @@ CallResult<bool> JSObject::putComputedWithReceiver_RJS(\n     if (LLVM_UNLIKELY(\n             desc.flags.internalSetter || receiverHandle->isHostObject() ||\n             receiverHandle->isProxyObject())) {\n+      // If putComputed is called on a proxy whose target's prototype\n+      // is an array with a propname of 'length', then internalSetter\n+      // will be true, and the receiver will be a proxy.  In that case,\n+      // proxy wins.\n+      if (receiverHandle->isProxyObject()) {\n+        if (*descDefinedRes) {\n+          dpf.setValue = 1;\n+        } else {\n+          dpf = DefinePropertyFlags::getDefaultNewPropertyFlags();\n+        }\n+        return JSProxy::defineOwnProperty(\n+            receiverHandle,\n+            runtime,\n+            nameValPrimitiveHandle,\n+            dpf,\n+            valueHandle,\n+            opFlags);\n+      }\n       SymbolID id{};\n       LAZY_TO_IDENTIFIER(runtime, nameValPrimitiveHandle, id);\n       if (desc.flags.internalSetter) {\n@@ -1709,23 +1727,10 @@ CallResult<bool> JSObject::putComputedWithReceiver_RJS(\n             desc.castToNamedPropertyDescriptorRef(),\n             valueHandle,\n             opFlags);\n-      } else if (receiverHandle->isHostObject()) {\n-        return vmcast<HostObject>(receiverHandle.get())->set(id, *valueHandle);\n       }\n       assert(\n-          receiverHandle->isProxyObject() && \"descriptor flags are impossible\");\n-      if (*descDefinedRes) {\n-        dpf.setValue = 1;\n-      } else {\n-        dpf = DefinePropertyFlags::getDefaultNewPropertyFlags();\n-      }\n-      return JSProxy::defineOwnProperty(\n-          receiverHandle,\n-          runtime,\n-          nameValPrimitiveHandle,\n-          dpf,\n-          valueHandle,\n-          opFlags);\n+          receiverHandle->isHostObject() && \"descriptor flags are impossible\");\n+      return vmcast<HostObject>(receiverHandle.get())->set(id, *valueHandle);\n     }\n   }\n "
+    },
+    {
+      "sha": "bc8102f3ed93568a421f74326d7e7b74d33892e8",
+      "filename": "test/hermes/proxy.js",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/facebook/hermes/blob/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0/test%2Fhermes%2Fproxy.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0/test%2Fhermes%2Fproxy.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fproxy.js?ref=8cb935cd3b2321c46aa6b7ed8454d95c75a7fca0",
+      "patch": "@@ -2125,5 +2125,14 @@ checkDeep({...f})(_ => ({a:1, b:2}))\n // uses fast array access (this will trip an assert otherwise)\n new Proxy([], {}).unshift(0);\n \n+// If putComputed is called on a proxy whose target's prototype is an\n+// array with a propname of 'length', then internalSetter will be\n+// true, and the receiver will be a proxy.  In that case, proxy needs\n+// to win; the behavior may assert or be UB otherwise.\n+var p = new Proxy(Object.create([]), {});\n+// using String() forces putComputed\n+p[String('length')] = 0x123;\n+p[0xABC] = 1111;\n+\n print('done');\n // CHECK-LABEL: done"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "sha": "6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+  "node_id": "MDY6Q29tbWl0MTQwMjEyODA6NmU2ZTU0Zjk0NGE1ZWJiNDllOTExMGJkZWZmODQ0ZDAwYTk2YzU2Yw==",
+  "commit": {
+    "author": {
+      "name": "Caol\u00e1n McNamara",
+      "email": "caolanm@redhat.com",
+      "date": "2017-03-17T10:57:03Z"
+    },
+    "committer": {
+      "name": "Caol\u00e1n McNamara",
+      "email": "caolanm@redhat.com",
+      "date": "2017-03-17T23:36:41Z"
+    },
+    "message": "ofz#889 readjust jpeg import\n\nChange-Id: I4e25db429b8dee9265ab2ad468c21cc34a50df6c\nReviewed-on: https://gerrit.libreoffice.org/35325\nTested-by: Jenkins <ci@libreoffice.org>\nReviewed-by: Caol\u00e1n McNamara <caolanm@redhat.com>\nTested-by: Caol\u00e1n McNamara <caolanm@redhat.com>",
+    "tree": {
+      "sha": "0aa8dd054b3a8129da6ebd281db1af8194896fa0",
+      "url": "https://api.github.com/repos/LibreOffice/core/git/trees/0aa8dd054b3a8129da6ebd281db1af8194896fa0"
+    },
+    "url": "https://api.github.com/repos/LibreOffice/core/git/commits/6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibreOffice/core/commits/6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+  "html_url": "https://github.com/LibreOffice/core/commit/6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+  "comments_url": "https://api.github.com/repos/LibreOffice/core/commits/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "2f1045a85970f2fc822f799a9a213fc533b740c2",
+      "url": "https://api.github.com/repos/LibreOffice/core/commits/2f1045a85970f2fc822f799a9a213fc533b740c2",
+      "html_url": "https://github.com/LibreOffice/core/commit/2f1045a85970f2fc822f799a9a213fc533b740c2"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "3d9481aca9087f8605107863c89385f4e75cfb4b",
+      "filename": "vcl/qa/cppunit/graphicfilter/data/jpg/pass/CVE-2004-0200-1.jpg",
+      "status": "renamed",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/LibreOffice/core/blob/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-1.jpg",
+      "raw_url": "https://github.com/LibreOffice/core/raw/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-1.jpg",
+      "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-1.jpg?ref=6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+      "previous_filename": "vcl/qa/cppunit/graphicfilter/data/jpg/fail/CVE-2004-0200-1.jpg"
+    },
+    {
+      "sha": "9d26db0050bbaf9a0a9cde42b7461a101fce5fc5",
+      "filename": "vcl/qa/cppunit/graphicfilter/data/jpg/pass/CVE-2004-0200-4.jpg",
+      "status": "renamed",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/LibreOffice/core/blob/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-4.jpg",
+      "raw_url": "https://github.com/LibreOffice/core/raw/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-4.jpg",
+      "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FCVE-2004-0200-4.jpg?ref=6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+      "previous_filename": "vcl/qa/cppunit/graphicfilter/data/jpg/fail/CVE-2004-0200-4.jpg"
+    },
+    {
+      "sha": "01e7fe16f413b791fd7afdbc99eb39d926506d3a",
+      "filename": "vcl/qa/cppunit/graphicfilter/data/jpg/pass/EDB-24743-2.jpg",
+      "status": "renamed",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/LibreOffice/core/blob/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-2.jpg",
+      "raw_url": "https://github.com/LibreOffice/core/raw/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-2.jpg",
+      "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-2.jpg?ref=6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+      "previous_filename": "vcl/qa/cppunit/graphicfilter/data/jpg/fail/EDB-24743-2.jpg"
+    },
+    {
+      "sha": "4753ed8db1c34c213ea5368f49eda5b4613075db",
+      "filename": "vcl/qa/cppunit/graphicfilter/data/jpg/pass/EDB-24743-3.jpg",
+      "status": "renamed",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/LibreOffice/core/blob/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-3.jpg",
+      "raw_url": "https://github.com/LibreOffice/core/raw/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-3.jpg",
+      "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/vcl%2Fqa%2Fcppunit%2Fgraphicfilter%2Fdata%2Fjpg%2Fpass%2FEDB-24743-3.jpg?ref=6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+      "previous_filename": "vcl/qa/cppunit/graphicfilter/data/jpg/fail/EDB-24743-3.jpg"
+    },
+    {
+      "sha": "e73065e668f0ae2420756f17d741b062723b8fcd",
+      "filename": "vcl/source/filter/jpeg/jpegc.cxx",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/LibreOffice/core/blob/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fsource%2Ffilter%2Fjpeg%2Fjpegc.cxx",
+      "raw_url": "https://github.com/LibreOffice/core/raw/6e6e54f944a5ebb49e9110bdeff844d00a96c56c/vcl%2Fsource%2Ffilter%2Fjpeg%2Fjpegc.cxx",
+      "contents_url": "https://api.github.com/repos/LibreOffice/core/contents/vcl%2Fsource%2Ffilter%2Fjpeg%2Fjpegc.cxx?ref=6e6e54f944a5ebb49e9110bdeff844d00a96c56c",
+      "patch": "@@ -132,7 +132,7 @@ void ReadJPEG( JPEGReader* pJPEGReader, void* pInputStream, long* pLines,\n         }\n     }\n \n-    jpeg_start_decompress( &cinfo );\n+    jpeg_calc_output_dimensions(&cinfo);\n \n     long nWidth = cinfo.output_width;\n     long nHeight = cinfo.output_height;\n@@ -161,7 +161,6 @@ void ReadJPEG( JPEGReader* pJPEGReader, void* pInputStream, long* pLines,\n             J_COLOR_SPACE best_out_color_space = JCS_RGB;\n             ScanlineFormat eScanlineFormat = ScanlineFormat::N24BitTcRgb;\n             ScanlineFormat eFinalFormat = pAccess->GetScanlineFormat();\n-\n             if (eFinalFormat == ScanlineFormat::N32BitTcBgra)\n             {\n                 best_out_color_space = JCS_EXT_BGRA;\n@@ -190,10 +189,12 @@ void ReadJPEG( JPEGReader* pJPEGReader, void* pInputStream, long* pLines,\n                 cinfo.out_color_space != JCS_GRAYSCALE &&\n                 cinfo.out_color_space != best_out_color_space)\n             {\n-                SAL_WARN(\"vcl.filter\", \"jpg with unknown out color space, forcing to :\" << best_out_color_space);\n+                SAL_WARN(\"vcl.filter\", \"jpg with unknown out color space, forcing to :\" << best_out_color_space << \" gray \");\n                 cinfo.out_color_space = best_out_color_space;\n             }\n \n+            jpeg_start_decompress(&cinfo);\n+\n             JSAMPLE* aRangeLimit = cinfo.sample_range_limit;\n \n             std::vector<sal_uInt8> pScanLineBuffer(nWidth * (bGray ? 1 : nPixelSize));"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "051824924c709bd6162a378f746fb859454c674e",
+  "node_id": "MDY6Q29tbWl0MjQ1MTk5ODc6MDUxODI0OTI0YzcwOWJkNjE2MmEzNzhmNzQ2ZmI4NTk0NTRjNjc0ZQ==",
+  "commit": {
+    "author": {
+      "name": "Alex Rousskov",
+      "email": "rousskov@measurement-factory.com",
+      "date": "2021-03-16T15:45:11Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-16T15:45:11Z"
+    },
+    "message": "Merge pull request from GHSA-jjq6-mh2h-g39h",
+    "tree": {
+      "sha": "9964138d99169a94e9076af2437d1f8e6ddf25e0",
+      "url": "https://api.github.com/repos/squid-cache/squid/git/trees/9964138d99169a94e9076af2437d1f8e6ddf25e0"
+    },
+    "url": "https://api.github.com/repos/squid-cache/squid/git/commits/051824924c709bd6162a378f746fb859454c674e",
+    "comment_count": 2,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgUNKHCRBK7hj4Ov3rIwAAdHIIAGW/fxEEZmP4nfzfFR3UaGOX\nWzScdDMbrAsm8dbR4BAXy+eUF/YEcQfwJxunmKEwsQiJ4+DtKjQQdPx4/GYx053u\ndzTZ1UllD/KMkYZpcYlEWrtI9AlgagtpMokB47E0Lu1xcaLklcy+HRnFZeZLu8wi\no6gEGO3n1/3/UMPXSgU4fZ7u+u8Rc/RSbfbk63YECuJ+a0soTYIBFPtiY+n/uBUL\nB6uyhPQkdm3uNuQE+BcEi0DnDsULrRQim4Qo5UpDkJ4HkBo+EHk0QtstgEERfC2r\nPOd1C5IALHFzH4swxaPqYlSL2+8JcY37ZEKzyshgVHg1Bif5yT4DwpMxBMYNBNs=\n=Aa6m\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9964138d99169a94e9076af2437d1f8e6ddf25e0\nparent 2bde9c7cec0d243d5b1e73b19da19ef0a5d8a08a\nauthor Alex Rousskov <rousskov@measurement-factory.com> 1615909511 -0400\ncommitter GitHub <noreply@github.com> 1615909511 -0400\n\nMerge pull request from GHSA-jjq6-mh2h-g39h\n\n",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/squid-cache/squid/commits/051824924c709bd6162a378f746fb859454c674e",
+  "html_url": "https://github.com/squid-cache/squid/commit/051824924c709bd6162a378f746fb859454c674e",
+  "comments_url": "https://api.github.com/repos/squid-cache/squid/commits/051824924c709bd6162a378f746fb859454c674e/comments",
+  "author": {
+    "login": "rousskov",
+    "id": 1084944,
+    "node_id": "MDQ6VXNlcjEwODQ5NDQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1084944?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rousskov",
+    "html_url": "https://github.com/rousskov",
+    "followers_url": "https://api.github.com/users/rousskov/followers",
+    "following_url": "https://api.github.com/users/rousskov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rousskov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rousskov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rousskov/subscriptions",
+    "organizations_url": "https://api.github.com/users/rousskov/orgs",
+    "repos_url": "https://api.github.com/users/rousskov/repos",
+    "events_url": "https://api.github.com/users/rousskov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rousskov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2bde9c7cec0d243d5b1e73b19da19ef0a5d8a08a",
+      "url": "https://api.github.com/repos/squid-cache/squid/commits/2bde9c7cec0d243d5b1e73b19da19ef0a5d8a08a",
+      "html_url": "https://github.com/squid-cache/squid/commit/2bde9c7cec0d243d5b1e73b19da19ef0a5d8a08a"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "84f177af2d8edd2b0ca3b75071a5a5cf0d983c38",
+      "filename": "src/http/RegisteredHeaders.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/squid-cache/squid/blob/051824924c709bd6162a378f746fb859454c674e/src%2Fhttp%2FRegisteredHeaders.cc",
+      "raw_url": "https://github.com/squid-cache/squid/raw/051824924c709bd6162a378f746fb859454c674e/src%2Fhttp%2FRegisteredHeaders.cc",
+      "contents_url": "https://api.github.com/repos/squid-cache/squid/contents/src%2Fhttp%2FRegisteredHeaders.cc?ref=051824924c709bd6162a378f746fb859454c674e",
+      "patch": "@@ -37,7 +37,7 @@ HeaderTableRecord::HeaderTableRecord(const char *n, HdrType theId, HdrFieldType\n const HeaderTableRecord&\n HeaderLookupTable_t::lookup (const char *buf, const std::size_t len) const {\n     const HeaderTableRecord *r = HttpHeaderHashTable::lookup(buf, len);\n-    if (!r)\n+    if (!r || r->id == Http::HdrType::OTHER)\n         return BadHdr;\n     return *r;\n }"
+    }
+  ]
+}

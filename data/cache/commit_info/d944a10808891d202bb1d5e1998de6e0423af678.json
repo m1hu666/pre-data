@@ -1,0 +1,101 @@
+{
+  "sha": "d944a10808891d202bb1d5e1998de6e0423af678",
+  "node_id": "MDY6Q29tbWl0MTI2MjI1MTYwOmQ5NDRhMTA4MDg4OTFkMjAyYmIxZDVlMTk5OGRlNmUwNDIzYWY2Nzg=",
+  "commit": {
+    "author": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T18:24:25Z"
+    },
+    "committer": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T18:24:25Z"
+    },
+    "message": "Tweak pointer math to avoid possible integer overflow",
+    "tree": {
+      "sha": "c9859cde81d870829fdd549f7cc7a404be3901c7",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/trees/c9859cde81d870829fdd549f7cc7a404be3901c7"
+    },
+    "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/commits/d944a10808891d202bb1d5e1998de6e0423af678",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEyTfX+yUNQsQ1xS4KAL3mnwuGzdwFAl9RNPYACgkQAL3mnwuG\nzdwjaA//XN5hv00maphO1PcFMPKjGcwyF0TW986nGIcbbSoW9xh7uoJLKxofKx72\nrL3wxFxBYkIArqnSaMaUo+zNNHKJcJJlYokjnbY662g4KfuNUjW9ywVbL5KesPr7\nN2Mzm7G1z7Od3HMBceLWDbRM6yJ9WrLnwd+cOkpflTgLRMJar591NOJoknKRfTtL\nWfMqk0Nhaw7WGdJFPZS82A1+IGivLDRtszMReAafmvawl0i8ZjLmLdRa/K+O6MZ9\nibmm9d/ekAHDGIyW8YxlguJ7VjS+4kibiXd2taTcLxlkbmqogKQqic8LNAzYLLFr\nFqXy74TYxn56Eh/PBz9w81kVfpJN1xxurrBBlT+vEDaIy+83tSDT3nozP2kQ/qZW\n+lxCS5OnNsYHx5aOd6LCVi3F27ZCmcAysl8af/bUdyh4Q1z5mlMYHgcey8YHE6G/\nmuwKaT9KiHJiqzeHP9e3F+jr55buPu0/xZNxl460UuxOKCad4Y9TRfJujbP0yssb\n9dDFrbEBD1yHwwnnJfwRBjN7V4T5ER9yTjfVRIzbXyQ2n53S6iL16qflmWNbyVmS\nqBzCMFDYzDzZ7tlnQm5svV1G/rS+tDFcLhc8jGtMpL3nOPv7mVORqLtDGevmFgx+\nUAW14LLU9fuZ6QkGY6mWNBtMukzxF5RTmhOqK5hHWV4u4kIR95Y=\n=k/mE\n-----END PGP SIGNATURE-----",
+      "payload": "tree c9859cde81d870829fdd549f7cc7a404be3901c7\nparent e0c86dcb9139771db3db0cfdb1fb8bef0af19c43\nauthor Fletcher Dunn <fletcherd@valvesoftware.com> 1599157465 -0700\ncommitter Fletcher Dunn <fletcherd@valvesoftware.com> 1599157465 -0700\n\nTweak pointer math to avoid possible integer overflow\n",
+      "verified_at": "2024-11-07T17:16:24Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/d944a10808891d202bb1d5e1998de6e0423af678",
+  "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/d944a10808891d202bb1d5e1998de6e0423af678",
+  "comments_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/d944a10808891d202bb1d5e1998de6e0423af678/comments",
+  "author": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+      "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "070f9286a93813d56bc5260169ea3c7930506822",
+      "filename": "src/steamnetworkingsockets/clientlib/steamnetworkingsockets_udp.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ValveSoftware/GameNetworkingSockets/blob/d944a10808891d202bb1d5e1998de6e0423af678/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_udp.cpp",
+      "raw_url": "https://github.com/ValveSoftware/GameNetworkingSockets/raw/d944a10808891d202bb1d5e1998de6e0423af678/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_udp.cpp",
+      "contents_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/contents/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_udp.cpp?ref=d944a10808891d202bb1d5e1998de6e0423af678",
+      "patch": "@@ -840,9 +840,9 @@ void CConnectionTransportUDPBase::Received_Data( const uint8 *pPkt, int cbPkt, S\n \t\t\tReportBadUDPPacketFromConnectionPeer( \"DataPacket\", \"Failed to varint decode size of stats blob\" );\n \t\t\treturn;\n \t\t}\n-\t\tif ( pIn + cbStatsMsgIn > pPktEnd )\n+\t\tif ( cbStatsMsgIn > pPktEnd - pIn )\n \t\t{\n-\t\t\tReportBadUDPPacketFromConnectionPeer( \"DataPacket\", \"stats message size doesn't make sense.  Stats message size %d, packet size %d\", cbStatsMsgIn, cbPkt );\n+\t\t\tReportBadUDPPacketFromConnectionPeer( \"DataPacket\", \"stats message size doesn't make sense.  Stats message size %u, packet size %d\", cbStatsMsgIn, cbPkt );\n \t\t\treturn;\n \t\t}\n "
+    }
+  ]
+}

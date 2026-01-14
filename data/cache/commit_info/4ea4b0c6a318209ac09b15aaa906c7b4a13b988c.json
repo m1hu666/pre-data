@@ -1,0 +1,101 @@
+{
+  "sha": "4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+  "node_id": "MDY6Q29tbWl0MjUyNjkyMzU6NGVhNGIwYzZhMzE4MjA5YWMwOWIxNWFhYTkwNmM3YjRhMTNiOTg4Yw==",
+  "commit": {
+    "author": {
+      "name": "Alexey Yurchenko",
+      "email": "alexey.yurchenko@galeracluster.com",
+      "date": "2020-10-03T12:56:35Z"
+    },
+    "committer": {
+      "name": "Teemu Ollakka",
+      "email": "teemu.ollakka@galeracluster.com",
+      "date": "2020-10-07T07:39:00Z"
+    },
+    "message": "codership/mysql-wsrep-bugs#758 Donor uses invalid SST methods",
+    "tree": {
+      "sha": "7f4dc4ac5fde387a2c02613e1b5cd3bb905bde22",
+      "url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/git/trees/7f4dc4ac5fde387a2c02613e1b5cd3bb905bde22"
+    },
+    "url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/git/commits/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/commits/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+  "html_url": "https://github.com/mariadb-corporation/mysql-wsrep/commit/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+  "comments_url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/commits/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c/comments",
+  "author": {
+    "login": "ayurchen",
+    "id": 1644111,
+    "node_id": "MDQ6VXNlcjE2NDQxMTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1644111?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ayurchen",
+    "html_url": "https://github.com/ayurchen",
+    "followers_url": "https://api.github.com/users/ayurchen/followers",
+    "following_url": "https://api.github.com/users/ayurchen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ayurchen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ayurchen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ayurchen/subscriptions",
+    "organizations_url": "https://api.github.com/users/ayurchen/orgs",
+    "repos_url": "https://api.github.com/users/ayurchen/repos",
+    "events_url": "https://api.github.com/users/ayurchen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ayurchen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "temeo",
+    "id": 6009633,
+    "node_id": "MDQ6VXNlcjYwMDk2MzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6009633?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/temeo",
+    "html_url": "https://github.com/temeo",
+    "followers_url": "https://api.github.com/users/temeo/followers",
+    "following_url": "https://api.github.com/users/temeo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/temeo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/temeo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/temeo/subscriptions",
+    "organizations_url": "https://api.github.com/users/temeo/orgs",
+    "repos_url": "https://api.github.com/users/temeo/repos",
+    "events_url": "https://api.github.com/users/temeo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/temeo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ad54cb16446ee1d5cca464da425d2d4615093d54",
+      "url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/commits/ad54cb16446ee1d5cca464da425d2d4615093d54",
+      "html_url": "https://github.com/mariadb-corporation/mysql-wsrep/commit/ad54cb16446ee1d5cca464da425d2d4615093d54"
+    }
+  ],
+  "stats": {
+    "total": 51,
+    "additions": 47,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "a1f5ddf9eecf12e780d8da81bec300eb308ad357",
+      "filename": "sql/wsrep_sst.cc",
+      "status": "modified",
+      "additions": 47,
+      "deletions": 4,
+      "changes": 51,
+      "blob_url": "https://github.com/mariadb-corporation/mysql-wsrep/blob/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c/sql%2Fwsrep_sst.cc",
+      "raw_url": "https://github.com/mariadb-corporation/mysql-wsrep/raw/4ea4b0c6a318209ac09b15aaa906c7b4a13b988c/sql%2Fwsrep_sst.cc",
+      "contents_url": "https://api.github.com/repos/mariadb-corporation/mysql-wsrep/contents/sql%2Fwsrep_sst.cc?ref=4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+      "patch": "@@ -26,6 +26,7 @@\n #include \"wsrep_xid.h\"\n #include <cstdio>\n #include <cstdlib>\n+#include <cctype>\n \n extern const char wsrep_defaults_file[];\n extern const char wsrep_defaults_group_suffix[];\n@@ -1090,23 +1091,65 @@ static int sst_donate_other (const char*   method,\n   return arg.err;\n }\n \n+/* return true if character can be a part of a filename */\n+static bool filename_char(int const c)\n+{\n+  return isalnum(c) || (c == '-') || (c == '_') || (c == '.');\n+}\n+\n+/* return true if character can be a part of an address string */\n+static bool address_char(int const c)\n+{\n+  return filename_char(c) ||\n+         (c == ':') || (c == '[') || (c == ']') || (c == '/');\n+}\n+\n+static bool check_request_str(const char* const str,\n+                              bool (*check) (int c))\n+{\n+  for (size_t i(0); str[i] != '\\0'; ++i)\n+  {\n+    if (!check(str[i]))\n+    {\n+      WSREP_WARN(\"Illegal character in state transfer request: %i (%c).\",\n+                 str[i], str[i]);\n+      return true;\n+    }\n+  }\n+\n+  return false;\n+}\n+\n wsrep_cb_status_t wsrep_sst_donate_cb (void* app_ctx, void* recv_ctx,\n                                        const void* msg, size_t msg_len,\n                                        const wsrep_gtid_t* current_gtid,\n                                        const char* state, size_t state_len,\n                                        bool bypass)\n {\n-  /* This will be reset when sync callback is called.\n-   * Should we set wsrep_ready to FALSE here too? */\n-  local_status.set(WSREP_MEMBER_DONOR);\n-\n   const char* method = (char*)msg;\n   size_t method_len  = strlen (method);\n+\n+  if (check_request_str(method, filename_char))\n+  {\n+    WSREP_ERROR(\"Bad SST method name. SST canceled.\");\n+    return WSREP_CB_FAILURE;\n+  }\n+\n   const char* data   = method + method_len + 1;\n \n+  if (check_request_str(data, address_char))\n+  {\n+    WSREP_ERROR(\"Bad SST address string. SST canceled.\");\n+    return WSREP_CB_FAILURE;\n+  }\n+\n   char uuid_str[37];\n   wsrep_uuid_print (&current_gtid->uuid, uuid_str, sizeof(uuid_str));\n \n+  /* This will be reset when sync callback is called.\n+   * Should we set wsrep_ready to FALSE here too? */\n+  local_status.set(WSREP_MEMBER_DONOR);\n+\n   wsp::env env(NULL);\n   if (env.error())\n   {"
+    }
+  ]
+}

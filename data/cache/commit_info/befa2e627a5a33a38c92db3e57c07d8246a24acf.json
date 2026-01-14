@@ -1,0 +1,149 @@
+{
+  "sha": "befa2e627a5a33a38c92db3e57c07d8246a24acf",
+  "node_id": "MDY6Q29tbWl0ODkyNDMxNDpiZWZhMmU2MjdhNWEzM2EzOGM5MmRiM2U1N2MwN2Q4MjQ2YTI0YWNm",
+  "commit": {
+    "author": {
+      "name": "Gerardo Ganis",
+      "email": "Gerardo.Ganis@cern.ch",
+      "date": "2017-04-20T09:04:21Z"
+    },
+    "committer": {
+      "name": "Gerardo Ganis",
+      "email": "Gerardo.Ganis@cern.ch",
+      "date": "2017-04-20T09:08:02Z"
+    },
+    "message": "secgsi: do not build/package libXrdSecgsiGMAPLDAP-4.so\n\nThe way the LDAP query is implemented may represent a security threat.\nAny related building and packaging reference is removed.\nThe code is left in place (for the time being) to remind its functionality\nin the case a sanitized version is required.",
+    "tree": {
+      "sha": "de1eabc7a39dd1e532944bfc9e2e5fb1f40a8d41",
+      "url": "https://api.github.com/repos/xrootd/xrootd/git/trees/de1eabc7a39dd1e532944bfc9e2e5fb1f40a8d41"
+    },
+    "url": "https://api.github.com/repos/xrootd/xrootd/git/commits/befa2e627a5a33a38c92db3e57c07d8246a24acf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/xrootd/xrootd/commits/befa2e627a5a33a38c92db3e57c07d8246a24acf",
+  "html_url": "https://github.com/xrootd/xrootd/commit/befa2e627a5a33a38c92db3e57c07d8246a24acf",
+  "comments_url": "https://api.github.com/repos/xrootd/xrootd/commits/befa2e627a5a33a38c92db3e57c07d8246a24acf/comments",
+  "author": {
+    "login": "gganis",
+    "id": 1735130,
+    "node_id": "MDQ6VXNlcjE3MzUxMzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1735130?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gganis",
+    "html_url": "https://github.com/gganis",
+    "followers_url": "https://api.github.com/users/gganis/followers",
+    "following_url": "https://api.github.com/users/gganis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gganis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gganis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gganis/subscriptions",
+    "organizations_url": "https://api.github.com/users/gganis/orgs",
+    "repos_url": "https://api.github.com/users/gganis/repos",
+    "events_url": "https://api.github.com/users/gganis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gganis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gganis",
+    "id": 1735130,
+    "node_id": "MDQ6VXNlcjE3MzUxMzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1735130?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gganis",
+    "html_url": "https://github.com/gganis",
+    "followers_url": "https://api.github.com/users/gganis/followers",
+    "following_url": "https://api.github.com/users/gganis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gganis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gganis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gganis/subscriptions",
+    "organizations_url": "https://api.github.com/users/gganis/orgs",
+    "repos_url": "https://api.github.com/users/gganis/repos",
+    "events_url": "https://api.github.com/users/gganis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gganis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a315fd268709f2aa01b85b7be03a71a13f278c21",
+      "url": "https://api.github.com/repos/xrootd/xrootd/commits/a315fd268709f2aa01b85b7be03a71a13f278c21",
+      "html_url": "https://github.com/xrootd/xrootd/commit/a315fd268709f2aa01b85b7be03a71a13f278c21"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 9,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "40f091851a4949f3012964b7a1d2c5dccaf6885b",
+      "filename": "packaging/rhel/xrootd.spec.in",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/xrootd/xrootd/blob/befa2e627a5a33a38c92db3e57c07d8246a24acf/packaging%2Frhel%2Fxrootd.spec.in",
+      "raw_url": "https://github.com/xrootd/xrootd/raw/befa2e627a5a33a38c92db3e57c07d8246a24acf/packaging%2Frhel%2Fxrootd.spec.in",
+      "contents_url": "https://api.github.com/repos/xrootd/xrootd/contents/packaging%2Frhel%2Fxrootd.spec.in?ref=befa2e627a5a33a38c92db3e57c07d8246a24acf",
+      "patch": "@@ -809,7 +809,6 @@ fi\n %{_libdir}/libXrdPosix.so.1*\n %{_libdir}/libXrdSecgsiAuthzVO.so*\n %{_libdir}/libXrdSecgsiGMAPDN.so*\n-%{_libdir}/libXrdSecgsiGMAPLDAP.so*\n %{_libdir}/libXrdSecgsi.so*\n %{_libdir}/libXrdSeckrb5.so*\n %{_libdir}/libXrdSecpwd.so*"
+    },
+    {
+      "sha": "75d2a2fa9dfefbdc87d14fa38e0abcf0643966b9",
+      "filename": "src/XrdCl/XrdClDefaultEnv.cc",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/xrootd/xrootd/blob/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdCl%2FXrdClDefaultEnv.cc",
+      "raw_url": "https://github.com/xrootd/xrootd/raw/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdCl%2FXrdClDefaultEnv.cc",
+      "contents_url": "https://api.github.com/repos/xrootd/xrootd/contents/src%2FXrdCl%2FXrdClDefaultEnv.cc?ref=befa2e627a5a33a38c92db3e57c07d8246a24acf",
+      "patch": "@@ -670,7 +670,6 @@ namespace XrdCl\n       \"libXrdSecgsi.so\",\n       \"libXrdSecgsiAuthzVO.so\",\n       \"libXrdSecgsiGMAPDN.so\",\n-      \"libXrdSecgsiGMAPLDAP.so\",\n       \"libXrdSecpwd.so\",\n       \"libXrdSecsss.so\",\n       \"libXrdSecunix.so\","
+    },
+    {
+      "sha": "1d5890513e1b13e43bfd116e27ad2aa37d1d99c6",
+      "filename": "src/XrdSecgsi.cmake",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 16,
+      "changes": 16,
+      "blob_url": "https://github.com/xrootd/xrootd/blob/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdSecgsi.cmake",
+      "raw_url": "https://github.com/xrootd/xrootd/raw/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdSecgsi.cmake",
+      "contents_url": "https://api.github.com/repos/xrootd/xrootd/contents/src%2FXrdSecgsi.cmake?ref=befa2e627a5a33a38c92db3e57c07d8246a24acf",
+      "patch": "@@ -5,7 +5,6 @@ include( XRootDCommon )\n # Shared library version\n #-------------------------------------------------------------------------------\n set( LIB_XRD_SEC_GSI          XrdSecgsi-${PLUGIN_VERSION} )\n-set( LIB_XRD_SEC_GSI_GMAPLDAP XrdSecgsiGMAPLDAP-${PLUGIN_VERSION} )\n set( LIB_XRD_SEC_GSI_GMAPDN   XrdSecgsiGMAPDN-${PLUGIN_VERSION} )\n set( LIB_XRD_SEC_GSI_AUTHZVO  XrdSecgsiAUTHZVO-${PLUGIN_VERSION} )\n \n@@ -30,20 +29,6 @@ set_target_properties(\n   INTERFACE_LINK_LIBRARIES \"\"\n   LINK_INTERFACE_LIBRARIES \"\" )\n \n-#-------------------------------------------------------------------------------\n-# The XrdSecgsiGMAPLDAP module\n-#-------------------------------------------------------------------------------\n-add_library(\n-  ${LIB_XRD_SEC_GSI_GMAPLDAP}\n-  MODULE\n-  XrdSecgsi/XrdSecgsiGMAPFunLDAP.cc )\n-\n-set_target_properties(\n-  ${LIB_XRD_SEC_GSI_GMAPLDAP}\n-  PROPERTIES\n-  INTERFACE_LINK_LIBRARIES \"\"\n-  LINK_INTERFACE_LIBRARIES \"\" )\n-\n #-------------------------------------------------------------------------------\n # The XrdSecgsiAuthzVO module\n #-------------------------------------------------------------------------------\n@@ -112,7 +97,6 @@ target_link_libraries(\n install(\n   TARGETS\n   ${LIB_XRD_SEC_GSI}\n-  ${LIB_XRD_SEC_GSI_GMAPLDAP}\n   ${LIB_XRD_SEC_GSI_AUTHZVO}\n   ${LIB_XRD_SEC_GSI_GMAPDN}\n   xrdgsiproxy"
+    },
+    {
+      "sha": "a1d2cad29863f39f36c3c6b944e7d5093e1e7d26",
+      "filename": "src/XrdSecgsi/XrdSecgsiGMAPFunLDAP.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/xrootd/xrootd/blob/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdSecgsi%2FXrdSecgsiGMAPFunLDAP.cc",
+      "raw_url": "https://github.com/xrootd/xrootd/raw/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdSecgsi%2FXrdSecgsiGMAPFunLDAP.cc",
+      "contents_url": "https://api.github.com/repos/xrootd/xrootd/contents/src%2FXrdSecgsi%2FXrdSecgsiGMAPFunLDAP.cc?ref=befa2e627a5a33a38c92db3e57c07d8246a24acf",
+      "patch": "@@ -38,6 +38,15 @@ XrdVERSIONINFO(XrdSecgsiGMAPFun,secgsigmap);\n /*                                                                            */\n /* GMAP function implementation querying a LDAP database                      */\n /*                                                                            */\n+/* Warning: this plug-in is not build any longer because the external         */\n+/* LDAP query via the popen() represents a potential security threat          */\n+/* and it is believed that functionality provided is not actually used.       */\n+/* If this believe happens to be uncorrect please report at                   */\n+/*                                                                            */\n+/*                   https://github.com/xrootd                                */\n+/*                                                                            */\n+/* a sanitized version of the plug-in can be provided using a proper library. */\n+/*                                                                            */\n /* ************************************************************************** */\n \n #include <stdio.h>"
+    },
+    {
+      "sha": "d635f205657ed93d3329ef2285126d0569db0ccd",
+      "filename": "src/XrdVersionPlugin.hh",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/xrootd/xrootd/blob/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdVersionPlugin.hh",
+      "raw_url": "https://github.com/xrootd/xrootd/raw/befa2e627a5a33a38c92db3e57c07d8246a24acf/src%2FXrdVersionPlugin.hh",
+      "contents_url": "https://api.github.com/repos/xrootd/xrootd/contents/src%2FXrdVersionPlugin.hh?ref=befa2e627a5a33a38c92db3e57c07d8246a24acf",
+      "patch": "@@ -170,7 +170,6 @@\n          \"libXrdSecgsi.so\",          \\\n          \"libXrdSecgsiAUTHZVO.so\",   \\\n          \"libXrdSecgsiGMAPDLAP.so\",  \\\n-         \"libXrdSecgsiGMAPLDAP.so\",  \\\n          \"libXrdSeckrb5.so\",         \\\n          \"libXrdSecpwd.so\",          \\\n          \"libXrdSecsss.so\",          \\"
+    }
+  ]
+}

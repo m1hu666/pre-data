@@ -1,0 +1,93 @@
+{
+  "sha": "97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+  "node_id": "MDY6Q29tbWl0MTYyMTE4MTg6OTdlMDMzYjNiYjBjYjE2YjYxYmY0OWYwZGM3ZjMxMWEzZTBlZGQxYg==",
+  "commit": {
+    "author": {
+      "name": "Ted Reed",
+      "email": "reed@fb.com",
+      "date": "2019-11-04T15:02:54Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-11-04T15:04:09Z"
+    },
+    "message": "Attempt to make CarbonProtocolReader::skip tail recursive\n\nReviewed By: edenzik\n\nDifferential Revision: D17967570\n\nfbshipit-source-id: fdc32e190a521349c7c8f4d6081902fa18eb0284",
+    "tree": {
+      "sha": "b855e4707dbf4b7117b7a7c287cf0a0fc12671d2",
+      "url": "https://api.github.com/repos/facebook/mcrouter/git/trees/b855e4707dbf4b7117b7a7c287cf0a0fc12671d2"
+    },
+    "url": "https://api.github.com/repos/facebook/mcrouter/git/commits/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/mcrouter/commits/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+  "html_url": "https://github.com/facebook/mcrouter/commit/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+  "comments_url": "https://api.github.com/repos/facebook/mcrouter/commits/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2ac8b6150e3e03325ef2206948174a4e5adc84cc",
+      "url": "https://api.github.com/repos/facebook/mcrouter/commits/2ac8b6150e3e03325ef2206948174a4e5adc84cc",
+      "html_url": "https://github.com/facebook/mcrouter/commit/2ac8b6150e3e03325ef2206948174a4e5adc84cc"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 13,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "67f89c9cfd306fe117fa6174cc87e1d02a704f75",
+      "filename": "mcrouter/lib/carbon/CarbonProtocolReader.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 9,
+      "changes": 18,
+      "blob_url": "https://github.com/facebook/mcrouter/blob/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.cpp",
+      "raw_url": "https://github.com/facebook/mcrouter/raw/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/mcrouter/contents/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.cpp?ref=97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+      "patch": "@@ -78,13 +78,11 @@ void CarbonProtocolReader::skip(const FieldType ft) {\n     }\n     case FieldType::Struct: {\n       readStructBegin();\n-      while (true) {\n-        const auto fieldType = readFieldHeader().first;\n-        if (fieldType == FieldType::Stop) {\n-          break;\n-        }\n-        skip(fieldType);\n-      }\n+      const auto next = readFieldHeader().first;\n+      skip(next);\n+      break;\n+    }\n+    case FieldType::Stop: {\n       readStructEnd();\n       break;\n     }\n@@ -96,8 +94,10 @@ void CarbonProtocolReader::skip(const FieldType ft) {\n       skipKVContainer();\n       break;\n     }\n-    default: { break; }\n+    default: {\n+      break;\n+    }\n   }\n }\n \n-} // carbon\n+} // namespace carbon"
+    },
+    {
+      "sha": "083283f1f2706f1feff77fd32afc8a786a8e6819",
+      "filename": "mcrouter/lib/carbon/CarbonProtocolReader.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/mcrouter/blob/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.h",
+      "raw_url": "https://github.com/facebook/mcrouter/raw/97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.h",
+      "contents_url": "https://api.github.com/repos/facebook/mcrouter/contents/mcrouter%2Flib%2Fcarbon%2FCarbonProtocolReader.h?ref=97e033b3bb0cb16b61bf49f0dc7f311a3e0edd1b",
+      "patch": "@@ -245,8 +245,10 @@ class CarbonProtocolReader {\n   }\n \n   void readStructEnd() {\n-    lastFieldId_ = nestedStructFieldIds_.back();\n-    nestedStructFieldIds_.pop_back();\n+    if (!nestedStructFieldIds_.empty()) {\n+      lastFieldId_ = nestedStructFieldIds_.back();\n+      nestedStructFieldIds_.pop_back();\n+    }\n   }\n \n   std::pair<std::pair<FieldType, FieldType>, uint32_t>"
+    }
+  ]
+}

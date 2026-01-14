@@ -1,0 +1,113 @@
+{
+  "sha": "8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+  "node_id": "MDY6Q29tbWl0NDUyNDE4MTo4ZTkyN2VlNDhiMTE0YzhhMmY5MGQwY2JkNWFjNzUzNzk1YTY3NjFm",
+  "commit": {
+    "author": {
+      "name": "Fred Emmott",
+      "email": "fe@fb.com",
+      "date": "2018-08-08T23:53:47Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2018-08-09T00:18:14Z"
+    },
+    "message": "Flush secureRandom buffer on fork\n\nSummary: On fork, flush the secureRandom buffer, so that we don't share entropy between the parent and child.\n\nReviewed By: ricklavoie\n\nDifferential Revision: D9196474\n\nfbshipit-source-id: 12ff8488d814466186df61328a5f1d4000beb27f",
+    "tree": {
+      "sha": "a8dbb81c3116a2c739cc1e8c75982d35f77258fe",
+      "url": "https://api.github.com/repos/facebook/folly/git/trees/a8dbb81c3116a2c739cc1e8c75982d35f77258fe"
+    },
+    "url": "https://api.github.com/repos/facebook/folly/git/commits/8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/folly/commits/8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+  "html_url": "https://github.com/facebook/folly/commit/8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+  "comments_url": "https://api.github.com/repos/facebook/folly/commits/8e927ee48b114c8a2f90d0cbd5ac753795a6761f/comments",
+  "author": {
+    "login": "fredemmott",
+    "id": 360927,
+    "node_id": "MDQ6VXNlcjM2MDkyNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/360927?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fredemmott",
+    "html_url": "https://github.com/fredemmott",
+    "followers_url": "https://api.github.com/users/fredemmott/followers",
+    "following_url": "https://api.github.com/users/fredemmott/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fredemmott/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fredemmott/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fredemmott/subscriptions",
+    "organizations_url": "https://api.github.com/users/fredemmott/orgs",
+    "repos_url": "https://api.github.com/users/fredemmott/repos",
+    "events_url": "https://api.github.com/users/fredemmott/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fredemmott/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "173b48d49a16761939ab66c2b43854a352d0d947",
+      "url": "https://api.github.com/repos/facebook/folly/commits/173b48d49a16761939ab66c2b43854a352d0d947",
+      "html_url": "https://github.com/facebook/folly/commit/173b48d49a16761939ab66c2b43854a352d0d947"
+    }
+  ],
+  "stats": {
+    "total": 42,
+    "additions": 40,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "40a6b17f3e0296b2b7a823405b5571cfb95535ef",
+      "filename": "folly/Random.cpp",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 2,
+      "changes": 21,
+      "blob_url": "https://github.com/facebook/folly/blob/8e927ee48b114c8a2f90d0cbd5ac753795a6761f/folly%2FRandom.cpp",
+      "raw_url": "https://github.com/facebook/folly/raw/8e927ee48b114c8a2f90d0cbd5ac753795a6761f/folly%2FRandom.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2FRandom.cpp?ref=8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+      "patch": "@@ -72,6 +72,7 @@ void readRandomDevice(void* data, size_t size) {\n \n class BufferedRandomDevice {\n  public:\n+  static once_flag flag;\n   static constexpr size_t kDefaultBufferSize = 128;\n \n   explicit BufferedRandomDevice(size_t bufferSize = kDefaultBufferSize);\n@@ -97,10 +98,28 @@ class BufferedRandomDevice {\n   unsigned char* ptr_;\n };\n \n+once_flag BufferedRandomDevice::flag;\n+struct RandomTag {};\n+\n BufferedRandomDevice::BufferedRandomDevice(size_t bufferSize)\n   : bufferSize_(bufferSize),\n     buffer_(new unsigned char[bufferSize]),\n     ptr_(buffer_.get() + bufferSize) {  // refill on first use\n+  call_once(flag, [this]() {\n+    detail::AtFork::registerHandler(\n+        this,\n+        /*prepare*/ []() { return true; },\n+        /*parent*/ []() {},\n+        /*child*/\n+        []() {\n+          using Single = SingletonThreadLocal<BufferedRandomDevice, RandomTag>;\n+          auto& t = Single::get();\n+          // Clear out buffered data on fork.\n+          //\n+          // Ensure child and parent do not share same entropy pool.\n+          t.ptr_ = t.buffer_.get() + t.bufferSize_;\n+        });\n+  });\n }\n \n void BufferedRandomDevice::getSlow(unsigned char* data, size_t size) {\n@@ -124,8 +143,6 @@ void BufferedRandomDevice::getSlow(unsigned char* data, size_t size) {\n   ptr_ += size;\n }\n \n-struct RandomTag {};\n-\n } // namespace\n \n void Random::secureRandom(void* data, size_t size) {"
+    },
+    {
+      "sha": "2ee74c6de94a9d1e0165b0df18d67156cfab62f4",
+      "filename": "folly/test/RandomTest.cpp",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/facebook/folly/blob/8e927ee48b114c8a2f90d0cbd5ac753795a6761f/folly%2Ftest%2FRandomTest.cpp",
+      "raw_url": "https://github.com/facebook/folly/raw/8e927ee48b114c8a2f90d0cbd5ac753795a6761f/folly%2Ftest%2FRandomTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2Ftest%2FRandomTest.cpp?ref=8e927ee48b114c8a2f90d0cbd5ac753795a6761f",
+      "patch": "@@ -138,3 +138,24 @@ TEST(Random, sanity) {\n         std::unordered_set<uint64_t>(vals.begin(), vals.end()).size());\n   }\n }\n+\n+TEST(Random, SecureFork) {\n+  unsigned char buffer = 0;\n+  // Init random buffer\n+  folly::Random::secureRandom(&buffer, 1);\n+\n+  auto pid = fork();\n+  EXPECT_NE(pid, -1);\n+  if (pid) {\n+    // parent\n+    int status = 0;\n+    folly::Random::secureRandom(&buffer, 1);\n+    auto pid2 = wait(&status);\n+    EXPECT_NE(WEXITSTATUS(status), buffer);\n+    EXPECT_EQ(pid, pid2);\n+  } else {\n+    // child\n+    folly::Random::secureRandom(&buffer, 1);\n+    exit(buffer); // Do not print gtest results\n+  }\n+}"
+    }
+  ]
+}

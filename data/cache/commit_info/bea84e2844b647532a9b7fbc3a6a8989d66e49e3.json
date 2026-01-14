@@ -1,0 +1,101 @@
+{
+  "sha": "bea84e2844b647532a9b7fbc3a6a8989d66e49e3",
+  "node_id": "MDY6Q29tbWl0MTI2MjI1MTYwOmJlYTg0ZTI4NDRiNjQ3NTMyYTliN2ZiYzNhNmE4OTg5ZDY2ZTQ5ZTM=",
+  "commit": {
+    "author": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T22:05:55Z"
+    },
+    "committer": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T22:05:55Z"
+    },
+    "message": "Check if output buffer is too small.\n\nIt really seems like libsodium (whose entire purpose is to make crypto\nidiot-proof) making me mess with these details is a flaw in the API design.\n\nAlso, correct Hungarian.",
+    "tree": {
+      "sha": "96d8fa86d9d09280ba2fb5f47360e8138c98161a",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/trees/96d8fa86d9d09280ba2fb5f47360e8138c98161a"
+    },
+    "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/commits/bea84e2844b647532a9b7fbc3a6a8989d66e49e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEyTfX+yUNQsQ1xS4KAL3mnwuGzdwFAl9RaQsACgkQAL3mnwuG\nzdwCaw//cs0Dl6BHMMgWheIObvlyse5zIqzlQ4CiSPQXijSUskTCZECYDdOEwu5N\nPKWF287qFBRP25gxSrrI3m12HIUDWO2ISkrjd0WnIeFyTN0WnUA6AQMyeSRxwR5T\nNd+mJ7She70WWnoHzOCiuVuksek2CWRVNvB2yzemXUrEFXjuZuOKc0WE9pDNE11z\n3BYar2G4OUh41pSrVT51lyv3rAOh/DDu2jTmX9XNaGNG9fl6/d5iIJLsI23zRqPe\nOzoVysp3MgR1Npy0cUfdyWrmq471/7EdzMAy/ZL0egmVG50+QQsikOsbWyUk1iU2\nXWNmN8o3D1cyjQqGo9ympS0g4BIZfpLrxvELVZDXiBG8Wb3T+StXi8zRfIebfpt+\nkW862Iic54qvN1fGVCPaIcSNr3Bkbi+hhgQhbYAigiX5S//qjuLiBHh0VtoqRD0g\nrW3jnypTL3IHZT83Nb8SQwv5hdXXuVd1V+tW55z054Puo1wpuYj1YlSIL+xJ1un2\nj6HoRWr5c0t9vdwo7QYJkAvtcKzrvi2yWYXLd43ZbWjnnpQA9J6WtDRsmOw39ovn\n0KCTIc88OcTWMZdVuKf75iwtW3d8yKCt1cSg7EEa0t7nUvnW4P7aSnXE7KTrNxGT\n/+i+n+HqVXqnmQDRyfn8HhvkDVWJnMbipuras8XguaAcWD+uuus=\n=ou0/\n-----END PGP SIGNATURE-----",
+      "payload": "tree 96d8fa86d9d09280ba2fb5f47360e8138c98161a\nparent d885e72b436b0f76d73c8926de7368c1a2fad173\nauthor Fletcher Dunn <fletcherd@valvesoftware.com> 1599170755 -0700\ncommitter Fletcher Dunn <fletcherd@valvesoftware.com> 1599170755 -0700\n\nCheck if output buffer is too small.\n\nIt really seems like libsodium (whose entire purpose is to make crypto\nidiot-proof) making me mess with these details is a flaw in the API design.\n\nAlso, correct Hungarian.\n",
+      "verified_at": "2024-11-07T16:33:25Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/bea84e2844b647532a9b7fbc3a6a8989d66e49e3",
+  "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/bea84e2844b647532a9b7fbc3a6a8989d66e49e3",
+  "comments_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/bea84e2844b647532a9b7fbc3a6a8989d66e49e3/comments",
+  "author": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d885e72b436b0f76d73c8926de7368c1a2fad173",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/d885e72b436b0f76d73c8926de7368c1a2fad173",
+      "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/d885e72b436b0f76d73c8926de7368c1a2fad173"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 20,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "483e9855fe777977f32c48d75abe87915b8a8c85",
+      "filename": "src/common/crypto_libsodium.cpp",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 7,
+      "changes": 27,
+      "blob_url": "https://github.com/ValveSoftware/GameNetworkingSockets/blob/bea84e2844b647532a9b7fbc3a6a8989d66e49e3/src%2Fcommon%2Fcrypto_libsodium.cpp",
+      "raw_url": "https://github.com/ValveSoftware/GameNetworkingSockets/raw/bea84e2844b647532a9b7fbc3a6a8989d66e49e3/src%2Fcommon%2Fcrypto_libsodium.cpp",
+      "contents_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/contents/src%2Fcommon%2Fcrypto_libsodium.cpp?ref=bea84e2844b647532a9b7fbc3a6a8989d66e49e3",
+      "patch": "@@ -50,18 +50,25 @@ bool AES_GCM_EncryptContext::Encrypt(\n \tvoid *pEncryptedDataAndTag, uint32 *pcbEncryptedDataAndTag,\n \tconst void *pAdditionalAuthenticationData, size_t cbAuthenticationData\n ) {\n-    unsigned long long pcbEncryptedDataAndTag_longlong = *pcbEncryptedDataAndTag;\n \n+\t// Make sure caller's buffer is big enough to hold the result.\n+\tif ( cbPlaintextData + crypto_aead_aes256gcm_ABYTES > *pcbEncryptedDataAndTag )\n+\t{\n+\t\t*pcbEncryptedDataAndTag = 0;\n+\t\treturn false;\n+\t}\n+\n+    unsigned long long cbEncryptedDataAndTag_longlong;\n     crypto_aead_aes256gcm_encrypt_afternm(\n-\t\tstatic_cast<unsigned char*>( pEncryptedDataAndTag ), &pcbEncryptedDataAndTag_longlong,\n+\t\tstatic_cast<unsigned char*>( pEncryptedDataAndTag ), &cbEncryptedDataAndTag_longlong,\n \t\tstatic_cast<const unsigned char*>( pPlaintextData ), cbPlaintextData,\n \t\tstatic_cast<const unsigned char*>(pAdditionalAuthenticationData), cbAuthenticationData,\n \t\tnullptr,\n \t\tstatic_cast<const unsigned char*>( pIV ),\n \t\tstatic_cast<const crypto_aead_aes256gcm_state*>( m_ctx )\n \t);\n \n-    *pcbEncryptedDataAndTag = pcbEncryptedDataAndTag_longlong;\n+    *pcbEncryptedDataAndTag = cbEncryptedDataAndTag_longlong;\n \n     return true;\n }\n@@ -72,17 +79,23 @@ bool AES_GCM_DecryptContext::Decrypt(\n \tvoid *pPlaintextData, uint32 *pcbPlaintextData,\n \tconst void *pAdditionalAuthenticationData, size_t cbAuthenticationData\n ) {\n-    unsigned long long pcbPlaintextData_longlong;\n-\n+\t// Make sure caller's buffer is big enough to hold the result\n+\tif ( cbEncryptedDataAndTag > *pcbPlaintextData + crypto_aead_aes256gcm_ABYTES )\n+\t{\n+\t\t*pcbPlaintextData = 0;\n+\t\treturn false;\n+\t}\n+\n+    unsigned long long cbPlaintextData_longlong;\n     const int nDecryptResult = crypto_aead_aes256gcm_decrypt_afternm(\n-\t\tstatic_cast<unsigned char*>( pPlaintextData ), &pcbPlaintextData_longlong,\n+\t\tstatic_cast<unsigned char*>( pPlaintextData ), &cbPlaintextData_longlong,\n \t\tnullptr,\n \t\tstatic_cast<const unsigned char*>( pEncryptedDataAndTag ), cbEncryptedDataAndTag,\n \t\tstatic_cast<const unsigned char*>( pAdditionalAuthenticationData ), cbAuthenticationData,\n \t\tstatic_cast<const unsigned char*>( pIV ), static_cast<const crypto_aead_aes256gcm_state*>( m_ctx )\n \t);\n \n-    *pcbPlaintextData = pcbPlaintextData_longlong;\n+    *pcbPlaintextData = cbPlaintextData_longlong;\n \n     return nDecryptResult == 0;\n }"
+    }
+  ]
+}

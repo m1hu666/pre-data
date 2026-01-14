@@ -1,0 +1,93 @@
+{
+  "sha": "a67083ff4b8dcbb7ee2839da6338032030d712b0",
+  "node_id": "MDY6Q29tbWl0MTI4ODQyNzEwOmE2NzA4M2ZmNGI4ZGNiYjdlZTI4MzlkYTYzMzgwMzIwMzBkNzEyYjA=",
+  "commit": {
+    "author": {
+      "name": "Yang Chi",
+      "email": "yangchi@fb.com",
+      "date": "2021-02-24T00:40:17Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2021-03-03T15:26:26Z"
+    },
+    "message": "Close connection if we derive an extra 1-rtt write cipher\n\nSummary: Fixes CVE-2021-24029\n\nReviewed By: mjoras, lnicco\n\nDifferential Revision: D26613890\n\nfbshipit-source-id: 19bb2be2c731808144e1a074ece313fba11f1945",
+    "tree": {
+      "sha": "e70c8379f572f1a4a9acf3d9acd0e28153ff3414",
+      "url": "https://api.github.com/repos/facebook/mvfst/git/trees/e70c8379f572f1a4a9acf3d9acd0e28153ff3414"
+    },
+    "url": "https://api.github.com/repos/facebook/mvfst/git/commits/a67083ff4b8dcbb7ee2839da6338032030d712b0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/mvfst/commits/a67083ff4b8dcbb7ee2839da6338032030d712b0",
+  "html_url": "https://github.com/facebook/mvfst/commit/a67083ff4b8dcbb7ee2839da6338032030d712b0",
+  "comments_url": "https://api.github.com/repos/facebook/mvfst/commits/a67083ff4b8dcbb7ee2839da6338032030d712b0/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6624ad787f5e7225cc124ff8f3a68adcca9ae8a6",
+      "url": "https://api.github.com/repos/facebook/mvfst/commits/6624ad787f5e7225cc124ff8f3a68adcca9ae8a6",
+      "html_url": "https://github.com/facebook/mvfst/commit/6624ad787f5e7225cc124ff8f3a68adcca9ae8a6"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 19,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "eaa609e563005337cead78615e466a4fcaaae42a",
+      "filename": "quic/server/state/ServerStateMachine.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/mvfst/blob/a67083ff4b8dcbb7ee2839da6338032030d712b0/quic%2Fserver%2Fstate%2FServerStateMachine.cpp",
+      "raw_url": "https://github.com/facebook/mvfst/raw/a67083ff4b8dcbb7ee2839da6338032030d712b0/quic%2Fserver%2Fstate%2FServerStateMachine.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/mvfst/contents/quic%2Fserver%2Fstate%2FServerStateMachine.cpp?ref=a67083ff4b8dcbb7ee2839da6338032030d712b0",
+      "patch": "@@ -311,7 +311,10 @@ void updateHandshakeState(QuicServerConnectionState& conn) {\n       conn.qLogger->addTransportStateUpdate(kDerivedOneRttWriteCipher);\n     }\n     QUIC_TRACE(fst_trace, conn, \"derived 1-rtt write cipher\");\n-    CHECK(!conn.oneRttWriteCipher.get());\n+    if (conn.oneRttWriteCipher) {\n+      throw QuicTransportException(\n+          \"Duplicate 1-rtt write cipher\", TransportErrorCode::CRYPTO_ERROR);\n+    }\n     conn.oneRttWriteCipher = std::move(oneRttWriteCipher);\n \n     updatePacingOnKeyEstablished(conn);"
+    },
+    {
+      "sha": "404a78b800f954a4e1f7b35d7fc3911d0de81db6",
+      "filename": "quic/server/test/QuicServerTransportTest.cpp",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/facebook/mvfst/blob/a67083ff4b8dcbb7ee2839da6338032030d712b0/quic%2Fserver%2Ftest%2FQuicServerTransportTest.cpp",
+      "raw_url": "https://github.com/facebook/mvfst/raw/a67083ff4b8dcbb7ee2839da6338032030d712b0/quic%2Fserver%2Ftest%2FQuicServerTransportTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/mvfst/contents/quic%2Fserver%2Ftest%2FQuicServerTransportTest.cpp?ref=a67083ff4b8dcbb7ee2839da6338032030d712b0",
+      "patch": "@@ -4265,6 +4265,21 @@ TEST_P(QuicServerTransportHandshakeTest, TestD6DStartCallback) {\n   server->removeObserver(mockObserver.get());\n }\n \n+TEST_F(QuicUnencryptedServerTransportTest, DuplicateOneRttWriteCipher) {\n+  setupClientReadCodec();\n+  recvClientHello();\n+  recvClientFinished();\n+  loopForWrites();\n+  try {\n+    recvClientHello();\n+    recvClientFinished();\n+    FAIL();\n+  } catch (const std::runtime_error& ex) {\n+    EXPECT_THAT(ex.what(), HasSubstr(\"Crypto error\"));\n+  }\n+  EXPECT_TRUE(server->isClosed());\n+}\n+\n TEST_F(QuicServerTransportTest, TestRegisterAndHandleTransportKnobParams) {\n   int flag = 0;\n   server->registerKnobParamHandler("
+    }
+  ]
+}

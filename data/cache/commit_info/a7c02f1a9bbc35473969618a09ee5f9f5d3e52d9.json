@@ -1,0 +1,101 @@
+{
+  "sha": "a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9",
+  "node_id": "C_kwDOArmXAtoAKGE3YzAyZjFhOWJiYzM1NDczOTY5NjE4YTA5ZWU1ZjlmNWQzZTUyZDk",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-12T08:24:39Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-12T08:29:24Z"
+    },
+    "message": "Validate real and expected type of arguments to cwise ops.\n\nWithout this validation, it is possible to trigger a `CHECK`-fail denial of service.\n\nThis is a rollforward of a previous commit which was rolled back as it was relying on RTTI. This time we don't use RTTI, we replace `typeid(Tin).name()` with a double function call, `DataTypeString(DataTypeToEnum<Tin>::v())`.\n\nPiperOrigin-RevId: 409340416\nChange-Id: I96080b2796729a3a9b65e7c68307ac276070f2f0",
+    "tree": {
+      "sha": "4224baf1d704194a7377c5b46ecb8c8902682a6d",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/4224baf1d704194a7377c5b46ecb8c8902682a6d"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c7db81b86b6746b494e5359433aa8e2dd7df25f6",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c7db81b86b6746b494e5359433aa8e2dd7df25f6",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/c7db81b86b6746b494e5359433aa8e2dd7df25f6"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 10,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "fa48717ab1c2858f38888f3285c59854883d5f35",
+      "filename": "tensorflow/core/kernels/cwise_ops_common.h",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9/tensorflow%2Fcore%2Fkernels%2Fcwise_ops_common.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9/tensorflow%2Fcore%2Fkernels%2Fcwise_ops_common.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fcwise_ops_common.h?ref=a7c02f1a9bbc35473969618a09ee5f9f5d3e52d9",
+      "patch": "@@ -87,7 +87,17 @@ class BinaryOp : public BinaryOpShared {\n \n   void Compute(OpKernelContext* ctx) override {\n     const Tensor& input_0 = ctx->input(0);\n+    OP_REQUIRES(ctx, input_0.dtype() == DataTypeToEnum<Tin>::v(),\n+                errors::InvalidArgument(\n+                    \"Expected tensor of type \",\n+                    DataTypeString(DataTypeToEnum<Tin>::v()), \" but got type \",\n+                    DataTypeString(input_0.dtype())));\n     const Tensor& input_1 = ctx->input(1);\n+    OP_REQUIRES(ctx, input_1.dtype() == DataTypeToEnum<Tin>::v(),\n+                errors::InvalidArgument(\n+                    \"Expected tensor of type \",\n+                    DataTypeString(DataTypeToEnum<Tin>::v()), \" but got type \",\n+                    DataTypeString(input_1.dtype())));\n     const Device& eigen_device = ctx->eigen_device<Device>();\n     bool error = false;\n     bool* const error_ptr = Functor::has_errors ? &error : nullptr;"
+    }
+  ]
+}

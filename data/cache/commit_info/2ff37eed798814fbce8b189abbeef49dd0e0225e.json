@@ -1,0 +1,101 @@
+{
+  "sha": "2ff37eed798814fbce8b189abbeef49dd0e0225e",
+  "node_id": "MDY6Q29tbWl0NjUyMTQxOTE6MmZmMzdlZWQ3OTg4MTRmYmNlOGIxODlhYmJlZWY0OWRkMGUwMjI1ZQ==",
+  "commit": {
+    "author": {
+      "name": "Yuchen Dai",
+      "email": "silentdai@gmail.com",
+      "date": "2019-11-06T10:13:31Z"
+    },
+    "committer": {
+      "name": "Yuchen Dai",
+      "email": "silentdai@gmail.com",
+      "date": "2019-11-06T10:19:20Z"
+    },
+    "message": "listener: clean up accept filter before creating connection\n\nSigned-off-by: Yuchen Dai <silentdai@gmail.com>",
+    "tree": {
+      "sha": "a2da8059abf8d02d0bdcb78f5c69f6894412de61",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/a2da8059abf8d02d0bdcb78f5c69f6894412de61"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/2ff37eed798814fbce8b189abbeef49dd0e0225e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/2ff37eed798814fbce8b189abbeef49dd0e0225e",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/2ff37eed798814fbce8b189abbeef49dd0e0225e",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/2ff37eed798814fbce8b189abbeef49dd0e0225e/comments",
+  "author": {
+    "login": "lambdai",
+    "id": 209726,
+    "node_id": "MDQ6VXNlcjIwOTcyNg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/209726?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lambdai",
+    "html_url": "https://github.com/lambdai",
+    "followers_url": "https://api.github.com/users/lambdai/followers",
+    "following_url": "https://api.github.com/users/lambdai/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lambdai/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lambdai/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lambdai/subscriptions",
+    "organizations_url": "https://api.github.com/users/lambdai/orgs",
+    "repos_url": "https://api.github.com/users/lambdai/repos",
+    "events_url": "https://api.github.com/users/lambdai/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lambdai/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "lambdai",
+    "id": 209726,
+    "node_id": "MDQ6VXNlcjIwOTcyNg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/209726?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lambdai",
+    "html_url": "https://github.com/lambdai",
+    "followers_url": "https://api.github.com/users/lambdai/followers",
+    "following_url": "https://api.github.com/users/lambdai/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lambdai/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lambdai/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lambdai/subscriptions",
+    "organizations_url": "https://api.github.com/users/lambdai/orgs",
+    "repos_url": "https://api.github.com/users/lambdai/repos",
+    "events_url": "https://api.github.com/users/lambdai/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lambdai/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "be5e7a565b3571556f2d06035ad743923e87b48c",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/be5e7a565b3571556f2d06035ad743923e87b48c",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/be5e7a565b3571556f2d06035ad743923e87b48c"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c196947664033f1f6e26ad6917c114336a903da3",
+      "filename": "source/server/connection_handler_impl.cc",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/2ff37eed798814fbce8b189abbeef49dd0e0225e/source%2Fserver%2Fconnection_handler_impl.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/2ff37eed798814fbce8b189abbeef49dd0e0225e/source%2Fserver%2Fconnection_handler_impl.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fserver%2Fconnection_handler_impl.cc?ref=2ff37eed798814fbce8b189abbeef49dd0e0225e",
+      "patch": "@@ -264,6 +264,9 @@ void ConnectionHandlerImpl::ActiveTcpSocket::newConnection() {\n       socket_->setDetectedTransportProtocol(\n           Extensions::TransportSockets::TransportProtocolNames::get().RawBuffer);\n     }\n+    // Erase accept filter states because accept filters may not get the opportunity to clean up.\n+    // Particularly the assigned events need to reset before assigning new events in the follow up.\n+    accept_filters_.clear();\n     // Create a new connection on this listener.\n     listener_.newConnection(std::move(socket_));\n   }"
+    }
+  ]
+}

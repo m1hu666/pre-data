@@ -1,0 +1,101 @@
+{
+  "sha": "435a2ca802358a3debb6d164d2c33049131df81c",
+  "node_id": "MDY6Q29tbWl0MjQ3NDcwMTk6NDM1YTJjYTgwMjM1OGEzZGViYjZkMTY0ZDJjMzMwNDkxMzFkZjgxYw==",
+  "commit": {
+    "author": {
+      "name": "Phillip Hellewell",
+      "email": "sshock@gmail.com",
+      "date": "2018-03-11T01:05:39Z"
+    },
+    "committer": {
+      "name": "Phillip Hellewell",
+      "email": "sshock@gmail.com",
+      "date": "2018-03-11T01:05:39Z"
+    },
+    "message": "Sanity check size passed to malloc...\n\nAdd sanity check before calling malloc in af_get_page() function to\navoid undefined behavior (e.g., seg fault) when dealing with a corrupt\nAFF image with an invalid pagesize.\n\nIssue found by Luis Rocha (luiscrocha@gmail.com).",
+    "tree": {
+      "sha": "daed46f1019909cd31ec1601b06d1d03842988d7",
+      "url": "https://api.github.com/repos/sshock/AFFLIBv3/git/trees/daed46f1019909cd31ec1601b06d1d03842988d7"
+    },
+    "url": "https://api.github.com/repos/sshock/AFFLIBv3/git/commits/435a2ca802358a3debb6d164d2c33049131df81c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/sshock/AFFLIBv3/commits/435a2ca802358a3debb6d164d2c33049131df81c",
+  "html_url": "https://github.com/sshock/AFFLIBv3/commit/435a2ca802358a3debb6d164d2c33049131df81c",
+  "comments_url": "https://api.github.com/repos/sshock/AFFLIBv3/commits/435a2ca802358a3debb6d164d2c33049131df81c/comments",
+  "author": {
+    "login": "sshock",
+    "id": 1693761,
+    "node_id": "MDQ6VXNlcjE2OTM3NjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1693761?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sshock",
+    "html_url": "https://github.com/sshock",
+    "followers_url": "https://api.github.com/users/sshock/followers",
+    "following_url": "https://api.github.com/users/sshock/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sshock/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sshock/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sshock/subscriptions",
+    "organizations_url": "https://api.github.com/users/sshock/orgs",
+    "repos_url": "https://api.github.com/users/sshock/repos",
+    "events_url": "https://api.github.com/users/sshock/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sshock/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sshock",
+    "id": 1693761,
+    "node_id": "MDQ6VXNlcjE2OTM3NjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1693761?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sshock",
+    "html_url": "https://github.com/sshock",
+    "followers_url": "https://api.github.com/users/sshock/followers",
+    "following_url": "https://api.github.com/users/sshock/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sshock/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sshock/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sshock/subscriptions",
+    "organizations_url": "https://api.github.com/users/sshock/orgs",
+    "repos_url": "https://api.github.com/users/sshock/repos",
+    "events_url": "https://api.github.com/users/sshock/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sshock/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0ddccaf754ef5b7b903955f382b839dd4a84cee8",
+      "url": "https://api.github.com/repos/sshock/AFFLIBv3/commits/0ddccaf754ef5b7b903955f382b839dd4a84cee8",
+      "html_url": "https://github.com/sshock/AFFLIBv3/commit/0ddccaf754ef5b7b903955f382b839dd4a84cee8"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "f8cf77541dccac563d0a6056ddf0b65b0a7f33a7",
+      "filename": "lib/afflib_pages.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/sshock/AFFLIBv3/blob/435a2ca802358a3debb6d164d2c33049131df81c/lib%2Fafflib_pages.cpp",
+      "raw_url": "https://github.com/sshock/AFFLIBv3/raw/435a2ca802358a3debb6d164d2c33049131df81c/lib%2Fafflib_pages.cpp",
+      "contents_url": "https://api.github.com/repos/sshock/AFFLIBv3/contents/lib%2Fafflib_pages.cpp?ref=435a2ca802358a3debb6d164d2c33049131df81c",
+      "patch": "@@ -219,6 +219,11 @@ int af_get_page(AFFILE *af,int64_t pagenum,unsigned char *data,size_t *bytes)\n \t    return -3;\t\t\t// read error\n \t}\n \n+\t/* Sanity check to avoid undefined behaviour when calling malloc below with pagesize from a corrupt AFF image. */\n+\tif(af->image_pagesize <= 0 || af->image_pagesize > 16*1024*1024)\n+\t    return -1;\n+\n+\n \t/* Now uncompress directly into the buffer provided by the caller, unless the caller didn't\n \t * provide a buffer. If that happens, allocate our own...\n \t */"
+    }
+  ]
+}

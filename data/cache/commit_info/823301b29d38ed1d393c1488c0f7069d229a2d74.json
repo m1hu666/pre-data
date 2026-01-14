@@ -1,0 +1,117 @@
+{
+  "sha": "823301b29d38ed1d393c1488c0f7069d229a2d74",
+  "node_id": "C_kwDOByyPPdoAKDgyMzMwMWIyOWQzOGVkMWQzOTNjMTQ4OGMwZjcwNjlkMjI5YTJkNzQ",
+  "commit": {
+    "author": {
+      "name": "Takumi Fujimoto",
+      "email": "takumif@chromium.org",
+      "date": "2022-01-08T05:28:27Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-08T05:28:27Z"
+    },
+    "message": "Cast UI: Remove the \"cast file\" option from the sources dropdown\n\nThe underlying MediaRouterUI/MediaRouterFileDialog code is deleted in a\nsubsequent CL.\n\nBug: 1284717, 1242962, 1274077\nChange-Id: I04c7414795b28bf1e2658ec51e4198efa9c0f016\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3355496\nReviewed-by: Muyao Xu <muyaoxu@google.com>\nCommit-Queue: Takumi Fujimoto <takumif@chromium.org>\nCr-Commit-Position: refs/heads/main@{#956805}",
+    "tree": {
+      "sha": "8d318f85b30db4664bc6226a1c10ddf90121ed80",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/8d318f85b30db4664bc6226a1c10ddf90121ed80"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/823301b29d38ed1d393c1488c0f7069d229a2d74",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/823301b29d38ed1d393c1488c0f7069d229a2d74",
+  "html_url": "https://github.com/chromium/chromium/commit/823301b29d38ed1d393c1488c0f7069d229a2d74",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/823301b29d38ed1d393c1488c0f7069d229a2d74/comments",
+  "author": {
+    "login": "takumif",
+    "id": 5505433,
+    "node_id": "MDQ6VXNlcjU1MDU0MzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5505433?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/takumif",
+    "html_url": "https://github.com/takumif",
+    "followers_url": "https://api.github.com/users/takumif/followers",
+    "following_url": "https://api.github.com/users/takumif/following{/other_user}",
+    "gists_url": "https://api.github.com/users/takumif/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/takumif/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/takumif/subscriptions",
+    "organizations_url": "https://api.github.com/users/takumif/orgs",
+    "repos_url": "https://api.github.com/users/takumif/repos",
+    "events_url": "https://api.github.com/users/takumif/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/takumif/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "deffddae870061f13623c6b562520f98cce4bf84",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/deffddae870061f13623c6b562520f98cce4bf84",
+      "html_url": "https://github.com/chromium/chromium/commit/deffddae870061f13623c6b562520f98cce4bf84"
+    }
+  ],
+  "stats": {
+    "total": 135,
+    "additions": 7,
+    "deletions": 128
+  },
+  "files": [
+    {
+      "sha": "2d58ec3f5f0752786e905fcd97be531950324ff7",
+      "filename": "chrome/browser/ui/views/media_router/cast_dialog_view.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 47,
+      "changes": 48,
+      "blob_url": "https://github.com/chromium/chromium/blob/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.cc?ref=823301b29d38ed1d393c1488c0f7069d229a2d74",
+      "patch": "@@ -118,9 +118,6 @@ std::u16string CastDialogView::GetWindowTitle() const {\n     case SourceType::kDesktop:\n       return l10n_util::GetStringUTF16(\n           IDS_MEDIA_ROUTER_DESKTOP_MIRROR_CAST_MODE);\n-    case SourceType::kLocalFile:\n-      return l10n_util::GetStringFUTF16(IDS_MEDIA_ROUTER_CAST_LOCAL_MEDIA_TITLE,\n-                                        local_file_name_.value());\n     default:\n       NOTREACHED();\n       return std::u16string();\n@@ -174,18 +171,7 @@ bool CastDialogView::IsCommandIdEnabled(int command_id) const {\n }\n \n void CastDialogView::ExecuteCommand(int command_id, int event_flags) {\n-  // This method is called when the user selects a source in the source picker.\n-  if (command_id == SourceType::kLocalFile) {\n-    // When the file picker dialog opens, the Cast dialog loses focus. So we\n-    // must temporarily prevent it from closing when losing focus.\n-    set_close_on_deactivate(false);\n-    controller_->ChooseLocalFile(base::BindOnce(\n-        &CastDialogView::OnFilePickerClosed, weak_factory_.GetWeakPtr()));\n-  } else {\n-    if (local_file_name_)\n-      local_file_name_.reset();\n-    SelectSource(static_cast<SourceType>(command_id));\n-  }\n+  SelectSource(static_cast<SourceType>(command_id));\n }\n \n void CastDialogView::AddObserver(Observer* observer) {\n@@ -283,11 +269,7 @@ void CastDialogView::ShowAccessCodeCastDialog() {\n     case SourceType::kDesktop:\n       preferred_cast_mode = MediaCastMode::DESKTOP_MIRROR;\n       break;\n-    case SourceType::kLocalFile:\n-      preferred_cast_mode = MediaCastMode::LOCAL_FILE;\n-      break;\n   }\n-\n   AccessCodeCastDialog::Show(preferred_cast_mode);\n }\n \n@@ -381,8 +363,6 @@ void CastDialogView::ShowSourcesMenu() {\n         SourceType::kTab, IDS_MEDIA_ROUTER_TAB_MIRROR_CAST_MODE);\n     sources_menu_model_->AddCheckItemWithStringId(\n         SourceType::kDesktop, IDS_MEDIA_ROUTER_DESKTOP_MIRROR_CAST_MODE);\n-    sources_menu_model_->AddCheckItemWithStringId(\n-        SourceType::kLocalFile, IDS_MEDIA_ROUTER_LOCAL_FILE_CAST_MODE);\n   }\n \n   sources_menu_runner_ = std::make_unique<views::MenuRunner>(\n@@ -417,16 +397,7 @@ void CastDialogView::SinkPressed(size_t index) {\n   } else {\n     absl::optional<MediaCastMode> cast_mode = GetCastModeToUse(sink);\n     if (cast_mode) {\n-      // Starting local file casting may open a new tab synchronously on the UI\n-      // thread, which deactivates the dialog. So we must prevent it from\n-      // closing and getting destroyed.\n-      if (cast_mode.value() == LOCAL_FILE)\n-        set_close_on_deactivate(false);\n       controller_->StartCasting(sink.id, cast_mode.value());\n-      // Re-enable close on deactivate so the user can click elsewhere to close\n-      // the dialog.\n-      if (cast_mode.value() == LOCAL_FILE)\n-        set_close_on_deactivate(!keep_shown_for_testing_);\n       metrics_.OnStartCasting(base::Time::Now(), index, cast_mode.value(),\n                               sink.icon_type, HasCastAndDialSinks());\n     }\n@@ -454,10 +425,6 @@ absl::optional<MediaCastMode> CastDialogView::GetCastModeToUse(\n       if (base::Contains(sink.cast_modes, DESKTOP_MIRROR))\n         return absl::make_optional<MediaCastMode>(DESKTOP_MIRROR);\n       break;\n-    case SourceType::kLocalFile:\n-      if (base::Contains(sink.cast_modes, LOCAL_FILE))\n-        return absl::make_optional<MediaCastMode>(LOCAL_FILE);\n-      break;\n   }\n   return absl::nullopt;\n }\n@@ -487,19 +454,6 @@ void CastDialogView::RecordSinkCount() {\n   metrics_.OnRecordSinkCount(sink_buttons_);\n }\n \n-void CastDialogView::OnFilePickerClosed(const ui::SelectedFileInfo* file_info) {\n-  // Re-enable the setting to close the dialog when it loses focus.\n-  set_close_on_deactivate(!keep_shown_for_testing_);\n-  if (file_info) {\n-#if defined(OS_WIN)\n-    local_file_name_ = base::WideToUTF16(file_info->display_name);\n-#else\n-    local_file_name_ = base::UTF8ToUTF16(file_info->display_name);\n-#endif  // defined(OS_WIN)\n-    SelectSource(SourceType::kLocalFile);\n-  }\n-}\n-\n bool CastDialogView::HasCastAndDialSinks() const {\n   bool has_cast = false;\n   bool has_dial = false;"
+    },
+    {
+      "sha": "58327dc8d481002b627c15d1f3ad2ec3d1dd57d7",
+      "filename": "chrome/browser/ui/views/media_router/cast_dialog_view.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 10,
+      "changes": 11,
+      "blob_url": "https://github.com/chromium/chromium/blob/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view.h?ref=823301b29d38ed1d393c1488c0f7069d229a2d74",
+      "patch": "@@ -18,7 +18,6 @@\n #include \"chrome/browser/ui/views/media_router/cast_dialog_metrics.h\"\n #include \"ui/base/metadata/metadata_header_macros.h\"\n #include \"ui/base/models/simple_menu_model.h\"\n-#include \"ui/shell_dialogs/selected_file_info.h\"\n #include \"ui/views/bubble/bubble_border.h\"\n #include \"ui/views/bubble/bubble_dialog_delegate_view.h\"\n #include \"ui/views/controls/menu/menu_runner.h\"\n@@ -51,7 +50,7 @@ class CastDialogView : public views::BubbleDialogDelegateView,\n     virtual void OnDialogWillClose(CastDialogView* dialog_view) = 0;\n   };\n \n-  enum SourceType { kTab, kDesktop, kLocalFile };\n+  enum SourceType { kTab, kDesktop };\n \n   CastDialogView(const CastDialogView&) = delete;\n   CastDialogView& operator=(const CastDialogView&) = delete;\n@@ -134,8 +133,6 @@ class CastDialogView : public views::BubbleDialogDelegateView,\n  private:\n   friend class CastDialogViewTest;\n   friend class MediaRouterCastUiForTest;\n-  FRIEND_TEST_ALL_PREFIXES(CastDialogViewTest, CancelLocalFileSelection);\n-  FRIEND_TEST_ALL_PREFIXES(CastDialogViewTest, CastLocalFile);\n   FRIEND_TEST_ALL_PREFIXES(CastDialogViewTest, DisableUnsupportedSinks);\n   FRIEND_TEST_ALL_PREFIXES(CastDialogViewTest, ShowAndHideDialog);\n   FRIEND_TEST_ALL_PREFIXES(CastDialogViewTest, ShowSourcesMenu);\n@@ -199,9 +196,6 @@ class CastDialogView : public views::BubbleDialogDelegateView,\n   // Records the number of sinks shown with the metrics recorder.\n   void RecordSinkCount();\n \n-  // Sets local file as the selected source if |file_info| is not null.\n-  void OnFilePickerClosed(const ui::SelectedFileInfo* file_info);\n-\n   // Returns true if there are active Cast and DIAL sinks.\n   bool HasCastAndDialSinks() const;\n \n@@ -251,9 +245,6 @@ class CastDialogView : public views::BubbleDialogDelegateView,\n   // multiple sinks at the same time, the last activated sink is used.\n   absl::optional<size_t> selected_sink_index_;\n \n-  // This value is set if the user has chosen a local file to cast.\n-  absl::optional<std::u16string> local_file_name_;\n-\n   base::ObserverList<Observer> observers_;\n \n   // When this is set to true, the dialog does not close on blur."
+    },
+    {
+      "sha": "74b2bfb00233fedb40c0d39c1f8b6d856c83d44b",
+      "filename": "chrome/browser/ui/views/media_router/cast_dialog_view_unittest.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 68,
+      "changes": 73,
+      "blob_url": "https://github.com/chromium/chromium/blob/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fviews%2Fmedia_router%2Fcast_dialog_view_unittest.cc?ref=823301b29d38ed1d393c1488c0f7069d229a2d74",
+      "patch": "@@ -228,13 +228,11 @@ TEST_F(CastDialogViewTest, ShowSourcesMenu) {\n   InitializeDialogWithModel(model);\n   // Press the button to show the sources menu.\n   views::test::ButtonTestApi(sources_button()).NotifyClick(CreateMouseEvent());\n-  // The items should be \"tab\" (includes tab mirroring and presentation),\n-  // \"desktop\", and \"local file\".\n-  EXPECT_EQ(3, sources_menu_model()->GetItemCount());\n+  // The items should be \"tab\" (includes tab mirroring and presentation) and\n+  // \"desktop\".\n+  EXPECT_EQ(2, sources_menu_model()->GetItemCount());\n   EXPECT_EQ(CastDialogView::kTab, sources_menu_model()->GetCommandIdAt(0));\n   EXPECT_EQ(CastDialogView::kDesktop, sources_menu_model()->GetCommandIdAt(1));\n-  EXPECT_EQ(CastDialogView::kLocalFile,\n-            sources_menu_model()->GetCommandIdAt(2));\n \n   // When there are no sinks, the sources button should be disabled.\n   model.set_media_sinks({});\n@@ -249,8 +247,8 @@ TEST_F(CastDialogViewTest, CastAlternativeSources) {\n   InitializeDialogWithModel(model);\n   // Press the button to show the sources menu.\n   views::test::ButtonTestApi(sources_button()).NotifyClick(CreateMouseEvent());\n-  // There should be three sources: tab, desktop, and local file.\n-  ASSERT_EQ(3, sources_menu_model()->GetItemCount());\n+  // There should be two sources: tab and desktop.\n+  ASSERT_EQ(2, sources_menu_model()->GetItemCount());\n \n   EXPECT_CALL(controller_, StartCasting(model.media_sinks()[0].id, TAB_MIRROR));\n   sources_menu_model()->ActivatedAt(0);\n@@ -263,67 +261,6 @@ TEST_F(CastDialogViewTest, CastAlternativeSources) {\n   SinkPressedAtIndex(0);\n }\n \n-TEST_F(CastDialogViewTest, CastLocalFile) {\n-  const std::string file_name = \"example.mp4\";\n-  const std::string file_path = \"path/to/\" + file_name;\n-  std::vector<UIMediaSink> media_sinks = {CreateAvailableSink()};\n-  media_sinks[0].cast_modes = {TAB_MIRROR, LOCAL_FILE};\n-  CastDialogModel model = CreateModelWithSinks(std::move(media_sinks));\n-  InitializeDialogWithModel(model);\n-  views::test::ButtonTestApi(sources_button()).NotifyClick(CreateMouseEvent());\n-\n-#if defined(OS_WIN)\n-  ui::SelectedFileInfo file_info{base::FilePath(base::UTF8ToWide(file_name)),\n-                                 base::FilePath(base::UTF8ToWide(file_path))};\n-#else\n-  ui::SelectedFileInfo file_info{base::FilePath(file_name),\n-                                 base::FilePath(file_path)};\n-#endif  // defined(OS_WIN)\n-  EXPECT_CALL(controller_, ChooseLocalFile(_))\n-      .WillOnce(\n-          [file_info](base::OnceCallback<void(const ui::SelectedFileInfo*)>\n-                          file_callback) {\n-            std::move(file_callback).Run(&file_info);\n-          });\n-  ASSERT_EQ(CastDialogView::kLocalFile,\n-            sources_menu_model()->GetCommandIdAt(2));\n-  sources_menu_model()->ActivatedAt(2);\n-  EXPECT_EQ(dialog_->GetWindowTitle(),\n-            l10n_util::GetStringFUTF16(IDS_MEDIA_ROUTER_CAST_LOCAL_MEDIA_TITLE,\n-                                       base::UTF8ToUTF16(file_name)));\n-\n-  EXPECT_CALL(controller_, StartCasting(model.media_sinks()[0].id, LOCAL_FILE));\n-  SinkPressedAtIndex(0);\n-}\n-\n-TEST_F(CastDialogViewTest, CancelLocalFileSelection) {\n-  std::vector<UIMediaSink> media_sinks = {CreateAvailableSink()};\n-  media_sinks[0].cast_modes = {TAB_MIRROR, LOCAL_FILE};\n-  CastDialogModel model = CreateModelWithSinks(std::move(media_sinks));\n-  InitializeDialogWithModel(model);\n-  views::test::ButtonTestApi(sources_button()).NotifyClick(CreateMouseEvent());\n-\n-  // The tab source should be selected by default.\n-  ASSERT_EQ(CastDialogView::kTab, sources_menu_model()->GetCommandIdAt(0));\n-  ASSERT_TRUE(sources_menu_model()->IsItemCheckedAt(0));\n-\n-  // Select the local file source, then cancel file selection by passing a\n-  // nullptr into the callback.\n-  EXPECT_CALL(controller_, ChooseLocalFile(_))\n-      .WillOnce(\n-          [](base::OnceCallback<void(const ui::SelectedFileInfo*)>\n-                 file_callback) { std::move(file_callback).Run(nullptr); });\n-  ASSERT_EQ(CastDialogView::kLocalFile,\n-            sources_menu_model()->GetCommandIdAt(2));\n-  sources_menu_model()->ActivatedAt(2);\n-\n-  // Since we cancelled file selection, \"tab\" should still be the selected\n-  // source.\n-  EXPECT_TRUE(sources_menu_model()->IsItemCheckedAt(0));\n-  EXPECT_CALL(controller_, StartCasting(model.media_sinks()[0].id, TAB_MIRROR));\n-  SinkPressedAtIndex(0);\n-}\n-\n TEST_F(CastDialogViewTest, DisableUnsupportedSinks) {\n   std::vector<UIMediaSink> media_sinks = {CreateAvailableSink(),\n                                           CreateAvailableSink()};"
+    },
+    {
+      "sha": "ed62699e9c6559f6a1b9b951b3adfbacfdebbe4a",
+      "filename": "chrome/test/media_router/media_router_cast_ui_for_test.cc",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/chromium/chromium/blob/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Ftest%2Fmedia_router%2Fmedia_router_cast_ui_for_test.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/823301b29d38ed1d393c1488c0f7069d229a2d74/chrome%2Ftest%2Fmedia_router%2Fmedia_router_cast_ui_for_test.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Ftest%2Fmedia_router%2Fmedia_router_cast_ui_for_test.cc?ref=823301b29d38ed1d393c1488c0f7069d229a2d74",
+      "patch": "@@ -74,9 +74,6 @@ void MediaRouterCastUiForTest::ChooseSourceType(\n     case CastDialogView::kDesktop:\n       source_index = 1;\n       break;\n-    case CastDialogView::kLocalFile:\n-      source_index = 2;\n-      break;\n   }\n   dialog_view->sources_menu_model_for_test()->ActivatedAt(source_index);\n }"
+    }
+  ]
+}

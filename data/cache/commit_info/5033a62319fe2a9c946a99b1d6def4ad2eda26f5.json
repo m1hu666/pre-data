@@ -1,0 +1,61 @@
+{
+  "sha": "5033a62319fe2a9c946a99b1d6def4ad2eda26f5",
+  "node_id": "C_kwDOAovr99oAKDUwMzNhNjIzMTlmZTJhOWM5NDZhOTliMWQ2ZGVmNGFkMmVkYTI2ZjU",
+  "commit": {
+    "author": {
+      "name": "l10n daemon script",
+      "email": "scripty@kde.org",
+      "date": "2023-06-07T02:06:37Z"
+    },
+    "committer": {
+      "name": "l10n daemon script",
+      "email": "scripty@kde.org",
+      "date": "2023-06-07T02:06:37Z"
+    },
+    "message": "GIT_SILENT Sync po/docbooks with svn",
+    "tree": {
+      "sha": "364ffd22468e528ede885c08b86a61e3dfa4671f",
+      "url": "https://api.github.com/repos/KDE/ark/git/trees/364ffd22468e528ede885c08b86a61e3dfa4671f"
+    },
+    "url": "https://api.github.com/repos/KDE/ark/git/commits/5033a62319fe2a9c946a99b1d6def4ad2eda26f5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/KDE/ark/commits/5033a62319fe2a9c946a99b1d6def4ad2eda26f5",
+  "html_url": "https://github.com/KDE/ark/commit/5033a62319fe2a9c946a99b1d6def4ad2eda26f5",
+  "comments_url": "https://api.github.com/repos/KDE/ark/commits/5033a62319fe2a9c946a99b1d6def4ad2eda26f5/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "740772a4244759b254aedc805fab6e42eb7e20fc",
+      "url": "https://api.github.com/repos/KDE/ark/commits/740772a4244759b254aedc805fab6e42eb7e20fc",
+      "html_url": "https://github.com/KDE/ark/commit/740772a4244759b254aedc805fab6e42eb7e20fc"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "a3ca4d7a3cdf72739d8df8424eb1d4663235e422",
+      "filename": "po/cs/ark.po",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/KDE/ark/blob/5033a62319fe2a9c946a99b1d6def4ad2eda26f5/po%2Fcs%2Fark.po",
+      "raw_url": "https://github.com/KDE/ark/raw/5033a62319fe2a9c946a99b1d6def4ad2eda26f5/po%2Fcs%2Fark.po",
+      "contents_url": "https://api.github.com/repos/KDE/ark/contents/po%2Fcs%2Fark.po?ref=5033a62319fe2a9c946a99b1d6def4ad2eda26f5",
+      "patch": "@@ -386,7 +386,7 @@ msgstr \"Nelze naj\u00edt komponentu Ark, pros\u00edm zkontrolujte svou instalaci.\"\n #: app/mainwindow.cpp:184\n #, kde-format\n msgid \"Sidebar\"\n-msgstr \"\"\n+msgstr \"Postrann\u00ed panel\"\n \n #: app/mainwindow.cpp:289\n #, kde-format\n@@ -410,7 +410,7 @@ msgstr \"\"\n #: app/mainwindow.cpp:313\n #, kde-format\n msgid \"Lock Sidebar\"\n-msgstr \"\"\n+msgstr \"Zamknout postrann\u00ed panel\"\n \n #: app/mainwindow.cpp:370\n #, kde-format"
+    }
+  ]
+}

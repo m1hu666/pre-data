@@ -1,0 +1,105 @@
+{
+  "sha": "8e7266fef1f329b805b37f32c9ad0090215ab269",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjhlNzI2NmZlZjFmMzI5YjgwNWIzN2YzMmM5YWQwMDkwMjE1YWIyNjk=",
+  "commit": {
+    "author": {
+      "name": "Max Wang",
+      "email": "mwang@fb.com",
+      "date": "2016-07-01T16:09:30Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot-bot@fb.com",
+      "date": "2016-07-01T16:19:25Z"
+    },
+    "message": "Type safety in simplexml import routines\n\nReviewed By: Orvid\n\nDifferential Revision: D3447275\n\nfbshipit-source-id: d859c97f9d85c520b0e371cef6dcb19bb2ef7dbf",
+    "tree": {
+      "sha": "dee0e24005533ffb77a0494f33262a185aa850f3",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/dee0e24005533ffb77a0494f33262a185aa850f3"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/8e7266fef1f329b805b37f32c9ad0090215ab269",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/8e7266fef1f329b805b37f32c9ad0090215ab269",
+  "html_url": "https://github.com/facebook/hhvm/commit/8e7266fef1f329b805b37f32c9ad0090215ab269",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/8e7266fef1f329b805b37f32c9ad0090215ab269/comments",
+  "author": {
+    "login": "mxw",
+    "id": 1013739,
+    "node_id": "MDQ6VXNlcjEwMTM3Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1013739?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mxw",
+    "html_url": "https://github.com/mxw",
+    "followers_url": "https://api.github.com/users/mxw/followers",
+    "following_url": "https://api.github.com/users/mxw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mxw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mxw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mxw/subscriptions",
+    "organizations_url": "https://api.github.com/users/mxw/orgs",
+    "repos_url": "https://api.github.com/users/mxw/repos",
+    "events_url": "https://api.github.com/users/mxw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mxw/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "295784fda4df90fc524d870dcdbda48271d1acd8",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/295784fda4df90fc524d870dcdbda48271d1acd8",
+      "html_url": "https://github.com/facebook/hhvm/commit/295784fda4df90fc524d870dcdbda48271d1acd8"
+    }
+  ],
+  "stats": {
+    "total": 22,
+    "additions": 19,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "3e825cc06fcb2eb33dea2574c0ddc74a771d9d76",
+      "filename": "hphp/runtime/ext/simplexml/ext_simplexml.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/facebook/hhvm/blob/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Fruntime%2Fext%2Fsimplexml%2Fext_simplexml.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Fruntime%2Fext%2Fsimplexml%2Fext_simplexml.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fsimplexml%2Fext_simplexml.cpp?ref=8e7266fef1f329b805b37f32c9ad0090215ab269",
+      "patch": "@@ -374,7 +374,7 @@ static xmlNodePtr php_sxe_get_first_node(SimpleXMLElement* sxe,\n }\n \n xmlNodePtr SimpleXMLElement_exportNode(const Object& sxe) {\n-  assert(sxe->instanceof(SimpleXMLElement_classof()));\n+  if (!sxe->instanceof(SimpleXMLElement_classof())) return nullptr;\n   auto data = Native::data<SimpleXMLElement>(sxe.get());\n   return php_sxe_get_first_node(data, data->nodep());\n }\n@@ -1166,9 +1166,15 @@ static const Class* class_from_name(const String& class_name,\n   return cls;\n }\n \n+const StaticString s_DOMNode(\"DOMNode\");\n+\n static Variant HHVM_FUNCTION(simplexml_import_dom,\n-  const Object& node,\n-  const String& class_name /* = \"SimpleXMLElement\" */) {\n+                             const Object& node,\n+                             const String& class_name) {\n+  if (!node->instanceof(s_DOMNode)) {\n+    raise_warning(\"Invalid Nodetype to import\");\n+    return init_null();\n+  }\n   auto domnode = Native::data<DOMNode>(node);\n   xmlNodePtr nodep = domnode->nodep();\n "
+    },
+    {
+      "sha": "35d08226fc999e9c8d1a148fea346d0342aca5df",
+      "filename": "hphp/test/slow/ext_domdocument/simplexml_null.php",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php?ref=8e7266fef1f329b805b37f32c9ad0090215ab269",
+      "patch": "@@ -0,0 +1,5 @@\n+<?php\n+\n+$date = date_create_immutable();\n+var_dump(dom_import_simplexml($date));\n+var_dump(simplexml_import_dom($date));"
+    },
+    {
+      "sha": "b3c55c5ae6e2e7c08a88eaf28230d811f1dae0f3",
+      "filename": "hphp/test/slow/ext_domdocument/simplexml_null.php.expectf",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/8e7266fef1f329b805b37f32c9ad0090215ab269/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_domdocument%2Fsimplexml_null.php.expectf?ref=8e7266fef1f329b805b37f32c9ad0090215ab269",
+      "patch": "@@ -0,0 +1,5 @@\n+Warning: Invalid Nodetype to import in %s/test/slow/ext_domdocument/simplexml_null.php on line 4\n+NULL\n+\n+Warning: Invalid Nodetype to import in %s/test/slow/ext_domdocument/simplexml_null.php on line 5\n+NULL"
+    }
+  ]
+}

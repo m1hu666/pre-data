@@ -1,0 +1,101 @@
+{
+  "sha": "2f07985bef9fbae124cc63e5c0272e32da4fdaec",
+  "node_id": "MDY6Q29tbWl0MjQ3NzY3Mjg6MmYwNzk4NWJlZjlmYmFlMTI0Y2M2M2U1YzAyNzJlMzJkYTRmZGFlYw==",
+  "commit": {
+    "author": {
+      "name": "Aman Sharma",
+      "email": "amsharma@fb.com",
+      "date": "2019-07-19T23:38:48Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-07-19T23:45:50Z"
+    },
+    "message": "Fix SEGV in StructuredHeaders::decodeBase64\n\nSummary:\nThe existing code can potentially cause a SEGV due to an out of bounds write.\n\nThis fixes CVE-2019-11921.\n\nReviewed By: knekritz\n\nDifferential Revision: D12983120\n\nfbshipit-source-id: 1d48063595c8d518fd8afcbc941de260af7e37fd",
+    "tree": {
+      "sha": "a2621f71af46cd00ebc8b77a2323fee86e9de738",
+      "url": "https://api.github.com/repos/facebook/proxygen/git/trees/a2621f71af46cd00ebc8b77a2323fee86e9de738"
+    },
+    "url": "https://api.github.com/repos/facebook/proxygen/git/commits/2f07985bef9fbae124cc63e5c0272e32da4fdaec",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/proxygen/commits/2f07985bef9fbae124cc63e5c0272e32da4fdaec",
+  "html_url": "https://github.com/facebook/proxygen/commit/2f07985bef9fbae124cc63e5c0272e32da4fdaec",
+  "comments_url": "https://api.github.com/repos/facebook/proxygen/commits/2f07985bef9fbae124cc63e5c0272e32da4fdaec/comments",
+  "author": {
+    "login": "sharma95",
+    "id": 14226778,
+    "node_id": "MDQ6VXNlcjE0MjI2Nzc4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14226778?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharma95",
+    "html_url": "https://github.com/sharma95",
+    "followers_url": "https://api.github.com/users/sharma95/followers",
+    "following_url": "https://api.github.com/users/sharma95/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharma95/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharma95/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharma95/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharma95/orgs",
+    "repos_url": "https://api.github.com/users/sharma95/repos",
+    "events_url": "https://api.github.com/users/sharma95/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharma95/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b64f58b5e09b2f037224ddaaf1b7b40949fe4fb3",
+      "url": "https://api.github.com/repos/facebook/proxygen/commits/b64f58b5e09b2f037224ddaaf1b7b40949fe4fb3",
+      "html_url": "https://github.com/facebook/proxygen/commit/b64f58b5e09b2f037224ddaaf1b7b40949fe4fb3"
+    }
+  ],
+  "stats": {
+    "total": 35,
+    "additions": 13,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "80b591e5f1a74762521203a6ed4333dab8a5aeb1",
+      "filename": "proxygen/lib/http/structuredheaders/StructuredHeadersUtilities.cpp",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 22,
+      "changes": 35,
+      "blob_url": "https://github.com/facebook/proxygen/blob/2f07985bef9fbae124cc63e5c0272e32da4fdaec/proxygen%2Flib%2Fhttp%2Fstructuredheaders%2FStructuredHeadersUtilities.cpp",
+      "raw_url": "https://github.com/facebook/proxygen/raw/2f07985bef9fbae124cc63e5c0272e32da4fdaec/proxygen%2Flib%2Fhttp%2Fstructuredheaders%2FStructuredHeadersUtilities.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/proxygen/contents/proxygen%2Flib%2Fhttp%2Fstructuredheaders%2FStructuredHeadersUtilities.cpp?ref=2f07985bef9fbae124cc63e5c0272e32da4fdaec",
+      "patch": "@@ -9,11 +9,10 @@\n  */\n \n #include \"StructuredHeadersUtilities.h\"\n-#include <boost/archive/iterators/binary_from_base64.hpp>\n-#include <boost/archive/iterators/base64_from_binary.hpp>\n-#include <boost/archive/iterators/transform_width.hpp>\n #include \"StructuredHeadersConstants.h\"\n \n+#include \"proxygen/lib/utils/Base64.h\"\n+\n namespace proxygen {\n namespace StructuredHeaders {\n \n@@ -107,31 +106,23 @@ std::string decodeBase64(\n \n   if (encoded.size() == 0) {\n     // special case, to prevent an integer overflow down below.\n-    return \"\";\n+    return std::string();\n   }\n \n-  using namespace boost::archive::iterators;\n-  using b64it =\n-    transform_width<binary_from_base64<std::string::const_iterator>, 8, 6>;\n-\n-  std::string decoded = std::string(b64it(std::begin(encoded)),\n-                                    b64it(std::end(encoded)));\n-\n-  uint32_t numPadding = std::count(encoded.begin(), encoded.end(), '=');\n-  decoded.erase(decoded.end() - numPadding, decoded.end());\n+  int padding = 0;\n+  for (auto it = encoded.rbegin();\n+       padding < 2 && it != encoded.rend() && *it == '=';\n+       ++it) {\n+    ++padding;\n+  }\n \n-  return decoded;\n+  return Base64::decode(encoded, padding);\n }\n \n std::string encodeBase64(const std::string& input) {\n-  using namespace boost::archive::iterators;\n-  using b64it = base64_from_binary<transform_width<const char*, 6, 8>>;\n-\n-  auto data = input.data();\n-  std::string encoded(b64it(data), b64it(data + (input.length())));\n-  encoded.append((3 - (input.length() % 3)) % 3, '=');\n-\n-  return encoded;\n+  return Base64::encode(folly::ByteRange(\n+                            reinterpret_cast<const uint8_t*>(input.c_str()),\n+                            input.length()));\n }\n \n }"
+    }
+  ]
+}

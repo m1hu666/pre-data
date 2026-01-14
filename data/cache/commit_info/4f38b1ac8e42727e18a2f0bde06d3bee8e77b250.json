@@ -1,0 +1,101 @@
+{
+  "sha": "4f38b1ac8e42727e18a2f0bde06d3bee8e77b250",
+  "node_id": "C_kwDOArmXAtoAKDRmMzhiMWFjOGU0MjcyN2UxOGEyZjBiZGUwNmQzYmVlOGU3N2IyNTA",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-10T00:56:28Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-10T01:03:42Z"
+    },
+    "message": "Prevent null dereference read in `GetInitOp`.\n\nWe have a map of maps. We test that the key exists in the first map but then we don't have any validation that this also means the second map has the needed key. In the scenarios where this is not the case, we'll dereference a nullptr, if we don't have this check\n\nPiperOrigin-RevId: 408739325\nChange-Id: If9bb7ed759aba1f3b56a34913f209508dbaf65ce",
+    "tree": {
+      "sha": "fc91afd5ef3cba8c4442e12fb82ff0c6b0cbcd59",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/fc91afd5ef3cba8c4442e12fb82ff0c6b0cbcd59"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b84b7c651dc2ecc1e28f2acc65bfe371a04ecfc",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/7b84b7c651dc2ecc1e28f2acc65bfe371a04ecfc",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/7b84b7c651dc2ecc1e28f2acc65bfe371a04ecfc"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 8,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "411dc41fd448370c874df98b2d13bd80388e7b8e",
+      "filename": "tensorflow/cc/saved_model/loader_util.cc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250/tensorflow%2Fcc%2Fsaved_model%2Floader_util.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/4f38b1ac8e42727e18a2f0bde06d3bee8e77b250/tensorflow%2Fcc%2Fsaved_model%2Floader_util.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcc%2Fsaved_model%2Floader_util.cc?ref=4f38b1ac8e42727e18a2f0bde06d3bee8e77b250",
+      "patch": "@@ -34,9 +34,14 @@ Status GetInitOp(const string& export_dir, const MetaGraphDef& meta_graph_def,\n   const auto& init_op_sig_it =\n       meta_graph_def.signature_def().find(kSavedModelInitOpSignatureKey);\n   if (init_op_sig_it != sig_def_map.end()) {\n-    *init_op_name = init_op_sig_it->second.outputs()\n-                        .find(kSavedModelInitOpSignatureKey)\n-                        ->second.name();\n+    const auto& sig_def_outputs = init_op_sig_it->second.outputs();\n+    const auto& sig_def_outputs_it =\n+        sig_def_outputs.find(kSavedModelInitOpSignatureKey);\n+    if (sig_def_outputs_it == sig_def_outputs.end()) {\n+      return errors::FailedPrecondition(\"Could not find output \",\n+                                        kSavedModelInitOpSignatureKey);\n+    }\n+    *init_op_name = sig_def_outputs_it->second.name();\n     return Status::OK();\n   }\n "
+    }
+  ]
+}

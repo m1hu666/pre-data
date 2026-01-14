@@ -1,0 +1,161 @@
+{
+  "sha": "c0d48da99f66aaada17bcd28b07741cac8697647",
+  "node_id": "C_kwDOB9KEStoAKGMwZDQ4ZGE5OWY2NmFhYWRhMTdiY2QyOGIwNzc0MWNhYzg2OTc2NDc",
+  "commit": {
+    "author": {
+      "name": "Martin Chang",
+      "email": "marty1885@users.noreply.github.com",
+      "date": "2022-11-10T05:41:21Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-11-10T05:41:21Z"
+    },
+    "message": "Avoid HashDoS attacks via random per-session hash initial state (#1433)",
+    "tree": {
+      "sha": "e699d6c23de8d0811cf4a4a554c2b03b218629b5",
+      "url": "https://api.github.com/repos/drogonframework/drogon/git/trees/e699d6c23de8d0811cf4a4a554c2b03b218629b5"
+    },
+    "url": "https://api.github.com/repos/drogonframework/drogon/git/commits/c0d48da99f66aaada17bcd28b07741cac8697647",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjbI8BCRBK7hj4Ov3rIwAAb34IALDwj5hc/L84usWE7Z8M6zzQ\nSS0UGJexVKvRPAAZEZlx46GoJOg7tsQ4wPUlw3S5MEuetKjzgnJEa/hV6svHNVp8\nrZkyRf8IAiMXWKEp/hfiCbYztjVEZ6JZlNEjH1hMt0eIuj9GhkawEFaVyhtD5J2k\nK98xcFi0W4FmIqD9wbA1eeOcnYaMkkHk22/uwO3+0S+SjL4a4CBeAn3ePFXclox3\nZQkbgvcqSYPa8sOyFZA/DrvLFuNXk+HSdyGi6+LhkgS39ARLVtGEQtEoJQZRmCHd\nJ2Mn4o1bb1UDsYKi6+Cjhf3JI9jRxH9OnEzLpF1uBkgs5wptmV4rRvrv/6ScwGQ=\n=gn8N\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e699d6c23de8d0811cf4a4a554c2b03b218629b5\nparent 9dff8b296b49e449ef011c1ca109a7e0c2fc4cc7\nauthor Martin Chang <marty1885@users.noreply.github.com> 1668058881 +0800\ncommitter GitHub <noreply@github.com> 1668058881 +0800\n\nAvoid HashDoS attacks via random per-session hash initial state (#1433)\n\n",
+      "verified_at": "2024-11-06T13:42:31Z"
+    }
+  },
+  "url": "https://api.github.com/repos/drogonframework/drogon/commits/c0d48da99f66aaada17bcd28b07741cac8697647",
+  "html_url": "https://github.com/drogonframework/drogon/commit/c0d48da99f66aaada17bcd28b07741cac8697647",
+  "comments_url": "https://api.github.com/repos/drogonframework/drogon/commits/c0d48da99f66aaada17bcd28b07741cac8697647/comments",
+  "author": {
+    "login": "marty1885",
+    "id": 8792393,
+    "node_id": "MDQ6VXNlcjg3OTIzOTM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8792393?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marty1885",
+    "html_url": "https://github.com/marty1885",
+    "followers_url": "https://api.github.com/users/marty1885/followers",
+    "following_url": "https://api.github.com/users/marty1885/following{/other_user}",
+    "gists_url": "https://api.github.com/users/marty1885/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marty1885/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/marty1885/subscriptions",
+    "organizations_url": "https://api.github.com/users/marty1885/orgs",
+    "repos_url": "https://api.github.com/users/marty1885/repos",
+    "events_url": "https://api.github.com/users/marty1885/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marty1885/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9dff8b296b49e449ef011c1ca109a7e0c2fc4cc7",
+      "url": "https://api.github.com/repos/drogonframework/drogon/commits/9dff8b296b49e449ef011c1ca109a7e0c2fc4cc7",
+      "html_url": "https://github.com/drogonframework/drogon/commit/9dff8b296b49e449ef011c1ca109a7e0c2fc4cc7"
+    }
+  ],
+  "stats": {
+    "total": 111,
+    "additions": 86,
+    "deletions": 25
+  },
+  "files": [
+    {
+      "sha": "8a85e5e56540b30574d4658b9dd8630f24aca1ee",
+      "filename": "lib/inc/drogon/HttpRequest.h",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 9,
+      "changes": 27,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2FHttpRequest.h",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2FHttpRequest.h",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Finc%2Fdrogon%2FHttpRequest.h?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -148,21 +148,27 @@ class DROGON_EXPORT HttpRequest\n     virtual const std::string &getCookie(const std::string &field) const = 0;\n \n     /// Get all headers of the request\n-    virtual const std::unordered_map<std::string, std::string> &headers()\n-        const = 0;\n+    virtual const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &headers() const = 0;\n \n     /// Get all headers of the request\n-    const std::unordered_map<std::string, std::string> &getHeaders() const\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &getHeaders() const\n     {\n         return headers();\n     }\n \n     /// Get all cookies of the request\n-    virtual const std::unordered_map<std::string, std::string> &cookies()\n-        const = 0;\n+    virtual const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &cookies() const = 0;\n \n     /// Get all cookies of the request\n-    const std::unordered_map<std::string, std::string> &getCookies() const\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &getCookies() const\n     {\n         return cookies();\n     }\n@@ -267,11 +273,14 @@ class DROGON_EXPORT HttpRequest\n     }\n \n     /// Get parameters of the request.\n-    virtual const std::unordered_map<std::string, std::string> &parameters()\n-        const = 0;\n+    virtual const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &parameters() const = 0;\n \n     /// Get parameters of the request.\n-    const std::unordered_map<std::string, std::string> &getParameters() const\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &getParameters() const\n     {\n         return parameters();\n     }"
+    },
+    {
+      "sha": "6d4ecccb5fc255e97da375cac251aefaafdda01a",
+      "filename": "lib/inc/drogon/HttpResponse.h",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 5,
+      "changes": 18,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2FHttpResponse.h",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2FHttpResponse.h",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Finc%2Fdrogon%2FHttpResponse.h?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -19,6 +19,7 @@\n #include <drogon/Cookie.h>\n #include <drogon/HttpTypes.h>\n #include <drogon/HttpViewData.h>\n+#include <drogon/utils/Utilities.h>\n #include <json/json.h>\n #include <memory>\n #include <string>\n@@ -190,11 +191,14 @@ class DROGON_EXPORT HttpResponse\n     virtual void removeHeader(std::string key) = 0;\n \n     /// Get all headers of the response\n-    virtual const std::unordered_map<std::string, std::string> &headers()\n-        const = 0;\n+    virtual const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &headers() const = 0;\n \n     /// Get all headers of the response\n-    const std::unordered_map<std::string, std::string> &getHeaders() const\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &getHeaders() const\n     {\n         return headers();\n     }\n@@ -222,10 +226,14 @@ class DROGON_EXPORT HttpResponse\n     virtual const Cookie &getCookie(const std::string &key) const = 0;\n \n     /// Get all cookies.\n-    virtual const std::unordered_map<std::string, Cookie> &cookies() const = 0;\n+    virtual const std::\n+        unordered_map<std::string, Cookie, utils::internal::SafeStringHash>\n+            &cookies() const = 0;\n \n     /// Get all cookies.\n-    const std::unordered_map<std::string, Cookie> &getCookies() const\n+    const std::\n+        unordered_map<std::string, Cookie, utils::internal::SafeStringHash>\n+            &getCookies() const\n     {\n         return cookies();\n     }"
+    },
+    {
+      "sha": "6a31fedab64cafba81b389f06c058cd3151c3a13",
+      "filename": "lib/inc/drogon/utils/Utilities.h",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2Futils%2FUtilities.h",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Finc%2Fdrogon%2Futils%2FUtilities.h",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Finc%2Fdrogon%2Futils%2FUtilities.h?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -408,5 +408,22 @@ inline bool fromString<bool>(const std::string &p) noexcept(false)\n     }\n     throw std::runtime_error(\"Can't convert from string '\" + p + \"' to bool\");\n }\n+\n+namespace internal\n+{\n+DROGON_EXPORT extern const size_t fixedRandomNumber;\n+struct SafeStringHash\n+{\n+    size_t operator()(const std::string &str) const\n+    {\n+        const size_t A = 6665339;\n+        const size_t B = 2534641;\n+        size_t h = fixedRandomNumber;\n+        for (char ch : str)\n+            h = (h * A) ^ (ch * B);\n+        return h;\n+    }\n+};\n+}  // namespace internal\n }  // namespace utils\n }  // namespace drogon"
+    },
+    {
+      "sha": "e054c28bd405fe454f4d8b566872c530ec92787d",
+      "filename": "lib/src/HttpRequestImpl.h",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 7,
+      "changes": 25,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FHttpRequestImpl.h",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FHttpRequestImpl.h",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Fsrc%2FHttpRequestImpl.h?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -137,8 +137,9 @@ class HttpRequestImpl : public HttpRequest\n         pathEncode_ = pathEncode;\n     }\n \n-    const std::unordered_map<std::string, std::string> &parameters()\n-        const override\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &parameters() const override\n     {\n         parseParametersOnce();\n         return parameters_;\n@@ -291,12 +292,16 @@ class HttpRequestImpl : public HttpRequest\n         return defaultVal;\n     }\n \n-    const std::unordered_map<std::string, std::string> &headers() const override\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &headers() const override\n     {\n         return headers_;\n     }\n \n-    const std::unordered_map<std::string, std::string> &cookies() const override\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &cookies() const override\n     {\n         return cookies_;\n     }\n@@ -541,9 +546,15 @@ class HttpRequestImpl : public HttpRequest\n     bool pathEncode_{true};\n     string_view matchedPathPattern_{\"\"};\n     std::string query_;\n-    std::unordered_map<std::string, std::string> headers_;\n-    std::unordered_map<std::string, std::string> cookies_;\n-    mutable std::unordered_map<std::string, std::string> parameters_;\n+    std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            headers_;\n+    std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            cookies_;\n+    mutable std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            parameters_;\n     mutable std::shared_ptr<Json::Value> jsonPtr_;\n     SessionPtr sessionPtr_;\n     mutable AttributesPtr attributesPtr_;"
+    },
+    {
+      "sha": "870b26781e3453b5b42f20b6b7575f0dabb4e92d",
+      "filename": "lib/src/HttpResponseImpl.h",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 15,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FHttpResponseImpl.h",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FHttpResponseImpl.h",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Fsrc%2FHttpResponseImpl.h?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -130,7 +130,9 @@ class DROGON_EXPORT HttpResponseImpl : public HttpResponse\n         removeHeaderBy(key);\n     }\n \n-    const std::unordered_map<std::string, std::string> &headers() const override\n+    const std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            &headers() const override\n     {\n         return headers_;\n     }\n@@ -200,7 +202,9 @@ class DROGON_EXPORT HttpResponseImpl : public HttpResponse\n         return defaultCookie;\n     }\n \n-    const std::unordered_map<std::string, Cookie> &cookies() const override\n+    const std::\n+        unordered_map<std::string, Cookie, utils::internal::SafeStringHash>\n+            &cookies() const override\n     {\n         return cookies_;\n     }\n@@ -446,8 +450,11 @@ class DROGON_EXPORT HttpResponseImpl : public HttpResponse\n         statusMessage_ = string_view{message, messageLength};\n     }\n \n-    std::unordered_map<std::string, std::string> headers_;\n-    std::unordered_map<std::string, Cookie> cookies_;\n+    std::\n+        unordered_map<std::string, std::string, utils::internal::SafeStringHash>\n+            headers_;\n+    std::unordered_map<std::string, Cookie, utils::internal::SafeStringHash>\n+        cookies_;\n \n     int customStatusCode_{-1};\n     HttpStatusCode statusCode_{kUnknown};"
+    },
+    {
+      "sha": "dc093463511251a72de929fb077cd63c31d82bc4",
+      "filename": "lib/src/Utilities.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/drogonframework/drogon/blob/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FUtilities.cc",
+      "raw_url": "https://github.com/drogonframework/drogon/raw/c0d48da99f66aaada17bcd28b07741cac8697647/lib%2Fsrc%2FUtilities.cc",
+      "contents_url": "https://api.github.com/repos/drogonframework/drogon/contents/lib%2Fsrc%2FUtilities.cc?ref=c0d48da99f66aaada17bcd28b07741cac8697647",
+      "patch": "@@ -1221,5 +1221,14 @@ bool secureRandomBytes(void *ptr, size_t size)\n     return false;\n }\n \n+namespace internal\n+{\n+DROGON_EXPORT const size_t fixedRandomNumber = []() {\n+    size_t res;\n+    utils::secureRandomBytes(&res, sizeof(res));\n+    return res;\n+}();\n+}\n+\n }  // namespace utils\n }  // namespace drogon"
+    }
+  ]
+}

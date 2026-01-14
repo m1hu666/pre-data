@@ -1,0 +1,101 @@
+{
+  "sha": "2cb291191c93c7c4e371e22cb89805a5b31d6608",
+  "node_id": "MDY6Q29tbWl0Njc0NzIxMjoyY2IyOTExOTFjOTNjN2M0ZTM3MWUyMmNiODk4MDVhNWIzMWQ2NjA4",
+  "commit": {
+    "author": {
+      "name": "Scott Godin",
+      "email": "sgodin@sipspectrum.com",
+      "date": "2018-06-21T14:24:38Z"
+    },
+    "committer": {
+      "name": "Scott Godin",
+      "email": "sgodin@sipspectrum.com",
+      "date": "2018-06-21T14:24:38Z"
+    },
+    "message": "-fixed an issue where the stack could crash if a TCP based sender sends a Content-Length that is less that the actual SIP body transmitted\n in order to trigger this condition the SIP message body must arrive in a separate read request, either from the start or part way through the body\n and there must be data following the body in the same read.",
+    "tree": {
+      "sha": "9638305acdf86bf6006a9a0e02bb953275e518a0",
+      "url": "https://api.github.com/repos/resiprocate/resiprocate/git/trees/9638305acdf86bf6006a9a0e02bb953275e518a0"
+    },
+    "url": "https://api.github.com/repos/resiprocate/resiprocate/git/commits/2cb291191c93c7c4e371e22cb89805a5b31d6608",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/resiprocate/resiprocate/commits/2cb291191c93c7c4e371e22cb89805a5b31d6608",
+  "html_url": "https://github.com/resiprocate/resiprocate/commit/2cb291191c93c7c4e371e22cb89805a5b31d6608",
+  "comments_url": "https://api.github.com/repos/resiprocate/resiprocate/commits/2cb291191c93c7c4e371e22cb89805a5b31d6608/comments",
+  "author": {
+    "login": "sgodin",
+    "id": 2837841,
+    "node_id": "MDQ6VXNlcjI4Mzc4NDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2837841?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sgodin",
+    "html_url": "https://github.com/sgodin",
+    "followers_url": "https://api.github.com/users/sgodin/followers",
+    "following_url": "https://api.github.com/users/sgodin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sgodin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sgodin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sgodin/subscriptions",
+    "organizations_url": "https://api.github.com/users/sgodin/orgs",
+    "repos_url": "https://api.github.com/users/sgodin/repos",
+    "events_url": "https://api.github.com/users/sgodin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sgodin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sgodin",
+    "id": 2837841,
+    "node_id": "MDQ6VXNlcjI4Mzc4NDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2837841?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sgodin",
+    "html_url": "https://github.com/sgodin",
+    "followers_url": "https://api.github.com/users/sgodin/followers",
+    "following_url": "https://api.github.com/users/sgodin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sgodin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sgodin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sgodin/subscriptions",
+    "organizations_url": "https://api.github.com/users/sgodin/orgs",
+    "repos_url": "https://api.github.com/users/sgodin/repos",
+    "events_url": "https://api.github.com/users/sgodin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sgodin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "878cedbb2aa9d52868f1b2d2cee5d9eec7b35fe5",
+      "url": "https://api.github.com/repos/resiprocate/resiprocate/commits/878cedbb2aa9d52868f1b2d2cee5d9eec7b35fe5",
+      "html_url": "https://github.com/resiprocate/resiprocate/commit/878cedbb2aa9d52868f1b2d2cee5d9eec7b35fe5"
+    }
+  ],
+  "stats": {
+    "total": 40,
+    "additions": 35,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "2ee7663d07bd2accfea2b0e3733a5dcfd502f38c",
+      "filename": "resip/stack/ConnectionBase.cxx",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 5,
+      "changes": 40,
+      "blob_url": "https://github.com/resiprocate/resiprocate/blob/2cb291191c93c7c4e371e22cb89805a5b31d6608/resip%2Fstack%2FConnectionBase.cxx",
+      "raw_url": "https://github.com/resiprocate/resiprocate/raw/2cb291191c93c7c4e371e22cb89805a5b31d6608/resip%2Fstack%2FConnectionBase.cxx",
+      "contents_url": "https://api.github.com/repos/resiprocate/resiprocate/contents/resip%2Fstack%2FConnectionBase.cxx?ref=2cb291191c93c7c4e371e22cb89805a5b31d6608",
+      "patch": "@@ -397,7 +397,7 @@ ConnectionBase::preparseNewBytes(int bytesRead)\n                   mBufferSize = size;\n                   \n                   DebugLog (<< \"Extra bytes after message: \" << overHang);\n-                  DebugLog (<< Data(mBuffer, overHang));\n+                  //DebugLog (<< Data(mBuffer, overHang));\n                   \n                   bytesRead = overHang;\n                }\n@@ -471,11 +471,36 @@ ConnectionBase::preparseNewBytes(int bytesRead)\n          }\n \n          mBufferPos += bytesRead;\n-         if (mBufferPos == contentLength)\n+         if (mBufferPos >= contentLength)\n          {\n+            int overHang = mBufferPos - (int)contentLength;\n+            char *overHangStart = mBuffer + contentLength;\n+\n             mMessage->addBuffer(mBuffer);\n             mMessage->setBody(mBuffer, (UInt32)contentLength);\n-            mBuffer=0;\n+            mConnState = NewMessage;\n+            mBuffer = 0;\n+\n+            if (overHang > 0)\n+            {\n+                // The next message has been partially read.\n+                size_t size = overHang * 3 / 2;\n+                if (size < ConnectionBase::ChunkSize)\n+                {\n+                    size = ConnectionBase::ChunkSize;\n+                }\n+                char* newBuffer = MsgHeaderScanner::allocateBuffer((int)size);\n+                memcpy(newBuffer, overHangStart, overHang);\n+                mBuffer = newBuffer;\n+                mBufferPos = 0;\n+                mBufferSize = size;\n+\n+                DebugLog(<< \"Extra bytes after message: \" << overHang);\n+                //DebugLog(<< Data(mBuffer, overHang));\n+\n+                bytesRead = overHang;\n+            }\n+\n             // .bwc. basicCheck takes up substantial CPU. Don't bother doing it\n             // if we're overloaded.\n             CongestionManager::RejectionBehavior b=mTransport->getRejectionBehaviorForIncoming();\n@@ -515,11 +540,16 @@ ConnectionBase::preparseNewBytes(int bytesRead)\n                mTransport->pushRxMsgUp(mMessage);\n                mMessage = 0;\n             }\n-            mConnState = NewMessage;\n+            \n+            if (overHang > 0) \n+            {\n+               goto start;\n+            }\n          }\n          else if (mBufferPos == mBufferSize)\n          {\n-            // .bwc. We've filled our buffer; go ahead and make more room.\n+            // .bwc. We've filled our buffer and haven't read contentLength bytes yet; go ahead and make more room.\n+            assert(contentLength >= mBufferSize);\n             size_t newSize = resipMin(mBufferSize*3/2, contentLength);\n             char* newBuffer = 0;\n             try"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "sha": "369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+  "node_id": "MDY6Q29tbWl0ODMwOTY5OTk6MzY5YjJlYTFmZDBkMDUzN2JhNzA3ZjIwYTJmMDQ3YjZhZmQyZmJkYw==",
+  "commit": {
+    "author": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-04-01T13:37:58Z"
+    },
+    "committer": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-04-01T13:37:58Z"
+    },
+    "message": "Fix JPEG error handling (Issue #415)",
+    "tree": {
+      "sha": "0fdeb8ff96a8b12ba0103ef66c12a6bd20e1dfbc",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/trees/0fdeb8ff96a8b12ba0103ef66c12a6bd20e1dfbc"
+    },
+    "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/commits/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJOBAABCAA4FiEEhFRkZgtoaqs2VAtvmZVZoCeBWVUFAmBlzLYaHG1pY2hhZWwu\nci5zd2VldEBnbWFpbC5jb20ACgkQmZVZoCeBWVUdRg/+PsomaVBbhpCjSEBM2xJX\nvLNy8lumOxuQkiLiOrKGtdLawXFhplIw+JV7gHlO9eEsarS8k7BxKeufxkqpoCy6\nj08L1nfRr9XmAoqbrLwbqvTXu0VdR9CPFyR8ScwtJrN0so30yG8+xn+HUS+P0GcO\n1Pg/9fCfCKbt7/CUt0HW0c/vwumCbRBcnOa/bRAY922O28tVt4vnzpW5pH64PkRI\nGnkKAQywKcOALZZgAP7NVxFtqJ0ki6NrVwb8c0uMMy+AyGWM4/WKWJ5k/QIdTHri\nGZla+f/FGX0R7dFJzJ5S+xBHEcAqMtJLRUHq6kWkZeRGvrywGRcyDw/Ozzj5q4K9\nnjt15t5XUrIdtiUuOv4EpncFjVfVfa7VfbBmYnZNI/zZ7M50RHMDR99leU9PUKRa\nbaVFzM+L749DVq6EBwBinwBjKnMYYeAMSpJHx36xGIMFyClegK+W8h1CQ1Lw8Gds\n6khjP0ESMZSyYNE+SPEDhRdfM6qWcNrS69V3KrlLFwpIUX2Til0ymMvqE9o3WeJ3\nqobFDYUhgV8DRWfPw0oK2JtySRw2Dq8q+biedT+Yxpn16/0SUjGJYBDRoajO4bBT\n4+RZAeb+qoumaMhSYSSQCVhwl6jRBLb53jy20jtnoxyEuroYmttF2fQF5QN7KtLG\nHpHa0AZA5TJ4nxMLAYQenqY=\n=FIRP\n-----END PGP SIGNATURE-----",
+      "payload": "tree 0fdeb8ff96a8b12ba0103ef66c12a6bd20e1dfbc\nparent ba61a3ece382389ae4482c7027af8b32e8ab4cc8\nauthor Michael R Sweet <michael.r.sweet@gmail.com> 1617284278 -0400\ncommitter Michael R Sweet <michael.r.sweet@gmail.com> 1617284278 -0400\n\nFix JPEG error handling (Issue #415)\n",
+      "verified_at": "2024-11-13T10:10:18Z"
+    }
+  },
+  "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+  "html_url": "https://github.com/michaelrsweet/htmldoc/commit/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+  "comments_url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/comments",
+  "author": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/ba61a3ece382389ae4482c7027af8b32e8ab4cc8",
+      "html_url": "https://github.com/michaelrsweet/htmldoc/commit/ba61a3ece382389ae4482c7027af8b32e8ab4cc8"
+    }
+  ],
+  "stats": {
+    "total": 53,
+    "additions": 45,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "224cbc3020f28ff1e92fd0242d3c56e816f4772e",
+      "filename": "CHANGES.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/CHANGES.md",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/CHANGES.md",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/CHANGES.md?ref=369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+      "patch": "@@ -1,6 +1,7 @@\n # Changes in HTMLDOC v1.9.12\n \n - Fixed a crash bug with \"data:\" URIs and EPUB output (Issue #410)\n+- Fixed JPEG error handling (Issue #415)\n - Fixed crash bugs with bogus table attributes (Issue #416, Issue #417)\n - Fixed a crash bug with malformed URIs (Issue #418)\n - Fixed a crash bug with malformed GIF files (Issue #423)"
+    },
+    {
+      "sha": "a0c37f982a672ec4bcbdd7c96b5e764fdab00dc3",
+      "filename": "htmldoc/file.c",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Ffile.c",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Ffile.c",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Ffile.c?ref=369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+      "patch": "@@ -1010,8 +1010,15 @@ file_rlookup(const char *filename)\t/* I - Filename */\n \n \n   for (i = web_files, wc = web_cache; i > 0; i --, wc ++)\n+  {\n     if (!strcmp(wc->name, filename))\n-      return (wc->url);\n+    {\n+      if (!strncmp(wc->url, \"data:\", 5))\n+        return (\"data URL\");\n+      else\n+        return (wc->url);\n+    }\n+  }\n \n   return (filename);\n }"
+    },
+    {
+      "sha": "74abfacce6784da63265dffb59a615e528b3f126",
+      "filename": "htmldoc/image.cxx",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 7,
+      "changes": 38,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Fimage.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Fimage.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fimage.cxx?ref=369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+      "patch": "@@ -1336,6 +1336,15 @@ image_load_gif(image_t *img,\t/* I - Image pointer */\n }\n \n \n+typedef struct hd_jpeg_err_s\t// JPEG error manager extension\n+{\n+  struct jpeg_error_mgr\tjerr;\t// JPEG error manager information\n+  jmp_buf\tretbuf;\t\t// setjmp() return buffer\n+  char\t\tmessage[JMSG_LENGTH_MAX];\n+\t\t\t\t// Last error message\n+} hd_jpeg_err_t;\n+\n+\n /*\n  * 'image_load_jpeg()' - Load a JPEG image file.\n  */\n@@ -1347,14 +1356,21 @@ image_load_jpeg(image_t *img,\t/* I - Image pointer */\n                 int     load_data)/* I - 1 = load image data, 0 = just info */\n {\n   struct jpeg_decompress_struct\tcinfo;\t\t/* Decompressor info */\n-  struct jpeg_error_mgr\t\tjerr;\t\t/* Error handler info */\n-  JSAMPROW\t\t\trow;\t\t/* Sample row pointer */\n+  hd_jpeg_err_t\t\t\tjerr;\t\t// JPEG error handler\n+JSAMPROW\t\t\trow;\t\t/* Sample row pointer */\n \n \n-  jpeg_std_error(&jerr);\n-  jerr.error_exit = jpeg_error_handler;\n+  jpeg_std_error(&jerr.jerr);\n+  jerr.jerr.error_exit = jpeg_error_handler;\n \n-  cinfo.err = &jerr;\n+  if (setjmp(jerr.retbuf))\n+  {\n+    progress_error(HD_ERROR_BAD_FORMAT, \"%s (%s)\", jerr.message,  file_rlookup(img->filename));\n+    jpeg_destroy_decompress(&cinfo);\n+    return (-1);\n+  }\n+\n+  cinfo.err = (struct jpeg_error_mgr *)&jerr;\n   jpeg_create_decompress(&cinfo);\n   jpeg_stdio_src(&cinfo, fp);\n   jpeg_read_header(&cinfo, (boolean)1);\n@@ -1797,9 +1813,17 @@ image_unload(image_t *img)\t// I - Image\n  */\n \n static void\n-jpeg_error_handler(j_common_ptr)\n+jpeg_error_handler(j_common_ptr p)\t// Common JPEG data\n {\n-  return;\n+  hd_jpeg_err_t\t*jerr = (hd_jpeg_err_t *)p->err;\n+\t\t\t\t\t// JPEG error handler\n+\n+\n+  // Save the error message in the string buffer...\n+  (jerr->jerr.format_message)(p, jerr->message);\n+\n+  // Return to the point we called setjmp()...\n+  longjmp(jerr->retbuf, 1);\n }\n \n "
+    },
+    {
+      "sha": "e963959b0c0aa99f2c967fd7d598ed8d85875d28",
+      "filename": "htmldoc/ps-pdf.cxx",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Fps-pdf.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc/htmldoc%2Fps-pdf.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fps-pdf.cxx?ref=369b2ea1fd0d0537ba707f20a2f047b6afd2fbdc",
+      "patch": "@@ -1404,6 +1404,8 @@ pspdf_prepare_page(int page)\t\t/* I - Page number */\n \n \n   DEBUG_printf((\"pspdf_prepare_page(%d)\\n\", page));\n+  if (page < 0 || page >= num_pages)\n+    return;\n \n  /*\n   * Make a page number; use roman numerals for the table of contents\n@@ -12285,6 +12287,9 @@ write_trailer(FILE  *out,\t\t/* I - Output file */\n \n       for (j = 1; j <= TocDocCount; j ++)\n       {\n+        if (chapter_starts[j] < 0)\n+          continue;\n+\n         page  = pages + chapter_starts[j];\n \tstart = chapter_starts[j] - chapter_starts[1] + 1;\n \ttype  = 'D';"
+    }
+  ]
+}

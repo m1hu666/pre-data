@@ -1,0 +1,101 @@
+{
+  "sha": "7b47de3c194f239c5fea09a0e49696c9af017d51",
+  "node_id": "MDY6Q29tbWl0Mzc4NjIxODo3YjQ3ZGUzYzE5NGYyMzljNWZlYTA5YTBlNDk2OTZjOWFmMDE3ZDUx",
+  "commit": {
+    "author": {
+      "name": "Peter Powell",
+      "email": "petpow@saberuk.com",
+      "date": "2019-05-15T08:37:30Z"
+    },
+    "committer": {
+      "name": "Peter Powell",
+      "email": "petpow@saberuk.com",
+      "date": "2019-05-17T08:50:54Z"
+    },
+    "message": "Copy the silence flags when sending update notifications.\n\nThis fixes a crash bug in the silence module on some versions of GCC.",
+    "tree": {
+      "sha": "489adfab54cde5acbcd7c906c9b606dd82aafdca",
+      "url": "https://api.github.com/repos/inspircd/inspircd/git/trees/489adfab54cde5acbcd7c906c9b606dd82aafdca"
+    },
+    "url": "https://api.github.com/repos/inspircd/inspircd/git/commits/7b47de3c194f239c5fea09a0e49696c9af017d51",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/inspircd/inspircd/commits/7b47de3c194f239c5fea09a0e49696c9af017d51",
+  "html_url": "https://github.com/inspircd/inspircd/commit/7b47de3c194f239c5fea09a0e49696c9af017d51",
+  "comments_url": "https://api.github.com/repos/inspircd/inspircd/commits/7b47de3c194f239c5fea09a0e49696c9af017d51/comments",
+  "author": {
+    "login": "sadiepowell",
+    "id": 1565825,
+    "node_id": "MDQ6VXNlcjE1NjU4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1565825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sadiepowell",
+    "html_url": "https://github.com/sadiepowell",
+    "followers_url": "https://api.github.com/users/sadiepowell/followers",
+    "following_url": "https://api.github.com/users/sadiepowell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sadiepowell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sadiepowell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sadiepowell/subscriptions",
+    "organizations_url": "https://api.github.com/users/sadiepowell/orgs",
+    "repos_url": "https://api.github.com/users/sadiepowell/repos",
+    "events_url": "https://api.github.com/users/sadiepowell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sadiepowell/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sadiepowell",
+    "id": 1565825,
+    "node_id": "MDQ6VXNlcjE1NjU4MjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1565825?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sadiepowell",
+    "html_url": "https://github.com/sadiepowell",
+    "followers_url": "https://api.github.com/users/sadiepowell/followers",
+    "following_url": "https://api.github.com/users/sadiepowell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sadiepowell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sadiepowell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sadiepowell/subscriptions",
+    "organizations_url": "https://api.github.com/users/sadiepowell/orgs",
+    "repos_url": "https://api.github.com/users/sadiepowell/repos",
+    "events_url": "https://api.github.com/users/sadiepowell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sadiepowell/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f9a258fa768362279cb5365856fe3f4dce5d6245",
+      "url": "https://api.github.com/repos/inspircd/inspircd/commits/f9a258fa768362279cb5365856fe3f4dce5d6245",
+      "html_url": "https://github.com/inspircd/inspircd/commit/f9a258fa768362279cb5365856fe3f4dce5d6245"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "87b70dfa46451d6922f5b4397876ed0d2541d839",
+      "filename": "src/modules/m_silence.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/inspircd/inspircd/blob/7b47de3c194f239c5fea09a0e49696c9af017d51/src%2Fmodules%2Fm_silence.cpp",
+      "raw_url": "https://github.com/inspircd/inspircd/raw/7b47de3c194f239c5fea09a0e49696c9af017d51/src%2Fmodules%2Fm_silence.cpp",
+      "contents_url": "https://api.github.com/repos/inspircd/inspircd/contents/src%2Fmodules%2Fm_silence.cpp?ref=7b47de3c194f239c5fea09a0e49696c9af017d51",
+      "patch": "@@ -187,7 +187,7 @@ class SilenceMessage : public ClientProtocol::Message\n \t\t: ClientProtocol::Message(\"SILENCE\")\n \t{\n \t\tPushParam(mask);\n-\t\tPushParamRef(flags);\n+\t\tPushParam(flags);\n \t}\n };\n "
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "sha": "b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+  "node_id": "MDY6Q29tbWl0MzA0NzAzNjA6YjNiMjljZThmM2FjZjNhMzI3MzNkOTMwMTA1YTE3ZDdiMGJhMzQ3ZQ==",
+  "commit": {
+    "author": {
+      "name": "yhirose",
+      "email": "yuji.hirose.bug@gmail.com",
+      "date": "2020-08-07T17:35:48Z"
+    },
+    "committer": {
+      "name": "yhirose",
+      "email": "yuji.hirose.bug@gmail.com",
+      "date": "2020-08-07T17:42:51Z"
+    },
+    "message": "Fix #122",
+    "tree": {
+      "sha": "8d22dc63dd89d6aed760c10f46bacc284e1fd434",
+      "url": "https://api.github.com/repos/yhirose/cpp-peglib/git/trees/8d22dc63dd89d6aed760c10f46bacc284e1fd434"
+    },
+    "url": "https://api.github.com/repos/yhirose/cpp-peglib/git/commits/b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/yhirose/cpp-peglib/commits/b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+  "html_url": "https://github.com/yhirose/cpp-peglib/commit/b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+  "comments_url": "https://api.github.com/repos/yhirose/cpp-peglib/commits/b3b29ce8f3acf3a32733d930105a17d7b0ba347e/comments",
+  "author": {
+    "login": "yhirose",
+    "id": 357397,
+    "node_id": "MDQ6VXNlcjM1NzM5Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/357397?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yhirose",
+    "html_url": "https://github.com/yhirose",
+    "followers_url": "https://api.github.com/users/yhirose/followers",
+    "following_url": "https://api.github.com/users/yhirose/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yhirose/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yhirose/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yhirose/subscriptions",
+    "organizations_url": "https://api.github.com/users/yhirose/orgs",
+    "repos_url": "https://api.github.com/users/yhirose/repos",
+    "events_url": "https://api.github.com/users/yhirose/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yhirose/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "yhirose",
+    "id": 357397,
+    "node_id": "MDQ6VXNlcjM1NzM5Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/357397?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yhirose",
+    "html_url": "https://github.com/yhirose",
+    "followers_url": "https://api.github.com/users/yhirose/followers",
+    "following_url": "https://api.github.com/users/yhirose/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yhirose/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yhirose/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yhirose/subscriptions",
+    "organizations_url": "https://api.github.com/users/yhirose/orgs",
+    "repos_url": "https://api.github.com/users/yhirose/repos",
+    "events_url": "https://api.github.com/users/yhirose/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yhirose/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d84c2993af4335e2bfb1873ee631cb1eea803d15",
+      "url": "https://api.github.com/repos/yhirose/cpp-peglib/commits/d84c2993af4335e2bfb1873ee631cb1eea803d15",
+      "html_url": "https://github.com/yhirose/cpp-peglib/commit/d84c2993af4335e2bfb1873ee631cb1eea803d15"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 14,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "89f9abcff60269773a09a2520733110701ec8a94",
+      "filename": "peglib.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/yhirose/cpp-peglib/blob/b3b29ce8f3acf3a32733d930105a17d7b0ba347e/peglib.h",
+      "raw_url": "https://github.com/yhirose/cpp-peglib/raw/b3b29ce8f3acf3a32733d930105a17d7b0ba347e/peglib.h",
+      "contents_url": "https://api.github.com/repos/yhirose/cpp-peglib/contents/peglib.h?ref=b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+      "patch": "@@ -180,11 +180,11 @@ inline size_t codepoint_length(const char *s8, size_t l) {\n     auto b = static_cast<uint8_t>(s8[0]);\n     if ((b & 0x80) == 0) {\n       return 1;\n-    } else if ((b & 0xE0) == 0xC0) {\n+    } else if ((b & 0xE0) == 0xC0 && l >= 2) {\n       return 2;\n-    } else if ((b & 0xF0) == 0xE0) {\n+    } else if ((b & 0xF0) == 0xE0 && l >= 3) {\n       return 3;\n-    } else if ((b & 0xF8) == 0xF0) {\n+    } else if ((b & 0xF8) == 0xF0 && l >= 4) {\n       return 4;\n     }\n   }"
+    },
+    {
+      "sha": "a583e8189ac5f00d6ffe37c12e9aff8f7152f05d",
+      "filename": "test/test1.cc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/yhirose/cpp-peglib/blob/b3b29ce8f3acf3a32733d930105a17d7b0ba347e/test%2Ftest1.cc",
+      "raw_url": "https://github.com/yhirose/cpp-peglib/raw/b3b29ce8f3acf3a32733d930105a17d7b0ba347e/test%2Ftest1.cc",
+      "contents_url": "https://api.github.com/repos/yhirose/cpp-peglib/contents/test%2Ftest1.cc?ref=b3b29ce8f3acf3a32733d930105a17d7b0ba347e",
+      "patch": "@@ -45,6 +45,17 @@ TEST_CASE(\"Start rule with ignore operator test\", \"[general]\")\n     REQUIRE(ret == false);\n }\n \n+TEST_CASE(\"Invalid UTF-8 text test\", \"[general]\")\n+{\n+    std::string s = \"a <- '\";\n+    s += static_cast<char>(0xe8); // Make invalid utf8 text...\n+\n+    parser parser(s.c_str());\n+\n+    bool ret = parser;\n+    REQUIRE(ret == false);\n+}\n+\n TEST_CASE(\"Backslash escape sequence test\", \"[general]\")\n {\n     parser parser(R\"("
+    }
+  ]
+}

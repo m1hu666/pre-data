@@ -1,0 +1,101 @@
+{
+  "sha": "f8378920345f4f4604202d4ab15ef64b2aceaa16",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZjgzNzg5MjAzNDVmNGY0NjA0MjAyZDRhYjE1ZWY2NGIyYWNlYWExNg==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T00:47:59Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T01:35:04Z"
+    },
+    "message": "Prevent a null pointer dereference in TFLite.\n\nPiperOrigin-RevId: 370800353\nChange-Id: Ic9c9712ce5c6e384c954dcd640a5bd9ff05c9a05",
+    "tree": {
+      "sha": "e307ff4fc976c2a91a0da21f2e31357b9a3f67c1",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/e307ff4fc976c2a91a0da21f2e31357b9a3f67c1"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/f8378920345f4f4604202d4ab15ef64b2aceaa16",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f8378920345f4f4604202d4ab15ef64b2aceaa16",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/f8378920345f4f4604202d4ab15ef64b2aceaa16",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f8378920345f4f4604202d4ab15ef64b2aceaa16/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9c1dc920d8ffb4893d6c9d27d1f039607b326743",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/9c1dc920d8ffb4893d6c9d27d1f039607b326743",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/9c1dc920d8ffb4893d6c9d27d1f039607b326743"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 10,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "0273018b3bf03db1702d4e7c822bd05e9774f419",
+      "filename": "tensorflow/lite/core/subgraph.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 3,
+      "changes": 13,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/f8378920345f4f4604202d4ab15ef64b2aceaa16/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/f8378920345f4f4604202d4ab15ef64b2aceaa16/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.cc?ref=f8378920345f4f4604202d4ab15ef64b2aceaa16",
+      "patch": "@@ -1060,10 +1060,17 @@ TfLiteStatus Subgraph::Invoke() {\n         TF_LITE_ENSURE_STATUS(EnsureTensorDataIsReadable(tensor_index));\n       }\n       if (tensor->data.raw == nullptr && tensor->bytes > 0) {\n-        if (registration.builtin_code == kTfLiteBuiltinReshape && i == 1) {\n+        if (registration.builtin_code == kTfLiteBuiltinReshape && i == 1 &&\n+            tensor->dims->size != 1) {\n           // In general, having a tensor here with no buffer will be an error.\n-          // However, for the reshape operator, the second input tensor is only\n-          // used for the shape, not for the data. Thus, null buffer is ok.\n+          // However, for the reshape operator, the second input tensor is\n+          // sometimes only used for the shape, not for the data. Thus, null\n+          // buffer is ok in this situation.\n+          // The situation where null buffer is not ok for reshape operator is\n+          // only when there are 2 inputs given to the node and the one\n+          // corresponding to the shape (i == 1) is a vector that contains all\n+          // dimensions. See `GetOutputShape()` function in\n+          // `tensorflow/lite/kernels/reshape.cc`\n           continue;\n         } else {\n           // In all other cases, we need to return an error as otherwise we will"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "sha": "ee778252faebb721afba5a081dd6ad7eaf20eef3",
+  "node_id": "MDY6Q29tbWl0ODMwOTY5OTk6ZWU3NzgyNTJmYWViYjcyMWFmYmE1YTA4MWRkNmFkN2VhZjIwZWVmMw==",
+  "commit": {
+    "author": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-05-07T10:42:42Z"
+    },
+    "committer": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2021-05-07T10:42:42Z"
+    },
+    "message": "Fix a crash bug with bogus text (Issue #426)",
+    "tree": {
+      "sha": "aefd68375f316e76a7fba723c0af04e912a737e2",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/trees/aefd68375f316e76a7fba723c0af04e912a737e2"
+    },
+    "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/commits/ee778252faebb721afba5a081dd6ad7eaf20eef3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJOBAABCAA4FiEEhFRkZgtoaqs2VAtvmZVZoCeBWVUFAmCVGa8aHG1pY2hhZWwu\nci5zd2VldEBnbWFpbC5jb20ACgkQmZVZoCeBWVVuWw//ainTGnwQ9Wyu+0GNgptt\n+v3zdzPAWmtFU+bjsNtxhztIbV6Z/ZWeC4WIGaQvG7flMUFml6zQCuER6/00iSRO\n5yhYdU4HHRLrG4gmtjmEe9c9OXh43gNt9ddQAvFWFbnm4GtlRzT/nin/pgM5MddZ\nE7kjdfpaL/9zPNEFpZhSJy9evIMANHsuY+QQK+nKCkax2kZi2IRYa/VkpjNO92yW\nyk4c6/fc+QKRhw6WfY3RPLhoeRLeYlEAc9gBVRLdQgnBDZ9vOzvlp+9YE8Xrlp1S\njdUkE1GiwbZW/1vBGhoknAJTrqoULCirlHjOxrmMosTnm2LowXR/BZ/7XxKtMttD\n7IxUHb8vQrBGpcnGbAKwYgPlhWaHxxm/dOJt+ILQLVy0a109+6QvFYQcG/YbTZBq\nve1LwJ+8V07ZK2Wp3Bp6DG0BAo1VbVDD1dEL+dWi2Mf4ytj9LhK2aG7G5UnLkE9A\npxlUuSH9Xo1eogiIlmRSi6Kt4SzkBpoyj5ThryAxXBhCQC1QPFMvY81MF/klcR34\nVjgbMoPy3/Cndg6MC103znkDjyXWlpEijl9tftwF/MJskNRGCYwbO01mcXHRqAqc\nbYQOkWkVEpF9pyV1AdqrL735jvMCU/m47+j4w9MbeM0eyV+wJWRgiCiw27l6mT6k\nfjmdViz71FDKVX3aNXY5aNg=\n=74Ml\n-----END PGP SIGNATURE-----",
+      "payload": "tree aefd68375f316e76a7fba723c0af04e912a737e2\nparent a0014be47d614220db111b360fb6170ef6f3937e\nauthor Michael R Sweet <michael.r.sweet@gmail.com> 1620384162 -0400\ncommitter Michael R Sweet <michael.r.sweet@gmail.com> 1620384162 -0400\n\nFix a crash bug with bogus text (Issue #426)\n",
+      "verified_at": "2024-11-12T17:42:32Z"
+    }
+  },
+  "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/ee778252faebb721afba5a081dd6ad7eaf20eef3",
+  "html_url": "https://github.com/michaelrsweet/htmldoc/commit/ee778252faebb721afba5a081dd6ad7eaf20eef3",
+  "comments_url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/ee778252faebb721afba5a081dd6ad7eaf20eef3/comments",
+  "author": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a0014be47d614220db111b360fb6170ef6f3937e",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/a0014be47d614220db111b360fb6170ef6f3937e",
+      "html_url": "https://github.com/michaelrsweet/htmldoc/commit/a0014be47d614220db111b360fb6170ef6f3937e"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "c260fa15e49c3aedd5e22a5c9d92705eb434752c",
+      "filename": "CHANGES.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ee778252faebb721afba5a081dd6ad7eaf20eef3/CHANGES.md",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ee778252faebb721afba5a081dd6ad7eaf20eef3/CHANGES.md",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/CHANGES.md?ref=ee778252faebb721afba5a081dd6ad7eaf20eef3",
+      "patch": "@@ -8,6 +8,7 @@\n - Fixed a crash bug with malformed URIs (Issue #418)\n - Fixed a crash bug with malformed GIF files (Issue #423)\n - Fixed a crash bug with empty titles (Issue #425)\n+- Fixed a crash bug with bogus text (Issue #426)\n - Fixed some issues reported by Coverity.\n - Removed the bundled libjpeg, libpng, and zlib.\n "
+    },
+    {
+      "sha": "fda46ad82343144603f4401cdfe858217fdc59bd",
+      "filename": "htmldoc/html.cxx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtml.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtml.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fhtml.cxx?ref=ee778252faebb721afba5a081dd6ad7eaf20eef3",
+      "patch": "@@ -1,7 +1,7 @@\n /*\n  * HTML exporting functions for HTMLDOC, a HTML document processing program.\n  *\n- * Copyright 2011-2019 by Michael R Sweet.\n+ * Copyright 2011-2021 by Michael R Sweet.\n  * Copyright 1997-2010 by Easy Software Products.  All rights reserved.\n  *\n  * This program is free software.  Distribution and use rights are outlined in\n@@ -585,7 +585,7 @@ write_node(FILE   *out,\t\t/* I - Output file */\n           for (ptr = t->data; *ptr; ptr ++)\n             fputs((char *)iso8859(*ptr), out);\n \n-\t  if (t->data[strlen((char *)t->data) - 1] == '\\n')\n+\t  if (t->data[0] && t->data[strlen((char *)t->data) - 1] == '\\n')\n             col = 0;\n \t  else\n             col += strlen((char *)t->data);"
+    },
+    {
+      "sha": "df753d02f4ab981379210ffe688d6541d618f8f6",
+      "filename": "htmldoc/htmllib.cxx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtmllib.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtmllib.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fhtmllib.cxx?ref=ee778252faebb721afba5a081dd6ad7eaf20eef3",
+      "patch": "@@ -1602,7 +1602,7 @@ write_file(tree_t *t,\t\t/* I - Tree entry */\n         for (ptr = t->data; *ptr != '\\0'; ptr ++)\n           fputs((char *)iso8859(*ptr), fp);\n \n-\tif (t->data[strlen((char *)t->data) - 1] == '\\n')\n+\tif (t->data[0] && t->data[strlen((char *)t->data) - 1] == '\\n')\n           col = 0;\n \telse\n           col += strlen((char *)t->data);"
+    },
+    {
+      "sha": "ce79aaa680841d86d49b52f4238d68dfb4d84b6a",
+      "filename": "htmldoc/htmlsep.cxx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtmlsep.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/ee778252faebb721afba5a081dd6ad7eaf20eef3/htmldoc%2Fhtmlsep.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fhtmlsep.cxx?ref=ee778252faebb721afba5a081dd6ad7eaf20eef3",
+      "patch": "@@ -591,7 +591,7 @@ write_node(FILE   *out,\t\t/* I - Output file */\n           for (ptr = t->data; *ptr; ptr ++)\n             fputs((char *)iso8859(*ptr), out);\n \n-\t  if (t->data[strlen((char *)t->data) - 1] == '\\n')\n+\t  if (t->data[0] && t->data[strlen((char *)t->data) - 1] == '\\n')\n             col = 0;\n \t  else\n             col += strlen((char *)t->data);"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "e07e1c3d26492c06f078c7e5bf2d138043e199c1",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6ZTA3ZTFjM2QyNjQ5MmMwNmYwNzhjN2U1YmYyZDEzODA0M2UxOTljMQ==",
+  "commit": {
+    "author": {
+      "name": "Laura Pak",
+      "email": "lpak@google.com",
+      "date": "2021-04-23T17:33:00Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-23T17:38:57Z"
+    },
+    "message": "Prevent memory overflow in ParseAttrValue from nested tensors.\n\nPiperOrigin-RevId: 370108442\nChange-Id: I84d64a5e8895a6aeffbf4749841b4c54d51b5889",
+    "tree": {
+      "sha": "8db5174f217cc683e8420597e76da21d960ab628",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/8db5174f217cc683e8420597e76da21d960ab628"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/e07e1c3d26492c06f078c7e5bf2d138043e199c1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e07e1c3d26492c06f078c7e5bf2d138043e199c1",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/e07e1c3d26492c06f078c7e5bf2d138043e199c1",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/e07e1c3d26492c06f078c7e5bf2d138043e199c1/comments",
+  "author": {
+    "login": "pak-laura",
+    "id": 15825877,
+    "node_id": "MDQ6VXNlcjE1ODI1ODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15825877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pak-laura",
+    "html_url": "https://github.com/pak-laura",
+    "followers_url": "https://api.github.com/users/pak-laura/followers",
+    "following_url": "https://api.github.com/users/pak-laura/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pak-laura/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pak-laura/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pak-laura/subscriptions",
+    "organizations_url": "https://api.github.com/users/pak-laura/orgs",
+    "repos_url": "https://api.github.com/users/pak-laura/repos",
+    "events_url": "https://api.github.com/users/pak-laura/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pak-laura/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c22d88d6ff33031aa113e48aa3fc9aa74ed79595",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c22d88d6ff33031aa113e48aa3fc9aa74ed79595",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/c22d88d6ff33031aa113e48aa3fc9aa74ed79595"
+    }
+  ],
+  "stats": {
+    "total": 58,
+    "additions": 57,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "76fe36e7f1e2a6356e3bb4b919acfe3eb5b70baa",
+      "filename": "tensorflow/core/framework/attr_value_util.cc",
+      "status": "modified",
+      "additions": 57,
+      "deletions": 1,
+      "changes": 58,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/e07e1c3d26492c06f078c7e5bf2d138043e199c1/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/e07e1c3d26492c06f078c7e5bf2d138043e199c1/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fattr_value_util.cc?ref=e07e1c3d26492c06f078c7e5bf2d138043e199c1",
+      "patch": "@@ -38,6 +38,9 @@ namespace {\n // Do not construct large tensors to compute their hash or compare for equality.\n constexpr int kMaxAttrValueTensorByteSize = 32 * 1024 * 1024;  // 32mb\n \n+// Limit nesting of tensors to 100 deep to prevent memory overflow.\n+constexpr int kMaxTensorNestDepth = 100;\n+\n // Return the size of the tensor represented by this TensorProto. If shape is\n // not fully defined return -1.\n int64 TensorByteSize(const TensorProto& t) {\n@@ -224,6 +227,54 @@ string SummarizeFunc(const NameAttrList& func) {\n   return strings::StrCat(func.name(), \"[\", absl::StrJoin(entries, \", \"), \"]\");\n }\n \n+bool ParseAttrValueHelper_TensorNestsUnderLimit(int limit, string to_parse) {\n+  int nests = 0;\n+  int maxed_out = to_parse.length();\n+  int open_curly = to_parse.find('{');\n+  int open_bracket = to_parse.find('<');\n+  int close_curly = to_parse.find('}');\n+  int close_bracket = to_parse.find('>');\n+  if (open_curly == -1) {\n+    open_curly = maxed_out;\n+  }\n+  if (open_bracket == -1) {\n+    open_bracket = maxed_out;\n+  }\n+  int min = std::min(open_curly, open_bracket);\n+  do {\n+    if (open_curly == maxed_out && open_bracket == maxed_out) {\n+      return true;\n+    }\n+    if (min == open_curly) {\n+      nests += 1;\n+      open_curly = to_parse.find('{', open_curly + 1);\n+      if (open_curly == -1) {\n+        open_curly = maxed_out;\n+      }\n+    } else if (min == open_bracket) {\n+      nests += 1;\n+      open_bracket = to_parse.find('<', open_bracket + 1);\n+      if (open_bracket == -1) {\n+        open_bracket = maxed_out;\n+      }\n+    } else if (min == close_curly) {\n+      nests -= 1;\n+      close_curly = to_parse.find('}', close_curly + 1);\n+      if (close_curly == -1) {\n+        close_curly = maxed_out;\n+      }\n+    } else if (min == close_bracket) {\n+      nests -= 1;\n+      close_bracket = to_parse.find('>', close_bracket + 1);\n+      if (close_bracket == -1) {\n+        close_bracket = maxed_out;\n+      }\n+    }\n+    min = std::min({open_curly, open_bracket, close_curly, close_bracket});\n+  } while (nests < 100);\n+  return false;\n+}\n+\n }  // namespace\n \n string SummarizeAttrValue(const AttrValue& attr_value) {\n@@ -448,7 +499,12 @@ bool ParseAttrValue(StringPiece type, StringPiece text, AttrValue* out) {\n   } else {\n     to_parse = strings::StrCat(field_name, \": \", text);\n   }\n-\n+  if (field_name == \"tensor\") {\n+    if (!ParseAttrValueHelper_TensorNestsUnderLimit(kMaxTensorNestDepth,\n+                                                    to_parse)) {\n+      return false;\n+    }\n+  }\n   return ProtoParseFromString(to_parse, out);\n }\n "
+    }
+  ]
+}

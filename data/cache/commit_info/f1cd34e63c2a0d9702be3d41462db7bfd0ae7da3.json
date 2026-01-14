@@ -1,0 +1,125 @@
+{
+  "sha": "f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmYxY2QzNGU2M2MyYTBkOTcwMmJlM2Q0MTQ2MmRiN2JmZDBhZTdkYTM=",
+  "commit": {
+    "author": {
+      "name": "Dhaval Kapil",
+      "email": "dhavalkapil@fb.com",
+      "date": "2019-09-04T00:16:28Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot@users.noreply.github.com",
+      "date": "2019-09-04T00:20:18Z"
+    },
+    "message": "exif_process_APP12: Fix length calculation for second tag to prevent information leak\n\nSummary:\nbuffer + 2+l1+1 points to the second tag. The maximum length of the buffer is length. Hence, the max length of the tag is length - (2+l1+1). Instead, the length passed is length - 2 - l1 + 1 which leads to a 2 byte overflow. If the last character of buffer is not null, this would lead to an out of bounds read of size 2.\n\nFixes CVE-2019-11925\n\nReviewed By: fredemmott\n\nDifferential Revision: D16930333\n\nfbshipit-source-id: aad9cccaef3c678abc53bfd549aff6b582082a90",
+    "tree": {
+      "sha": "a540a184d847f4003124129d868ff73a0de48d08",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/a540a184d847f4003124129d868ff73a0de48d08"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+  "html_url": "https://github.com/facebook/hhvm/commit/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/comments",
+  "author": {
+    "login": "DhavalKapil",
+    "id": 6170016,
+    "node_id": "MDQ6VXNlcjYxNzAwMTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6170016?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DhavalKapil",
+    "html_url": "https://github.com/DhavalKapil",
+    "followers_url": "https://api.github.com/users/DhavalKapil/followers",
+    "following_url": "https://api.github.com/users/DhavalKapil/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DhavalKapil/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DhavalKapil/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DhavalKapil/subscriptions",
+    "organizations_url": "https://api.github.com/users/DhavalKapil/orgs",
+    "repos_url": "https://api.github.com/users/DhavalKapil/repos",
+    "events_url": "https://api.github.com/users/DhavalKapil/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DhavalKapil/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "hhvm-bot",
+    "id": 8306375,
+    "node_id": "MDQ6VXNlcjgzMDYzNzU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8306375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hhvm-bot",
+    "html_url": "https://github.com/hhvm-bot",
+    "followers_url": "https://api.github.com/users/hhvm-bot/followers",
+    "following_url": "https://api.github.com/users/hhvm-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hhvm-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hhvm-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hhvm-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/hhvm-bot/orgs",
+    "repos_url": "https://api.github.com/users/hhvm-bot/repos",
+    "events_url": "https://api.github.com/users/hhvm-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hhvm-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f9680d21beaa9eb39d166e8810e29fbafa51ad15",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/f9680d21beaa9eb39d166e8810e29fbafa51ad15",
+      "html_url": "https://github.com/facebook/hhvm/commit/f9680d21beaa9eb39d166e8810e29fbafa51ad15"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 13,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "df336ea9af08afbea36531355e731b31770c609d",
+      "filename": "hphp/runtime/ext/gd/ext_gd.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Fruntime%2Fext%2Fgd%2Fext_gd.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Fruntime%2Fext%2Fgd%2Fext_gd.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fgd%2Fext_gd.cpp?ref=f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+      "patch": "@@ -6964,7 +6964,7 @@ static void exif_process_APP12(image_info_type *ImageInfo,\n     exif_iif_add_tag(ImageInfo, SECTION_APP12, \"Company\",\n                      TAG_NONE, TAG_FMT_STRING, l1, buffer+2);\n     if (length > 2+l1+1) {\n-      l2 = php_strnlen(buffer+2+l1+1, length-2-l1+1);\n+      l2 = php_strnlen(buffer+2+l1+1, length-2-l1-1);\n       exif_iif_add_tag(ImageInfo, SECTION_APP12, \"Info\",\n                        TAG_NONE, TAG_FMT_STRING, l2, buffer+2+l1+1);\n     }"
+    },
+    {
+      "sha": "d563a4814688cb83d3f14c59ee7c837187561f75",
+      "filename": "hphp/test/slow/ext_gd/exifreaddata_APP12.php",
+      "status": "added",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php?ref=f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+      "patch": "@@ -0,0 +1,8 @@\n+<?hh\n+\n+<<__EntryPoint>>\n+function main_exifreaddata() {\n+  $jpeg = \"\\xff\\xd8\\xec\\x00\\x05\\x58\\x00\\x17\";\n+  $data_stream = \"data://text/plain;base64,\" . base64_encode($jpeg);\n+  var_dump(exif_read_data($data_stream));\n+}"
+    },
+    {
+      "sha": "84a1dbec7b65ddff8e1429b0c8b4dea65ccf53f7",
+      "filename": "hphp/test/slow/ext_gd/exifreaddata_APP12.php.expectf",
+      "status": "added",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_gd%2Fexifreaddata_APP12.php.expectf?ref=f1cd34e63c2a0d9702be3d41462db7bfd0ae7da3",
+      "patch": "@@ -0,0 +1,4 @@\n+Warning: File structure corrupted in %s/ext_gd/exifreaddata_APP12.php on line 7\n+\n+Warning: Invalid JPEG file in %s/ext_gd/exifreaddata_APP12.php on line 7\n+bool(false)"
+    }
+  ]
+}

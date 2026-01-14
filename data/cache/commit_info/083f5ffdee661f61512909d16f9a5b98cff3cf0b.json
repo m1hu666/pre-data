@@ -1,0 +1,101 @@
+{
+  "sha": "083f5ffdee661f61512909d16f9a5b98cff3cf0b",
+  "node_id": "C_kwDOAAbzsNoAKDA4M2Y1ZmZkZWU2NjFmNjE1MTI5MDlkMTZmOWE1Yjk4Y2ZmM2NmMGI",
+  "commit": {
+    "author": {
+      "name": "Wilfred Hughes",
+      "email": "wilfred@fb.com",
+      "date": "2023-01-13T23:54:56Z"
+    },
+    "committer": {
+      "name": "Wilfred Hughes",
+      "email": "wilfred@meta.com",
+      "date": "2023-01-20T19:23:07Z"
+    },
+    "message": "[security] Disable TLS 1.0 in stream extension URLs\n\nThe stream extension has the functions `stream_socket_server` and\n`stream_socket_client` which accept URLs. When a URL starts with\n`tls://` it would previously allow TLS 1.0 connections.\n\nTLS 1.0 is deprecated and considered insecure.",
+    "tree": {
+      "sha": "f5e68286db8d65cf831e14146fe02a883dcfe28e",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/f5e68286db8d65cf831e14146fe02a883dcfe28e"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/083f5ffdee661f61512909d16f9a5b98cff3cf0b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/083f5ffdee661f61512909d16f9a5b98cff3cf0b",
+  "html_url": "https://github.com/facebook/hhvm/commit/083f5ffdee661f61512909d16f9a5b98cff3cf0b",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/083f5ffdee661f61512909d16f9a5b98cff3cf0b/comments",
+  "author": {
+    "login": "Wilfred",
+    "id": 70800,
+    "node_id": "MDQ6VXNlcjcwODAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Wilfred",
+    "html_url": "https://github.com/Wilfred",
+    "followers_url": "https://api.github.com/users/Wilfred/followers",
+    "following_url": "https://api.github.com/users/Wilfred/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Wilfred/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Wilfred/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Wilfred/subscriptions",
+    "organizations_url": "https://api.github.com/users/Wilfred/orgs",
+    "repos_url": "https://api.github.com/users/Wilfred/repos",
+    "events_url": "https://api.github.com/users/Wilfred/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Wilfred/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Wilfred",
+    "id": 70800,
+    "node_id": "MDQ6VXNlcjcwODAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Wilfred",
+    "html_url": "https://github.com/Wilfred",
+    "followers_url": "https://api.github.com/users/Wilfred/followers",
+    "following_url": "https://api.github.com/users/Wilfred/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Wilfred/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Wilfred/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Wilfred/subscriptions",
+    "organizations_url": "https://api.github.com/users/Wilfred/orgs",
+    "repos_url": "https://api.github.com/users/Wilfred/repos",
+    "events_url": "https://api.github.com/users/Wilfred/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Wilfred/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1df824e3bb1ced8b8873f44d906950aeb60b6e9a",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/1df824e3bb1ced8b8873f44d906950aeb60b6e9a",
+      "html_url": "https://github.com/facebook/hhvm/commit/1df824e3bb1ced8b8873f44d906950aeb60b6e9a"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6b533eccc940c042b3b3226da665b335e1230187",
+      "filename": "hphp/runtime/base/ssl-socket.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/083f5ffdee661f61512909d16f9a5b98cff3cf0b/hphp%2Fruntime%2Fbase%2Fssl-socket.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/083f5ffdee661f61512909d16f9a5b98cff3cf0b/hphp%2Fruntime%2Fbase%2Fssl-socket.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fssl-socket.cpp?ref=083f5ffdee661f61512909d16f9a5b98cff3cf0b",
+      "patch": "@@ -499,7 +499,7 @@ bool SSLSocket::setupCrypto(SSLSocket *session /* = NULL */) {\n     break;\n   case CryptoMethod::ClientTLS:\n     m_data->m_client = true;\n-    smethod = TLSv1_client_method();\n+    smethod = TLS_client_method();\n     break;\n   case CryptoMethod::ServerSSLv23:\n     m_data->m_client = false;\n@@ -542,7 +542,7 @@ bool SSLSocket::setupCrypto(SSLSocket *session /* = NULL */) {\n \n   case CryptoMethod::ServerTLS:\n     m_data->m_client = false;\n-    smethod = TLSv1_server_method();\n+    smethod = TLS_server_method();\n     break;\n   default:\n     return false;"
+    }
+  ]
+}

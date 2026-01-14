@@ -1,0 +1,101 @@
+{
+  "sha": "c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+  "node_id": "C_kwDOArmXAtoAKGMyYjMxZmYyZDMxNTFhY2IyMzBlZGMzZjViMTgzMmQyYzcxM2E5ZTA",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-08T18:14:10Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-08T18:21:15Z"
+    },
+    "message": "Remove a `DCHECK`-fail, log an error instead.\n\n`DCHECK` in debug mode results in crashes. TensorFlow has had multiple vulnerabilities due to this.\n\nOutside of debug mode, `DCHECK` is a no-op.\n\nA better alternative is to report an error to the log buffer and continue. This should happen both in debug mode and in prod mode.\n\nPiperOrigin-RevId: 408375925\nChange-Id: Id5b3e19c73f3fbe0cc4bba26ca44ff9607bb6356",
+    "tree": {
+      "sha": "758bd207b8f70d75dd8edcd8f55a515a774d25f0",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/758bd207b8f70d75dd8edcd8f55a515a774d25f0"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "41424fd983e23b11ed13bbd5a2b2be0e25ab4244",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/41424fd983e23b11ed13bbd5a2b2be0e25ab4244",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/41424fd983e23b11ed13bbd5a2b2be0e25ab4244"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "6127913d9ba1f0d861fb7922e81253c97385d16a",
+      "filename": "tensorflow/core/framework/op_def_util.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0/tensorflow%2Fcore%2Fframework%2Fop_def_util.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0/tensorflow%2Fcore%2Fframework%2Fop_def_util.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fop_def_util.cc?ref=c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+      "patch": "@@ -821,9 +821,10 @@ bool RepeatedAttrDefEqual(\n     const protobuf::RepeatedPtrField<OpDef::AttrDef>& a2) {\n   std::unordered_map<string, const OpDef::AttrDef*> a1_set;\n   for (const OpDef::AttrDef& def : a1) {\n-    DCHECK(a1_set.find(def.name()) == a1_set.end())\n-        << \"AttrDef names must be unique, but '\" << def.name()\n-        << \"' appears more than once\";\n+    if (a1_set.find(def.name()) != a1_set.end()) {\n+      LOG(ERROR) << \"AttrDef names must be unique, but '\" << def.name()\n+                 << \"' appears more than once\";\n+    }\n     a1_set[def.name()] = &def;\n   }\n   for (const OpDef::AttrDef& def : a2) {"
+    }
+  ]
+}

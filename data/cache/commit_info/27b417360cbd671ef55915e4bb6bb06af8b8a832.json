@@ -1,0 +1,101 @@
+{
+  "sha": "27b417360cbd671ef55915e4bb6bb06af8b8a832",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MjdiNDE3MzYwY2JkNjcxZWY1NTkxNWU0YmI2YmIwNmFmOGI4YTgzMg==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-19T00:21:24Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-19T00:34:10Z"
+    },
+    "message": "Prevent `int64` to `int` truncation in `Shard` API usage.\n\nThe function argument in `Shard` must be a function of two `int64` arguments. However, we are passing in a function with two `int` arguments. Thus, for large workloads, these arguments get truncated from positive `int64` values to negative `int` ones, resulting in a buffer out of bounds write.\n\nPiperOrigin-RevId: 332557334\nChange-Id: I236c9a2e7f53580e520571da8ba941a3aa9fa0b5",
+    "tree": {
+      "sha": "90c7eec00c4aae1d37879daaad0e876b060ed094",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/90c7eec00c4aae1d37879daaad0e876b060ed094"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/27b417360cbd671ef55915e4bb6bb06af8b8a832",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/27b417360cbd671ef55915e4bb6bb06af8b8a832",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/27b417360cbd671ef55915e4bb6bb06af8b8a832",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/27b417360cbd671ef55915e4bb6bb06af8b8a832/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "185df236b11084633945ee087da72ec364314527",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/185df236b11084633945ee087da72ec364314527",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/185df236b11084633945ee087da72ec364314527"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "bace2362e33df00ceebaf4a4e1bdc9852254c620",
+      "filename": "tensorflow/core/kernels/random_op.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/27b417360cbd671ef55915e4bb6bb06af8b8a832/tensorflow%2Fcore%2Fkernels%2Frandom_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/27b417360cbd671ef55915e4bb6bb06af8b8a832/tensorflow%2Fcore%2Fkernels%2Frandom_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Frandom_op.cc?ref=27b417360cbd671ef55915e4bb6bb06af8b8a832",
+      "patch": "@@ -202,7 +202,7 @@ class RandomGammaOp : public OpKernel {\n     // avoid a couple flops which can be done on a per-alpha basis.\n \n     auto DoWork = [samples_per_alpha, num_alphas, &rng, samples_flat,\n-                   alpha_flat](int start_output, int limit_output) {\n+                   alpha_flat](int64 start_output, int64 limit_output) {\n       using Eigen::numext::exp;\n       using Eigen::numext::log;\n       using Eigen::numext::log1p;"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "3ebedd7e345453d68e279cfc3e4072648e5e12e5",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6M2ViZWRkN2UzNDU0NTNkNjhlMjc5Y2ZjM2U0MDcyNjQ4ZTVlMTJlNQ==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T19:58:07Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T20:10:04Z"
+    },
+    "message": "Prevent division by 0 in OneHot implementation\n\nIf input indices is degenerate, the implementation would do a divide by zero. See https://github.com/tensorflow/tensorflow/blob/745d57df6d5e9bc568666a2a48ed8dd629c27241/tensorflow/lite/kernels/one_hot.cc#L68-L72\n\nPiperOrigin-RevId: 370966870\nChange-Id: Ie018337811c8016b5a1d3a277d00d5f2e19a2058",
+    "tree": {
+      "sha": "25c6df12402e6e702f35172bc0597b5729373355",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/25c6df12402e6e702f35172bc0597b5729373355"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/3ebedd7e345453d68e279cfc3e4072648e5e12e5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3ebedd7e345453d68e279cfc3e4072648e5e12e5",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/3ebedd7e345453d68e279cfc3e4072648e5e12e5",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3ebedd7e345453d68e279cfc3e4072648e5e12e5/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f61c57bd425878be108ec787f4d96390579fb83e",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/f61c57bd425878be108ec787f4d96390579fb83e",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/f61c57bd425878be108ec787f4d96390579fb83e"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "75bfb48d6b19c824c60a0f73e46e51787c258950",
+      "filename": "tensorflow/lite/kernels/one_hot.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/3ebedd7e345453d68e279cfc3e4072648e5e12e5/tensorflow%2Flite%2Fkernels%2Fone_hot.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/3ebedd7e345453d68e279cfc3e4072648e5e12e5/tensorflow%2Flite%2Fkernels%2Fone_hot.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fone_hot.cc?ref=3ebedd7e345453d68e279cfc3e4072648e5e12e5",
+      "patch": "@@ -69,6 +69,11 @@ void OneHotComputeImpl(const OneHotContext& op_context) {\n   for (int i = 0; i < op_context.axis; ++i) {\n     prefix_dim_size *= op_context.indices->dims->data[i];\n   }\n+  if (prefix_dim_size == 0) {\n+    // If indices tensor is degenerate, return a degenerate tensor, just like\n+    // TensorFlow does.\n+    return;\n+  }\n   const int suffix_dim_size = NumElements(op_context.indices) / prefix_dim_size;\n   const int depth = *op_context.depth->data.i32;\n "
+    }
+  ]
+}

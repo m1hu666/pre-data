@@ -1,0 +1,137 @@
+{
+  "sha": "e9f936d85dc1edc34fabd0a1725ec180f2316353",
+  "node_id": "C_kwDOA-MW79oAKGU5ZjkzNmQ4NWRjMWVkYzM0ZmFiZDBhMTcyNWVjMTgwZjIzMTYzNTM",
+  "commit": {
+    "author": {
+      "name": "Yan Avlasov",
+      "email": "yavlasov@google.com",
+      "date": "2022-02-01T19:57:15Z"
+    },
+    "committer": {
+      "name": "Ryan Hamilton",
+      "email": "rch@google.com",
+      "date": "2022-02-22T17:58:22Z"
+    },
+    "message": "CVE-2022-21654\n\ntls allows re-use when some cert validation settings have changed\n\nSigned-off-by: Yan Avlasov <yavlasov@google.com>",
+    "tree": {
+      "sha": "e70fe5d653a4203b8895d412500ddc67c7f4200e",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/git/trees/e70fe5d653a4203b8895d412500ddc67c7f4200e"
+    },
+    "url": "https://api.github.com/repos/envoyproxy/envoy/git/commits/e9f936d85dc1edc34fabd0a1725ec180f2316353",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/envoyproxy/envoy/commits/e9f936d85dc1edc34fabd0a1725ec180f2316353",
+  "html_url": "https://github.com/envoyproxy/envoy/commit/e9f936d85dc1edc34fabd0a1725ec180f2316353",
+  "comments_url": "https://api.github.com/repos/envoyproxy/envoy/commits/e9f936d85dc1edc34fabd0a1725ec180f2316353/comments",
+  "author": {
+    "login": "yanavlasov",
+    "id": 6360027,
+    "node_id": "MDQ6VXNlcjYzNjAwMjc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6360027?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yanavlasov",
+    "html_url": "https://github.com/yanavlasov",
+    "followers_url": "https://api.github.com/users/yanavlasov/followers",
+    "following_url": "https://api.github.com/users/yanavlasov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yanavlasov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yanavlasov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yanavlasov/subscriptions",
+    "organizations_url": "https://api.github.com/users/yanavlasov/orgs",
+    "repos_url": "https://api.github.com/users/yanavlasov/repos",
+    "events_url": "https://api.github.com/users/yanavlasov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yanavlasov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "RyanTheOptimist",
+    "id": 19561162,
+    "node_id": "MDQ6VXNlcjE5NTYxMTYy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19561162?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/RyanTheOptimist",
+    "html_url": "https://github.com/RyanTheOptimist",
+    "followers_url": "https://api.github.com/users/RyanTheOptimist/followers",
+    "following_url": "https://api.github.com/users/RyanTheOptimist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/RyanTheOptimist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/RyanTheOptimist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/RyanTheOptimist/subscriptions",
+    "organizations_url": "https://api.github.com/users/RyanTheOptimist/orgs",
+    "repos_url": "https://api.github.com/users/RyanTheOptimist/repos",
+    "events_url": "https://api.github.com/users/RyanTheOptimist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/RyanTheOptimist/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9371333230b1a6e1be2eccf4868771e11af6253a",
+      "url": "https://api.github.com/repos/envoyproxy/envoy/commits/9371333230b1a6e1be2eccf4868771e11af6253a",
+      "html_url": "https://github.com/envoyproxy/envoy/commit/9371333230b1a6e1be2eccf4868771e11af6253a"
+    }
+  ],
+  "stats": {
+    "total": 197,
+    "additions": 196,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1d839be7e45a1a5611ea83824be903face7e8f9c",
+      "filename": "envoy/ssl/certificate_validation_context_config.h",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/e9f936d85dc1edc34fabd0a1725ec180f2316353/envoy%2Fssl%2Fcertificate_validation_context_config.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/e9f936d85dc1edc34fabd0a1725ec180f2316353/envoy%2Fssl%2Fcertificate_validation_context_config.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/envoy%2Fssl%2Fcertificate_validation_context_config.h?ref=e9f936d85dc1edc34fabd0a1725ec180f2316353",
+      "patch": "@@ -15,6 +15,11 @@\n namespace Envoy {\n namespace Ssl {\n \n+// SECURITY NOTE\n+//\n+// When adding or changing this interface, it is likely that a change is needed to\n+// `DefaultCertValidator::updateDigestForSessionId` in\n+// `source/extensions/transport_sockets/tls/cert_validator/default_validator.cc`.\n class CertificateValidationContextConfig {\n public:\n   virtual ~CertificateValidationContextConfig() = default;"
+    },
+    {
+      "sha": "57d18c595210fd4003535cf87f561c00c9416014",
+      "filename": "source/extensions/transport_sockets/tls/cert_validator/cert_validator.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/e9f936d85dc1edc34fabd0a1725ec180f2316353/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fcert_validator.h",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/e9f936d85dc1edc34fabd0a1725ec180f2316353/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fcert_validator.h",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fcert_validator.h?ref=e9f936d85dc1edc34fabd0a1725ec180f2316353",
+      "patch": "@@ -62,7 +62,10 @@ class CertValidator {\n                                     bool handshaker_provides_certificates) PURE;\n \n   /**\n-   * Called when calculation hash for session context ids\n+   * Called when calculation hash for session context ids. This hash MUST include all\n+   * configuration used to validate a peer certificate, so that if this configuration\n+   * is changed, sessions cannot be re-used and must be re-negotiated and re-validated\n+   * using the new settings.\n    *\n    * @param md the store context\n    * @param hash_buffer the buffer used for digest calculation"
+    },
+    {
+      "sha": "da61d6115c024552758ac7146f5ee8b6cd8e4c2d",
+      "filename": "source/extensions/transport_sockets/tls/cert_validator/default_validator.cc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 0,
+      "changes": 29,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/e9f936d85dc1edc34fabd0a1725ec180f2316353/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fdefault_validator.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/e9f936d85dc1edc34fabd0a1725ec180f2316353/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fdefault_validator.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/source%2Fextensions%2Ftransport_sockets%2Ftls%2Fcert_validator%2Fdefault_validator.cc?ref=e9f936d85dc1edc34fabd0a1725ec180f2316353",
+      "patch": "@@ -378,6 +378,35 @@ void DefaultCertValidator::updateDigestForSessionId(bssl::ScopedEVP_MD_CTX& md,\n                               sizeof(std::remove_reference<decltype(hash)>::type::value_type));\n     RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n   }\n+\n+  rc = EVP_DigestUpdate(md.get(), &verify_trusted_ca_, sizeof(verify_trusted_ca_));\n+  RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+\n+  if (config_ != nullptr) {\n+    for (const auto& matcher : config_->subjectAltNameMatchers()) {\n+      size_t hash = MessageUtil::hash(matcher);\n+      rc = EVP_DigestUpdate(md.get(), &hash, sizeof(hash));\n+      RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+    }\n+\n+    const std::string& crl = config_->certificateRevocationList();\n+    if (!crl.empty()) {\n+      rc = EVP_DigestUpdate(md.get(), crl.data(), crl.length());\n+      RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+    }\n+\n+    bool allow_expired = config_->allowExpiredCertificate();\n+    rc = EVP_DigestUpdate(md.get(), &allow_expired, sizeof(allow_expired));\n+    RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+\n+    auto trust_chain_verification = config_->trustChainVerification();\n+    rc = EVP_DigestUpdate(md.get(), &trust_chain_verification, sizeof(trust_chain_verification));\n+    RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+\n+    auto only_leaf_crl = config_->onlyVerifyLeafCertificateCrl();\n+    rc = EVP_DigestUpdate(md.get(), &only_leaf_crl, sizeof(only_leaf_crl));\n+    RELEASE_ASSERT(rc == 1, Utility::getLastCryptoError().value_or(\"\"));\n+  }\n }\n \n void DefaultCertValidator::addClientValidationContext(SSL_CTX* ctx, bool require_client_cert) {"
+    },
+    {
+      "sha": "06b61503fe81b2757debb1ad6fbfcaedfb0d6b57",
+      "filename": "test/extensions/transport_sockets/tls/ssl_socket_test.cc",
+      "status": "modified",
+      "additions": 158,
+      "deletions": 0,
+      "changes": 158,
+      "blob_url": "https://github.com/envoyproxy/envoy/blob/e9f936d85dc1edc34fabd0a1725ec180f2316353/test%2Fextensions%2Ftransport_sockets%2Ftls%2Fssl_socket_test.cc",
+      "raw_url": "https://github.com/envoyproxy/envoy/raw/e9f936d85dc1edc34fabd0a1725ec180f2316353/test%2Fextensions%2Ftransport_sockets%2Ftls%2Fssl_socket_test.cc",
+      "contents_url": "https://api.github.com/repos/envoyproxy/envoy/contents/test%2Fextensions%2Ftransport_sockets%2Ftls%2Fssl_socket_test.cc?ref=e9f936d85dc1edc34fabd0a1725ec180f2316353",
+      "patch": "@@ -3373,6 +3373,164 @@ TEST_P(SslSocketTest, TicketSessionResumptionDifferentServerNames) {\n                               client_ctx_yaml, false, GetParam());\n }\n \n+// Sessions cannot be resumed even though the server certificates are the same,\n+// because of the different `verify_certificate_hash` settings.\n+TEST_P(SslSocketTest, TicketSessionResumptionDifferentVerifyCertHash) {\n+  const std::string server_ctx_yaml1 = absl::StrCat(R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      verify_certificate_hash:\n+        - \")EOF\",\n+                                                    TEST_SAN_URI_CERT_256_HASH, \"\\\"\");\n+\n+  const std::string server_ctx_yaml2 = absl::StrCat(R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      verify_certificate_hash:\n+        - \"0000000000000000000000000000000000000000000000000000000000000000\"\n+        - \")EOF\",\n+                                                    TEST_SAN_URI_CERT_256_HASH, \"\\\"\");\n+\n+  const std::string client_ctx_yaml = R\"EOF(\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_key.pem\"\n+)EOF\";\n+\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml1, {}, client_ctx_yaml, true,\n+                              GetParam());\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml2, {}, client_ctx_yaml, false,\n+                              GetParam());\n+}\n+\n+// Sessions cannot be resumed even though the server certificates are the same,\n+// because of the different `verify_certificate_spki` settings.\n+TEST_P(SslSocketTest, TicketSessionResumptionDifferentVerifyCertSpki) {\n+  const std::string server_ctx_yaml1 = absl::StrCat(R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      verify_certificate_spki:\n+        - \")EOF\",\n+                                                    TEST_SAN_URI_CERT_SPKI, \"\\\"\");\n+\n+  const std::string server_ctx_yaml2 = absl::StrCat(R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      verify_certificate_spki:\n+        - \"NvqYIYSbgK2vCJpQhObf77vv+bQWtc5ek5RIOwPiC9A=\"\n+        - \")EOF\",\n+                                                    TEST_SAN_URI_CERT_SPKI, \"\\\"\");\n+\n+  const std::string client_ctx_yaml = R\"EOF(\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_key.pem\"\n+)EOF\";\n+\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml1, {}, client_ctx_yaml, true,\n+                              GetParam());\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml2, {}, client_ctx_yaml, false,\n+                              GetParam());\n+}\n+\n+// Sessions cannot be resumed even though the server certificates are the same,\n+// because of the different `match_subject_alt_names` settings.\n+TEST_P(SslSocketTest, TicketSessionResumptionDifferentMatchSAN) {\n+  const std::string server_ctx_yaml1 = R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      match_subject_alt_names:\n+        - exact: \"spiffe://lyft.com/test-team\"\n+)EOF\";\n+\n+  const std::string server_ctx_yaml2 = R\"EOF(\n+  session_ticket_keys:\n+    keys:\n+      filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ticket_key_a\"\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/unittest_key.pem\"\n+    validation_context:\n+      trusted_ca:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/ca_cert.pem\"\n+      match_subject_alt_names:\n+        - prefix: \"spiffe://lyft.com/test-team\"\n+\")EOF\";\n+\n+  const std::string client_ctx_yaml = R\"EOF(\n+  common_tls_context:\n+    tls_certificates:\n+      certificate_chain:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_cert.pem\"\n+      private_key:\n+        filename: \"{{ test_rundir }}/test/extensions/transport_sockets/tls/test_data/san_uri_key.pem\"\n+)EOF\";\n+\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml1, {}, client_ctx_yaml, true,\n+                              GetParam());\n+  testTicketSessionResumption(server_ctx_yaml1, {}, server_ctx_yaml2, {}, client_ctx_yaml, false,\n+                              GetParam());\n+}\n+\n // Sessions can be resumed because the server certificates are different but the CN/SANs and\n // issuer are identical\n TEST_P(SslSocketTest, TicketSessionResumptionDifferentServerCert) {"
+    }
+  ]
+}

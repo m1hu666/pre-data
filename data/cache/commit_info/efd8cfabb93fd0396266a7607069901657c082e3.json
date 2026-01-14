@@ -1,0 +1,101 @@
+{
+  "sha": "efd8cfabb93fd0396266a7607069901657c082e3",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOmVmZDhjZmFiYjkzZmQwMzk2MjY2YTc2MDcwNjk5MDE2NTdjMDgyZTM=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2018-04-27T09:41:18Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2018-04-27T09:41:18Z"
+    },
+    "message": "X3F parser possible buffer overrun",
+    "tree": {
+      "sha": "f652962999eaa444171a3f633966a8580c9b06b0",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/f652962999eaa444171a3f633966a8580c9b06b0"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/efd8cfabb93fd0396266a7607069901657c082e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/efd8cfabb93fd0396266a7607069901657c082e3",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/efd8cfabb93fd0396266a7607069901657c082e3",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/efd8cfabb93fd0396266a7607069901657c082e3/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "87144aa9bb7325b09965b183fa58f957a9a4e4fd",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/87144aa9bb7325b09965b183fa58f957a9a4e4fd",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/87144aa9bb7325b09965b183fa58f957a9a4e4fd"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 7,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "7cec17faed8b7ac910237e19544e93cdbf6ac079",
+      "filename": "src/libraw_cxx.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 12,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/efd8cfabb93fd0396266a7607069901657c082e3/src%2Flibraw_cxx.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/efd8cfabb93fd0396266a7607069901657c082e3/src%2Flibraw_cxx.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/src%2Flibraw_cxx.cpp?ref=efd8cfabb93fd0396266a7607069901657c082e3",
+      "patch": "@@ -5484,17 +5484,19 @@ void x3f_clear(void *p)\n   x3f_delete((x3f_t*)p);\n }\n \n-static char *utf2char(utf16_t *str, char *buffer)\n+void utf2char(utf16_t *str, char *buffer, unsigned bufsz)\n {\n+ if(bufsz<1) return;\n+ buffer[bufsz-1] = 0;\n   char *b = buffer;\n \n-  while (*str != 0x00) {\n+  while (*str != 0x00 && --bufsz>0)\n+  {\n     char *chr = (char *)str;\n     *b++ = *chr;\n     str++;\n   }\n   *b = 0;\n-  return buffer;\n }\n \n static void *lr_memmem(const void *l, size_t l_len, const void *s, size_t s_len)\n@@ -5555,8 +5557,8 @@ void LibRaw::parse_x3f()\n \t\t  x3f_property_t *P = PL->property_table.element;\n \t\t  for (i=0; i<PL->num_properties; i++) {\n \t\t\t  char name[100], value[100];\n-\t\t\t  utf2char(P[i].name,name);\n-\t\t\t  utf2char(P[i].value,value);\n+\t\t\t  utf2char(P[i].name,name,sizeof(name));\n+\t\t\t  utf2char(P[i].value,value,sizeof(value));\n \t\t\t  if (!strcmp (name, \"ISO\"))\n \t\t\t\t  imgdata.other.iso_speed = atoi(value);\n \t\t\t  if (!strcmp (name, \"CAMMANUF\"))"
+    }
+  ]
+}

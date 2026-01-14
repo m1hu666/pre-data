@@ -1,0 +1,149 @@
+{
+  "sha": "8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+  "node_id": "MDY6Q29tbWl0OTc5MTkyOjg2ODJhZDIwNDM5MmI5MTRhYjFjYzZlYmNjYTljMjdjMTljMWE0YjQ=",
+  "commit": {
+    "author": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2017-12-06T08:46:47Z"
+    },
+    "committer": {
+      "name": "Alex Tutubalin",
+      "email": "lexa@lexa.ru",
+      "date": "2018-01-19T05:52:22Z"
+    },
+    "message": "0.18.17",
+    "tree": {
+      "sha": "0921e97cd7c71bc36a69dbba3d64dda4305ea7a7",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/git/trees/0921e97cd7c71bc36a69dbba3d64dda4305ea7a7"
+    },
+    "url": "https://api.github.com/repos/LibRaw/LibRaw/git/commits/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+  "html_url": "https://github.com/LibRaw/LibRaw/commit/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+  "comments_url": "https://api.github.com/repos/LibRaw/LibRaw/commits/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/comments",
+  "author": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "alextutubalin",
+    "id": 443031,
+    "node_id": "MDQ6VXNlcjQ0MzAzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/443031?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alextutubalin",
+    "html_url": "https://github.com/alextutubalin",
+    "followers_url": "https://api.github.com/users/alextutubalin/followers",
+    "following_url": "https://api.github.com/users/alextutubalin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alextutubalin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alextutubalin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alextutubalin/subscriptions",
+    "organizations_url": "https://api.github.com/users/alextutubalin/orgs",
+    "repos_url": "https://api.github.com/users/alextutubalin/repos",
+    "events_url": "https://api.github.com/users/alextutubalin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alextutubalin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b829580cca716c26e9dc441bb2a64bd56dd3e4c2",
+      "url": "https://api.github.com/repos/LibRaw/LibRaw/commits/b829580cca716c26e9dc441bb2a64bd56dd3e4c2",
+      "html_url": "https://github.com/LibRaw/LibRaw/commit/b829580cca716c26e9dc441bb2a64bd56dd3e4c2"
+    }
+  ],
+  "stats": {
+    "total": 95,
+    "additions": 93,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "c9fc5209bb434d6d159e68dfbe11e9d3a90eec23",
+      "filename": "Changelog.txt",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/Changelog.txt",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/Changelog.txt",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/Changelog.txt?ref=8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+      "patch": "@@ -1,3 +1,12 @@\n+2018-01-19  Alex Tutubalin <lexa@lexa.ru>\n+Secunia #79000: \n+Credit: Laurent Delosieres, Secunia Research at Flexera\n+ * All legacy (RGB raw) image loaders checks for imgdata.image is not NULL\n+ * kodak_radc_load_raw: check image size before processing\n+ * legacy memory allocator: allocate max(widh,raw_width)*max(height,raw_height)\n+ * LibRaw 0.18.7\n+\n+\n 2017-12-06  Alex Tutubalin <lexa@lexa.ru>\n Secunia #76000:\n  * Fixed fuji_width handling if file is neither fuji nor DNG"
+    },
+    {
+      "sha": "c313c912a17f21e46747556a286a989bcabe12ac",
+      "filename": "dcraw/dcraw.c",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 0,
+      "changes": 45,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/dcraw%2Fdcraw.c",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/dcraw%2Fdcraw.c",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/dcraw%2Fdcraw.c?ref=8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+      "patch": "@@ -1623,6 +1623,10 @@ void CLASS nikon_load_raw()\n \n void CLASS nikon_yuv_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   int row, col, yuv[4], rgb[3], b, c;\n   UINT64 bitbuf=0;\n   float cmul[4];\n@@ -2444,6 +2448,10 @@ void CLASS sinar_4shot_load_raw()\n     unpacked_load_raw();\n     return;\n   }\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  else if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   pixel = (ushort *) calloc (raw_width, sizeof *pixel);\n   merror (pixel, \"sinar_4shot_load_raw()\");\n #ifdef LIBRAW_LIBRARY_BUILD\n@@ -2963,6 +2971,11 @@ void CLASS quicktake_100_load_raw()\n \n void CLASS kodak_radc_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  // All kodak radc images are 768x512\n+  if(width>768 || raw_width>768 || height > 512 || raw_height>512 )\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   static const signed char src[] = {\n     1,1, 2,3, 3,4, 4,2, 5,7, 6,5, 7,6, 7,8,\n     1,0, 2,1, 3,3, 4,4, 5,2, 6,7, 7,6, 8,5, 8,8,\n@@ -3214,6 +3227,10 @@ void CLASS gamma_curve (double pwr, double ts, int mode, int imax);\n \n void CLASS lossy_dng_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   struct jpeg_decompress_struct cinfo;\n   struct jpeg_error_mgr jerr;\n   JSAMPARRAY buf;\n@@ -3345,6 +3362,10 @@ void CLASS eight_bit_load_raw()\n \n void CLASS kodak_c330_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   uchar *pixel;\n   int row, col, y, cb, cr, rgb[3], c;\n \n@@ -3382,6 +3403,10 @@ void CLASS kodak_c330_load_raw()\n \n void CLASS kodak_c603_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   uchar *pixel;\n   int row, col, y, cb, cr, rgb[3], c;\n \n@@ -3545,6 +3570,10 @@ void CLASS kodak_65000_load_raw()\n \n void CLASS kodak_ycbcr_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   short buf[384], *bp;\n   int row, col, len, c, i, j, k, y[2][2], cb, cr, rgb[3];\n   ushort *ip;\n@@ -3579,6 +3608,10 @@ void CLASS kodak_ycbcr_load_raw()\n \n void CLASS kodak_rgb_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   short buf[768], *bp;\n   int row, col, len, c, i, rgb[3],ret;\n   ushort *ip=image[0];\n@@ -3607,6 +3640,10 @@ void CLASS kodak_rgb_load_raw()\n \n void CLASS kodak_thumb_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   int row, col;\n   colors = thumb_misc >> 5;\n   for (row=0; row < height; row++)\n@@ -4229,6 +4266,10 @@ void CLASS foveon_thumb()\n \n void CLASS foveon_sd_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   struct decode *dindex;\n   short diff[1024];\n   unsigned bitbuf=0;\n@@ -4279,6 +4320,10 @@ void CLASS foveon_huff (ushort *huff)\n \n void CLASS foveon_dp_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   unsigned c, roff[4], row, col, diff;\n   ushort huff[512], vpred[2][2], hpred[2];\n "
+    },
+    {
+      "sha": "520d19aea5a3e0ee180ce527ef5a680c1974b695",
+      "filename": "internal/dcraw_common.cpp",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/internal%2Fdcraw_common.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/internal%2Fdcraw_common.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/internal%2Fdcraw_common.cpp?ref=8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+      "patch": "@@ -1340,6 +1340,10 @@ void CLASS nikon_load_raw()\n \n void CLASS nikon_yuv_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   int row, col, yuv[4], rgb[3], b, c;\n   UINT64 bitbuf=0;\n   float cmul[4];\n@@ -2156,6 +2160,10 @@ void CLASS sinar_4shot_load_raw()\n     unpacked_load_raw();\n     return;\n   }\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  else if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   pixel = (ushort *) calloc (raw_width, sizeof *pixel);\n   merror (pixel, \"sinar_4shot_load_raw()\");\n #ifdef LIBRAW_LIBRARY_BUILD\n@@ -2675,6 +2683,11 @@ void CLASS quicktake_100_load_raw()\n \n void CLASS kodak_radc_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  // All kodak radc images are 768x512\n+  if(width>768 || raw_width>768 || height > 512 || raw_height>512 )\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   static const signed char src[] = {\n     1,1, 2,3, 3,4, 4,2, 5,7, 6,5, 7,6, 7,8,\n     1,0, 2,1, 3,3, 4,4, 5,2, 6,7, 7,6, 8,5, 8,8,\n@@ -2926,6 +2939,10 @@ void CLASS gamma_curve (double pwr, double ts, int mode, int imax);\n \n void CLASS lossy_dng_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   struct jpeg_decompress_struct cinfo;\n   struct jpeg_error_mgr jerr;\n   JSAMPARRAY buf;\n@@ -3057,6 +3074,10 @@ void CLASS eight_bit_load_raw()\n \n void CLASS kodak_c330_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   uchar *pixel;\n   int row, col, y, cb, cr, rgb[3], c;\n \n@@ -3094,6 +3115,10 @@ void CLASS kodak_c330_load_raw()\n \n void CLASS kodak_c603_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   uchar *pixel;\n   int row, col, y, cb, cr, rgb[3], c;\n \n@@ -3257,6 +3282,10 @@ void CLASS kodak_65000_load_raw()\n \n void CLASS kodak_ycbcr_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   short buf[384], *bp;\n   int row, col, len, c, i, j, k, y[2][2], cb, cr, rgb[3];\n   ushort *ip;\n@@ -3291,6 +3320,10 @@ void CLASS kodak_ycbcr_load_raw()\n \n void CLASS kodak_rgb_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   short buf[768], *bp;\n   int row, col, len, c, i, rgb[3],ret;\n   ushort *ip=image[0];\n@@ -3319,6 +3352,10 @@ void CLASS kodak_rgb_load_raw()\n \n void CLASS kodak_thumb_load_raw()\n {\n+#ifdef LIBRAW_LIBRARY_BUILD\n+  if(!image)\n+    throw LIBRAW_EXCEPTION_IO_CORRUPT;\n+#endif\n   int row, col;\n   colors = thumb_misc >> 5;\n   for (row=0; row < height; row++)"
+    },
+    {
+      "sha": "b6cacec67d870e7c327b519a3dd29aad94510f16",
+      "filename": "libraw/libraw_version.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/libraw%2Flibraw_version.h",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/libraw%2Flibraw_version.h",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/libraw%2Flibraw_version.h?ref=8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+      "patch": "@@ -22,7 +22,7 @@ it under the terms of the one of two licenses as you choose:\n \n #define LIBRAW_MAJOR_VERSION  0\n #define LIBRAW_MINOR_VERSION  18\n-#define LIBRAW_PATCH_VERSION  6\n+#define LIBRAW_PATCH_VERSION  7\n #define LIBRAW_VERSION_TAIL   Release\n \n #define LIBRAW_SHLIB_CURRENT  \t16"
+    },
+    {
+      "sha": "d24222283dcaf8f7b456748026bf4b7da2eb7628",
+      "filename": "src/libraw_cxx.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/LibRaw/LibRaw/blob/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/src%2Flibraw_cxx.cpp",
+      "raw_url": "https://github.com/LibRaw/LibRaw/raw/8682ad204392b914ab1cc6ebcca9c27c19c1a4b4/src%2Flibraw_cxx.cpp",
+      "contents_url": "https://api.github.com/repos/LibRaw/LibRaw/contents/src%2Flibraw_cxx.cpp?ref=8682ad204392b914ab1cc6ebcca9c27c19c1a4b4",
+      "patch": "@@ -2508,7 +2508,7 @@ int LibRaw::unpack(void)\n \t\t\t\tS.raw_pitch = (decoder_info.decoder_flags & LIBRAW_DECODER_LEGACY_WITH_MARGINS) ? S.raw_width*8 : S.width*8;\n             // allocate image as temporary buffer, size\n             imgdata.rawdata.raw_alloc = 0;\n-            imgdata.image = (ushort (*)[4]) calloc(unsigned(S.raw_width)*unsigned(S.raw_height),sizeof(*imgdata.image));\n+            imgdata.image = (ushort (*)[4]) calloc(unsigned(MAX(S.width,S.raw_width))*unsigned(MAX(S.height,S.raw_height)),sizeof(*imgdata.image));\n \t\t\tif(!(decoder_info.decoder_flags &  LIBRAW_DECODER_ADOBECOPYPIXEL))\n \t\t\t{\n \t\t\t\timgdata.rawdata.raw_image = (ushort*) imgdata.image ;"
+    }
+  ]
+}

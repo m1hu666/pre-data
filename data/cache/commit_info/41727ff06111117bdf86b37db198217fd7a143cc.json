@@ -1,0 +1,101 @@
+{
+  "sha": "41727ff06111117bdf86b37db198217fd7a143cc",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6NDE3MjdmZjA2MTExMTE3YmRmODZiMzdkYjE5ODIxN2ZkN2ExNDNjYw==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-05-11T22:41:51Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-05-11T22:58:01Z"
+    },
+    "message": "Validate that a and b are proper sparse tensors\n\nPiperOrigin-RevId: 373248068\nChange-Id: I0a2041a0747901b3f00387a6a3bce9bca6b0b3b1",
+    "tree": {
+      "sha": "2ca0eaa623392a0006a073d9059c600d850546e3",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/2ca0eaa623392a0006a073d9059c600d850546e3"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/41727ff06111117bdf86b37db198217fd7a143cc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/41727ff06111117bdf86b37db198217fd7a143cc",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/41727ff06111117bdf86b37db198217fd7a143cc",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/41727ff06111117bdf86b37db198217fd7a143cc/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6f432d6334edc93fd5af0070170def56b0413e8a",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6f432d6334edc93fd5af0070170def56b0413e8a",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/6f432d6334edc93fd5af0070170def56b0413e8a"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 12,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "2bd05fa41adc268d776eb738aefa7f27bf909c09",
+      "filename": "tensorflow/core/kernels/sparse_add_op.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 17,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/41727ff06111117bdf86b37db198217fd7a143cc/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/41727ff06111117bdf86b37db198217fd7a143cc/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fsparse_add_op.cc?ref=41727ff06111117bdf86b37db198217fd7a143cc",
+      "patch": "@@ -44,6 +44,11 @@ class SparseAddOp : public OpKernel {\n                     b_indices->shape().DebugString()));\n     const int64 a_nnz = a_indices->dim_size(0);\n     const int64 b_nnz = b_indices->dim_size(0);\n+    const int num_dims = a_indices->dim_size(1);\n+    OP_REQUIRES(ctx, b_indices->dim_size(1) == num_dims,\n+                errors::InvalidArgument(\n+                    \"Input indices must have the same dimension, got \",\n+                    num_dims, \" and \", b_indices->dim_size(1)));\n \n     OP_REQUIRES_OK(ctx, ctx->input(\"a_values\", &a_values_t));\n     OP_REQUIRES_OK(ctx, ctx->input(\"b_values\", &b_values_t));\n@@ -72,6 +77,13 @@ class SparseAddOp : public OpKernel {\n                     \"Input shapes should be a vector but received shapes \",\n                     a_shape->shape().DebugString(), \" and \",\n                     b_shape->shape().DebugString()));\n+    OP_REQUIRES(\n+        ctx, a_shape->NumElements() == num_dims,\n+        errors::InvalidArgument(\"Second dimension of a_indices and length of \"\n+                                \"a_shape must match, got \",\n+                                num_dims, \" and \", a_shape->NumElements()));\n+    OP_REQUIRES(ctx, num_dims > 0,\n+                errors::InvalidArgument(\"Tesors must not be empty\"));\n     OP_REQUIRES(\n         ctx, a_shape->IsSameSize(*b_shape),\n         errors::InvalidArgument(\n@@ -100,11 +112,6 @@ class SparseAddOp : public OpKernel {\n     std::vector<std::pair<bool, int64>> entries_to_copy;  // from_a?, idx\n     entries_to_copy.reserve(a_nnz + b_nnz);\n     std::vector<T> out_values;\n-    const int num_dims = a_shape->dim_size(0);\n-\n-    OP_REQUIRES(ctx, num_dims > 0,\n-                errors::InvalidArgument(\"Invalid input_a shape. Received: \",\n-                                        a_shape->DebugString()));\n \n     // The input and output sparse tensors are assumed to be ordered along\n     // increasing dimension number."
+    }
+  ]
+}

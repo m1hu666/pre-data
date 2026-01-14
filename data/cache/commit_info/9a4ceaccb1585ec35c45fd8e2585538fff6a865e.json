@@ -1,0 +1,101 @@
+{
+  "sha": "9a4ceaccb1585ec35c45fd8e2585538fff6a865e",
+  "node_id": "MDY6Q29tbWl0MzQzNzQzNzM6OWE0Y2VhY2NiMTU4NWVjMzVjNDVmZDhlMjU4NTUzOGZmZjZhODY1ZQ==",
+  "commit": {
+    "author": {
+      "name": "Sylvain Rebaud",
+      "email": "sylvain@plutinosoft.com",
+      "date": "2019-07-23T06:07:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-07-23T06:07:31Z"
+    },
+    "message": "Fix vulnerability around urls crafter as http://host/../secret.foo (#24)",
+    "tree": {
+      "sha": "e99e030cdada0e5a8768e2fb9f1c3bb69272499f",
+      "url": "https://api.github.com/repos/plutinosoft/Platinum/git/trees/e99e030cdada0e5a8768e2fb9f1c3bb69272499f"
+    },
+    "url": "https://api.github.com/repos/plutinosoft/Platinum/git/commits/9a4ceaccb1585ec35c45fd8e2585538fff6a865e",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdNqQjCRBK7hj4Ov3rIwAAdHIIAFKo42HJmsMVO1uJhKt0gfy0\nWhYU1GsXxLKxNuP7MFLuxlo/SLZJaP9mkh9+kGRquchu+HM5g/MZYzJJ52M295Uk\nFVSMBoHNO6ZOwIv4yqbNE1ew0LAamMVxgKQJehpsqPIXXaAqfcuDFrTO9JNTl6ss\nJYjFUxm8XwwNx+6I/KeCCBHKzfyP7oYh+/gwg5RI/9lPuJ9GIsc2a0pR6Qc1fRjn\neqXSRXNKmmWXsuf080Ci9sMamlPOftGsHfV5ei1jaByk8KQ6OE7f5bR8fddZd9G5\nOhM3BhwPDz9OmqsEATHSBRILIw0AGOk8ct1wvspU22INFOIFDonN6xDn4tfHx0g=\n=hUGI\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e99e030cdada0e5a8768e2fb9f1c3bb69272499f\nparent 39c91be082a7894928d15bfd45e334b64f6a6882\nauthor Sylvain Rebaud <sylvain@plutinosoft.com> 1563862051 -0700\ncommitter GitHub <noreply@github.com> 1563862051 -0700\n\nFix vulnerability around urls crafter as http://host/../secret.foo (#24)\n\n",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/plutinosoft/Platinum/commits/9a4ceaccb1585ec35c45fd8e2585538fff6a865e",
+  "html_url": "https://github.com/plutinosoft/Platinum/commit/9a4ceaccb1585ec35c45fd8e2585538fff6a865e",
+  "comments_url": "https://api.github.com/repos/plutinosoft/Platinum/commits/9a4ceaccb1585ec35c45fd8e2585538fff6a865e/comments",
+  "author": {
+    "login": "c0diq",
+    "id": 172535,
+    "node_id": "MDQ6VXNlcjE3MjUzNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/172535?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/c0diq",
+    "html_url": "https://github.com/c0diq",
+    "followers_url": "https://api.github.com/users/c0diq/followers",
+    "following_url": "https://api.github.com/users/c0diq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/c0diq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/c0diq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/c0diq/subscriptions",
+    "organizations_url": "https://api.github.com/users/c0diq/orgs",
+    "repos_url": "https://api.github.com/users/c0diq/repos",
+    "events_url": "https://api.github.com/users/c0diq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/c0diq/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "39c91be082a7894928d15bfd45e334b64f6a6882",
+      "url": "https://api.github.com/repos/plutinosoft/Platinum/commits/39c91be082a7894928d15bfd45e334b64f6a6882",
+      "html_url": "https://github.com/plutinosoft/Platinum/commit/39c91be082a7894928d15bfd45e334b64f6a6882"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4cdcf49fa927c65688ab2d969e8d2ab3b3198037",
+      "filename": "Source/Core/PltHttpServer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/plutinosoft/Platinum/blob/9a4ceaccb1585ec35c45fd8e2585538fff6a865e/Source%2FCore%2FPltHttpServer.cpp",
+      "raw_url": "https://github.com/plutinosoft/Platinum/raw/9a4ceaccb1585ec35c45fd8e2585538fff6a865e/Source%2FCore%2FPltHttpServer.cpp",
+      "contents_url": "https://api.github.com/repos/plutinosoft/Platinum/contents/Source%2FCore%2FPltHttpServer.cpp?ref=9a4ceaccb1585ec35c45fd8e2585538fff6a865e",
+      "patch": "@@ -190,7 +190,7 @@ PLT_HttpServer::ServeFile(const NPT_HttpRequest&        request,\n     NPT_FileInfo             file_info;\n     \n     // prevent hackers from accessing files outside of our root\n-    if ((file_path.Find(\"/..\") >= 0) || (file_path.Find(\"\\\\..\") >= 0) ||\n+    if ((file_path.Find(\"../\") >= 0) || (file_path.Find(\"..\\\\\") >= 0) ||\n         NPT_FAILED(NPT_File::GetInfo(file_path, &file_info))) {\n         return NPT_ERROR_NO_SUCH_ITEM;\n     }"
+    }
+  ]
+}

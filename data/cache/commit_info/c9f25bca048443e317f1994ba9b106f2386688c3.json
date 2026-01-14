@@ -1,0 +1,101 @@
+{
+  "sha": "c9f25bca048443e317f1994ba9b106f2386688c3",
+  "node_id": "MDY6Q29tbWl0MTYwMDgzNzk1OmM5ZjI1YmNhMDQ4NDQzZTMxN2YxOTk0YmE5YjEwNmYyMzg2Njg4YzM=",
+  "commit": {
+    "author": {
+      "name": "Idan Horowitz",
+      "email": "idan.horowitz@gmail.com",
+      "date": "2021-03-15T14:26:56Z"
+    },
+    "committer": {
+      "name": "Andreas Kling",
+      "email": "kling@serenityos.org",
+      "date": "2021-03-15T15:08:12Z"
+    },
+    "message": "LibTextCodec: Make UTF16BEDecoder read only up to an even offset\n\nReading up to the end of the input string of odd length results in\nan out-of-bounds read",
+    "tree": {
+      "sha": "e21dd2e8155e1c86949edd7e578f469f76e08eae",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/git/trees/e21dd2e8155e1c86949edd7e578f469f76e08eae"
+    },
+    "url": "https://api.github.com/repos/SerenityOS/serenity/git/commits/c9f25bca048443e317f1994ba9b106f2386688c3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/SerenityOS/serenity/commits/c9f25bca048443e317f1994ba9b106f2386688c3",
+  "html_url": "https://github.com/SerenityOS/serenity/commit/c9f25bca048443e317f1994ba9b106f2386688c3",
+  "comments_url": "https://api.github.com/repos/SerenityOS/serenity/commits/c9f25bca048443e317f1994ba9b106f2386688c3/comments",
+  "author": {
+    "login": "IdanHo",
+    "id": 16208640,
+    "node_id": "MDQ6VXNlcjE2MjA4NjQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16208640?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/IdanHo",
+    "html_url": "https://github.com/IdanHo",
+    "followers_url": "https://api.github.com/users/IdanHo/followers",
+    "following_url": "https://api.github.com/users/IdanHo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/IdanHo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/IdanHo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/IdanHo/subscriptions",
+    "organizations_url": "https://api.github.com/users/IdanHo/orgs",
+    "repos_url": "https://api.github.com/users/IdanHo/repos",
+    "events_url": "https://api.github.com/users/IdanHo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/IdanHo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomekling",
+    "id": 5954907,
+    "node_id": "MDQ6VXNlcjU5NTQ5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5954907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomekling",
+    "html_url": "https://github.com/awesomekling",
+    "followers_url": "https://api.github.com/users/awesomekling/followers",
+    "following_url": "https://api.github.com/users/awesomekling/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomekling/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomekling/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomekling/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomekling/orgs",
+    "repos_url": "https://api.github.com/users/awesomekling/repos",
+    "events_url": "https://api.github.com/users/awesomekling/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomekling/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7156b61d579d47636ad57ec0cf127258f65b50a6",
+      "url": "https://api.github.com/repos/SerenityOS/serenity/commits/7156b61d579d47636ad57ec0cf127258f65b50a6",
+      "html_url": "https://github.com/SerenityOS/serenity/commit/7156b61d579d47636ad57ec0cf127258f65b50a6"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b075a81870472739f444a296fbb1001db66c2a34",
+      "filename": "Userland/Libraries/LibTextCodec/Decoder.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/SerenityOS/serenity/blob/c9f25bca048443e317f1994ba9b106f2386688c3/Userland%2FLibraries%2FLibTextCodec%2FDecoder.cpp",
+      "raw_url": "https://github.com/SerenityOS/serenity/raw/c9f25bca048443e317f1994ba9b106f2386688c3/Userland%2FLibraries%2FLibTextCodec%2FDecoder.cpp",
+      "contents_url": "https://api.github.com/repos/SerenityOS/serenity/contents/Userland%2FLibraries%2FLibTextCodec%2FDecoder.cpp?ref=c9f25bca048443e317f1994ba9b106f2386688c3",
+      "patch": "@@ -183,7 +183,8 @@ String UTF8Decoder::to_utf8(const StringView& input)\n String UTF16BEDecoder::to_utf8(const StringView& input)\n {\n     StringBuilder builder(input.length() / 2);\n-    for (size_t i = 0; i < input.length(); i += 2) {\n+    size_t utf16_length = input.length() - (input.length() % 2);\n+    for (size_t i = 0; i < utf16_length; i += 2) {\n         u16 code_point = (input[i] << 8) | input[i + 1];\n         builder.append_code_point(code_point);\n     }"
+    }
+  ]
+}

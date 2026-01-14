@@ -1,0 +1,113 @@
+{
+  "sha": "d229761821da38d984a9e4098ad96842490dc001",
+  "node_id": "MDY6Q29tbWl0NDY1NjgxOmQyMjk3NjE4MjFkYTM4ZDk4NGE5ZTQwOThhZDk2ODQyNDkwZGMwMDE=",
+  "commit": {
+    "author": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2020-03-29T07:45:10Z"
+    },
+    "committer": {
+      "name": "Alexey Sokolov",
+      "email": "alexey+znc@asokolov.org",
+      "date": "2020-03-29T07:45:10Z"
+    },
+    "message": "Fix echo-message for *status\n\nClose #1705",
+    "tree": {
+      "sha": "5b488932453f8f58ea9a6b75a711b1bb37ef3881",
+      "url": "https://api.github.com/repos/znc/znc/git/trees/5b488932453f8f58ea9a6b75a711b1bb37ef3881"
+    },
+    "url": "https://api.github.com/repos/znc/znc/git/commits/d229761821da38d984a9e4098ad96842490dc001",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/znc/znc/commits/d229761821da38d984a9e4098ad96842490dc001",
+  "html_url": "https://github.com/znc/znc/commit/d229761821da38d984a9e4098ad96842490dc001",
+  "comments_url": "https://api.github.com/repos/znc/znc/commits/d229761821da38d984a9e4098ad96842490dc001/comments",
+  "author": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "DarthGandalf",
+    "id": 325092,
+    "node_id": "MDQ6VXNlcjMyNTA5Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/325092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DarthGandalf",
+    "html_url": "https://github.com/DarthGandalf",
+    "followers_url": "https://api.github.com/users/DarthGandalf/followers",
+    "following_url": "https://api.github.com/users/DarthGandalf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DarthGandalf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DarthGandalf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DarthGandalf/subscriptions",
+    "organizations_url": "https://api.github.com/users/DarthGandalf/orgs",
+    "repos_url": "https://api.github.com/users/DarthGandalf/repos",
+    "events_url": "https://api.github.com/users/DarthGandalf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DarthGandalf/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d1ef8d09923388d4d5d390a4db898ca6194a2be",
+      "url": "https://api.github.com/repos/znc/znc/commits/6d1ef8d09923388d4d5d390a4db898ca6194a2be",
+      "html_url": "https://github.com/znc/znc/commit/6d1ef8d09923388d4d5d390a4db898ca6194a2be"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 16,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6d8f4518ba8e82936492f9570ebaf20778c8804a",
+      "filename": "src/Client.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/znc/znc/blob/d229761821da38d984a9e4098ad96842490dc001/src%2FClient.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/d229761821da38d984a9e4098ad96842490dc001/src%2FClient.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/src%2FClient.cpp?ref=d229761821da38d984a9e4098ad96842490dc001",
+      "patch": "@@ -1234,6 +1234,8 @@ bool CClient::OnTextMessage(CTextMessage& Message) {\n         }\n \n         if (sTarget.TrimPrefix(m_pUser->GetStatusPrefix())) {\n+            EchoMessage(Message);\n+\n             if (sTarget.Equals(\"status\")) {\n                 CString sMsg = Message.GetText();\n                 UserCommand(sMsg);"
+    },
+    {
+      "sha": "a3f0d4dab602052a8d8b30734e0bb5e0724217f5",
+      "filename": "test/integration/tests/core.cpp",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 16,
+      "blob_url": "https://github.com/znc/znc/blob/d229761821da38d984a9e4098ad96842490dc001/test%2Fintegration%2Ftests%2Fcore.cpp",
+      "raw_url": "https://github.com/znc/znc/raw/d229761821da38d984a9e4098ad96842490dc001/test%2Fintegration%2Ftests%2Fcore.cpp",
+      "contents_url": "https://api.github.com/repos/znc/znc/contents/test%2Fintegration%2Ftests%2Fcore.cpp?ref=d229761821da38d984a9e4098ad96842490dc001",
+      "patch": "@@ -14,9 +14,10 @@\n  * limitations under the License.\n  */\n \n-#include \"znctest.h\"\n #include <gmock/gmock.h>\n \n+#include \"znctest.h\"\n+\n using testing::HasSubstr;\n \n namespace znc_inttest {\n@@ -244,7 +245,8 @@ TEST_F(ZNCTest, AwayNotify) {\n     client.Write(\"USER user/test x x :x\");\n     QByteArray cap_ls;\n     client.ReadUntilAndGet(\" LS :\", cap_ls);\n-    ASSERT_THAT(cap_ls.toStdString(), AllOf(HasSubstr(\"cap-notify\"), Not(HasSubstr(\"away-notify\"))));\n+    ASSERT_THAT(cap_ls.toStdString(),\n+                AllOf(HasSubstr(\"cap-notify\"), Not(HasSubstr(\"away-notify\"))));\n     client.Write(\"CAP REQ :cap-notify\");\n     client.ReadUntil(\"ACK :cap-notify\");\n     client.Write(\"CAP END\");\n@@ -284,5 +286,15 @@ TEST_F(ZNCTest, JoinKey) {\n     ircd.ReadUntil(\"JOIN #znc secret\");\n }\n \n+TEST_F(ZNCTest, StatusEchoMessage) {\n+    auto znc = Run();\n+    auto ircd = ConnectIRCd();\n+    auto client = LoginClient();\n+    client.Write(\"CAP REQ :echo-message\");\n+    client.Write(\"PRIVMSG *status :blah\");\n+    client.ReadUntil(\":nick!user@irc.znc.in PRIVMSG *status :blah\");\n+    client.ReadUntil(\":*status!znc@znc.in PRIVMSG nick :Unknown command\");\n+}\n+\n }  // namespace\n }  // namespace znc_inttest"
+    }
+  ]
+}

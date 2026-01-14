@@ -1,0 +1,125 @@
+{
+  "sha": "1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjExMDcyMjhhNTEyOGQzY2ExYzRhZGQ4YWMxNjM1ZDkzM2NiYmUyZTk=",
+  "commit": {
+    "author": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-06-29T18:37:01Z"
+    },
+    "committer": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-06-30T23:27:28Z"
+    },
+    "message": "CVE-2020-1899\n\nVariableUnserializer should only recognize type 'S' in APCSerialization mode",
+    "tree": {
+      "sha": "dd5014045096e512397149d7538bd24e1f260022",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/dd5014045096e512397149d7538bd24e1f260022"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+  "html_url": "https://github.com/facebook/hhvm/commit/1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/comments",
+  "author": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1746dfb11fc0048366f34669e74318b8278a684c",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/1746dfb11fc0048366f34669e74318b8278a684c",
+      "html_url": "https://github.com/facebook/hhvm/commit/1746dfb11fc0048366f34669e74318b8278a684c"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 14,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c03843bc9fedbfe83ec8e75bf5b2ec4300bff9a2",
+      "filename": "hphp/runtime/base/variable-unserializer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp?ref=1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+      "patch": "@@ -485,7 +485,7 @@ bool VariableUnserializer::matchString(folly::StringPiece str) {\n   const char* p = m_buf;\n   assertx(p <= m_end);\n   int total = 0;\n-  if (*p == 'S') {\n+  if (*p == 'S' && type() == VariableUnserializer::Type::APCSerialize) {\n     total = 2 + 8 + 1;\n     if (p + total > m_end) return false;\n     p++;"
+    },
+    {
+      "sha": "14f41fec14238c18d7acc0b21d3f03ed8439e864",
+      "filename": "hphp/test/slow/serialization/no-apc-string-pointer.php",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php?ref=1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+      "patch": "@@ -0,0 +1,11 @@\n+<?hh\n+// Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.\n+\n+class Foo {\n+  public $name;\n+}\n+\n+<<__EntryPoint>>\n+function main() {\n+  var_dump(unserialize(\"O:3:\\\"foo\\\":1:{S:\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00;s:5:\\\"value\\\";}\"));\n+}"
+    },
+    {
+      "sha": "f0e34fba0e8409284c49428912d23c3a27a2a27b",
+      "filename": "hphp/test/slow/serialization/no-apc-string-pointer.php.expectf",
+      "status": "added",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/1107228a5128d3ca1c4add8ac1635d933cbbe2e9/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fserialization%2Fno-apc-string-pointer.php.expectf?ref=1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+      "patch": "@@ -0,0 +1,2 @@\n+Notice: Unable to unserialize: [O:3:\"foo\":1:{S:]. Unknown type 'S'. in %s/no-apc-string-pointer.php on line 10\n+bool(false)"
+    }
+  ]
+}

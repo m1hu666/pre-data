@@ -1,0 +1,341 @@
+{
+  "sha": "abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmFiZTBiMjllNGQzYTYxMGY5YmM5MjBiOGJlNGFkODQwMzM2NGMyZDQ=",
+  "commit": {
+    "author": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-11-11T21:34:05Z"
+    },
+    "committer": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-11-12T23:57:35Z"
+    },
+    "message": "security fixes\n\nhttps://hhvm.com/blog/2020/11/12/security-update.html",
+    "tree": {
+      "sha": "dfcd3a2c6460c59f8a93de6064e8908ca0dd2159",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/dfcd3a2c6460c59f8a93de6064e8908ca0dd2159"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEWMcU9CmedY52w28hspqj62d5jHcFAl+ty/4ACgkQspqj62d5\njHcuORAAngaraJpYO94bNVcZ3T87NcXlYVPw5f1fpqa1sBqqlCWSkHBmgAZeyJJc\noePG71/TNMNgfIhE+QmHCZhHjTJh5GfKs7snHoTSJBeOT0ps2yBoX6OdmtJMyk35\n2SrNTmjAtPw7y2uSKmdrdIeZ9IMoP6i8aNpgnUA91qZP4Pt9oXLeO6y/nXFcShOd\ngW/RduzgjUjuCMyUQ7HPD1NUsolG5MsJ8g41f4gyW3Xlb1yDqVev6XPZZ7Ohg1u/\nF/pwazZGADhyyaFgKmIRVEnPQf3LNzxLQ+yrGbofzUPSA0vkHcTc9KdiXVNYJRpJ\n0kEwymEzhvAOHWpNTsq7QnM1CvA+PS13lUuYfNv6DZwbdy1b9k4XG9VCOH0Snmu/\nxZauCEeY1DZZcAWBVUUni0QG4XDtiyPV7HIFbbGgWF7mMkW4XqT5aqxE3z+rxjrO\ngl+ztB9ik6gLPvihER94vWgThlu7kSBC2WY/8GVRgSt9tSpY4YUBvaOj7obNiMAh\nvD9oU/RAmTBFD2BbLCK6vh2U+Cma7yfwqDR+qTKJuoUKTHrNtmm7RnmeH3LSkPiP\nTY85n6j5erxSiWPJYOyy0N+FXGWF9Q9RF8f1voGP2COW1/J/+mcBJoeuVR+NUPpN\n9tQTJDrEMeLoh9JxMuoQqm0lLHKbITfsId8eJ6M4SgX3FMINYEU=\n=m0X2\n-----END PGP SIGNATURE-----",
+      "payload": "tree dfcd3a2c6460c59f8a93de6064e8908ca0dd2159\nparent 5a43f241fa9064323b3195a4398723417004cba7\nauthor jjergus <jjergus@fb.com> 1605130445 -0800\ncommitter jjergus <jjergus@fb.com> 1605225455 -0800\n\nsecurity fixes\n\nhttps://hhvm.com/blog/2020/11/12/security-update.html\n",
+      "verified_at": "2024-11-07T16:45:48Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+  "html_url": "https://github.com/facebook/hhvm/commit/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/comments",
+  "author": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5a43f241fa9064323b3195a4398723417004cba7",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/5a43f241fa9064323b3195a4398723417004cba7",
+      "html_url": "https://github.com/facebook/hhvm/commit/5a43f241fa9064323b3195a4398723417004cba7"
+    }
+  ],
+  "stats": {
+    "total": 229,
+    "additions": 185,
+    "deletions": 44
+  },
+  "files": [
+    {
+      "sha": "b766a8bc20eeb7dde15ca61c17a36eb3483ba262",
+      "filename": "hphp/runtime/base/preg.cpp",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 8,
+      "changes": 17,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fpreg.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fpreg.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fpreg.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -49,6 +49,7 @@\n #include \"hphp/util/logger.h\"\n #include \"hphp/util/concurrent-scalable-cache.h\"\n \n+#include <folly/FileUtil.h>\n #include <folly/json.h>\n \n /* Only defined in pcre >= 8.32 */\n@@ -217,7 +218,7 @@ struct PCRECache {\n             TempKeyCache& keyCache);\n   void insert(Accessor& accessor, const StringData* regex,\n               TempKeyCache& keyCache, const pcre_cache_entry* ent);\n-  void dump(const std::string& filename);\n+  void dump(folly::File& file);\n   size_t size() const;\n \n private:\n@@ -512,12 +513,12 @@ void PCRECache::insert(\n   }\n }\n \n-void PCRECache::dump(const std::string& filename) {\n-  std::ofstream out(filename.c_str());\n+void PCRECache::dump(folly::File& file) {\n   switch (m_kind) {\n     case CacheKind::Static:\n       for (auto& it : *m_staticCache) {\n-        out << it.first->data() << \"\\n\";\n+        folly::writeFull(file.fd(), it.first->data(), it.first->size());\n+        folly::writeFull(file.fd(), \"\\n\", 1);\n       }\n       break;\n     case CacheKind::Lru:\n@@ -530,12 +531,12 @@ void PCRECache::dump(const std::string& filename) {\n           m_scalableCache->snapshotKeys(keys);\n         }\n         for (auto& key: keys) {\n-          out << key.c_str() << \"\\n\";\n+          folly::writeFull(file.fd(), key.data(), key.size());\n+          folly::writeFull(file.fd(), \"\\n\", 1);\n         }\n       }\n       break;\n   }\n-  out.close();\n }\n \n size_t PCRECache::size() const {\n@@ -572,8 +573,8 @@ void pcre_reinit() {\n void pcre_init() {\n }\n \n-void pcre_dump_cache(const std::string& filename) {\n-  s_pcreCache.dump(filename);\n+void pcre_dump_cache(folly::File& file) {\n+  s_pcreCache.dump(file);\n }\n \n static pcre_jit_stack* alloc_jit_stack(void* /*data*/) {"
+    },
+    {
+      "sha": "b3b603567885387eee5823f69bbd01d12b4d694d",
+      "filename": "hphp/runtime/base/preg.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fpreg.h",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fpreg.h",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fpreg.h?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -18,6 +18,7 @@\n \n #include \"hphp/runtime/base/type-string.h\"\n \n+#include <folly/File.h>\n #include <folly/Optional.h>\n \n #include <cstdint>\n@@ -111,9 +112,9 @@ void pcre_reinit();\n void pcre_session_exit();\n \n /*\n- * Dump the contents of the PCRE cache to filename.\n+ * Dump the contents of the PCRE cache to the given file.\n  */\n-void pcre_dump_cache(const std::string& filename);\n+void pcre_dump_cache(folly::File& file);\n \n ///////////////////////////////////////////////////////////////////////////////\n // PHP API"
+    },
+    {
+      "sha": "529061e236f658e105087509302f7f08f78a6c2e",
+      "filename": "hphp/runtime/base/runtime-option.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fruntime-option.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fruntime-option.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fruntime-option.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -54,6 +54,7 @@\n #include \"hphp/util/gzip.h\"\n #include \"hphp/util/hardware-counter.h\"\n #include \"hphp/util/hdf.h\"\n+#include \"hphp/util/light-process.h\"\n #include \"hphp/util/log-file-flusher.h\"\n #include \"hphp/util/logger.h\"\n #include \"hphp/util/network.h\"\n@@ -754,6 +755,7 @@ bool RuntimeOption::AdminServerStatsNeedPassword = true;\n std::string RuntimeOption::AdminPassword;\n std::set<std::string> RuntimeOption::AdminPasswords;\n std::set<std::string> RuntimeOption::HashedAdminPasswords;\n+std::string RuntimeOption::AdminDumpPath;\n \n std::string RuntimeOption::ProxyOriginRaw;\n int RuntimeOption::ProxyPercentageRaw = 0;\n@@ -2398,6 +2400,8 @@ void RuntimeOption::Load(\n                  \"Server.LightProcessFilePrefix\", \"./lightprocess\");\n     Config::Bind(LightProcessCount, ini, config,\n                  \"Server.LightProcessCount\", 0);\n+    Config::Bind(LightProcess::g_strictUser, ini, config,\n+                 \"Server.LightProcessStrictUser\", false);\n     Config::Bind(ForceServerNameToHeader, ini, config,\n                  \"Server.ForceServerNameToHeader\");\n     Config::Bind(AllowDuplicateCookies, ini, config,\n@@ -2513,6 +2517,8 @@ void RuntimeOption::Load(\n     AdminPasswords = Config::GetSet(ini, config, \"AdminServer.Passwords\");\n     HashedAdminPasswords =\n       Config::GetSet(ini, config, \"AdminServer.HashedPasswords\");\n+    Config::Bind(AdminDumpPath, ini, config,\n+                 \"AdminServer.DumpPath\", \"/tmp/hhvm_admin_dump\");\n   }\n   {\n     // Proxy"
+    },
+    {
+      "sha": "80845c6065e26dda5de8fdc46418f1c86ff8caa6",
+      "filename": "hphp/runtime/base/runtime-option.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fruntime-option.h",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fruntime-option.h",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fruntime-option.h?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -496,6 +496,8 @@ struct RuntimeOption {\n   static std::set<std::string> AdminPasswords;\n   static std::set<std::string> HashedAdminPasswords;\n \n+  static std::string AdminDumpPath;\n+\n   /*\n    * Options related to reverse proxying. ProxyOriginRaw and ProxyPercentageRaw\n    * may be mutated by background threads and should only be read or written"
+    },
+    {
+      "sha": "3a346487c2c2e46c500c5f425e2df460632de6bb",
+      "filename": "hphp/runtime/base/string-util.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fstring-util.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fbase%2Fstring-util.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fstring-util.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -435,7 +435,8 @@ String StringUtil::ROT13(const String& input) {\n }\n \n String StringUtil::Crypt(const String& input, const char *salt /* = \"\" */) {\n-  if (salt && salt[0] == '\\0') {\n+  assertx(salt);\n+  if (salt[0] == '\\0') {\n     raise_notice(\"crypt(): No salt parameter was specified.\"\n       \" You must use a randomly generated salt and a strong\"\n       \" hash function to produce a secure hash.\");"
+    },
+    {
+      "sha": "6b5580f18b1ca66b921e473b0a7a90f3e2691bae",
+      "filename": "hphp/runtime/ext/domdocument/ext_domdocument.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fdomdocument%2Fext_domdocument.h",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fdomdocument%2Fext_domdocument.h",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fdomdocument%2Fext_domdocument.h?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -51,7 +51,9 @@ struct DOMNode {\n   // for __clone\n   DOMNode& operator=(const DOMNode& copy);\n \n-  req::ptr<XMLDocumentData> doc() const { return m_node->doc(); }\n+  req::ptr<XMLDocumentData> doc() const {\n+    return m_node ? m_node->doc() : nullptr;\n+  }\n   XMLNode node() const { return m_node; }\n   xmlNodePtr nodep() const {\n     return m_node ? m_node->nodep() : nullptr;"
+    },
+    {
+      "sha": "2a1f20a65091f39f2ec5e3b12ba441a105c9bffa",
+      "filename": "hphp/runtime/ext/gd/libgd/gd.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fgd%2Flibgd%2Fgd.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fgd%2Flibgd%2Fgd.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fgd%2Flibgd%2Fgd.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -185,8 +185,8 @@ gdImagePtr gdImageCreateTrueColor (int sx, int sy)\n \n   // Check for OOM before doing a potentially large allocation.\n   auto allocsz = sizeof(gdImage)\n-    + sy * (sizeof(int *) + sizeof(unsigned char *))\n-    + sx * sy * (sizeof(int) + sizeof(unsigned char));\n+    + (sizeof(int *) + sizeof(unsigned char *)) * sy\n+    + (sizeof(int) + sizeof(unsigned char)) * sx * sy;\n   if (UNLIKELY(precheckOOM(allocsz))) {\n     // Don't throw here because GD might need to do its own cleanup.\n     return NULL;"
+    },
+    {
+      "sha": "54d128b5d62b98f84d89c5298561f1a06a5d437c",
+      "filename": "hphp/runtime/ext/ldap/ext_ldap.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fldap%2Fext_ldap.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fldap%2Fext_ldap.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fldap%2Fext_ldap.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -2139,7 +2139,7 @@ String HHVM_FUNCTION(ldap_escape,\n \n   char hex[] = \"0123456789abcdef\";\n \n-  String result(3 * value.size(), ReserveString);\n+  String result(3UL * value.size(), ReserveString);\n   char *rdata = result.get()->mutableData(), *r = rdata;\n \n   for (int i = 0; i < value.size(); i++) {"
+    },
+    {
+      "sha": "09a6d3cf3bc53f72b9f327cd00bd4f2a65eb8504",
+      "filename": "hphp/runtime/ext/xmlreader/ext_xmlreader.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fxmlreader%2Fext_xmlreader.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fext%2Fxmlreader%2Fext_xmlreader.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fxmlreader%2Fext_xmlreader.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -598,11 +598,11 @@ Variant HHVM_METHOD(XMLReader, expand,\n   if (!basenode.isNull()) {\n     auto dombasenode = Native::data<DOMNode>(basenode.toObject());\n     doc = dombasenode->doc();\n-    docp = doc->docp();\n-    if (docp == nullptr) {\n+    if (doc == nullptr || doc->docp() == nullptr) {\n       raise_warning(\"Invalid State Error\");\n       return false;\n     }\n+    docp = doc->docp();\n   }\n \n   if (data->m_ptr) {"
+    },
+    {
+      "sha": "1c0a00c0c2b77213112ee74cafd590692294e5ff",
+      "filename": "hphp/runtime/server/admin-request-handler.cpp",
+      "status": "modified",
+      "additions": 46,
+      "deletions": 13,
+      "changes": 59,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -76,6 +76,9 @@\n #endif\n \n #include <folly/Conv.h>\n+#include <folly/File.h>\n+#include <folly/FileUtil.h>\n+#include <folly/Optional.h>\n #include <folly/Random.h>\n #include <folly/portability/Unistd.h>\n \n@@ -254,6 +257,34 @@ void AdminRequestHandler::teardownRequest(Transport* transport) noexcept {\n   WarnIfNotOK(transport);\n }\n \n+namespace {\n+\n+// When this struct is destroyed, it will close the file.\n+struct DumpFile {\n+  std::string path;\n+  folly::File file;\n+};\n+\n+folly::Optional<DumpFile> dump_file(const char* name) {\n+  auto const path = folly::sformat(\"{}/{}\", RO::AdminDumpPath, name);\n+\n+  // mkdir -p the directory prefix of `path`\n+  if (FileUtil::mkdir(path) != 0) return folly::none;\n+\n+  // If remove fails because of a permissions issue, then we won't be\n+  // able to open the file for exclusive write below.\n+  remove(path.c_str());\n+\n+  // Create the file, failing if it already exists. Doing so ensures\n+  // that we have write access to the file and that no other user does.\n+  auto const fd = open(path.c_str(), O_CREAT|O_EXCL|O_RDWR, 0666);\n+  if (fd < 0) return folly::none;\n+\n+  return DumpFile{path, folly::File(fd, /*owns=*/true)};\n+}\n+\n+}\n+\n void AdminRequestHandler::handleRequest(Transport *transport) {\n   transport->addHeader(\"Content-Type\", \"text/plain\");\n   std::string cmd = transport->getCommand();\n@@ -714,10 +745,12 @@ void AdminRequestHandler::handleRequest(Transport *transport) {\n       break;\n     }\n     if (strncmp(cmd.c_str(), \"dump-static-strings\", 19) == 0) {\n-      auto filename = transport->getParam(\"file\");\n-      if (filename == \"\") filename = \"/tmp/static_strings\";\n-      handleDumpStaticStringsRequest(cmd, filename);\n-      transport->sendString(\"OK\\n\");\n+      if (auto file = dump_file(\"static_strings\")) {\n+        handleDumpStaticStringsRequest(file->file);\n+        transport->sendString(folly::sformat(\"dumped to {}\\n\", file->path));\n+      } else {\n+        transport->sendString(\"Unable to mkdir or file already exists.\\n\");\n+      }\n       break;\n     }\n     if (strncmp(cmd.c_str(), \"random-static-strings\", 21) == 0) {\n@@ -746,10 +779,12 @@ void AdminRequestHandler::handleRequest(Transport *transport) {\n     }\n \n     if (cmd == \"dump-pcre-cache\") {\n-      auto filename = transport->getParam(\"file\");\n-      if (filename == \"\") filename = \"/tmp/pcre_cache\";\n-      pcre_dump_cache(filename);\n-      transport->sendString(\"OK\\n\");\n+      if (auto file = dump_file(\"pcre_cache\")) {\n+        pcre_dump_cache(file->file);\n+        transport->sendString(folly::sformat(\"dumped to {}\\n\", file->path));\n+      } else {\n+        transport->sendString(\"Unable to mkdir or file already exists.\\n\");\n+      }\n       break;\n     }\n \n@@ -1368,13 +1403,11 @@ std::string formatStaticString(StringData* str) {\n       \"----\\n{} bytes\\n{}\\n\", str->size(), str->toCppString());\n }\n \n-bool AdminRequestHandler::handleDumpStaticStringsRequest(\n-  const std::string& /*cmd*/, const std::string& filename) {\n+bool AdminRequestHandler::handleDumpStaticStringsRequest(folly::File& file) {\n   auto const& list = lookupDefinedStaticStrings();\n-  std::ofstream out(filename.c_str());\n-  SCOPE_EXIT { out.close(); };\n   for (auto item : list) {\n-    out << formatStaticString(item);\n+    auto const line = formatStaticString(item);\n+    folly::writeFull(file.fd(), line.data(), line.size());\n     if (RuntimeOption::EvalPerfDataMap) {\n       auto const len = std::min<size_t>(item->size(), 255);\n       std::string str(item->data(), len);"
+    },
+    {
+      "sha": "4e582096a50b066f340d142df543ab91acf7e632",
+      "filename": "hphp/runtime/server/admin-request-handler.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.h",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.h",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fserver%2Fadmin-request-handler.h?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -19,6 +19,8 @@\n #include \"hphp/runtime/server/access-log.h\"\n #include \"hphp/runtime/server/server.h\"\n \n+#include <folly/File.h>\n+\n namespace HPHP {\n ///////////////////////////////////////////////////////////////////////////////\n \n@@ -72,8 +74,7 @@ struct AdminRequestHandler : RequestHandler {\n                                    Transport *transport);\n   bool handleStaticStringsRequest(const std::string &cmd,\n                                   Transport *transport);\n-  bool handleDumpStaticStringsRequest(const std::string &cmd,\n-                                      const std::string &filename);\n+  bool handleDumpStaticStringsRequest(folly::File& file);\n   bool handleRandomStaticStringsRequest(const std::string &cmd,\n                                         Transport *transport);\n   bool handleVMRequest      (const std::string &cmd, Transport *transport);"
+    },
+    {
+      "sha": "e6b6d388b90824037b9d3ba626d64ebce7e6d42c",
+      "filename": "hphp/test/slow/ext_ldap/t78806688.php",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1,9 @@\n+<?hh\n+\n+<<__EntryPoint>>\n+function main(): void {\n+  $multiplier = 1431655769;\n+  $s = str_repeat(\"a\", $multiplier);\n+  ldap_escape($s);\n+  echo \"FAIL!\\n\";\n+}"
+    },
+    {
+      "sha": "c95c560e4a32198083260114eba590c04ecc40d5",
+      "filename": "hphp/test/slow/ext_ldap/t78806688.php.expectf",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_ldap%2Ft78806688.php.expectf?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1 @@\n+Fatal error: String length exceeded: 4294967307 > %d in %s/t78806688.php on line 7"
+    },
+    {
+      "sha": "085629f965b65d2f69d762551fb1573c2b2667c7",
+      "filename": "hphp/test/slow/ext_string/t76103217.php",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1,11 @@\n+<?hh\n+\n+<<__EntryPoint>>\n+function main(): void {\n+  $key = \"\\x26\\xbd\\xbd\\xbd\\xff\\x60\\xbf\\xff\\xff\\x60\";\n+  $salt1 = \"\\x24\\x32\\x78\\x24\\x31\\x30\\x24\\x24\\x35\\x24\\xad\\x20\\x20\\x26\\xff\\x60\\xbf\\xff\\xff\\x60\\x24\\x31\\x78\\xa8\\xa8\\xa0\\x01\\x01\\x01\\x01\\x01\\x01\";\n+  $salt2 = \"\\x24\\x32\\x78\\x24\\x31\\x30\\x24\\x24\\x35\";\n+\n+  var_dump(base64_encode(crypt($key, $salt1)));\n+  var_dump(base64_encode(crypt($key, $salt2)));\n+}"
+    },
+    {
+      "sha": "e4cff2a4627b9f2f159ec99beb90a38b6f558541",
+      "filename": "hphp/test/slow/ext_string/t76103217.php.expect",
+      "status": "added",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php.expect",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php.expect",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_string%2Ft76103217.php.expect?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1,2 @@\n+string(4) \"KjA=\"\n+string(12) \"JDJ4JDEwJCQ1\""
+    },
+    {
+      "sha": "32e707ef2183e3651f1e795da3202617586c3fe5",
+      "filename": "hphp/test/slow/ext_xml/xmlreader_empty_expand.php",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1,9 @@\n+<?hh\n+\n+<<__EntryPoint>>\n+function main(): void {\n+    $a = new XMLReader();\n+    $b = new DOMNode();\n+    $a->expand($b);\n+    $a->expand($a);\n+}"
+    },
+    {
+      "sha": "cbf2c8c318daa1b2229835c4480264707aa2bb05",
+      "filename": "hphp/test/slow/ext_xml/xmlreader_empty_expand.php.expectf",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php.expectf",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php.expectf",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fslow%2Fext_xml%2Fxmlreader_empty_expand.php.expectf?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -0,0 +1,3 @@\n+Warning: Invalid State Error in %s on line %d\n+\n+Warning: Invalid State Error in %s on line %d"
+    },
+    {
+      "sha": "db30f8fc46ca3dd8e736a92919f295f18bac98b3",
+      "filename": "hphp/util/light-process.cpp",
+      "status": "modified",
+      "additions": 49,
+      "deletions": 6,
+      "changes": 55,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Futil%2Flight-process.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Futil%2Flight-process.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Futil%2Flight-process.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -46,6 +46,7 @@\n #include \"hphp/util/hugetlb.h\"\n #include \"hphp/util/logger.h\"\n #include \"hphp/util/process.h\"\n+#include \"hphp/util/struct-log.h\"\n #include \"hphp/util/timer.h\"\n #include \"hphp/util/user-info.h\"\n \n@@ -54,6 +55,8 @@ namespace HPHP {\n ///////////////////////////////////////////////////////////////////////////////\n // helper functions\n \n+bool LightProcess::g_strictUser = false;\n+\n namespace {\n \n __thread LightProcess* tl_proc;\n@@ -436,23 +439,63 @@ void do_change_user(int afdt_fd) {\n   lwp_read(afdt_fd, uname);\n   if (!uname.length()) return;\n \n+  StructuredLogEntry* log = nullptr;\n+  int err = 0;\n+  SCOPE_EXIT {\n+    if (log) {\n+      log->setInt(\"errno\", err);\n+      log->setStr(\"new_user\", uname);\n+      StructuredLog::log(\"hhvm_lightprocess_error\", *log);\n+      delete log;\n+    }\n+  };\n   auto buf = PasswdBuffer{};\n   struct passwd *pw;\n   if (getpwnam_r(uname.c_str(), &buf.ent, buf.data.get(), buf.size, &pw)) {\n-    // TODO(alexeyt) should we log something and/or fail to start?\n+    err = errno;\n+    log = new StructuredLogEntry();\n+    log->setStr(\"function\", \"getpwnam_r\");\n+    if (LightProcess::g_strictUser) {\n+      throw std::runtime_error{\"getpwnam_r(): \" + folly::errnoStr(err)};\n+    }\n     return;\n   }\n   if (!pw) {\n-    // TODO(alexeyt) should we log something and/or fail to start?\n+    log = new StructuredLogEntry();\n+    log->setStr(\"function\", \"getpwnam_r\");\n+    if (LightProcess::g_strictUser) {\n+      throw std::runtime_error{\"getpwnam_r(): not found\"};\n+    }\n     return;\n   }\n-\n   if (pw->pw_gid) {\n-    initgroups(pw->pw_name, pw->pw_gid);\n-    setgid(pw->pw_gid);\n+    if (initgroups(pw->pw_name, pw->pw_gid)) {\n+      err = errno;\n+      log = new StructuredLogEntry();\n+      log->setStr(\"function\", \"initgroups\");\n+    }\n+    if (setgid(pw->pw_gid)) {\n+      if (!log) {\n+        err = errno;\n+        log = new StructuredLogEntry();\n+        log->setStr(\"function\", \"setgid\");\n+        if (LightProcess::g_strictUser) {\n+          throw std::runtime_error{\"setgid():\" + folly::errnoStr(err)};\n+        }\n+      }\n+    }\n   }\n   if (pw->pw_uid) {\n-    setuid(pw->pw_uid);\n+    if (setuid(pw->pw_uid)) {\n+      if (!log) {\n+        err = errno;\n+        log = new StructuredLogEntry();\n+        log->setStr(\"function\", \"setuid\");\n+        if (LightProcess::g_strictUser) {\n+          throw std::runtime_error{\"setuid():\" + folly::errnoStr(err)};\n+        }\n+      }\n+    }\n   }\n }\n "
+    },
+    {
+      "sha": "e5378852a79d22bcfbefc44f1cb92e2f2460e08e",
+      "filename": "hphp/util/light-process.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Futil%2Flight-process.h",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Futil%2Flight-process.h",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Futil%2Flight-process.h?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -129,6 +129,10 @@ struct LightProcess {\n   Mutex m_procMutex;\n   int m_afdt_fd;\n   std::map<FILE*, pid_t> m_popenMap;\n+\n+ public:\n+  // whether to abort when user change fails.\n+  static bool g_strictUser;\n };\n \n ///////////////////////////////////////////////////////////////////////////////"
+    },
+    {
+      "sha": "80d72ea3f18caad0a6e7b91d7d44b56439cca076",
+      "filename": "hphp/zend/crypt-blowfish.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fzend%2Fcrypt-blowfish.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fzend%2Fcrypt-blowfish.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fzend%2Fcrypt-blowfish.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -696,7 +696,10 @@ static char *BF_crypt(const char *key, const char *setting,\n   }\n \n   count = (BF_word)1 << ((setting[4] - '0') * 10 + (setting[5] - '0'));\n-  if (count < min || BF_decode(data.binary.salt, &setting[7], 16)) {\n+  if (count < min ||\n+      BF_decode(data.binary.salt, &setting[7], 16) ||\n+      ((unsigned int)(setting[7 + 22 - 1] - 0x20) >= 0x60)\n+     ) {\n     __set_errno(EINVAL);\n     return NULL;\n   }\n@@ -914,4 +917,3 @@ char *_crypt_gensalt_blowfish_rn(const char *prefix, unsigned long count,\n   return output;\n }\n #endif\n-"
+    },
+    {
+      "sha": "6ba0c21f0776011e4fb681c5158595bf6f233faa",
+      "filename": "hphp/zend/zend-string.cpp",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 4,
+      "changes": 18,
+      "blob_url": "https://github.com/facebook/hhvm/blob/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fzend%2Fzend-string.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/abe0b29e4d3a610f9bc920b8be4ad8403364c2d4/hphp%2Fzend%2Fzend-string.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fzend%2Fzend-string.cpp?ref=abe0b29e4d3a610f9bc920b8be4ad8403364c2d4",
+      "patch": "@@ -396,8 +396,8 @@ static void ito64(char *s, long v, int n) {\n }\n \n char *string_crypt(const char *key, const char *salt) {\n-  assert(key);\n-  assert(salt);\n+  assertx(key);\n+  assertx(salt);\n \n   char random_salt[12];\n   if (!*salt) {\n@@ -407,7 +407,8 @@ char *string_crypt(const char *key, const char *salt) {\n     return string_crypt(key, random_salt);\n   }\n \n-  if ((strlen(salt) > sizeof(\"$2X$00$\")) &&\n+  auto const saltLen = strlen(salt);\n+  if ((saltLen > sizeof(\"$2X$00$\")) &&\n     (salt[0] == '$') &&\n     (salt[1] == '2') &&\n     (salt[2] >= 'a') && (salt[2] <= 'z') &&\n@@ -417,7 +418,16 @@ char *string_crypt(const char *key, const char *salt) {\n     (salt[6] == '$')) {\n     // Bundled blowfish crypt()\n     char output[61];\n-    if (php_crypt_blowfish_rn(key, salt, output, sizeof(output))) {\n+\n+    static constexpr size_t maxSaltLength = 123;\n+    char paddedSalt[maxSaltLength + 1];\n+    paddedSalt[0] = paddedSalt[maxSaltLength] = '\\0';\n+\n+    memset(&paddedSalt[1], '$', maxSaltLength - 1);\n+    memcpy(paddedSalt, salt, std::min(maxSaltLength, saltLen));\n+    paddedSalt[saltLen] = '\\0';\n+\n+    if (php_crypt_blowfish_rn(key, paddedSalt, output, sizeof(output))) {\n       return strdup(output);\n     }\n "
+    }
+  ]
+}

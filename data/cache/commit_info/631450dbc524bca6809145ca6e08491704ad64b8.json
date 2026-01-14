@@ -1,0 +1,93 @@
+{
+  "sha": "631450dbc524bca6809145ca6e08491704ad64b8",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OjYzMTQ1MGRiYzUyNGJjYTY4MDkxNDVjYTZlMDg0OTE3MDRhZDY0Yjg=",
+  "commit": {
+    "author": {
+      "name": "Joe DeBlasio",
+      "email": "jdeblasio@chromium.org",
+      "date": "2018-10-24T17:40:00Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2018-10-24T17:40:00Z"
+    },
+    "message": "Map U+0A24 to '3' in the list of IDN confusables.\n\nUnicode character U+0A24 is easily confused with a '3'. This CL adds\nthis character to the list of confusable characters to use when\ndetermining whether to render IDNs as punycode instead of their unicode\nrepresentation.\n\nR=tommycli@chromium.org\n\nBug: 896725\nChange-Id: Ieaa38b5977b9afb454e672461722f3c8be9a2a2c\nReviewed-on: https://chromium-review.googlesource.com/c/1297638\nReviewed-by: Tommy Li <tommycli@chromium.org>\nCommit-Queue: Joe DeBlasio <jdeblasio@chromium.org>\nCr-Commit-Position: refs/heads/master@{#602383}",
+    "tree": {
+      "sha": "b3e67bd8a95f1b15b5707578ef1e0da8662e2a45",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/b3e67bd8a95f1b15b5707578ef1e0da8662e2a45"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/631450dbc524bca6809145ca6e08491704ad64b8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/631450dbc524bca6809145ca6e08491704ad64b8",
+  "html_url": "https://github.com/chromium/chromium/commit/631450dbc524bca6809145ca6e08491704ad64b8",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/631450dbc524bca6809145ca6e08491704ad64b8/comments",
+  "author": {
+    "login": "jdeblasio",
+    "id": 1619409,
+    "node_id": "MDQ6VXNlcjE2MTk0MDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1619409?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jdeblasio",
+    "html_url": "https://github.com/jdeblasio",
+    "followers_url": "https://api.github.com/users/jdeblasio/followers",
+    "following_url": "https://api.github.com/users/jdeblasio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jdeblasio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jdeblasio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jdeblasio/subscriptions",
+    "organizations_url": "https://api.github.com/users/jdeblasio/orgs",
+    "repos_url": "https://api.github.com/users/jdeblasio/repos",
+    "events_url": "https://api.github.com/users/jdeblasio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jdeblasio/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "18e85cdf90232fa86ff02643057737c1c2a6fbb4",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/18e85cdf90232fa86ff02643057737c1c2a6fbb4",
+      "html_url": "https://github.com/chromium/chromium/commit/18e85cdf90232fa86ff02643057737c1c2a6fbb4"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 7,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d189ba446b6b5be4c8df475c6bfcdb8794618055",
+      "filename": "components/url_formatter/idn_spoof_checker.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/chromium/chromium/blob/631450dbc524bca6809145ca6e08491704ad64b8/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/631450dbc524bca6809145ca6e08491704ad64b8/components%2Furl_formatter%2Fidn_spoof_checker.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Fidn_spoof_checker.cc?ref=631450dbc524bca6809145ca6e08491704ad64b8",
+      "patch": "@@ -244,7 +244,7 @@ IDNSpoofChecker::IDNSpoofChecker() {\n   //   - {U+0968 (\u0968), U+09E8 (\u09e8), U+0A68 (\u0a68), U+0A68 (\u0a68), U+0AE8 (\u0ae8),\n   //      U+0ce9 (\u0ce9), U+0ced (\u0ced)} => 2,\n   //   - {U+0437 (\u0437), U+0499 (\u0499), U+04E1 (\u04e1), U+0909 (\u0909), U+0993 (\u0993),\n-  //      U+0A69 (\u0a69), U+0AE9 (\u0ae9), U+0C69 (\u0c69),\n+  //      U+0A24 (\u0a24), U+0A69 (\u0a69), U+0AE9 (\u0ae9), U+0C69 (\u0c69),\n   //      U+1012 (\u1012), U+10D5 (\u10d5), U+10DE (\u10de)} => 3\n   //   - {U+0A6B (\u0a6b)} => 4,\n   //   - {U+09EA (\u09ea), U+0A6A (\u0a6a), U+0b6b (\u0b6b)} => 8,\n@@ -262,7 +262,7 @@ IDNSpoofChecker::IDNSpoofChecker() {\n           \"[\u09ed\u0a67\u0ae7] > q;\"\n           \"[\u0e1a\u0e9a] > u;\"\n           \"[\u0968\u09e8\u0a68\u0a68\u0ae8\u0ce9\u0ced] > 2;\"\n-          \"[\u0437\u0499\u04e1\u0909\u0993\u0a69\u0ae9\u0c69\u1012\u10d5\u10de] > 3;\"\n+          \"[\u0437\u0499\u04e1\u0909\u0993\u0a24\u0a69\u0ae9\u0c69\u1012\u10d5\u10de] > 3;\"\n           \"[\u0a6b] > 4;\"\n           \"[\u09ea\u0a6a\u0b6b] > 8;\"\n           \"[\u0aed\u0b68\u0c68] > 9;\""
+    },
+    {
+      "sha": "06c7713537f6aee7c5e5acb28017a8a48d2e5820",
+      "filename": "components/url_formatter/url_formatter_unittest.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/chromium/chromium/blob/631450dbc524bca6809145ca6e08491704ad64b8/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/631450dbc524bca6809145ca6e08491704ad64b8/components%2Furl_formatter%2Furl_formatter_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Furl_formatter%2Furl_formatter_unittest.cc?ref=631450dbc524bca6809145ca6e08491704ad64b8",
+      "patch": "@@ -594,6 +594,11 @@ const IDNTestCase idn_cases[] = {\n      L\"12\\u0993\"\n      L\"4567890.com\",\n      false},\n+    // 12\u0a244567890.com\n+    {\"xn--124567890-hfu.com\",\n+     L\"12\\u0a24\"\n+     L\"4567890.com\",\n+     false},\n     // 12\u10124567890.com\n     {\"xn--124567890-6s6a.com\",\n      L\"12\\x1012\""
+    }
+  ]
+}

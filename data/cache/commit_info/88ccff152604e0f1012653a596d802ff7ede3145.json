@@ -1,0 +1,101 @@
+{
+  "sha": "88ccff152604e0f1012653a596d802ff7ede3145",
+  "node_id": "MDY6Q29tbWl0MTA5OTQzNDU6ODhjY2ZmMTUyNjA0ZTBmMTAxMjY1M2E1OTZkODAyZmY3ZWRlMzE0NQ==",
+  "commit": {
+    "author": {
+      "name": "Gerardo GANIS",
+      "email": "gerardo.ganis@cern.ch",
+      "date": "2017-04-19T15:31:15Z"
+    },
+    "committer": {
+      "name": "Pere Mato",
+      "email": "peremato@users.noreply.github.com",
+      "date": "2017-04-19T15:31:15Z"
+    },
+    "message": "rootd: do not use popen() to expand path names (#513)\n\nAddressed security threat reported by S. Luders.\r\nUsing the same technology used in TSystem::ExpandFileName (with clang-format processing).",
+    "tree": {
+      "sha": "07c70dc641d5d66f286db564a9816184c54a47fb",
+      "url": "https://api.github.com/repos/root-project/root/git/trees/07c70dc641d5d66f286db564a9816184c54a47fb"
+    },
+    "url": "https://api.github.com/repos/root-project/root/git/commits/88ccff152604e0f1012653a596d802ff7ede3145",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/root-project/root/commits/88ccff152604e0f1012653a596d802ff7ede3145",
+  "html_url": "https://github.com/root-project/root/commit/88ccff152604e0f1012653a596d802ff7ede3145",
+  "comments_url": "https://api.github.com/repos/root-project/root/commits/88ccff152604e0f1012653a596d802ff7ede3145/comments",
+  "author": {
+    "login": "gganis",
+    "id": 1735130,
+    "node_id": "MDQ6VXNlcjE3MzUxMzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1735130?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gganis",
+    "html_url": "https://github.com/gganis",
+    "followers_url": "https://api.github.com/users/gganis/followers",
+    "following_url": "https://api.github.com/users/gganis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gganis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gganis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gganis/subscriptions",
+    "organizations_url": "https://api.github.com/users/gganis/orgs",
+    "repos_url": "https://api.github.com/users/gganis/repos",
+    "events_url": "https://api.github.com/users/gganis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gganis/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "peremato",
+    "id": 6952498,
+    "node_id": "MDQ6VXNlcjY5NTI0OTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6952498?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/peremato",
+    "html_url": "https://github.com/peremato",
+    "followers_url": "https://api.github.com/users/peremato/followers",
+    "following_url": "https://api.github.com/users/peremato/following{/other_user}",
+    "gists_url": "https://api.github.com/users/peremato/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/peremato/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/peremato/subscriptions",
+    "organizations_url": "https://api.github.com/users/peremato/orgs",
+    "repos_url": "https://api.github.com/users/peremato/repos",
+    "events_url": "https://api.github.com/users/peremato/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/peremato/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6f7d62187afd9742a47acb3fc75b33d182499228",
+      "url": "https://api.github.com/repos/root-project/root/commits/6f7d62187afd9742a47acb3fc75b33d182499228",
+      "html_url": "https://github.com/root-project/root/commit/6f7d62187afd9742a47acb3fc75b33d182499228"
+    }
+  ],
+  "stats": {
+    "total": 267,
+    "additions": 172,
+    "deletions": 95
+  },
+  "files": [
+    {
+      "sha": "56bbeec29164a4d77923c17618d617c266004f54",
+      "filename": "net/rootd/src/rootd.cxx",
+      "status": "modified",
+      "additions": 172,
+      "deletions": 95,
+      "changes": 267,
+      "blob_url": "https://github.com/root-project/root/blob/88ccff152604e0f1012653a596d802ff7ede3145/net%2Frootd%2Fsrc%2Frootd.cxx",
+      "raw_url": "https://github.com/root-project/root/raw/88ccff152604e0f1012653a596d802ff7ede3145/net%2Frootd%2Fsrc%2Frootd.cxx",
+      "contents_url": "https://api.github.com/repos/root-project/root/contents/net%2Frootd%2Fsrc%2Frootd.cxx?ref=88ccff152604e0f1012653a596d802ff7ede3145",
+      "patch": "@@ -382,29 +382,6 @@ const char *shellMeta   = \"~*[]{}?$\";\n const char *shellStuff  = \"(){}<>\\\"'\";\n const char  shellEscape = '\\\\';\n \n-////////////////////////////////////////////////////////////////////////////////\n-/// Escape specchars in src with escchar and copy to dst.\n-\n-static int EscChar(const char *src, char *dst, int dstlen, const char *specchars, char escchar)\n-{\n-   const char *p;\n-   char *q, *end = dst+dstlen-1;\n-\n-   for (p = src, q = dst; *p && q < end; ) {\n-      if (strchr(specchars, *p)) {\n-         *q++ = escchar;\n-         if (q < end)\n-            *q++ = *p++;\n-      } else\n-         *q++ = *p++;\n-   }\n-   *q = '\\0';\n-\n-   if (*p != 0)\n-      return -1;\n-   return q-dst;\n-}\n-\n ////////////////////////////////////////////////////////////////////////////////\n /// After SO_KEEPALIVE times out we probably get a SIGPIPE.\n \n@@ -447,96 +424,196 @@ static const char *HomeDirectory(const char *name)\n }\n \n ////////////////////////////////////////////////////////////////////////////////\n-/// Expand a pathname getting rid of special shell characters like ~.$, etc.\n-/// Returned string must be freed by caller.\n+/// Returns the current working directory.\n \n-char *RootdExpandPathName(const char *name)\n+static const char *WorkingDirectory()\n {\n-   const char *patbuf = name;\n+   static char path[kMAXPATHLEN];\n \n-   // skip leading blanks\n-   while (*patbuf == ' ')\n-      patbuf++;\n-\n-   // any shell meta characters?\n-   for (const char *p = patbuf; *p; p++)\n-      if (strchr(shellMeta, *p))\n-         goto needshell;\n+   if (getcwd(path, kMAXPATHLEN)) return path;\n+   return 0;\n+}\n \n-   return strdup(name);\n+////////////////////////////////////////////////////////////////////////////\n+/// Method for pathname expansion.\n+/// Returns kTRUE in case of error and kFALSE otherwise.\n \n-needshell:\n-   // escape shell quote characters\n-   char escPatbuf[kMAXPATHLEN];\n-   EscChar(patbuf, escPatbuf, sizeof(escPatbuf), shellStuff, shellEscape);\n+Bool_t RootdExpandFileName(const char *fname, char *xname, const int kBufSize)\n+{\n+   int n, ier, iter, lx, ncopy;\n+   char *inp, *out, *x, *t, buff[kBufSize * 4];\n+   const char *b, *c, *e;\n+   const char *p;\n \n-   char cmd[kMAXPATHLEN];\n-#ifdef __hpux\n-   strlcpy(cmd, \"/bin/echo \", sizeof(cmd));\n-#else\n-   strlcpy(cmd, \"echo \", sizeof(cmd));\n-#endif\n+   iter = 0;\n+   xname[0] = 0;\n+   inp = buff + kBufSize;\n+   out = inp + kBufSize;\n+   inp[-1] = ' ';\n+   inp[0] = 0;\n+   out[-1] = ' ';\n+   c = fname + strspn(fname, \" \\t\\f\\r\");\n+   // VP  if (isalnum(c[0])) { strcpy(inp, WorkingDirectory()); strcat(inp, \"/\"); } // add $cwd\n \n-   // emulate csh -> popen executes sh\n-   if (escPatbuf[0] == '~') {\n-      const char *hd;\n-      if (escPatbuf[1] != '\\0' && escPatbuf[1] != '/') {\n-         // extract user name\n-         char uname[70], *p, *q;\n-         for (p = &escPatbuf[1], q = uname; *p && *p !='/';)\n-            *q++ = *p++;\n-         *q = '\\0';\n-         hd = HomeDirectory(uname);\n-         if (hd == 0)\n-            strcat(cmd, escPatbuf);\n-         else {\n-            strcat(cmd, hd);\n-            strcat(cmd, p);\n-         }\n+   strncat(inp, c, kBufSize - strlen(inp) - 1);\n \n+again:\n+   iter++;\n+   c = inp;\n+   ier = 0;\n+   x = out;\n+   x[0] = 0;\n+\n+   p = 0;\n+   e = 0;\n+   if (c[0] == '~' && c[1] == '/') { // ~/ case\n+      std::string hd = HomeDirectory(0);\n+      p = hd.c_str();\n+      e = c + 1;\n+      if (p) { // we have smth to copy\n+         strlcpy(x, p, kBufSize);\n+         x += strlen(p);\n+         c = e;\n       } else {\n-         hd = HomeDirectory(0);\n-         if (hd == 0) {\n-            Error(ErrSys, kErrFatal, \"RootdExpandPathName: no home directory\");\n-            return 0;\n+         ++ier;\n+         ++c;\n+      }\n+   } else if (c[0] == '~' && c[1] != '/') { // ~user case\n+      n = strcspn(c + 1, \"/ \");\n+      buff[0] = 0;\n+      strncat(buff, c + 1, n);\n+      std::string hd = HomeDirectory(buff);\n+      e = c + 1 + n;\n+      if (!hd.empty()) { // we have smth to copy\n+         p = hd.c_str();\n+         strlcpy(x, p, kBufSize);\n+         x += strlen(p);\n+         c = e;\n+      } else {\n+         x++ [0] = c[0];\n+         //++ier;\n+         ++c;\n+      }\n+   }\n+\n+   for (; c[0]; c++) {\n+\n+      p = 0;\n+      e = 0;\n+\n+      if (c[0] == '.' && c[1] == '/' && c[-1] == ' ') { // $cwd\n+         std::string wd = WorkingDirectory();\n+         strlcpy(buff, wd.c_str(), kBufSize);\n+         p = buff;\n+         e = c + 1;\n+      }\n+      if (p) { // we have smth to copy */\n+         strlcpy(x, p, kBufSize);\n+         x += strlen(p);\n+         c = e - 1;\n+         continue;\n+      }\n+\n+      if (c[0] != '$') { // not $, simple copy\n+         x++ [0] = c[0];\n+      } else { // we have a $\n+         b = c + 1;\n+         if (c[1] == '(') b++;\n+         if (c[1] == '{') b++;\n+         if (b[0] == '$')\n+            e = b + 1;\n+         else\n+            for (e = b; isalnum(e[0]) || e[0] == '_'; e++)\n+               ;\n+         buff[0] = 0;\n+         strncat(buff, b, e - b);\n+         p = getenv(buff);\n+         if (!p) { // too bad, try UPPER case\n+            for (t = buff; (t[0] = toupper(t[0])); t++)\n+               ;\n+            p = getenv(buff);\n+         }\n+         if (!p) { // too bad, try Lower case\n+            for (t = buff; (t[0] = tolower(t[0])); t++)\n+               ;\n+            p = getenv(buff);\n+         }\n+         if (!p && !strcmp(buff, \"cwd\")) { // it is $cwd\n+            std::string wd = WorkingDirectory();\n+            strlcpy(buff, wd.c_str(), kBufSize);\n+            p = buff;\n+         }\n+         if (!p && !strcmp(buff, \"$\")) { // it is $$ (replace by getpid())\n+            snprintf(buff, kBufSize * 4, \"%d\", (int)getpid());\n+            p = buff;\n+         }\n+         if (!p) { // too bad, nothing can help\n+            ier++;\n+            x++ [0] = c[0];\n+         } else { // It is OK, copy result\n+            int lp = strlen(p);\n+            if (lp >= kBufSize) {\n+               // make sure lx will be >= kBufSize (see below)\n+               strlcpy(x, p, kBufSize);\n+               x += kBufSize;\n+               break;\n+            }\n+            strcpy(x, p);\n+            x += lp;\n+            c = (b == c + 1) ? e - 1 : e;\n          }\n-         strcat(cmd, hd);\n-         strcat(cmd, &escPatbuf[1]);\n       }\n-   } else\n-      strcat(cmd, escPatbuf);\n+   }\n \n-   FILE *pf;\n-   if ((pf = ::popen(&cmd[0], \"r\")) == 0) {\n-      Error(ErrSys, kErrFatal, \"RootdExpandPathName: error in popen(%s)\", cmd);\n-      return 0;\n+   x[0] = 0;\n+   lx = x - out;\n+   if (ier && iter < 3) {\n+      strlcpy(inp, out, kBufSize);\n+      goto again;\n    }\n+   ncopy = (lx >= kBufSize) ? kBufSize - 1 : lx;\n+   xname[0] = 0;\n+   strncat(xname, out, ncopy);\n \n-   // read first argument\n-   char expPatbuf[kMAXPATHLEN];\n-   int  ch, i, cnt = 0;\n-again:\n-   for (i = 0, ch = fgetc(pf); ch != EOF && ch != ' ' && ch != '\\n'; i++, ch = fgetc(pf)) {\n-      expPatbuf[i] = ch;\n-      cnt++;\n+   if (ier || ncopy != lx) {\n+      Error(ErrFatal, kErrFatal, \"RootdExpandFileName: fatal error:\\n\\t input: %s\\n\\t output: %s\", fname, xname);\n+      return true;\n    }\n-   // this will be true if forked process was not yet ready to be read\n-   if (cnt == 0 && ch == EOF) goto again;\n-   expPatbuf[cnt] = '\\0';\n-\n-   // skip rest of pipe\n-   while (ch != EOF) {\n-      ch = fgetc(pf);\n-      if (ch == ' ' || ch == '\\t') {\n-         ::pclose(pf);\n-         Error(ErrFatal, kErrFatal, \"RootdExpandPathName: expression ambigous\");\n+\n+   return false;\n+}\n+\n+////////////////////////////////////////////////////////////////////////////////\n+/// Expand a pathname getting rid of special shell characters like ~.$, etc.\n+/// Returned string must be freed by caller.\n+\n+char *RootdExpandPathName(const char *name)\n+{\n+   const char *patbuf = name;\n+\n+   // skip leading blanks\n+   while (*patbuf == ' ') patbuf++;\n+\n+   // any shell meta characters?\n+   bool needesc = false;\n+   for (const char *p = patbuf; *p; p++)\n+      if (strchr(shellMeta, *p)) {\n+         needesc = true;\n+         break;\n+      }\n+\n+   // Escape meta characters, if required\n+   if (needesc) {\n+      const int kBufSize = kMAXPATHLEN;\n+      char xname[kBufSize];\n+      if (RootdExpandFileName(name, xname, kBufSize)) {\n+         Error(ErrFatal, kErrFatal, \"RootdExpandPathName: problem escaping meta characters\");\n          return 0;\n+      } else {\n+         return strdup(xname);\n       }\n    }\n-\n-   ::pclose(pf);\n-\n-   return strdup(expPatbuf);\n+   return strdup(name);\n }\n \n ////////////////////////////////////////////////////////////////////////////////"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "22192de5367fa0cee985917f092be4060b7c00b0",
+  "node_id": "MDY6Q29tbWl0MjkyNjg2MTE6MjIxOTJkZTUzNjdmYTBjZWU5ODU5MTdmMDkyYmU0MDYwYjdjMDBiMA==",
+  "commit": {
+    "author": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T17:56:33Z"
+    },
+    "committer": {
+      "name": "Gilles Boccon-Gibod",
+      "email": "bok@bok.net",
+      "date": "2017-09-09T17:56:33Z"
+    },
+    "message": "fix for #185",
+    "tree": {
+      "sha": "e0076f893280903a3dfcd6a4c0450216a0fc988a",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/trees/e0076f893280903a3dfcd6a4c0450216a0fc988a"
+    },
+    "url": "https://api.github.com/repos/axiomatic-systems/Bento4/git/commits/22192de5367fa0cee985917f092be4060b7c00b0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/22192de5367fa0cee985917f092be4060b7c00b0",
+  "html_url": "https://github.com/axiomatic-systems/Bento4/commit/22192de5367fa0cee985917f092be4060b7c00b0",
+  "comments_url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/22192de5367fa0cee985917f092be4060b7c00b0/comments",
+  "author": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "barbibulle",
+    "id": 2460045,
+    "node_id": "MDQ6VXNlcjI0NjAwNDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2460045?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barbibulle",
+    "html_url": "https://github.com/barbibulle",
+    "followers_url": "https://api.github.com/users/barbibulle/followers",
+    "following_url": "https://api.github.com/users/barbibulle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barbibulle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barbibulle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barbibulle/subscriptions",
+    "organizations_url": "https://api.github.com/users/barbibulle/orgs",
+    "repos_url": "https://api.github.com/users/barbibulle/repos",
+    "events_url": "https://api.github.com/users/barbibulle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barbibulle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "41cad602709436628f07b4c4f64e9ff7a611f687",
+      "url": "https://api.github.com/repos/axiomatic-systems/Bento4/commits/41cad602709436628f07b4c4f64e9ff7a611f687",
+      "html_url": "https://github.com/axiomatic-systems/Bento4/commit/41cad602709436628f07b4c4f64e9ff7a611f687"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "42c117c54612b5918a3536ea6d5875b51e065f34",
+      "filename": "Source/C++/Core/Ap4HdlrAtom.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/axiomatic-systems/Bento4/blob/22192de5367fa0cee985917f092be4060b7c00b0/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp",
+      "raw_url": "https://github.com/axiomatic-systems/Bento4/raw/22192de5367fa0cee985917f092be4060b7c00b0/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp",
+      "contents_url": "https://api.github.com/repos/axiomatic-systems/Bento4/contents/Source%2FC%2B%2B%2FCore%2FAp4HdlrAtom.cpp?ref=22192de5367fa0cee985917f092be4060b7c00b0",
+      "patch": "@@ -80,9 +80,10 @@ AP4_HdlrAtom::AP4_HdlrAtom(AP4_UI32        size,\n     stream.ReadUI32(m_Reserved[2]);\n     \n     // read the name unless it is empty\n-    int name_size = size-(AP4_FULL_ATOM_HEADER_SIZE+20);\n-    if (name_size == 0) return;\n+    if (size < AP4_FULL_ATOM_HEADER_SIZE+20) return;\n+    AP4_UI32 name_size = size-(AP4_FULL_ATOM_HEADER_SIZE+20);\n     char* name = new char[name_size+1];\n+    if (name == NULL) return;\n     stream.Read(name, name_size);\n     name[name_size] = '\\0'; // force a null termination\n     // handle a special case: the Quicktime files have a pascal"
+    }
+  ]
+}

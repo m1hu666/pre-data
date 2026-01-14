@@ -1,0 +1,113 @@
+{
+  "sha": "2710c930918609caaf0a664e9c7bc3dce05d5b58",
+  "node_id": "MDY6Q29tbWl0MTE1MDEyMjgwOjI3MTBjOTMwOTE4NjA5Y2FhZjBhNjY0ZTljN2JjM2RjZTA1ZDViNTg=",
+  "commit": {
+    "author": {
+      "name": "Dirk Farin",
+      "email": "farin@struktur.de",
+      "date": "2019-08-02T15:37:19Z"
+    },
+    "committer": {
+      "name": "Dirk Farin",
+      "email": "farin@struktur.de",
+      "date": "2019-08-02T15:39:36Z"
+    },
+    "message": "force fraction to a limited resolution to finally solve those pesky numerical edge cases",
+    "tree": {
+      "sha": "e8000409635c456714df2f0d88f4ac777ffbe220",
+      "url": "https://api.github.com/repos/strukturag/libheif/git/trees/e8000409635c456714df2f0d88f4ac777ffbe220"
+    },
+    "url": "https://api.github.com/repos/strukturag/libheif/git/commits/2710c930918609caaf0a664e9c7bc3dce05d5b58",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/strukturag/libheif/commits/2710c930918609caaf0a664e9c7bc3dce05d5b58",
+  "html_url": "https://github.com/strukturag/libheif/commit/2710c930918609caaf0a664e9c7bc3dce05d5b58",
+  "comments_url": "https://api.github.com/repos/strukturag/libheif/commits/2710c930918609caaf0a664e9c7bc3dce05d5b58/comments",
+  "author": {
+    "login": "farindk",
+    "id": 968944,
+    "node_id": "MDQ6VXNlcjk2ODk0NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/968944?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/farindk",
+    "html_url": "https://github.com/farindk",
+    "followers_url": "https://api.github.com/users/farindk/followers",
+    "following_url": "https://api.github.com/users/farindk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/farindk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/farindk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/farindk/subscriptions",
+    "organizations_url": "https://api.github.com/users/farindk/orgs",
+    "repos_url": "https://api.github.com/users/farindk/repos",
+    "events_url": "https://api.github.com/users/farindk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/farindk/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "farindk",
+    "id": 968944,
+    "node_id": "MDQ6VXNlcjk2ODk0NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/968944?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/farindk",
+    "html_url": "https://github.com/farindk",
+    "followers_url": "https://api.github.com/users/farindk/followers",
+    "following_url": "https://api.github.com/users/farindk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/farindk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/farindk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/farindk/subscriptions",
+    "organizations_url": "https://api.github.com/users/farindk/orgs",
+    "repos_url": "https://api.github.com/users/farindk/repos",
+    "events_url": "https://api.github.com/users/farindk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/farindk/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "444b24ce51b73afedd8e0d31b71867be3433d9fc",
+      "url": "https://api.github.com/repos/strukturag/libheif/commits/444b24ce51b73afedd8e0d31b71867be3433d9fc",
+      "html_url": "https://github.com/strukturag/libheif/commit/444b24ce51b73afedd8e0d31b71867be3433d9fc"
+    }
+  ],
+  "stats": {
+    "total": 52,
+    "additions": 9,
+    "deletions": 43
+  },
+  "files": [
+    {
+      "sha": "350e2c09542de6d33c98a7b04d2cd888fc808e71",
+      "filename": "libheif/box.cc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 42,
+      "changes": 50,
+      "blob_url": "https://github.com/strukturag/libheif/blob/2710c930918609caaf0a664e9c7bc3dce05d5b58/libheif%2Fbox.cc",
+      "raw_url": "https://github.com/strukturag/libheif/raw/2710c930918609caaf0a664e9c7bc3dce05d5b58/libheif%2Fbox.cc",
+      "contents_url": "https://api.github.com/repos/strukturag/libheif/contents/libheif%2Fbox.cc?ref=2710c930918609caaf0a664e9c7bc3dce05d5b58",
+      "patch": "@@ -40,54 +40,20 @@ heif::Error heif::Error::Ok(heif_error_Ok);\n \n \n \n-static int32_t gcd(int a, int b)\n-{\n-  if (a == 0 && b == 0) {\n-    return 1;\n-  }\n-\n-  if (a == 0) return b;\n-  if (b == 0) return a;\n-\n-  int32_t h;\n-\n-  do {\n-    h = a % b;\n-    a = b;\n-    b = h;\n-  } while (b != 0);\n-\n-  return a;\n-}\n-\n-\n Fraction::Fraction(int32_t num,int32_t den)\n {\n-  int32_t g = gcd(num, den);\n-\n-  // these strange tests are for catching the case that we divide -2147483648 by -1,\n-  // which would exceed the maximum positive value by one.\n-\n-  if (num == std::numeric_limits<int32_t>::min() && g == -1) {\n-    num++;\n-  }\n-\n-  if (den == std::numeric_limits<int32_t>::min() && g == -1) {\n-    den++;\n-  }\n-\n-\n-  numerator = num / g;\n-  denominator = den / g;\n-\n-\n   // Reduce resolution of fraction until we are in a safe range.\n   // We need this as adding fractions may lead to very large denominators\n   // (e.g. 0x10000 * 0x10000 > 0x100000000 -> overflow, leading to integer 0)\n \n-  while (denominator > MAX_FRACTION_DENOMINATOR) {\n-    numerator >>= 1;\n-    denominator >>= 1;\n+  while (denominator > MAX_FRACTION_VALUE || denominator < -MAX_FRACTION_VALUE) {\n+    numerator /= 2;\n+    denominator /= 2;\n+  }\n+\n+  while (numerator > MAX_FRACTION_VALUE || numerator < -MAX_FRACTION_VALUE) {\n+    numerator /= 2;\n+    denominator /= 2;\n   }\n }\n "
+    },
+    {
+      "sha": "129562e4786c39de2155df98a447084e9b0b4860",
+      "filename": "libheif/heif_limits.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/strukturag/libheif/blob/2710c930918609caaf0a664e9c7bc3dce05d5b58/libheif%2Fheif_limits.h",
+      "raw_url": "https://github.com/strukturag/libheif/raw/2710c930918609caaf0a664e9c7bc3dce05d5b58/libheif%2Fheif_limits.h",
+      "contents_url": "https://api.github.com/repos/strukturag/libheif/contents/libheif%2Fheif_limits.h?ref=2710c930918609caaf0a664e9c7bc3dce05d5b58",
+      "patch": "@@ -47,6 +47,6 @@ static const int MAX_BOX_NESTING_LEVEL = 20;\n static const int MAX_BOX_SIZE = 0x7FFFFFFF; // 2 GB\n static const int64_t MAX_LARGE_BOX_SIZE = 0x0FFFFFFFFFFFFFFF;\n static const int64_t MAX_FILE_POS = 0x007FFFFFFFFFFFFFLL; // maximum file position\n-static const int MAX_FRACTION_DENOMINATOR = 0x10000;\n+static const int MAX_FRACTION_VALUE = 0x10000;\n \n #endif  // LIBHEIF_HEIF_LIMITS_H"
+    }
+  ]
+}

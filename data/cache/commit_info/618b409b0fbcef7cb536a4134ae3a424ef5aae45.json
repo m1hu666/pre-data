@@ -1,0 +1,125 @@
+{
+  "sha": "618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+  "node_id": "MDY6Q29tbWl0MjQ2NzczOTI6NjE4YjQwOWIwZmJjZWY3Y2I1MzZhNDEzNGFlM2E0MjRlZjVhYWU0NQ==",
+  "commit": {
+    "author": {
+      "name": "Maxime Gimeno",
+      "email": "maxime.gimeno@gmail.com",
+      "date": "2021-01-18T14:40:40Z"
+    },
+    "committer": {
+      "name": "Maxime Gimeno",
+      "email": "maxime.gimeno@gmail.com",
+      "date": "2021-01-18T14:40:40Z"
+    },
+    "message": "Fix Nef_2 and Nef_S2 IO",
+    "tree": {
+      "sha": "affe89dd9f3425119e05893108412638e54137c8",
+      "url": "https://api.github.com/repos/CGAL/cgal/git/trees/affe89dd9f3425119e05893108412638e54137c8"
+    },
+    "url": "https://api.github.com/repos/CGAL/cgal/git/commits/618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/CGAL/cgal/commits/618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+  "html_url": "https://github.com/CGAL/cgal/commit/618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+  "comments_url": "https://api.github.com/repos/CGAL/cgal/commits/618b409b0fbcef7cb536a4134ae3a424ef5aae45/comments",
+  "author": {
+    "login": "maxGimeno",
+    "id": 11310805,
+    "node_id": "MDQ6VXNlcjExMzEwODA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11310805?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maxGimeno",
+    "html_url": "https://github.com/maxGimeno",
+    "followers_url": "https://api.github.com/users/maxGimeno/followers",
+    "following_url": "https://api.github.com/users/maxGimeno/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maxGimeno/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maxGimeno/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maxGimeno/subscriptions",
+    "organizations_url": "https://api.github.com/users/maxGimeno/orgs",
+    "repos_url": "https://api.github.com/users/maxGimeno/repos",
+    "events_url": "https://api.github.com/users/maxGimeno/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maxGimeno/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "maxGimeno",
+    "id": 11310805,
+    "node_id": "MDQ6VXNlcjExMzEwODA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11310805?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maxGimeno",
+    "html_url": "https://github.com/maxGimeno",
+    "followers_url": "https://api.github.com/users/maxGimeno/followers",
+    "following_url": "https://api.github.com/users/maxGimeno/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maxGimeno/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maxGimeno/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maxGimeno/subscriptions",
+    "organizations_url": "https://api.github.com/users/maxGimeno/orgs",
+    "repos_url": "https://api.github.com/users/maxGimeno/repos",
+    "events_url": "https://api.github.com/users/maxGimeno/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maxGimeno/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "51139430c27cb3db262adce583a44f7d9c805237",
+      "url": "https://api.github.com/repos/CGAL/cgal/commits/51139430c27cb3db262adce583a44f7d9c805237",
+      "html_url": "https://github.com/CGAL/cgal/commit/51139430c27cb3db262adce583a44f7d9c805237"
+    }
+  ],
+  "stats": {
+    "total": 182,
+    "additions": 142,
+    "deletions": 40
+  },
+  "files": [
+    {
+      "sha": "9b84dd37fbe0b2b20a70e378ad35bd7fcb935749",
+      "filename": "Nef_2/include/CGAL/Nef_2/PM_io_parser.h",
+      "status": "modified",
+      "additions": 61,
+      "deletions": 13,
+      "changes": 74,
+      "blob_url": "https://github.com/CGAL/cgal/blob/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_2%2Finclude%2FCGAL%2FNef_2%2FPM_io_parser.h",
+      "raw_url": "https://github.com/CGAL/cgal/raw/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_2%2Finclude%2FCGAL%2FNef_2%2FPM_io_parser.h",
+      "contents_url": "https://api.github.com/repos/CGAL/cgal/contents/Nef_2%2Finclude%2FCGAL%2FNef_2%2FPM_io_parser.h?ref=618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+      "patch": "@@ -200,6 +200,11 @@ bool PM_io_parser<PMDEC>::read_vertex(Vertex_handle v)\n        !(in >> p) ||\n        !check_sep(\"}\") ) return false;\n \n+  if(!(f >= 0 && ((iso && f < fn) || (!iso && f < en))))\n+  {\n+    in.clear(std::ios_base::badbit);\n+    return false;\n+  }\n   if (iso) v->set_face(Face_of[f]);\n   else     v->set_halfedge(Halfedge_of[f]);\n   mark(v) = m; point(v) = p;\n@@ -229,10 +234,14 @@ bool PM_io_parser<PMDEC>::read_hedge(Halfedge_handle e)\n        !(in >> f) || !check_sep(\",\") ||\n        !(in >> m) || !check_sep(\"}\") )\n     return false;\n-  CGAL_assertion_msg\n-     (eo >= 0 || (std::size_t) eo < en || epr >= 0 || (std::size_t) epr < en || ene >= 0 || (std::size_t) ene < en ||\n-      v >= 0 || (std::size_t) v < vn || f >= 0 || (std::size_t) f < fn ,\n-      \"wrong index in read_hedge\");\n+\n+  if(!(eo >= 0 && (std::size_t) eo < en && epr >= 0 && (std::size_t) epr < en && ene >= 0 && (std::size_t) ene < en &&\n+       v >= 0 && (std::size_t) v < vn && f >= 0 && (std::size_t) f < fn ))\n+  {\n+    in.clear(std::ios_base::badbit);\n+    std::cerr<<\"wrong index in read_hedge\"<<std::endl;\n+    return false;\n+  }\n \n   // precond: objects exist!\n   CGAL_assertion(EI[e->opposite()]);\n@@ -267,14 +276,32 @@ bool PM_io_parser<PMDEC>::read_face(Face_handle f)\n   int n, ei, vi; Mark m;\n   if ( !(in >> n) || !check_sep(\"{\") ) return false;\n   if ( !(in >> ei) || !check_sep(\",\") ) return false;\n-  if (ei >= 0) f->set_halfedge(Halfedge_of[ei]);\n+  if (ei >= 0 && ei < en)\n+  {\n+    f->set_halfedge(Halfedge_of[ei]);\n+  }\n+  else\n+  {\n+    in.clear(std::ios_base::badbit);\n+    return false;\n+  }\n   while (in >> ei) {\n     CGAL_assertion_msg(ei >= 0 && (std::size_t) ei < en, \"wrong index in face cycle list.\");\n+    if (!(ei >= 0 && ei < en))\n+    {\n+      in.clear(std::ios_base::badbit);\n+      return false;\n+    }\n     f->store_fc(Halfedge_of[ei]);\n   } in.clear();\n   if (!check_sep(\",\")) { return false; }\n   while (in >> vi) {\n     CGAL_assertion_msg(vi >= 0 && (std::size_t) vi < vn, \"wrong index in iso vertex list.\");\n+    if (!(vi >= 0 && vi < vn))\n+    {\n+      in.clear(std::ios_base::badbit);\n+      return false;\n+    }\n     f->store_iv(Vertex_of[vi]);\n   } in.clear();\n   if (!check_sep(\",\") || !(in >> m) || !check_sep(\"}\") )\n@@ -313,13 +340,26 @@ template <typename PMDEC>\n void PM_io_parser<PMDEC>::read()\n {\n   if ( !check_sep(\"Plane_map_2\") )\n-    CGAL_error_msg(\"PM_io_parser::read: no embedded_PM header.\");\n+  {\n+    std::cerr<<\"PM_io_parser::read: no embedded_PM header.\"<<std::endl;\n+    return;\n+  }\n   if ( !(check_sep(\"vertices\") && (in >> vn)) )\n-    CGAL_error_msg(\"PM_io_parser::read: wrong node line.\");\n+  {\n+    std::cerr<<\"PM_io_parser::read: wrong node line.\"<<std::endl;\n+    return;\n+  }\n+\n   if ( !(check_sep(\"halfedges\") && (in >> en) && (en%2==0)) )\n-    CGAL_error_msg(\"PM_io_parser::read: wrong edge line.\");\n+  {\n+    std::cerr<<\"PM_io_parser::read: wrong edge line.\"<<std::endl;\n+    return;\n+  }\n   if ( !(check_sep(\"faces\") && (in >> fn)) )\n-    CGAL_error_msg(\"PM_io_parser::read: wrong face line.\");\n+  {\n+    std::cerr<<\"PM_io_parser::read: wrong face line.\"<<std::endl;\n+    return;\n+  }\n \n   Vertex_of.resize(vn);\n   Halfedge_of.resize(en);\n@@ -333,16 +373,24 @@ void PM_io_parser<PMDEC>::read()\n \n   for(i=0; i<vn; i++) {\n     if (!read_vertex(Vertex_of[i]))\n-      CGAL_error_msg(\"PM_io_parser::read: error in node line\");\n+    {\n+      std::cerr<<\"PM_io_parser::read: error in node line\"<<std::endl;\n+      return;\n+    }\n   }\n   for(i=0; i<en; i++) {\n     if (!read_hedge(Halfedge_of[i]))\n-      CGAL_error_msg(\"PM_io_parser::read: error in halfedge\\\n-      line\");\n+    {\n+      std::cerr<<\"PM_io_parser::read: error in halfedge line\"<<std::endl;\n+      return;\n+    }\n   }\n   for(i=0; i<fn; i++) {\n     if (!read_face(Face_of[i]))\n-      CGAL_error_msg(\"PM_io_parser::read: error in face line\");\n+    {\n+      std::cerr<<\"PM_io_parser::read: error in face line\"<<std::endl;\n+      return;\n+    }\n   }\n }\n "
+    },
+    {
+      "sha": "62aad3e5649eff1859de331c4d982412d654084d",
+      "filename": "Nef_2/include/CGAL/Nef_polyhedron_2.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/CGAL/cgal/blob/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_2%2Finclude%2FCGAL%2FNef_polyhedron_2.h",
+      "raw_url": "https://github.com/CGAL/cgal/raw/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_2%2Finclude%2FCGAL%2FNef_polyhedron_2.h",
+      "contents_url": "https://api.github.com/repos/CGAL/cgal/contents/Nef_2%2Finclude%2FCGAL%2FNef_polyhedron_2.h?ref=618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+      "patch": "@@ -1112,6 +1112,8 @@ std::istream& operator>>\n     std::cerr << \"Nef_polyhedron_2 input corrupted.\" << std::endl;\n     NP = Nef_polyhedron_2<T,Items,Mark>();\n   }\n+  if(!is)\n+    return is;\n   typename Nef_polyhedron_2<T,Items,Mark>::Topological_explorer D(NP.explorer());\n   D.check_integrity_and_topological_planarity();\n   return is;"
+    },
+    {
+      "sha": "631c63dc5dcd4dfd73d7d43412d14c77c35f99f1",
+      "filename": "Nef_S2/include/CGAL/Nef_S2/SM_io_parser.h",
+      "status": "modified",
+      "additions": 79,
+      "deletions": 27,
+      "changes": 106,
+      "blob_url": "https://github.com/CGAL/cgal/blob/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_S2%2Finclude%2FCGAL%2FNef_S2%2FSM_io_parser.h",
+      "raw_url": "https://github.com/CGAL/cgal/raw/618b409b0fbcef7cb536a4134ae3a424ef5aae45/Nef_S2%2Finclude%2FCGAL%2FNef_S2%2FSM_io_parser.h",
+      "contents_url": "https://api.github.com/repos/CGAL/cgal/contents/Nef_S2%2Finclude%2FCGAL%2FNef_S2%2FSM_io_parser.h?ref=618b409b0fbcef7cb536a4134ae3a424ef5aae45",
+      "patch": "@@ -203,8 +203,14 @@ bool SM_io_parser<Decorator_>::read_vertex(SVertex_handle v)\n        !(in >> p) ||\n        !check_sep(\"}\") ) return false;\n \n-  if (iso) set_face(v,SFace_of[f]);\n-  else     set_first_out_edge(v,Edge_of[f]);\n+  if(f<0 || (iso && f > fn) || (!iso && f > en))\n+  {\n+    in.clear(std::ios_base::badbit);\n+    return false;\n+  }\n+\n+  if (iso) this->set_face(v,SFace_of[f]);\n+  else     this->set_first_out_edge(v,Edge_of[f]);\n   v->mark() = m; v->point() = p;\n   return true;\n }\n@@ -235,17 +241,21 @@ bool SM_io_parser<Decorator_>::read_edge(SHalfedge_handle e)\n        !(in >> m) || !check_sep(\",\") ||\n        !(in >> k) || !check_sep(\"}\") )\n     return false;\n-  CGAL_assertion_msg\n+  if (!\n      (eo >= 0 && eo < en && epr >= 0 && epr < en && ene >= 0 && ene < en &&\n-      v >= 0 && v < vn && f >= 0 && f < fn ,\n-      \"wrong index in read_edge\");\n+      v >= 0 && v < vn && f >= 0 && f < fn ))\n+  {\n+    std::cerr<<\"wrong index in read_edge\"<<std::endl;\n+    in.clear(std::ios_base::badbit);\n+    return false;\n+  }\n \n   // precond: features exist!\n   CGAL_assertion(EI[e->twin()]);\n-  set_prev(e,Edge_of[epr]);\n-  set_next(e,Edge_of[ene]);\n-  set_source(e,SVertex_of[v]);\n-  set_face(e,SFace_of[f]);\n+  this->set_prev(e,Edge_of[epr]);\n+  this->set_next(e,Edge_of[ene]);\n+  this->set_source(e,SVertex_of[v]);\n+  this->set_face(e,SFace_of[f]);\n   e->mark() = m;\n   e->circle() = k;\n   return true;\n@@ -274,7 +284,7 @@ bool SM_io_parser<Decorator_>::read_loop(SHalfloop_handle l)\n   CGAL_assertion_msg(\n     (lo >= 0 && lo < 2 && f >= 0 && f < fn),\"wrong index in read_edge\");\n \n-  set_face(l,SFace_of[f]);\n+  this->set_face(l,SFace_of[f]);\n   l->mark() = m;\n   l->circle() = k;\n   return true;\n@@ -303,21 +313,33 @@ bool SM_io_parser<Decorator_>::read_face(SFace_handle f)\n   int n, ei, vi, li; Mark m;\n   if ( !(in >> n) || !check_sep(\"{\") ) return false;\n   while (in >> ei) {\n-    CGAL_assertion_msg(ei >= 0 && ei < en,\n-                           \"wrong index in face cycle list.\");\n-    store_sm_boundary_object(Edge_of[ei],f);\n+    if(!(ei >= 0 && ei < en))\n+    {\n+      std::cerr<<\"wrong index in face cycle list.\"<<std::endl;\n+      in.clear(std::ios_base::badbit);\n+      return false;\n+    }\n+    this->store_sm_boundary_object(Edge_of[ei],f);\n   } in.clear();\n   if (!check_sep(\",\")) { return false; }\n   while (in >> vi) {\n-    CGAL_assertion_msg(vi >= 0 && vi < vn,\n-                           \"wrong index in iso vertex list.\");\n-    store_sm_boundary_object(SVertex_of[vi],f);\n+    if(!(vi >= 0 && vi < vn))\n+    {\n+      std::cerr<<\"wrong index in iso vertex list.\"<<std::endl;\n+      in.clear(std::ios_base::badbit);\n+      return false;\n+    }\n+    this->store_sm_boundary_object(SVertex_of[vi],f);\n   } in.clear();\n   if (!check_sep(\",\")) { return false; }\n   while (in >> li) {\n-    CGAL_assertion_msg(li >= 0 && li < 2,\n-                           \"wrong index in iso vertex list.\");\n-    store_sm_boundary_object(Loop_of[li],f);\n+    if(!(li >= 0 && li < 2))\n+    {\n+      std::cerr<<\"wrong index in iso vertex list.\"<<std::endl;\n+      in.clear(std::ios_base::badbit);\n+      return false;\n+    }\n+    this->store_sm_boundary_object(Loop_of[li],f);\n   } in.clear();\n   if (!check_sep(\",\") || !(in >> m) || !check_sep(\"}\") )\n     return false;\n@@ -357,16 +379,36 @@ void SM_io_parser<Decorator_>::print() const\n template <typename Decorator_>\n void SM_io_parser<Decorator_>::read()\n {\n+  if ( !check_sep(\"Nef_polyhedron_S2\") )\n+  {\n+   std::cerr<<\"Missing line in header\"<<std::endl;\n+   return;\n+  }\n   if ( !check_sep(\"Sphere_map_2\") )\n-    CGAL_error_msg(\"SM_io_parser::read: no embedded_PM header.\");\n+  {\n+   std::cerr<<\"SM_io_parser::read: no embedded_PM header.\"<<std::endl;\n+   return;\n+  }\n   if ( !(check_sep(\"vertices\") && (in >> vn)) )\n-    CGAL_error_msg(\"SM_io_parser::read: wrong vertex line.\");\n+  {\n+   std::cerr<<\"SM_io_parser::read: wrong vertex line.\"<<std::endl;\n+   return;\n+  }\n   if ( !(check_sep(\"edges\") && (in >> en) && (en%2==0)) )\n-    CGAL_error_msg(\"SM_io_parser::read: wrong edge line.\");\n+  {\n+   std::cerr<<\"SM_io_parser::read: wrong edge line.\"<<std::endl;\n+   return;\n+  }\n   if ( !(check_sep(\"loops\") && (in >> ln)) )\n-    CGAL_error_msg(\"SM_io_parser::read: wrong loop line.\");\n+  {\n+   std::cerr<<\"SM_io_parser::read: wrong loop line.\"<<std::endl;\n+   return;\n+  }\n   if ( !(check_sep(\"faces\") && (in >> fn)) )\n-    CGAL_error_msg(\"SM_io_parser::read: wrong face line.\");\n+  {\n+   std::cerr<<\"SM_io_parser::read: wrong face line.\"<<std::endl;\n+   return;\n+  }\n \n   SVertex_of.resize(vn);\n   Edge_of.resize(en);\n@@ -383,18 +425,28 @@ void SM_io_parser<Decorator_>::read()\n \n   for(i=0; i<vn; i++) {\n     if (!read_vertex(SVertex_of[i]))\n-      CGAL_error_msg(\"SM_io_parser::read: error in node line\");\n+    {\n+     std::cerr<<\"SM_io_parser::read: error in node line\"<<std::endl;\n+     return;\n+    }\n   }\n   for(i=0; i<en; i++) {\n     if (!read_edge(Edge_of[i]))\n-      CGAL_error_msg(\"SM_io_parser::read: error in edge line\");\n+    {\n+     std::cerr<<\"SM_io_parser::read: error in edge line\"<<std::endl;\n+     return;\n+    }\n+\n   }\n   if ( ln == 2 ) {\n     read_loop(Loop_of[0]); read_loop(Loop_of[1]);\n   }\n   for(i=0; i<fn; i++) {\n     if (!read_face(SFace_of[i]))\n-      CGAL_error_msg(\"SM_io_parser::read: error in face line\");\n+    {\n+     std::cerr<<\"SM_io_parser::read: error in face line\"<<std::endl;\n+     return;\n+    }\n   }\n }\n "
+    }
+  ]
+}

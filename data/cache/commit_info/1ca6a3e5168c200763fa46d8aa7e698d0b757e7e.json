@@ -1,0 +1,106 @@
+{
+  "sha": "1ca6a3e5168c200763fa46d8aa7e698d0b757e7e",
+  "node_id": "C_kwDOAF3Q3doAKDFjYTZhM2U1MTY4YzIwMDc2M2ZhNDZkOGFhN2U2OThkMGI3NTdlN2U",
+  "commit": {
+    "author": {
+      "name": "Even Rouault",
+      "email": "even.rouault@spatialys.com",
+      "date": "2021-12-04T23:26:39Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-12-04T23:26:39Z"
+    },
+    "message": "Merge pull request #4944 from rouault/fix_ossfuzz_41993\n\nPCIDSK: fix write heap-buffer-overflow. Fixes https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41993",
+    "tree": {
+      "sha": "e6e40bcab004a07367c8e528d01d903b3e0c11ef",
+      "url": "https://api.github.com/repos/OSGeo/gdal/git/trees/e6e40bcab004a07367c8e528d01d903b3e0c11ef"
+    },
+    "url": "https://api.github.com/repos/OSGeo/gdal/git/commits/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhq/kvCRBK7hj4Ov3rIwAA+EkIAEx6fA1roNFR72KBx9pOGCqb\nh1qGrkz9XsxEEwAb27rLGqwMJtyM1YYseYKEAbIWy9xXfghdRtX+VSInPREoYCQ0\nczHwqDEzddAQsuL4AJfUTCu4yvAws2QvGmhOGm2FOyYkrzp4pswC2pO6SjaC3GiU\nhoBWgNWEK3XIA052BUhiScZn313ZruKBuQQ1KquzyDBvElXn9AG+zZFpPf8WMd38\netoer9EBVHz1XK9ABcLtmwOc/Tu6vbeKnOmWAixJajG5dnO1dsIDHfQYiJz5EfpT\nOhdWI5xljhhTnLrCqsDJtCoJzznr464+Kcm03h6y42MMoPjD6UbnxbPHKcFynAw=\n=qQaw\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e6e40bcab004a07367c8e528d01d903b3e0c11ef\nparent 9bcef6b5b206466538fc64e1fb1fce8ffba8755f\nparent 93913a849dc1d217a40dbf9d6e6a3a23c42b61a6\nauthor Even Rouault <even.rouault@spatialys.com> 1638660399 +0100\ncommitter GitHub <noreply@github.com> 1638660399 +0100\n\nMerge pull request #4944 from rouault/fix_ossfuzz_41993\n\nPCIDSK: fix write heap-buffer-overflow. Fixes https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41993",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/OSGeo/gdal/commits/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e",
+  "html_url": "https://github.com/OSGeo/gdal/commit/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e",
+  "comments_url": "https://api.github.com/repos/OSGeo/gdal/commits/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e/comments",
+  "author": {
+    "login": "rouault",
+    "id": 1192433,
+    "node_id": "MDQ6VXNlcjExOTI0MzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1192433?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rouault",
+    "html_url": "https://github.com/rouault",
+    "followers_url": "https://api.github.com/users/rouault/followers",
+    "following_url": "https://api.github.com/users/rouault/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rouault/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rouault/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rouault/subscriptions",
+    "organizations_url": "https://api.github.com/users/rouault/orgs",
+    "repos_url": "https://api.github.com/users/rouault/repos",
+    "events_url": "https://api.github.com/users/rouault/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rouault/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9bcef6b5b206466538fc64e1fb1fce8ffba8755f",
+      "url": "https://api.github.com/repos/OSGeo/gdal/commits/9bcef6b5b206466538fc64e1fb1fce8ffba8755f",
+      "html_url": "https://github.com/OSGeo/gdal/commit/9bcef6b5b206466538fc64e1fb1fce8ffba8755f"
+    },
+    {
+      "sha": "93913a849dc1d217a40dbf9d6e6a3a23c42b61a6",
+      "url": "https://api.github.com/repos/OSGeo/gdal/commits/93913a849dc1d217a40dbf9d6e6a3a23c42b61a6",
+      "html_url": "https://github.com/OSGeo/gdal/commit/93913a849dc1d217a40dbf9d6e6a3a23c42b61a6"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 6,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0a05b47bac926a4c695fe6873a81af215728267d",
+      "filename": "frmts/pcidsk/sdk/segment/cpcidskbinarysegment.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/OSGeo/gdal/blob/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e/frmts%2Fpcidsk%2Fsdk%2Fsegment%2Fcpcidskbinarysegment.cpp",
+      "raw_url": "https://github.com/OSGeo/gdal/raw/1ca6a3e5168c200763fa46d8aa7e698d0b757e7e/frmts%2Fpcidsk%2Fsdk%2Fsegment%2Fcpcidskbinarysegment.cpp",
+      "contents_url": "https://api.github.com/repos/OSGeo/gdal/contents/frmts%2Fpcidsk%2Fsdk%2Fsegment%2Fcpcidskbinarysegment.cpp?ref=1ca6a3e5168c200763fa46d8aa7e698d0b757e7e",
+      "patch": "@@ -31,6 +31,7 @@\n #include \"pcidsk_exception.h\"\n #include \"core/pcidsk_utils.h\"\n \n+#include <limits>\n #include <vector>\n #include <string>\n #include <cassert>\n@@ -73,8 +74,12 @@ void CPCIDSKBinarySegment::Load()\n     if (loaded_) {\n         return;\n     }\n+    if( data_size - 1024 > static_cast<uint64_t>(std::numeric_limits<int>::max()) )\n+    {\n+        return ThrowPCIDSKException(\"too large data_size\");\n+    }\n \n-    seg_data.SetSize((int)data_size - 1024);\n+    seg_data.SetSize((int)(data_size - 1024));\n \n     ReadFromFile(seg_data.buffer, 0, data_size - 1024);\n "
+    }
+  ]
+}

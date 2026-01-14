@@ -1,0 +1,113 @@
+{
+  "sha": "c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOmMxYzRiYjBjZjllMDc2YWFmYWY0ZmYzNTE1NTU2ZWY5ZmFmOTA2ZjM=",
+  "commit": {
+    "author": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-06-29T18:37:47Z"
+    },
+    "committer": {
+      "name": "jjergus",
+      "email": "jjergus@fb.com",
+      "date": "2020-06-30T23:27:28Z"
+    },
+    "message": "CVE-2020-1900\n\nPre-reserve object dynamic properties when unserializing",
+    "tree": {
+      "sha": "65a79e798d0fcb1501cb16bf133aa309b6708d2f",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/65a79e798d0fcb1501cb16bf133aa309b6708d2f"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+  "html_url": "https://github.com/facebook/hhvm/commit/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3/comments",
+  "author": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jjergus",
+    "id": 2483917,
+    "node_id": "MDQ6VXNlcjI0ODM5MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2483917?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjergus",
+    "html_url": "https://github.com/jjergus",
+    "followers_url": "https://api.github.com/users/jjergus/followers",
+    "following_url": "https://api.github.com/users/jjergus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjergus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjergus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjergus/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjergus/orgs",
+    "repos_url": "https://api.github.com/users/jjergus/repos",
+    "events_url": "https://api.github.com/users/jjergus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjergus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/1107228a5128d3ca1c4add8ac1635d933cbbe2e9",
+      "html_url": "https://github.com/facebook/hhvm/commit/1107228a5128d3ca1c4add8ac1635d933cbbe2e9"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "77ae2ad19d9011d95d43b3bf76423b242a1a4900",
+      "filename": "hphp/runtime/base/object-data.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hhvm/blob/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3/hphp%2Fruntime%2Fbase%2Fobject-data.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3/hphp%2Fruntime%2Fbase%2Fobject-data.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fobject-data.cpp?ref=c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+      "patch": "@@ -342,6 +342,11 @@ Array& ObjectData::reserveProperties(int numDynamic /* = 2 */) {\n     return dynPropArray();\n   }\n \n+  auto const allocsz = MixedArray::computeAllocBytesFromMaxElms(numDynamic);\n+  if (UNLIKELY(allocsz > kMaxSmallSize && tl_heap->preAllocOOM(allocsz))) {\n+    check_non_safepoint_surprise();\n+  }\n+\n   return setDynPropArray(\n       Array::attach(MixedArray::MakeReserveMixed(numDynamic))\n   );"
+    },
+    {
+      "sha": "4789857137be10b0b27eaef764077621e11b0104",
+      "filename": "hphp/runtime/base/variable-unserializer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/hhvm/blob/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fbase%2Fvariable-unserializer.cpp?ref=c1c4bb0cf9e076aafaf4ff3515556ef9faf906f3",
+      "patch": "@@ -552,6 +552,7 @@ void VariableUnserializer::unserializeProp(ObjectData* obj,\n     // Unserialize as a dynamic property. If this is the first, we need to\n     // pre-allocate space in the array to ensure the elements don't move during\n     // unserialization.\n+    obj->reserveDynProps(nProp);\n     t = obj->makeDynProp(realKey.get());\n   } else {\n     // We'll check if this doesn't violate the type-hint once we're done"
+    }
+  ]
+}

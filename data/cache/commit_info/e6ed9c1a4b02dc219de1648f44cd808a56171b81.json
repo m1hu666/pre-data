@@ -1,0 +1,173 @@
+{
+  "sha": "e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+  "node_id": "C_kwDOCTDsq9oAKGU2ZWQ5YzFhNGIwMmRjMjE5ZGUxNjQ4ZjQ0Y2Q4MDhhNTYxNzFiODE",
+  "commit": {
+    "author": {
+      "name": "Facebook Community Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-04-05T13:59:33Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-04-05T13:59:33Z"
+    },
+    "message": "Re-sync with internal repository (#960)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+    "tree": {
+      "sha": "e1e122c16b4a6967a780cdd0db0a9c577e5dbbe1",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/e1e122c16b4a6967a780cdd0db0a9c577e5dbbe1"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkLX7FCRBK7hj4Ov3rIwAAhQ8IAG8TP1IW+fn3GSra4l1XULPO\nOliPb2Ib7QyVIssNP+IC0D8IX2bvh6D/MaDUq6K9oNJmMI+mvBsjuP6dHgw1kulW\nS1KZWUw7OzzrPrcewku8d0RgQeKYETjUzT1iPbxoKn5GTDIrcnHqXxbdYWR73Vvr\nv58GrptLAA5hmRBq/GQTDzpB8czLjYzIffweq0+OTQ5/UPxU3jK6mUImgMICKSLK\n+9ahQ1XY14lZzDPAF3LH70D/jzVJ+1+alUHatandwAqkUWUkFLHNS2ShKe4WA7Ld\nYRsG2vqiZovO3ZFEZnNoc8EmVAbgTS/6MUr/ruL/xO9XHQI+SVPVyD1duHZSXUA=\n=ry67\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e1e122c16b4a6967a780cdd0db0a9c577e5dbbe1\nparent 82bc451b64e4757f4816ebbc54d66c7fb5df7d30\nauthor Facebook Community Bot <facebook-github-bot@users.noreply.github.com> 1680703173 -0700\ncommitter GitHub <noreply@github.com> 1680703173 -0700\n\nRe-sync with internal repository (#960)\n\nCo-authored-by: Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>",
+      "verified_at": "2024-11-06T23:55:13Z"
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+  "html_url": "https://github.com/facebook/hermes/commit/e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/e6ed9c1a4b02dc219de1648f44cd808a56171b81/comments",
+  "author": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "82bc451b64e4757f4816ebbc54d66c7fb5df7d30",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/82bc451b64e4757f4816ebbc54d66c7fb5df7d30",
+      "html_url": "https://github.com/facebook/hermes/commit/82bc451b64e4757f4816ebbc54d66c7fb5df7d30"
+    }
+  ],
+  "stats": {
+    "total": 193,
+    "additions": 178,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "89fdd17de6b6991ba639a67eefcd9d9fc35e1767",
+      "filename": "include/hermes/VM/HermesValue.h",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/include%2Fhermes%2FVM%2FHermesValue.h",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/include%2Fhermes%2FVM%2FHermesValue.h",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/include%2Fhermes%2FVM%2FHermesValue.h?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -353,6 +353,26 @@ class HermesValue {\n     return encodeDoubleValue((double)num);\n   }\n \n+  /// Encode a numeric value into the best possible representation based on the\n+  /// static type of the parameter. Right now we only have one representation\n+  /// (double), but that could change in the future. It cannot be guaranteed\n+  /// that the NaN bits are all zeroes.\n+  inline static HermesValue encodeUntrustedNumberValue(double num) {\n+    return encodeUntrustedDoubleValue(num);\n+  }\n+\n+  /// Encode a numeric value into the best possible representation based on the\n+  /// static type of the parameter. Right now we only have one representation\n+  /// (double), but that could change in the future. It cannot be guaranteed\n+  /// that the NaN bits are all zeroes.\n+  template <typename T>\n+  inline static\n+      typename std::enable_if<std::is_integral<T>::value, HermesValue>::type\n+      encodeUntrustedNumberValue(T num) {\n+    assert((double)num == num && \"value not representable as double\");\n+    return encodeUntrustedDoubleValue((double)num);\n+  }\n+\n   static HermesValue encodeNaNValue() {\n     return HermesValue(\n         llvh::DoubleToBits(std::numeric_limits<double>::quiet_NaN()));"
+    },
+    {
+      "sha": "267a308c30468f54315f1564d77e355b544a3410",
+      "filename": "lib/Optimizer/Scalar/TypeInference.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 10,
+      "changes": 27,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/lib%2FOptimizer%2FScalar%2FTypeInference.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/lib%2FOptimizer%2FScalar%2FTypeInference.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FOptimizer%2FScalar%2FTypeInference.cpp?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -60,6 +60,12 @@ class TypeInferenceImpl {\n   bool runOnModule(Module *M);\n };\n \n+/// \\return if the given \\p type is a BigInt|Object, which used to determine if\n+/// unary/binary operations may have a BigInt result.\n+static bool isBigIntOrObject(Type type) {\n+  return type.canBeBigInt() || type.canBeObject();\n+}\n+\n static bool inferUnaryArith(UnaryOperatorInst *UOI, Type numberResultType) {\n   Value *op = UOI->getSingleOperand();\n \n@@ -73,10 +79,11 @@ static bool inferUnaryArith(UnaryOperatorInst *UOI, Type numberResultType) {\n     return true;\n   }\n \n-  Type mayBeBigInt =\n-      op->getType().canBeBigInt() ? Type::createBigInt() : Type::createNoType();\n+  Type mayBeBigInt = isBigIntOrObject(op->getType()) ? Type::createBigInt()\n+                                                     : Type::createNoType();\n \n-  // - ?? => Number|?BigInt. BigInt is only possible if op.Type canBeBigInt.\n+  // - ?? => Number|?BigInt. BigInt is only possible if op.Type is\n+  // BigInt|Object.\n   UOI->setType(Type::unionTy(numberResultType, mayBeBigInt));\n   return true;\n }\n@@ -298,12 +305,12 @@ static bool inferBinaryArith(\n     return true;\n   }\n \n-  Type mayBeBigInt = LeftTy.canBeBigInt() && RightTy.canBeBigInt()\n+  Type mayBeBigInt = (isBigIntOrObject(LeftTy) && isBigIntOrObject(RightTy))\n       ? Type::createBigInt()\n       : Type::createNoType();\n \n-  // ?? - ?? => Number|?BigInt. BigInt is only possible if both operands can be\n-  // BigInt due to the no automatic BigInt conversion.\n+  // ?? - ?? => Number|?BigInt. BigInt is only possible if both operands are\n+  // BigInt|Object due to the no automatic BigInt conversion.\n   BOI->setType(Type::unionTy(numberType, mayBeBigInt));\n   return true;\n }\n@@ -312,12 +319,12 @@ static bool inferBinaryBitwise(BinaryOperatorInst *BOI) {\n   Type LeftTy = BOI->getLeftHandSide()->getType();\n   Type RightTy = BOI->getRightHandSide()->getType();\n \n-  Type mayBeBigInt = LeftTy.canBeBigInt() && RightTy.canBeBigInt()\n+  Type mayBeBigInt = (isBigIntOrObject(LeftTy) && isBigIntOrObject(RightTy))\n       ? Type::createBigInt()\n       : Type::createNoType();\n \n-  // ?? - ?? => Int32|?BigInt. BigInt is only possible if both operands can be\n-  // BigInt due to the no automatic BigInt conversion.\n+  // ?? - ?? => Int32|?BigInt. BigInt is only possible if both operands are\n+  // BigInt|Object due to the no automatic BigInt conversion.\n   BOI->setType(Type::unionTy(Type::createInt32(), mayBeBigInt));\n   return true;\n }\n@@ -391,7 +398,7 @@ static bool inferBinaryInst(BinaryOperatorInst *BOI) {\n       // ?BigInt + ?BigInt => ?BigInt. Both operands need to \"may be a BigInt\"\n       // for a possible BigInt result from this operator. This is true because\n       // there's no automative BigInt type conversion.\n-      Type mayBeBigInt = (LeftTy.canBeBigInt() && RightTy.canBeBigInt())\n+      Type mayBeBigInt = (isBigIntOrObject(LeftTy) && isBigIntOrObject(RightTy))\n           ? Type::createBigInt()\n           : Type::createNoType();\n "
+    },
+    {
+      "sha": "da47b942ea4206e15a660333b64511cb746f3e94",
+      "filename": "lib/VM/JSLib/TypedArray.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/lib%2FVM%2FJSLib%2FTypedArray.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/lib%2FVM%2FJSLib%2FTypedArray.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FJSLib%2FTypedArray.cpp?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -817,7 +817,7 @@ typedArrayPrototypeAt(void *, Runtime &runtime, NativeArgs args) {\n     if (!arr->attached(runtime)) {                                         \\\n       return runtime.raiseTypeError(\"Underlying ArrayBuffer detached\");    \\\n     }                                                                      \\\n-    return HermesValue::encodeNumberValue(arr->at(runtime, k));            \\\n+    return HermesValue::encodeUntrustedNumberValue(arr->at(runtime, k));   \\\n   }\n   switch (O->getKind()) {\n #include \"hermes/VM/TypedArrays.def\""
+    },
+    {
+      "sha": "2f6af8c956ecfbebbb8256b01ef671362a0fea58",
+      "filename": "test/BCGen/HBC/arguments.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2FBCGen%2FHBC%2Farguments.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2FBCGen%2FHBC%2Farguments.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2FBCGen%2FHBC%2Farguments.js?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -43,7 +43,7 @@ function check_phi_handling(x) {\n // CHECK-NEXT:  $Reg2 @5 [empty]\t%5 = StorePropertyInst %4 : closure, %2 : object, \"select\" : string\n // CHECK-NEXT:  $Reg2 @6 [7...8) \t%6 = HBCCreateFunctionInst %build#0#1()#4 : object, %0\n // CHECK-NEXT:  $Reg2 @7 [empty]\t%7 = StorePropertyInst %6 : closure, %2 : object, \"build\" : string\n-// CHECK-NEXT:  $Reg2 @8 [9...10) \t%8 = HBCCreateFunctionInst %buffalobuffalo#0#1()#5 : string|number, %0\n+// CHECK-NEXT:  $Reg2 @8 [9...10) \t%8 = HBCCreateFunctionInst %buffalobuffalo#0#1()#5 : string|number|bigint, %0\n // CHECK-NEXT:  $Reg2 @9 [empty]\t%9 = StorePropertyInst %8 : closure, %2 : object, \"buffalobuffalo\" : string\n // CHECK-NEXT:  $Reg0 @10 [11...12) \t%10 = HBCCreateFunctionInst %check_phi_handling#0#1()#6 : object, %0\n // CHECK-NEXT:  $Reg0 @11 [empty]\t%11 = StorePropertyInst %10 : closure, %2 : object, \"check_phi_handling\" : string\n@@ -85,7 +85,7 @@ function check_phi_handling(x) {\n // CHECK-NEXT:  $Reg0 @5 [empty]\t%5 = ReturnInst %4\n // CHECK-NEXT:function_end\n \n-// CHECK:function buffalobuffalo#0#1()#2 : string|number\n+// CHECK:function buffalobuffalo#0#1()#2 : string|number|bigint\n // CHECK-NEXT:frame = []\n // CHECK-NEXT:%BB0:\n // CHECK-NEXT:  $Reg0 @0 [1...5) \t%0 = AllocStackInst $arguments\n@@ -94,7 +94,7 @@ function check_phi_handling(x) {\n // CHECK-NEXT:  $Reg1 @3 [empty]\t%3 = HBCReifyArgumentsInst %0\n // CHECK-NEXT:  $Reg0 @4 [5...6) \t%4 = LoadStackInst %0\n // CHECK-NEXT:  $Reg0 @5 [6...7) \t%5 = BinaryOperatorInst '+', %4, %4\n-// CHECK-NEXT:  $Reg0 @6 [empty]\t%6 = ReturnInst %5 : string|number\n+// CHECK-NEXT:  $Reg0 @6 [empty]\t%6 = ReturnInst %5 : string|number|bigint\n // CHECK-NEXT:function_end\n \n // CHECK:function check_phi_handling#0#1(x)#2 : object"
+    },
+    {
+      "sha": "c43ebc1473f753b943033f0d1a50876a74cf9455",
+      "filename": "test/Optimizer/type_infer.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2FOptimizer%2Ftype_infer.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2FOptimizer%2Ftype_infer.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2FOptimizer%2Ftype_infer.js?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -92,7 +92,7 @@ function test_unary(x) {\n // CHECK-NEXT:  %18 = AllocObjectInst 0 : number, empty\n // CHECK-NEXT:  %19 = AllocObjectInst 0 : number, empty\n // CHECK-NEXT:  %20 = BinaryOperatorInst '+', %18 : object, %19 : object\n-// CHECK-NEXT:  %21 = CallInst %x, undefined : undefined, %20 : string|number\n+// CHECK-NEXT:  %21 = CallInst %x, undefined : undefined, %20 : string|number|bigint\n // CHECK-NEXT:  %22 = CallInst %x, undefined : undefined, NaN : number\n // CHECK-NEXT:  %23 = ReturnInst undefined : undefined\n // CHECK-NEXT:function_end"
+    },
+    {
+      "sha": "fbe134d536dee8ad3cc7fe7259e97c790bcd8889",
+      "filename": "test/hermes/regress-bigint-type-inference.js",
+      "status": "added",
+      "additions": 113,
+      "deletions": 0,
+      "changes": 113,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2Fhermes%2Fregress-bigint-type-inference.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2Fhermes%2Fregress-bigint-type-inference.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-bigint-type-inference.js?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -0,0 +1,113 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -non-strict --dump-bytecode -O %s -fno-inline | %FileCheck %s --check-prefix=BC\n+// RUN: %hermes -non-strict -O %s -fno-inline | %FileCheck %s --check-prefix=EXE\n+\n+function test() {\n+    var o = { valueOf() { return 1n; } }\n+    var bigint = 1n;\n+    var result;\n+\n+    (() => result = o + bigint)();\n+    print(result);\n+    // BC: Add\n+    // BC: StoreToEnvironment\n+    // EXE: 2\n+\n+    (() => result = o - bigint)();\n+    print(result);\n+    // BC: Sub\n+    // BC: StoreToEnvironment\n+    // EXE: 0\n+\n+    (() => result = o * bigint)();\n+    print(result);\n+    // BC: Mul\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+\n+    (() => result = o / bigint)();\n+    print(result);\n+    // BC: Div\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+\n+    (() => result = o % bigint)();\n+    print(result);\n+    // BC: Mod\n+    // BC: StoreToEnvironment\n+    // EXE: 0\n+\n+    (() => result = o << bigint)();\n+    print(result);\n+    // BC: LShift\n+    // BC: StoreToEnvironment\n+    // EXE: 2\n+\n+    (() => result = o >> bigint)();\n+    print(result);\n+    // BC: RShift\n+    // BC: StoreToEnvironment\n+    // EXE: 0\n+\n+    (() => result = o | bigint)();\n+    print(result);\n+    // BC: BitOr\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+\n+    (() => result = o ^ bigint)();\n+    print(result);\n+    // BC: BitXor\n+    // BC: StoreToEnvironment\n+    // EXE: 0\n+\n+    (() => result = o & bigint)();\n+    print(result);\n+    // BC: BitAnd\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+\n+    (() => result = - bigint)();\n+    print(result);\n+    // BC: Negate\n+    // BC: StoreToEnvironment\n+    // EXE: -1\n+\n+    (() => result = ~ bigint)();\n+    print(result);\n+    // BC: BitNot\n+    // BC: StoreToEnvironment\n+    // EXE: -2\n+\n+    (() => result = o++)();\n+    print(result);\n+    // BC: Inc\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+\n+    (() => result = o--)();\n+    print(result);\n+    // BC: Dec\n+    // BC: StoreToEnvironment\n+    // EXE: 2\n+\n+    (() => result = ++o)();\n+    print(result);\n+    // BC: Inc\n+    // BC: StoreToEnvironment\n+    // EXE: 2\n+\n+    (() => result = --o)();\n+    print(result);\n+    // BC: Dec\n+    // BC: StoreToEnvironment\n+    // EXE: 1\n+}\n+\n+test();"
+    },
+    {
+      "sha": "d3e5cee266f0511156c9c59314d42f62850bfeb8",
+      "filename": "test/hermes/regress-typed-array-at-nan.js",
+      "status": "added",
+      "additions": 23,
+      "deletions": 0,
+      "changes": 23,
+      "blob_url": "https://github.com/facebook/hermes/blob/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2Fhermes%2Fregress-typed-array-at-nan.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/e6ed9c1a4b02dc219de1648f44cd808a56171b81/test%2Fhermes%2Fregress-typed-array-at-nan.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-typed-array-at-nan.js?ref=e6ed9c1a4b02dc219de1648f44cd808a56171b81",
+      "patch": "@@ -0,0 +1,23 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -O -target=HBC %s | %FileCheck --match-full-lines %s\n+// RUN: %hermes -O -target=HBC -emit-binary -out %t.hbc %s && %hermes %t.hbc | %FileCheck --match-full-lines %s\n+// Test typed array will check for NaN when reading from an index.\n+\n+print(\"typed-array-at-nan\");\n+//CHECK-LABEL: typed-array-at-nan\n+let ab = new ArrayBuffer(8);\n+let i32a = new Int32Array(ab);\n+\n+i32a[0] = 0xcafebabe;\n+i32a[1] = 0xffff0000;\n+\n+let f32a = new Float64Array(ab);\n+var shouldBeNan = f32a.at(0)\n+print(shouldBeNan);\n+// CHECK: NaN"
+    }
+  ]
+}

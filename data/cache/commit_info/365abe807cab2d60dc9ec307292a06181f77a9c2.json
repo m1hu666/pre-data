@@ -1,0 +1,73 @@
+{
+  "sha": "365abe807cab2d60dc9ec307292a06181f77a9c2",
+  "node_id": "MDY6Q29tbWl0NDU1NjAwOjM2NWFiZTgwN2NhYjJkNjBkYzllYzMwNzI5MmEwNjE4MWY3N2E5YzI=",
+  "commit": {
+    "author": {
+      "name": "Bill Nell",
+      "email": "bnell@fb.com",
+      "date": "2016-07-01T16:55:16Z"
+    },
+    "committer": {
+      "name": "Hhvm Bot",
+      "email": "hhvm-bot-bot@fb.com",
+      "date": "2016-07-01T17:05:03Z"
+    },
+    "message": "Use req::strndup in php_mb_parse_encoding_list to prevent oob memory write.\n\nSummary:\nFix out of bounds write access in mb_detect_encoding.  Using strndup in\nphp_mb_parse_encoding_list will cause strings with embedded nulls to be\nunexpectedly shortened.  The expected length of the string is tracked in\nvalue_length but since strndup may copy fewer characters when there are\nmbedded null this can lead to oob writes into tmpstr.\n\nI've found a couple other places in this file that use strndup and replaced\nthem with req::strndup as well.  The use of strndup in mb_send_mail also seemed\nto be a leak.\n\nThis replaces uses of strndup with req::strndup which can handle embedded\nnulls properly.\n\nIt looks like I also accidentally fixed t11337047 at the same time.  Adding it to the list of tasks.\n\nReviewed By: paulbiss\n\nDifferential Revision: D3360065\n\nfbshipit-source-id: 99776cf9105e3789883380bf30240009eec52cec",
+    "tree": {
+      "sha": "563114596deabd04d80d6d7ef5b072d116974550",
+      "url": "https://api.github.com/repos/facebook/hhvm/git/trees/563114596deabd04d80d6d7ef5b072d116974550"
+    },
+    "url": "https://api.github.com/repos/facebook/hhvm/git/commits/365abe807cab2d60dc9ec307292a06181f77a9c2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hhvm/commits/365abe807cab2d60dc9ec307292a06181f77a9c2",
+  "html_url": "https://github.com/facebook/hhvm/commit/365abe807cab2d60dc9ec307292a06181f77a9c2",
+  "comments_url": "https://api.github.com/repos/facebook/hhvm/commits/365abe807cab2d60dc9ec307292a06181f77a9c2/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "2f6e219e4e41279eda067bc9edcc269f0ff7db94",
+      "url": "https://api.github.com/repos/facebook/hhvm/commits/2f6e219e4e41279eda067bc9edcc269f0ff7db94",
+      "html_url": "https://github.com/facebook/hhvm/commit/2f6e219e4e41279eda067bc9edcc269f0ff7db94"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 16,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "869703d84fabdb4d56ff89317573d718c7864a60",
+      "filename": "hphp/runtime/ext/mbstring/ext_mbstring.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 7,
+      "changes": 17,
+      "blob_url": "https://github.com/facebook/hhvm/blob/365abe807cab2d60dc9ec307292a06181f77a9c2/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "raw_url": "https://github.com/facebook/hhvm/raw/365abe807cab2d60dc9ec307292a06181f77a9c2/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Fruntime%2Fext%2Fmbstring%2Fext_mbstring.cpp?ref=365abe807cab2d60dc9ec307292a06181f77a9c2",
+      "patch": "@@ -554,11 +554,11 @@ static int php_mb_parse_encoding_list(const char *value, int value_length,\n \n     /* copy the value string for work */\n     if (value[0]=='\"' && value[value_length-1]=='\"' && value_length>2) {\n-      tmpstr = (char *)strndup(value+1, value_length-2);\n+      tmpstr = req::strndup(value + 1, value_length - 2);\n       value_length -= 2;\n+    } else {\n+      tmpstr = req::strndup(value, value_length);\n     }\n-    else\n-      tmpstr = (char *)strndup(value, value_length);\n     if (tmpstr == nullptr) {\n       return 0;\n     }\n@@ -640,7 +640,7 @@ static int php_mb_parse_encoding_list(const char *value, int value_length,\n       }\n       ret = 0;\n     }\n-    free(tmpstr);\n+    req::free(tmpstr);\n   }\n \n   return ret;\n@@ -2254,11 +2254,11 @@ bool HHVM_FUNCTION(mb_parse_str,\n   info.num_from_encodings     = MBSTRG(http_input_list_size);\n   info.from_language          = MBSTRG(current_language);\n \n-  char *encstr = strndup(encoded_string.data(), encoded_string.size());\n+  char *encstr = req::strndup(encoded_string.data(), encoded_string.size());\n   Array resultArr = Array::Create();\n   mbfl_encoding *detected =\n     _php_mb_encoding_handler_ex(&info, resultArr, encstr);\n-  free(encstr);\n+  req::free(encstr);\n   result.assignIfRef(resultArr);\n \n   MBSTRG(http_input_identify) = detected;\n@@ -4251,7 +4251,7 @@ bool HHVM_FUNCTION(mb_send_mail,\n   if (!to.empty()) {\n     int to_len = to.size();\n     if (to_len > 0) {\n-      to_r = strndup(to.data(), to_len);\n+      to_r = req::strndup(to.data(), to_len);\n       for (; to_len; to_len--) {\n         if (!isspace((unsigned char)to_r[to_len - 1])) {\n           break;\n@@ -4398,6 +4398,9 @@ bool HHVM_FUNCTION(mb_send_mail,\n                                encoded_message.data(),\n                                all_headers, cmd.data()));\n   mbfl_memory_device_clear(&device);\n+  if (to_r != to.data()) {\n+    req::free(to_r);\n+  }\n   return ret;\n }\n "
+    },
+    {
+      "sha": "5640beb5f9bef846e2d2c0a233f36db684117ab7",
+      "filename": "hphp/test/quick/mbstring-oob.php",
+      "status": "added",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/facebook/hhvm/blob/365abe807cab2d60dc9ec307292a06181f77a9c2/hphp%2Ftest%2Fquick%2Fmbstring-oob.php",
+      "raw_url": "https://github.com/facebook/hhvm/raw/365abe807cab2d60dc9ec307292a06181f77a9c2/hphp%2Ftest%2Fquick%2Fmbstring-oob.php",
+      "contents_url": "https://api.github.com/repos/facebook/hhvm/contents/hphp%2Ftest%2Fquick%2Fmbstring-oob.php?ref=365abe807cab2d60dc9ec307292a06181f77a9c2",
+      "patch": "@@ -0,0 +1,6 @@\n+<?hh // strict\n+// Copyright 2004-present Facebook. All Rights Reserved.\n+\n+$var0 = null;\n+$var3 = \"\\x00\";\n+$var3 = mb_detect_encoding($var0,$var3);"
+    }
+  ]
+}

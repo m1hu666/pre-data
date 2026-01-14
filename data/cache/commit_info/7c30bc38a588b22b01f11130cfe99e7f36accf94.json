@@ -1,0 +1,101 @@
+{
+  "sha": "7c30bc38a588b22b01f11130cfe99e7f36accf94",
+  "node_id": "C_kwDOAS5ehtoAKDdjMzBiYzM4YTU4OGIyMmIwMWYxMTEzMGNmZTk5ZTdmMzZhY2NmOTQ",
+  "commit": {
+    "author": {
+      "name": "Daniel Black",
+      "email": "daniel@mariadb.org",
+      "date": "2021-10-26T22:42:45Z"
+    },
+    "committer": {
+      "name": "Daniel Black",
+      "email": "daniel@mariadb.org",
+      "date": "2021-11-09T06:05:55Z"
+    },
+    "message": "MDEV-26561 mariabackup release locks\n\nThe previous threads locked need to be released too.\n\nThis occurs if the initialization of any of the non-first\nmutex/conditition variables errors occurs.",
+    "tree": {
+      "sha": "d62c4e09d41dd2e01f9604335a8d6ad1a427a384",
+      "url": "https://api.github.com/repos/MariaDB/server/git/trees/d62c4e09d41dd2e01f9604335a8d6ad1a427a384"
+    },
+    "url": "https://api.github.com/repos/MariaDB/server/git/commits/7c30bc38a588b22b01f11130cfe99e7f36accf94",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/MariaDB/server/commits/7c30bc38a588b22b01f11130cfe99e7f36accf94",
+  "html_url": "https://github.com/MariaDB/server/commit/7c30bc38a588b22b01f11130cfe99e7f36accf94",
+  "comments_url": "https://api.github.com/repos/MariaDB/server/commits/7c30bc38a588b22b01f11130cfe99e7f36accf94/comments",
+  "author": {
+    "login": "grooverdan",
+    "id": 462287,
+    "node_id": "MDQ6VXNlcjQ2MjI4Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/462287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/grooverdan",
+    "html_url": "https://github.com/grooverdan",
+    "followers_url": "https://api.github.com/users/grooverdan/followers",
+    "following_url": "https://api.github.com/users/grooverdan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/grooverdan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/grooverdan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/grooverdan/subscriptions",
+    "organizations_url": "https://api.github.com/users/grooverdan/orgs",
+    "repos_url": "https://api.github.com/users/grooverdan/repos",
+    "events_url": "https://api.github.com/users/grooverdan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/grooverdan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "grooverdan",
+    "id": 462287,
+    "node_id": "MDQ6VXNlcjQ2MjI4Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/462287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/grooverdan",
+    "html_url": "https://github.com/grooverdan",
+    "followers_url": "https://api.github.com/users/grooverdan/followers",
+    "following_url": "https://api.github.com/users/grooverdan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/grooverdan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/grooverdan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/grooverdan/subscriptions",
+    "organizations_url": "https://api.github.com/users/grooverdan/orgs",
+    "repos_url": "https://api.github.com/users/grooverdan/repos",
+    "events_url": "https://api.github.com/users/grooverdan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/grooverdan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+      "url": "https://api.github.com/repos/MariaDB/server/commits/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2",
+      "html_url": "https://github.com/MariaDB/server/commit/e1eb39a446c30b8459c39fd7f2ee1c55a36e97d2"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 7,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "a85523bd880cd024f716f323c82ba8eb73f9dcf8",
+      "filename": "extra/mariabackup/ds_compress.cc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/MariaDB/server/blob/7c30bc38a588b22b01f11130cfe99e7f36accf94/extra%2Fmariabackup%2Fds_compress.cc",
+      "raw_url": "https://github.com/MariaDB/server/raw/7c30bc38a588b22b01f11130cfe99e7f36accf94/extra%2Fmariabackup%2Fds_compress.cc",
+      "contents_url": "https://api.github.com/repos/MariaDB/server/contents/extra%2Fmariabackup%2Fds_compress.cc?ref=7c30bc38a588b22b01f11130cfe99e7f36accf94",
+      "patch": "@@ -386,6 +386,13 @@ create_worker_threads(uint n)\n \treturn threads;\n \n err:\n+\twhile (i > 0) {\n+\t\tcomp_thread_ctxt_t *thd;\n+\t\ti--;\n+\t\tthd = threads + i;\n+\t\tpthread_mutex_unlock(&thd->ctrl_mutex);\n+\t}\n+\n \tmy_free(threads);\n \treturn NULL;\n }"
+    }
+  ]
+}

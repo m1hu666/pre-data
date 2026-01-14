@@ -1,0 +1,101 @@
+{
+  "sha": "67bee15a389f9b8a9f6c3a340558d1e2319e7199",
+  "node_id": "C_kwDOCdfpEtoAKDY3YmVlMTVhMzg5ZjliOGE5ZjZjM2EzNDA1NThkMWUyMzE5ZTcxOTk",
+  "commit": {
+    "author": {
+      "name": "Nicolas Werner",
+      "email": "nicolas.werner@hotmail.de",
+      "date": "2022-09-28T11:36:52Z"
+    },
+    "committer": {
+      "name": "Nicolas Werner",
+      "email": "nicolas.werner@hotmail.de",
+      "date": "2022-09-28T11:36:52Z"
+    },
+    "message": "Prevent the homeserver from inserting malicious secrets\n\nCorrectly verify that the reply to a secrets request is actually coming\nfrom a verified device. While we did verify that it was us who replied,\nwe didn't properly cancel storing the secret if the sending device was\none of ours but was maliciously inserted by the homeserver and\nunverified. We only send secret requests to verified devices in the\nfirst place, so only the homeserver could abuse this issue.\n\nAdditionally we protected against malicious secret poisoning by\nverifying that the secret is actually the reply to a request. This means\nthe server only has 2 places where it can poison the secrets:\n\n- After a verification when we automatically request the secrets\n- When the user manually hits the request button\n\nIt also needs to prevent other secret answers to reach the client first\nsince we ignore all replies after that one.\n\nThe impact of this might be quite severe. It could allow the server to\nreplace the cross-signing keys silently and while we might not trust\nthat key, we possibly could trust it in the future if we rely on the\nstored secret. Similarly this could potentially be abused to make the\nclient trust a malicious online key backup.\n\nIf your deployment is not patched yet and you don't control your\nhomeserver, you can protect against this by simply not doing any\nverifications of your own devices and not pressing the request button in\nthe settings menu.",
+    "tree": {
+      "sha": "65891ea08ab4d1bd26abd6372a0fab2e29fefc4c",
+      "url": "https://api.github.com/repos/Nheko-Reborn/nheko/git/trees/65891ea08ab4d1bd26abd6372a0fab2e29fefc4c"
+    },
+    "url": "https://api.github.com/repos/Nheko-Reborn/nheko/git/commits/67bee15a389f9b8a9f6c3a340558d1e2319e7199",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQRs9eK3vYeHDT2hRCjI115hB3Py2QUCYzQzwQAKCRDI115hB3Py\n2c+DAP0RKpM1jmb5xCshwE/wsKQoMJHdkRdmK0jVxkpQ/Dq1QAEA709QwzYAg9er\nwt1SJ6AvCTXuQCS2DJ+prffpEbf1RQE=\n=ODWI\n-----END PGP SIGNATURE-----",
+      "payload": "tree 65891ea08ab4d1bd26abd6372a0fab2e29fefc4c\nparent 9010acd909e9b17910700640c21e228897a00b15\nauthor Nicolas Werner <nicolas.werner@hotmail.de> 1664365012 +0200\ncommitter Nicolas Werner <nicolas.werner@hotmail.de> 1664365012 +0200\n\nPrevent the homeserver from inserting malicious secrets\n\nCorrectly verify that the reply to a secrets request is actually coming\nfrom a verified device. While we did verify that it was us who replied,\nwe didn't properly cancel storing the secret if the sending device was\none of ours but was maliciously inserted by the homeserver and\nunverified. We only send secret requests to verified devices in the\nfirst place, so only the homeserver could abuse this issue.\n\nAdditionally we protected against malicious secret poisoning by\nverifying that the secret is actually the reply to a request. This means\nthe server only has 2 places where it can poison the secrets:\n\n- After a verification when we automatically request the secrets\n- When the user manually hits the request button\n\nIt also needs to prevent other secret answers to reach the client first\nsince we ignore all replies after that one.\n\nThe impact of this might be quite severe. It could allow the server to\nreplace the cross-signing keys silently and while we might not trust\nthat key, we possibly could trust it in the future if we rely on the\nstored secret. Similarly this could potentially be abused to make the\nclient trust a malicious online key backup.\n\nIf your deployment is not patched yet and you don't control your\nhomeserver, you can protect against this by simply not doing any\nverifications of your own devices and not pressing the request button in\nthe settings menu.\n",
+      "verified_at": "2024-11-06T16:04:05Z"
+    }
+  },
+  "url": "https://api.github.com/repos/Nheko-Reborn/nheko/commits/67bee15a389f9b8a9f6c3a340558d1e2319e7199",
+  "html_url": "https://github.com/Nheko-Reborn/nheko/commit/67bee15a389f9b8a9f6c3a340558d1e2319e7199",
+  "comments_url": "https://api.github.com/repos/Nheko-Reborn/nheko/commits/67bee15a389f9b8a9f6c3a340558d1e2319e7199/comments",
+  "author": {
+    "login": "deepbluev7",
+    "id": 16312324,
+    "node_id": "MDQ6VXNlcjE2MzEyMzI0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16312324?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/deepbluev7",
+    "html_url": "https://github.com/deepbluev7",
+    "followers_url": "https://api.github.com/users/deepbluev7/followers",
+    "following_url": "https://api.github.com/users/deepbluev7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/deepbluev7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/deepbluev7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/deepbluev7/subscriptions",
+    "organizations_url": "https://api.github.com/users/deepbluev7/orgs",
+    "repos_url": "https://api.github.com/users/deepbluev7/repos",
+    "events_url": "https://api.github.com/users/deepbluev7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/deepbluev7/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "deepbluev7",
+    "id": 16312324,
+    "node_id": "MDQ6VXNlcjE2MzEyMzI0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16312324?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/deepbluev7",
+    "html_url": "https://github.com/deepbluev7",
+    "followers_url": "https://api.github.com/users/deepbluev7/followers",
+    "following_url": "https://api.github.com/users/deepbluev7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/deepbluev7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/deepbluev7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/deepbluev7/subscriptions",
+    "organizations_url": "https://api.github.com/users/deepbluev7/orgs",
+    "repos_url": "https://api.github.com/users/deepbluev7/repos",
+    "events_url": "https://api.github.com/users/deepbluev7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/deepbluev7/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9010acd909e9b17910700640c21e228897a00b15",
+      "url": "https://api.github.com/repos/Nheko-Reborn/nheko/commits/9010acd909e9b17910700640c21e228897a00b15",
+      "html_url": "https://github.com/Nheko-Reborn/nheko/commit/9010acd909e9b17910700640c21e228897a00b15"
+    }
+  ],
+  "stats": {
+    "total": 40,
+    "additions": 25,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "6ab55b327851d6ae757270adb012130575ed5743",
+      "filename": "src/encryption/Olm.cpp",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 15,
+      "changes": 40,
+      "blob_url": "https://github.com/Nheko-Reborn/nheko/blob/67bee15a389f9b8a9f6c3a340558d1e2319e7199/src%2Fencryption%2FOlm.cpp",
+      "raw_url": "https://github.com/Nheko-Reborn/nheko/raw/67bee15a389f9b8a9f6c3a340558d1e2319e7199/src%2Fencryption%2FOlm.cpp",
+      "contents_url": "https://api.github.com/repos/Nheko-Reborn/nheko/contents/src%2Fencryption%2FOlm.cpp?ref=67bee15a389f9b8a9f6c3a340558d1e2319e7199",
+      "patch": "@@ -342,10 +342,13 @@ handle_olm_message(const OlmMessage &msg, const UserKeyCache &otherUserDeviceKey\n                 if (msg.sender != local_user.to_string())\n                     return;\n \n-                auto secret_name = request_id_to_secret_name.find(e->content.request_id);\n+                auto secret_name_it = request_id_to_secret_name.find(e->content.request_id);\n \n-                if (secret_name != request_id_to_secret_name.end()) {\n-                    nhlog::crypto()->info(\"Received secret: {}\", secret_name->second);\n+                if (secret_name_it != request_id_to_secret_name.end()) {\n+                    auto secret_name = secret_name_it->second;\n+                    request_id_to_secret_name.erase(secret_name_it);\n+\n+                    nhlog::crypto()->info(\"Received secret: {}\", secret_name);\n \n                     mtx::events::msg::SecretRequest secretRequest{};\n                     secretRequest.action = mtx::events::msg::RequestAction::Cancellation;\n@@ -358,15 +361,24 @@ handle_olm_message(const OlmMessage &msg, const UserKeyCache &otherUserDeviceKey\n                         return;\n \n                     auto deviceKeys = cache::userKeys(local_user.to_string());\n+                    if (!deviceKeys)\n+                        return;\n+\n                     std::string sender_device_id;\n-                    if (deviceKeys) {\n-                        for (auto &[dev, key] : deviceKeys->device_keys) {\n-                            if (key.keys[\"curve25519:\" + dev] == msg.sender_key) {\n-                                sender_device_id = dev;\n-                                break;\n-                            }\n+                    for (auto &[dev, key] : deviceKeys->device_keys) {\n+                        if (key.keys[\"curve25519:\" + dev] == msg.sender_key) {\n+                            sender_device_id = dev;\n+                            break;\n                         }\n                     }\n+                    if (!verificationStatus->verified_devices.count(sender_device_id) ||\n+                        !verificationStatus->verified_device_keys.count(msg.sender_key) ||\n+                        verificationStatus->verified_device_keys.at(msg.sender_key) !=\n+                          crypto::Trust::Verified) {\n+                        nhlog::net()->critical(\n+                          \"Received secret from unverified device {}! Ignoring!\", sender_device_id);\n+                        return;\n+                    }\n \n                     std::map<mtx::identifiers::User,\n                              std::map<std::string, mtx::events::msg::SecretRequest>>\n@@ -380,19 +392,17 @@ handle_olm_message(const OlmMessage &msg, const UserKeyCache &otherUserDeviceKey\n                     http::client()->send_to_device<mtx::events::msg::SecretRequest>(\n                       http::client()->generate_txn_id(),\n                       body,\n-                      [name = secret_name->second](mtx::http::RequestErr err) {\n+                      [secret_name](mtx::http::RequestErr err) {\n                           if (err) {\n                               nhlog::net()->error(\"Failed to send request cancellation \"\n                                                   \"for secrect \"\n                                                   \"'{}'\",\n-                                                  name);\n+                                                  secret_name);\n                           }\n                       });\n \n-                    nhlog::crypto()->info(\"Storing secret {}\", secret_name->second);\n-                    cache::client()->storeSecret(secret_name->second, e->content.secret);\n-\n-                    request_id_to_secret_name.erase(secret_name);\n+                    nhlog::crypto()->info(\"Storing secret {}\", secret_name);\n+                    cache::client()->storeSecret(secret_name, e->content.secret);\n                 }\n \n             } else if (auto sec_req = std::get_if<DeviceEvent<msg::SecretRequest>>(&device_event)) {"
+    }
+  ]
+}

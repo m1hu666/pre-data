@@ -1,0 +1,97 @@
+{
+  "sha": "24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+  "node_id": "C_kwDOByyPPdoAKDI0NDU5YWM2YzcyYjJmZDdjOTBmOWU1OGJkYmQ2ODA4YzFhMTliZTA",
+  "commit": {
+    "author": {
+      "name": "Tommy Li",
+      "email": "tommycli@chromium.org",
+      "date": "2022-01-20T18:33:14Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-01-20T18:33:14Z"
+    },
+    "message": "[omnibox] Fix UAF bug in TemplateURLParser\n\nThis CL takes a snapshot of SearchTermsData (just like\nHistoryURLProvider does) within TemplateURLParser, so we eliminate a\nsource of UAF bugs, where the TemplateURL parsing outlives the original\nSearchTermsData.\n\nThis bug happens during Chrome shutdown.\n\nBug: 1278322\nChange-Id: I439d9d3193bcaa7ef57ec0a046d057c32ef6fb76\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3403242\nReviewed-by: Justin Donnelly <jdonnelly@chromium.org>\nCommit-Queue: Tommy Li <tommycli@chromium.org>\nCr-Commit-Position: refs/heads/main@{#961536}",
+    "tree": {
+      "sha": "3f7f70702967545ceb360fc325524fef136e5430",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/3f7f70702967545ceb360fc325524fef136e5430"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+  "html_url": "https://github.com/chromium/chromium/commit/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "bab7b27f133325e2113aeecc689b57fb3eddd266",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/bab7b27f133325e2113aeecc689b57fb3eddd266",
+      "html_url": "https://github.com/chromium/chromium/commit/bab7b27f133325e2113aeecc689b57fb3eddd266"
+    }
+  ],
+  "stats": {
+    "total": 189,
+    "additions": 105,
+    "deletions": 84
+  },
+  "files": [
+    {
+      "sha": "7ed6ca93028b6eab29e9223fead7f95dfc35856a",
+      "filename": "components/omnibox/browser/history_url_provider.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 81,
+      "changes": 82,
+      "blob_url": "https://github.com/chromium/chromium/blob/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fomnibox%2Fbrowser%2Fhistory_url_provider.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fomnibox%2Fbrowser%2Fhistory_url_provider.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fomnibox%2Fbrowser%2Fhistory_url_provider.cc?ref=24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+      "patch": "@@ -275,86 +275,6 @@ GURL ConvertToHostOnly(const history::HistoryMatch& match,\n \n }  // namespace\n \n-// -----------------------------------------------------------------\n-// SearchTermsDataSnapshot\n-\n-// Implementation of SearchTermsData that takes a snapshot of another\n-// SearchTermsData by copying all the responses to the different getters into\n-// member strings, then returning those strings when its own getters are called.\n-// This will typically be constructed on the UI thread from\n-// UIThreadSearchTermsData but is subsequently safe to use on any thread.\n-class SearchTermsDataSnapshot : public SearchTermsData {\n- public:\n-  explicit SearchTermsDataSnapshot(const SearchTermsData* search_terms_data);\n-  ~SearchTermsDataSnapshot() override;\n-  SearchTermsDataSnapshot(const SearchTermsDataSnapshot&) = delete;\n-  SearchTermsDataSnapshot& operator=(const SearchTermsDataSnapshot&) = delete;\n-\n-  std::string GoogleBaseURLValue() const override;\n-  std::string GetApplicationLocale() const override;\n-  std::u16string GetRlzParameterValue(bool from_app_list) const override;\n-  std::string GetSearchClient() const override;\n-  std::string GoogleImageSearchSource() const override;\n-\n-  // Estimates dynamic memory usage.\n-  // See base/trace_event/memory_usage_estimator.h for more info.\n-  size_t EstimateMemoryUsage() const override;\n-\n- private:\n-  std::string google_base_url_value_;\n-  std::string application_locale_;\n-  std::u16string rlz_parameter_value_;\n-  std::string search_client_;\n-  std::string google_image_search_source_;\n-};\n-\n-SearchTermsDataSnapshot::SearchTermsDataSnapshot(\n-    const SearchTermsData* search_terms_data) {\n-  if (search_terms_data) {\n-    google_base_url_value_ = search_terms_data->GoogleBaseURLValue();\n-    application_locale_ = search_terms_data->GetApplicationLocale();\n-    rlz_parameter_value_ = search_terms_data->GetRlzParameterValue(false);\n-    search_client_ = search_terms_data->GetSearchClient();\n-    google_image_search_source_ = search_terms_data->GoogleImageSearchSource();\n-  }\n-}\n-\n-SearchTermsDataSnapshot::~SearchTermsDataSnapshot() {\n-}\n-\n-std::string SearchTermsDataSnapshot::GoogleBaseURLValue() const {\n-  return google_base_url_value_;\n-}\n-\n-std::string SearchTermsDataSnapshot::GetApplicationLocale() const {\n-  return application_locale_;\n-}\n-\n-std::u16string SearchTermsDataSnapshot::GetRlzParameterValue(\n-    bool from_app_list) const {\n-  return rlz_parameter_value_;\n-}\n-\n-std::string SearchTermsDataSnapshot::GetSearchClient() const {\n-  return search_client_;\n-}\n-\n-std::string SearchTermsDataSnapshot::GoogleImageSearchSource() const {\n-  return google_image_search_source_;\n-}\n-\n-size_t SearchTermsDataSnapshot::EstimateMemoryUsage() const {\n-  size_t res = 0;\n-\n-  res += base::trace_event::EstimateMemoryUsage(google_base_url_value_);\n-  res += base::trace_event::EstimateMemoryUsage(application_locale_);\n-  res += base::trace_event::EstimateMemoryUsage(rlz_parameter_value_);\n-  res += base::trace_event::EstimateMemoryUsage(search_client_);\n-  res += base::trace_event::EstimateMemoryUsage(google_image_search_source_);\n-\n-  return res;\n-}\n-\n // -----------------------------------------------------------------\n // HistoryURLProvider\n \n@@ -463,7 +383,7 @@ HistoryURLProviderParams::HistoryURLProviderParams(\n           default_search_provider\n               ? new TemplateURL(default_search_provider->data())\n               : nullptr),\n-      search_terms_data(new SearchTermsDataSnapshot(search_terms_data)),\n+      search_terms_data(SearchTermsData::MakeSnapshot(search_terms_data)),\n       allow_deleting_browser_history(allow_deleting_browser_history) {}\n \n HistoryURLProviderParams::~HistoryURLProviderParams() {"
+    },
+    {
+      "sha": "018730d2142bbd6bb4e06f59641b897e39ca6ff2",
+      "filename": "components/search_engines/search_terms_data.cc",
+      "status": "modified",
+      "additions": 92,
+      "deletions": 0,
+      "changes": 92,
+      "blob_url": "https://github.com/chromium/chromium/blob/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Fsearch_terms_data.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Fsearch_terms_data.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fsearch_engines%2Fsearch_terms_data.cc?ref=24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+      "patch": "@@ -3,13 +3,105 @@\n // found in the LICENSE file.\n \n #include \"components/search_engines/search_terms_data.h\"\n+#include <memory>\n \n #include \"base/check.h\"\n+#include \"base/trace_event/memory_usage_estimator.h\"\n+#include \"base/trace_event/trace_event.h\"\n #include \"build/build_config.h\"\n #include \"components/google/core/common/google_util.h\"\n #include \"components/lens/lens_features.h\"\n #include \"url/gurl.h\"\n \n+namespace {\n+\n+// -----------------------------------------------------------------\n+// SearchTermsDataSnapshot\n+\n+// Implementation of SearchTermsData that takes a snapshot of another\n+// SearchTermsData by copying all the responses to the different getters into\n+// member strings, then returning those strings when its own getters are called.\n+// This will typically be constructed on the UI thread from\n+// UIThreadSearchTermsData but is subsequently safe to use on any thread.\n+class SearchTermsDataSnapshot : public SearchTermsData {\n+ public:\n+  explicit SearchTermsDataSnapshot(const SearchTermsData* search_terms_data);\n+  ~SearchTermsDataSnapshot() override;\n+  SearchTermsDataSnapshot(const SearchTermsDataSnapshot&) = delete;\n+  SearchTermsDataSnapshot& operator=(const SearchTermsDataSnapshot&) = delete;\n+\n+  std::string GoogleBaseURLValue() const override;\n+  std::string GetApplicationLocale() const override;\n+  std::u16string GetRlzParameterValue(bool from_app_list) const override;\n+  std::string GetSearchClient() const override;\n+  std::string GoogleImageSearchSource() const override;\n+\n+  // Estimates dynamic memory usage.\n+  // See base/trace_event/memory_usage_estimator.h for more info.\n+  size_t EstimateMemoryUsage() const override;\n+\n+ private:\n+  std::string google_base_url_value_;\n+  std::string application_locale_;\n+  std::u16string rlz_parameter_value_;\n+  std::string search_client_;\n+  std::string google_image_search_source_;\n+};\n+\n+SearchTermsDataSnapshot::SearchTermsDataSnapshot(\n+    const SearchTermsData* search_terms_data) {\n+  if (search_terms_data) {\n+    google_base_url_value_ = search_terms_data->GoogleBaseURLValue();\n+    application_locale_ = search_terms_data->GetApplicationLocale();\n+    rlz_parameter_value_ = search_terms_data->GetRlzParameterValue(false);\n+    search_client_ = search_terms_data->GetSearchClient();\n+    google_image_search_source_ = search_terms_data->GoogleImageSearchSource();\n+  }\n+}\n+\n+SearchTermsDataSnapshot::~SearchTermsDataSnapshot() = default;\n+\n+std::string SearchTermsDataSnapshot::GoogleBaseURLValue() const {\n+  return google_base_url_value_;\n+}\n+\n+std::string SearchTermsDataSnapshot::GetApplicationLocale() const {\n+  return application_locale_;\n+}\n+\n+std::u16string SearchTermsDataSnapshot::GetRlzParameterValue(\n+    bool from_app_list) const {\n+  return rlz_parameter_value_;\n+}\n+\n+std::string SearchTermsDataSnapshot::GetSearchClient() const {\n+  return search_client_;\n+}\n+\n+std::string SearchTermsDataSnapshot::GoogleImageSearchSource() const {\n+  return google_image_search_source_;\n+}\n+\n+size_t SearchTermsDataSnapshot::EstimateMemoryUsage() const {\n+  size_t res = 0;\n+\n+  res += base::trace_event::EstimateMemoryUsage(google_base_url_value_);\n+  res += base::trace_event::EstimateMemoryUsage(application_locale_);\n+  res += base::trace_event::EstimateMemoryUsage(rlz_parameter_value_);\n+  res += base::trace_event::EstimateMemoryUsage(search_client_);\n+  res += base::trace_event::EstimateMemoryUsage(google_image_search_source_);\n+\n+  return res;\n+}\n+\n+}  // namespace\n+\n+// static\n+std::unique_ptr<SearchTermsData> SearchTermsData::MakeSnapshot(\n+    const SearchTermsData* original_data) {\n+  return std::make_unique<SearchTermsDataSnapshot>(original_data);\n+}\n+\n SearchTermsData::SearchTermsData() = default;\n \n SearchTermsData::~SearchTermsData() = default;"
+    },
+    {
+      "sha": "fe1cdd69246cbb0a843d70368bd9cddc911694e6",
+      "filename": "components/search_engines/search_terms_data.h",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/chromium/chromium/blob/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Fsearch_terms_data.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Fsearch_terms_data.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fsearch_engines%2Fsearch_terms_data.h?ref=24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+      "patch": "@@ -5,6 +5,7 @@\n #ifndef COMPONENTS_SEARCH_ENGINES_SEARCH_TERMS_DATA_H_\n #define COMPONENTS_SEARCH_ENGINES_SEARCH_TERMS_DATA_H_\n \n+#include <memory>\n #include <string>\n \n #include \"base/compiler_specific.h\"\n@@ -13,6 +14,12 @@\n // only be accessed on the UI thread.\n class SearchTermsData {\n  public:\n+  // Utility function that takes a snapshot of a different SearchTermsData\n+  // instance. This is used to access SearchTermsData off the UI thread, or to\n+  // copy the SearchTermsData for lifetime reasons.\n+  static std::unique_ptr<SearchTermsData> MakeSnapshot(\n+      const SearchTermsData* original_data);\n+\n   SearchTermsData();\n \n   SearchTermsData(const SearchTermsData&) = delete;"
+    },
+    {
+      "sha": "323792c2e140555b6e4c23e59f77edefc4546878",
+      "filename": "components/search_engines/template_url_parser.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/chromium/chromium/blob/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Ftemplate_url_parser.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0/components%2Fsearch_engines%2Ftemplate_url_parser.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/components%2Fsearch_engines%2Ftemplate_url_parser.cc?ref=24459ac6c72b2fd7c90f9e58bdbd6808c1a19be0",
+      "patch": "@@ -11,7 +11,6 @@\n \n #include \"base/bind.h\"\n #include \"base/logging.h\"\n-#include \"base/memory/raw_ptr.h\"\n #include \"base/strings/string_number_conversions.h\"\n #include \"base/strings/string_util.h\"\n #include \"base/strings/utf_string_conversions.h\"\n@@ -111,7 +110,7 @@ class SafeTemplateURLParser {\n       const SearchTermsData* search_terms_data,\n       const TemplateURLParser::ParameterFilter& parameter_filter,\n       TemplateURLParser::ParseCallback callback)\n-      : search_terms_data_(search_terms_data),\n+      : search_terms_data_(SearchTermsData::MakeSnapshot(search_terms_data)),\n         parameter_filter_(parameter_filter),\n         callback_(std::move(callback)) {}\n \n@@ -158,7 +157,10 @@ class SafeTemplateURLParser {\n   // at least one element, if only the empty string.\n   std::vector<std::string> namespaces_;\n \n-  raw_ptr<const SearchTermsData> search_terms_data_;\n+  // We have to own our own snapshot, because the parse request may outlive the\n+  // originally provided SearchTermsData lifetime.\n+  std::unique_ptr<SearchTermsData> search_terms_data_;\n+\n   TemplateURLParser::ParameterFilter parameter_filter_;\n   TemplateURLParser::ParseCallback callback_;\n };"
+    }
+  ]
+}

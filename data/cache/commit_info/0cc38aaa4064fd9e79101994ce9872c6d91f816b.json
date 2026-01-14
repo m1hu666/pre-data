@@ -1,0 +1,101 @@
+{
+  "sha": "0cc38aaa4064fd9e79101994ce9872c6d91f816b",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MGNjMzhhYWE0MDY0ZmQ5ZTc5MTAxOTk0Y2U5ODcyYzZkOTFmODE2Yg==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-12-08T17:31:57Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-12-08T17:57:20Z"
+    },
+    "message": "Prevent unitialized memory access in `GraphConstructor::MakeEdge`\n\nThe `MakeEdge` implementation assumes that there exists an output at `output_index` of `src` node and an input at `input_index` of `dst` node. However, if this is not the case this results in accessing data out of bounds. Because we are accessing an array that is a private member of a class and only in read only mode, this usually results only in unitialized memory access. However, it is reasonable to think that malicious users could manipulate these indexes to actually read data outside the class, thus resulting in information leakage and further exploits.\n\nPiperOrigin-RevId: 346343288\nChange-Id: I2127da27c2023d27f26efd39afa6c853385cab6f",
+    "tree": {
+      "sha": "50ae0117abe00189686edf8200d1489dab27e4be",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/50ae0117abe00189686edf8200d1489dab27e4be"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/0cc38aaa4064fd9e79101994ce9872c6d91f816b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0cc38aaa4064fd9e79101994ce9872c6d91f816b",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/0cc38aaa4064fd9e79101994ce9872c6d91f816b",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0cc38aaa4064fd9e79101994ce9872c6d91f816b/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3616708cb866365301d8e67b43b32b46d94b08a0",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3616708cb866365301d8e67b43b32b46d94b08a0",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/3616708cb866365301d8e67b43b32b46d94b08a0"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 12,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "639739e9cac8c2bd4360fb4cac3a57d728608823",
+      "filename": "tensorflow/core/common_runtime/graph_constructor.cc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0cc38aaa4064fd9e79101994ce9872c6d91f816b/tensorflow%2Fcore%2Fcommon_runtime%2Fgraph_constructor.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0cc38aaa4064fd9e79101994ce9872c6d91f816b/tensorflow%2Fcore%2Fcommon_runtime%2Fgraph_constructor.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fcommon_runtime%2Fgraph_constructor.cc?ref=0cc38aaa4064fd9e79101994ce9872c6d91f816b",
+      "patch": "@@ -44,6 +44,7 @@ limitations under the License.\n #include \"tensorflow/core/lib/gtl/inlined_vector.h\"\n #include \"tensorflow/core/lib/strings/scanner.h\"\n #include \"tensorflow/core/lib/strings/str_util.h\"\n+#include \"tensorflow/core/platform/errors.h\"\n #include \"tensorflow/core/platform/logging.h\"\n #include \"tensorflow/core/platform/macros.h\"\n #include \"tensorflow/core/public/version.h\"\n@@ -1425,6 +1426,17 @@ void GraphConstructor::Undo() {\n \n Status GraphConstructor::MakeEdge(Node* src, int output_index, Node* dst,\n                                   int input_index) {\n+  if (output_index >= src->num_outputs()) {\n+    return errors::InvalidArgument(\n+        \"Output \", output_index, \" of node \", src->name(),\n+        \" does not exist. Node only has \", src->num_outputs(), \" outputs.\");\n+  }\n+  if (input_index >= dst->num_inputs()) {\n+    return errors::InvalidArgument(\n+        \"Input \", input_index, \" of node \", dst->name(),\n+        \" does not exist. Node only has \", dst->num_inputs(), \" inputs.\");\n+  }\n+\n   DataType src_out = src->output_type(output_index);\n   DataType dst_in = dst->input_type(input_index);\n   if (!TypesCompatible(dst_in, src_out)) {"
+    }
+  ]
+}

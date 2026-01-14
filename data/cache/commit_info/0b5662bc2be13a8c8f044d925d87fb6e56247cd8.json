@@ -1,0 +1,136 @@
+{
+  "sha": "0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MGI1NjYyYmMyYmUxM2E4YzhmMDQ0ZDkyNWQ4N2ZiNmU1NjI0N2NkOA==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-18T21:12:45Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-18T21:34:47Z"
+    },
+    "message": "[tflite] Ensure input tensors don't have `nullptr` buffers.\n\nA crafted TFLite model can force a node to have as input a tensor backed by a `nullptr` buffer. That is, by carefully changing the buffer index in the flatbuffer serialization, we can force the TFLite interpreter to consider a read-only tensor to be a read-write one and assume that there is an operator that has this tensor as output, writing to it and allocating memory before the tensor is used as input. If this does not happen, we get memory corruption.\n\nPiperOrigin-RevId: 332524692\nChange-Id: I57ef175152a29020af9ab041dc959e5631dce40f",
+    "tree": {
+      "sha": "1f606c0a61788c8258167062b6fcedf8ac2c6a42",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/1f606c0a61788c8258167062b6fcedf8ac2c6a42"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "00a5ef689b0080ae2a73fe81da4673985078ec5c",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/00a5ef689b0080ae2a73fe81da4673985078ec5c",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/00a5ef689b0080ae2a73fe81da4673985078ec5c"
+    }
+  ],
+  "stats": {
+    "total": 76,
+    "additions": 58,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "d08a2e2fbfa1ff7fc817c6978e712a1e84c18298",
+      "filename": "tensorflow/lite/BUILD",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2FBUILD",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2FBUILD",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2FBUILD?ref=0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+      "patch": "@@ -242,6 +242,7 @@ cc_library(\n         \":arena_planner\",\n         \":external_cpu_backend_context\",\n         \":graph_info\",\n+        \":kernel_api\",\n         \":memory_planner\",\n         \":minimal_logging\",\n         \":shared_library\",\n@@ -469,6 +470,7 @@ cc_test(\n         \"testdata/add_shared_tensors.bin\",\n         \"testdata/empty_model.bin\",\n         \"testdata/multi_add_flex.bin\",\n+        \"testdata/segment_sum_invalid_buffer.bin\",\n         \"testdata/sparse_tensor.bin\",\n         \"testdata/test_min_runtime.bin\",\n         \"testdata/test_model.bin\","
+    },
+    {
+      "sha": "235a776c56f1a07dc0ce1ed3cf807a34515c2ddb",
+      "filename": "tensorflow/lite/core/subgraph.cc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.cc?ref=0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+      "patch": "@@ -19,6 +19,7 @@ limitations under the License.\n #include <cstdint>\n \n #include \"tensorflow/lite/arena_planner.h\"\n+#include \"tensorflow/lite/builtin_ops.h\"\n #include \"tensorflow/lite/c/common.h\"\n #include \"tensorflow/lite/context_util.h\"\n #include \"tensorflow/lite/core/api/tensor_utils.h\"\n@@ -1030,6 +1031,19 @@ TfLiteStatus Subgraph::Invoke() {\n           tensor->data_is_stale) {\n         TF_LITE_ENSURE_STATUS(EnsureTensorDataIsReadable(tensor_index));\n       }\n+      if (tensor->data.raw == nullptr && tensor->bytes > 0) {\n+        if (registration.builtin_code == kTfLiteBuiltinReshape && i == 1) {\n+          // In general, having a tensor here with no buffer will be an error.\n+          // However, for the reshape operator, the second input tensor is only\n+          // used for the shape, not for the data. Thus, null buffer is ok.\n+          continue;\n+        } else {\n+          // In all other cases, we need to return an error as otherwise we will\n+          // trigger a null pointer dereference (likely).\n+          ReportError(\"Input tensor %d lacks data\", tensor_index);\n+          return kTfLiteError;\n+        }\n+      }\n     }\n \n     if (check_cancelled_func_ != nullptr &&"
+    },
+    {
+      "sha": "110c54aa571a7e018d92b27096fe4fb8bdccf03b",
+      "filename": "tensorflow/lite/model_test.cc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 18,
+      "changes": 60,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Fmodel_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Fmodel_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fmodel_test.cc?ref=0b5662bc2be13a8c8f044d925d87fb6e56247cd8",
+      "patch": "@@ -438,24 +438,48 @@ TEST(BasicFlatBufferModel, TestParseModelWithSparseTensor) {\n }\n \n // TODO(b/150072943): Add malformed model with sparse tensor tests.\n-TEST(BasicFlatBufferModel, TestHandleMalformedModel) {\n-  const auto model_paths = {\n-      // These models use the same tensor as both input and ouput of a node\n-      \"tensorflow/lite/testdata/add_shared_tensors.bin\",\n-  };\n-\n-  for (const auto& model_path : model_paths) {\n-    std::unique_ptr<tflite::FlatBufferModel> model =\n-        FlatBufferModel::BuildFromFile(model_path);\n-    ASSERT_NE(model, nullptr);\n-\n-    tflite::ops::builtin::BuiltinOpResolver resolver;\n-    InterpreterBuilder builder(*model, resolver);\n-    std::unique_ptr<Interpreter> interpreter;\n-    ASSERT_EQ(builder(&interpreter), kTfLiteOk);\n-    ASSERT_NE(interpreter, nullptr);\n-    ASSERT_NE(interpreter->AllocateTensors(), kTfLiteOk);\n-  }\n+\n+// The models here have at least a node that uses the same tensor as input and\n+// output. This causes segfaults when trying to eval the operator, hence we try\n+// to prevent this scenario. The earliest place we can check this is in\n+// `AllocateTensors`, hence the test checks that `interpreter->AllocateTensors`\n+// detects these bad models.\n+TEST(BasicFlatBufferModel, TestHandleMalformedModelReuseTensor) {\n+  const auto model_path =\n+      \"tensorflow/lite/testdata/add_shared_tensors.bin\";\n+\n+  std::unique_ptr<tflite::FlatBufferModel> model =\n+      FlatBufferModel::BuildFromFile(model_path);\n+  ASSERT_NE(model, nullptr);\n+\n+  tflite::ops::builtin::BuiltinOpResolver resolver;\n+  InterpreterBuilder builder(*model, resolver);\n+  std::unique_ptr<Interpreter> interpreter;\n+  ASSERT_EQ(builder(&interpreter), kTfLiteOk);\n+  ASSERT_NE(interpreter, nullptr);\n+  ASSERT_NE(interpreter->AllocateTensors(), kTfLiteOk);\n+}\n+\n+// The models here have a buffer index for a tensor pointing to a null buffer.\n+// This results in the tensor being interpreted as read-write, but the model\n+// assumes the tensor is read-only. As such, `interpreter->Invoke()` would\n+// segfault if no precondition check is added. The test checks that the\n+// precondition check exists.\n+TEST(BasicFlatBufferModel, TestHandleMalformedModelInvalidBuffer) {\n+  const auto model_path =\n+      \"tensorflow/lite/testdata/segment_sum_invalid_buffer.bin\";\n+\n+  std::unique_ptr<tflite::FlatBufferModel> model =\n+      FlatBufferModel::BuildFromFile(model_path);\n+  ASSERT_NE(model, nullptr);\n+\n+  tflite::ops::builtin::BuiltinOpResolver resolver;\n+  InterpreterBuilder builder(*model, resolver);\n+  std::unique_ptr<Interpreter> interpreter;\n+  ASSERT_EQ(builder(&interpreter), kTfLiteOk);\n+  ASSERT_NE(interpreter, nullptr);\n+  ASSERT_EQ(interpreter->AllocateTensors(), kTfLiteOk);\n+  ASSERT_NE(interpreter->Invoke(), kTfLiteOk);\n }\n \n // TODO(aselle): Add tests for serialization of builtin op data types."
+    },
+    {
+      "sha": "b7b81cde6e78fe4570d07e4aa9346e4f2e3998c1",
+      "filename": "tensorflow/lite/testdata/segment_sum_invalid_buffer.bin",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Ftestdata%2Fsegment_sum_invalid_buffer.bin",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0b5662bc2be13a8c8f044d925d87fb6e56247cd8/tensorflow%2Flite%2Ftestdata%2Fsegment_sum_invalid_buffer.bin",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Ftestdata%2Fsegment_sum_invalid_buffer.bin?ref=0b5662bc2be13a8c8f044d925d87fb6e56247cd8"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "953f28dca13c92839ba389c055587cfe6c723578",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6OTUzZjI4ZGNhMTNjOTI4MzliYTM4OWMwNTU1ODdjZmU2YzcyMzU3OA==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-04-28T00:46:38Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-04-28T01:19:50Z"
+    },
+    "message": "Prevent a null pointer exception in TFLite\n\nPiperOrigin-RevId: 370800206\nChange-Id: Idd437ebce4ff224120d8eefc1c14c062173b71d6",
+    "tree": {
+      "sha": "2f2b4f311a9c6b7a3ce27b5892efb8bb8f623c1f",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/2f2b4f311a9c6b7a3ce27b5892efb8bb8f623c1f"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/953f28dca13c92839ba389c055587cfe6c723578",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/953f28dca13c92839ba389c055587cfe6c723578",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/953f28dca13c92839ba389c055587cfe6c723578",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/953f28dca13c92839ba389c055587cfe6c723578/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "801c1c6be5324219689c98e1bd3e0ca365ee834d",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/801c1c6be5324219689c98e1bd3e0ca365ee834d",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/801c1c6be5324219689c98e1bd3e0ca365ee834d"
+    }
+  ],
+  "stats": {
+    "total": 60,
+    "additions": 31,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "176e020a5a8e5532ed22ef63384d2b87f29f4971",
+      "filename": "tensorflow/lite/kernels/maximum_minimum.cc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 29,
+      "changes": 60,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/953f28dca13c92839ba389c055587cfe6c723578/tensorflow%2Flite%2Fkernels%2Fmaximum_minimum.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/953f28dca13c92839ba389c055587cfe6c723578/tensorflow%2Flite%2Fkernels%2Fmaximum_minimum.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fmaximum_minimum.cc?ref=953f28dca13c92839ba389c055587cfe6c723578",
+      "patch": "@@ -157,35 +157,37 @@ template <KernelType kernel_type, typename OpType>\n TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {\n   OpContext op_context(context, node);\n \n-    switch (op_context.output->type) {\n-      case kTfLiteFloat32:\n-        TFLiteOperation<kernel_type, float, OpType>(context, node, op_context);\n-        break;\n-      case kTfLiteUInt8:\n-        TFLiteOperation<kernel_type, uint8_t, OpType>(context, node,\n-                                                      op_context);\n-        break;\n-      case kTfLiteInt8:\n-        TFLiteOperation<kernel_type, int8_t, OpType>(context, node, op_context);\n-        break;\n-      case kTfLiteInt32:\n-        TFLiteOperation<kernel_type, int32_t, OpType>(context, node,\n-                                                      op_context);\n-        break;\n-      case kTfLiteInt64:\n-        TFLiteOperation<kernel_type, int64_t, OpType>(context, node,\n-                                                      op_context);\n-        break;\n-      case kTfLiteInt16:\n-        TFLiteOperation<kernel_type, int16_t, OpType>(context, node,\n-                                                      op_context);\n-        break;\n-      default:\n-        context->ReportError(context,\n-                             \"Type %d is currently not supported by Maximum.\",\n-                             op_context.output->type);\n-        return kTfLiteError;\n-    }\n+  // If inputs have no element, shortcircuit.\n+  if (NumElements(op_context.input1) == 0 ||\n+      NumElements(op_context.input2) == 0) {\n+    return kTfLiteOk;\n+  }\n+\n+  switch (op_context.output->type) {\n+    case kTfLiteFloat32:\n+      TFLiteOperation<kernel_type, float, OpType>(context, node, op_context);\n+      break;\n+    case kTfLiteUInt8:\n+      TFLiteOperation<kernel_type, uint8_t, OpType>(context, node, op_context);\n+      break;\n+    case kTfLiteInt8:\n+      TFLiteOperation<kernel_type, int8_t, OpType>(context, node, op_context);\n+      break;\n+    case kTfLiteInt32:\n+      TFLiteOperation<kernel_type, int32_t, OpType>(context, node, op_context);\n+      break;\n+    case kTfLiteInt64:\n+      TFLiteOperation<kernel_type, int64_t, OpType>(context, node, op_context);\n+      break;\n+    case kTfLiteInt16:\n+      TFLiteOperation<kernel_type, int16_t, OpType>(context, node, op_context);\n+      break;\n+    default:\n+      context->ReportError(context,\n+                           \"Type %d is currently not supported by Maximum.\",\n+                           op_context.output->type);\n+      return kTfLiteError;\n+  }\n   return kTfLiteOk;\n }\n "
+    }
+  ]
+}

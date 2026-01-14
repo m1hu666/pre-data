@@ -1,0 +1,101 @@
+{
+  "sha": "46c8ec2b9bccb8ccabff52d998c5eee77a228348",
+  "node_id": "C_kwDOBPP1p9oAKDQ2YzhlYzJiOWJjY2I4Y2NhYmZmNTJkOTk4YzVlZWU3N2EyMjgzNDg",
+  "commit": {
+    "author": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2022-03-24T20:30:07Z"
+    },
+    "committer": {
+      "name": "Michael R Sweet",
+      "email": "michael.r.sweet@gmail.com",
+      "date": "2022-03-24T20:30:07Z"
+    },
+    "message": "Call check_pages when writing links (Issue #480)",
+    "tree": {
+      "sha": "7b99490bd48e2f550cd725403fefa036b0f2a3d9",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/trees/7b99490bd48e2f550cd725403fefa036b0f2a3d9"
+    },
+    "url": "https://api.github.com/repos/michaelrsweet/htmldoc/git/commits/46c8ec2b9bccb8ccabff52d998c5eee77a228348",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJOBAABCAA4FiEEhFRkZgtoaqs2VAtvmZVZoCeBWVUFAmI81M8aHG1pY2hhZWwu\nci5zd2VldEBnbWFpbC5jb20ACgkQmZVZoCeBWVV2Xg/+JvtT30Kc2UxWN/Vw/+Un\nHQSrcgGH6F0P4WCy50KQeRzEmIcto1mzyBDZJDYmAOBaN8qg2NCv056g3LuId6xD\nocgiI2FKRrD7YevKCTsMkKK2Vj5bbbzEywhSghvbI5O6Ed50cJ2W8iAdWxWBGmDS\njgV1TWIWUY67C6DvQHn7mqgzceo+ez2ROiixZNp8vL0OI2AmixGX29xgRDxn6vq1\nWBIr4NVZmvbcsjSpfFbjZm7WB1rc4+ii2NbYUsh+e6BPIlgCnL03F2/h3yjMbDlJ\nGsP55n5bJT21pxjlgGJvBxHcBZa/SoTLtcDWvP/q3ZM+wD8qDWHAdIx2GM1lDLIV\nKmNXbwr+UjOdSeVkHRld6BG9GM5hVG8L8rIeYnO1Hgrk75wqMDXIWWzB0oA7UU7r\nlHLfQqzXjdqz25GliQ5nE2kl1YRsMMmqZcHBFshLLHZHaMtzO6+j4EOO/DdTzkVq\ninJ+MVygGp2NnQw+9PBhSdk4riRaezw+GMfoHfsCYFxG3Y3fIQpicm1JER3JOCfV\ncRrbjlOeSAPMoK5tKfGAQliy7MaVbwnt3Gt3g0TNzM5drtTO7qImeLcF63k+TzKw\nE2+dYN5GS3sdtYBvsmToF45gxQW44yTriqikbrcx0Enqdyr2PZhUFEse4HWBznuk\nAEMxS0G4gW3+StVgzV561kg=\n=5G7i\n-----END PGP SIGNATURE-----",
+      "payload": "tree 7b99490bd48e2f550cd725403fefa036b0f2a3d9\nparent 2e780dc564cd69da7b5107836684229816886515\nauthor Michael R Sweet <michael.r.sweet@gmail.com> 1648153807 -0400\ncommitter Michael R Sweet <michael.r.sweet@gmail.com> 1648153807 -0400\n\nCall check_pages when writing links (Issue #480)\n",
+      "verified_at": "2024-11-13T10:06:28Z"
+    }
+  },
+  "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/46c8ec2b9bccb8ccabff52d998c5eee77a228348",
+  "html_url": "https://github.com/michaelrsweet/htmldoc/commit/46c8ec2b9bccb8ccabff52d998c5eee77a228348",
+  "comments_url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/46c8ec2b9bccb8ccabff52d998c5eee77a228348/comments",
+  "author": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelrsweet",
+    "id": 488103,
+    "node_id": "MDQ6VXNlcjQ4ODEwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/488103?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelrsweet",
+    "html_url": "https://github.com/michaelrsweet",
+    "followers_url": "https://api.github.com/users/michaelrsweet/followers",
+    "following_url": "https://api.github.com/users/michaelrsweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelrsweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelrsweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelrsweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelrsweet/orgs",
+    "repos_url": "https://api.github.com/users/michaelrsweet/repos",
+    "events_url": "https://api.github.com/users/michaelrsweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelrsweet/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2e780dc564cd69da7b5107836684229816886515",
+      "url": "https://api.github.com/repos/michaelrsweet/htmldoc/commits/2e780dc564cd69da7b5107836684229816886515",
+      "html_url": "https://github.com/michaelrsweet/htmldoc/commit/2e780dc564cd69da7b5107836684229816886515"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e7bc22d0fa44a5d67ab0bb6a160637d0d1fe80b4",
+      "filename": "htmldoc/ps-pdf.cxx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/michaelrsweet/htmldoc/blob/46c8ec2b9bccb8ccabff52d998c5eee77a228348/htmldoc%2Fps-pdf.cxx",
+      "raw_url": "https://github.com/michaelrsweet/htmldoc/raw/46c8ec2b9bccb8ccabff52d998c5eee77a228348/htmldoc%2Fps-pdf.cxx",
+      "contents_url": "https://api.github.com/repos/michaelrsweet/htmldoc/contents/htmldoc%2Fps-pdf.cxx?ref=46c8ec2b9bccb8ccabff52d998c5eee77a228348",
+      "patch": "@@ -3585,6 +3585,8 @@ pdf_write_names(FILE *out)\t\t/* I - Output file */\n     pdf_start_object(out);\n     float x, y;\n \n+    check_pages(link->page);\n+\n     x = 0.0f;\n     y = link->top + pages[link->page].bottom;\n     pspdf_transform_coords(pages + link->page, x, y);"
+    }
+  ]
+}

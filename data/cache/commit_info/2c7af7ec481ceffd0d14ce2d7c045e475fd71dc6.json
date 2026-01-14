@@ -1,0 +1,125 @@
+{
+  "sha": "2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+  "node_id": "MDY6Q29tbWl0MTU0MjAxMjU5OjJjN2FmN2VjNDgxY2VmZmQwZDE0Y2UyZDdjMDQ1ZTQ3NWZkNzFkYzY=",
+  "commit": {
+    "author": {
+      "name": "Aakash Patel",
+      "email": "avp@fb.com",
+      "date": "2020-08-14T20:49:03Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2020-08-14T20:50:33Z"
+    },
+    "message": "Fix backward branching in SwitchImm.\n\nSummary:\n`SwitchImm` can subtract from `ip`, but it was reading the offset\nfrom a `uint32_t *` instead of `int32_t *`.\nChange the type to the correct one.\n\nReviewed By: dulinriley\n\nDifferential Revision: D23114516\n\nfbshipit-source-id: d4ddab94eb16dc1ce479590851eeb1ab428bd5d6",
+    "tree": {
+      "sha": "fab8afb7188fd670498884915af84116a0652798",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/fab8afb7188fd670498884915af84116a0652798"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+  "html_url": "https://github.com/facebook/hermes/commit/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/comments",
+  "author": {
+    "login": "avp",
+    "id": 2388586,
+    "node_id": "MDQ6VXNlcjIzODg1ODY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388586?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/avp",
+    "html_url": "https://github.com/avp",
+    "followers_url": "https://api.github.com/users/avp/followers",
+    "following_url": "https://api.github.com/users/avp/following{/other_user}",
+    "gists_url": "https://api.github.com/users/avp/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/avp/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/avp/subscriptions",
+    "organizations_url": "https://api.github.com/users/avp/orgs",
+    "repos_url": "https://api.github.com/users/avp/repos",
+    "events_url": "https://api.github.com/users/avp/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/avp/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5e557a4901f38ec8725c4d497337da0f3c563e60",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/5e557a4901f38ec8725c4d497337da0f3c563e60",
+      "html_url": "https://github.com/facebook/hermes/commit/5e557a4901f38ec8725c4d497337da0f3c563e60"
+    }
+  ],
+  "stats": {
+    "total": 84,
+    "additions": 82,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "fde941022ec2aa2b4fe262e9eb32a188f6d6e620",
+      "filename": "lib/VM/Interpreter.cpp",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/hermes/blob/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/lib%2FVM%2FInterpreter.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/lib%2FVM%2FInterpreter.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FVM%2FInterpreter.cpp?ref=2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+      "patch": "@@ -3387,8 +3387,9 @@ CallResult<HermesValue> Interpreter::interpretFunction(\n                 (const uint8_t *)ip + ip->iSwitchImm.op2, sizeof(uint32_t));\n \n             // Read the offset from the table.\n-            const uint32_t *loc =\n-                (const uint32_t *)tablestart + uintVal - ip->iSwitchImm.op4;\n+            // Must be signed to account for backwards branching.\n+            const int32_t *loc =\n+                (const int32_t *)tablestart + uintVal - ip->iSwitchImm.op4;\n \n             ip = IPADD(*loc);\n             DISPATCH;"
+    },
+    {
+      "sha": "b42ff203f76ec6337345a570195781ade94d9a11",
+      "filename": "test/Optimizer/switch_stmt.js",
+      "status": "added",
+      "additions": 36,
+      "deletions": 0,
+      "changes": 36,
+      "blob_url": "https://github.com/facebook/hermes/blob/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/test%2FOptimizer%2Fswitch_stmt.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/test%2FOptimizer%2Fswitch_stmt.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2FOptimizer%2Fswitch_stmt.js?ref=2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+      "patch": "@@ -0,0 +1,36 @@\n+/**\n+ * Copyright (c) Facebook, Inc. and its affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -O -dump-ir %s | %FileCheck %s\n+\n+function backwards_branch() {\n+  for (var i = 0; i < 4; i++) {\n+    switch (i) {\n+      case 0:\n+      case 1:\n+      case 2:\n+      case 3:\n+      case 4:\n+      case 5:\n+      case 6:\n+      case 7:\n+      case 8:\n+      case 9:\n+        break;\n+    }\n+    i = 2;\n+  }\n+}\n+\n+// CHECK-LABEL: function backwards_branch() : undefined\n+// CHECK-NEXT: frame = []\n+// CHECK-NEXT: %BB0:\n+// CHECK-NEXT:   %0 = BranchInst %BB1\n+// CHECK-NEXT: %BB1:\n+// CHECK-NEXT:   %1 = PhiInst 0 : number, %BB0, 3 : number, %BB1\n+// CHECK-NEXT:   %2 = SwitchInst %1 : number, %BB1, 0 : number, %BB1, 1 : number, %BB1, 2 : number, %BB1, 3 : number, %BB1, 4 : number, %BB1, 5 : number, %BB1, 6 : number, %BB1, 7 : number, %BB1, 8 : number, %BB1, 9 : number, %BB1\n+// CHECK-NEXT: function_end"
+    },
+    {
+      "sha": "5df612a7b12f0536cff3d26211d474ef7c414981",
+      "filename": "test/hermes/switch-regress1.js",
+      "status": "added",
+      "additions": 43,
+      "deletions": 0,
+      "changes": 43,
+      "blob_url": "https://github.com/facebook/hermes/blob/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/test%2Fhermes%2Fswitch-regress1.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6/test%2Fhermes%2Fswitch-regress1.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fswitch-regress1.js?ref=2c7af7ec481ceffd0d14ce2d7c045e475fd71dc6",
+      "patch": "@@ -0,0 +1,43 @@\n+/**\n+ * Copyright (c) Facebook, Inc. and its affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes -O0 %s | %FileCheck --match-full-lines %s\n+// RUN: %hermes -O %s | %FileCheck --match-full-lines %s\n+// RUN: %hermes -O -emit-binary -out %t.hbc %s && %hermes %t.hbc | %FileCheck --match-full-lines %s\n+\n+// Ensure that switch statements that are backwards branches work properly.\n+\n+(function() {\n+  var j = 0;\n+  for (var i = 0; i < 4; i++) {\n+    ++j;\n+    if (j > 5) {\n+      return;\n+    }\n+    print(i);\n+    switch (i) {\n+      case 0:\n+      case 1:\n+      case 2:\n+      case 3:\n+      case 4:\n+      case 5:\n+      case 6:\n+      case 7:\n+      case 8:\n+      case 9:\n+        break;\n+    }\n+    i = 2;\n+  }\n+})();\n+\n+// CHECK: 0\n+// CHECK: 3\n+// CHECK: 3\n+// CHECK: 3\n+// CHECK: 3"
+    }
+  ]
+}

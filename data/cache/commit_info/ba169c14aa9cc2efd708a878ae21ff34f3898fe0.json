@@ -1,0 +1,141 @@
+{
+  "sha": "ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+  "node_id": "MDY6Q29tbWl0MTIwMzYwNzY1OmJhMTY5YzE0YWE5Y2MyZWZkNzA4YTg3OGFlMjFmZjM0ZjM4OThmZTA=",
+  "commit": {
+    "author": {
+      "name": "Daniel Murphy",
+      "email": "dmurph@chromium.org",
+      "date": "2019-01-10T22:11:18Z"
+    },
+    "committer": {
+      "name": "Commit Bot",
+      "email": "commit-bot@chromium.org",
+      "date": "2019-01-10T22:11:18Z"
+    },
+    "message": "Fixing BadMessageCallback usage by SessionStorage\n\nTBR: jam@chromium.org\nBug: 916523\nChange-Id: I027cc818cfba917906844ad2ec0edd7fa4761bd1\nReviewed-on: https://chromium-review.googlesource.com/c/1401604\nCommit-Queue: Daniel Murphy <dmurph@chromium.org>\nReviewed-by: Marijn Kruisselbrink <mek@chromium.org>\nReviewed-by: Ken Rockot <rockot@google.com>\nCr-Commit-Position: refs/heads/master@{#621772}",
+    "tree": {
+      "sha": "9af288ab111270159a7e37d76ddc5c175e73a855",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/9af288ab111270159a7e37d76ddc5c175e73a855"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+  "html_url": "https://github.com/chromium/chromium/commit/ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/comments",
+  "author": {
+    "login": "dmurph",
+    "id": 294026,
+    "node_id": "MDQ6VXNlcjI5NDAyNg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/294026?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dmurph",
+    "html_url": "https://github.com/dmurph",
+    "followers_url": "https://api.github.com/users/dmurph/followers",
+    "following_url": "https://api.github.com/users/dmurph/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dmurph/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dmurph/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dmurph/subscriptions",
+    "organizations_url": "https://api.github.com/users/dmurph/orgs",
+    "repos_url": "https://api.github.com/users/dmurph/repos",
+    "events_url": "https://api.github.com/users/dmurph/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dmurph/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "eaf6bd66a006cc36b9289690ddf595ee5c7819b6",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/eaf6bd66a006cc36b9289690ddf595ee5c7819b6",
+      "html_url": "https://github.com/chromium/chromium/commit/eaf6bd66a006cc36b9289690ddf595ee5c7819b6"
+    }
+  ],
+  "stats": {
+    "total": 193,
+    "additions": 157,
+    "deletions": 36
+  },
+  "files": [
+    {
+      "sha": "1b7099e69495cbd3e07d29abc128b4cc5d176adf",
+      "filename": "content/browser/dom_storage/dom_storage_context_impl_unittest.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_impl_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_impl_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_impl_unittest.cc?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -3,6 +3,7 @@\n // found in the LICENSE file.\n \n #include \"content/browser/dom_storage/dom_storage_context_impl.h\"\n+\n #include \"base/bind.h\"\n #include \"base/files/file_util.h\"\n #include \"base/files/scoped_temp_dir.h\""
+    },
+    {
+      "sha": "1c042880d33c5a1d852876fb4f9ed1b11e2bf270",
+      "filename": "content/browser/dom_storage/dom_storage_context_wrapper.cc",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 33,
+      "changes": 93,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.cc?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -111,7 +111,7 @@ void GotMojoSessionStorageUsage(\n \n }  // namespace\n \n-DOMStorageContextWrapper::DOMStorageContextWrapper(\n+scoped_refptr<DOMStorageContextWrapper> DOMStorageContextWrapper::Create(\n     service_manager::Connector* connector,\n     const base::FilePath& profile_path,\n     const base::FilePath& local_partition_path,\n@@ -129,32 +129,30 @@ DOMStorageContextWrapper::DOMStorageContextWrapper(\n           {base::MayBlock(), base::TaskPriority::BEST_EFFORT,\n            base::TaskShutdownBehavior::BLOCK_SHUTDOWN});\n \n-  legacy_localstorage_path_ =\n-      data_path.empty() ? data_path\n-                        : data_path.AppendASCII(kLocalStorageDirectory);\n-\n-  context_ = new DOMStorageContextImpl(\n-      data_path.empty() ? data_path\n-                        : data_path.AppendASCII(kSessionStorageDirectory),\n-      special_storage_policy,\n-      new DOMStorageWorkerPoolTaskRunner(std::move(primary_sequence),\n-                                         std::move(commit_sequence)));\n-\n-  base::FilePath storage_dir;\n-  if (!profile_path.empty())\n-    storage_dir = local_partition_path.AppendASCII(kLocalStorageDirectory);\n-  // TODO(dmurph): Change this to a sequenced task runner after\n-  // https://crbug.com/809255 is fixed.\n-  mojo_task_runner_ =\n+  scoped_refptr<DOMStorageContextImpl> old_context_impl =\n+      base::MakeRefCounted<DOMStorageContextImpl>(\n+          data_path.empty() ? data_path\n+                            : data_path.AppendASCII(kSessionStorageDirectory),\n+          special_storage_policy,\n+          new DOMStorageWorkerPoolTaskRunner(std::move(primary_sequence),\n+                                             std::move(commit_sequence)));\n+  auto mojo_task_runner =\n       base::CreateSingleThreadTaskRunnerWithTraits({BrowserThread::IO});\n-  mojo_state_ = new LocalStorageContextMojo(\n-      mojo_task_runner_, connector, context_->task_runner(),\n-      legacy_localstorage_path_, storage_dir, special_storage_policy);\n \n+  base::FilePath legacy_localstorage_path =\n+      data_path.empty() ? data_path\n+                        : data_path.AppendASCII(kLocalStorageDirectory);\n+  base::FilePath new_localstorage_path =\n+      profile_path.empty()\n+          ? base::FilePath()\n+          : local_partition_path.AppendASCII(kLocalStorageDirectory);\n+  LocalStorageContextMojo* mojo_local_state = new LocalStorageContextMojo(\n+      mojo_task_runner, connector, old_context_impl->task_runner(),\n+      legacy_localstorage_path, new_localstorage_path, special_storage_policy);\n+  SessionStorageContextMojo* mojo_session_state = nullptr;\n   if (base::FeatureList::IsEnabled(blink::features::kOnionSoupDOMStorage)) {\n-    mojo_session_state_ = new SessionStorageContextMojo(\n-        mojo_task_runner_, connector,\n-\n+    mojo_session_state = new SessionStorageContextMojo(\n+        mojo_task_runner, connector,\n #if defined(OS_ANDROID)\n         // On Android there is no support for session storage restoring, and\n         // since the restoring code is responsible for database cleanup, we must\n@@ -168,6 +166,22 @@ DOMStorageContextWrapper::DOMStorageContextWrapper(\n         local_partition_path, std::string(kSessionStorageDirectory));\n   }\n \n+  return base::WrapRefCounted(new DOMStorageContextWrapper(\n+      std::move(legacy_localstorage_path), std::move(old_context_impl),\n+      mojo_task_runner, mojo_local_state, mojo_session_state));\n+}\n+\n+DOMStorageContextWrapper::DOMStorageContextWrapper(\n+    base::FilePath legacy_local_storage_path,\n+    scoped_refptr<DOMStorageContextImpl> context_impl,\n+    scoped_refptr<base::SequencedTaskRunner> mojo_task_runner,\n+    LocalStorageContextMojo* mojo_local_storage_context,\n+    SessionStorageContextMojo* mojo_session_storage_context)\n+    : mojo_state_(mojo_local_storage_context),\n+      mojo_session_state_(mojo_session_storage_context),\n+      mojo_task_runner_(std::move(mojo_task_runner)),\n+      legacy_localstorage_path_(std::move(legacy_local_storage_path)),\n+      context_(std::move(context_impl)) {\n   memory_pressure_listener_.reset(new base::MemoryPressureListener(\n       base::BindRepeating(&DOMStorageContextWrapper::OnMemoryPressure,\n                           base::Unretained(this))));\n@@ -365,21 +379,24 @@ void DOMStorageContextWrapper::SetForceKeepSessionState() {\n }\n \n void DOMStorageContextWrapper::Shutdown() {\n-  DCHECK(context_.get());\n-  mojo_task_runner_->PostTask(\n-      FROM_HERE, base::BindOnce(&LocalStorageContextMojo::ShutdownAndDelete,\n-                                base::Unretained(mojo_state_)));\n-  mojo_state_ = nullptr;\n+  if (mojo_state_) {\n+    mojo_task_runner_->PostTask(\n+        FROM_HERE, base::BindOnce(&LocalStorageContextMojo::ShutdownAndDelete,\n+                                  base::Unretained(mojo_state_)));\n+    mojo_state_ = nullptr;\n+  }\n   if (mojo_session_state_) {\n     mojo_task_runner_->PostTask(\n         FROM_HERE, base::BindOnce(&SessionStorageContextMojo::ShutdownAndDelete,\n                                   base::Unretained(mojo_session_state_)));\n     mojo_session_state_ = nullptr;\n   }\n   memory_pressure_listener_.reset();\n-  context_->task_runner()->PostShutdownBlockingTask(\n-      FROM_HERE, DOMStorageTaskRunner::PRIMARY_SEQUENCE,\n-      base::BindOnce(&DOMStorageContextImpl::Shutdown, context_));\n+  if (context_) {\n+    context_->task_runner()->PostShutdownBlockingTask(\n+        FROM_HERE, DOMStorageTaskRunner::PRIMARY_SEQUENCE,\n+        base::BindOnce(&DOMStorageContextImpl::Shutdown, context_));\n+  }\n }\n \n void DOMStorageContextWrapper::Flush() {\n@@ -428,6 +445,16 @@ void DOMStorageContextWrapper::OpenSessionStorage(\n     blink::mojom::SessionStorageNamespaceRequest request) {\n   if (!mojo_session_state_)\n     return;\n+  // The bad message callback must be called on the same sequenced task runner\n+  // as the binding set. It cannot be called from our own mojo task runner.\n+  auto wrapped_bad_message_callback = base::BindOnce(\n+      [](mojo::ReportBadMessageCallback bad_message_callback,\n+         scoped_refptr<base::SequencedTaskRunner> bindings_runner,\n+         const std::string& error) {\n+        bindings_runner->PostTask(\n+            FROM_HERE, base::BindOnce(std::move(bad_message_callback), error));\n+      },\n+      std::move(bad_message_callback), base::SequencedTaskRunnerHandle::Get());\n   // base::Unretained is safe here, because the mojo_state_ won't be deleted\n   // until a ShutdownAndDelete task has been ran on the mojo_task_runner_, and\n   // as soon as that task is posted, mojo_state_ is set to null, preventing\n@@ -436,7 +463,7 @@ void DOMStorageContextWrapper::OpenSessionStorage(\n       FROM_HERE,\n       base::BindOnce(&SessionStorageContextMojo::OpenSessionStorage,\n                      base::Unretained(mojo_session_state_), process_id,\n-                     namespace_id, std::move(bad_message_callback),\n+                     namespace_id, std::move(wrapped_bad_message_callback),\n                      std::move(request)));\n }\n "
+    },
+    {
+      "sha": "ded7b75a587e6aaaf37b257338c3df01b3b3b36d",
+      "filename": "content/browser/dom_storage/dom_storage_context_wrapper.h",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper.h?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -48,12 +48,19 @@ class CONTENT_EXPORT DOMStorageContextWrapper\n       public base::RefCountedThreadSafe<DOMStorageContextWrapper> {\n  public:\n   // If |data_path| is empty, nothing will be saved to disk.\n-  DOMStorageContextWrapper(\n+  static scoped_refptr<DOMStorageContextWrapper> Create(\n       service_manager::Connector* connector,\n-      const base::FilePath& data_path,\n+      const base::FilePath& profile_path,\n       const base::FilePath& local_partition_path,\n       storage::SpecialStoragePolicy* special_storage_policy);\n \n+  DOMStorageContextWrapper(\n+      base::FilePath legacy_local_storage_path,\n+      scoped_refptr<DOMStorageContextImpl> context_impl,\n+      scoped_refptr<base::SequencedTaskRunner> mojo_task_runner,\n+      LocalStorageContextMojo* mojo_local_storage_context,\n+      SessionStorageContextMojo* mojo_session_storage_context);\n+\n   // DOMStorageContext implementation.\n   void GetLocalStorageUsage(GetLocalStorageUsageCallback callback) override;\n   void GetSessionStorageUsage(GetSessionStorageUsageCallback callback) override;"
+    },
+    {
+      "sha": "6398811d04779d6837c9e03c0e39a81f76bd240c",
+      "filename": "content/browser/dom_storage/dom_storage_context_wrapper_unittest.cc",
+      "status": "added",
+      "additions": 85,
+      "deletions": 0,
+      "changes": 85,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper_unittest.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper_unittest.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Fbrowser%2Fdom_storage%2Fdom_storage_context_wrapper_unittest.cc?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -0,0 +1,85 @@\n+// Copyright 2019 The Chromium Authors. All rights reserved.\n+// Use of this source code is governed by a BSD-style license that can be\n+// found in the LICENSE file.\n+\n+#include \"content/browser/dom_storage/dom_storage_context_wrapper.h\"\n+\n+#include \"base/bind.h\"\n+#include \"base/macros.h\"\n+#include \"base/memory/ptr_util.h\"\n+#include \"base/run_loop.h\"\n+#include \"base/test/bind_test_util.h\"\n+#include \"base/test/scoped_task_environment.h\"\n+#include \"base/test/test_simple_task_runner.h\"\n+#include \"base/threading/sequenced_task_runner_handle.h\"\n+#include \"content/browser/dom_storage/local_storage_context_mojo.h\"\n+#include \"content/browser/dom_storage/session_storage_context_mojo.h\"\n+#include \"storage/browser/test/mock_special_storage_policy.h\"\n+#include \"testing/gtest/include/gtest/gtest.h\"\n+#include \"third_party/blink/public/mojom/dom_storage/storage_area.mojom.h\"\n+\n+namespace content {\n+\n+class DOMStorageContextWrapperTest : public testing::Test {\n+ public:\n+  DOMStorageContextWrapperTest() = default;\n+\n+  void SetUp() override {\n+    storage_policy_ = new MockSpecialStoragePolicy();\n+    fake_mojo_task_runner_ = base::MakeRefCounted<base::TestSimpleTaskRunner>();\n+    context_ = new DOMStorageContextWrapper(\n+        /*legacy_local_storage_path=*/base::FilePath(),\n+        /*context_impl=*/nullptr, fake_mojo_task_runner_,\n+        /*mojo_local_storage_context=*/nullptr,\n+        new SessionStorageContextMojo(\n+            fake_mojo_task_runner_, /*connector=*/nullptr,\n+            SessionStorageContextMojo::BackingMode::kNoDisk,\n+            /*local_partition_directory=*/base::FilePath(),\n+            /*leveldb_name=*/\"\"));\n+  }\n+\n+  void TearDown() override {\n+    context_->Shutdown();\n+    context_.reset();\n+    fake_mojo_task_runner_->RunUntilIdle();\n+    base::RunLoop().RunUntilIdle();\n+  }\n+\n+ protected:\n+  base::test::ScopedTaskEnvironment task_environment_;\n+  scoped_refptr<base::TestSimpleTaskRunner> fake_mojo_task_runner_;\n+  scoped_refptr<MockSpecialStoragePolicy> storage_policy_;\n+  scoped_refptr<DOMStorageContextWrapper> context_;\n+\n+  DISALLOW_COPY_AND_ASSIGN(DOMStorageContextWrapperTest);\n+};\n+\n+TEST_F(DOMStorageContextWrapperTest, BadMessageScheduling) {\n+  blink::mojom::SessionStorageNamespacePtr ss_namespace_ptr;\n+  auto request = mojo::MakeRequest(&ss_namespace_ptr);\n+  bool called = false;\n+  // This call is invalid because |CreateSessionNamespace| was never called on\n+  // the SessionStorage context.\n+  context_->OpenSessionStorage(\n+      0, \"nonexistant-namespace\",\n+      base::BindLambdaForTesting(\n+          [&called](const std::string& message) { called = true; }),\n+      std::move(request));\n+  EXPECT_FALSE(called);\n+  fake_mojo_task_runner_->RunPendingTasks();\n+\n+  // There should not be an error yet, as the callback has to run on\n+  // 'this' task runner and not the fake one.\n+  EXPECT_FALSE(called);\n+\n+  // Cycle the current task runner.\n+  base::RunLoop loop;\n+  base::SequencedTaskRunnerHandle::Get()->PostTask(FROM_HERE,\n+                                                   loop.QuitClosure());\n+  loop.Run();\n+\n+  // The callback should have run now.\n+  EXPECT_TRUE(called);\n+}\n+\n+}  // namespace content"
+    },
+    {
+      "sha": "bba837f9cced0b466320bf3195e44d968e0aa733",
+      "filename": "content/browser/storage_partition_impl.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fstorage_partition_impl.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Fbrowser%2Fstorage_partition_impl.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Fbrowser%2Fstorage_partition_impl.cc?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -649,7 +649,7 @@ std::unique_ptr<StoragePartitionImpl> StoragePartitionImpl::Create(\n       partition_path, in_memory, context->GetSpecialStoragePolicy(),\n       quota_manager_proxy.get());\n \n-  partition->dom_storage_context_ = new DOMStorageContextWrapper(\n+  partition->dom_storage_context_ = DOMStorageContextWrapper::Create(\n       BrowserContext::GetConnectorFor(context),\n       in_memory ? base::FilePath() : context->GetPath(),\n       relative_partition_path, context->GetSpecialStoragePolicy());"
+    },
+    {
+      "sha": "fbf64b536d7c7329bf57b3acc6c1442e42900cff",
+      "filename": "content/test/BUILD.gn",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/chromium/chromium/blob/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Ftest%2FBUILD.gn",
+      "raw_url": "https://github.com/chromium/chromium/raw/ba169c14aa9cc2efd708a878ae21ff34f3898fe0/content%2Ftest%2FBUILD.gn",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/content%2Ftest%2FBUILD.gn?ref=ba169c14aa9cc2efd708a878ae21ff34f3898fe0",
+      "patch": "@@ -1381,6 +1381,7 @@ test(\"content_unittests\") {\n     \"../browser/devtools/protocol_unittest.cc\",\n     \"../browser/dom_storage/dom_storage_area_unittest.cc\",\n     \"../browser/dom_storage/dom_storage_context_impl_unittest.cc\",\n+    \"../browser/dom_storage/dom_storage_context_wrapper_unittest.cc\",\n     \"../browser/dom_storage/dom_storage_database_unittest.cc\",\n     \"../browser/dom_storage/local_storage_context_mojo_unittest.cc\",\n     \"../browser/dom_storage/session_storage_area_impl_unittest.cc\","
+    }
+  ]
+}

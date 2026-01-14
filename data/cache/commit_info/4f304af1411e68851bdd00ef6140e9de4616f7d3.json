@@ -1,0 +1,101 @@
+{
+  "sha": "4f304af1411e68851bdd00ef6140e9de4616f7d3",
+  "node_id": "MDY6Q29tbWl0NDUyNDE4MTo0ZjMwNGFmMTQxMWU2ODg1MWJkZDAwZWY2MTQwZTlkZTQ2MTZmN2Qz",
+  "commit": {
+    "author": {
+      "name": "Orvid",
+      "email": "709247+Orvid@users.noreply.github.com",
+      "date": "2021-07-20T16:06:10Z"
+    },
+    "committer": {
+      "name": "Orvid",
+      "email": "709247+Orvid@users.noreply.github.com",
+      "date": "2021-07-20T16:06:10Z"
+    },
+    "message": "[folly] Add additional overflow checks to IOBuf - CVE-2021-24036\n\nSummary:\nAs per title\n\nCVE-2021-24036\n\nReviewed By: jan\n\nDifferential Revision: D27938605\n\nfbshipit-source-id: 7481c54ae6fbb7b67b15b3631d5357c2f7043f9c",
+    "tree": {
+      "sha": "4e84b26c554fd420e03988a0c8cb568b02be42a1",
+      "url": "https://api.github.com/repos/facebook/folly/git/trees/4e84b26c554fd420e03988a0c8cb568b02be42a1"
+    },
+    "url": "https://api.github.com/repos/facebook/folly/git/commits/4f304af1411e68851bdd00ef6140e9de4616f7d3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/folly/commits/4f304af1411e68851bdd00ef6140e9de4616f7d3",
+  "html_url": "https://github.com/facebook/folly/commit/4f304af1411e68851bdd00ef6140e9de4616f7d3",
+  "comments_url": "https://api.github.com/repos/facebook/folly/commits/4f304af1411e68851bdd00ef6140e9de4616f7d3/comments",
+  "author": {
+    "login": "Orvid",
+    "id": 709247,
+    "node_id": "MDQ6VXNlcjcwOTI0Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/709247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Orvid",
+    "html_url": "https://github.com/Orvid",
+    "followers_url": "https://api.github.com/users/Orvid/followers",
+    "following_url": "https://api.github.com/users/Orvid/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Orvid/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Orvid/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Orvid/subscriptions",
+    "organizations_url": "https://api.github.com/users/Orvid/orgs",
+    "repos_url": "https://api.github.com/users/Orvid/repos",
+    "events_url": "https://api.github.com/users/Orvid/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Orvid/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Orvid",
+    "id": 709247,
+    "node_id": "MDQ6VXNlcjcwOTI0Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/709247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Orvid",
+    "html_url": "https://github.com/Orvid",
+    "followers_url": "https://api.github.com/users/Orvid/followers",
+    "following_url": "https://api.github.com/users/Orvid/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Orvid/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Orvid/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Orvid/subscriptions",
+    "organizations_url": "https://api.github.com/users/Orvid/orgs",
+    "repos_url": "https://api.github.com/users/Orvid/repos",
+    "events_url": "https://api.github.com/users/Orvid/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Orvid/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bb79a9beefc76173027ea81db10ccdfe16a8993b",
+      "url": "https://api.github.com/repos/facebook/folly/commits/bb79a9beefc76173027ea81db10ccdfe16a8993b",
+      "html_url": "https://github.com/facebook/folly/commit/bb79a9beefc76173027ea81db10ccdfe16a8993b"
+    }
+  ],
+  "stats": {
+    "total": 37,
+    "additions": 34,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "2e0cb31c4a31effca9f113a126a3221881644b0f",
+      "filename": "folly/io/IOBuf.cpp",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 3,
+      "changes": 37,
+      "blob_url": "https://github.com/facebook/folly/blob/4f304af1411e68851bdd00ef6140e9de4616f7d3/folly%2Fio%2FIOBuf.cpp",
+      "raw_url": "https://github.com/facebook/folly/raw/4f304af1411e68851bdd00ef6140e9de4616f7d3/folly%2Fio%2FIOBuf.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/folly/contents/folly%2Fio%2FIOBuf.cpp?ref=4f304af1411e68851bdd00ef6140e9de4616f7d3",
+      "patch": "@@ -23,6 +23,7 @@\n #include <cassert>\n #include <cstdint>\n #include <cstdlib>\n+#include <limits>\n #include <stdexcept>\n \n #include <folly/Conv.h>\n@@ -32,6 +33,7 @@\n #include <folly/hash/SpookyHashV2.h>\n #include <folly/io/Cursor.h>\n #include <folly/lang/Align.h>\n+#include <folly/lang/CheckedMath.h>\n #include <folly/lang/Exception.h>\n #include <folly/memory/Malloc.h>\n #include <folly/memory/SanitizeAddress.h>\n@@ -84,7 +86,8 @@ enum : std::size_t {\n   // benchmarks of real applications to see if adjusting this number makes a\n   // difference.  Callers that know their exact use case can also explicitly\n   // call createCombined() or createSeparate().)\n-  kDefaultCombinedBufSize = 1024\n+  kDefaultCombinedBufSize = 1024,\n+  kMaxIOBufSize = std::numeric_limits<size_t>::max() >> 1,\n };\n \n // Helper function for IOBuf::takeOwnership()\n@@ -187,6 +190,9 @@ void IOBuf::SharedInfo::releaseStorage(SharedInfo* info) noexcept {\n }\n \n void* IOBuf::operator new(size_t size) {\n+  if (size > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n   size_t fullSize = offsetof(HeapStorage, buf) + size;\n   auto storage = static_cast<HeapStorage*>(checkedMalloc(fullSize));\n \n@@ -297,6 +303,10 @@ IOBuf::IOBuf(\n     : IOBuf(op, br.data(), br.size(), headroom, minTailroom) {}\n \n unique_ptr<IOBuf> IOBuf::create(std::size_t capacity) {\n+  if (capacity > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n+\n   // For smaller-sized buffers, allocate the IOBuf, SharedInfo, and the buffer\n   // all with a single allocation.\n   //\n@@ -328,6 +338,10 @@ unique_ptr<IOBuf> IOBuf::create(std::size_t capacity) {\n }\n \n unique_ptr<IOBuf> IOBuf::createCombined(std::size_t capacity) {\n+  if (capacity > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n+\n   // To save a memory allocation, allocate space for the IOBuf object, the\n   // SharedInfo struct, and the data itself all with a single call to malloc().\n   size_t requiredStorage = offsetof(HeapFullStorage, align) + capacity;\n@@ -456,6 +470,10 @@ unique_ptr<IOBuf> IOBuf::takeOwnership(\n     void* userData,\n     bool freeOnError,\n     TakeOwnershipOption option) {\n+  if (capacity > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n+\n   // do not allow only user data without a freeFn\n   // since we use that for folly::sizedFree\n \n@@ -1006,8 +1024,13 @@ void IOBuf::decrementRefcount() noexcept {\n }\n \n void IOBuf::reserveSlow(std::size_t minHeadroom, std::size_t minTailroom) {\n-  size_t newCapacity = (size_t)length_ + minHeadroom + minTailroom;\n-  DCHECK_LT(newCapacity, UINT32_MAX);\n+  size_t newCapacity = length_;\n+  if (!checked_add(&newCapacity, newCapacity, minHeadroom) ||\n+      !checked_add(&newCapacity, newCapacity, minTailroom) ||\n+      newCapacity > kMaxIOBufSize) {\n+    // overflow\n+    throw_exception<std::bad_alloc>();\n+  }\n \n   // reserveSlow() is dangerous if anyone else is sharing the buffer, as we may\n   // reallocate and free the original buffer.  It should only ever be called if\n@@ -1158,6 +1181,10 @@ void IOBuf::allocExtBuffer(\n     uint8_t** bufReturn,\n     SharedInfo** infoReturn,\n     std::size_t* capacityReturn) {\n+  if (minCapacity > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n+\n   size_t mallocSize = goodExtBufferSize(minCapacity);\n   auto buf = static_cast<uint8_t*>(checkedMalloc(mallocSize));\n   initExtBuffer(buf, mallocSize, infoReturn, capacityReturn);\n@@ -1173,6 +1200,10 @@ void IOBuf::allocExtBuffer(\n }\n \n size_t IOBuf::goodExtBufferSize(std::size_t minCapacity) {\n+  if (minCapacity > kMaxIOBufSize) {\n+    throw_exception<std::bad_alloc>();\n+  }\n+\n   // Determine how much space we should allocate.  We'll store the SharedInfo\n   // for the external buffer just after the buffer itself.  (We store it just\n   // after the buffer rather than just before so that the code can still just"
+    }
+  ]
+}

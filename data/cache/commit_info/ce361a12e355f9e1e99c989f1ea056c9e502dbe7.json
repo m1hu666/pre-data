@@ -1,0 +1,101 @@
+{
+  "sha": "ce361a12e355f9e1e99c989f1ea056c9e502dbe7",
+  "node_id": "MDY6Q29tbWl0OTM4NDI2NzpjZTM2MWExMmUzNTVmOWUxZTk5Yzk4OWYxZWEwNTZjOWU1MDJkYmU3",
+  "commit": {
+    "author": {
+      "name": "Samuel Attard",
+      "email": "samuel.r.attard@gmail.com",
+      "date": "2018-02-01T00:35:09Z"
+    },
+    "committer": {
+      "name": "Charles Kerr",
+      "email": "ckerr@github.com",
+      "date": "2018-02-01T00:35:09Z"
+    },
+    "message": "Use case-insensitive switch comparisons",
+    "tree": {
+      "sha": "27f3305e729afea7177bdc3229a3f735fa81c4cc",
+      "url": "https://api.github.com/repos/electron/electron/git/trees/27f3305e729afea7177bdc3229a3f735fa81c4cc"
+    },
+    "url": "https://api.github.com/repos/electron/electron/git/commits/ce361a12e355f9e1e99c989f1ea056c9e502dbe7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/electron/electron/commits/ce361a12e355f9e1e99c989f1ea056c9e502dbe7",
+  "html_url": "https://github.com/electron/electron/commit/ce361a12e355f9e1e99c989f1ea056c9e502dbe7",
+  "comments_url": "https://api.github.com/repos/electron/electron/commits/ce361a12e355f9e1e99c989f1ea056c9e502dbe7/comments",
+  "author": {
+    "login": "MarshallOfSound",
+    "id": 6634592,
+    "node_id": "MDQ6VXNlcjY2MzQ1OTI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6634592?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MarshallOfSound",
+    "html_url": "https://github.com/MarshallOfSound",
+    "followers_url": "https://api.github.com/users/MarshallOfSound/followers",
+    "following_url": "https://api.github.com/users/MarshallOfSound/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MarshallOfSound/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MarshallOfSound/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MarshallOfSound/subscriptions",
+    "organizations_url": "https://api.github.com/users/MarshallOfSound/orgs",
+    "repos_url": "https://api.github.com/users/MarshallOfSound/repos",
+    "events_url": "https://api.github.com/users/MarshallOfSound/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MarshallOfSound/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ckerr",
+    "id": 70381,
+    "node_id": "MDQ6VXNlcjcwMzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ckerr",
+    "html_url": "https://github.com/ckerr",
+    "followers_url": "https://api.github.com/users/ckerr/followers",
+    "following_url": "https://api.github.com/users/ckerr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ckerr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ckerr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ckerr/subscriptions",
+    "organizations_url": "https://api.github.com/users/ckerr/orgs",
+    "repos_url": "https://api.github.com/users/ckerr/repos",
+    "events_url": "https://api.github.com/users/ckerr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ckerr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "278c58055ed36f6f22cea05a9cd85a5ab4fb3010",
+      "url": "https://api.github.com/repos/electron/electron/commits/278c58055ed36f6f22cea05a9cd85a5ab4fb3010",
+      "html_url": "https://github.com/electron/electron/commit/278c58055ed36f6f22cea05a9cd85a5ab4fb3010"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e83eed46f2e1178367a8582ece3888b505429d5b",
+      "filename": "atom/app/command_line_args.cc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/electron/electron/blob/ce361a12e355f9e1e99c989f1ea056c9e502dbe7/atom%2Fapp%2Fcommand_line_args.cc",
+      "raw_url": "https://github.com/electron/electron/raw/ce361a12e355f9e1e99c989f1ea056c9e502dbe7/atom%2Fapp%2Fcommand_line_args.cc",
+      "contents_url": "https://api.github.com/repos/electron/electron/contents/atom%2Fapp%2Fcommand_line_args.cc?ref=ce361a12e355f9e1e99c989f1ea056c9e502dbe7",
+      "patch": "@@ -1390,7 +1390,8 @@ bool IsBlacklistedArg(const base::CommandLine::CharType* arg) {\n \n   if (prefix_length > 0) {\n     a += prefix_length;\n-    std::string switch_name(a, strcspn(a, \"=\"));\n+    std::string switch_name =\n+        base::ToLowerASCII(base::StringPiece(a, strcspn(a, \"=\")));\n     auto* iter = std::lower_bound(std::begin(kBlacklist), std::end(kBlacklist),\n                                   switch_name);\n     if (iter != std::end(kBlacklist) && switch_name == *iter) {"
+    }
+  ]
+}

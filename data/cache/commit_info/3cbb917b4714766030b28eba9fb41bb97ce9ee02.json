@@ -1,0 +1,113 @@
+{
+  "sha": "3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6M2NiYjkxN2I0NzE0NzY2MDMwYjI4ZWJhOWZiNDFiYjk3Y2U5ZWUwMg==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-19T01:15:03Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-19T01:20:14Z"
+    },
+    "message": "Fix multiple vulnerabilities in `tf.raw_ops.*CountSparseOutput`.\n\nAlso add tests for these API points, both for the happy paths and for the vulnerable ones.\n\nPiperOrigin-RevId: 332563222\nChange-Id: Ib3b52116a83a134c2e742a7c66e5e956db8fba05",
+    "tree": {
+      "sha": "f882dcda399eabbc72f72368f7d7e14acdc2137c",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/f882dcda399eabbc72f72368f7d7e14acdc2137c"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/3cbb917b4714766030b28eba9fb41bb97ce9ee02/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4eab87c67efe5eb14d8600237c1de5d131a1e4b1",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/4eab87c67efe5eb14d8600237c1de5d131a1e4b1",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/4eab87c67efe5eb14d8600237c1de5d131a1e4b1"
+    }
+  ],
+  "stats": {
+    "total": 159,
+    "additions": 159,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "087deef0812f0056975798ddfebb592d906adb6d",
+      "filename": "tensorflow/core/kernels/count_ops.cc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 0,
+      "changes": 41,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/3cbb917b4714766030b28eba9fb41bb97ce9ee02/tensorflow%2Fcore%2Fkernels%2Fcount_ops.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/3cbb917b4714766030b28eba9fb41bb97ce9ee02/tensorflow%2Fcore%2Fkernels%2Fcount_ops.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fcount_ops.cc?ref=3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+      "patch": "@@ -178,10 +178,30 @@ class SparseCount : public OpKernel {\n     const Tensor& weights = context->input(3);\n     bool use_weights = weights.NumElements() > 0;\n \n+    OP_REQUIRES(context, TensorShapeUtils::IsMatrix(indices.shape()),\n+                errors::InvalidArgument(\n+                    \"Input indices must be a 2-dimensional tensor. Got: \",\n+                    indices.shape().DebugString()));\n+\n+    if (use_weights) {\n+      OP_REQUIRES(\n+          context, weights.shape() == values.shape(),\n+          errors::InvalidArgument(\n+              \"Weights and values must have the same shape. Weight shape: \",\n+              weights.shape().DebugString(),\n+              \"; values shape: \", values.shape().DebugString()));\n+    }\n+\n     bool is_1d = shape.NumElements() == 1;\n     int num_batches = is_1d ? 1 : shape.flat<int64>()(0);\n     int num_values = values.NumElements();\n \n+    OP_REQUIRES(context, num_values == indices.shape().dim_size(0),\n+                errors::InvalidArgument(\n+                    \"Number of values must match first dimension of indices.\",\n+                    \"Got \", num_values,\n+                    \" values, indices shape: \", indices.shape().DebugString()));\n+\n     const auto indices_values = indices.matrix<int64>();\n     const auto values_values = values.flat<T>();\n     const auto weight_values = weights.flat<W>();\n@@ -235,12 +255,33 @@ class RaggedCount : public OpKernel {\n     bool use_weights = weights.NumElements() > 0;\n     bool is_1d = false;\n \n+    if (use_weights) {\n+      OP_REQUIRES(\n+          context, weights.shape() == values.shape(),\n+          errors::InvalidArgument(\n+              \"Weights and values must have the same shape. Weight shape: \",\n+              weights.shape().DebugString(),\n+              \"; values shape: \", values.shape().DebugString()));\n+    }\n+\n     const auto splits_values = splits.flat<int64>();\n     const auto values_values = values.flat<T>();\n     const auto weight_values = weights.flat<W>();\n     int num_batches = splits.NumElements() - 1;\n     int num_values = values.NumElements();\n \n+    OP_REQUIRES(\n+        context, num_batches > 0,\n+        errors::InvalidArgument(\n+            \"Must provide at least 2 elements for the splits argument\"));\n+    OP_REQUIRES(context, splits_values(0) == 0,\n+                errors::InvalidArgument(\"Splits must start with 0, not with \",\n+                                        splits_values(0)));\n+    OP_REQUIRES(context, splits_values(num_batches) == num_values,\n+                errors::InvalidArgument(\n+                    \"Splits must end with the number of values, got \",\n+                    splits_values(num_batches), \" instead of \", num_values));\n+\n     auto per_batch_counts = BatchedMap<W>(num_batches);\n     T max_value = 0;\n     int batch_idx = 0;"
+    },
+    {
+      "sha": "5bc9bc1ab777cf000476da945c7f44e62d1ad23e",
+      "filename": "tensorflow/python/ops/bincount_ops_test.py",
+      "status": "modified",
+      "additions": 118,
+      "deletions": 0,
+      "changes": 118,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/3cbb917b4714766030b28eba9fb41bb97ce9ee02/tensorflow%2Fpython%2Fops%2Fbincount_ops_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/3cbb917b4714766030b28eba9fb41bb97ce9ee02/tensorflow%2Fpython%2Fops%2Fbincount_ops_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fops%2Fbincount_ops_test.py?ref=3cbb917b4714766030b28eba9fb41bb97ce9ee02",
+      "patch": "@@ -25,7 +25,9 @@\n from tensorflow.python.framework import errors\n from tensorflow.python.framework import ops\n from tensorflow.python.framework import sparse_tensor\n+from tensorflow.python.framework import test_util\n from tensorflow.python.ops import bincount_ops\n+from tensorflow.python.ops import gen_count_ops\n from tensorflow.python.ops import sparse_ops\n from tensorflow.python.ops.ragged import ragged_factory_ops\n from tensorflow.python.ops.ragged import ragged_tensor\n@@ -834,5 +836,121 @@ def test_ragged_input_different_shape_fails(self):\n       self.evaluate(bincount_ops.sparse_bincount(x, weights=weights, axis=-1))\n \n \n+@test_util.run_all_in_graph_and_eager_modes\n+@test_util.disable_tfrt\n+class RawOpsTest(test.TestCase, parameterized.TestCase):\n+\n+  def testSparseCountSparseOutputBadIndicesShape(self):\n+    indices = [[[0], [0]], [[0], [1]], [[1], [0]], [[1], [2]]]\n+    values = [1, 1, 1, 10]\n+    weights = [1, 2, 4, 6]\n+    dense_shape = [2, 3]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Input indices must be a 2-dimensional tensor\"):\n+      self.evaluate(\n+          gen_count_ops.SparseCountSparseOutput(\n+              indices=indices,\n+              values=values,\n+              dense_shape=dense_shape,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testSparseCountSparseOutputBadWeightsShape(self):\n+    indices = [[0, 0], [0, 1], [1, 0], [1, 2]]\n+    values = [1, 1, 1, 10]\n+    weights = [1, 2, 4]\n+    dense_shape = [2, 3]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Weights and values must have the same shape\"):\n+      self.evaluate(\n+          gen_count_ops.SparseCountSparseOutput(\n+              indices=indices,\n+              values=values,\n+              dense_shape=dense_shape,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testSparseCountSparseOutputBadNumberOfValues(self):\n+    indices = [[0, 0], [0, 1], [1, 0]]\n+    values = [1, 1, 1, 10]\n+    weights = [1, 2, 4, 6]\n+    dense_shape = [2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Number of values must match first dimension of indices\"):\n+      self.evaluate(\n+          gen_count_ops.SparseCountSparseOutput(\n+              indices=indices,\n+              values=values,\n+              dense_shape=dense_shape,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testRaggedCountSparseOutput(self):\n+    splits = [0, 4, 7]\n+    values = [1, 1, 2, 1, 2, 10, 5]\n+    weights = [1, 2, 3, 4, 5, 6, 7]\n+    output_indices, output_values, output_shape = self.evaluate(\n+        gen_count_ops.RaggedCountSparseOutput(\n+            splits=splits, values=values, weights=weights, binary_output=False))\n+    self.assertAllEqual([[0, 1], [0, 2], [1, 2], [1, 5], [1, 10]],\n+                        output_indices)\n+    self.assertAllEqual([7, 3, 5, 7, 6], output_values)\n+    self.assertAllEqual([2, 11], output_shape)\n+\n+  def testRaggedCountSparseOutputBadWeightsShape(self):\n+    splits = [0, 4, 7]\n+    values = [1, 1, 2, 1, 2, 10, 5]\n+    weights = [1, 2, 3, 4, 5, 6]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Weights and values must have the same shape\"):\n+      self.evaluate(\n+          gen_count_ops.RaggedCountSparseOutput(\n+              splits=splits,\n+              values=values,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testRaggedCountSparseOutputEmptySplits(self):\n+    splits = []\n+    values = [1, 1, 2, 1, 2, 10, 5]\n+    weights = [1, 2, 3, 4, 5, 6, 7]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"Must provide at least 2 elements for the splits argument\"):\n+      self.evaluate(\n+          gen_count_ops.RaggedCountSparseOutput(\n+              splits=splits,\n+              values=values,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testRaggedCountSparseOutputBadSplitsStart(self):\n+    splits = [1, 7]\n+    values = [1, 1, 2, 1, 2, 10, 5]\n+    weights = [1, 2, 3, 4, 5, 6, 7]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Splits must start with 0\"):\n+      self.evaluate(\n+          gen_count_ops.RaggedCountSparseOutput(\n+              splits=splits,\n+              values=values,\n+              weights=weights,\n+              binary_output=False))\n+\n+  def testRaggedCountSparseOutputBadSplitsEnd(self):\n+    splits = [0, 5]\n+    values = [1, 1, 2, 1, 2, 10, 5]\n+    weights = [1, 2, 3, 4, 5, 6, 7]\n+    with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                \"Splits must end with the number of values\"):\n+      self.evaluate(\n+          gen_count_ops.RaggedCountSparseOutput(\n+              splits=splits,\n+              values=values,\n+              weights=weights,\n+              binary_output=False))\n+\n+\n if __name__ == \"__main__\":\n   test.main()"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "cb164786dc891ea11d3a900e90367c339305dc7b",
+  "node_id": "C_kwDOArmXAtoAKGNiMTY0Nzg2ZGM4OTFlYTExZDNhOTAwZTkwMzY3YzMzOTMwNWRjN2I",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-08T18:28:34Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-08T18:35:56Z"
+    },
+    "message": "Properly handle the case where `SpecializeType()` returns an error `Status`.\n\nIf the error case in `SpecializeType()` is reached, then we would get a crash when trying to access the value of an errorenous `StatusOr` object\n\nPiperOrigin-RevId: 408380069\nChange-Id: If3c3fc876dcf9384d5ec7a4985adc68c23ea7318",
+    "tree": {
+      "sha": "fa9fb8d1f53e15a8fbc0a0b55a8299e737862a98",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/fa9fb8d1f53e15a8fbc0a0b55a8299e737862a98"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/cb164786dc891ea11d3a900e90367c339305dc7b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/cb164786dc891ea11d3a900e90367c339305dc7b",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/cb164786dc891ea11d3a900e90367c339305dc7b",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/cb164786dc891ea11d3a900e90367c339305dc7b/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "077837721ae4fad1b34618298a161f775a666dbd",
+      "filename": "tensorflow/core/framework/shape_inference.cc",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/cb164786dc891ea11d3a900e90367c339305dc7b/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/cb164786dc891ea11d3a900e90367c339305dc7b/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Fshape_inference.cc?ref=cb164786dc891ea11d3a900e90367c339305dc7b",
+      "patch": "@@ -170,7 +170,10 @@ void InferenceContext::PreInputInit(\n     const std::vector<ShapeHandle>& input_tensors_as_shapes) {\n   // TODO(mdan): This is also done at graph construction. Run only here instead?\n   const auto ret = full_type::SpecializeType(attrs_, op_def);\n-  DCHECK(ret.status().ok()) << \"while instantiating types: \" << ret.status();\n+  if (!ret.status().ok()) {\n+    construction_status_ = ret.status();\n+    return;\n+  }\n   ret_types_ = ret.ValueOrDie();\n \n   input_tensors_ = input_tensors;"
+    }
+  ]
+}

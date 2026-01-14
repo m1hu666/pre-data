@@ -1,0 +1,105 @@
+{
+  "sha": "da8990f737ebb9d9810633502f65ed462b819c09",
+  "node_id": "C_kwDOCTDsq9oAKGRhODk5MGY3MzdlYmI5ZDk4MTA2MzM1MDJmNjVlZDQ2MmI4MTljMDk",
+  "commit": {
+    "author": {
+      "name": "John Porto",
+      "email": "jpporto@meta.com",
+      "date": "2023-04-07T20:31:05Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2023-04-07T20:31:05Z"
+    },
+    "message": "Treat usages of arguments.callee as unknown callsites\n\nSummary:\narguments.callee in non-strict mode are indirect references to the current function. As such,\nmake sure that call site inference bails if there's any possibility such a reference is made. This\nis inexact by nature, so the analysis needs to be conservative.\n\nnocommit until a solution is decided.\n\nReviewed By: neildhar\n\nDifferential Revision: D44674327\n\nfbshipit-source-id: c118b23d91ffe872e65dea0560b3c622802c2eef",
+    "tree": {
+      "sha": "d21954bdec03824d052aaa383c1e050621e5fcbe",
+      "url": "https://api.github.com/repos/facebook/hermes/git/trees/d21954bdec03824d052aaa383c1e050621e5fcbe"
+    },
+    "url": "https://api.github.com/repos/facebook/hermes/git/commits/da8990f737ebb9d9810633502f65ed462b819c09",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/hermes/commits/da8990f737ebb9d9810633502f65ed462b819c09",
+  "html_url": "https://github.com/facebook/hermes/commit/da8990f737ebb9d9810633502f65ed462b819c09",
+  "comments_url": "https://api.github.com/repos/facebook/hermes/commits/da8990f737ebb9d9810633502f65ed462b819c09/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1ce6ade20c2ed0cffd29d0a75fea67935851a897",
+      "url": "https://api.github.com/repos/facebook/hermes/commits/1ce6ade20c2ed0cffd29d0a75fea67935851a897",
+      "html_url": "https://github.com/facebook/hermes/commit/1ce6ade20c2ed0cffd29d0a75fea67935851a897"
+    }
+  ],
+  "stats": {
+    "total": 142,
+    "additions": 141,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "189f2a9c632eb74c86448c566ccd1bfb984d0639",
+      "filename": "lib/Optimizer/Scalar/SimpleCallGraphProvider.cpp",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/facebook/hermes/blob/da8990f737ebb9d9810633502f65ed462b819c09/lib%2FOptimizer%2FScalar%2FSimpleCallGraphProvider.cpp",
+      "raw_url": "https://github.com/facebook/hermes/raw/da8990f737ebb9d9810633502f65ed462b819c09/lib%2FOptimizer%2FScalar%2FSimpleCallGraphProvider.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/lib%2FOptimizer%2FScalar%2FSimpleCallGraphProvider.cpp?ref=da8990f737ebb9d9810633502f65ed462b819c09",
+      "patch": "@@ -66,6 +66,13 @@ static bool identifyCallees(CallInst *CI, llvh::DenseSet<Function *> &callees) {\n static bool identifyCallsites(\n     Function *F,\n     llvh::DenseSet<CallInst *> &callSites) {\n+  // Non-strict functions can be aliased in multiple ways (\n+  // arguments.callee, Function.prototype.caller etc). Do not try to identify\n+  // the callsites for those.\n+  if (!F->isStrictMode()) {\n+    return false;\n+  }\n+\n   for (auto *CU : F->getUsers()) {\n     if (auto *CI = llvh::dyn_cast<CallInst>(CU)) {\n       if (!isDirectCallee(F, CI))"
+    },
+    {
+      "sha": "90bcf798a302ee1f17ccb41fb28d3d33ff478a85",
+      "filename": "test/Optimizer/non-strict-opts.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/hermes/blob/da8990f737ebb9d9810633502f65ed462b819c09/test%2FOptimizer%2Fnon-strict-opts.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/da8990f737ebb9d9810633502f65ed462b819c09/test%2FOptimizer%2Fnon-strict-opts.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2FOptimizer%2Fnon-strict-opts.js?ref=da8990f737ebb9d9810633502f65ed462b819c09",
+      "patch": "@@ -39,7 +39,7 @@ function main()  {\n // CHECK-NEXT:  %3 = ReturnInst undefined : undefined\n // CHECK-NEXT:function_end\n \n-// CHECK:function foo#1#2(p1 : number)#3 : string\n+// CHECK:function foo#1#2(p1)#3 : string\n // CHECK-NEXT:S{foo#1#2()#3} = []\n // CHECK-NEXT:%BB0:\n // CHECK-NEXT:  %0 = CreateScopeInst %S{foo#1#2()#3}"
+    },
+    {
+      "sha": "34f1afd4e2a22f778b0bb4eddd9195eaff16deab",
+      "filename": "test/hermes/regress-arguments-callee.js",
+      "status": "added",
+      "additions": 133,
+      "deletions": 0,
+      "changes": 133,
+      "blob_url": "https://github.com/facebook/hermes/blob/da8990f737ebb9d9810633502f65ed462b819c09/test%2Fhermes%2Fregress-arguments-callee.js",
+      "raw_url": "https://github.com/facebook/hermes/raw/da8990f737ebb9d9810633502f65ed462b819c09/test%2Fhermes%2Fregress-arguments-callee.js",
+      "contents_url": "https://api.github.com/repos/facebook/hermes/contents/test%2Fhermes%2Fregress-arguments-callee.js?ref=da8990f737ebb9d9810633502f65ed462b819c09",
+      "patch": "@@ -0,0 +1,133 @@\n+/**\n+ * Copyright (c) Meta Platforms, Inc. and affiliates.\n+ *\n+ * This source code is licensed under the MIT license found in the\n+ * LICENSE file in the root directory of this source tree.\n+ */\n+\n+// RUN: %hermes %s\n+\n+var f;\n+var funcp;\n+var argumentsp;\n+var callee = _ => \"callee\";\n+\n+function calleeDirectly(a) {\n+    return a.callee;\n+}\n+\n+function calleeIndirectly(a) {\n+    return a[callee()];\n+}\n+\n+print(\"directArgumentsCallee\");\n+(function directArgumentsCallee(param) {\n+    try {\n+        funcp = arguments.callee;\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"indirectArgumentsCallee\");\n+(function indirectArgumentsCallee(param) {\n+    try {\n+        funcp = arguments.callee;\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"passignArgumentsToAnotherFunction_directArgumentsCallee\");\n+(function passignArgumentsToAnotherFunction_DirectArgumentsCallee(param) {\n+    try {\n+        funcp = calleeDirectly(arguments);\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"passignArgumentsToAnotherFunction_indirectArgumentsCallee\");\n+(function passignArgumentsToAnotherFunction_indirectArgumentsCallee(param) {\n+    try {\n+        funcp = calleeIndirectly(arguments);\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"arrow_directArgumentsCallee\");\n+(function arrow_directArgumentsCallee(param) {\n+    try {\n+        funcp = (_ => arguments.callee)();\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"arrow_indirectArgumentsCallee\");\n+(function arrow_indirectArgumentsCallee(param) {\n+    try {\n+        funcp = (_ => arguments[callee()])();\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = funcp({ a: 1.1 });\n+f();\n+\n+print(\"capture_directArgumentsCallee\");\n+(function capture_directArgumentsCallee(param) {\n+    try {\n+        argumentsp = arguments;\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = argumentsp.callee({ a: 1.1 });\n+f();\n+\n+print(\"capture_indirectArgumentsCallee\");\n+(function capture_indirectArgumentsCallee(param) {\n+    try {\n+        argumentsp = arguments;\n+    } catch (e) {\n+    }\n+    let f = () => {\n+        return param;\n+    };\n+    return f;\n+})();\n+f = argumentsp[callee()]({ a: 1.1 });\n+f();"
+    }
+  ]
+}

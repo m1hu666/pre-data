@@ -1,0 +1,160 @@
+{
+  "sha": "c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6YzYxNzNmNWZlNjZjZGJhYjc0ZjRmODY5MzExZmU2YWFlMmJhMzVmNA==",
+  "commit": {
+    "author": {
+      "name": "Yu-Cheng Ling",
+      "email": "ycling@google.com",
+      "date": "2021-05-03T16:07:42Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-05-03T16:16:54Z"
+    },
+    "message": "TFLite: Error out when the graph has a recurion.\n\nRecursion is currently unsupported.\n\nPiperOrigin-RevId: 371708957\nChange-Id: I8dfad0d85cbfe08e39ae8ea7bad21254ddee5003",
+    "tree": {
+      "sha": "e130f609478ed29cabb15c27ce70eeb422f1bf77",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/e130f609478ed29cabb15c27ce70eeb422f1bf77"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/comments",
+  "author": {
+    "login": "miaout17",
+    "id": 22063,
+    "node_id": "MDQ6VXNlcjIyMDYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22063?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/miaout17",
+    "html_url": "https://github.com/miaout17",
+    "followers_url": "https://api.github.com/users/miaout17/followers",
+    "following_url": "https://api.github.com/users/miaout17/following{/other_user}",
+    "gists_url": "https://api.github.com/users/miaout17/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/miaout17/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/miaout17/subscriptions",
+    "organizations_url": "https://api.github.com/users/miaout17/orgs",
+    "repos_url": "https://api.github.com/users/miaout17/repos",
+    "events_url": "https://api.github.com/users/miaout17/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/miaout17/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "46b80bd2a8943d5976dc83bd5c0322c0023255a7",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/46b80bd2a8943d5976dc83bd5c0322c0023255a7",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/46b80bd2a8943d5976dc83bd5c0322c0023255a7"
+    }
+  ],
+  "stats": {
+    "total": 72,
+    "additions": 70,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "00fb51f9a08c7726ab09a64e420db9df4f88dbde",
+      "filename": "tensorflow/lite/BUILD",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2FBUILD",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2FBUILD",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2FBUILD?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+      "patch": "@@ -643,6 +643,7 @@ cc_test(\n         \"testdata/test_min_runtime.bin\",\n         \"testdata/test_model.bin\",\n         \"testdata/test_model_broken.bin\",\n+        \"testdata/unsupported_recursion.bin\",\n         \"testdata/while_op_with_forwarding_input.bin\",\n     ],\n     tags = ["
+    },
+    {
+      "sha": "123d8cfd0343f21a27df9ef8f350e00e17ae6701",
+      "filename": "tensorflow/lite/core/subgraph.cc",
+      "status": "modified",
+      "additions": 46,
+      "deletions": 0,
+      "changes": 46,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fcore%2Fsubgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.cc?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+      "patch": "@@ -156,6 +156,42 @@ const char* GetTFLiteOpName(const TfLiteRegistration& op_reg) {\n   return tflite::EnumNamesBuiltinOperator()[op_reg.builtin_code];\n }\n \n+// An utility test to detect if the subgraph is abused:\n+// 1. Detects if recursion exists in the graph (recursion is not currently\n+//    supported.\n+// 2. Detects if the interpreter / subgraph is used in multiple subgraphs.\n+//    Note: It's clearly documented that the interpreter / subgraph are not\n+//    thread-safe. This serves as a check with possible false negatives\n+//    unless we switch to atomic boolean flags.\n+class SubgraphGuard {\n+ public:\n+  SubgraphGuard(TfLiteContext* context, bool* is_subgraph_in_use)\n+      : is_subgraph_in_use_(is_subgraph_in_use) {\n+    if (*is_subgraph_in_use_) {\n+      TF_LITE_KERNEL_LOG(\n+          context,\n+          \"Subgraph is already in use. Using an interpreter or a subgraph in \"\n+          \"multiple threads is not supported. Recursion in the graph is not \"\n+          \"supported.\");\n+      status_ = kTfLiteError;\n+    } else {\n+      *is_subgraph_in_use_ = true;\n+    }\n+  }\n+  ~SubgraphGuard() {\n+    // If tht original status was OK, recover the boolean flag.\n+    if (status_ == kTfLiteOk) {\n+      *is_subgraph_in_use_ = false;\n+    }\n+  }\n+\n+  TfLiteStatus status() const { return status_; }\n+\n+ private:\n+  TfLiteStatus status_ = kTfLiteOk;\n+  bool* is_subgraph_in_use_;\n+};\n+\n }  // namespace\n \n // A trivial implementation of GraphInfo around the Interpreter.\n@@ -655,6 +691,7 @@ TfLiteStatus Subgraph::BytesRequired(TfLiteType type, const int* dims,\n \n TfLiteStatus Subgraph::AllocateTensors() {\n   TFLITE_SCOPED_TAGGED_DEFAULT_PROFILE(profiler_.get(), \"AllocateTensors\");\n+\n   if (!consistent_) {\n     ReportError(\"AllocateTensors() called on inconsistent model.\");\n     return kTfLiteError;\n@@ -678,6 +715,12 @@ TfLiteStatus Subgraph::AllocateTensors() {\n     return kTfLiteOk;\n   }\n \n+  // Note `AllocateTensors` sometimes calls itself recursively above\n+  // for delegates. Therefore only the logic below need to be guarded\n+  // by `SubgraphGuard`.\n+  SubgraphGuard guard(&context_, &is_subgraph_in_use_);\n+  TF_LITE_ENSURE_OK(&context_, guard.status());\n+\n   next_execution_plan_index_to_prepare_ = 0;\n   next_execution_plan_index_to_plan_allocation_ = 0;\n   next_original_execution_plan_index_to_prepare_ = 0;\n@@ -1014,6 +1057,9 @@ TfLiteStatus Subgraph::PrepareOpsAndTensors() {\n }\n \n TfLiteStatus Subgraph::Invoke() {\n+  SubgraphGuard guard(&context_, &is_subgraph_in_use_);\n+  TF_LITE_ENSURE_OK(&context_, guard.status());\n+\n   if (!consistent_) {\n     ReportError(\"Invoke called on model that is not consistent.\");\n     return kTfLiteError;"
+    },
+    {
+      "sha": "d6912d7bed04f43acfff2f881318c5913afc3c09",
+      "filename": "tensorflow/lite/core/subgraph.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fcore%2Fsubgraph.h",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fcore%2Fsubgraph.h",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fcore%2Fsubgraph.h?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+      "patch": "@@ -759,6 +759,10 @@ class Subgraph {\n   // Whether memory planner should be instantiated to retain intermediates for\n   // debugging.\n   bool preserve_all_tensors_ = false;\n+\n+  // Whether the subgraph is currently in use (e.g. running the `Invoke`\n+  // or `AllocateTensors` functions).\n+  bool is_subgraph_in_use_ = false;\n };\n \n }  // namespace tflite"
+    },
+    {
+      "sha": "e05959fe2a6825f45d7c05e853bc02d5dc045371",
+      "filename": "tensorflow/lite/kernels/while.cc",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fkernels%2Fwhile.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fkernels%2Fwhile.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fkernels%2Fwhile.cc?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+      "patch": "@@ -138,8 +138,6 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {\n   auto* subgraphs = this_subgraph->GetSubgraphs();\n   TF_LITE_ENSURE(context, op_data->cond_subgraph_index < subgraphs->size());\n   TF_LITE_ENSURE(context, op_data->body_subgraph_index < subgraphs->size());\n-  TF_LITE_ENSURE(context,\n-                 op_data->cond_subgraph_index != op_data->body_subgraph_index);\n \n   Subgraph* cond_subgraph = (*subgraphs)[op_data->cond_subgraph_index].get();\n   Subgraph* body_subgraph = (*subgraphs)[op_data->body_subgraph_index].get();"
+    },
+    {
+      "sha": "1dbe5c12abc5b3cad99112f7edb2b080752374ba",
+      "filename": "tensorflow/lite/model_test.cc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fmodel_test.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Fmodel_test.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Fmodel_test.cc?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4",
+      "patch": "@@ -600,6 +600,25 @@ TEST(BasicFlatBufferModel, TestHandleMalformedModelReuseTensor) {\n   ASSERT_NE(interpreter->AllocateTensors(), kTfLiteOk);\n }\n \n+// Recursion & reentrant are not supported in TFLite.\n+// The test ensures it fails gracefullly instead of crashing with\n+// a stack overflow.\n+TEST(BasicFlatBufferModel, TestUnsupportedRecursion) {\n+  const auto model_path =\n+      \"tensorflow/lite/testdata/unsupported_recursion.bin\";\n+\n+  std::unique_ptr<tflite::FlatBufferModel> model =\n+      FlatBufferModel::BuildFromFile(model_path);\n+  ASSERT_NE(model, nullptr);\n+\n+  tflite::ops::builtin::BuiltinOpResolver resolver;\n+  InterpreterBuilder builder(*model, resolver);\n+  std::unique_ptr<Interpreter> interpreter;\n+  ASSERT_EQ(builder(&interpreter), kTfLiteOk);\n+  ASSERT_NE(interpreter, nullptr);\n+  ASSERT_NE(interpreter->AllocateTensors(), kTfLiteOk);\n+}\n+\n // The models here have a buffer index for a tensor pointing to a null buffer.\n // This results in the tensor being interpreted as read-write, but the model\n // assumes the tensor is read-only. As such, `interpreter->Invoke()` would"
+    },
+    {
+      "sha": "525c5383ab4ef6283d687aeb4004b38a8981773a",
+      "filename": "tensorflow/lite/testdata/unsupported_recursion.bin",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Ftestdata%2Funsupported_recursion.bin",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c6173f5fe66cdbab74f4f869311fe6aae2ba35f4/tensorflow%2Flite%2Ftestdata%2Funsupported_recursion.bin",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Flite%2Ftestdata%2Funsupported_recursion.bin?ref=c6173f5fe66cdbab74f4f869311fe6aae2ba35f4"
+    }
+  ]
+}

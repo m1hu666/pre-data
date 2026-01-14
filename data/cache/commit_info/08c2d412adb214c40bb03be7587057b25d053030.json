@@ -1,0 +1,137 @@
+{
+  "sha": "08c2d412adb214c40bb03be7587057b25d053030",
+  "node_id": "MDY6Q29tbWl0MTExMzE2MzE6MDhjMmQ0MTJhZGIyMTRjNDBiYjAzYmU3NTg3MDU3YjI1ZDA1MzAzMA==",
+  "commit": {
+    "author": {
+      "name": "Steve Gury",
+      "email": "stevegury@fb.com",
+      "date": "2019-12-06T21:11:57Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-12-06T21:13:54Z"
+    },
+    "message": "Java: Check the size of the remaining frame before deserializing a string\n\nSummary:\nIn order to avoid over-allocating memory for malformed or truncated frame, we\nensure that we have enough data in the current frame.\n\nThis is a partial fix for CVE-2019-11938.\n\nReviewed By: vitaut\n\nDifferential Revision: D14505601\n\nfbshipit-source-id: c90f248828b067a3a5debcc8df6a3f4e9da6d195",
+    "tree": {
+      "sha": "c67d9aa1363f0875f835b8f2df7ce59cb11e3db4",
+      "url": "https://api.github.com/repos/facebook/fbthrift/git/trees/c67d9aa1363f0875f835b8f2df7ce59cb11e3db4"
+    },
+    "url": "https://api.github.com/repos/facebook/fbthrift/git/commits/08c2d412adb214c40bb03be7587057b25d053030",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/fbthrift/commits/08c2d412adb214c40bb03be7587057b25d053030",
+  "html_url": "https://github.com/facebook/fbthrift/commit/08c2d412adb214c40bb03be7587057b25d053030",
+  "comments_url": "https://api.github.com/repos/facebook/fbthrift/commits/08c2d412adb214c40bb03be7587057b25d053030/comments",
+  "author": {
+    "login": "stevegury",
+    "id": 376195,
+    "node_id": "MDQ6VXNlcjM3NjE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/376195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stevegury",
+    "html_url": "https://github.com/stevegury",
+    "followers_url": "https://api.github.com/users/stevegury/followers",
+    "following_url": "https://api.github.com/users/stevegury/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stevegury/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stevegury/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stevegury/subscriptions",
+    "organizations_url": "https://api.github.com/users/stevegury/orgs",
+    "repos_url": "https://api.github.com/users/stevegury/repos",
+    "events_url": "https://api.github.com/users/stevegury/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stevegury/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "71c97ffdcb61cccf1f8267774e873e21ebd3ebd3",
+      "url": "https://api.github.com/repos/facebook/fbthrift/commits/71c97ffdcb61cccf1f8267774e873e21ebd3ebd3",
+      "html_url": "https://github.com/facebook/fbthrift/commit/71c97ffdcb61cccf1f8267774e873e21ebd3ebd3"
+    }
+  ],
+  "stats": {
+    "total": 81,
+    "additions": 67,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "3b9d60a51464ba589181075f47862cb7f0b61e42",
+      "filename": "thrift/lib/java/src/main/java/com/facebook/thrift/protocol/TBinaryProtocol.java",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTBinaryProtocol.java",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTBinaryProtocol.java",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTBinaryProtocol.java?ref=08c2d412adb214c40bb03be7587057b25d053030",
+      "patch": "@@ -343,6 +343,7 @@ public String readString() throws TException {\n   }\n \n   public String readStringBody(int size) throws TException {\n+    ensureContainerHasEnough(size, TType.BYTE);\n     checkReadLength(size);\n     byte[] buf = new byte[size];\n     trans_.readAll(buf, 0, size);\n@@ -351,6 +352,7 @@ public String readStringBody(int size) throws TException {\n \n   public byte[] readBinary() throws TException {\n     int size = readI32();\n+    ensureContainerHasEnough(size, TType.BYTE);\n     checkReadLength(size);\n     byte[] buf = new byte[size];\n     trans_.readAll(buf, 0, size);"
+    },
+    {
+      "sha": "b25141faa603fcec15e575f7615ff2f1b7ff3232",
+      "filename": "thrift/lib/java/src/main/java/com/facebook/thrift/protocol/TCompactProtocol.java",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTCompactProtocol.java",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTCompactProtocol.java",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fjava%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTCompactProtocol.java?ref=08c2d412adb214c40bb03be7587057b25d053030",
+      "patch": "@@ -638,6 +638,7 @@ private byte[] readBinary(int length) throws TException {\n       return new byte[0];\n     }\n \n+    ensureContainerHasEnough(length, TType.BYTE);\n     byte[] buf = new byte[length];\n     trans_.readAll(buf, 0, length);\n     return buf;"
+    },
+    {
+      "sha": "844cb6325ba9c9e476f3e55ac1ff3b36274e3148",
+      "filename": "thrift/lib/java/src/resources/testing_data_structures.thrift",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fresources%2Ftesting_data_structures.thrift",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Fresources%2Ftesting_data_structures.thrift",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fjava%2Fsrc%2Fresources%2Ftesting_data_structures.thrift?ref=08c2d412adb214c40bb03be7587057b25d053030",
+      "patch": "@@ -62,3 +62,7 @@ struct MySetStruct {\n struct MyMapStruct {\n   1: map<i64, string> mapping\n }\n+\n+struct MyStringStruct {\n+  1: string aLongString\n+}"
+    },
+    {
+      "sha": "2a4cc583b8f8bd2a954e1c9b792ffe42343f4168",
+      "filename": "thrift/lib/java/src/test/java/com/facebook/thrift/TruncatedFrameTest.java",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 14,
+      "changes": 74,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Ftest%2Fjava%2Fcom%2Ffacebook%2Fthrift%2FTruncatedFrameTest.java",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/08c2d412adb214c40bb03be7587057b25d053030/thrift%2Flib%2Fjava%2Fsrc%2Ftest%2Fjava%2Fcom%2Ffacebook%2Fthrift%2FTruncatedFrameTest.java",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fjava%2Fsrc%2Ftest%2Fjava%2Fcom%2Ffacebook%2Fthrift%2FTruncatedFrameTest.java?ref=08c2d412adb214c40bb03be7587057b25d053030",
+      "patch": "@@ -19,6 +19,7 @@\n import com.facebook.thrift.java.test.MyListStruct;\n import com.facebook.thrift.java.test.MyMapStruct;\n import com.facebook.thrift.java.test.MySetStruct;\n+import com.facebook.thrift.java.test.MyStringStruct;\n import com.facebook.thrift.protocol.TBinaryProtocol;\n import com.facebook.thrift.protocol.TCompactProtocol;\n import com.facebook.thrift.protocol.TProtocol;\n@@ -52,15 +53,15 @@ public class TruncatedFrameTest extends junit.framework.TestCase {\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n-    (byte) 0x01, // value = 2L\n+    (byte) 0x02, // value = 2L\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n-    (byte) 0x01, // value = 3L\n+    (byte) 0x03, // value = 3L\n     (byte) 0x00, // Stop\n   };\n \n@@ -139,15 +140,15 @@ public static void testLongListCompact() throws Exception {\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n-    (byte) 0x01, // value = 2L\n+    (byte) 0x02, // value = 2L\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n     (byte) 0x00,\n-    (byte) 0x01, // value = 3L\n+    (byte) 0x03, // value = 3L\n     (byte) 0x00, // Stop\n   };\n \n@@ -273,16 +274,61 @@ public static void testMapCompact() throws Exception {\n     testTruncated(new MyMapStruct(), iprot);\n   }\n \n-  private static final char[] hexArray = \"0123456789ABCDEF\".toCharArray();\n+  private static final byte[] kBinaryStringEncoding = {\n+    TType.STRING, // Field Type = string\n+    (byte) 0x00,\n+    (byte) 0x01, // Field id = 1\n+    (byte) 0x00,\n+    (byte) 0x00,\n+    (byte) 0x00,\n+    (byte) 0xFF, // string length (255!)\n+    (byte) 0x48,\n+    (byte) 0x65,\n+    (byte) 0x6C,\n+    (byte) 0x6C,\n+    (byte) 0x6F,\n+    (byte) 0x2C,\n+    (byte) 0x20,\n+    (byte) 0x57,\n+    (byte) 0x6F,\n+    (byte) 0x72,\n+    (byte) 0x6C,\n+    (byte) 0x64,\n+    (byte) 0x21, // string chars: \"Hello, World!\"\n+    (byte) 0x00, // Stop\n+  };\n \n-  private static String bytesToHex(byte[] bytes, int length) {\n-    String out = \"\";\n-    for (int j = 0; j < length; j++) {\n-      int v = bytes[j] & 0xFF;\n-      out += hexArray[v >>> 4];\n-      out += hexArray[v & 0x0F];\n-      out += \" \";\n-    }\n-    return out;\n+  private static final byte[] kCompactStringEncoding = {\n+    (byte) 0b00011000, // field id delta (0001) + type (1000) = Binary\n+    (byte) 0xFF,\n+    (byte) 0x0F, // string size (varint) = 0x0FFF (4095)\n+    (byte) 0x48,\n+    (byte) 0x65,\n+    (byte) 0x6C,\n+    (byte) 0x6C,\n+    (byte) 0x6F,\n+    (byte) 0x2C,\n+    (byte) 0x20,\n+    (byte) 0x57,\n+    (byte) 0x6F,\n+    (byte) 0x72,\n+    (byte) 0x6C,\n+    (byte) 0x64,\n+    (byte) 0x21, // string chars: \"Hello, World!\"\n+    (byte) 0x00, // Stop\n+  };\n+\n+  @Test\n+  public void testStringBinary() throws Exception {\n+    TMemoryInputTransport buf = new TMemoryInputTransport(kBinaryStringEncoding);\n+    TProtocol iprot = new TBinaryProtocol(buf);\n+    testTruncated(new MyStringStruct(), iprot);\n+  }\n+\n+  @Test\n+  public void testStringCompact() throws Exception {\n+    TMemoryInputTransport buf = new TMemoryInputTransport(kCompactStringEncoding);\n+    TProtocol iprot = new TCompactProtocol(buf);\n+    testTruncated(new MyStringStruct(), iprot);\n   }\n }"
+    }
+  ]
+}

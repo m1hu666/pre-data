@@ -1,0 +1,101 @@
+{
+  "sha": "6a9f236bc23aec8b21193aa3682b03eceff1d5e5",
+  "node_id": "C_kwDOAM4h9NoAKDZhOWYyMzZiYzIzYWVjOGIyMTE5M2FhMzY4MmIwM2VjZWZmMWQ1ZTU",
+  "commit": {
+    "author": {
+      "name": "Edgar Chen",
+      "email": "echen@mozilla.com",
+      "date": "2021-12-07T23:16:58Z"
+    },
+    "committer": {
+      "name": "Edgar Chen",
+      "email": "echen@mozilla.com",
+      "date": "2021-12-07T23:16:58Z"
+    },
+    "message": "Bug 1740389; r=handyman\n\nDifferential Revision: https://phabricator.services.mozilla.com/D131906",
+    "tree": {
+      "sha": "222940c5f93a5b90dc6c217405e7e4874f9a227a",
+      "url": "https://api.github.com/repos/mozilla/gecko-dev/git/trees/222940c5f93a5b90dc6c217405e7e4874f9a227a"
+    },
+    "url": "https://api.github.com/repos/mozilla/gecko-dev/git/commits/6a9f236bc23aec8b21193aa3682b03eceff1d5e5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/mozilla/gecko-dev/commits/6a9f236bc23aec8b21193aa3682b03eceff1d5e5",
+  "html_url": "https://github.com/mozilla/gecko-dev/commit/6a9f236bc23aec8b21193aa3682b03eceff1d5e5",
+  "comments_url": "https://api.github.com/repos/mozilla/gecko-dev/commits/6a9f236bc23aec8b21193aa3682b03eceff1d5e5/comments",
+  "author": {
+    "login": "EdgarChen",
+    "id": 2723528,
+    "node_id": "MDQ6VXNlcjI3MjM1Mjg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2723528?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/EdgarChen",
+    "html_url": "https://github.com/EdgarChen",
+    "followers_url": "https://api.github.com/users/EdgarChen/followers",
+    "following_url": "https://api.github.com/users/EdgarChen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/EdgarChen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/EdgarChen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/EdgarChen/subscriptions",
+    "organizations_url": "https://api.github.com/users/EdgarChen/orgs",
+    "repos_url": "https://api.github.com/users/EdgarChen/repos",
+    "events_url": "https://api.github.com/users/EdgarChen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/EdgarChen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "EdgarChen",
+    "id": 2723528,
+    "node_id": "MDQ6VXNlcjI3MjM1Mjg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2723528?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/EdgarChen",
+    "html_url": "https://github.com/EdgarChen",
+    "followers_url": "https://api.github.com/users/EdgarChen/followers",
+    "following_url": "https://api.github.com/users/EdgarChen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/EdgarChen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/EdgarChen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/EdgarChen/subscriptions",
+    "organizations_url": "https://api.github.com/users/EdgarChen/orgs",
+    "repos_url": "https://api.github.com/users/EdgarChen/repos",
+    "events_url": "https://api.github.com/users/EdgarChen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/EdgarChen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "25cc010f31430b249805dbcb4f0c9260c24b8f54",
+      "url": "https://api.github.com/repos/mozilla/gecko-dev/commits/25cc010f31430b249805dbcb4f0c9260c24b8f54",
+      "html_url": "https://github.com/mozilla/gecko-dev/commit/25cc010f31430b249805dbcb4f0c9260c24b8f54"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b53ae5ae52a5bda274a60645cc8446b96bb0d67c",
+      "filename": "widget/windows/nsWindow.cpp",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/mozilla/gecko-dev/blob/6a9f236bc23aec8b21193aa3682b03eceff1d5e5/widget%2Fwindows%2FnsWindow.cpp",
+      "raw_url": "https://github.com/mozilla/gecko-dev/raw/6a9f236bc23aec8b21193aa3682b03eceff1d5e5/widget%2Fwindows%2FnsWindow.cpp",
+      "contents_url": "https://api.github.com/repos/mozilla/gecko-dev/contents/widget%2Fwindows%2FnsWindow.cpp?ref=6a9f236bc23aec8b21193aa3682b03eceff1d5e5",
+      "patch": "@@ -3669,7 +3669,6 @@ nsresult nsWindow::MakeFullScreen(bool aFullScreen, nsIScreen* aTargetScreen) {\n       taskbarInfo->PrepareFullScreenHWND(mWnd, TRUE);\n     }\n   } else {\n-    if (mSizeMode != nsSizeMode_Fullscreen) return NS_OK;\n     SetSizeMode(mOldSizeMode);\n   }\n "
+    }
+  ]
+}

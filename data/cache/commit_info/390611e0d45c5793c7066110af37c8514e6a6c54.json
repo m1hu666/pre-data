@@ -1,0 +1,113 @@
+{
+  "sha": "390611e0d45c5793c7066110af37c8514e6a6c54",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MzkwNjExZTBkNDVjNTc5M2M3MDY2MTEwYWYzN2M4NTE0ZTZhNmM1NA==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-19T01:43:38Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-19T01:53:02Z"
+    },
+    "message": "Fix heap buffer overflow in `tf.raw_ops.SparseFillEmptyRowsGrad`.\n\nAlso add tests as they were lacking\n\nPiperOrigin-RevId: 332566071\nChange-Id: I44277578e26ff5fb3fdb0dcbba6e91b2ec3e7859",
+    "tree": {
+      "sha": "275fe3cc1a06269b994d47d23be67690de31d3b6",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/275fe3cc1a06269b994d47d23be67690de31d3b6"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/390611e0d45c5793c7066110af37c8514e6a6c54",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/390611e0d45c5793c7066110af37c8514e6a6c54",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/390611e0d45c5793c7066110af37c8514e6a6c54",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/390611e0d45c5793c7066110af37c8514e6a6c54/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a633411128e190b6b740387e159942739ff6039b",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/a633411128e190b6b740387e159942739ff6039b",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/a633411128e190b6b740387e159942739ff6039b"
+    }
+  ],
+  "stats": {
+    "total": 66,
+    "additions": 64,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6d9201d9f87660643ed002c5abebd2a2674640f8",
+      "filename": "tensorflow/core/kernels/sparse_fill_empty_rows_op.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/390611e0d45c5793c7066110af37c8514e6a6c54/tensorflow%2Fcore%2Fkernels%2Fsparse_fill_empty_rows_op.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/390611e0d45c5793c7066110af37c8514e6a6c54/tensorflow%2Fcore%2Fkernels%2Fsparse_fill_empty_rows_op.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fkernels%2Fsparse_fill_empty_rows_op.cc?ref=390611e0d45c5793c7066110af37c8514e6a6c54",
+      "patch": "@@ -236,6 +236,9 @@ class SparseFillEmptyRowsGradOp : public OpKernel {\n         context, TensorShapeUtils::IsVector(reverse_index_map_t->shape()),\n         errors::InvalidArgument(\"reverse_index_map must be a vector, saw: \",\n                                 reverse_index_map_t->shape().DebugString()));\n+    OP_REQUIRES(context, TensorShapeUtils::IsVector(grad_values_t->shape()),\n+                errors::InvalidArgument(\"grad_values must be a vector, saw: \",\n+                                        grad_values_t->shape().DebugString()));\n \n     const auto reverse_index_map = reverse_index_map_t->vec<int64>();\n     const auto grad_values = grad_values_t->vec<T>();\n@@ -264,8 +267,13 @@ class SparseFillEmptyRowsGradOp : public OpKernel {\n       // Locate the index of the output of the forward prop associated\n       // with this location in the input of the forward prop.  Copy\n       // the gradient into it.  Mark it as visited.\n-      d_values(i) = grad_values(reverse_index_map(i));\n-      visited(reverse_index_map(i)) = true;\n+      int64 reverse_index = reverse_index_map(i);\n+      OP_REQUIRES(\n+          context, 0 <= reverse_index && reverse_index < N_full,\n+          errors::InvalidArgument(\"Elements in reverse index must be in [0, \",\n+                                  N_full, \") but got \", reverse_index));\n+      d_values(i) = grad_values(reverse_index);\n+      visited(reverse_index) = true;\n     }\n     for (int j = 0; j < N_full; ++j) {\n       // The default value gradient gets the accumulated remainder of"
+    },
+    {
+      "sha": "74e150ad6c71427dd3910bb4c4fb71099dd63006",
+      "filename": "tensorflow/python/ops/sparse_ops_test.py",
+      "status": "modified",
+      "additions": 54,
+      "deletions": 0,
+      "changes": 54,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/390611e0d45c5793c7066110af37c8514e6a6c54/tensorflow%2Fpython%2Fops%2Fsparse_ops_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/390611e0d45c5793c7066110af37c8514e6a6c54/tensorflow%2Fpython%2Fops%2Fsparse_ops_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fops%2Fsparse_ops_test.py?ref=390611e0d45c5793c7066110af37c8514e6a6c54",
+      "patch": "@@ -21,6 +21,7 @@\n from absl.testing import parameterized\n import numpy as np\n \n+from tensorflow.python.eager import context\n from tensorflow.python.framework import constant_op\n from tensorflow.python.framework import dtypes\n from tensorflow.python.framework import errors\n@@ -30,6 +31,7 @@\n # Need array_grad to register gradient for Identity.\n from tensorflow.python.ops import array_grad  # pylint: disable=unused-import\n from tensorflow.python.ops import array_ops\n+from tensorflow.python.ops import gen_sparse_ops\n from tensorflow.python.ops import gradient_checker_v2 as gradient_checker\n from tensorflow.python.ops import math_ops\n # Need sparse_grad to register gradient for SparseToDense.\n@@ -234,5 +236,57 @@ def testConstantStringToSparse(self):\n     self.assertAllEqual([5], result.dense_shape)\n \n \n+@test_util.run_all_in_graph_and_eager_modes\n+class RawOpsTest(test_util.TensorFlowTestCase, parameterized.TestCase):\n+\n+  def testSparseFillEmptyRowsGrad(self):\n+    reverse_index_map = [2, 1]\n+    grad_values = [0, 1, 2, 3]\n+    d_values, d_default_value = self.evaluate(\n+        gen_sparse_ops.SparseFillEmptyRowsGrad(\n+            reverse_index_map=reverse_index_map, grad_values=grad_values))\n+    self.assertAllEqual([2, 1], d_values)\n+    self.assertEqual(3, d_default_value)\n+\n+  def testSparseFillEmptyRowsGradNegativeIndexMapValue(self):\n+    reverse_index_map = [2, -1]\n+    grad_values = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        r'Elements in reverse index must be in \\[0, 4\\)'):\n+      self.evaluate(\n+          gen_sparse_ops.SparseFillEmptyRowsGrad(\n+              reverse_index_map=reverse_index_map, grad_values=grad_values))\n+\n+  def testSparseFillEmptyRowsGradLargeIndexMapValue(self):\n+    reverse_index_map = [2, 10]\n+    grad_values = [0, 1, 2, 3]\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        r'Elements in reverse index must be in \\[0, 4\\)'):\n+      self.evaluate(\n+          gen_sparse_ops.SparseFillEmptyRowsGrad(\n+              reverse_index_map=reverse_index_map, grad_values=grad_values))\n+\n+  def testSparseFillEmptyRowsGradMatrix(self):\n+    reverse_index_map = [0, 1]\n+    grad_values = [[0, 1], [2, 3]]\n+    # Note: Eager mode and graph mode throw different errors here. Graph mode\n+    # will fail with a ValueError from the shape checking logic, while Eager\n+    # will fail with an InvalidArgumentError from the kernel itself.\n+    if context.executing_eagerly():\n+      with self.assertRaisesRegex(errors.InvalidArgumentError,\n+                                  r'grad_values must be a vector'):\n+        self.evaluate(\n+            gen_sparse_ops.SparseFillEmptyRowsGrad(\n+                reverse_index_map=reverse_index_map, grad_values=grad_values))\n+    else:\n+      with self.assertRaisesRegex(ValueError,\n+                                  r'Shape must be rank 1 but is rank 2'):\n+        self.evaluate(\n+            gen_sparse_ops.SparseFillEmptyRowsGrad(\n+                reverse_index_map=reverse_index_map, grad_values=grad_values))\n+\n+\n if __name__ == '__main__':\n   googletest.main()"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "a56346ceacad28bf470017a6bda1d5518d0bd943",
+  "node_id": "MDY6Q29tbWl0MTExMzE2MzE6YTU2MzQ2Y2VhY2FkMjhiZjQ3MDAxN2E2YmRhMWQ1NTE4ZDBiZDk0Mw==",
+  "commit": {
+    "author": {
+      "name": "Stepan Palamarchuk",
+      "email": "stepan@fb.com",
+      "date": "2019-02-14T21:40:41Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-02-14T22:38:42Z"
+    },
+    "message": "Throw on bad types during skipping data\n\nSummary:\nThe current code silently returns on bad types. In case when we have an invalid data, we may get a container of a large size with a bad type, this would lead to us running long loop doing nothing (though we already can say that the data is invalid).\n\nThe new code would throw an exception as soon as we try to skip a value of invalid type.\n\nFixes CVE-2019-3552\n\nReviewed By: stevegury\n\nDifferential Revision: D13892370\n\nfbshipit-source-id: 582c81f90cf40c105383083cb38815816140e3ad",
+    "tree": {
+      "sha": "65c8573a809821230f3ddd94347d8a2ab3c88641",
+      "url": "https://api.github.com/repos/facebook/fbthrift/git/trees/65c8573a809821230f3ddd94347d8a2ab3c88641"
+    },
+    "url": "https://api.github.com/repos/facebook/fbthrift/git/commits/a56346ceacad28bf470017a6bda1d5518d0bd943",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/fbthrift/commits/a56346ceacad28bf470017a6bda1d5518d0bd943",
+  "html_url": "https://github.com/facebook/fbthrift/commit/a56346ceacad28bf470017a6bda1d5518d0bd943",
+  "comments_url": "https://api.github.com/repos/facebook/fbthrift/commits/a56346ceacad28bf470017a6bda1d5518d0bd943/comments",
+  "author": {
+    "login": "spalamarchuk",
+    "id": 9591385,
+    "node_id": "MDQ6VXNlcjk1OTEzODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9591385?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/spalamarchuk",
+    "html_url": "https://github.com/spalamarchuk",
+    "followers_url": "https://api.github.com/users/spalamarchuk/followers",
+    "following_url": "https://api.github.com/users/spalamarchuk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/spalamarchuk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/spalamarchuk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/spalamarchuk/subscriptions",
+    "organizations_url": "https://api.github.com/users/spalamarchuk/orgs",
+    "repos_url": "https://api.github.com/users/spalamarchuk/repos",
+    "events_url": "https://api.github.com/users/spalamarchuk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/spalamarchuk/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9443939948a77691ec96df25bb9d46c7f98aa2b9",
+      "url": "https://api.github.com/repos/facebook/fbthrift/commits/9443939948a77691ec96df25bb9d46c7f98aa2b9",
+      "html_url": "https://github.com/facebook/fbthrift/commit/9443939948a77691ec96df25bb9d46c7f98aa2b9"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "a18253b1acde6673f073e0cb575e44f0f39c64d2",
+      "filename": "thrift/lib/java/thrift/src/main/java/com/facebook/thrift/protocol/TProtocolUtil.java",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/a56346ceacad28bf470017a6bda1d5518d0bd943/thrift%2Flib%2Fjava%2Fthrift%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTProtocolUtil.java",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/a56346ceacad28bf470017a6bda1d5518d0bd943/thrift%2Flib%2Fjava%2Fthrift%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTProtocolUtil.java",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fjava%2Fthrift%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffacebook%2Fthrift%2Fprotocol%2FTProtocolUtil.java?ref=a56346ceacad28bf470017a6bda1d5518d0bd943",
+      "patch": "@@ -166,7 +166,10 @@ public static void skip(TProtocol prot, byte type, int maxDepth)\n         break;\n       }\n     default:\n-      break;\n+      {\n+        throw new TProtocolException(\n+              TProtocolException.INVALID_DATA, \"Invalid type encountered during skipping: \" + type);\n+      }\n     }\n   }\n "
+    }
+  ]
+}

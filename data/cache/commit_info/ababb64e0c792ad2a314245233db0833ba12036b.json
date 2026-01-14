@@ -1,0 +1,113 @@
+{
+  "sha": "ababb64e0c792ad2a314245233db0833ba12036b",
+  "node_id": "MDY6Q29tbWl0NzQwNjY3ODphYmFiYjY0ZTBjNzkyYWQyYTMxNDI0NTIzM2RiMDgzM2JhMTIwMzZi",
+  "commit": {
+    "author": {
+      "name": "Moritz Bunkus",
+      "email": "moritz@bunkus.org",
+      "date": "2015-10-20T09:27:52Z"
+    },
+    "committer": {
+      "name": "Moritz Bunkus",
+      "email": "moritz@bunkus.org",
+      "date": "2015-10-20T12:54:55Z"
+    },
+    "message": "EbmlUnicodeString: don't read beyond end of string\n\nThe conversion from an UTF-8 encoded string into a wchar_t one was\nreading from beyond the end of the source buffer if the length indicated\nby a UTF-8 character's first byte exceeds the number of bytes actually\npresent afterwards.\n\nFixes the issue reported as Cisco TALOS-CAN-0036.",
+    "tree": {
+      "sha": "3408a92c3ad91db57e060b84b80b63ec43d13e19",
+      "url": "https://api.github.com/repos/Matroska-Org/libebml/git/trees/3408a92c3ad91db57e060b84b80b63ec43d13e19"
+    },
+    "url": "https://api.github.com/repos/Matroska-Org/libebml/git/commits/ababb64e0c792ad2a314245233db0833ba12036b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Matroska-Org/libebml/commits/ababb64e0c792ad2a314245233db0833ba12036b",
+  "html_url": "https://github.com/Matroska-Org/libebml/commit/ababb64e0c792ad2a314245233db0833ba12036b",
+  "comments_url": "https://api.github.com/repos/Matroska-Org/libebml/commits/ababb64e0c792ad2a314245233db0833ba12036b/comments",
+  "author": {
+    "login": "mbunkus",
+    "id": 414282,
+    "node_id": "MDQ6VXNlcjQxNDI4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/414282?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mbunkus",
+    "html_url": "https://github.com/mbunkus",
+    "followers_url": "https://api.github.com/users/mbunkus/followers",
+    "following_url": "https://api.github.com/users/mbunkus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mbunkus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mbunkus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mbunkus/subscriptions",
+    "organizations_url": "https://api.github.com/users/mbunkus/orgs",
+    "repos_url": "https://api.github.com/users/mbunkus/repos",
+    "events_url": "https://api.github.com/users/mbunkus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mbunkus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "mbunkus",
+    "id": 414282,
+    "node_id": "MDQ6VXNlcjQxNDI4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/414282?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mbunkus",
+    "html_url": "https://github.com/mbunkus",
+    "followers_url": "https://api.github.com/users/mbunkus/followers",
+    "following_url": "https://api.github.com/users/mbunkus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mbunkus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mbunkus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mbunkus/subscriptions",
+    "organizations_url": "https://api.github.com/users/mbunkus/orgs",
+    "repos_url": "https://api.github.com/users/mbunkus/repos",
+    "events_url": "https://api.github.com/users/mbunkus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mbunkus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c161e600b37dc2ee07bad9b34a266dc28cfac642",
+      "url": "https://api.github.com/repos/Matroska-Org/libebml/commits/c161e600b37dc2ee07bad9b34a266dc28cfac642",
+      "html_url": "https://github.com/Matroska-Org/libebml/commit/c161e600b37dc2ee07bad9b34a266dc28cfac642"
+    }
+  ],
+  "stats": {
+    "total": 70,
+    "additions": 47,
+    "deletions": 23
+  },
+  "files": [
+    {
+      "sha": "a5139c4309eb3b5224fd6505c8f973ad6835fd9d",
+      "filename": "ChangeLog",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/Matroska-Org/libebml/blob/ababb64e0c792ad2a314245233db0833ba12036b/ChangeLog",
+      "raw_url": "https://github.com/Matroska-Org/libebml/raw/ababb64e0c792ad2a314245233db0833ba12036b/ChangeLog",
+      "contents_url": "https://api.github.com/repos/Matroska-Org/libebml/contents/ChangeLog?ref=ababb64e0c792ad2a314245233db0833ba12036b",
+      "patch": "@@ -1,3 +1,12 @@\n+2015-10-20  Moritz Bunkus  <moritz@bunkus.org>\n+\n+        * EbmlUnicodeString::UpdateFromUTF8(): Fixed an invalid memory\n+        access. When reading from a UTF-8 string in which the length\n+        indicated by a UTF-8 character's first byte exceeds the string's\n+        actual number of bytes the parser would access beyond the end of\n+        the string resulting in a heap information leak. Fixes the issue\n+        reported as Cisco TALOS-CAN-0036.\n+\n 2015-10-17  Moritz Bunkus  <moritz@bunkus.org>\n \n         * Released v1.3.2."
+    },
+    {
+      "sha": "7b7cd8e97210a7fc82d5da2d9fa4608c143386cf",
+      "filename": "src/EbmlUnicodeString.cpp",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 23,
+      "changes": 61,
+      "blob_url": "https://github.com/Matroska-Org/libebml/blob/ababb64e0c792ad2a314245233db0833ba12036b/src%2FEbmlUnicodeString.cpp",
+      "raw_url": "https://github.com/Matroska-Org/libebml/raw/ababb64e0c792ad2a314245233db0833ba12036b/src%2FEbmlUnicodeString.cpp",
+      "contents_url": "https://api.github.com/repos/Matroska-Org/libebml/contents/src%2FEbmlUnicodeString.cpp?ref=ababb64e0c792ad2a314245233db0833ba12036b",
+      "patch": "@@ -47,6 +47,21 @@ START_LIBEBML_NAMESPACE\n \n // ===================== UTFstring class ===================\n \n+static unsigned int UTFCharLength(uint8 lead)\n+{\n+  if (lead < 0x80)\n+    return 1;\n+  else if ((lead >> 5) == 0x6)\n+    return 2;\n+  else if ((lead >> 4) == 0xe)\n+    return 3;\n+  else if ((lead >> 3) == 0x1e)\n+    return 4;\n+  else\n+    // Invalid size?\n+    return 0;\n+}\n+\n UTFstring::UTFstring()\n   :_Length(0)\n   ,_Data(NULL)\n@@ -143,39 +158,39 @@ void UTFstring::UpdateFromUTF8()\n   delete [] _Data;\n   // find the size of the final UCS-2 string\n   size_t i;\n-  for (_Length=0, i=0; i<UTF8string.length(); _Length++) {\n-    uint8 lead = static_cast<uint8>(UTF8string[i]);\n-    if (lead < 0x80)\n-      i++;\n-    else if ((lead >> 5) == 0x6)\n-      i += 2;\n-    else if ((lead >> 4) == 0xe)\n-      i += 3;\n-    else if ((lead >> 3) == 0x1e)\n-      i += 4;\n+  const size_t SrcLength = UTF8string.length();\n+  for (_Length=0, i=0; i<SrcLength; _Length++) {\n+    const unsigned int CharLength = UTFCharLength(static_cast<uint8>(UTF8string[i]));\n+    if ((CharLength >= 1) && (CharLength <= 4))\n+      i += CharLength;\n     else\n       // Invalid size?\n       break;\n   }\n   _Data = new wchar_t[_Length+1];\n   size_t j;\n-  for (j=0, i=0; i<UTF8string.length(); j++) {\n-    uint8 lead = static_cast<uint8>(UTF8string[i]);\n-    if (lead < 0x80) {\n+  for (j=0, i=0; i<SrcLength; j++) {\n+    const uint8 lead              = static_cast<uint8>(UTF8string[i]);\n+    const unsigned int CharLength = UTFCharLength(lead);\n+    if ((CharLength < 1) || (CharLength > 4))\n+      // Invalid char?\n+      break;\n+\n+    if ((i + CharLength) > SrcLength)\n+      // Guard against invalid memory access beyond the end of the\n+      // source buffer.\n+      break;\n+\n+    if (CharLength == 1)\n       _Data[j] = lead;\n-      i++;\n-    } else if ((lead >> 5) == 0x6) {\n+    else if (CharLength == 2)\n       _Data[j] = ((lead & 0x1F) << 6) + (UTF8string[i+1] & 0x3F);\n-      i += 2;\n-    } else if ((lead >> 4) == 0xe) {\n+    else if (CharLength == 3)\n       _Data[j] = ((lead & 0x0F) << 12) + ((UTF8string[i+1] & 0x3F) << 6) + (UTF8string[i+2] & 0x3F);\n-      i += 3;\n-    } else if ((lead >> 3) == 0x1e) {\n+    else if (CharLength == 4)\n       _Data[j] = ((lead & 0x07) << 18) + ((UTF8string[i+1] & 0x3F) << 12) + ((UTF8string[i+2] & 0x3F) << 6) + (UTF8string[i+3] & 0x3F);\n-      i += 4;\n-    } else\n-      // Invalid char?\n-      break;\n+\n+    i += CharLength;\n   }\n   _Data[j] = 0;\n }"
+    }
+  ]
+}

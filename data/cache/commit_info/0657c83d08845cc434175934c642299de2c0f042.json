@@ -1,0 +1,101 @@
+{
+  "sha": "0657c83d08845cc434175934c642299de2c0f042",
+  "node_id": "C_kwDOArmXAtoAKDA2NTdjODNkMDg4NDVjYzQzNDE3NTkzNGM2NDIyOTlkZTJjMGYwNDI",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2021-11-09T12:44:43Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-09T12:49:27Z"
+    },
+    "message": "Fix heap OOB read/write due to incorrect indexing.\n\nPiperOrigin-RevId: 408578046\nChange-Id: Ifc9ffea49e5890f55fcb2c27568611052c3ddcfa",
+    "tree": {
+      "sha": "260adfdf645d78bf6f0e95cc11af9a7e6b56e182",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/260adfdf645d78bf6f0e95cc11af9a7e6b56e182"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/0657c83d08845cc434175934c642299de2c0f042",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0657c83d08845cc434175934c642299de2c0f042",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/0657c83d08845cc434175934c642299de2c0f042",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/0657c83d08845cc434175934c642299de2c0f042/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6e65b0b4ad12fdaa223e87b4ae6d8cb762fcae2b",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/6e65b0b4ad12fdaa223e87b4ae6d8cb762fcae2b",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/6e65b0b4ad12fdaa223e87b4ae6d8cb762fcae2b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "89617dc97f249676e60c030524a0c027d139bfb6",
+      "filename": "tensorflow/core/framework/full_type_util.cc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/0657c83d08845cc434175934c642299de2c0f042/tensorflow%2Fcore%2Fframework%2Ffull_type_util.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/0657c83d08845cc434175934c642299de2c0f042/tensorflow%2Fcore%2Fframework%2Ffull_type_util.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fframework%2Ffull_type_util.cc?ref=0657c83d08845cc434175934c642299de2c0f042",
+      "patch": "@@ -100,7 +100,7 @@ StatusOr<FullTypeDef> SpecializeType(const AttrSlice& attrs,\n     // verifications are needed, they should be done by separately, and in a\n     // way that can be reused for type inference.\n     for (int j = 0; j < t->args_size(); j++) {\n-      auto* arg = t->mutable_args(i);\n+      auto* arg = t->mutable_args(j);\n       if (arg->type_id() == TFT_VAR) {\n         const auto* attr = attrs.Find(arg->s());\n         if (attr == nullptr) {"
+    }
+  ]
+}

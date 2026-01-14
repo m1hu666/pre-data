@@ -1,0 +1,101 @@
+{
+  "sha": "dea704f0ab7f625e1e7b3f9a1110b45b63157317",
+  "node_id": "MDY6Q29tbWl0NDUzOTE2NzpkZWE3MDRmMGFiN2Y2MjVlMWU3YjNmOWExMTEwYjQ1YjYzMTU3MzE3",
+  "commit": {
+    "author": {
+      "name": "Jay Berkenbilt",
+      "email": "ejb@ql.org",
+      "date": "2017-08-27T01:10:07Z"
+    },
+    "committer": {
+      "name": "Jay Berkenbilt",
+      "email": "ejb@ql.org",
+      "date": "2017-08-27T01:35:59Z"
+    },
+    "message": "Pad keys to avoid memory errors (fixes #147)",
+    "tree": {
+      "sha": "b57e4ec9bccee38c578b8ac8f5bf5dcf8cbb171b",
+      "url": "https://api.github.com/repos/qpdf/qpdf/git/trees/b57e4ec9bccee38c578b8ac8f5bf5dcf8cbb171b"
+    },
+    "url": "https://api.github.com/repos/qpdf/qpdf/git/commits/dea704f0ab7f625e1e7b3f9a1110b45b63157317",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/qpdf/qpdf/commits/dea704f0ab7f625e1e7b3f9a1110b45b63157317",
+  "html_url": "https://github.com/qpdf/qpdf/commit/dea704f0ab7f625e1e7b3f9a1110b45b63157317",
+  "comments_url": "https://api.github.com/repos/qpdf/qpdf/commits/dea704f0ab7f625e1e7b3f9a1110b45b63157317/comments",
+  "author": {
+    "login": "jberkenbilt",
+    "id": 997128,
+    "node_id": "MDQ6VXNlcjk5NzEyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/997128?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jberkenbilt",
+    "html_url": "https://github.com/jberkenbilt",
+    "followers_url": "https://api.github.com/users/jberkenbilt/followers",
+    "following_url": "https://api.github.com/users/jberkenbilt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jberkenbilt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jberkenbilt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jberkenbilt/subscriptions",
+    "organizations_url": "https://api.github.com/users/jberkenbilt/orgs",
+    "repos_url": "https://api.github.com/users/jberkenbilt/repos",
+    "events_url": "https://api.github.com/users/jberkenbilt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jberkenbilt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jberkenbilt",
+    "id": 997128,
+    "node_id": "MDQ6VXNlcjk5NzEyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/997128?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jberkenbilt",
+    "html_url": "https://github.com/jberkenbilt",
+    "followers_url": "https://api.github.com/users/jberkenbilt/followers",
+    "following_url": "https://api.github.com/users/jberkenbilt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jberkenbilt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jberkenbilt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jberkenbilt/subscriptions",
+    "organizations_url": "https://api.github.com/users/jberkenbilt/orgs",
+    "repos_url": "https://api.github.com/users/jberkenbilt/repos",
+    "events_url": "https://api.github.com/users/jberkenbilt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jberkenbilt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "021c229331444aae507186c7b4a54bb1692b5846",
+      "url": "https://api.github.com/repos/qpdf/qpdf/commits/021c229331444aae507186c7b4a54bb1692b5846",
+      "html_url": "https://github.com/qpdf/qpdf/commit/021c229331444aae507186c7b4a54bb1692b5846"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 10,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "a2445b61174e7dee9ba76cbc9d8e6762dff8d05a",
+      "filename": "libqpdf/QPDF_encryption.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 14,
+      "changes": 24,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/dea704f0ab7f625e1e7b3f9a1110b45b63157317/libqpdf%2FQPDF_encryption.cc",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/dea704f0ab7f625e1e7b3f9a1110b45b63157317/libqpdf%2FQPDF_encryption.cc",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/libqpdf%2FQPDF_encryption.cc?ref=dea704f0ab7f625e1e7b3f9a1110b45b63157317",
+      "patch": "@@ -479,6 +479,8 @@ compute_O_value(std::string const& user_password,\n \n     char upass[key_bytes];\n     pad_or_truncate_password_V4(user_password, upass);\n+    std::string k1(reinterpret_cast<char*>(O_key), OU_key_bytes_V4);\n+    pad_short_parameter(k1, data.getLengthBytes());\n     iterate_rc4(QUtil::unsigned_char_pointer(upass), key_bytes,\n \t\tO_key, data.getLengthBytes(),\n                 (data.getR() >= 3) ? 20 : 1, false);\n@@ -495,6 +497,7 @@ compute_U_value_R2(std::string const& user_password,\n     std::string k1 = QPDF::compute_encryption_key(user_password, data);\n     char udata[key_bytes];\n     pad_or_truncate_password_V4(\"\", udata);\n+    pad_short_parameter(k1, data.getLengthBytes());\n     iterate_rc4(QUtil::unsigned_char_pointer(udata), key_bytes,\n \t\tQUtil::unsigned_char_pointer(k1),\n                 data.getLengthBytes(), 1, false);\n@@ -516,6 +519,7 @@ compute_U_value_R3(std::string const& user_password,\n                                 data.getId1().length());\n     MD5::Digest digest;\n     md5.digest(digest);\n+    pad_short_parameter(k1, data.getLengthBytes());\n     iterate_rc4(digest, sizeof(MD5::Digest),\n \t\tQUtil::unsigned_char_pointer(k1),\n                 data.getLengthBytes(), 20, false);\n@@ -591,7 +595,10 @@ check_owner_password_V4(std::string& user_password,\n     compute_O_rc4_key(user_password, owner_password, data, key);\n     unsigned char O_data[key_bytes];\n     memcpy(O_data, QUtil::unsigned_char_pointer(data.getO()), key_bytes);\n-    iterate_rc4(O_data, key_bytes, key, data.getLengthBytes(),\n+    std::string k1(reinterpret_cast<char*>(key), OU_key_bytes_V4);\n+    pad_short_parameter(k1, data.getLengthBytes());\n+    iterate_rc4(O_data, key_bytes, QUtil::unsigned_char_pointer(k1),\n+                data.getLengthBytes(),\n                 (data.getR() >= 3) ? 20 : 1, true);\n     std::string new_user_password =\n         std::string(reinterpret_cast<char*>(O_data), key_bytes);\n@@ -886,6 +893,7 @@ QPDF::initializeEncryption()\n \n     if (V < 5)\n     {\n+        // These must be exactly the right number of bytes.\n         pad_short_parameter(O, key_bytes);\n         pad_short_parameter(U, key_bytes);\n         if (! ((O.length() == key_bytes) && (U.length() == key_bytes)))\n@@ -913,24 +921,12 @@ QPDF::initializeEncryption()\n         UE = encryption_dict.getKey(\"/UE\").getStringValue();\n         Perms = encryption_dict.getKey(\"/Perms\").getStringValue();\n \n+        // These may be longer than the minimum number of bytes.\n         pad_short_parameter(O, OU_key_bytes_V5);\n         pad_short_parameter(U, OU_key_bytes_V5);\n         pad_short_parameter(OE, OUE_key_bytes_V5);\n         pad_short_parameter(UE, OUE_key_bytes_V5);\n         pad_short_parameter(Perms, Perms_key_bytes_V5);\n-        if ((O.length() < OU_key_bytes_V5) ||\n-            (U.length() < OU_key_bytes_V5) ||\n-            (OE.length() < OUE_key_bytes_V5) ||\n-            (UE.length() < OUE_key_bytes_V5) ||\n-            (Perms.length() < Perms_key_bytes_V5))\n-        {\n-            throw QPDFExc(qpdf_e_damaged_pdf, this->m->file->getName(),\n-                          \"encryption dictionary\",\n-                          this->m->file->getLastOffset(),\n-                          \"incorrect length for some of\"\n-                          \" /O, /U, /OE, /UE, or /Perms in\"\n-                          \" encryption dictionary\");\n-        }\n     }\n \n     int Length = 40;"
+    }
+  ]
+}

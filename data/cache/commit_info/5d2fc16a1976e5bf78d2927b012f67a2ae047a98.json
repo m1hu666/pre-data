@@ -1,0 +1,125 @@
+{
+  "sha": "5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+  "node_id": "MDY6Q29tbWl0MTI1NzU1MjIxOjVkMmZjMTZhMTk3NmU1YmY3OGQyOTI3YjAxMmY2N2EyYWUwNDdhOTg=",
+  "commit": {
+    "author": {
+      "name": "Sergei Tachenov",
+      "email": "sergei@tachenov.name",
+      "date": "2018-06-12T18:32:45Z"
+    },
+    "committer": {
+      "name": "Sergei Tachenov",
+      "email": "sergei@tachenov.name",
+      "date": "2018-06-12T18:32:45Z"
+    },
+    "message": "Fixed the Zip Slip vulnerability in JlCompress\n\nWhen extracting a file with a dangerous path like \"../evil.exe\"\nfrom a ZIP archive with JlCompress::extractDir(), the target\nfile would be created outside of the target directory, potentially\neven overwriting an existing file there.",
+    "tree": {
+      "sha": "121a1f84ba568dc706014fba3643dbc55054a28b",
+      "url": "https://api.github.com/repos/stachenov/quazip/git/trees/121a1f84ba568dc706014fba3643dbc55054a28b"
+    },
+    "url": "https://api.github.com/repos/stachenov/quazip/git/commits/5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/stachenov/quazip/commits/5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+  "html_url": "https://github.com/stachenov/quazip/commit/5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+  "comments_url": "https://api.github.com/repos/stachenov/quazip/commits/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/comments",
+  "author": {
+    "login": "stachenov",
+    "id": 10459538,
+    "node_id": "MDQ6VXNlcjEwNDU5NTM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10459538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stachenov",
+    "html_url": "https://github.com/stachenov",
+    "followers_url": "https://api.github.com/users/stachenov/followers",
+    "following_url": "https://api.github.com/users/stachenov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stachenov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stachenov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stachenov/subscriptions",
+    "organizations_url": "https://api.github.com/users/stachenov/orgs",
+    "repos_url": "https://api.github.com/users/stachenov/repos",
+    "events_url": "https://api.github.com/users/stachenov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stachenov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "stachenov",
+    "id": 10459538,
+    "node_id": "MDQ6VXNlcjEwNDU5NTM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10459538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stachenov",
+    "html_url": "https://github.com/stachenov",
+    "followers_url": "https://api.github.com/users/stachenov/followers",
+    "following_url": "https://api.github.com/users/stachenov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stachenov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stachenov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stachenov/subscriptions",
+    "organizations_url": "https://api.github.com/users/stachenov/orgs",
+    "repos_url": "https://api.github.com/users/stachenov/repos",
+    "events_url": "https://api.github.com/users/stachenov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stachenov/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ad509e89bbaae3ec6069c6246d15bd2c1618972d",
+      "url": "https://api.github.com/repos/stachenov/quazip/commits/ad509e89bbaae3ec6069c6246d15bd2c1618972d",
+      "html_url": "https://github.com/stachenov/quazip/commit/ad509e89bbaae3ec6069c6246d15bd2c1618972d"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 30,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "5528ecb737fd1a43befa420dbcb4152d6784c0da",
+      "filename": "NEWS.txt",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/stachenov/quazip/blob/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/NEWS.txt",
+      "raw_url": "https://github.com/stachenov/quazip/raw/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/NEWS.txt",
+      "contents_url": "https://api.github.com/repos/stachenov/quazip/contents/NEWS.txt?ref=5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+      "patch": "@@ -1,5 +1,8 @@\n QuaZIP changes\n \n+* Current\n+        * Fixed the Zip Slip vulnerability in JlCompress\n+\n * 0.7.5\n         * Fixed target_link_libraries call in CMakeLists\n         * Worked around a Qt 4.6 bug (QTBUG-15421) screwing up hidden"
+    },
+    {
+      "sha": "40978b178b309dc50c1a278ee7bee56c27d4f307",
+      "filename": "quazip/JlCompress.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/stachenov/quazip/blob/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/quazip%2FJlCompress.cpp",
+      "raw_url": "https://github.com/stachenov/quazip/raw/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/quazip%2FJlCompress.cpp",
+      "contents_url": "https://api.github.com/repos/stachenov/quazip/contents/quazip%2FJlCompress.cpp?ref=5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+      "patch": "@@ -364,15 +364,19 @@ QStringList JlCompress::extractDir(QuaZip &zip, const QString &dir)\n     if(!zip.open(QuaZip::mdUnzip)) {\n         return QStringList();\n     }\n-\n-    QDir directory(dir);\n+    QString cleanDir = QDir::cleanPath(dir);\n+    QDir directory(cleanDir);\n+    QString absCleanDir = directory.absolutePath();\n     QStringList extracted;\n     if (!zip.goToFirstFile()) {\n         return QStringList();\n     }\n     do {\n         QString name = zip.getCurrentFileName();\n         QString absFilePath = directory.absoluteFilePath(name);\n+        QString absCleanPath = QDir::cleanPath(absFilePath);\n+        if (!absCleanPath.startsWith(absCleanDir + \"/\"))\n+            continue;\n         if (!extractFile(&zip, \"\", absFilePath)) {\n             removeFile(extracted);\n             return QStringList();"
+    },
+    {
+      "sha": "ad1cd0a222417fe0ee252e67830fb7c6766c5129",
+      "filename": "qztest/testjlcompress.cpp",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 12,
+      "changes": 33,
+      "blob_url": "https://github.com/stachenov/quazip/blob/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/qztest%2Ftestjlcompress.cpp",
+      "raw_url": "https://github.com/stachenov/quazip/raw/5d2fc16a1976e5bf78d2927b012f67a2ae047a98/qztest%2Ftestjlcompress.cpp",
+      "contents_url": "https://api.github.com/repos/stachenov/quazip/contents/qztest%2Ftestjlcompress.cpp?ref=5d2fc16a1976e5bf78d2927b012f67a2ae047a98",
+      "patch": "@@ -302,17 +302,25 @@ void TestJlCompress::extractDir_data()\n {\n     QTest::addColumn<QString>(\"zipName\");\n     QTest::addColumn<QStringList>(\"fileNames\");\n-    QTest::newRow(\"simple\") << \"jlextdir.zip\" << (\n-            QStringList() << \"test0.txt\" << \"testdir1/test1.txt\"\n+    QTest::addColumn<QStringList>(\"expectedExtracted\");\n+    QTest::newRow(\"simple\") << \"jlextdir.zip\"\n+        << (QStringList() << \"test0.txt\" << \"testdir1/test1.txt\"\n+            << \"testdir2/test2.txt\" << \"testdir2/subdir/test2sub.txt\")\n+        << (QStringList() << \"test0.txt\" << \"testdir1/test1.txt\"\n             << \"testdir2/test2.txt\" << \"testdir2/subdir/test2sub.txt\");\n-    QTest::newRow(\"separate dir\") << \"sepdir.zip\" << (\n-            QStringList() << \"laj/\" << \"laj/lajfile.txt\");\n+    QTest::newRow(\"separate dir\") << \"sepdir.zip\"\n+        << (QStringList() << \"laj/\" << \"laj/lajfile.txt\")\n+        << (QStringList() << \"laj/\" << \"laj/lajfile.txt\");\n+    QTest::newRow(\"Zip Slip\") << \"zipslip.zip\"\n+        << (QStringList() << \"test0.txt\" << \"../zipslip.txt\")\n+        << (QStringList() << \"test0.txt\");\n }\n \n void TestJlCompress::extractDir()\n {\n     QFETCH(QString, zipName);\n     QFETCH(QStringList, fileNames);\n+    QFETCH(QStringList, expectedExtracted);\n     QDir curDir;\n     if (!curDir.mkpath(\"jlext/jldir\")) {\n         QFAIL(\"Couldn't mkpath jlext/jldir\");\n@@ -325,17 +333,18 @@ void TestJlCompress::extractDir()\n     }\n     QStringList extracted;\n     QCOMPARE((extracted = JlCompress::extractDir(zipName, \"jlext/jldir\"))\n-        .count(), fileNames.count());\n-    foreach (QString fileName, fileNames) {\n-        QString fullName = \"jlext/jldir/\" + fileName;\n+        .count(), expectedExtracted.count());\n+    const QString dir = \"jlext/jldir/\";\n+    foreach (QString fileName, expectedExtracted) {\n+        QString fullName = dir + fileName;\n         QFileInfo fileInfo(fullName);\n         QFileInfo extInfo(\"tmp/\" + fileName);\n         if (!fileInfo.isDir())\n             QCOMPARE(fileInfo.size(), extInfo.size());\n         QCOMPARE(fileInfo.permissions(), extInfo.permissions());\n         curDir.remove(fullName);\n         curDir.rmpath(fileInfo.dir().path());\n-        QString absolutePath = fileInfo.absoluteFilePath();\n+        QString absolutePath = QDir(dir).absoluteFilePath(fileName);\n         if (fileInfo.isDir() && !absolutePath.endsWith('/'))\n \t    absolutePath += '/';\n         QVERIFY(extracted.contains(absolutePath));\n@@ -344,17 +353,17 @@ void TestJlCompress::extractDir()\n     QFile zipFile(zipName);\n     QVERIFY(zipFile.open(QIODevice::ReadOnly));\n     QCOMPARE((extracted = JlCompress::extractDir(&zipFile, \"jlext/jldir\"))\n-        .count(), fileNames.count());\n-    foreach (QString fileName, fileNames) {\n-        QString fullName = \"jlext/jldir/\" + fileName;\n+        .count(), expectedExtracted.count());\n+    foreach (QString fileName, expectedExtracted) {\n+        QString fullName = dir + fileName;\n         QFileInfo fileInfo(fullName);\n         QFileInfo extInfo(\"tmp/\" + fileName);\n         if (!fileInfo.isDir())\n             QCOMPARE(fileInfo.size(), extInfo.size());\n         QCOMPARE(fileInfo.permissions(), extInfo.permissions());\n         curDir.remove(fullName);\n         curDir.rmpath(fileInfo.dir().path());\n-        QString absolutePath = fileInfo.absoluteFilePath();\n+        QString absolutePath = QDir(dir).absoluteFilePath(fileName);\n         if (fileInfo.isDir() && !absolutePath.endsWith('/'))\n         absolutePath += '/';\n         QVERIFY(extracted.contains(absolutePath));"
+    }
+  ]
+}

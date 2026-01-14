@@ -1,0 +1,85 @@
+{
+  "sha": "4746b577931e926a49e50de9720a4946de3069a7",
+  "node_id": "C_kwDOAE9q7doAKDQ3NDZiNTc3OTMxZTkyNmE0OWU1MGRlOTcyMGE0OTQ2ZGUzMDY5YTc",
+  "commit": {
+    "author": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-06-08T10:58:05Z"
+    },
+    "committer": {
+      "name": "Thomas Richter",
+      "email": "thomas.richter@iis.fraunhofer.de",
+      "date": "2022-06-08T10:58:05Z"
+    },
+    "message": "Fixed handling of empty JPEG-LS scans.",
+    "tree": {
+      "sha": "9be42e6867c35d9ee19b7ff85dec256ff0050c46",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/trees/9be42e6867c35d9ee19b7ff85dec256ff0050c46"
+    },
+    "url": "https://api.github.com/repos/thorfdbg/libjpeg/git/commits/4746b577931e926a49e50de9720a4946de3069a7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/4746b577931e926a49e50de9720a4946de3069a7",
+  "html_url": "https://github.com/thorfdbg/libjpeg/commit/4746b577931e926a49e50de9720a4946de3069a7",
+  "comments_url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/4746b577931e926a49e50de9720a4946de3069a7/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "51c3241b6da39df30f016b63f43f31c4011222c7",
+      "url": "https://api.github.com/repos/thorfdbg/libjpeg/commits/51c3241b6da39df30f016b63f43f31c4011222c7",
+      "html_url": "https://github.com/thorfdbg/libjpeg/commit/51c3241b6da39df30f016b63f43f31c4011222c7"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 10,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "3cff2da0d0d41f85071e76a2411c6a04a16cdb2e",
+      "filename": "README",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/4746b577931e926a49e50de9720a4946de3069a7/README",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/4746b577931e926a49e50de9720a4946de3069a7/README",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/README?ref=4746b577931e926a49e50de9720a4946de3069a7",
+      "patch": "@@ -40,7 +40,7 @@ Standard JPEG compression, with 444 (aka \"no\") subsampling:\n \r\n $ jpeg -q <quality> infile.ppm outfile.jpg\r\n \r\n-Standard JPEG compression, with 422 subsampling:\r\n+Standard JPEG compression, with 420 subsampling:\r\n \r\n $ jpeg -q <quality> -s 1x1,2x2,2x2 infile.ppm outfile.jpg\r\n \r"
+    },
+    {
+      "sha": "e3cfe47a62c0edc7b1c5f1cf3b83bd7a1071b651",
+      "filename": "codestream/sampleinterleavedlsscan.cpp",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/4746b577931e926a49e50de9720a4946de3069a7/codestream%2Fsampleinterleavedlsscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/4746b577931e926a49e50de9720a4946de3069a7/codestream%2Fsampleinterleavedlsscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Fsampleinterleavedlsscan.cpp?ref=4746b577931e926a49e50de9720a4946de3069a7",
+      "patch": "@@ -42,7 +42,7 @@\n ** A JPEG LS scan interleaving samples of several components,\n ** sample by sample.\n **\n-** $Id: sampleinterleavedlsscan.cpp,v 1.15 2014/11/14 15:41:32 thor Exp $\n+** $Id: sampleinterleavedlsscan.cpp,v 1.16 2022/06/08 10:54:55 thor Exp $\n **\n */\n \n@@ -112,9 +112,12 @@ bool SampleInterleavedLSScan::ParseMCU(void)\n   if (lines > 8) {\n     lines = 8;\n   }\n+\n+  if (lines == 0)\n+    return false;\n+  \n   if (m_pFrame->HeightOf() > 0)\n     m_ulRemaining[0] -= lines;\n-  assert(lines > 0);\n   assert(m_ucCount < 4);\n \n   //"
+    },
+    {
+      "sha": "cabc82cec7c92cab81070ec212e844c151ad446d",
+      "filename": "codestream/singlecomponentlsscan.cpp",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/thorfdbg/libjpeg/blob/4746b577931e926a49e50de9720a4946de3069a7/codestream%2Fsinglecomponentlsscan.cpp",
+      "raw_url": "https://github.com/thorfdbg/libjpeg/raw/4746b577931e926a49e50de9720a4946de3069a7/codestream%2Fsinglecomponentlsscan.cpp",
+      "contents_url": "https://api.github.com/repos/thorfdbg/libjpeg/contents/codestream%2Fsinglecomponentlsscan.cpp?ref=4746b577931e926a49e50de9720a4946de3069a7",
+      "patch": "@@ -41,7 +41,7 @@\n /*\n ** A JPEG LS scan covering only a single component.\n **\n-** $Id: singlecomponentlsscan.cpp,v 1.18 2014/11/14 15:41:32 thor Exp $\n+** $Id: singlecomponentlsscan.cpp,v 1.19 2022/06/08 10:54:55 thor Exp $\n **\n */\n \n@@ -96,8 +96,9 @@ bool SingleComponentLSScan::ParseMCU(void)\n   }\n   if (m_pFrame->HeightOf() > 0)\n     m_ulRemaining[0] -= lines;\n-  \n-  assert(lines > 0);\n+\n+  if (lines == 0)\n+    return false;\n \n   // Loop over lines and columns\n   do {"
+    }
+  ]
+}

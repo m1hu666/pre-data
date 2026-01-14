@@ -1,0 +1,125 @@
+{
+  "sha": "8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+  "node_id": "MDY6Q29tbWl0ODU2NTc4Nzc6OGI5YTI2NzBjZTY2ZmYyZmQ1YWRkZjU5MmY3ODI1ZTFmNWFkYjViNQ==",
+  "commit": {
+    "author": {
+      "name": "Cris Luengo",
+      "email": "cris.l.luengo@gmail.com",
+      "date": "2021-08-12T16:37:57Z"
+    },
+    "committer": {
+      "name": "Cris Luengo",
+      "email": "cris.l.luengo@gmail.com",
+      "date": "2021-08-12T16:37:57Z"
+    },
+    "message": "Fixed error handling in `dip::ImageReadJPEG()`, `dip::ImageWriteJPEG()`, etc. Fixes #80.",
+    "tree": {
+      "sha": "52ab71d3081f8f279be0bde4f0490b28d20aaddd",
+      "url": "https://api.github.com/repos/DIPlib/diplib/git/trees/52ab71d3081f8f279be0bde4f0490b28d20aaddd"
+    },
+    "url": "https://api.github.com/repos/DIPlib/diplib/git/commits/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/DIPlib/diplib/commits/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+  "html_url": "https://github.com/DIPlib/diplib/commit/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+  "comments_url": "https://api.github.com/repos/DIPlib/diplib/commits/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/comments",
+  "author": {
+    "login": "crisluengo",
+    "id": 7302924,
+    "node_id": "MDQ6VXNlcjczMDI5MjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7302924?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/crisluengo",
+    "html_url": "https://github.com/crisluengo",
+    "followers_url": "https://api.github.com/users/crisluengo/followers",
+    "following_url": "https://api.github.com/users/crisluengo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/crisluengo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/crisluengo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/crisluengo/subscriptions",
+    "organizations_url": "https://api.github.com/users/crisluengo/orgs",
+    "repos_url": "https://api.github.com/users/crisluengo/repos",
+    "events_url": "https://api.github.com/users/crisluengo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/crisluengo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "crisluengo",
+    "id": 7302924,
+    "node_id": "MDQ6VXNlcjczMDI5MjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7302924?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/crisluengo",
+    "html_url": "https://github.com/crisluengo",
+    "followers_url": "https://api.github.com/users/crisluengo/followers",
+    "following_url": "https://api.github.com/users/crisluengo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/crisluengo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/crisluengo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/crisluengo/subscriptions",
+    "organizations_url": "https://api.github.com/users/crisluengo/orgs",
+    "repos_url": "https://api.github.com/users/crisluengo/repos",
+    "events_url": "https://api.github.com/users/crisluengo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/crisluengo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d7d71555fbc5a13d74c2cb3fe50bbefc6e1c166e",
+      "url": "https://api.github.com/repos/DIPlib/diplib/commits/d7d71555fbc5a13d74c2cb3fe50bbefc6e1c166e",
+      "html_url": "https://github.com/DIPlib/diplib/commit/d7d71555fbc5a13d74c2cb3fe50bbefc6e1c166e"
+    }
+  ],
+  "stats": {
+    "total": 63,
+    "additions": 37,
+    "deletions": 26
+  },
+  "files": [
+    {
+      "sha": "eddf21e413a6a89933f2a511e31a168714ecd85a",
+      "filename": "CMakeLists.txt",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/DIPlib/diplib/blob/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/CMakeLists.txt",
+      "raw_url": "https://github.com/DIPlib/diplib/raw/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/CMakeLists.txt",
+      "contents_url": "https://api.github.com/repos/DIPlib/diplib/contents/CMakeLists.txt?ref=8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+      "patch": "@@ -43,6 +43,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES \"Clang\") # also matchs \"AppleClang\"\n    # Compiler flags for Clang C++\n    set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -Wall -Wconversion -Wsign-conversion -pedantic -Wno-c++17-extensions\")\n    #set(CMAKE_CXX_FLAGS_RELEASE \"${CMAKE_CXX_FLAGS_RELEASE} -march=native\") # This is optimal for local usage.\n+   set(CMAKE_C_FLAGS_SANITIZE \"${CMAKE_C_FLAGS_DEBUG} -fsanitize=address\")\n    set(CMAKE_CXX_FLAGS_SANITIZE \"${CMAKE_CXX_FLAGS_DEBUG} -fsanitize=address\")\n elseif(CMAKE_CXX_COMPILER_ID STREQUAL \"GNU\")\n    # Compiler flags for GNU C++\n@@ -53,7 +54,9 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL \"GNU\")\n    # \"DIP_EXPORT\" in forward class declaration sometimes causes a warning in GCC 6.0 and 7.0.\n    set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -Wno-attributes\")\n    #set(CMAKE_CXX_FLAGS_RELEASE \"${CMAKE_CXX_FLAGS_RELEASE} -march=native\") # This is optimal for local usage; to see which flags are enabled: gcc -march=native -Q --help=target\n+   set(CMAKE_C_FLAGS_DEBUG \"${CMAKE_C_FLAGS_DEBUG} -Og\") # Does some optimization that doesn't impact debugging.\n    set(CMAKE_CXX_FLAGS_DEBUG \"${CMAKE_CXX_FLAGS_DEBUG} -Og\") # Does some optimization that doesn't impact debugging.\n+   set(CMAKE_C_FLAGS_SANITIZE \"${CMAKE_C_FLAGS_DEBUG} -fsanitize=address\")\n    set(CMAKE_CXX_FLAGS_SANITIZE \"${CMAKE_CXX_FLAGS_DEBUG} -fsanitize=address\")\n elseif(CMAKE_CXX_COMPILER_ID STREQUAL \"Intel\")\n    # Compiler flags for Intel C++"
+    },
+    {
+      "sha": "30892d850ebdf80360d16cd9b0c25b39456fe605",
+      "filename": "changelogs/diplib_3.1.0.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/DIPlib/diplib/blob/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/changelogs%2Fdiplib_3.1.0.md",
+      "raw_url": "https://github.com/DIPlib/diplib/raw/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/changelogs%2Fdiplib_3.1.0.md",
+      "contents_url": "https://api.github.com/repos/DIPlib/diplib/contents/changelogs%2Fdiplib_3.1.0.md?ref=8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+      "patch": "@@ -102,6 +102,8 @@ title: \"Changes DIPlib 3.1.0\"\n \n - libics had a typo that caused out-of-bounds read (#81). \n \n+- Fixed error handling in `dip::ImageReadJPEG()` and `dip::ImageWriteJPEG()`, which previously would crash when libjpeg produced an error (#80).\n+\n \n \n "
+    },
+    {
+      "sha": "6f8b10ef1a7954e7ceea9b925f4a926e50137fb7",
+      "filename": "src/file_io/jpeg.cpp",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 26,
+      "changes": 58,
+      "blob_url": "https://github.com/DIPlib/diplib/blob/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/src%2Ffile_io%2Fjpeg.cpp",
+      "raw_url": "https://github.com/DIPlib/diplib/raw/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5/src%2Ffile_io%2Fjpeg.cpp",
+      "contents_url": "https://api.github.com/repos/DIPlib/diplib/contents/src%2Ffile_io%2Fjpeg.cpp?ref=8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5",
+      "patch": "@@ -24,31 +24,40 @@\n #include \"diplib/file_io.h\"\n \n #include \"jpeglib.h\"\n-#include <setjmp.h>\n-\n-namespace dip {\n-\n-namespace {\n+#include <csetjmp>\n \n // JPEG error handling stuff - modified from example.c in libjpeg source\n+extern \"C\" {\n+   static void my_error_exit( j_common_ptr cinfo );\n+   static void my_output_message( j_common_ptr );\n+}\n+\n struct my_error_mgr {\n-   struct jpeg_error_mgr pub;   // \"public\" fields\n-   jmp_buf setjmp_buffer;      // for return to caller\n+   struct jpeg_error_mgr pub; // \"public\" fields\n+   std::jmp_buf setjmp_buffer;     // for return to caller\n };\n using my_error_ptr = struct my_error_mgr*;\n \n-void my_error_exit( j_common_ptr cinfo ) {\n+static void my_error_exit( j_common_ptr cinfo ) {\n    // cinfo->err really points to a my_error_mgr struct, so coerce pointer\n-   my_error_ptr myerr = reinterpret_cast<my_error_ptr>(cinfo->err);\n+   my_error_ptr myerr = reinterpret_cast<my_error_ptr>( cinfo->err );\n    // Return control to the setjmp point\n    longjmp( myerr->setjmp_buffer, 1 );\n }\n \n-void my_output_message( j_common_ptr ) {} // Don't do anything with messages!\n+static void my_output_message( j_common_ptr ) {} // Don't do anything with messages!\n+\n+#define DIP__DECLARE_JPEG_EXIT( message ) \\\n+std::jmp_buf setjmp_buffer; if( setjmp( setjmp_buffer )) { DIP_THROW_RUNTIME( message ); }\n+\n+\n+namespace dip {\n+\n+namespace {\n \n class JpegInput {\n    public:\n-      JpegInput( String filename ) : filename_( std::move( filename )) {\n+      JpegInput( String filename, std::jmp_buf const& setjmp_buffer ) : filename_( std::move( filename )) {\n          infile_ = std::fopen( filename_.c_str(), \"rb\" );\n          if( infile_ == nullptr ) {\n             if( !FileHasExtension( filename_ )) {\n@@ -66,10 +75,7 @@ class JpegInput {\n          cinfo_.err = jpeg_std_error( &jerr_.pub );\n          jerr_.pub.error_exit = my_error_exit;\n          jerr_.pub.output_message = my_output_message;\n-         if( setjmp( jerr_.setjmp_buffer )) {\n-            // If we get here, the JPEG code has signaled an error.\n-            DIP_THROW_RUNTIME( \"Error reading JPEG file.\" );\n-         }\n+         std::memcpy( jerr_.setjmp_buffer, setjmp_buffer, sizeof( setjmp_buffer ));\n          jpeg_create_decompress( &cinfo_ );\n          initialized_ = true;\n          jpeg_stdio_src( &cinfo_, infile_ );\n@@ -102,7 +108,7 @@ class JpegInput {\n \n class JpegOutput {\n    public:\n-      explicit JpegOutput( String const& filename ) {\n+      explicit JpegOutput( String const& filename, std::jmp_buf const& setjmp_buffer ) {\n          // Open the file for writing\n          if( FileHasExtension( filename )) {\n             outfile_ = std::fopen(filename.c_str(), \"wb\");\n@@ -115,10 +121,7 @@ class JpegOutput {\n          cinfo_.err = jpeg_std_error( &jerr_.pub );\n          jerr_.pub.error_exit = my_error_exit;\n          jerr_.pub.output_message = my_output_message;\n-         if( setjmp( jerr_.setjmp_buffer )) {\n-            // If we get here, the JPEG code has signaled an error.\n-            DIP_THROW_RUNTIME( \"Error writing JPEG file.\" );\n-         }\n+         std::memcpy( jerr_.setjmp_buffer, setjmp_buffer, sizeof( setjmp_buffer ));\n          jpeg_create_compress( &cinfo_ );\n          initialized_ = true;\n          jpeg_stdio_dest( &cinfo_, outfile_ );\n@@ -178,7 +181,8 @@ FileInformation ImageReadJPEG(\n       String const& filename\n ) {\n    // Open the file\n-   JpegInput jpeg( filename );\n+   DIP__DECLARE_JPEG_EXIT( \"Error reading JPEG file\" );\n+   JpegInput jpeg( filename, setjmp_buffer );\n \n    // Get info\n    FileInformation info = GetJPEGInfo( jpeg );\n@@ -223,14 +227,16 @@ FileInformation ImageReadJPEG(\n }\n \n FileInformation ImageReadJPEGInfo( String const& filename ) {\n-   JpegInput jpeg( filename );\n+   DIP__DECLARE_JPEG_EXIT( \"Error reading JPEG file\" );\n+   JpegInput jpeg( filename, setjmp_buffer );\n    FileInformation info = GetJPEGInfo( jpeg );\n    return info;\n }\n \n bool ImageIsJPEG( String const& filename ) {\n    try {\n-      JpegInput jpeg( filename );\n+      DIP__DECLARE_JPEG_EXIT( \"Error reading JPEG file\" );\n+      JpegInput jpeg( filename, setjmp_buffer );\n    } catch( ... ) {\n       return false;\n    }\n@@ -244,10 +250,10 @@ void ImageWriteJPEG(\n ) {\n    DIP_THROW_IF( !image.IsForged(), E::IMAGE_NOT_FORGED );\n    DIP_THROW_IF( image.Dimensionality() != 2, E::DIMENSIONALITY_NOT_SUPPORTED );\n-   jpegLevel = clamp< dip::uint >( jpegLevel, 1, 100 );\n \n    // Open the file\n-   JpegOutput jpeg( filename );\n+   DIP__DECLARE_JPEG_EXIT( \"Error writing JPEG file\" );\n+   JpegOutput jpeg( filename, setjmp_buffer );\n \n    // Set image properties\n    int nchan = static_cast< int >( image.TensorElements() );\n@@ -256,7 +262,7 @@ void ImageWriteJPEG(\n    jpeg.cinfo().input_components = nchan;\n    jpeg.cinfo().in_color_space = nchan > 1 ? JCS_RGB : JCS_GRAYSCALE;\n    jpeg_set_defaults( jpeg.cinfoptr() );\n-   jpeg_set_quality( jpeg.cinfoptr(), static_cast< int >( jpegLevel ), FALSE );\n+   jpeg_set_quality( jpeg.cinfoptr(), static_cast< int >( clamp< dip::uint >( jpegLevel, 1, 100 )), FALSE );\n    jpeg.cinfo().density_unit = 2; // dots per cm\n    jpeg.cinfo().X_density = static_cast< UINT16 >( 0.01 / image.PixelSize( 0 ).RemovePrefix().magnitude ); // let's assume it's meter\n    jpeg.cinfo().Y_density = static_cast< UINT16 >( 0.01 / image.PixelSize( 1 ).RemovePrefix().magnitude );"
+    }
+  ]
+}

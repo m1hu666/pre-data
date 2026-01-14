@@ -1,0 +1,137 @@
+{
+  "sha": "22e07fb204386768e5bcbea563641ea11f96ceb8",
+  "node_id": "MDY6Q29tbWl0NDU3MTcyNTA6MjJlMDdmYjIwNDM4Njc2OGU1YmNiZWE1NjM2NDFlYTExZjk2Y2ViOA==",
+  "commit": {
+    "author": {
+      "name": "Mihai Maruseac",
+      "email": "mihaimaruseac@google.com",
+      "date": "2020-09-19T02:14:17Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2020-09-19T02:19:43Z"
+    },
+    "message": "Fix multiple vulnerabilities in `tf.experimental.dlpack.to_dlpack`.\n\nWe have a use after free caused by memory coruption, a segmentation fault caused by memory corruption, several memory leaks and an undefined behavior when taking the reference of a nullptr.\n\nPiperOrigin-RevId: 332568894\nChange-Id: Ife0fc05e103b35325094ae5d822ee5fdea764572",
+    "tree": {
+      "sha": "8906630c31abc4a5b04e3ce5f6fb4cf57a5ce68b",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/8906630c31abc4a5b04e3ce5f6fb4cf57a5ce68b"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/22e07fb204386768e5bcbea563641ea11f96ceb8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/22e07fb204386768e5bcbea563641ea11f96ceb8",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/22e07fb204386768e5bcbea563641ea11f96ceb8",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/22e07fb204386768e5bcbea563641ea11f96ceb8/comments",
+  "author": {
+    "login": "mihaimaruseac",
+    "id": 323199,
+    "node_id": "MDQ6VXNlcjMyMzE5OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/323199?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mihaimaruseac",
+    "html_url": "https://github.com/mihaimaruseac",
+    "followers_url": "https://api.github.com/users/mihaimaruseac/followers",
+    "following_url": "https://api.github.com/users/mihaimaruseac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mihaimaruseac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mihaimaruseac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mihaimaruseac/subscriptions",
+    "organizations_url": "https://api.github.com/users/mihaimaruseac/orgs",
+    "repos_url": "https://api.github.com/users/mihaimaruseac/repos",
+    "events_url": "https://api.github.com/users/mihaimaruseac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mihaimaruseac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "390611e0d45c5793c7066110af37c8514e6a6c54",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/390611e0d45c5793c7066110af37c8514e6a6c54",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/390611e0d45c5793c7066110af37c8514e6a6c54"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 38,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "df8e9ace9977bac3b1d5c190dbfef29c02d73865",
+      "filename": "tensorflow/c/eager/dlpack.cc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 6,
+      "changes": 28,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fc%2Feager%2Fdlpack.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fc%2Feager%2Fdlpack.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fc%2Feager%2Fdlpack.cc?ref=22e07fb204386768e5bcbea563641ea11f96ceb8",
+      "patch": "@@ -249,21 +249,36 @@ void TFE_CallDLManagedTensorDeleter(void* dlm_ptr) {\n }\n \n void* TFE_HandleToDLPack(TFE_TensorHandle* h, TF_Status* status) {\n+  auto tf_dlm_context = GetDlContext(h, status);\n+  if (!status->status.ok()) {\n+    return nullptr;\n+  }\n+\n+  auto* tf_dlm_data = TFE_TensorHandleDevicePointer(h, status);\n+  if (!status->status.ok()) {\n+    return nullptr;\n+  }\n+\n   const Tensor* tensor = GetTensorFromHandle(h, status);\n   TF_DataType data_type = static_cast<TF_DataType>(tensor->dtype());\n-  TensorReference tensor_ref(*tensor);  // This will call buf_->Ref()\n \n+  auto tf_dlm_type = GetDlDataType(data_type, status);\n+  if (!status->status.ok()) {\n+    return nullptr;\n+  }\n+\n+  TensorReference tensor_ref(*tensor);  // This will call buf_->Ref()\n   auto* tf_dlm_tensor_ctx = new TfDlManagedTensorCtx(tensor_ref);\n   tf_dlm_tensor_ctx->reference = tensor_ref;\n \n   DLManagedTensor* dlm_tensor = &tf_dlm_tensor_ctx->tensor;\n   dlm_tensor->manager_ctx = tf_dlm_tensor_ctx;\n   dlm_tensor->deleter = &DLManagedTensorDeleter;\n-  dlm_tensor->dl_tensor.ctx = GetDlContext(h, status);\n+  dlm_tensor->dl_tensor.ctx = tf_dlm_context;\n   int ndim = tensor->dims();\n   dlm_tensor->dl_tensor.ndim = ndim;\n-  dlm_tensor->dl_tensor.data = TFE_TensorHandleDevicePointer(h, status);\n-  dlm_tensor->dl_tensor.dtype = GetDlDataType(data_type, status);\n+  dlm_tensor->dl_tensor.data = tf_dlm_data;\n+  dlm_tensor->dl_tensor.dtype = tf_dlm_type;\n \n   std::vector<int64_t>* shape_arr = &tf_dlm_tensor_ctx->shape;\n   std::vector<int64_t>* stride_arr = &tf_dlm_tensor_ctx->strides;\n@@ -276,13 +291,14 @@ void* TFE_HandleToDLPack(TFE_TensorHandle* h, TF_Status* status) {\n     (*stride_arr)[i] = (*shape_arr)[i + 1] * (*stride_arr)[i + 1];\n   }\n \n-  dlm_tensor->dl_tensor.shape = &(*shape_arr)[0];\n+  dlm_tensor->dl_tensor.shape = shape_arr->data();\n   // There are two ways to represent compact row-major data\n   // 1) nullptr indicates tensor is compact and row-majored.\n   // 2) fill in the strides array as the real case for compact row-major data.\n   // Here we choose option 2, since some frameworks didn't handle the strides\n   // argument properly.\n-  dlm_tensor->dl_tensor.strides = &(*stride_arr)[0];\n+  dlm_tensor->dl_tensor.strides = stride_arr->data();\n+\n   dlm_tensor->dl_tensor.byte_offset =\n       0;  // TF doesn't handle the strides and byte_offsets here\n   return static_cast<void*>(dlm_tensor);"
+    },
+    {
+      "sha": "7d865029bfbb32de94060bd86c4175b3348fab45",
+      "filename": "tensorflow/python/dlpack/BUILD",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Fdlpack%2FBUILD",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Fdlpack%2FBUILD",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fdlpack%2FBUILD?ref=22e07fb204386768e5bcbea563641ea11f96ceb8",
+      "patch": "@@ -19,7 +19,6 @@ cuda_py_test(\n     name = \"dlpack_test\",\n     srcs = [\"dlpack_test.py\"],\n     srcs_version = \"PY2AND3\",\n-    tags = [\"noasan\"],  # TODO(b/159774807)\n     deps = [\n         \":dlpack\",\n         \"//tensorflow/python/eager:test\","
+    },
+    {
+      "sha": "31cc6adbff40a824ab3f63890393a3c5f54c7c07",
+      "filename": "tensorflow/python/dlpack/dlpack_test.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Fdlpack%2Fdlpack_test.py",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Fdlpack%2Fdlpack_test.py",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Fdlpack%2Fdlpack_test.py?ref=22e07fb204386768e5bcbea563641ea11f96ceb8",
+      "patch": "@@ -20,9 +20,11 @@\n from absl.testing import parameterized\n import numpy as np\n \n+\n from tensorflow.python.dlpack import dlpack\n from tensorflow.python.framework import constant_op\n from tensorflow.python.framework import dtypes\n+from tensorflow.python.framework import errors\n from tensorflow.python.framework import ops\n from tensorflow.python.platform import test\n from tensorflow.python.ops import array_ops\n@@ -105,6 +107,12 @@ def UnsupportedComplex64():\n     self.assertRaisesRegex(Exception, \".* is not supported by dlpack\",\n                            UnsupportedComplex64)\n \n+  def testMustPassTensorArgumentToDLPack(self):\n+    with self.assertRaisesRegex(\n+        errors.InvalidArgumentError,\n+        \"The argument to `to_dlpack` must be a TF tensor, not Python object\"):\n+      dlpack.to_dlpack([1])\n+\n \n if __name__ == \"__main__\":\n   ops.enable_eager_execution()"
+    },
+    {
+      "sha": "87064f1f857c55e6f78362a28665a68367dd37b5",
+      "filename": "tensorflow/python/tfe_wrapper.cc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Ftfe_wrapper.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/22e07fb204386768e5bcbea563641ea11f96ceb8/tensorflow%2Fpython%2Ftfe_wrapper.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fpython%2Ftfe_wrapper.cc?ref=22e07fb204386768e5bcbea563641ea11f96ceb8",
+      "patch": "@@ -1358,9 +1358,16 @@ PYBIND11_MODULE(_pywrap_tfe, m) {\n   // DLPack functions\n   m.def(\"TFE_ToDlpackCapsule\", [](py::handle& o) {\n     PyObject* eager_tensor_pyobject_ptr = o.ptr();\n-    TFE_TensorHandle* thandle = EagerTensor_Handle(eager_tensor_pyobject_ptr);\n     tensorflow::Safe_TF_StatusPtr status =\n         tensorflow::make_safe(TF_NewStatus());\n+\n+    if (!EagerTensor_CheckExact(eager_tensor_pyobject_ptr)) {\n+      status->status = tensorflow::errors::InvalidArgument(\n+          \"The argument to `to_dlpack` must be a TF tensor, not Python object\");\n+      tensorflow::MaybeRaiseRegisteredFromTFStatus(status.get());\n+    }\n+\n+    TFE_TensorHandle* thandle = EagerTensor_Handle(eager_tensor_pyobject_ptr);\n     void* dlm_ptr = tensorflow::TFE_HandleToDLPack(thandle, status.get());\n     tensorflow::MaybeRaiseRegisteredFromTFStatus(status.get());\n "
+    }
+  ]
+}

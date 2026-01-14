@@ -1,0 +1,81 @@
+{
+  "sha": "c99d98cd189839dcf51aee94e7437b54b31f8abd",
+  "node_id": "C_kwDOArmXAtoAKGM5OWQ5OGNkMTg5ODM5ZGNmNTFhZWU5NGU3NDM3YjU0YjMxZjhhYmQ",
+  "commit": {
+    "author": {
+      "name": "Dan Moldovan",
+      "email": "mdan@google.com",
+      "date": "2021-11-13T01:42:30Z"
+    },
+    "committer": {
+      "name": "TensorFlower Gardener",
+      "email": "gardener@tensorflow.org",
+      "date": "2021-11-13T01:47:55Z"
+    },
+    "message": "Handle invalid inputs instead of crashing.\n\nPiperOrigin-RevId: 409549744\nChange-Id: I7f5935b34b53f7e426a5462fcc027bdbf5dcda24",
+    "tree": {
+      "sha": "77b290e184e93d979b4b6186947be39286d2346a",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/git/trees/77b290e184e93d979b4b6186947be39286d2346a"
+    },
+    "url": "https://api.github.com/repos/tensorflow/tensorflow/git/commits/c99d98cd189839dcf51aee94e7437b54b31f8abd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c99d98cd189839dcf51aee94e7437b54b31f8abd",
+  "html_url": "https://github.com/tensorflow/tensorflow/commit/c99d98cd189839dcf51aee94e7437b54b31f8abd",
+  "comments_url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c99d98cd189839dcf51aee94e7437b54b31f8abd/comments",
+  "author": null,
+  "committer": {
+    "login": "tensorflower-gardener",
+    "id": 17151892,
+    "node_id": "MDQ6VXNlcjE3MTUxODky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorflower-gardener",
+    "html_url": "https://github.com/tensorflower-gardener",
+    "followers_url": "https://api.github.com/users/tensorflower-gardener/followers",
+    "following_url": "https://api.github.com/users/tensorflower-gardener/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorflower-gardener/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorflower-gardener/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorflower-gardener/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorflower-gardener/orgs",
+    "repos_url": "https://api.github.com/users/tensorflower-gardener/repos",
+    "events_url": "https://api.github.com/users/tensorflower-gardener/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorflower-gardener/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c5ae019abd2f260cf3400abcce4962c75cc5182c",
+      "url": "https://api.github.com/repos/tensorflow/tensorflow/commits/c5ae019abd2f260cf3400abcce4962c75cc5182c",
+      "html_url": "https://github.com/tensorflow/tensorflow/commit/c5ae019abd2f260cf3400abcce4962c75cc5182c"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 10,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "4af258a203813d997d9cdbf9d88519b7910c8ffa",
+      "filename": "tensorflow/core/graph/graph.cc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 14,
+      "blob_url": "https://github.com/tensorflow/tensorflow/blob/c99d98cd189839dcf51aee94e7437b54b31f8abd/tensorflow%2Fcore%2Fgraph%2Fgraph.cc",
+      "raw_url": "https://github.com/tensorflow/tensorflow/raw/c99d98cd189839dcf51aee94e7437b54b31f8abd/tensorflow%2Fcore%2Fgraph%2Fgraph.cc",
+      "contents_url": "https://api.github.com/repos/tensorflow/tensorflow/contents/tensorflow%2Fcore%2Fgraph%2Fgraph.cc?ref=c99d98cd189839dcf51aee94e7437b54b31f8abd",
+      "patch": "@@ -222,10 +222,16 @@ void Node::RunForwardTypeInference() {\n       const auto& node_t = node->def().experimental_type();\n       if (node_t.type_id() != TFT_UNSET) {\n         int ix = input_idx[i];\n-        DCHECK(ix < node_t.args_size())\n-            << \"input \" << i << \" should have an output \" << ix\n-            << \" but instead only has \" << node_t.args_size()\n-            << \" outputs: \" << node_t.DebugString();\n+        if (ix >= node_t.args_size()) {\n+          LOG(WARNING) << name() << \" has bad type information: input \" << i\n+                       << \" should have an output \" << ix\n+                       << \" but instead only has \" << node_t.args_size()\n+                       << \" outputs: \" << node_t.DebugString()\n+                       << \"\\nThis indicates either \"\n+                          \"a bug in op registration or a corrupted graph.\";\n+          ClearTypeInfo();\n+          return;\n+        }\n         input_types.emplace_back(node_t.args(ix));\n       } else {\n         input_types.emplace_back(*no_type);"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "a766cb44bcffcdb0b88e776d01c5ee1323d44f85",
+  "node_id": "MDY6Q29tbWl0Njk5MDcyOmE3NjZjYjQ0YmNmZmNkYjBiODhlNzc2ZDAxYzVlZTEzMjNkNDRmODU=",
+  "commit": {
+    "author": {
+      "name": "oy",
+      "email": "Tom_Adams@web.de",
+      "date": "2014-11-20T17:13:54Z"
+    },
+    "committer": {
+      "name": "oy",
+      "email": "Tom_Adams@web.de",
+      "date": "2014-11-20T17:13:54Z"
+    },
+    "message": "fixed a server crash",
+    "tree": {
+      "sha": "1b34057a964e1106e7b5f34ed95dd33d48402f3d",
+      "url": "https://api.github.com/repos/teeworlds/teeworlds/git/trees/1b34057a964e1106e7b5f34ed95dd33d48402f3d"
+    },
+    "url": "https://api.github.com/repos/teeworlds/teeworlds/git/commits/a766cb44bcffcdb0b88e776d01c5ee1323d44f85",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/teeworlds/teeworlds/commits/a766cb44bcffcdb0b88e776d01c5ee1323d44f85",
+  "html_url": "https://github.com/teeworlds/teeworlds/commit/a766cb44bcffcdb0b88e776d01c5ee1323d44f85",
+  "comments_url": "https://api.github.com/repos/teeworlds/teeworlds/commits/a766cb44bcffcdb0b88e776d01c5ee1323d44f85/comments",
+  "author": {
+    "login": "oy",
+    "id": 293850,
+    "node_id": "MDQ6VXNlcjI5Mzg1MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/293850?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oy",
+    "html_url": "https://github.com/oy",
+    "followers_url": "https://api.github.com/users/oy/followers",
+    "following_url": "https://api.github.com/users/oy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oy/subscriptions",
+    "organizations_url": "https://api.github.com/users/oy/orgs",
+    "repos_url": "https://api.github.com/users/oy/repos",
+    "events_url": "https://api.github.com/users/oy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oy/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oy",
+    "id": 293850,
+    "node_id": "MDQ6VXNlcjI5Mzg1MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/293850?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oy",
+    "html_url": "https://github.com/oy",
+    "followers_url": "https://api.github.com/users/oy/followers",
+    "following_url": "https://api.github.com/users/oy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oy/subscriptions",
+    "organizations_url": "https://api.github.com/users/oy/orgs",
+    "repos_url": "https://api.github.com/users/oy/repos",
+    "events_url": "https://api.github.com/users/oy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oy/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "77478707f2aaabde16c1695de2db6b2159df8471",
+      "url": "https://api.github.com/repos/teeworlds/teeworlds/commits/77478707f2aaabde16c1695de2db6b2159df8471",
+      "html_url": "https://github.com/teeworlds/teeworlds/commit/77478707f2aaabde16c1695de2db6b2159df8471"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "ab0f31225001b6ca1ae6195463c20dc464a2e860",
+      "filename": "src/engine/server/server.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/teeworlds/teeworlds/blob/a766cb44bcffcdb0b88e776d01c5ee1323d44f85/src%2Fengine%2Fserver%2Fserver.cpp",
+      "raw_url": "https://github.com/teeworlds/teeworlds/raw/a766cb44bcffcdb0b88e776d01c5ee1323d44f85/src%2Fengine%2Fserver%2Fserver.cpp",
+      "contents_url": "https://api.github.com/repos/teeworlds/teeworlds/contents/src%2Fengine%2Fserver%2Fserver.cpp?ref=a766cb44bcffcdb0b88e776d01c5ee1323d44f85",
+      "patch": "@@ -845,8 +845,8 @@ void CServer::ProcessClientPacket(CNetChunk *pPacket)\n \t\t\t\treturn;\n \n \t\t\tint Chunk = Unpacker.GetInt();\n-\t\t\tint ChunkSize = 1024-128;\n-\t\t\tint Offset = Chunk * ChunkSize;\n+\t\t\tunsigned int ChunkSize = 1024-128;\n+\t\t\tunsigned int Offset = Chunk * ChunkSize;\n \t\t\tint Last = 0;\n \n \t\t\t// drop faulty map data requests"
+    }
+  ]
+}

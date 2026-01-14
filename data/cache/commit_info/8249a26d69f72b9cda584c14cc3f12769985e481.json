@@ -1,0 +1,148 @@
+{
+  "sha": "8249a26d69f72b9cda584c14cc3f12769985e481",
+  "node_id": "MDY6Q29tbWl0NDUzOTE2Nzo4MjQ5YTI2ZDY5ZjcyYjljZGE1ODRjMTRjYzNmMTI3Njk5ODVlNDgx",
+  "commit": {
+    "author": {
+      "name": "Jay Berkenbilt",
+      "email": "ejb@ql.org",
+      "date": "2017-08-12T11:35:04Z"
+    },
+    "committer": {
+      "name": "Jay Berkenbilt",
+      "email": "ejb@ql.org",
+      "date": "2017-08-12T12:36:36Z"
+    },
+    "message": "Fix infinite loop in QPDFWriter (fixes #143)",
+    "tree": {
+      "sha": "75efa7eeb1899f081e78a10d0bb306d2dfb04531",
+      "url": "https://api.github.com/repos/qpdf/qpdf/git/trees/75efa7eeb1899f081e78a10d0bb306d2dfb04531"
+    },
+    "url": "https://api.github.com/repos/qpdf/qpdf/git/commits/8249a26d69f72b9cda584c14cc3f12769985e481",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/qpdf/qpdf/commits/8249a26d69f72b9cda584c14cc3f12769985e481",
+  "html_url": "https://github.com/qpdf/qpdf/commit/8249a26d69f72b9cda584c14cc3f12769985e481",
+  "comments_url": "https://api.github.com/repos/qpdf/qpdf/commits/8249a26d69f72b9cda584c14cc3f12769985e481/comments",
+  "author": {
+    "login": "jberkenbilt",
+    "id": 997128,
+    "node_id": "MDQ6VXNlcjk5NzEyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/997128?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jberkenbilt",
+    "html_url": "https://github.com/jberkenbilt",
+    "followers_url": "https://api.github.com/users/jberkenbilt/followers",
+    "following_url": "https://api.github.com/users/jberkenbilt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jberkenbilt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jberkenbilt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jberkenbilt/subscriptions",
+    "organizations_url": "https://api.github.com/users/jberkenbilt/orgs",
+    "repos_url": "https://api.github.com/users/jberkenbilt/repos",
+    "events_url": "https://api.github.com/users/jberkenbilt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jberkenbilt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jberkenbilt",
+    "id": 997128,
+    "node_id": "MDQ6VXNlcjk5NzEyOA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/997128?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jberkenbilt",
+    "html_url": "https://github.com/jberkenbilt",
+    "followers_url": "https://api.github.com/users/jberkenbilt/followers",
+    "following_url": "https://api.github.com/users/jberkenbilt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jberkenbilt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jberkenbilt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jberkenbilt/subscriptions",
+    "organizations_url": "https://api.github.com/users/jberkenbilt/orgs",
+    "repos_url": "https://api.github.com/users/jberkenbilt/repos",
+    "events_url": "https://api.github.com/users/jberkenbilt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jberkenbilt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "36b3fe5af761b7032a506808cf6ce6d37c297bfc",
+      "url": "https://api.github.com/repos/qpdf/qpdf/commits/36b3fe5af761b7032a506808cf6ce6d37c297bfc",
+      "html_url": "https://github.com/qpdf/qpdf/commit/36b3fe5af761b7032a506808cf6ce6d37c297bfc"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 30,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "345613add3bec38c059d405a3aa07b485cd1eb34",
+      "filename": "libqpdf/QPDFWriter.cc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/8249a26d69f72b9cda584c14cc3f12769985e481/libqpdf%2FQPDFWriter.cc",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/8249a26d69f72b9cda584c14cc3f12769985e481/libqpdf%2FQPDFWriter.cc",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/libqpdf%2FQPDFWriter.cc?ref=8249a26d69f72b9cda584c14cc3f12769985e481",
+      "patch": "@@ -1054,6 +1054,9 @@ QPDFWriter::enqueueObject(QPDFObjectHandle object)\n \t\t// here.  Instead, enqueue the object stream.  Object\n \t\t// streams always have generation 0.\n \t\tint stream_id = this->object_to_object_stream[og];\n+                // Detect loops by storing invalid object ID 0, which\n+                // will get overwritten later.\n+                obj_renumber[og] = 0;\n \t\tenqueueObject(this->pdf.getObjectByID(stream_id, 0));\n \t    }\n \t    else\n@@ -1079,6 +1082,12 @@ QPDFWriter::enqueueObject(QPDFObjectHandle object)\n \t\t}\n \t    }\n \t}\n+        else if (obj_renumber[og] == 0)\n+        {\n+            // This can happen if a specially constructed file\n+            // indicates that an object stream is inside itself.\n+            QTC::TC(\"qpdf\", \"QPDFWriter ignore self-referential object stream\");\n+        }\n     }\n     else if (object.isArray())\n     {"
+    },
+    {
+      "sha": "f5b628b92c8008fc368efbd946eba32b7787cd52",
+      "filename": "qpdf/qpdf.testcov",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqpdf.testcov",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqpdf.testcov",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/qpdf%2Fqpdf.testcov?ref=8249a26d69f72b9cda584c14cc3f12769985e481",
+      "patch": "@@ -294,3 +294,4 @@ QPDF ignore first extra space in xref entry 0\n QPDF ignore second extra space in xref entry 0\n QPDF ignore length error xref entry 0\n QPDF_encryption pad short parameter 0\n+QPDFWriter ignore self-referential object stream 0"
+    },
+    {
+      "sha": "1aaeb8d450c5aa16d65393065a2f1d8f372dce05",
+      "filename": "qpdf/qtest/qpdf.test",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf.test",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf.test",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/qpdf%2Fqtest%2Fqpdf.test?ref=8249a26d69f72b9cda584c14cc3f12769985e481",
+      "patch": "@@ -220,6 +220,7 @@ my @bug_tests = (\n     [\"106\", \"zlib data error\", 3],\n     [\"141a\", \"/W entry size 0\", 2],\n     [\"141b\", \"/W entry size 0\", 2],\n+    [\"143\", \"self-referential ostream\", 3],\n     );\n $n_tests += scalar(@bug_tests);\n foreach my $d (@bug_tests)"
+    },
+    {
+      "sha": "2bf1e40d3e9e4227b7ca3100d1fa1f3f58822e39",
+      "filename": "qpdf/qtest/qpdf/issue-143.out",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf%2Fissue-143.out",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf%2Fissue-143.out",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/qpdf%2Fqtest%2Fqpdf%2Fissue-143.out?ref=8249a26d69f72b9cda584c14cc3f12769985e481",
+      "patch": "@@ -0,0 +1,19 @@\n+WARNING: issue-143.pdf: can't find PDF header\n+WARNING: issue-143.pdf (xref stream: object 3 0, file position 654): stream keyword not followed by proper line terminator\n+WARNING: issue-143.pdf (xref stream: object 3 0, file position 607): stream dictionary lacks /Length key\n+WARNING: issue-143.pdf (xref stream: object 3 0, file position 654): attempting to recover stream length\n+WARNING: issue-143.pdf (xref stream: object 3 0, file position 654): recovered stream length: 36\n+WARNING: issue-143.pdf (xref stream: object 3 0, file position 694): expected endobj\n+WARNING: issue-143.pdf: file is damaged\n+WARNING: issue-143.pdf (object 1 0, file position 48): expected n n obj\n+WARNING: issue-143.pdf: Attempting to reconstruct cross-reference table\n+WARNING: issue-143.pdf (file position 24): expected dictionary key but found non-name object; inserting key /QPDFFake1\n+WARNING: issue-143.pdf (file position 24): expected dictionary key but found non-name object; inserting key /QPDFFake2\n+WARNING: issue-143.pdf (file position 24): expected dictionary key but found non-name object; inserting key /QPDFFake3\n+WARNING: issue-143.pdf (file position 24): expected dictionary key but found non-name object; inserting key /QPDFFake4\n+WARNING: issue-143.pdf (object 1 0, file position 21): stream dictionary lacks /Length key\n+WARNING: issue-143.pdf (object 1 0, file position 84): attempting to recover stream length\n+WARNING: issue-143.pdf (object 1 0, file position 84): recovered stream length: 606\n+WARNING: issue-143.pdf (object 1 0, file position 694): expected endobj\n+WARNING: object stream 1 (file position 33): expected dictionary key but found non-name object; inserting key /QPDFFake1\n+qpdf: operation succeeded with warnings; resulting file may have some problems"
+    },
+    {
+      "sha": "b45460361c1c239175b2e55aabd939830513e2e6",
+      "filename": "qpdf/qtest/qpdf/issue-143.pdf",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/qpdf/qpdf/blob/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf%2Fissue-143.pdf",
+      "raw_url": "https://github.com/qpdf/qpdf/raw/8249a26d69f72b9cda584c14cc3f12769985e481/qpdf%2Fqtest%2Fqpdf%2Fissue-143.pdf",
+      "contents_url": "https://api.github.com/repos/qpdf/qpdf/contents/qpdf%2Fqtest%2Fqpdf%2Fissue-143.pdf?ref=8249a26d69f72b9cda584c14cc3f12769985e481"
+    }
+  ]
+}

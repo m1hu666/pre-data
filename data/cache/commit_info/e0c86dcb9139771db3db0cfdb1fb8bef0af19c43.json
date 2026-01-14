@@ -1,0 +1,113 @@
+{
+  "sha": "e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+  "node_id": "MDY6Q29tbWl0MTI2MjI1MTYwOmUwYzg2ZGNiOTEzOTc3MWRiM2RiMGNmZGIxZmI4YmVmMGFmMTljNDM=",
+  "commit": {
+    "author": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T18:01:54Z"
+    },
+    "committer": {
+      "name": "Fletcher Dunn",
+      "email": "fletcherd@valvesoftware.com",
+      "date": "2020-09-03T18:01:54Z"
+    },
+    "message": "Drop unreliable segments with weird offset/size.\n\nAnd be more deliberate about limits of unreliable message/segment sizes.",
+    "tree": {
+      "sha": "f50e32191ceb4d03f8fc8ca3c5e54ba20c73d0a7",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/trees/f50e32191ceb4d03f8fc8ca3c5e54ba20c73d0a7"
+    },
+    "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/git/commits/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEyTfX+yUNQsQ1xS4KAL3mnwuGzdwFAl9RL7UACgkQAL3mnwuG\nzdwPLw//UEuRV6uX3h4nVmDFbe2tZm4rfUBhXDPeON2TC6pY7ihFeY8fSVeuBTj8\n7/fekFQveTzqN65tgVxJKgRv0fuUqRl6gCQ+jhWIsd6a9vMXK13eNzP45MeKpXHs\n6qUWxiX0RsXyUyPURh1ciDUslzOah4SK3mL4cc6KhAuUUNGRIRLzIpj9DlgYIAln\nwkM+hupQRW4gBNXVCqeTPnDGif6WMADDiMO5Wig801thsJDuAtjgwFTMVg1pQ/r+\nEeaHNUpp+455vnOxQucWqQ/Pc9hqPqbm31cq5qN+IVw424J+aZkxmH0uYBOFgI2g\nuN/RqPQZGJV4ZJnFpUPxmO7VA9/QnaLbWWGzGr7fCJgGHkbwfKRktTHDJcz26UDL\nORrt7eJMTYxTgbBF50JpEUxe/GgheCxmFtlV9uvZbIW6QTsHOhz0xGhsScrNZUzc\nu69YQ3kSRdUuBYKvrIX7uUo1WuwAlDGArAQvQQJwJtAPYqJ556/1RUi7CmiHeOhh\n/rpOSWCnW3Kiq+gAIVBc5SgJksRiR9hmle2eDBt3nMPvAb6iSjnRJNPCE+fDfu5P\n1dWw5U5//osKLiIU0bfnSx0YYk1FNGlZCpdzcwuAIn+fGYO0PcziqtGE6eLrltly\n0hFnYPV62tvH7cTC1sq3YKxS3uo3mYpg8a69nF2jxIPs1rER2xc=\n=5P/U\n-----END PGP SIGNATURE-----",
+      "payload": "tree f50e32191ceb4d03f8fc8ca3c5e54ba20c73d0a7\nparent e950c994de831c02972e4d11495ca83146b9714b\nauthor Fletcher Dunn <fletcherd@valvesoftware.com> 1599156114 -0700\ncommitter Fletcher Dunn <fletcherd@valvesoftware.com> 1599156114 -0700\n\nDrop unreliable segments with weird offset/size.\n\nAnd be more deliberate about limits of unreliable message/segment sizes.\n",
+      "verified_at": "2024-11-07T16:56:55Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+  "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+  "comments_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43/comments",
+  "author": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zpostfacto",
+    "id": 3768219,
+    "node_id": "MDQ6VXNlcjM3NjgyMTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3768219?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zpostfacto",
+    "html_url": "https://github.com/zpostfacto",
+    "followers_url": "https://api.github.com/users/zpostfacto/followers",
+    "following_url": "https://api.github.com/users/zpostfacto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zpostfacto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zpostfacto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zpostfacto/subscriptions",
+    "organizations_url": "https://api.github.com/users/zpostfacto/orgs",
+    "repos_url": "https://api.github.com/users/zpostfacto/repos",
+    "events_url": "https://api.github.com/users/zpostfacto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zpostfacto/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e950c994de831c02972e4d11495ca83146b9714b",
+      "url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/commits/e950c994de831c02972e4d11495ca83146b9714b",
+      "html_url": "https://github.com/ValveSoftware/GameNetworkingSockets/commit/e950c994de831c02972e4d11495ca83146b9714b"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 26,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "673f62d479643acb547077beda4a285741facfca",
+      "filename": "src/steamnetworkingsockets/clientlib/steamnetworkingsockets_snp.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 5,
+      "changes": 22,
+      "blob_url": "https://github.com/ValveSoftware/GameNetworkingSockets/blob/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.cpp",
+      "raw_url": "https://github.com/ValveSoftware/GameNetworkingSockets/raw/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.cpp",
+      "contents_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/contents/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.cpp?ref=e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+      "patch": "@@ -234,7 +234,7 @@ int64 CSteamNetworkConnectionBase::SNP_SendMessage( CSteamNetworkingMessage *pSe\n \t}\n \n \t// Check if they try to send a really large message\n-\tif ( cbData > k_cbMaxUnreliableMsgSize && !( pSendMessage->m_nFlags & k_nSteamNetworkingSend_Reliable )  )\n+\tif ( cbData > k_cbMaxUnreliableMsgSizeSend && !( pSendMessage->m_nFlags & k_nSteamNetworkingSend_Reliable )  )\n \t{\n \t\tSpewWarningRateLimited( usecNow, \"Trying to send a very large (%d bytes) unreliable message.  Sending as reliable instead.\\n\", cbData );\n \t\tpSendMessage->m_nFlags |= k_nSteamNetworkingSend_Reliable;\n@@ -577,11 +577,23 @@ bool CSteamNetworkConnectionBase::ProcessPlainTextDataChunk( int usecTimeSinceLa\n \t\t\t// Decode size, locate segment data\n \t\t\t//\n \t\t\tREAD_SEGMENT_DATA_SIZE( unreliable )\n-\t\t\tAssert( cbSegmentSize > 0 ); // !TEST! Bogus assert, zero byte messages are OK.  Remove after testing\n \n-\t\t\t// Receive the segment\n-\t\t\tbool bLastSegmentInMessage = ( nFrameType & 0x20 ) != 0;\n-\t\t\tSNP_ReceiveUnreliableSegment( nCurMsgNum, nOffset, pSegmentData, cbSegmentSize, bLastSegmentInMessage, usecNow );\n+\t\t\t// Check if offset+size indicates a message larger than what we support.  (Also,\n+\t\t\t// protect against malicious sender sending *extremely* large offset causing overflow.)\n+\t\t\tif ( (int64)nOffset + cbSegmentSize > k_cbMaxUnreliableMsgSizeRecv || cbSegmentSize > k_cbMaxUnreliableSegmentSizeRecv )\n+\t\t\t{\n+\n+\t\t\t\t// Since this is unreliable data, we can just ignore the segment.\n+\t\t\t\tSpewWarningRateLimited( usecNow, \"[%s] Ignoring unreliable segment with invalid offset %u size %d\\n\",\n+\t\t\t\t\tGetDescription(), nOffset, cbSegmentSize );\n+\t\t\t}\n+\t\t\telse\n+\t\t\t{\n+\n+\t\t\t\t// Receive the segment\n+\t\t\t\tbool bLastSegmentInMessage = ( nFrameType & 0x20 ) != 0;\n+\t\t\t\tSNP_ReceiveUnreliableSegment( nCurMsgNum, nOffset, pSegmentData, cbSegmentSize, bLastSegmentInMessage, usecNow );\n+\t\t\t}\n \t\t}\n \t\telse if ( ( nFrameType & 0xe0 ) == 0x40 )\n \t\t{"
+    },
+    {
+      "sha": "9fb00a34ddf3c22e35b4abe0da41213c24c5ba55",
+      "filename": "src/steamnetworkingsockets/clientlib/steamnetworkingsockets_snp.h",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/ValveSoftware/GameNetworkingSockets/blob/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.h",
+      "raw_url": "https://github.com/ValveSoftware/GameNetworkingSockets/raw/e0c86dcb9139771db3db0cfdb1fb8bef0af19c43/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.h",
+      "contents_url": "https://api.github.com/repos/ValveSoftware/GameNetworkingSockets/contents/src%2Fsteamnetworkingsockets%2Fclientlib%2Fsteamnetworkingsockets_snp.h?ref=e0c86dcb9139771db3db0cfdb1fb8bef0af19c43",
+      "patch": "@@ -90,7 +90,14 @@ constexpr int k_nMaxBufferedUnreliableSegments = 20;\n // If app tries to send a message larger than N bytes unreliably,\n // complain about it, and automatically convert to reliable.\n // About 15 segments.\n-constexpr int k_cbMaxUnreliableMsgSize = 15*1100;\n+constexpr int k_cbMaxUnreliableMsgSizeSend = 15*1100;\n+\n+// Max possible size of an unreliable segment we could receive.\n+constexpr int k_cbMaxUnreliableSegmentSizeRecv = k_cbSteamNetworkingSocketsMaxPlaintextPayloadRecv;\n+\n+// Largest possible total unreliable message we can receive, based on the constraints above\n+constexpr int k_cbMaxUnreliableMsgSizeRecv = k_nMaxBufferedUnreliableSegments*k_cbMaxUnreliableSegmentSizeRecv;\n+COMPILE_TIME_ASSERT( k_cbMaxUnreliableMsgSizeRecv > k_cbMaxUnreliableMsgSizeSend + 4096 ); // Postel's law; confirm how much slack we have here\n \n class CSteamNetworkConnectionBase;\n class CConnectionTransport;\n@@ -468,7 +475,7 @@ struct SSNPRecvUnreliableSegmentData\n {\n \tint m_cbSegSize = -1;\n \tbool m_bLast = false;\n-\tchar m_buf[ k_cbSteamNetworkingSocketsMaxPlaintextPayloadRecv ];\n+\tchar m_buf[ k_cbMaxUnreliableSegmentSizeRecv ];\n };\n \n struct SSNPPacketGap"
+    }
+  ]
+}

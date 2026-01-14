@@ -1,0 +1,125 @@
+{
+  "sha": "bfda1efa547dce11a38592820916db01b05b9339",
+  "node_id": "MDY6Q29tbWl0MTExMzE2MzE6YmZkYTFlZmE1NDdkY2UxMWEzODU5MjgyMDkxNmRiMDFiMDViOTMzOQ==",
+  "commit": {
+    "author": {
+      "name": "Victor Zverovich",
+      "email": "viz@fb.com",
+      "date": "2021-02-19T01:18:39Z"
+    },
+    "committer": {
+      "name": "Facebook GitHub Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2021-02-19T01:20:23Z"
+    },
+    "message": "Fix handling of invalid union data in table-based serializer\n\nSummary:\nFix handling of invalid union data in the table-based serializer. Previously if the input contained duplicate union data, previous active member of the union was overwritten without calling the destructor of the old object, potentially causing a memory leak. In addition to that, if the second piece of data was incomplete the wrong destructor would be called during stack unwinding causing a segfault, data corruption or other undesirable effects.\n\nFix the issue by clearing the union if there is an active member.\n\nAlso fix the type of the data member that holds the active field id (it's `int`, not `FieldID`).\n\nReviewed By: yfeldblum\n\nDifferential Revision: D26440248\n\nfbshipit-source-id: fae9ab96566cf07e14dabe9663b2beb680a01bb4",
+    "tree": {
+      "sha": "7140bc211e955a84817846496f38987e799faa43",
+      "url": "https://api.github.com/repos/facebook/fbthrift/git/trees/7140bc211e955a84817846496f38987e799faa43"
+    },
+    "url": "https://api.github.com/repos/facebook/fbthrift/git/commits/bfda1efa547dce11a38592820916db01b05b9339",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebook/fbthrift/commits/bfda1efa547dce11a38592820916db01b05b9339",
+  "html_url": "https://github.com/facebook/fbthrift/commit/bfda1efa547dce11a38592820916db01b05b9339",
+  "comments_url": "https://api.github.com/repos/facebook/fbthrift/commits/bfda1efa547dce11a38592820916db01b05b9339/comments",
+  "author": {
+    "login": "vitaut",
+    "id": 576385,
+    "node_id": "MDQ6VXNlcjU3NjM4NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/576385?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vitaut",
+    "html_url": "https://github.com/vitaut",
+    "followers_url": "https://api.github.com/users/vitaut/followers",
+    "following_url": "https://api.github.com/users/vitaut/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vitaut/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vitaut/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vitaut/subscriptions",
+    "organizations_url": "https://api.github.com/users/vitaut/orgs",
+    "repos_url": "https://api.github.com/users/vitaut/repos",
+    "events_url": "https://api.github.com/users/vitaut/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vitaut/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cd365bcd0123c88d83f7ae4128748ee3a8636996",
+      "url": "https://api.github.com/repos/facebook/fbthrift/commits/cd365bcd0123c88d83f7ae4128748ee3a8636996",
+      "html_url": "https://github.com/facebook/fbthrift/commit/cd365bcd0123c88d83f7ae4128748ee3a8636996"
+    }
+  ],
+  "stats": {
+    "total": 65,
+    "additions": 48,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "844f59ca1ab0f85bec96ae5b9203ec157c04b45c",
+      "filename": "thrift/lib/cpp2/protocol/TableBasedSerializer.cpp",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 17,
+      "changes": 34,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Flib%2Fcpp2%2Fprotocol%2FTableBasedSerializer.cpp",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Flib%2Fcpp2%2Fprotocol%2FTableBasedSerializer.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Flib%2Fcpp2%2Fprotocol%2FTableBasedSerializer.cpp?ref=bfda1efa547dce11a38592820916db01b05b9339",
+      "patch": "@@ -186,9 +186,11 @@ const FieldInfo* FOLLY_NULLABLE findFieldInfo(\n   return nullptr;\n }\n \n-const FieldID& activeUnionMemberId(const void* object, ptrdiff_t offset) {\n-  return *reinterpret_cast<const FieldID*>(\n-      offset + static_cast<const char*>(object));\n+// Returns a reference to the data member that holds the active field id for a\n+// Thrift union object.\n+const int& getActiveId(const void* object, const StructInfo& info) {\n+  return *reinterpret_cast<const int*>(\n+      static_cast<const char*>(object) + info.unionExt->unionTypeOffset);\n }\n \n const bool& fieldIsSet(const void* object, ptrdiff_t offset) {\n@@ -591,16 +593,15 @@ void read(Protocol_* iprot, const StructInfo& structInfo, void* object) {\n       readState.readStructEnd(iprot);\n       return;\n     }\n-    const auto* fieldInfo = findFieldInfo(iprot, readState, structInfo);\n-    // Found it.\n-    if (fieldInfo) {\n-      void* unionVal = getMember(*fieldInfo, object);\n-      // Default construct and placement new into the member union.\n-      structInfo.unionExt->initMember[fieldInfo - structInfo.fieldInfos](\n-          unionVal);\n-      read(iprot, *fieldInfo->typeInfo, readState, unionVal);\n-      const_cast<FieldID&>(activeUnionMemberId(\n-          object, structInfo.unionExt->unionTypeOffset)) = fieldInfo->id;\n+    if (const auto* fieldInfo = findFieldInfo(iprot, readState, structInfo)) {\n+      auto& activeId = const_cast<int&>(getActiveId(object, structInfo));\n+      if (activeId != 0) {\n+        structInfo.unionExt->clear(object);\n+      }\n+      void* value = getMember(*fieldInfo, object);\n+      structInfo.unionExt->initMember[fieldInfo - structInfo.fieldInfos](value);\n+      read(iprot, *fieldInfo->typeInfo, readState, value);\n+      activeId = fieldInfo->id;\n     } else {\n       skip(iprot, readState);\n     }\n@@ -671,14 +672,13 @@ write(Protocol_* iprot, const StructInfo& structInfo, const void* object) {\n   size_t written = iprot->writeStructBegin(structInfo.name);\n   if (UNLIKELY(structInfo.unionExt != nullptr)) {\n     const FieldInfo* end = structInfo.fieldInfos + structInfo.numFields;\n-    const auto& unionId =\n-        activeUnionMemberId(object, structInfo.unionExt->unionTypeOffset);\n+    const auto& activeId = getActiveId(object, structInfo);\n     const FieldInfo* found = std::lower_bound(\n         structInfo.fieldInfos,\n         end,\n-        unionId,\n+        activeId,\n         [](const FieldInfo& lhs, FieldID rhs) { return lhs.id < rhs; });\n-    if (found < end && found->id == unionId) {\n+    if (found < end && found->id == activeId) {\n       const OptionalThriftValue value = getValue(*found->typeInfo, object);\n       if (value.hasValue()) {\n         written += writeField(iprot, *found, value.value());"
+    },
+    {
+      "sha": "9f146885cbfd97101cc8e27ff13c179dbd907bd7",
+      "filename": "thrift/test/tablebased/SerializerTest.cpp",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Ftest%2Ftablebased%2FSerializerTest.cpp",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Ftest%2Ftablebased%2FSerializerTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Ftest%2Ftablebased%2FSerializerTest.cpp?ref=bfda1efa547dce11a38592820916db01b05b9339",
+      "patch": "@@ -356,3 +356,25 @@ TEST(SerializerTest, UnionValueOffsetIsZero) {\n   u.set_fieldB({});\n   EXPECT_EQ(static_cast<void*>(&u), &*u.fieldB_ref());\n }\n+\n+TEST(SerializerTest, DuplicateUnionData) {\n+  // Test that we can handle invalid serialized input with duplicate and\n+  // incomplete union data.\n+  const char data[] =\n+      \"\\x0c\" // type = TType::T_STRUCT\n+      \"\\x00\\x01\" // fieldId = 1 (unionField)\n+      \"\\x0b\" // type = TType::T_STRING\n+      \"\\x00\\x01\" // fieldId = 1 (stringField)\n+      \"\\x00\\x00\\x00\\x00\" // size = 0\n+      \"\\x00\" // end of unionField\n+\n+      \"\\x0c\" // type = TType::T_STRUCT\n+      \"\\x00\\x01\" // fieldId = 1 (unionField)\n+      \"\\x13\" // type = TType::T_FLOAT\n+      \"\\x00\\x02\"; // fieldId = 2 (floatField), value is missing\n+\n+  EXPECT_THROW(\n+      BinarySerializer::deserialize<tablebased::TestStructWithUnion>(\n+          folly::StringPiece(data, sizeof(data))),\n+      std::out_of_range);\n+}"
+    },
+    {
+      "sha": "16dc17b02e59ff660d6bab1b22d85eb0c5862f88",
+      "filename": "thrift/test/tablebased/thrift_tablebased.thrift",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/facebook/fbthrift/blob/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Ftest%2Ftablebased%2Fthrift_tablebased.thrift",
+      "raw_url": "https://github.com/facebook/fbthrift/raw/bfda1efa547dce11a38592820916db01b05b9339/thrift%2Ftest%2Ftablebased%2Fthrift_tablebased.thrift",
+      "contents_url": "https://api.github.com/repos/facebook/fbthrift/contents/thrift%2Ftest%2Ftablebased%2Fthrift_tablebased.thrift?ref=bfda1efa547dce11a38592820916db01b05b9339",
+      "patch": "@@ -79,3 +79,12 @@ union UnionWithRef {\n   3: StructA fieldC (cpp2.ref_type = \"shared_const\");\n   4: StructA fieldD (cpp2.ref_type = \"shared\");\n }\n+\n+union TestUnion {\n+  1: string stringField;\n+  2: float floatField;\n+}\n+\n+struct TestStructWithUnion {\n+  1: TestUnion unionField;\n+}"
+    }
+  ]
+}

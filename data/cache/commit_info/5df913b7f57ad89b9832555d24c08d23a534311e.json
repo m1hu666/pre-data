@@ -1,0 +1,101 @@
+{
+  "sha": "5df913b7f57ad89b9832555d24c08d23a534311e",
+  "node_id": "MDY6Q29tbWl0MTk5OTY5Mjo1ZGY5MTNiN2Y1N2FkODliOTgzMjU1NWQyNGMwOGQyM2E1MzQzMTFl",
+  "commit": {
+    "author": {
+      "name": "Jakub Jelen",
+      "email": "jjelen@redhat.com",
+      "date": "2020-12-08T13:37:39Z"
+    },
+    "committer": {
+      "name": "Frank Morgner",
+      "email": "frankmorgner@gmail.com",
+      "date": "2020-12-09T14:50:54Z"
+    },
+    "message": "tcos: Check bounds in insert_pin()\n\nThanks oss-fuzz\n\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28383",
+    "tree": {
+      "sha": "85273f1e60a8d9f045386f580e4b58ac753c476f",
+      "url": "https://api.github.com/repos/OpenSC/OpenSC/git/trees/85273f1e60a8d9f045386f580e4b58ac753c476f"
+    },
+    "url": "https://api.github.com/repos/OpenSC/OpenSC/git/commits/5df913b7f57ad89b9832555d24c08d23a534311e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/OpenSC/OpenSC/commits/5df913b7f57ad89b9832555d24c08d23a534311e",
+  "html_url": "https://github.com/OpenSC/OpenSC/commit/5df913b7f57ad89b9832555d24c08d23a534311e",
+  "comments_url": "https://api.github.com/repos/OpenSC/OpenSC/commits/5df913b7f57ad89b9832555d24c08d23a534311e/comments",
+  "author": {
+    "login": "Jakuje",
+    "id": 2694489,
+    "node_id": "MDQ6VXNlcjI2OTQ0ODk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2694489?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jakuje",
+    "html_url": "https://github.com/Jakuje",
+    "followers_url": "https://api.github.com/users/Jakuje/followers",
+    "following_url": "https://api.github.com/users/Jakuje/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jakuje/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jakuje/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jakuje/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jakuje/orgs",
+    "repos_url": "https://api.github.com/users/Jakuje/repos",
+    "events_url": "https://api.github.com/users/Jakuje/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jakuje/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "frankmorgner",
+    "id": 1266577,
+    "node_id": "MDQ6VXNlcjEyNjY1Nzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1266577?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankmorgner",
+    "html_url": "https://github.com/frankmorgner",
+    "followers_url": "https://api.github.com/users/frankmorgner/followers",
+    "following_url": "https://api.github.com/users/frankmorgner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankmorgner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankmorgner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankmorgner/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankmorgner/orgs",
+    "repos_url": "https://api.github.com/users/frankmorgner/repos",
+    "events_url": "https://api.github.com/users/frankmorgner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankmorgner/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "69544553c36f0613f6283e0eeb3f9eb549825986",
+      "url": "https://api.github.com/repos/OpenSC/OpenSC/commits/69544553c36f0613f6283e0eeb3f9eb549825986",
+      "html_url": "https://github.com/OpenSC/OpenSC/commit/69544553c36f0613f6283e0eeb3f9eb549825986"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "74ae0cb92fcd114e46ced3105a8986a310acec91",
+      "filename": "src/libopensc/pkcs15-tcos.c",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/OpenSC/OpenSC/blob/5df913b7f57ad89b9832555d24c08d23a534311e/src%2Flibopensc%2Fpkcs15-tcos.c",
+      "raw_url": "https://github.com/OpenSC/OpenSC/raw/5df913b7f57ad89b9832555d24c08d23a534311e/src%2Flibopensc%2Fpkcs15-tcos.c",
+      "contents_url": "https://api.github.com/repos/OpenSC/OpenSC/contents/src%2Flibopensc%2Fpkcs15-tcos.c?ref=5df913b7f57ad89b9832555d24c08d23a534311e",
+      "patch": "@@ -242,13 +242,13 @@ static int insert_pin(\n \t\t\t\"Searching for PIN-Ref %02X\\n\", pin_reference);\n \t\twhile ((r = sc_read_record(card, ++rec_no, buf, sizeof(buf), SC_RECORD_BY_REC_NR)) > 0) {\n \t\t\tint found = 0, fbz = -1;\n-\t\t\tif (buf[0] != 0xA0)\n+\t\t\tif (r < 2 || buf[0] != 0xA0)\n \t\t\t\tcontinue;\n-\t\t\tfor (i = 2; i < buf[1] + 2; i += 2 + buf[i + 1]) {\n+\t\t\tfor (i = 2; i < buf[1] + 2 && (i + 2) < r; i += 2 + buf[i + 1]) {\n \t\t\t\tif (buf[i] == 0x83 && buf[i + 1] == 1 && buf[i + 2] == pin_reference) {\n \t\t\t\t\t++found;\n \t\t\t\t}\n-\t\t\t\tif (buf[i] == 0x90) {\n+\t\t\t\tif (buf[i] == 0x90 && (i + 1 + buf[i + 1]) < r) {\n \t\t\t\t\tfbz = buf[i + 1 + buf[i + 1]];\n \t\t\t\t}\n \t\t\t}"
+    }
+  ]
+}

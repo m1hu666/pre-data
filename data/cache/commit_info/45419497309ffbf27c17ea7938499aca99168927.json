@@ -1,0 +1,113 @@
+{
+  "sha": "45419497309ffbf27c17ea7938499aca99168927",
+  "node_id": "MDY6Q29tbWl0MjUwNDM4ODo0NTQxOTQ5NzMwOWZmYmYyN2MxN2VhNzkzODQ5OWFjYTk5MTY4OTI3",
+  "commit": {
+    "author": {
+      "name": "Eugen Hristev",
+      "email": "eugen.hristev@microchip.com",
+      "date": "2020-03-17T14:44:00Z"
+    },
+    "committer": {
+      "name": "Eugen Hristev",
+      "email": "eugen.hristev@microchip.com",
+      "date": "2020-03-30T12:47:48Z"
+    },
+    "message": "driver: secure: move keys into static arrays\n\nMove the keys into static arrays. This will avoid copying the keys\nfrom the code section to the stack on the previous init_keys implementation.\nLike this, the keys are hardcoded into data section at compile time,\nand can be completely wiped after use.\n\nSigned-off-by: Eugen Hristev <eugen.hristev@microchip.com>\nTested-by: Nicolas Ferre <nicolas.ferre@microchip.com>",
+    "tree": {
+      "sha": "4c7ce41e3872f560f21b3cd8c0e514b8e3b04d95",
+      "url": "https://api.github.com/repos/linux4sam/at91bootstrap/git/trees/4c7ce41e3872f560f21b3cd8c0e514b8e3b04d95"
+    },
+    "url": "https://api.github.com/repos/linux4sam/at91bootstrap/git/commits/45419497309ffbf27c17ea7938499aca99168927",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/45419497309ffbf27c17ea7938499aca99168927",
+  "html_url": "https://github.com/linux4sam/at91bootstrap/commit/45419497309ffbf27c17ea7938499aca99168927",
+  "comments_url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/45419497309ffbf27c17ea7938499aca99168927/comments",
+  "author": {
+    "login": "ehristev",
+    "id": 26141984,
+    "node_id": "MDQ6VXNlcjI2MTQxOTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26141984?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ehristev",
+    "html_url": "https://github.com/ehristev",
+    "followers_url": "https://api.github.com/users/ehristev/followers",
+    "following_url": "https://api.github.com/users/ehristev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ehristev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ehristev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ehristev/subscriptions",
+    "organizations_url": "https://api.github.com/users/ehristev/orgs",
+    "repos_url": "https://api.github.com/users/ehristev/repos",
+    "events_url": "https://api.github.com/users/ehristev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ehristev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ehristev",
+    "id": 26141984,
+    "node_id": "MDQ6VXNlcjI2MTQxOTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26141984?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ehristev",
+    "html_url": "https://github.com/ehristev",
+    "followers_url": "https://api.github.com/users/ehristev/followers",
+    "following_url": "https://api.github.com/users/ehristev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ehristev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ehristev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ehristev/subscriptions",
+    "organizations_url": "https://api.github.com/users/ehristev/orgs",
+    "repos_url": "https://api.github.com/users/ehristev/repos",
+    "events_url": "https://api.github.com/users/ehristev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ehristev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7753914c9a622c245f3a3cf2af5e24b6a9904213",
+      "url": "https://api.github.com/repos/linux4sam/at91bootstrap/commits/7753914c9a622c245f3a3cf2af5e24b6a9904213",
+      "html_url": "https://github.com/linux4sam/at91bootstrap/commit/7753914c9a622c245f3a3cf2af5e24b6a9904213"
+    }
+  ],
+  "stats": {
+    "total": 103,
+    "additions": 53,
+    "deletions": 50
+  },
+  "files": [
+    {
+      "sha": "ea4c5e9f832995251fe629876972921d31335dbe",
+      "filename": "driver/secure.c",
+      "status": "modified",
+      "additions": 53,
+      "deletions": 48,
+      "changes": 101,
+      "blob_url": "https://github.com/linux4sam/at91bootstrap/blob/45419497309ffbf27c17ea7938499aca99168927/driver%2Fsecure.c",
+      "raw_url": "https://github.com/linux4sam/at91bootstrap/raw/45419497309ffbf27c17ea7938499aca99168927/driver%2Fsecure.c",
+      "contents_url": "https://api.github.com/repos/linux4sam/at91bootstrap/contents/driver%2Fsecure.c?ref=45419497309ffbf27c17ea7938499aca99168927",
+      "patch": "@@ -32,63 +32,60 @@\n #include \"string.h\"\n #include \"autoconf.h\"\n \n-\n-static inline void init_keys(at91_aes_key_size_t *key_size,\n-\t\t\t     unsigned int *cipher_key,\n-\t\t\t     unsigned int *cmac_key,\n-\t\t\t     unsigned int *iv)\n-{\n-#if defined(CONFIG_AES_KEY_SIZE_128)\n-\t*key_size = AT91_AES_KEY_SIZE_128;\n-#elif defined(CONFIG_AES_KEY_SIZE_192)\n-\t*key_size = AT91_AES_KEY_SIZE_192;\n-#elif defined(CONFIG_AES_KEY_SIZE_256)\n-\t*key_size = AT91_AES_KEY_SIZE_256;\n-#else\n-#error \"bad AES key size\"\n+static unsigned int cipher_key[8] = {\n+\tCONFIG_AES_CIPHER_KEY_WORD0,\n+\tCONFIG_AES_CIPHER_KEY_WORD1,\n+\tCONFIG_AES_CIPHER_KEY_WORD2,\n+\tCONFIG_AES_CIPHER_KEY_WORD3,\n+#if defined(CONFIG_AES_KEY_SIZE_192) || defined(CONFIG_AES_KEY_SIZE_256)\n+\tCONFIG_AES_CIPHER_KEY_WORD4,\n+\tCONFIG_AES_CIPHER_KEY_WORD5,\n #endif\n+#if defined(CONFIG_AES_KEY_SIZE_256)\n+\tCONFIG_AES_CIPHER_KEY_WORD6,\n+\tCONFIG_AES_CIPHER_KEY_WORD7,\n+#endif\n+};\n \n-\tiv[0]\t\t= CONFIG_AES_IV_WORD0;\n-\tiv[1]\t\t= CONFIG_AES_IV_WORD1;\n-\tiv[2]\t\t= CONFIG_AES_IV_WORD2;\n-\tiv[3]\t\t= CONFIG_AES_IV_WORD3;\n-\n-\tcipher_key[0]\t= CONFIG_AES_CIPHER_KEY_WORD0;\n-\tcmac_key[0]\t= CONFIG_AES_CMAC_KEY_WORD0;\n-\tcipher_key[1]\t= CONFIG_AES_CIPHER_KEY_WORD1;\n-\tcmac_key[1]\t= CONFIG_AES_CMAC_KEY_WORD1;\n-\tcipher_key[2]\t= CONFIG_AES_CIPHER_KEY_WORD2;\n-\tcmac_key[2]\t= CONFIG_AES_CMAC_KEY_WORD2;\n-\tcipher_key[3]\t= CONFIG_AES_CIPHER_KEY_WORD3;\n-\tcmac_key[3]\t= CONFIG_AES_CMAC_KEY_WORD3;\n-\n+static unsigned int cmac_key[8] = {\n+\tCONFIG_AES_CMAC_KEY_WORD0,\n+\tCONFIG_AES_CMAC_KEY_WORD1,\n+\tCONFIG_AES_CMAC_KEY_WORD2,\n+\tCONFIG_AES_CMAC_KEY_WORD3,\n #if defined(CONFIG_AES_KEY_SIZE_192) || defined(CONFIG_AES_KEY_SIZE_256)\n-\tcipher_key[4]\t= CONFIG_AES_CIPHER_KEY_WORD4;\n-\tcmac_key[4]\t= CONFIG_AES_CMAC_KEY_WORD4;\n-\tcipher_key[5]\t= CONFIG_AES_CIPHER_KEY_WORD5;\n-\tcmac_key[5]\t= CONFIG_AES_CMAC_KEY_WORD5;\n+\tCONFIG_AES_CMAC_KEY_WORD4,\n+\tCONFIG_AES_CMAC_KEY_WORD5,\n #endif\n-\n #if defined(CONFIG_AES_KEY_SIZE_256)\n-\tcipher_key[6]\t= CONFIG_AES_CIPHER_KEY_WORD6;\n-\tcmac_key[6]\t= CONFIG_AES_CMAC_KEY_WORD6;\n-\tcipher_key[7]\t= CONFIG_AES_CIPHER_KEY_WORD7;\n-\tcmac_key[7]\t= CONFIG_AES_CMAC_KEY_WORD7;\n+\tCONFIG_AES_CMAC_KEY_WORD6,\n+\tCONFIG_AES_CMAC_KEY_WORD7,\n #endif\n-}\n+};\n \n-int secure_decrypt(void *data, unsigned int data_length, int is_signed)\n+static unsigned int iv[AT91_AES_IV_SIZE_WORD] = {\n+\tCONFIG_AES_IV_WORD0,\n+\tCONFIG_AES_IV_WORD1,\n+\tCONFIG_AES_IV_WORD2,\n+\tCONFIG_AES_IV_WORD3,\n+};\n+\n+static int secure_decrypt(void *data, unsigned int data_length, int is_signed)\n {\n \tat91_aes_key_size_t key_size;\n-\tunsigned int cmac_key[8], cipher_key[8];\n-\tunsigned int iv[AT91_AES_IV_SIZE_WORD];\n \tunsigned int computed_cmac[AT91_AES_BLOCK_SIZE_WORD];\n \tunsigned int fixed_length;\n \tconst unsigned int *cmac;\n \tint rc = -1;\n \n-\t/* Init keys */\n-\tinit_keys(&key_size, cipher_key, cmac_key, iv);\n+#if defined(CONFIG_AES_KEY_SIZE_128)\n+\tkey_size = AT91_AES_KEY_SIZE_128;\n+#elif defined(CONFIG_AES_KEY_SIZE_192)\n+\tkey_size = AT91_AES_KEY_SIZE_192;\n+#elif defined(CONFIG_AES_KEY_SIZE_256)\n+\tkey_size = AT91_AES_KEY_SIZE_256;\n+#else\n+#error \"bad AES key size\"\n+#endif\n \n \t/* Init periph */\n \tat91_aes_init();\n@@ -117,26 +114,34 @@ int secure_decrypt(void *data, unsigned int data_length, int is_signed)\n \t/* Reset periph */\n \tat91_aes_cleanup();\n \n+\treturn rc;\n+}\n+\n+static void wipe_keys()\n+{\n \t/* Reset keys */\n \tmemset(cmac_key, 0, sizeof(cmac_key));\n \tmemset(cipher_key, 0, sizeof(cipher_key));\n \tmemset(iv, 0, sizeof(iv));\n-\n-\treturn rc;\n }\n \n int secure_check(void *data)\n {\n \tconst at91_secure_header_t *header;\n \tvoid *file;\n+\tint ret = -1;\n \n \tif (secure_decrypt(data, sizeof(*header), 0))\n-\t\treturn -1;\n+\t\tgoto secure_wipe_keys;\n \n \theader = (const at91_secure_header_t *)data;\n \tif (header->magic != AT91_SECURE_MAGIC)\n-\t\treturn -1;\n+\t\tgoto secure_wipe_keys;\n \n \tfile = (unsigned char *)data + sizeof(*header);\n-\treturn secure_decrypt(file, header->file_size, 1);\n+\tret = secure_decrypt(file, header->file_size, 1);\n+\n+secure_wipe_keys:\n+\twipe_keys();\n+\treturn ret;\n }"
+    },
+    {
+      "sha": "9bd2a77ac4f98cab05fdb7a8c8482033ec865bf6",
+      "filename": "include/secure.h",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/linux4sam/at91bootstrap/blob/45419497309ffbf27c17ea7938499aca99168927/include%2Fsecure.h",
+      "raw_url": "https://github.com/linux4sam/at91bootstrap/raw/45419497309ffbf27c17ea7938499aca99168927/include%2Fsecure.h",
+      "contents_url": "https://api.github.com/repos/linux4sam/at91bootstrap/contents/include%2Fsecure.h?ref=45419497309ffbf27c17ea7938499aca99168927",
+      "patch": "@@ -40,8 +40,6 @@ typedef struct at91_secure_header {\n \tunsigned int\t\treserved[2];\n } at91_secure_header_t;\n \n-\n-int secure_decrypt(void *data, unsigned int data_length, int is_signed);\n int secure_check(void *data);\n \n #endif /* #ifdef __SECURE_H__ */"
+    }
+  ]
+}

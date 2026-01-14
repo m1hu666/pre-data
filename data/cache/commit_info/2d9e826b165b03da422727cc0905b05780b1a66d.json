@@ -1,0 +1,97 @@
+{
+  "sha": "2d9e826b165b03da422727cc0905b05780b1a66d",
+  "node_id": "C_kwDOByyPPdoAKDJkOWU4MjZiMTY1YjAzZGE0MjI3MjdjYzA5MDViMDU3ODBiMWE2NmQ",
+  "commit": {
+    "author": {
+      "name": "Michael Hansen",
+      "email": "hansenmichael@google.com",
+      "date": "2022-02-09T21:33:14Z"
+    },
+    "committer": {
+      "name": "Chromium LUCI CQ",
+      "email": "chromium-scoped@luci-project-accounts.iam.gserviceaccount.com",
+      "date": "2022-02-09T21:33:14Z"
+    },
+    "message": "[Nearby] Handle keyboard events in NearbyShareDialogUI\n\nThis moves the responsibility for handling keyboard events from\nNearbyShareAction to NearbyShareDialogUI.\n\nOnly one instance of NearbyShareAction is created and reused by the\nSharesheetService. We previously stored a reference to a WebView in\nNearbyShareAction so that we could use its FocusManager in the handling\nof keyboard events. But opening and closing multiple sharesheets in a\nspecific sequence could lead to a UAF as in crbug.com/1294097.\n\nShifting this responsibility to NearbyShareDialogUI allows multiple\nsharesheets to exist safely at the same time.\n\nManually verified by testing various sequences with multiple sharesheets\non-device.\n\nBug: 1294097\nChange-Id: I7c737057ee70e31e5221ef6ac6e97d47735db798\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/3449337\nReviewed-by: Josh Nohle <nohle@chromium.org>\nCommit-Queue: Michael Hansen <hansenmichael@google.com>\nCr-Commit-Position: refs/heads/main@{#969113}",
+    "tree": {
+      "sha": "cd80e95b0968f471f66c09432efc38564bd13341",
+      "url": "https://api.github.com/repos/chromium/chromium/git/trees/cd80e95b0968f471f66c09432efc38564bd13341"
+    },
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/2d9e826b165b03da422727cc0905b05780b1a66d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chromium/chromium/commits/2d9e826b165b03da422727cc0905b05780b1a66d",
+  "html_url": "https://github.com/chromium/chromium/commit/2d9e826b165b03da422727cc0905b05780b1a66d",
+  "comments_url": "https://api.github.com/repos/chromium/chromium/commits/2d9e826b165b03da422727cc0905b05780b1a66d/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "d35f89ea06dc5e7ec4aea2fa51c39d5aa9721e2d",
+      "url": "https://api.github.com/repos/chromium/chromium/commits/d35f89ea06dc5e7ec4aea2fa51c39d5aa9721e2d",
+      "html_url": "https://github.com/chromium/chromium/commit/d35f89ea06dc5e7ec4aea2fa51c39d5aa9721e2d"
+    }
+  ],
+  "stats": {
+    "total": 116,
+    "additions": 65,
+    "deletions": 51
+  },
+  "files": [
+    {
+      "sha": "7a3b75f4b2935a988201359ff3208f6ab9d14b2a",
+      "filename": "chrome/browser/nearby_sharing/sharesheet/nearby_share_action.cc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 29,
+      "changes": 35,
+      "blob_url": "https://github.com/chromium/chromium/blob/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.cc?ref=2d9e826b165b03da422727cc0905b05780b1a66d",
+      "patch": "@@ -19,9 +19,6 @@\n #include \"chrome/browser/profiles/profile.h\"\n #include \"chrome/browser/profiles/profile_manager.h\"\n #include \"chrome/browser/sharesheet/sharesheet_types.h\"\n-#include \"chrome/browser/ui/browser_navigator.h\"\n-#include \"chrome/browser/ui/browser_navigator_params.h\"\n-#include \"chrome/browser/ui/scoped_tabbed_browser_displayer.h\"\n #include \"chrome/browser/ui/webui/nearby_share/nearby_share_dialog_ui.h\"\n #include \"chrome/common/webui_url_constants.h\"\n #include \"chrome/grit/generated_resources.h\"\n@@ -148,19 +145,18 @@ void NearbyShareAction::LaunchAction(\n   auto view = std::make_unique<views::WebView>(profile_);\n   // If this is not done, we don't see anything in our view.\n   view->SetPreferredSize(size);\n-  web_view_ = root_view->AddChildView(std::move(view));\n-  web_view_->GetWebContents()->SetDelegate(this);\n+  views::WebView* web_view = root_view->AddChildView(std::move(view));\n   // TODO(vecore): Query this from the container view\n-  web_view_->holder()->SetCornerRadii(gfx::RoundedCornersF(kCornerRadius));\n+  web_view->holder()->SetCornerRadii(gfx::RoundedCornersF(kCornerRadius));\n \n   // load chrome://nearby into the webview\n-  web_view_->LoadInitialURL(GURL(chrome::kChromeUINearbyShareURL));\n+  web_view->LoadInitialURL(GURL(chrome::kChromeUINearbyShareURL));\n \n   // Without requesting focus, the sharesheet will launch in an unfocused state\n   // which raises accessibility issues with the \"Device name\" input.\n-  web_view_->RequestFocus();\n+  web_view->RequestFocus();\n \n-  auto* webui = web_view_->GetWebContents()->GetWebUI();\n+  auto* webui = web_view->GetWebContents()->GetWebUI();\n   DCHECK(webui != nullptr);\n \n   auto* nearby_ui =\n@@ -170,6 +166,7 @@ void NearbyShareAction::LaunchAction(\n   nearby_ui->SetSharesheetController(controller);\n   nearby_ui->SetAttachments(\n       CreateAttachmentsFromIntent(profile_, std::move(intent)));\n+  nearby_ui->SetWebView(web_view);\n }\n \n bool NearbyShareAction::HasActionView() {\n@@ -250,23 +247,3 @@ void NearbyShareAction::SetActionCleanupCallbackForArc(\n   }\n   nearby_sharing_service->SetArcTransferCleanupCallback(std::move(callback));\n }\n-\n-bool NearbyShareAction::HandleKeyboardEvent(\n-    content::WebContents* source,\n-    const content::NativeWebKeyboardEvent& event) {\n-  return unhandled_keyboard_event_handler_.HandleKeyboardEvent(\n-      event, web_view_->GetFocusManager());\n-}\n-\n-void NearbyShareAction::WebContentsCreated(\n-    content::WebContents* source_contents,\n-    int opener_render_process_id,\n-    int opener_render_frame_id,\n-    const std::string& frame_name,\n-    const GURL& target_url,\n-    content::WebContents* new_contents) {\n-  chrome::ScopedTabbedBrowserDisplayer displayer(profile_);\n-  NavigateParams nav_params(displayer.browser(), target_url,\n-                            ui::PageTransition::PAGE_TRANSITION_LINK);\n-  Navigate(&nav_params);\n-}"
+    },
+    {
+      "sha": "de6e0d03b03c555c7605cb442bf0abd9ac9d1953",
+      "filename": "chrome/browser/nearby_sharing/sharesheet/nearby_share_action.h",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 21,
+      "changes": 24,
+      "blob_url": "https://github.com/chromium/chromium/blob/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fnearby_sharing%2Fsharesheet%2Fnearby_share_action.h?ref=2d9e826b165b03da422727cc0905b05780b1a66d",
+      "patch": "@@ -7,17 +7,12 @@\n \n #include \"chrome/browser/sharesheet/share_action/share_action.h\"\n #include \"chrome/browser/ui/webui/nearby_share/nearby_share_dialog_ui.h\"\n-#include \"content/public/browser/web_contents_delegate.h\"\n-#include \"ui/views/controls/webview/unhandled_keyboard_event_handler.h\"\n \n class Profile;\n \n-namespace views {\n-class WebView;\n-}  // namespace views\n-\n-class NearbyShareAction : public sharesheet::ShareAction,\n-                          content::WebContentsDelegate {\n+// NearbyShareAction is responsible for loading the Nearby UI within the\n+// Sharesheet. A single instance is created on sign in to handle all operations.\n+class NearbyShareAction : public sharesheet::ShareAction {\n  public:\n   explicit NearbyShareAction(Profile* profile);\n   ~NearbyShareAction() override;\n@@ -38,17 +33,6 @@ class NearbyShareAction : public sharesheet::ShareAction,\n   void SetActionCleanupCallbackForArc(\n       base::OnceCallback<void()> callback) override;\n \n-  // content::WebContentsDelegate:\n-  bool HandleKeyboardEvent(\n-      content::WebContents* source,\n-      const content::NativeWebKeyboardEvent& event) override;\n-  void WebContentsCreated(content::WebContents* source_contents,\n-                          int opener_render_process_id,\n-                          int opener_render_frame_id,\n-                          const std::string& frame_name,\n-                          const GURL& target_url,\n-                          content::WebContents* new_contents) override;\n-\n   static std::vector<std::unique_ptr<Attachment>> CreateAttachmentsFromIntent(\n       Profile* profile,\n       apps::mojom::IntentPtr intent);\n@@ -63,8 +47,6 @@ class NearbyShareAction : public sharesheet::ShareAction,\n   Profile* profile_;\n   absl::optional<bool> nearby_share_disabled_by_policy_for_testing_ =\n       absl::nullopt;\n-  views::WebView* web_view_;\n-  views::UnhandledKeyboardEventHandler unhandled_keyboard_event_handler_;\n };\n \n #endif  // CHROME_BROWSER_NEARBY_SHARING_SHARESHEET_NEARBY_SHARE_ACTION_H_"
+    },
+    {
+      "sha": "72a6a947a2b727c85c36a5f3a9714893300b85b6",
+      "filename": "chrome/browser/ui/webui/nearby_share/nearby_share_dialog_ui.cc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 0,
+      "changes": 34,
+      "blob_url": "https://github.com/chromium/chromium/blob/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.cc",
+      "raw_url": "https://github.com/chromium/chromium/raw/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.cc",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.cc?ref=2d9e826b165b03da422727cc0905b05780b1a66d",
+      "patch": "@@ -17,6 +17,9 @@\n #include \"chrome/browser/nearby_sharing/nearby_sharing_service_impl.h\"\n #include \"chrome/browser/nearby_sharing/text_attachment.h\"\n #include \"chrome/browser/profiles/profile.h\"\n+#include \"chrome/browser/ui/browser_navigator.h\"\n+#include \"chrome/browser/ui/browser_navigator_params.h\"\n+#include \"chrome/browser/ui/scoped_tabbed_browser_displayer.h\"\n #include \"chrome/browser/ui/webui/metrics_handler.h\"\n #include \"chrome/browser/ui/webui/nearby_share/shared_resources.h\"\n #include \"chrome/browser/ui/webui/plural_string_handler.h\"\n@@ -36,6 +39,7 @@\n #include \"services/network/public/mojom/content_security_policy.mojom.h\"\n #include \"ui/base/resource/resource_bundle.h\"\n #include \"ui/base/webui/web_ui_util.h\"\n+#include \"ui/views/controls/webview/webview.h\"\n \n namespace nearby_share {\n \n@@ -108,6 +112,12 @@ void NearbyShareDialogUI::SetAttachments(\n   attachments_ = std::move(attachments);\n }\n \n+void NearbyShareDialogUI::SetWebView(views::WebView* web_view) {\n+  CHECK(web_view);\n+  web_view_ = web_view;\n+  web_view_->GetWebContents()->SetDelegate(this);\n+}\n+\n void NearbyShareDialogUI::BindInterface(\n     mojo::PendingReceiver<mojom::DiscoveryManager> manager) {\n   mojo::MakeSelfOwnedReceiver(\n@@ -132,6 +142,30 @@ void NearbyShareDialogUI::BindInterface(\n   nearby_sharing_service->GetContactManager()->Bind(std::move(receiver));\n }\n \n+bool NearbyShareDialogUI::HandleKeyboardEvent(\n+    content::WebContents* source,\n+    const content::NativeWebKeyboardEvent& event) {\n+  if (!web_view_) {\n+    return false;\n+  }\n+\n+  return unhandled_keyboard_event_handler_.HandleKeyboardEvent(\n+      event, web_view_->GetFocusManager());\n+}\n+\n+void NearbyShareDialogUI::WebContentsCreated(\n+    content::WebContents* source_contents,\n+    int opener_render_process_id,\n+    int opener_render_frame_id,\n+    const std::string& frame_name,\n+    const GURL& target_url,\n+    content::WebContents* new_contents) {\n+  chrome::ScopedTabbedBrowserDisplayer displayer(Profile::FromWebUI(web_ui()));\n+  NavigateParams nav_params(displayer.browser(), target_url,\n+                            ui::PageTransition::PAGE_TRANSITION_LINK);\n+  Navigate(&nav_params);\n+}\n+\n void NearbyShareDialogUI::HandleClose(const base::ListValue* args) {\n   if (!sharesheet_controller_)\n     return;"
+    },
+    {
+      "sha": "86ffc2d9997c23e9f1fb4912b1ec1bd8680ba7fa",
+      "filename": "chrome/browser/ui/webui/nearby_share/nearby_share_dialog_ui.h",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 1,
+      "changes": 23,
+      "blob_url": "https://github.com/chromium/chromium/blob/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.h",
+      "raw_url": "https://github.com/chromium/chromium/raw/2d9e826b165b03da422727cc0905b05780b1a66d/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.h",
+      "contents_url": "https://api.github.com/repos/chromium/chromium/contents/chrome%2Fbrowser%2Fui%2Fwebui%2Fnearby_share%2Fnearby_share_dialog_ui.h?ref=2d9e826b165b03da422727cc0905b05780b1a66d",
+      "patch": "@@ -12,15 +12,22 @@\n #include \"chrome/browser/sharesheet/sharesheet_controller.h\"\n #include \"chrome/browser/ui/webui/nearby_share/nearby_share.mojom.h\"\n #include \"chrome/browser/ui/webui/nearby_share/public/mojom/nearby_share_settings.mojom.h\"\n+#include \"content/public/browser/web_contents_delegate.h\"\n #include \"mojo/public/cpp/bindings/pending_receiver.h\"\n+#include \"ui/views/controls/webview/unhandled_keyboard_event_handler.h\"\n #include \"ui/webui/mojo_web_ui_controller.h\"\n \n class NearbySharingService;\n \n+namespace views {\n+class WebView;\n+}  // namespace views\n+\n namespace nearby_share {\n \n // The WebUI controller for chrome://nearby.\n-class NearbyShareDialogUI : public ui::MojoWebUIController {\n+class NearbyShareDialogUI : public ui::MojoWebUIController,\n+                            content::WebContentsDelegate {\n  public:\n   explicit NearbyShareDialogUI(content::WebUI* web_ui);\n   NearbyShareDialogUI(const NearbyShareDialogUI&) = delete;\n@@ -31,6 +38,7 @@ class NearbyShareDialogUI : public ui::MojoWebUIController {\n     sharesheet_controller_ = controller;\n   }\n   void SetAttachments(std::vector<std::unique_ptr<Attachment>> attachments);\n+  void SetWebView(views::WebView* web_view);\n \n   // Instantiates the implementor of the mojom::DiscoveryManager mojo\n   // interface passing the pending receiver that will be internally bound.\n@@ -43,6 +51,17 @@ class NearbyShareDialogUI : public ui::MojoWebUIController {\n   void BindInterface(\n       mojo::PendingReceiver<nearby_share::mojom::ContactManager> receiver);\n \n+  // content::WebContentsDelegate:\n+  bool HandleKeyboardEvent(\n+      content::WebContents* source,\n+      const content::NativeWebKeyboardEvent& event) override;\n+  void WebContentsCreated(content::WebContents* source_contents,\n+                          int opener_render_process_id,\n+                          int opener_render_frame_id,\n+                          const std::string& frame_name,\n+                          const GURL& target_url,\n+                          content::WebContents* new_contents) override;\n+\n  private:\n   void HandleClose(const base::ListValue* args);\n \n@@ -60,6 +79,8 @@ class NearbyShareDialogUI : public ui::MojoWebUIController {\n \n   std::vector<std::unique_ptr<Attachment>> attachments_;\n   NearbySharingService* nearby_service_;\n+  views::WebView* web_view_ = nullptr;\n+  views::UnhandledKeyboardEventHandler unhandled_keyboard_event_handler_;\n \n   WEB_UI_CONTROLLER_TYPE_DECL();\n };"
+    }
+  ]
+}

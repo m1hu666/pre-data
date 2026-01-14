@@ -1,0 +1,73 @@
+{
+  "sha": "7b7a01c266b507636eab51a36328c7c72d82d93c",
+  "node_id": "C_kwDOAJbDD9oAKDdiN2EwMWMyNjZiNTA3NjM2ZWFiNTFhMzYzMjhjN2M3MmQ4MmQ5M2M",
+  "commit": {
+    "author": {
+      "name": "Allan Sandfeld Jensen",
+      "email": "allan.jensen@qt.io",
+      "date": "2023-05-05T07:51:32Z"
+    },
+    "committer": {
+      "name": "Allan Sandfeld Jensen",
+      "email": "allan.jensen@qt.io",
+      "date": "2023-05-08T18:29:22Z"
+    },
+    "message": "Fix specific overflow in qtextlayout\n\nAdds qAddOverflow and qMulOverflow definitions to QFixed\n\nFixes: QTBUG-113337\nPick-to: 6.5 6.5.1 6.2 5.15\nChange-Id: I13579306defceaccdc0fbb1ec0e9b77c6f8d1af9\nReviewed-by: Eirik Aavitsland <eirik.aavitsland@qt.io>\nReviewed-by: Thiago Macieira <thiago.macieira@intel.com>",
+    "tree": {
+      "sha": "d819f398795ed7612e865ee812c281756247d0fd",
+      "url": "https://api.github.com/repos/qt/qtbase/git/trees/d819f398795ed7612e865ee812c281756247d0fd"
+    },
+    "url": "https://api.github.com/repos/qt/qtbase/git/commits/7b7a01c266b507636eab51a36328c7c72d82d93c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/qt/qtbase/commits/7b7a01c266b507636eab51a36328c7c72d82d93c",
+  "html_url": "https://github.com/qt/qtbase/commit/7b7a01c266b507636eab51a36328c7c72d82d93c",
+  "comments_url": "https://api.github.com/repos/qt/qtbase/commits/7b7a01c266b507636eab51a36328c7c72d82d93c/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "1b736a815be0222f4b24289cf17575fc15707305",
+      "url": "https://api.github.com/repos/qt/qtbase/commits/1b736a815be0222f4b24289cf17575fc15707305",
+      "html_url": "https://github.com/qt/qtbase/commit/1b736a815be0222f4b24289cf17575fc15707305"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 23,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "c0a13d057f54863e6ae9108108f3248d0e385af2",
+      "filename": "src/gui/painting/qfixed_p.h",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/qt/qtbase/blob/7b7a01c266b507636eab51a36328c7c72d82d93c/src%2Fgui%2Fpainting%2Fqfixed_p.h",
+      "raw_url": "https://github.com/qt/qtbase/raw/7b7a01c266b507636eab51a36328c7c72d82d93c/src%2Fgui%2Fpainting%2Fqfixed_p.h",
+      "contents_url": "https://api.github.com/repos/qt/qtbase/contents/src%2Fgui%2Fpainting%2Fqfixed_p.h?ref=7b7a01c266b507636eab51a36328c7c72d82d93c",
+      "patch": "@@ -18,6 +18,7 @@\n #include <QtGui/private/qtguiglobal_p.h>\n #include \"QtCore/qdebug.h\"\n #include \"QtCore/qpoint.h\"\n+#include \"QtCore/qnumeric.h\"\n #include \"QtCore/qsize.h\"\n \n QT_BEGIN_NAMESPACE\n@@ -136,6 +137,22 @@ constexpr inline QFixed operator+(uint i, QFixed d) { return d+i; }\n constexpr inline QFixed operator-(uint i, QFixed d) { return -(d-i); }\n // constexpr inline QFixed operator*(qreal d, QFixed d2) { return d2*d; }\n \n+inline bool qAddOverflow(QFixed v1, QFixed v2, QFixed *r)\n+{\n+    int val;\n+    bool result = qAddOverflow(v1.value(), v2.value(), &val);\n+    r->setValue(val);\n+    return result;\n+}\n+\n+inline bool qMulOverflow(QFixed v1, QFixed v2, QFixed *r)\n+{\n+    int val;\n+    bool result = qMulOverflow(v1.value(), v2.value(), &val);\n+    r->setValue(val);\n+    return result;\n+}\n+\n #ifndef QT_NO_DEBUG_STREAM\n inline QDebug &operator<<(QDebug &dbg, QFixed f)\n { return dbg << f.toReal(); }"
+    },
+    {
+      "sha": "611369951c773061fafa6e05066c63ee87ae9889",
+      "filename": "src/gui/text/qtextlayout.cpp",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/qt/qtbase/blob/7b7a01c266b507636eab51a36328c7c72d82d93c/src%2Fgui%2Ftext%2Fqtextlayout.cpp",
+      "raw_url": "https://github.com/qt/qtbase/raw/7b7a01c266b507636eab51a36328c7c72d82d93c/src%2Fgui%2Ftext%2Fqtextlayout.cpp",
+      "contents_url": "https://api.github.com/repos/qt/qtbase/contents/src%2Fgui%2Ftext%2Fqtextlayout.cpp?ref=7b7a01c266b507636eab51a36328c7c72d82d93c",
+      "patch": "@@ -2164,9 +2164,12 @@ void QTextLine::layout_helper(int maxGlyphs)\n         eng->maxWidth = qMax(eng->maxWidth, line.textWidth);\n     } else {\n         eng->minWidth = qMax(eng->minWidth, lbh.minw);\n-        eng->layoutData->currentMaxWidth += line.textWidth;\n-        if (!manuallyWrapped)\n-            eng->layoutData->currentMaxWidth += lbh.spaceData.textWidth;\n+        if (qAddOverflow(eng->layoutData->currentMaxWidth, line.textWidth, &eng->layoutData->currentMaxWidth))\n+            eng->layoutData->currentMaxWidth = QFIXED_MAX;\n+        if (!manuallyWrapped) {\n+            if (qAddOverflow(eng->layoutData->currentMaxWidth, lbh.spaceData.textWidth, &eng->layoutData->currentMaxWidth))\n+                eng->layoutData->currentMaxWidth = QFIXED_MAX;\n+        }\n         eng->maxWidth = qMax(eng->maxWidth, eng->layoutData->currentMaxWidth);\n         if (manuallyWrapped)\n             eng->layoutData->currentMaxWidth = 0;"
+    }
+  ]
+}

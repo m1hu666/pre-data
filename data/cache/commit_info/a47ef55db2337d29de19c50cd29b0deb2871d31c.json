@@ -1,0 +1,101 @@
+{
+  "sha": "a47ef55db2337d29de19c50cd29b0deb2871d31c",
+  "node_id": "MDY6Q29tbWl0MTMxMDM2NDM2OmE0N2VmNTVkYjIzMzdkMjlkZTE5YzUwY2QyOWIwZGViMjg3MWQzMWM=",
+  "commit": {
+    "author": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-02-19T21:42:29Z"
+    },
+    "committer": {
+      "name": "Chong Cai",
+      "email": "chongc@google.com",
+      "date": "2021-02-19T21:42:29Z"
+    },
+    "message": "Fix vulnerability in UntrustedCacheMalloc\n\nThe pointer array is stored in untrusted memory, so we cannot trust the\nvalue even after validation. We should validate the pointer is pointing\nto untrusted memory after it's stored inside the enclave.\n\nPiperOrigin-RevId: 358474391\nChange-Id: I63cf6c251bdaf1b491dbf06cc0dcf77f7b141756",
+    "tree": {
+      "sha": "404cafe7302c70c03fc6cb1abfdc420d969a4a06",
+      "url": "https://api.github.com/repos/google/asylo/git/trees/404cafe7302c70c03fc6cb1abfdc420d969a4a06"
+    },
+    "url": "https://api.github.com/repos/google/asylo/git/commits/a47ef55db2337d29de19c50cd29b0deb2871d31c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/google/asylo/commits/a47ef55db2337d29de19c50cd29b0deb2871d31c",
+  "html_url": "https://github.com/google/asylo/commit/a47ef55db2337d29de19c50cd29b0deb2871d31c",
+  "comments_url": "https://api.github.com/repos/google/asylo/commits/a47ef55db2337d29de19c50cd29b0deb2871d31c/comments",
+  "author": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kongoshuu",
+    "id": 35152702,
+    "node_id": "MDQ6VXNlcjM1MTUyNzAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35152702?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kongoshuu",
+    "html_url": "https://github.com/kongoshuu",
+    "followers_url": "https://api.github.com/users/kongoshuu/followers",
+    "following_url": "https://api.github.com/users/kongoshuu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kongoshuu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kongoshuu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kongoshuu/subscriptions",
+    "organizations_url": "https://api.github.com/users/kongoshuu/orgs",
+    "repos_url": "https://api.github.com/users/kongoshuu/repos",
+    "events_url": "https://api.github.com/users/kongoshuu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kongoshuu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "808125885af1a8e211739bc84a9f8525e157d72a",
+      "url": "https://api.github.com/repos/google/asylo/commits/808125885af1a8e211739bc84a9f8525e157d72a",
+      "html_url": "https://github.com/google/asylo/commit/808125885af1a8e211739bc84a9f8525e157d72a"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "9517763b368f82299c250e91e70b569495a96b4f",
+      "filename": "asylo/platform/primitives/sgx/untrusted_cache_malloc.cc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/google/asylo/blob/a47ef55db2337d29de19c50cd29b0deb2871d31c/asylo%2Fplatform%2Fprimitives%2Fsgx%2Funtrusted_cache_malloc.cc",
+      "raw_url": "https://github.com/google/asylo/raw/a47ef55db2337d29de19c50cd29b0deb2871d31c/asylo%2Fplatform%2Fprimitives%2Fsgx%2Funtrusted_cache_malloc.cc",
+      "contents_url": "https://api.github.com/repos/google/asylo/contents/asylo%2Fplatform%2Fprimitives%2Fsgx%2Funtrusted_cache_malloc.cc?ref=a47ef55db2337d29de19c50cd29b0deb2871d31c",
+      "patch": "@@ -104,11 +104,12 @@ void *UntrustedCacheMalloc::GetBuffer() {\n       buffers =\n           primitives::AllocateUntrustedBuffers(kPoolIncrement, kPoolEntrySize);\n       for (int i = 0; i < kPoolIncrement; i++) {\n-        if (!buffers[i] ||\n-            !TrustedPrimitives::IsOutsideEnclave(buffers[i], kPoolEntrySize)) {\n-          abort();\n+        void *buf = buffers[i];\n+        if (!buf || !TrustedPrimitives::IsOutsideEnclave(buf, kPoolEntrySize)) {\n+          TrustedPrimitives::BestEffortAbort(\n+              \"Cached buffer is not outside the enclave\");\n         }\n-        buffer_pool_.push(buffers[i]);\n+        buffer_pool_.push(buf);\n       }\n     }\n     buffer = buffer_pool_.top();"
+    }
+  ]
+}

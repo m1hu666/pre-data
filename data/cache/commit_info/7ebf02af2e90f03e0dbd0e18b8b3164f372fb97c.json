@@ -1,0 +1,101 @@
+{
+  "sha": "7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c",
+  "node_id": "MDY6Q29tbWl0ODI5MTM2MzA6N2ViZjAyYWYyZTkwZjAzZTBkYmQwZTE4YjhiMzE2NGYzNzJmYjk3Yw==",
+  "commit": {
+    "author": {
+      "name": "Johannes Schultz",
+      "email": "sagamusix@openmpt.org",
+      "date": "2018-04-07T16:04:51Z"
+    },
+    "committer": {
+      "name": "Johannes Schultz",
+      "email": "sagamusix@openmpt.org",
+      "date": "2018-04-07T16:04:51Z"
+    },
+    "message": "[Fix] Possible out-of-bounds read when computing length of some IT files with pattern loops (OpenMPT: formats that are converted to IT, libopenmpt: IT/ITP/MO3), caught with afl-fuzz.\n\ngit-svn-id: https://source.openmpt.org/svn/openmpt/trunk/OpenMPT@10027 56274372-70c3-4bfc-bfc3-4c3a0b034d27",
+    "tree": {
+      "sha": "40943a5119841713d05e04c9b52dcaccc92f0898",
+      "url": "https://api.github.com/repos/OpenMPT/openmpt/git/trees/40943a5119841713d05e04c9b52dcaccc92f0898"
+    },
+    "url": "https://api.github.com/repos/OpenMPT/openmpt/git/commits/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/OpenMPT/openmpt/commits/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c",
+  "html_url": "https://github.com/OpenMPT/openmpt/commit/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c",
+  "comments_url": "https://api.github.com/repos/OpenMPT/openmpt/commits/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c/comments",
+  "author": {
+    "login": "sagamusix",
+    "id": 875883,
+    "node_id": "MDQ6VXNlcjg3NTg4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/875883?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sagamusix",
+    "html_url": "https://github.com/sagamusix",
+    "followers_url": "https://api.github.com/users/sagamusix/followers",
+    "following_url": "https://api.github.com/users/sagamusix/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sagamusix/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sagamusix/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sagamusix/subscriptions",
+    "organizations_url": "https://api.github.com/users/sagamusix/orgs",
+    "repos_url": "https://api.github.com/users/sagamusix/repos",
+    "events_url": "https://api.github.com/users/sagamusix/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sagamusix/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sagamusix",
+    "id": 875883,
+    "node_id": "MDQ6VXNlcjg3NTg4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/875883?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sagamusix",
+    "html_url": "https://github.com/sagamusix",
+    "followers_url": "https://api.github.com/users/sagamusix/followers",
+    "following_url": "https://api.github.com/users/sagamusix/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sagamusix/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sagamusix/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sagamusix/subscriptions",
+    "organizations_url": "https://api.github.com/users/sagamusix/orgs",
+    "repos_url": "https://api.github.com/users/sagamusix/repos",
+    "events_url": "https://api.github.com/users/sagamusix/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sagamusix/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5449bed7e1b84602b79812a0591cbd4d9a7cbee8",
+      "url": "https://api.github.com/repos/OpenMPT/openmpt/commits/5449bed7e1b84602b79812a0591cbd4d9a7cbee8",
+      "html_url": "https://github.com/OpenMPT/openmpt/commit/5449bed7e1b84602b79812a0591cbd4d9a7cbee8"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "29f93c1de1625eec870c49d89f9b69708f3e8ba4",
+      "filename": "soundlib/Snd_fx.cpp",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/OpenMPT/openmpt/blob/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c/soundlib%2FSnd_fx.cpp",
+      "raw_url": "https://github.com/OpenMPT/openmpt/raw/7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c/soundlib%2FSnd_fx.cpp",
+      "contents_url": "https://api.github.com/repos/OpenMPT/openmpt/contents/soundlib%2FSnd_fx.cpp?ref=7ebf02af2e90f03e0dbd0e18b8b3164f372fb97c",
+      "patch": "@@ -1204,7 +1204,8 @@ std::vector<GetLengthType> CSoundFile::GetLength(enmGetLengthResetMode adjustMod\n \t\t\tif(GetType() == MOD_TYPE_IT)\n \t\t\t{\n \t\t\t\t// IT pattern loop start row update - at the end of a pattern loop, set pattern loop start to next row (for upcoming pattern loops with missing SB0)\n-\t\t\t\tfor(CHANNELINDEX nChn = 0; nChn < GetNumChannels(); nChn++)\n+\t\t\t\tpChn = playState.Chn;\n+\t\t\t\tfor(CHANNELINDEX nChn = 0; nChn < GetNumChannels(); nChn++, pChn++)\n \t\t\t\t{\n \t\t\t\t\tif((pChn->rowCommand.command == CMD_S3MCMDEX && pChn->rowCommand.param >= 0xB1 && pChn->rowCommand.param <= 0xBF))\n \t\t\t\t\t{"
+    }
+  ]
+}

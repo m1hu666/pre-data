@@ -1,0 +1,93 @@
+{
+  "sha": "6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+  "node_id": "MDY6Q29tbWl0ODk5NDMxNjI6NmJmNjcxMzdlZjFlZTVjZDcwYzg0MmIwMTRjMzIyYjdkZWFmOTk0Yg==",
+  "commit": {
+    "author": {
+      "name": "Subodh Iyengar",
+      "email": "subodh@fb.com",
+      "date": "2019-08-08T18:38:29Z"
+    },
+    "committer": {
+      "name": "Facebook Github Bot",
+      "email": "facebook-github-bot@users.noreply.github.com",
+      "date": "2019-08-08T18:43:20Z"
+    },
+    "message": "Reject zero length handshake records.\n\nSummary:\nZero length (all padding) handshake are forbidden by RFC. Allowing\nthese was a regression in D13754697 (2c6f78a).\n\nThis is a partial fix for CVE-2019-11924\n\nReviewed By: xybu\n\nDifferential Revision: D16285100\n\nfbshipit-source-id: 05a19d31ad74601ce89156a0e59517aaad8dd928",
+    "tree": {
+      "sha": "ceec897aefe417822e9d601d420bec41ad09dead",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/git/trees/ceec897aefe417822e9d601d420bec41ad09dead"
+    },
+    "url": "https://api.github.com/repos/facebookincubator/fizz/git/commits/6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/facebookincubator/fizz/commits/6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+  "html_url": "https://github.com/facebookincubator/fizz/commit/6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+  "comments_url": "https://api.github.com/repos/facebookincubator/fizz/commits/6bf67137ef1ee5cd70c842b014c322b7deaf994b/comments",
+  "author": null,
+  "committer": {
+    "login": "facebook-github-bot",
+    "id": 6422482,
+    "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/facebook-github-bot",
+    "html_url": "https://github.com/facebook-github-bot",
+    "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+    "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+    "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+    "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "29b79d436fd7e0ce324ff3fd3d4c3bb557a8d86d",
+      "url": "https://api.github.com/repos/facebookincubator/fizz/commits/29b79d436fd7e0ce324ff3fd3d4c3bb557a8d86d",
+      "html_url": "https://github.com/facebookincubator/fizz/commit/29b79d436fd7e0ce324ff3fd3d4c3bb557a8d86d"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "a56b7625b328357eb329932c2919ef4603d082a2",
+      "filename": "fizz/record/EncryptedRecordLayer.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/6bf67137ef1ee5cd70c842b014c322b7deaf994b/fizz%2Frecord%2FEncryptedRecordLayer.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/6bf67137ef1ee5cd70c842b014c322b7deaf994b/fizz%2Frecord%2FEncryptedRecordLayer.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2FEncryptedRecordLayer.cpp?ref=6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+      "patch": "@@ -147,7 +147,7 @@ folly::Optional<TLSMessage> EncryptedReadRecordLayer::read(\n           static_cast<ContentTypeType>(msg.type)));\n   }\n \n-  if (!msg.fragment) {\n+  if (!msg.fragment || msg.fragment->empty()) {\n     if (msg.type == ContentType::application_data) {\n       msg.fragment = folly::IOBuf::create(0);\n     } else {"
+    },
+    {
+      "sha": "15307cd22a61918663e9a70ca8747fde9d137182",
+      "filename": "fizz/record/test/EncryptedRecordTest.cpp",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/facebookincubator/fizz/blob/6bf67137ef1ee5cd70c842b014c322b7deaf994b/fizz%2Frecord%2Ftest%2FEncryptedRecordTest.cpp",
+      "raw_url": "https://github.com/facebookincubator/fizz/raw/6bf67137ef1ee5cd70c842b014c322b7deaf994b/fizz%2Frecord%2Ftest%2FEncryptedRecordTest.cpp",
+      "contents_url": "https://api.github.com/repos/facebookincubator/fizz/contents/fizz%2Frecord%2Ftest%2FEncryptedRecordTest.cpp?ref=6bf67137ef1ee5cd70c842b014c322b7deaf994b",
+      "patch": "@@ -180,7 +180,7 @@ TEST_F(EncryptedRecordTest, TestAllPaddingHandshake) {\n         expectSame(buf, \"0123456789\");\n         return getBuf(\"16000000\");\n       }));\n-  EXPECT_NO_THROW(read_.read(queue_));\n+  EXPECT_ANY_THROW(read_.read(queue_));\n }\n \n TEST_F(EncryptedRecordTest, TestNoContentType) {"
+    }
+  ]
+}
