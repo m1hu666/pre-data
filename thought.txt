@@ -18,3 +18,9 @@ nvdcheck：用cve-id找对应的nvd的description。函数名被提及标记为v
 filename被提及，检查这个file变更的函数是否只有一个，标记方法同onefunc。
 
 最终输出为①函数的数据集（已打好label）②漏洞函数对（修复前函数，修复后函数）的数据集
+
+修复前漏洞函数可能在其他detail里面是良性函数！！！
+之前的逻辑函数对只采了onefunc的，CVE描述提到的漏洞函数当然应该有before/after修复版本
+REEF数据集中同一CVE在多个commit中修改了相同的函数，可能是REEF数据集的采集过程导致重复记录或者同一个CVE影响了多个分支，每个分支都有修复commit
+
+注意：GitHub Token应该设置在环境变量中或.env文件中(不要提交到仓库)
