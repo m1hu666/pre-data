@@ -49,8 +49,8 @@ class REEFDatasetBuilder:
         
         self.root_dir = root_dir
         self.data_dir = self.root_dir / 'data'
-        self.raw_dir = self.data_dir / 'raw' / 'REEF'
-        self.output_dir = self.data_dir / 'output'
+        self.raw_dir = self.data_dir / 'raw' / 'TJU-REEF-SCRIPT'  # 修改为新的数据目录
+        self.output_dir = self.data_dir / 'output_tju'  # 使用新的输出目录
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # 获取GitHub Token（如果存在）
@@ -532,7 +532,15 @@ class REEFDatasetBuilder:
         return labeled_data, mentioned_func_pairs
     
     def process_reef_sample(self, sample: Dict) -> Optional[Dict]:
-        """处理单个REEF样本"""
+        """处理单个REEF样本
+        
+        OneFunc策略：统计整个commit中所有文件的函数变化总数
+        - 如果整个commit只有1个函数变化，标记为vulnerable（PrimeVul思路）
+        - 如果有多个函数变化，不使用OneFunc标记
+        
+        NVDCheck策略：在每个文件中独立判断
+        - 检查CVE描述是否提及函数名或文件名
+        """
         cve_id = sample.get('cve_id', '')
         url = sample.get('url', '')
         details = sample.get('details', [])
@@ -548,9 +556,9 @@ class REEFDatasetBuilder:
         # 提取commit日期
         commit_date = self.extract_commit_date(commit_info)
         
-        # 处理每个变更的文件
-        all_labeled_data = []
-        all_func_pairs = []
+        # 第一遍遍历：收集所有文件的函数对和未变更函数
+        all_file_data = []  # 存储每个文件的处理结果
+        total_func_pairs = []  # 整个commit的所有函数对
         
         for detail in details:
             raw_code = detail.get('raw_code', '')
@@ -561,9 +569,7 @@ class REEFDatasetBuilder:
                 continue
             
             # 从raw_url提取filename
-            # raw_url格式: https://github.com/facebook/hermes/raw/{commit}/{filepath}
             try:
-                # URL decode
                 from urllib.parse import unquote
                 filepath = unquote(raw_url.split('/raw/')[-1].split('/', 1)[-1])
             except:
@@ -603,105 +609,133 @@ class REEFDatasetBuilder:
                 code_before, raw_code, language
             )
             
-            # 记录已添加的函数对（避免重复）
-            added_func_pairs = set()
+            # 保存这个文件的处理结果
+            file_data = {
+                'filepath': filepath,
+                'language': language,
+                'file_status': file_status,
+                'func_pairs': func_pairs,
+                'unchanged_funcs': unchanged_funcs,
+                'code_before': code_before,
+                'code_after': raw_code
+            }
+            all_file_data.append(file_data)
             
-            # OneFunc标记（只对单个函数对变更的情况）
-            onefunc_labels = self.onefunc_labeling(func_pairs, unchanged_funcs)
-            if onefunc_labels is None:
-                # 多个函数对变更，OneFunc不处理，但继续NVDCheck
-                self.stats['discarded_multi_func'] += 1
-                onefunc_labels = []  # 空列表，继续处理NVDCheck
-            else:
-                self.stats['onefunc_labeled'] += len(onefunc_labels)
-                
-                # 添加元信息（包括时间戳）
-                for label_data in onefunc_labels:
-                    label_data.update({
+            # 累计所有函数对（用于判断整个commit的函数变化总数）
+            total_func_pairs.extend(func_pairs)
+        
+        # 如果没有成功处理任何文件，返回None
+        if not all_file_data:
+            return None
+        
+        # 第二遍遍历：应用标记策略
+        all_labeled_data = []
+        all_func_pairs = []
+        added_func_pairs = set()  # 记录已添加的函数对（避免OneFunc和NVDCheck重复）
+        
+        # OneFunc标记：判断整个commit是否只有1个函数变化
+        onefunc_applied = False
+        if len(total_func_pairs) == 1:
+            # 整个commit只有1个函数变化，应用OneFunc标记
+            onefunc_applied = True
+            self.stats['onefunc_labeled'] += 1
+            
+            # 找到这个唯一的函数对所在的文件
+            for file_data in all_file_data:
+                if len(file_data['func_pairs']) == 1:
+                    func_name, func_before, func_after = file_data['func_pairs'][0]
+                    
+                    # 标记修复前函数为vulnerable（保存func_after用于后续生成函数对）
+                    all_labeled_data.append({
+                        'func_name': func_name,
+                        'func_code': func_before,
+                        'func_code_after': func_after,  # 保存修复后版本
+                        'label': 'vulnerable',
+                        'source': 'onefunc',
                         'cve_id': cve_id,
-                        'language': language,
-                        'filename': filepath,
-                        'file_status': file_status,
+                        'language': file_data['language'],
+                        'filename': file_data['filepath'],
+                        'file_status': file_data['file_status'],
+                        'project_language': sample.get('language', ''),
+                        'cvss': sample.get('cvss', ''),
+                        'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
+                        'commit_date': commit_date
+                    })
+                    
+                    # 标记修复后函数为benign
+                    all_labeled_data.append({
+                        'func_name': func_name,
+                        'func_code': func_after,
+                        'label': 'benign',
+                        'source': 'onefunc',
+                        'cve_id': cve_id,
+                        'language': file_data['language'],
+                        'filename': file_data['filepath'],
+                        'file_status': file_data['file_status'],
                         'project_language': sample.get('language', ''),
                         'cvss': sample.get('cvss', ''),
                         'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
                         'commit_date': commit_date
                     })
                 
-                all_labeled_data.extend(onefunc_labels)
-                
-                # 保存函数对（用于漏洞函数对数据集）- 只有单个函数对才保存
-                if len(func_pairs) == 1:
-                    func_name, func_before, func_after = func_pairs[0]
-                    
-                    # 检查before和after都非空
-                    if func_before and func_before.strip() and func_after and func_after.strip():
-                        func_pair_key = (func_name, self.compute_md5(func_before))
-                        added_func_pairs.add(func_pair_key)
-                        
-                        all_func_pairs.append({
-                            'func_name': func_name,
-                            'func_before': func_before,
-                            'func_after': func_after,
-                            'cve_id': cve_id,
-                            'language': language,
-                            'filename': filepath,
-                            'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
-                            'cvss': sample.get('cvss', ''),
-                            'project_language': sample.get('language', ''),
-                            'commit_date': commit_date,
-                            'source': 'onefunc'
-                        })
-            
-            # NVDCheck标记（对所有数据都处理，包括多个函数对的情况）
+                # 标记该文件的所有未变更函数为benign
+                for func_name, func_code in file_data['unchanged_funcs'].items():
+                    all_labeled_data.append({
+                        'func_name': func_name,
+                        'func_code': func_code,
+                        'label': 'benign',
+                        'source': 'onefunc_unchanged',
+                        'cve_id': cve_id,
+                        'language': file_data['language'],
+                        'filename': file_data['filepath'],
+                        'file_status': file_data['file_status'],
+                        'project_language': sample.get('language', ''),
+                        'cvss': sample.get('cvss', ''),
+                        'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
+                        'commit_date': commit_date
+                    })
+        elif len(total_func_pairs) > 1:
+            # 多个函数变化，记录但不用OneFunc标记
+            self.stats['discarded_multi_func'] += 1
+        
+        # NVDCheck标记：对每个文件独立判断
+        for file_data in all_file_data:
             nvd_labels, nvd_func_pairs = self.nvdcheck_labeling(
-                cve_id, func_pairs, unchanged_funcs, [filepath]
+                cve_id, 
+                file_data['func_pairs'], 
+                file_data['unchanged_funcs'], 
+                [file_data['filepath']]
             )
+            
             if nvd_labels:
                 self.stats['nvdcheck_labeled'] += len(nvd_labels)
+                
+                # 添加元信息并保存func_after用于后续生成函数对
                 for label_data in nvd_labels:
+                    # 找到对应的func_after
+                    func_after = None
+                    for func_name, func_before, func_after_candidate in file_data['func_pairs']:
+                        if func_name == label_data['func_name'] and self.compute_md5(func_before) == self.compute_md5(label_data['func_code']):
+                            func_after = func_after_candidate
+                            break
+                    
                     label_data.update({
+                        'func_code_after': func_after,  # 保存修复后版本
                         'cve_id': cve_id,
-                        'language': language,
-                        'filename': filepath,
-                        'file_status': file_status,
+                        'language': file_data['language'],
+                        'filename': file_data['filepath'],
+                        'file_status': file_data['file_status'],
                         'project_language': sample.get('language', ''),
                         'cvss': sample.get('cvss', ''),
                         'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
                         'commit_date': commit_date
                     })
-                all_labeled_data.extend(nvd_labels)
                 
-                # 添加NVDCheck发现的函数对（跳过已由OneFunc添加的）
-                for func_name, func_before, func_after in nvd_func_pairs:
-                    # 检查before和after都非空
-                    if not (func_before and func_before.strip() and func_after and func_after.strip()):
-                        continue
-                    
-                    func_pair_key = (func_name, self.compute_md5(func_before))
-                    
-                    # 如果该函数对已被OneFunc添加，跳过
-                    if func_pair_key in added_func_pairs:
-                        continue
-                    
-                    added_func_pairs.add(func_pair_key)
-                    all_func_pairs.append({
-                        'func_name': func_name,
-                        'func_before': func_before,
-                        'func_after': func_after,
-                        'cve_id': cve_id,
-                        'language': language,
-                        'filename': filepath,
-                        'cwe': sample.get('CWEs', [])[0] if sample.get('CWEs') else '',
-                        'cvss': sample.get('cvss', ''),
-                        'project_language': sample.get('language', ''),
-                        'commit_date': commit_date,
-                        'source': 'nvdcheck'
-                    })
+                all_labeled_data.extend(nvd_labels)
         
         return {
             'labeled_functions': all_labeled_data,
-            'function_pairs': all_func_pairs
+            'function_pairs': []  # 不在这里生成函数对，后续从vulnerable函数中提取
         }
     
     def build_dataset(self, jsonl_file: Path, max_samples: int = None):
@@ -784,7 +818,7 @@ class REEFDatasetBuilder:
         保留原有单文件构建逻辑不变，只在此方法中做多文件聚合和JSONL输出。
         """
         # 打开日志文件
-        log_file = self.root_dir / 'result.log'
+        log_file = self.root_dir / 'result_tju.log'  # 使用新的日志文件名
         log_f = open(log_file, 'w', encoding='utf-8')
         
         def log_print(msg):
@@ -793,7 +827,7 @@ class REEFDatasetBuilder:
             log_f.write(msg + '\n')
             log_f.flush()
         
-        log_print("开始处理REEF数据集（多文件聚合）")
+        log_print("开始处理TJU-REEF-SCRIPT数据集（多文件聚合）")
         log_print(f"{'='*70}\n")
 
         # 按文件处理并记录每个文件的统计信息
@@ -835,14 +869,15 @@ class REEFDatasetBuilder:
                             nvdcheck_count += 1
                     
                     file_labeled_functions.extend(result['labeled_functions'])
-                    file_function_pairs.extend(result['function_pairs'])
             
             # 汇总到全局
             all_labeled_functions.extend(file_labeled_functions)
-            all_function_pairs.extend(file_function_pairs)
             
             # 计算该文件的vulnerable数量（去重前）
             vulnerable_count = sum(1 for f in file_labeled_functions if f.get('label') == 'vulnerable')
+            # 计算该文件的函数对数量（有func_code_after的vulnerable函数）
+            file_function_pairs_count = sum(1 for f in file_labeled_functions 
+                                           if f.get('label') == 'vulnerable' and f.get('func_code_after'))
             
             # 记录该文件统计
             file_stat = {
@@ -852,14 +887,14 @@ class REEFDatasetBuilder:
                 'nvdcheck_labeled': nvdcheck_count,
                 'total_functions': len(file_labeled_functions),
                 'vulnerable_functions': vulnerable_count,
-                'function_pairs': len(file_function_pairs)
+                'function_pairs': file_function_pairs_count
             }
             file_stats.append(file_stat)
             
             log_print(f"  OneFunc标记: {onefunc_count} 条")
             log_print(f"  NVDCheck标记: {nvdcheck_count} 条")
             log_print(f"  总函数数: {len(file_labeled_functions)} (vulnerable: {vulnerable_count}, benign: {len(file_labeled_functions)-vulnerable_count})")
-            log_print(f"  函数对数: {len(file_function_pairs)}")
+            log_print(f"  函数对数: {file_function_pairs_count}")
             
             if max_samples and total_samples_count >= max_samples:
                 log_print(f"\n已达到最大样本数 {max_samples}，停止处理")
@@ -915,7 +950,7 @@ class REEFDatasetBuilder:
             # 移除临时的MD5列
             df_functions = df_functions.drop(columns=['func_code_md5'])
 
-            jsonl_path = self.output_dir / 'reef_labeled_functions.jsonl'
+            jsonl_path = self.output_dir / 'tju_reef_labeled_functions.jsonl'  # 新的输出文件名
             df_functions.to_json(jsonl_path, orient='records', lines=True, force_ascii=False)
             log_print(f"函数JSONL数据集已保存: {jsonl_path}")
             log_print(f"原始函数数: {original_count}, 去重后: {dedup_count} (移除 {original_count - dedup_count} 个重复)")
@@ -925,7 +960,36 @@ class REEFDatasetBuilder:
             log_print(f"  vulnerable: {vulnerable_count}")
             log_print(f"  benign: {benign_count}")
 
-        # 2. 漏洞函数对数据集
+        # 2. 漏洞函数对数据集 - 从标记为vulnerable的函数中提取
+        log_print("\n从vulnerable函数中提取漏洞函数对...")
+        if all_labeled_functions:
+            # 筛选出所有vulnerable函数（且有func_code_after字段）
+            vulnerable_funcs = [f for f in all_labeled_functions 
+                               if f.get('label') == 'vulnerable' and f.get('func_code_after')]
+            
+            log_print(f"  找到 {len(vulnerable_funcs)} 个vulnerable函数有对应的修复版本")
+            
+            # 构建函数对
+            all_function_pairs = []
+            for func in vulnerable_funcs:
+                func_pair = {
+                    'func_name': func['func_name'],
+                    'func_before': func['func_code'],
+                    'func_after': func['func_code_after'],
+                    'cve_id': func.get('cve_id', ''),
+                    'language': func.get('language', ''),
+                    'filename': func.get('filename', ''),
+                    'cwe': func.get('cwe', ''),
+                    'cvss': func.get('cvss', ''),
+                    'project_language': func.get('project_language', ''),
+                    'commit_date': func.get('commit_date', ''),
+                    'source': func.get('source', '')
+                }
+                all_function_pairs.append(func_pair)
+            
+            log_print(f"  生成了 {len(all_function_pairs)} 个初始函数对")
+        
+        # 应用PrimeVul去重
         if all_function_pairs:
             df_pairs = pd.DataFrame(all_function_pairs)
             
@@ -947,10 +1011,18 @@ class REEFDatasetBuilder:
             unchanged_pairs = df_pairs[df_pairs['md5_before'] == df_pairs['md5_after']]
             if len(unchanged_pairs) > 0:
                 onefunc_unchanged = len(unchanged_pairs[unchanged_pairs['source'] == 'onefunc'])
-                nvdcheck_unchanged = len(unchanged_pairs[unchanged_pairs['source'] == 'nvdcheck'])
+                nvdcheck_unchanged = len(unchanged_pairs[unchanged_pairs['source'].str.startswith('nvdcheck')])
                 log_print(f"    发现 {len(unchanged_pairs)} 个未实际变化的函数对:")
                 log_print(f"      - OneFunc: {onefunc_unchanged} 个（TreeSitter提取问题/Patch仅改注释空白）")
                 log_print(f"      - NVDCheck: {nvdcheck_unchanged} 个（CVE描述提到但未实际修改的函数）")
+                
+                # 显示source字段的实际分布（用于调试）
+                if len(unchanged_pairs) != onefunc_unchanged + nvdcheck_unchanged:
+                    other_sources = unchanged_pairs[~unchanged_pairs['source'].isin(['onefunc']) & 
+                                                     ~unchanged_pairs['source'].str.startswith('nvdcheck')]
+                    if len(other_sources) > 0:
+                        log_print(f"      - 其他来源: {len(other_sources)} 个")
+                        log_print(f"        来源详情: {other_sources['source'].value_counts().to_dict()}")
             
             # 过滤MD5相同的（即没有实际变化的）
             df_pairs = df_pairs[df_pairs['md5_before'] != df_pairs['md5_after']]
@@ -1000,7 +1072,7 @@ class REEFDatasetBuilder:
             # 移除临时的MD5列
             df_pairs = df_pairs.drop(columns=['md5_before', 'md5_after'])
 
-            jsonl_path = self.output_dir / 'reef_vulnerability_pairs.jsonl'
+            jsonl_path = self.output_dir / 'tju_reef_vulnerability_pairs.jsonl'  # 新的输出文件名
             df_pairs.to_json(jsonl_path, orient='records', lines=True, force_ascii=False)
             log_print(f"\n漏洞函数对JSONL数据集已保存: {jsonl_path}")
             log_print(f"原始函数对数: {original_count}")
@@ -1011,7 +1083,7 @@ class REEFDatasetBuilder:
             # 统计函数对来源
             if 'source' in df_pairs.columns:
                 onefunc_pairs = len(df_pairs[df_pairs['source'] == 'onefunc'])
-                nvdcheck_pairs = len(df_pairs[df_pairs['source'] == 'nvdcheck'])
+                nvdcheck_pairs = len(df_pairs[df_pairs['source'].str.startswith('nvdcheck')])
                 log_print(f"  函数对来源:")
                 log_print(f"    - OneFunc: {onefunc_pairs}")
                 log_print(f"    - NVDCheck: {nvdcheck_pairs}")

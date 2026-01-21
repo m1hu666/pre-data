@@ -61,6 +61,8 @@ python src/simple_test.py
 ```bash
 # 处理C++数据集
 python src/build_primevul_dataset.py
+
+/home/m1hu/pre-data/venv/bin/python src/build_primevul_dataset.py
 ```
 
 ## 输出文件
