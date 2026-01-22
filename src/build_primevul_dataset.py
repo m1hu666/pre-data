@@ -20,6 +20,7 @@ import tempfile
 import requests
 import warnings
 import hashlib
+import time
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional, Set
 from collections import defaultdict
@@ -71,7 +72,12 @@ class REEFDatasetBuilder:
             'failed_patch': 0,
             'onefunc_labeled': 0,
             'nvdcheck_labeled': 0,
-            'discarded_multi_func': 0
+            'discarded_multi_func': 0,
+            'api_failures': {},  # {status_code: count}
+            'api_exceptions': 0,
+            'api_from_cache': 0,
+            'api_new_requests': 0,
+            'api_retries': 0
         }
     
     @staticmethod
@@ -259,8 +265,16 @@ class REEFDatasetBuilder:
         except Exception:
             return None
     
-    def fetch_commit_info(self, url: str) -> Optional[Dict]:
-        """从GitHub API获取commit信息"""
+    def fetch_commit_info(self, url: str, max_retries: int = 3) -> Optional[Dict]:
+        """从GitHub API获取commit信息，带重试机制
+        
+        Args:
+            url: GitHub commit API URL
+            max_retries: 最大重试次数
+            
+        Returns:
+            commit信息字典，失败返回None
+        """
         try:
             # 添加缓存机制，避免重复请求
             cache_dir = self.data_dir / 'cache' / 'commit_info'
@@ -270,32 +284,109 @@ class REEFDatasetBuilder:
             commit_hash = url.split('/')[-1]
             cache_file = cache_dir / f"{commit_hash}.json"
             
+            # 检查缓存
             if cache_file.exists():
-                with open(cache_file, 'r', encoding='utf-8') as f:
-                    return json.load(f)
+                try:
+                    with open(cache_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        self.stats['api_from_cache'] += 1
+                        return data
+                except Exception:
+                    # 缓存文件损坏，删除并重新请求
+                    cache_file.unlink(missing_ok=True)
             
             # 构建请求头（使用GitHub Token进行认证）
             headers = {
-                'Accept': 'application/vnd.github.v3+json'
+                'Accept': 'application/vnd.github.v3+json',
+                'User-Agent': 'REEF-Dataset-Builder'
             }
             if self.github_token:
                 headers['Authorization'] = f'token {self.github_token}'
             
-            # 请求GitHub API
-            response = requests.get(url, headers=headers, timeout=30)
-            if response.status_code == 200:
-                data = response.json()
-                # 保存到缓存
-                with open(cache_file, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, indent=2)
-                return data
-            else:
-                # 记录失败原因但不打印详细信息
-                self.stats.setdefault('api_failures', {})[response.status_code] = \
-                    self.stats.get('api_failures', {}).get(response.status_code, 0) + 1
-                return None
+            # 带重试的请求GitHub API
+            for attempt in range(max_retries):
+                try:
+                    # 添加延迟避免触发rate limit (指数退避)
+                    if attempt > 0:
+                        wait_time = min(2 ** attempt, 60)  # 最多等60秒
+                        time.sleep(wait_time)
+                        self.stats['api_retries'] += 1
+                    
+                    # 发送请求
+                    response = requests.get(url, headers=headers, timeout=30)
+                    
+                    # 检查rate limit状态
+                    remaining = response.headers.get('X-RateLimit-Remaining')
+                    reset_time = response.headers.get('X-RateLimit-Reset')
+                    
+                    if response.status_code == 200:
+                        data = response.json()
+                        # 保存到缓存
+                        try:
+                            with open(cache_file, 'w', encoding='utf-8') as f:
+                                json.dump(data, f, indent=2)
+                        except Exception:
+                            pass  # 缓存失败不影响主流程
+                        
+                        self.stats['api_new_requests'] += 1
+                        return data
+                    
+                    elif response.status_code == 403:
+                        # 可能是rate limit或权限问题
+                        if remaining == '0':
+                            # Rate limit耗尽
+                            if reset_time:
+                                wait_until = int(reset_time) - int(time.time())
+                                if wait_until > 0 and wait_until < 3600:  # 最多等1小时
+                                    if attempt < max_retries - 1:
+                                        time.sleep(wait_until + 1)
+                                        continue
+                        # 记录403错误
+                        self.stats['api_failures'][403] = self.stats['api_failures'].get(403, 0) + 1
+                        return None
+                    
+                    elif response.status_code == 429:
+                        # Too Many Requests - 等待后重试
+                        retry_after = response.headers.get('Retry-After', '60')
+                        wait_time = min(int(retry_after), 300)  # 最多等5分钟
+                        if attempt < max_retries - 1:
+                            time.sleep(wait_time)
+                            continue
+                        self.stats['api_failures'][429] = self.stats['api_failures'].get(429, 0) + 1
+                        return None
+                    
+                    elif response.status_code in [404, 422]:
+                        # 资源不存在或无法处理，不需要重试
+                        self.stats['api_failures'][response.status_code] = \
+                            self.stats['api_failures'].get(response.status_code, 0) + 1
+                        return None
+                    
+                    else:
+                        # 其他错误，记录并可能重试
+                        self.stats['api_failures'][response.status_code] = \
+                            self.stats['api_failures'].get(response.status_code, 0) + 1
+                        if attempt < max_retries - 1:
+                            continue
+                        return None
+                
+                except requests.exceptions.Timeout:
+                    self.stats['api_failures']['timeout'] = \
+                        self.stats['api_failures'].get('timeout', 0) + 1
+                    if attempt < max_retries - 1:
+                        continue
+                    return None
+                
+                except requests.exceptions.RequestException as e:
+                    self.stats['api_failures']['request_error'] = \
+                        self.stats['api_failures'].get('request_error', 0) + 1
+                    if attempt < max_retries - 1:
+                        continue
+                    return None
+            
+            return None
+            
         except Exception as e:
-            # 记录异常但不打印详细信息
+            # 记录未预期的异常
             self.stats['api_exceptions'] = self.stats.get('api_exceptions', 0) + 1
             return None
     
@@ -803,12 +894,41 @@ class REEFDatasetBuilder:
         # 打印统计信息
         print("\n" + "="*50)
         print("处理统计:")
+        
+        # 计算API统计
+        api_total_attempts = self.stats.get('api_new_requests', 0) + sum(self.stats.get('api_failures', {}).values())
+        api_from_cache = self.stats.get('api_from_cache', 0)
+        api_success = self.stats.get('api_new_requests', 0)
+        api_retries = self.stats.get('api_retries', 0)
+        
         for key, value in self.stats.items():
             if key == 'api_failures' and isinstance(value, dict):
-                print(f"GitHub API失败:")
-                for status_code, count in value.items():
-                    print(f"  状态码 {status_code}: {count} 次")
-            else:
+                total_failures = sum(value.values())
+                print(f"GitHub API请求统计:")
+                print(f"  从缓存加载: {api_from_cache} 次")
+                print(f"  新请求成功: {api_success} 次")
+                print(f"  新请求失败: {total_failures} 次")
+                print(f"  重试次数: {api_retries} 次")
+                if api_total_attempts > 0:
+                    success_rate = (api_success / api_total_attempts) * 100
+                    print(f"  成功率: {success_rate:.1f}% ({api_success}/{api_total_attempts})")
+                print(f"  失败详情:")
+                for status_code, count in sorted(value.items(), key=lambda x: x[1], reverse=True):
+                    if isinstance(status_code, int):
+                        if status_code == 403:
+                            print(f"    状态码 {status_code}: {count} 次 (权限/Rate Limit)")
+                        elif status_code == 429:
+                            print(f"    状态码 {status_code}: {count} 次 (Too Many Requests)")
+                        elif status_code == 404:
+                            print(f"    状态码 {status_code}: {count} 次 (资源不存在)")
+                        else:
+                            print(f"    状态码 {status_code}: {count} 次")
+                    else:
+                        print(f"    {status_code}: {count} 次")
+            elif key == 'api_exceptions':
+                if value > 0:
+                    print(f"API未预期异常: {value} 次")
+            elif key not in ['api_from_cache', 'api_new_requests', 'api_retries']:
                 print(f"{key}: {value}")
         print("="*50)
 
@@ -1119,12 +1239,48 @@ class REEFDatasetBuilder:
         log_print(f"\n{'='*70}")
         log_print("【详细处理统计】")
         log_print(f"{'='*70}")
+        
+        # 计算API总请求数和成功率
+        api_total_attempts = self.stats.get('api_new_requests', 0) + sum(self.stats.get('api_failures', {}).values())
+        api_from_cache = self.stats.get('api_from_cache', 0)
+        api_success = self.stats.get('api_new_requests', 0)
+        api_retries = self.stats.get('api_retries', 0)
+        
         for key, value in self.stats.items():
             if key == 'api_failures' and isinstance(value, dict):
-                log_print(f"GitHub API失败:")
-                for status_code, count in value.items():
-                    log_print(f"  状态码 {status_code}: {count} 次")
-            else:
+                total_failures = sum(value.values())
+                log_print(f"GitHub API请求统计:")
+                log_print(f"  从缓存加载: {api_from_cache} 次")
+                log_print(f"  新请求成功: {api_success} 次")
+                log_print(f"  新请求失败: {total_failures} 次")
+                log_print(f"  重试次数: {api_retries} 次")
+                if api_total_attempts > 0:
+                    success_rate = (api_success / api_total_attempts) * 100
+                    log_print(f"  成功率: {success_rate:.1f}% ({api_success}/{api_total_attempts})")
+                log_print(f"  失败详情:")
+                for status_code, count in sorted(value.items(), key=lambda x: x[1], reverse=True):
+                    if isinstance(status_code, int):
+                        if status_code == 403:
+                            log_print(f"    状态码 {status_code}: {count} 次 (权限/Rate Limit)")
+                        elif status_code == 429:
+                            log_print(f"    状态码 {status_code}: {count} 次 (Too Many Requests)")
+                        elif status_code == 404:
+                            log_print(f"    状态码 {status_code}: {count} 次 (资源不存在)")
+                        elif status_code == 422:
+                            log_print(f"    状态码 {status_code}: {count} 次 (无法处理)")
+                        else:
+                            log_print(f"    状态码 {status_code}: {count} 次")
+                    else:
+                        if status_code == 'timeout':
+                            log_print(f"    超时错误: {count} 次")
+                        elif status_code == 'request_error':
+                            log_print(f"    请求错误: {count} 次")
+                        else:
+                            log_print(f"    {status_code}: {count} 次")
+            elif key == 'api_exceptions':
+                if value > 0:
+                    log_print(f"API未预期异常: {value} 次")
+            elif key not in ['api_from_cache', 'api_new_requests', 'api_retries']:
                 log_print(f"{key}: {value}")
         
         # 打印各文件统计表格
