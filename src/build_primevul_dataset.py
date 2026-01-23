@@ -21,6 +21,7 @@ import requests
 import warnings
 import hashlib
 import time
+import signal
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional, Set
 from collections import defaultdict
@@ -38,6 +39,16 @@ root_dir = directory_name.parent
 sys.path.append(str(directory_name))
 
 from tree_sitter_parse import TreeSitterParse
+
+
+class TimeoutError(Exception):
+    """超时异常"""
+    pass
+
+
+def timeout_handler(signum, frame):
+    """超时信号处理函数"""
+    raise TimeoutError("处理超时")
 
 
 class REEFDatasetBuilder:
@@ -77,8 +88,29 @@ class REEFDatasetBuilder:
             'api_exceptions': 0,
             'api_from_cache': 0,
             'api_new_requests': 0,
-            'api_retries': 0
+            'api_retries': 0,
+            # 新增详细统计
+            'api_failed_samples': 0,  # API失败导致无法处理的样本
+            'no_details_samples': 0,  # 没有details的样本
+            'no_valid_files': 0,  # 没有有效文件的样本
+            'total_func_pairs_extracted': 0,  # 提取的函数对总数
+            'func_pair_distribution': {},  # {函数对数量: 样本数}
+            # TreeSitter诊断统计
+            'treesitter_parse_success': 0,  # 成功解析的文件
+            'treesitter_parse_failed': 0,  # 解析失败的文件
+            'treesitter_no_functions': 0,  # 解析成功但没找到函数
+            'treesitter_functions_found_before': 0,  # before中找到的函数总数
+            'treesitter_functions_found_after': 0,  # after中找到的函数总数
+            'treesitter_no_changes': 0,  # 找到函数但没有变化
+            'language_distribution': {},  # 各语言处理统计
+            'timeout_samples': 0,  # 超时跳过的样本
         }
+        
+        # 超时设置（秒）
+        self.sample_timeout = 10  # 单个样本处理超时
+
+        # 解析器缓存，避免重复构建TreeSitter库
+        self.parser_cache: Dict[str, TreeSitterParse] = {}
     
     @staticmethod
     def normalize_code(code: str) -> str:
@@ -451,10 +483,28 @@ class REEFDatasetBuilder:
         try:
             lang_config = self.config['data_preprocess'].get(language)
             if not lang_config:
-                # 静默跳过不支持的语言
+                # 语言不支持
+                if language not in self.stats['language_distribution']:
+                    self.stats['language_distribution'][language] = {
+                        'total': 0, 'no_config': 0, 'parse_success': 0, 
+                        'no_functions': 0, 'has_functions': 0
+                    }
+                self.stats['language_distribution'][language]['total'] += 1
+                self.stats['language_distribution'][language]['no_config'] += 1
                 return [], {}
             
-            parser = TreeSitterParse(lang_config)
+            # 记录语言统计
+            if language not in self.stats['language_distribution']:
+                self.stats['language_distribution'][language] = {
+                    'total': 0, 'no_config': 0, 'parse_success': 0,
+                    'no_functions': 0, 'has_functions': 0
+                }
+            self.stats['language_distribution'][language]['total'] += 1
+            
+            # 复用解析器，避免重复构建.so
+            if language not in self.parser_cache:
+                self.parser_cache[language] = TreeSitterParse(lang_config)
+            parser = self.parser_cache[language]
             
             with tempfile.TemporaryDirectory() as tmp_dir:
                 tmp_path = Path(tmp_dir)
@@ -473,12 +523,29 @@ class REEFDatasetBuilder:
                 tree_before = parser.parse_code(code_before)
                 tree_after = parser.parse_code(code_after)
                 
+                self.stats['treesitter_parse_success'] += 1
+                self.stats['language_distribution'][language]['parse_success'] += 1
+                
                 # 获取函数对
                 changed_functions = parser.compare_functions(tree_before, tree_after)
                 
                 # 提取所有函数（包括未变更的）
                 all_funcs_before = parser.get_functions(tree_before)
                 all_funcs_after = parser.get_functions(tree_after)
+                
+                # 统计找到的函数数量
+                self.stats['treesitter_functions_found_before'] += len(all_funcs_before)
+                self.stats['treesitter_functions_found_after'] += len(all_funcs_after)
+                
+                if len(all_funcs_before) == 0 and len(all_funcs_after) == 0:
+                    self.stats['treesitter_no_functions'] += 1
+                    self.stats['language_distribution'][language]['no_functions'] += 1
+                else:
+                    self.stats['language_distribution'][language]['has_functions'] += 1
+                
+                if len(changed_functions) == 0 and len(all_funcs_before) > 0:
+                    # 找到了函数但没有变化
+                    self.stats['treesitter_no_changes'] += 1
                 
                 # 构建函数对列表
                 func_pairs = []
@@ -510,7 +577,8 @@ class REEFDatasetBuilder:
                 return func_pairs, unchanged_funcs
                 
         except Exception as e:
-            # 静默处理异常
+            # 记录解析失败
+            self.stats['treesitter_parse_failed'] += 1
             return [], {}
      
     def onefunc_labeling(
@@ -631,17 +699,21 @@ class REEFDatasetBuilder:
         
         NVDCheck策略：在每个文件中独立判断
         - 检查CVE描述是否提及函数名或文件名
+        
+        返回处理结果和详细统计信息
         """
         cve_id = sample.get('cve_id', '')
         url = sample.get('url', '')
         details = sample.get('details', [])
         
         if not details:
+            self.stats['no_details_samples'] += 1
             return None
         
         # 获取commit信息
         commit_info = self.fetch_commit_info(url)
         if not commit_info or 'files' not in commit_info:
+            self.stats['api_failed_samples'] += 1
             return None
         
         # 提取commit日期
@@ -717,7 +789,17 @@ class REEFDatasetBuilder:
         
         # 如果没有成功处理任何文件，返回None
         if not all_file_data:
+            self.stats['no_valid_files'] += 1
             return None
+        
+        # 统计提取的函数对数量
+        total_pairs_count = len(total_func_pairs)
+        self.stats['total_func_pairs_extracted'] += total_pairs_count
+        
+        # 记录函数对数量分布
+        if total_pairs_count not in self.stats['func_pair_distribution']:
+            self.stats['func_pair_distribution'][total_pairs_count] = 0
+        self.stats['func_pair_distribution'][total_pairs_count] += 1
         
         # 第二遍遍历：应用标记策略
         all_labeled_data = []
@@ -979,16 +1061,35 @@ class REEFDatasetBuilder:
             nvdcheck_count = 0
             
             for sample in tqdm(file_samples, desc=f"  处理 {jsonl_file.name}"):
-                result = self.process_reef_sample(sample)
-                if result:
-                    # 统计该样本的OneFunc和NVDCheck数量
-                    for func in result['labeled_functions']:
-                        if func.get('source') in ['onefunc', 'onefunc_unchanged']:
-                            onefunc_count += 1
-                        elif func.get('source', '').startswith('nvdcheck'):
-                            nvdcheck_count += 1
+                try:
+                    # 设置超时
+                    signal.signal(signal.SIGALRM, timeout_handler)
+                    signal.alarm(self.sample_timeout)
                     
-                    file_labeled_functions.extend(result['labeled_functions'])
+                    result = self.process_reef_sample(sample)
+                    
+                    # 取消超时
+                    signal.alarm(0)
+                    
+                    if result:
+                        # 统计该样本的OneFunc和NVDCheck数量
+                        for func in result['labeled_functions']:
+                            if func.get('source') in ['onefunc', 'onefunc_unchanged']:
+                                onefunc_count += 1
+                            elif func.get('source', '').startswith('nvdcheck'):
+                                nvdcheck_count += 1
+                        
+                        file_labeled_functions.extend(result['labeled_functions'])
+                
+                except TimeoutError:
+                    # 超时，取消alarm并跳过
+                    signal.alarm(0)
+                    self.stats['timeout_samples'] += 1
+                    continue
+                except Exception as e:
+                    # 其他异常，也取消alarm
+                    signal.alarm(0)
+                    continue
             
             # 汇总到全局
             all_labeled_functions.extend(file_labeled_functions)
@@ -1240,6 +1341,79 @@ class REEFDatasetBuilder:
         log_print("【详细处理统计】")
         log_print(f"{'='*70}")
         
+        # 样本处理漏斗分析
+        log_print(f"\n样本处理流程:")
+        log_print(f"  1. 总样本数: {self.stats['total_samples']}")
+        log_print(f"  2. 跳过 - 没有details: {self.stats.get('no_details_samples', 0)} 个")
+        log_print(f"  3. 跳过 - API获取commit信息失败: {self.stats.get('api_failed_samples', 0)} 个")
+        processed_samples = self.stats['total_samples'] - self.stats.get('no_details_samples', 0) - self.stats.get('api_failed_samples', 0)
+        log_print(f"  4. 成功获取commit信息: {processed_samples} 个")
+        log_print(f"  5. 跳过 - 没有有效文件: {self.stats.get('no_valid_files', 0)} 个")
+        valid_samples = processed_samples - self.stats.get('no_valid_files', 0)
+        log_print(f"  6. 成功提取函数对: {valid_samples} 个")
+        
+        # 函数对提取统计
+        log_print(f"\n函数对提取统计:")
+        log_print(f"  成功patch: {self.stats.get('successful_patch', 0)} 个文件")
+        log_print(f"  失败patch: {self.stats.get('failed_patch', 0)} 个文件")
+        log_print(f"  提取的函数对总数: {self.stats.get('total_func_pairs_extracted', 0)} 个")
+        
+        # 函数对数量分布表格
+        if self.stats.get('func_pair_distribution'):
+            log_print(f"\n函数对数量分布（每个commit）:")
+            log_print(f"  {'函数对数':<12} {'样本数':<12} {'百分比':<12} {'OneFunc标记':<15}")
+            log_print(f"  {'-'*12} {'-'*12} {'-'*12} {'-'*15}")
+            
+            sorted_dist = sorted(self.stats['func_pair_distribution'].items())
+            for pair_count, sample_count in sorted_dist:
+                percentage = (sample_count / valid_samples * 100) if valid_samples > 0 else 0
+                can_onefunc = "✓ 是" if pair_count == 1 else "✗ 否 (多函数)"
+                log_print(f"  {pair_count:<12} {sample_count:<12} {percentage:<11.1f}% {can_onefunc:<15}")
+            
+            # 统计OneFunc和多函数的总数
+            onefunc_eligible = self.stats['func_pair_distribution'].get(1, 0)
+            multi_func = sum(count for pairs, count in self.stats['func_pair_distribution'].items() if pairs > 1)
+            zero_func = self.stats['func_pair_distribution'].get(0, 0)
+            
+            log_print(f"\n  汇总:")
+            log_print(f"    单函数修改(可OneFunc): {onefunc_eligible} 个 ({onefunc_eligible/valid_samples*100:.1f}%)")
+            log_print(f"    多函数修改(丢弃): {multi_func} 个 ({multi_func/valid_samples*100:.1f}%)")
+            log_print(f"    无函数变化(丢弃): {zero_func} 个 ({zero_func/valid_samples*100:.1f}%)")
+        
+        # 标记策略统计
+        log_print(f"\n标记策略应用:")
+        log_print(f"  OneFunc标记: {self.stats.get('onefunc_labeled', 0)} 条")
+        log_print(f"  NVDCheck标记: {self.stats.get('nvdcheck_labeled', 0)} 条")
+        log_print(f"  多函数丢弃: {self.stats.get('discarded_multi_func', 0)} 个commit")
+        
+        # TreeSitter诊断统计
+        log_print(f"\nTreeSitter函数提取诊断:")
+        log_print(f"  解析成功: {self.stats.get('treesitter_parse_success', 0)} 个文件")
+        log_print(f"  解析失败: {self.stats.get('treesitter_parse_failed', 0)} 个文件")
+        log_print(f"  找到函数(before): {self.stats.get('treesitter_functions_found_before', 0)} 个")
+        log_print(f"  找到函数(after): {self.stats.get('treesitter_functions_found_after', 0)} 个")
+        log_print(f"  解析成功但没找到函数: {self.stats.get('treesitter_no_functions', 0)} 个文件")
+        log_print(f"  找到函数但没有变化: {self.stats.get('treesitter_no_changes', 0)} 个文件")
+        
+        # 语言处理统计
+        if self.stats.get('language_distribution'):
+            log_print(f"\n语言处理详情:")
+            log_print(f"  {'语言':<15} {'总文件':<10} {'无配置':<10} {'解析成功':<10} {'无函数':<10} {'有函数':<10}")
+            log_print(f"  {'-'*15} {'-'*10} {'-'*10} {'-'*10} {'-'*10} {'-'*10}")
+            
+            sorted_langs = sorted(self.stats['language_distribution'].items(), 
+                                 key=lambda x: x[1]['total'], reverse=True)
+            for lang, stats in sorted_langs:
+                log_print(f"  {lang:<15} {stats['total']:<10} {stats['no_config']:<10} "
+                         f"{stats['parse_success']:<10} {stats['no_functions']:<10} {stats['has_functions']:<10}")
+            
+            log_print(f"\n  说明:")
+            log_print(f"    - 无配置: 语言不在data_preprocess.yaml中，TreeSitter不支持")
+            log_print(f"    - 无函数: 文件解析成功但TreeSitter没找到任何函数定义")
+            log_print(f"             可能原因: 1) 文件只包含全局变量/宏/注释")
+            log_print(f"                      2) 语言特性TreeSitter无法识别")
+            log_print(f"                      3) 代码结构不完整")
+        
         # 计算API总请求数和成功率
         api_total_attempts = self.stats.get('api_new_requests', 0) + sum(self.stats.get('api_failures', {}).values())
         api_from_cache = self.stats.get('api_from_cache', 0)
@@ -1249,7 +1423,7 @@ class REEFDatasetBuilder:
         for key, value in self.stats.items():
             if key == 'api_failures' and isinstance(value, dict):
                 total_failures = sum(value.values())
-                log_print(f"GitHub API请求统计:")
+                log_print(f"\nGitHub API请求统计:")
                 log_print(f"  从缓存加载: {api_from_cache} 次")
                 log_print(f"  新请求成功: {api_success} 次")
                 log_print(f"  新请求失败: {total_failures} 次")
@@ -1279,9 +1453,15 @@ class REEFDatasetBuilder:
                             log_print(f"    {status_code}: {count} 次")
             elif key == 'api_exceptions':
                 if value > 0:
-                    log_print(f"API未预期异常: {value} 次")
-            elif key not in ['api_from_cache', 'api_new_requests', 'api_retries']:
-                log_print(f"{key}: {value}")
+                    log_print(f"  API未预期异常: {value} 次")
+            elif key == 'timeout_samples':
+                if value > 0:
+                    log_print(f"\n超时跳过的样本: {value} 个 (单样本超时限制: {self.sample_timeout}秒)")
+            elif key not in ['api_from_cache', 'api_new_requests', 'api_retries', 
+                            'api_failed_samples', 'no_details_samples', 'no_valid_files',
+                            'total_func_pairs_extracted', 'func_pair_distribution']:
+                # 跳过已经在上面详细展示的统计项
+                pass
         
         # 打印各文件统计表格
         if file_stats:

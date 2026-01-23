@@ -289,15 +289,29 @@ class TreeSitterParse:
             else:
                 # if there are multiple functions with the same name, we need to find the best match
                 # consider each function edit distance, the function with the smallest edit distance is the best match
-                edit_distances = []
-                for i in range(len(func_candidates)):
-                    func = func_candidates[i]
-                    code_after = func.text.decode('utf-8')
-                    edit_distance = Levenshtein.distance(code_before, code_after)
-                    edit_distances.append(edit_distance)
-                min_edit_distance = min(edit_distances)
-                min_edit_index = edit_distances.index(min_edit_distance)
-                func_after = func_candidates[min_edit_index]
+                # 避免对超大函数或过多候选执行昂贵的编辑距离计算
+                MAX_CANDIDATES = 5
+                MAX_FUNC_LEN = 5000  # 字符数上限，超过则放弃距离计算
+                limited_candidates = func_candidates[:MAX_CANDIDATES]
+
+                too_large = len(code_before) > MAX_FUNC_LEN
+                if too_large:
+                    # 直接选择第一个候选，避免长字符串计算
+                    func_after = limited_candidates[0]
+                else:
+                    edit_distances = []
+                    for i in range(len(limited_candidates)):
+                        func = limited_candidates[i]
+                        code_after = func.text.decode('utf-8')
+                        if len(code_after) > MAX_FUNC_LEN:
+                            # 如果候选太大，给一个高代价，跳过计算
+                            edit_distances.append(float('inf'))
+                            continue
+                        edit_distance = Levenshtein.distance(code_before, code_after)
+                        edit_distances.append(edit_distance)
+                    min_edit_distance = min(edit_distances)
+                    min_edit_index = edit_distances.index(min_edit_distance)
+                    func_after = limited_candidates[min_edit_index]
                 func_name += '_' + str(func_before.start_point[0])
             code_after = func_after.text.decode('utf-8')
             if code_before != code_after:
